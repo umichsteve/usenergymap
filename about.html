@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>About — US Energy Map</title>
+<meta name="description" content="Why US Energy Map exists: a single, transparent view of the data center and battery storage buildout reshaping the American grid." />
+<link rel="icon" type="image/svg+xml" href="/assets/mark.svg" />
+<link rel="canonical" href="https://usenergymap.com/about" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="US Energy Map" />
+<meta property="og:title" content="About — US Energy Map" />
+<meta property="og:description" content="A single, transparent view of the U.S. energy buildout." />
+<meta property="og:url" content="https://usenergymap.com/about" />
+<meta property="og:image" content="https://usenergymap.com/assets/og.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://usenergymap.com/assets/og.png" />
+<link rel="stylesheet" href="/assets/site.css" />
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="/"><img src="/assets/mark.svg" alt="" /> US Energy Map</a>
+    <div class="nav-links">
+      <a href="/map">Map</a>
+      <a href="/methodology">Methodology</a>
+      <a href="/about">About</a>
+      <a class="cta" href="/map">Open the map →</a>
+    </div>
+  </div>
+</nav>
+
+<section>
+  <div class="wrap">
+    <article class="prose">
+      <h1>About US Energy Map</h1>
+      <p class="sub">One map for the buildout that's redrawing the American grid.</p>
+
+      <p>The United States is in the middle of two simultaneous infrastructure booms. Data centers — driven by cloud computing and the AI race — are pushing electricity demand to levels utilities haven't planned for in decades. At the same time, grid-scale battery storage is being deployed at record pace to absorb renewables and firm up the grid.</p>
+
+      <p>These two stories are usually told separately, in scattered press releases, regulatory filings, and paywalled industry reports. US Energy Map puts them on a single canvas so you can see the whole picture: where capacity is going online, what's still in the pipeline, and how the two technologies cluster across regions and power markets.</p>
+
+      <h2>Who it's for</h2>
+      <ul>
+        <li><strong>Industry insiders</strong> tracking competitive activity and regional concentration.</li>
+        <li><strong>Investors and analysts</strong> sizing the buildout and watching the pipeline.</li>
+        <li><strong>Reporters and researchers</strong> who need a fast, sourced visual answer to "where is this happening?"</li>
+        <li><strong>The curious public</strong> trying to understand what's being built near them.</li>
+      </ul>
+
+      <h2>Principles</h2>
+      <ul>
+        <li><strong>Free and unobstructed.</strong> The map is public and never gated behind a paywall.</li>
+        <li><strong>Sourced, not scraped-and-forgotten.</strong> Every project links to a primary public source.</li>
+        <li><strong>Honest about limits.</strong> We're explicit about what the data does and doesn't cover — see the <a href="/methodology">methodology</a>.</li>
+        <li><strong>Open.</strong> The full dataset and its change history live on <a href="https://github.com/umichsteve/usenergymap" target="_blank" rel="noopener">GitHub</a>.</li>
+      </ul>
+
+      <h2>What's next</h2>
+      <p>The roadmap includes operator portfolio views, a capacity-online-over-time chart, deeper data center coverage, and — eventually — expansion beyond the U.S. to the rest of North America. The core promise stays the same: a fast, free, honest map of the buildout.</p>
+
+      <div class="callout">
+        <p>Have a correction, a project we're missing, or a question about the data? Open an issue or pull request on <a href="https://github.com/umichsteve/usenergymap" target="_blank" rel="noopener">GitHub</a>.</p>
+      </div>
+
+      <p style="margin-top:36px;"><a class="btn btn-primary" href="/map">Explore the map →</a></p>
+    </article>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div>
+      <a class="brand" href="/"><img src="/assets/mark.svg" alt="" /> US Energy Map</a>
+      <p class="tag">An independent, public tracker of the data center and battery storage buildout across North America.</p>
+    </div>
+    <div class="footer-cols">
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <a href="/map">Interactive map</a>
+        <a href="/methodology">Methodology</a>
+        <a href="/about">About</a>
+      </div>
+      <div class="footer-col">
+        <h4>Data sources</h4>
+        <a href="https://www.eia.gov/electricity/data/eia860m/" target="_blank" rel="noopener">EIA-860M (BESS)</a>
+        <a href="https://github.com/umichsteve/usenergymap" target="_blank" rel="noopener">Source on GitHub</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© <span id="year">2026</span> US Energy Map. Data for informational purposes only.</span>
+    <span>Not affiliated with any operator or government agency.</span>
+  </div>
+</footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+
+</body>
+</html>

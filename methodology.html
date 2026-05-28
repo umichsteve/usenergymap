@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Methodology — US Energy Map</title>
+<meta name="description" content="How US Energy Map sources, defines, and refreshes its data on data centers and battery energy storage projects." />
+<link rel="icon" type="image/svg+xml" href="/assets/mark.svg" />
+<link rel="canonical" href="https://usenergymap.com/methodology" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="US Energy Map" />
+<meta property="og:title" content="Methodology — US Energy Map" />
+<meta property="og:description" content="How the data is sourced, defined, and refreshed." />
+<meta property="og:url" content="https://usenergymap.com/methodology" />
+<meta property="og:image" content="https://usenergymap.com/assets/og.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://usenergymap.com/assets/og.png" />
+<link rel="stylesheet" href="/assets/site.css" />
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="/"><img src="/assets/mark.svg" alt="" /> US Energy Map</a>
+    <div class="nav-links">
+      <a href="/map">Map</a>
+      <a href="/methodology">Methodology</a>
+      <a href="/about">About</a>
+      <a class="cta" href="/map">Open the map →</a>
+    </div>
+  </div>
+</nav>
+
+<section>
+  <div class="wrap">
+    <article class="prose">
+      <h1>Methodology</h1>
+      <p class="sub">Where the data comes from, what the labels mean, and how fresh it is.</p>
+
+      <p>US Energy Map combines two very different kinds of data: a federal registry for battery storage, and hand-curated research for data centers. We keep them transparent and side by side rather than blending them into a single opaque number.</p>
+
+      <h2>Battery storage (BESS)</h2>
+      <p>Battery entries are ingested automatically from <a href="https://www.eia.gov/electricity/data/eia860m/" target="_blank" rel="noopener">EIA-860M</a>, the U.S. Energy Information Administration's preliminary monthly inventory of electric generators. We filter the inventory to battery technology and aggregate individual generator rows up to the plant level (a single site often reports several generators).</p>
+      <ul>
+        <li>Coordinates are the <strong>exact site coordinates</strong> reported to the EIA.</li>
+        <li>Power capacity (MW) is the nameplate value; energy capacity (MWh) is shown where reported.</li>
+        <li>Entries from this pipeline carry an <code>eia-</code> id prefix.</li>
+      </ul>
+      <div class="callout">
+        <p><strong>EIA-860M is not exhaustive.</strong> It captures utility-scale generators (roughly ≥1 MW) that report to the federal government. Behind-the-meter, residential, and small commercial batteries are not included.</p>
+      </div>
+
+      <h2>Data centers</h2>
+      <p>There is no federal registry of data centers, so these entries are hand-curated. Every data center on the map has a public <strong>source URL</strong> — we don't publish a project we can't point to. Sources include operator press releases (AWS, Google, Microsoft, Meta, Apple), trade reporting such as Data Center Knowledge and Black Ridge Research, and the public portfolios of major colocation providers (Equinix, Digital Realty, CyrusOne, CoreSite, NTT, DataBank, and others).</p>
+      <ul>
+        <li>Where an exact site isn't publicly disclosed, coordinates fall back to the city or county centroid.</li>
+        <li>Coverage prioritizes named hyperscale and large colocation campuses; it is not a complete census of every facility.</li>
+      </ul>
+
+      <h2>Status &amp; capacity definitions</h2>
+      <table class="deftable">
+        <thead><tr><th>Label</th><th>Meaning</th></tr></thead>
+        <tbody>
+          <tr><td><span class="badge op">Operating</span></td><td>The project (or a phase of it) is energized and in service.</td></tr>
+          <tr><td><span class="badge uc">Under construction</span></td><td>Construction has begun but the site is not yet fully in service.</td></tr>
+          <tr><td><span class="badge pl">Planned</span></td><td>Announced or permitted with a target year, but construction has not started.</td></tr>
+        </tbody>
+      </table>
+      <p>Capacity is reported in megawatts (MW) of power. For multi-phase campuses, capacity reflects the best available figure for the scope described by the source; large AI training clusters are evolving quickly and figures may lag announcements.</p>
+
+      <h2>Deduplication</h2>
+      <p>Because batteries are auto-ingested and data centers are hand-entered, an automated battery entry can overlap a curated one. The ingest skips an EIA entry when it falls within ~10&nbsp;km of a hand-curated entry, or matches one strongly by name in the same state. Hand-curated entries are always preserved.</p>
+
+      <h2>How fresh is it?</h2>
+      <p>The battery dataset refreshes on a monthly cadence: an automated job re-pulls the latest EIA-860M release around the 26th of each month and proposes an update. Data center entries are updated as announcements warrant. The "updated" date shown across the site reflects the most recent dataset build.</p>
+
+      <div class="callout">
+        <p>Found something wrong or missing? The dataset and its history are public on <a href="https://github.com/umichsteve/usenergymap" target="_blank" rel="noopener">GitHub</a>.</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div>
+      <a class="brand" href="/"><img src="/assets/mark.svg" alt="" /> US Energy Map</a>
+      <p class="tag">An independent, public tracker of the data center and battery storage buildout across North America.</p>
+    </div>
+    <div class="footer-cols">
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <a href="/map">Interactive map</a>
+        <a href="/methodology">Methodology</a>
+        <a href="/about">About</a>
+      </div>
+      <div class="footer-col">
+        <h4>Data sources</h4>
+        <a href="https://www.eia.gov/electricity/data/eia860m/" target="_blank" rel="noopener">EIA-860M (BESS)</a>
+        <a href="https://github.com/umichsteve/usenergymap" target="_blank" rel="noopener">Source on GitHub</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© <span id="year">2026</span> US Energy Map. Data for informational purposes only.</span>
+    <span>Not affiliated with any operator or government agency.</span>
+  </div>
+</footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+
+</body>
+</html>
