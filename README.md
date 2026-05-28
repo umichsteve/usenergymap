@@ -12,10 +12,12 @@ rendered with [Leaflet](https://leafletjs.com/) over OpenStreetMap (via CARTO da
 ## Project structure
 
 ```
-index.html       # The whole app: map, filters, popups, styling
-projects.json    # Project dataset (schema_version 1.0)
-vercel.json      # Static deploy config + cache headers for projects.json
-README.md        # This file
+index.html                          # The whole app: map, filters, popups, styling
+projects.json                       # Project dataset (schema_version 1.0)
+vercel.json                         # Static deploy config + cache headers
+scripts/ingest_eia.py               # Monthly EIA-860M ingest for BESS entries
+.github/workflows/refresh-eia.yml   # Cron + PR for automated refresh
+README.md                           # This file
 ```
 
 ## Adding or editing a project
@@ -78,21 +80,48 @@ to apex. TLS is auto-provisioned.
 
 ## Data sources
 
-Initial dataset (May 2026) compiled from public reporting. Coordinates are
-approximate to city/county centroid when exact site address is not publicly
-disclosed. See `source` field on each project for primary reference.
+**BESS entries are auto-ingested monthly from EIA-860M** (the federal
+preliminary monthly electric generator inventory). Entries with id prefix
+`eia-` come from that pipeline; entries with any other prefix are
+hand-curated.
 
-Notable references:
-- EIA Today in Energy (battery storage capacity forecasts)
-- Black Ridge Research (upcoming data center / BESS lists)
-- Data Center Knowledge (new developments tracking)
-- Cleanview.co (operating battery storage map)
+**Data centers** are hand-curated from operator press releases, Data Center
+Knowledge, and Black Ridge Research. There is no equivalent federal registry
+for data centers.
+
+Coordinates from EIA are exact site coordinates; hand-curated entries use
+city/county centroid where the exact site isn't publicly disclosed.
+
+### EIA refresh — automatic
+
+The `Monthly EIA-860M refresh` GitHub Action runs on the 26th of each month,
+re-pulls the latest EIA-860M XLSX, runs `scripts/ingest_eia.py`, and opens a
+PR titled "Monthly EIA-860M refresh" if `projects.json` has changed. Merge
+the PR → Vercel auto-deploys.
+
+### EIA refresh — manual
+
+```bash
+python3 -m pip install pandas openpyxl
+python3 scripts/ingest_eia.py
+```
+
+Optional `EIA_MONTH=december_generator2025` env override pins a specific
+archive instead of "latest".
+
+The script:
+- Downloads the requested EIA-860M archive into `.cache/`
+- Filters `Technology == "Batteries"` from both `Operating` and `Planned` sheets
+- Aggregates generator rows up to plant level (multiple generators per plant are common)
+- De-duplicates against hand-curated entries by proximity (~10 km) or strong name match
+- Preserves all non-`eia-` entries verbatim
+- Writes `projects.json` with the merged set
 
 ## Roadmap ideas
 
-- Cluster popup showing list of projects in the cluster
-- Sort/list view in sidebar (scrollable project list synced with map filters)
-- Timeline slider (filter by year_online)
-- Migrate to Supabase + admin form for CRUD
-- Per-project detail pages (hash-routed)
-- ISO/RTO overlay (PJM, ERCOT, CAISO boundaries)
+- Operator portfolio pages (`#operator=Meta` view)
+- Map clustering by ISO/RTO instead of geographic proximity
+- Energy duration (MWh / MW) calculated column for BESS
+- Migrate to Supabase + admin form for CRUD (if/when dataset becomes user-editable)
+- Per-project detail pages (deeper than current popup)
+- Data center automated ingest (no equivalent federal registry exists — would require commercial data source)
