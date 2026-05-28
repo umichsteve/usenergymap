@@ -25,9 +25,7 @@
     --uc: #f59e0b;
     --pl: #a855f7;
     --border: #334155;
-    --shadow: 0 10px 25px rgba(0,0,0,0.35);
   }
-
   * { box-sizing: border-box; }
   html, body { height: 100%; margin: 0; padding: 0; }
   body {
@@ -36,229 +34,93 @@
     background: var(--bg);
     overflow: hidden;
   }
-
   header {
     position: absolute; top: 0; left: 0; right: 0;
     height: 56px;
     background: linear-gradient(90deg, #0b1224 0%, #1e293b 100%);
     border-bottom: 1px solid var(--border);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 0 18px;
-    z-index: 1000;
+    display: flex; align-items: center; justify-content: space-between;
+    padding: 0 18px; z-index: 1000;
   }
-  header h1 {
-    font-size: 16px;
-    margin: 0;
-    font-weight: 600;
-    letter-spacing: 0.2px;
-  }
+  header h1 { font-size: 16px; margin: 0; font-weight: 600; letter-spacing: 0.2px; }
   header h1 .accent { color: var(--accent); }
   header .meta { font-size: 12px; color: var(--muted); }
-
   #layout {
-    position: absolute;
-    top: 56px;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: grid;
-    grid-template-columns: 360px 1fr;
+    position: absolute; top: 56px; left: 0; right: 0; bottom: 0;
+    display: grid; grid-template-columns: 360px 1fr;
   }
-
   #sidebar {
     background: var(--panel);
     border-right: 1px solid var(--border);
-    display: flex;
-    flex-direction: column;
-    overflow: hidden;
+    display: flex; flex-direction: column; overflow: hidden;
   }
-  #sidebar-filters {
-    padding: 16px;
-    overflow-y: auto;
-    flex: 0 0 auto;
-    max-height: 65%;
-  }
-  #sidebar-list {
-    flex: 1 1 auto;
-    border-top: 1px solid var(--border);
-    overflow-y: auto;
-    padding: 12px 14px 16px 14px;
-  }
-
-  .stats {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 8px;
-    margin-bottom: 14px;
-  }
-  .stat {
-    background: var(--panel-2);
-    border: 1px solid var(--border);
-    border-radius: 8px;
-    padding: 9px 11px;
-  }
+  #sidebar-filters { padding: 16px; overflow-y: auto; flex: 0 0 auto; max-height: 65%; }
+  #sidebar-list { flex: 1 1 auto; border-top: 1px solid var(--border); overflow-y: auto; padding: 12px 14px 16px 14px; }
+  .stats { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin-bottom: 14px; }
+  .stat { background: var(--panel-2); border: 1px solid var(--border); border-radius: 8px; padding: 9px 11px; }
   .stat .label { font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.5px; }
   .stat .value { font-size: 17px; font-weight: 700; margin-top: 1px; }
   .stat .sub { font-size: 10px; color: var(--muted); margin-top: 1px; }
-
   .filter-group { margin-bottom: 13px; }
   .filter-group h3 {
-    margin: 0 0 6px 0;
-    font-size: 10px;
-    color: var(--muted);
-    text-transform: uppercase;
-    letter-spacing: 0.7px;
-    font-weight: 600;
+    margin: 0 0 6px 0; font-size: 10px; color: var(--muted);
+    text-transform: uppercase; letter-spacing: 0.7px; font-weight: 600;
   }
   .chips { display: flex; flex-wrap: wrap; gap: 5px; }
   .chip {
-    background: var(--panel-2);
-    border: 1px solid var(--border);
-    color: var(--text);
-    border-radius: 999px;
-    padding: 4px 10px;
-    font-size: 11.5px;
-    cursor: pointer;
-    user-select: none;
-    transition: all 0.12s ease;
+    background: var(--panel-2); border: 1px solid var(--border); color: var(--text);
+    border-radius: 999px; padding: 4px 10px; font-size: 11.5px;
+    cursor: pointer; user-select: none; transition: all 0.12s ease;
   }
   .chip:hover { border-color: var(--accent); }
-  .chip.active {
-    background: var(--accent);
-    border-color: var(--accent);
-    color: #0b1224;
-    font-weight: 600;
-  }
-
-  select, input[type="text"], input[type="range"], input[type="number"] {
-    width: 100%;
-    background: var(--panel-2);
-    border: 1px solid var(--border);
-    color: var(--text);
-    padding: 6px 9px;
-    border-radius: 6px;
-    font-size: 12.5px;
-    font-family: inherit;
+  .chip.active { background: var(--accent); border-color: var(--accent); color: #0b1224; font-weight: 600; }
+  .chip.iso { padding: 3px 9px; font-size: 11px; }
+  .chip.iso.active-iso { color: #fff; border-width: 2px; padding: 2px 8px; }
+  select, input[type="text"], input[type="range"] {
+    width: 100%; background: var(--panel-2); border: 1px solid var(--border);
+    color: var(--text); padding: 6px 9px; border-radius: 6px;
+    font-size: 12.5px; font-family: inherit;
   }
   select:focus, input:focus { outline: 2px solid var(--accent); }
-
   .range-wrap { display: flex; align-items: center; gap: 8px; }
   .range-wrap input[type="range"] { flex: 1; padding: 0; }
   .range-val { font-size: 11px; color: var(--muted); min-width: 64px; text-align: right; }
-
-  .year-wrap {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 8px;
-    align-items: center;
-  }
-  .year-wrap label {
-    font-size: 10px;
-    color: var(--muted);
-    text-transform: uppercase;
-    letter-spacing: 0.4px;
-    display: block;
-    margin-bottom: 3px;
-  }
-
+  .year-wrap { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; align-items: center; }
+  .year-wrap label { font-size: 10px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.4px; display: block; margin-bottom: 3px; }
   #reset {
-    margin-top: 2px;
-    width: 100%;
-    background: transparent;
-    border: 1px solid var(--border);
-    color: var(--muted);
-    padding: 7px 10px;
-    border-radius: 6px;
-    cursor: pointer;
-    font-size: 12px;
-    font-family: inherit;
+    margin-top: 2px; width: 100%; background: transparent; border: 1px solid var(--border);
+    color: var(--muted); padding: 7px 10px; border-radius: 6px;
+    cursor: pointer; font-size: 12px; font-family: inherit;
   }
   #reset:hover { border-color: var(--accent); color: var(--accent); }
-
-  /* Project list */
-  .list-head {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 8px;
-  }
-  .list-head h3 {
-    margin: 0;
-    font-size: 11px;
-    color: var(--muted);
-    text-transform: uppercase;
-    letter-spacing: 0.7px;
-    font-weight: 600;
-  }
-  .list-head select {
-    width: auto;
-    padding: 3px 22px 3px 8px;
-    font-size: 11px;
-  }
-
+  .list-head { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+  .list-head h3 { margin: 0; font-size: 11px; color: var(--muted); text-transform: uppercase; letter-spacing: 0.7px; font-weight: 600; }
+  .list-head select { width: auto; padding: 3px 22px 3px 8px; font-size: 11px; }
   .plist { display: flex; flex-direction: column; gap: 5px; }
   .pitem {
-    background: var(--panel-2);
-    border: 1px solid var(--border);
-    border-left: 3px solid var(--dc);
-    border-radius: 6px;
-    padding: 7px 9px;
-    cursor: pointer;
-    transition: all 0.1s ease;
+    background: var(--panel-2); border: 1px solid var(--border);
+    border-left: 3px solid var(--dc); border-radius: 6px;
+    padding: 7px 9px; cursor: pointer; transition: all 0.1s ease;
   }
   .pitem.bess { border-left-color: var(--bess); }
   .pitem:hover { border-color: var(--accent); background: #2c3a52; }
-  .pitem .pname {
-    font-size: 12.5px;
-    font-weight: 600;
-    color: var(--text);
-    margin-bottom: 2px;
-    line-height: 1.25;
-  }
-  .pitem .pmeta {
-    font-size: 11px;
-    color: var(--muted);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 8px;
-  }
+  .pitem .pname { font-size: 12.5px; font-weight: 600; color: var(--text); margin-bottom: 2px; line-height: 1.25; }
+  .pitem .pmeta { font-size: 11px; color: var(--muted); display: flex; justify-content: space-between; align-items: center; gap: 8px; }
   .pitem .pmw { color: var(--text); font-weight: 600; }
-  .pitem .pstatus {
-    display: inline-block;
-    padding: 1px 6px;
-    border-radius: 999px;
-    font-size: 9px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.3px;
-  }
+  .pitem .pstatus { display: inline-block; padding: 1px 6px; border-radius: 999px; font-size: 9px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.3px; }
   .pstatus.operating { background: rgba(34,197,94,0.18); color: #4ade80; }
   .pstatus.under_construction { background: rgba(245,158,11,0.18); color: #fbbf24; }
   .pstatus.planned { background: rgba(168,85,247,0.18); color: #c084fc; }
   .pstatus.announced { background: rgba(56,189,248,0.18); color: #38bdf8; }
-
   .empty { color: var(--muted); font-size: 12px; padding: 14px 4px; text-align: center; }
-
-  #map {
-    width: 100%;
-    height: 100%;
-    background: #1a2236;
-  }
-
+  #map { width: 100%; height: 100%; background: #1a2236; }
   .marker-dot {
-    border-radius: 50%;
-    border: 2px solid #fff;
+    border-radius: 50%; border: 2px solid #fff;
     box-shadow: 0 0 0 1px rgba(0,0,0,0.4), 0 2px 4px rgba(0,0,0,0.35);
   }
-
   .leaflet-popup-content-wrapper {
-    background: var(--panel);
-    color: var(--text);
-    border-radius: 8px;
-    border: 1px solid var(--border);
+    background: var(--panel); color: var(--text);
+    border-radius: 8px; border: 1px solid var(--border);
   }
   .leaflet-popup-tip { background: var(--panel); }
   .leaflet-popup-content { margin: 12px 14px; line-height: 1.4; font-size: 13px; }
@@ -267,39 +129,33 @@
   .popup-row { display: flex; justify-content: space-between; gap: 12px; margin: 2px 0; }
   .popup-row .k { color: var(--muted); }
   .popup-row .v { color: var(--text); font-weight: 500; }
-  .popup-badge {
-    display: inline-block;
-    padding: 2px 8px;
-    border-radius: 999px;
-    font-size: 10px;
-    font-weight: 700;
-    text-transform: uppercase;
-    letter-spacing: 0.4px;
-  }
+  .popup-badge { display: inline-block; padding: 2px 8px; border-radius: 999px; font-size: 10px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.4px; }
   .badge-operating { background: rgba(34,197,94,0.18); color: #4ade80; }
   .badge-under_construction { background: rgba(245,158,11,0.18); color: #fbbf24; }
   .badge-planned { background: rgba(168,85,247,0.18); color: #c084fc; }
   .badge-announced { background: rgba(56,189,248,0.18); color: #38bdf8; }
-
-  .popup-link {
-    color: var(--accent);
-    text-decoration: none;
-    font-size: 12px;
-    margin-top: 6px;
-    display: inline-block;
-  }
+  .popup-link { color: var(--accent); text-decoration: none; font-size: 12px; margin-top: 6px; display: inline-block; }
   .popup-link:hover { text-decoration: underline; }
-
-  .legend {
-    font-size: 11px;
-    color: var(--text);
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3px 8px;
+  /* Cluster popup list */
+  .cluster-popup { min-width: 240px; max-width: 280px; }
+  .cluster-popup .ch { display: flex; justify-content: space-between; align-items: center; margin-bottom: 8px; }
+  .cluster-popup .ctitle { font-weight: 700; font-size: 13px; color: #fff; }
+  .cluster-popup .czoom { color: var(--accent); font-size: 11px; cursor: pointer; text-decoration: none; }
+  .cluster-popup .czoom:hover { text-decoration: underline; }
+  .cluster-popup .clist { max-height: 220px; overflow-y: auto; display: flex; flex-direction: column; gap: 4px; }
+  .cluster-popup .citem {
+    background: var(--panel-2); border: 1px solid var(--border);
+    border-left: 3px solid var(--dc); border-radius: 5px;
+    padding: 5px 8px; cursor: pointer; font-size: 12px;
   }
+  .cluster-popup .citem.bess { border-left-color: var(--bess); }
+  .cluster-popup .citem:hover { border-color: var(--accent); background: #2c3a52; }
+  .cluster-popup .citem .cn { color: #fff; font-weight: 600; }
+  .cluster-popup .citem .cm { color: var(--muted); font-size: 10.5px; display: flex; justify-content: space-between; margin-top: 1px; }
+  .cluster-popup .cm .mw { color: var(--text); font-weight: 600; }
+  .legend { font-size: 11px; color: var(--text); display: grid; grid-template-columns: 1fr 1fr; gap: 3px 8px; }
   .legend .row { display: flex; align-items: center; gap: 6px; }
   .legend .dot { width: 10px; height: 10px; border-radius: 50%; border: 2px solid #fff; }
-
   @media (max-width: 768px) {
     #layout { grid-template-columns: 1fr; grid-template-rows: 50% 50%; }
     #sidebar { border-right: none; border-bottom: 1px solid var(--border); }
@@ -307,7 +163,6 @@
     header h1 { font-size: 14px; }
     header .meta { display: none; }
   }
-
   ::-webkit-scrollbar { width: 8px; }
   ::-webkit-scrollbar-track { background: transparent; }
   ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
@@ -322,7 +177,6 @@
 
 <div id="layout">
   <aside id="sidebar">
-
     <div id="sidebar-filters">
       <div class="stats">
         <div class="stat">
@@ -358,9 +212,12 @@
 
       <div class="filter-group">
         <h3>State</h3>
-        <select id="filter-state">
-          <option value="all">All states</option>
-        </select>
+        <select id="filter-state"><option value="all">All states</option></select>
+      </div>
+
+      <div class="filter-group">
+        <h3>Operator</h3>
+        <select id="filter-operator"><option value="all">All operators</option></select>
       </div>
 
       <div class="filter-group">
@@ -374,14 +231,8 @@
       <div class="filter-group">
         <h3>Year Online</h3>
         <div class="year-wrap">
-          <div>
-            <label>From</label>
-            <input type="range" id="year-min" />
-          </div>
-          <div>
-            <label>To</label>
-            <input type="range" id="year-max" />
-          </div>
+          <div><label>From</label><input type="range" id="year-min" /></div>
+          <div><label>To</label><input type="range" id="year-max" /></div>
         </div>
         <div class="range-val" id="year-val" style="text-align:left;margin-top:4px;">—</div>
       </div>
@@ -389,6 +240,11 @@
       <div class="filter-group">
         <h3>Search</h3>
         <input type="text" id="filter-search" placeholder="Name, operator, city…" />
+      </div>
+
+      <div class="filter-group">
+        <h3>ISO / RTO Overlay</h3>
+        <div class="chips" id="iso-toggles"></div>
       </div>
 
       <button id="reset">Reset filters</button>
@@ -418,12 +274,9 @@
       </div>
       <div class="plist" id="plist"></div>
     </div>
-
   </aside>
 
-  <main>
-    <div id="map"></div>
-  </main>
+  <main><div id="map"></div></main>
 </div>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
@@ -447,51 +300,57 @@
   document.getElementById('updated').textContent =
     `${projects.length} projects · updated ${data.last_updated || '—'}`;
 
-  // ---------- Map ----------
-  const map = L.map('map', {
-    center: [39.5, -98.35],
-    zoom: 4,
-    minZoom: 3,
-    maxZoom: 12,
-    worldCopyJump: false,
-  });
+  // ---------- ISO/RTO simplified boundaries ----------
+  const ISOS = {
+    ERCOT: { color: '#ef4444', polygon: [[33.6,-106.6],[33.6,-100.5],[36.5,-100.5],[36.5,-97],[33.5,-94],[31.5,-94],[29.7,-93.7],[26,-97],[25.8,-99.5],[28,-103.5],[30,-104.5],[31.7,-106.6]] },
+    CAISO: { color: '#f59e0b', polygon: [[42,-124.2],[42,-120],[39,-120],[35,-117.5],[33.5,-114.5],[32.5,-117.2],[34.5,-121],[39.5,-124.5]] },
+    PJM:   { color: '#3b82f6', polygon: [[39,-89],[37.5,-87.5],[36.2,-86.5],[34.5,-84],[35.8,-78.5],[36.5,-75.8],[39.5,-74.2],[41.3,-74.5],[42.7,-78.5],[43,-83.5],[41.8,-87.6],[39,-89]] },
+    MISO:  { color: '#a855f7', polygon: [[49,-104.5],[49,-90],[48,-85],[45.5,-83],[42,-83.5],[39,-87.5],[37,-90.5],[33,-91.5],[30,-91],[29.5,-93.6],[34,-94],[37,-94.5],[43,-96.5],[49,-104.5]] },
+    SPP:   { color: '#fb923c', polygon: [[49,-104.5],[49,-96.5],[43,-96.5],[40,-95.5],[37,-94.5],[33.7,-94],[32.5,-100],[32.5,-103],[36.5,-104.5],[41,-104.5],[44,-104],[49,-104.5]] },
+    NYISO: { color: '#06b6d4', polygon: [[45,-79.7],[45,-73],[42,-73],[41,-73.7],[42.5,-79.7]] },
+    'ISO-NE': { color: '#22c55e', polygon: [[47.5,-71],[47.5,-66.9],[45,-66.9],[41.5,-69.9],[41.2,-73.5],[42.5,-73.5],[44,-73.4],[47.5,-71]] },
+  };
 
+  // ---------- Map ----------
+  const map = L.map('map', { center: [39.5, -98.35], zoom: 4, minZoom: 3, maxZoom: 12, worldCopyJump: false });
   L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
     attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/">CARTO</a>',
-    subdomains: 'abcd',
-    maxZoom: 19,
+    subdomains: 'abcd', maxZoom: 19,
   }).addTo(map);
+
+  // ISO overlay layer group (toggleable)
+  const isoLayers = {};
+  Object.entries(ISOS).forEach(([name, def]) => {
+    isoLayers[name] = L.polygon(def.polygon, {
+      color: def.color, weight: 2, opacity: 0.85,
+      fillOpacity: 0.05, fillColor: def.color,
+      interactive: false,
+    });
+  });
+  const activeIsos = new Set();
 
   const cluster = L.markerClusterGroup({
     showCoverageOnHover: false,
     spiderfyOnMaxZoom: true,
+    zoomToBoundsOnClick: false,
     maxClusterRadius: 40,
   });
   map.addLayer(cluster);
 
   // ---------- Marker helpers ----------
   const TYPE_COLOR = { data_center: '#3b82f6', bess: '#22c55e' };
-  const STATUS_RING = {
-    operating: '#22c55e',
-    under_construction: '#f59e0b',
-    planned: '#a855f7',
-    announced: '#38bdf8',
-  };
+  const STATUS_RING = { operating: '#22c55e', under_construction: '#f59e0b', planned: '#a855f7', announced: '#38bdf8' };
 
   function radiusFor(mw) {
     if (!mw) return 6;
     return Math.max(6, Math.min(30, Math.round(Math.sqrt(mw) * 0.9)));
   }
-
   function statusLabel(s) {
-    return ({
-      operating: 'Operating',
-      under_construction: 'Under Construction',
-      planned: 'Planned',
-      announced: 'Announced',
-    })[s] || s;
+    return ({ operating: 'Operating', under_construction: 'Under Construction', planned: 'Planned', announced: 'Announced' })[s] || s;
   }
-
+  function escapeHtml(s) {
+    return String(s).replace(/[&<>"']/g, c => ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;' }[c]));
+  }
   function popupHTML(p) {
     const typeLabel = p.type === 'data_center' ? 'Data Center' : 'BESS';
     const mwhRow = p.capacity_mwh
@@ -499,11 +358,11 @@
     const yearRow = p.year_online
       ? `<div class="popup-row"><span class="k">${p.status === 'operating' ? 'Online' : 'Target'}</span><span class="v">${p.year_online}</span></div>` : '';
     const sourceRow = p.source
-      ? `<a class="popup-link" href="${p.source}" target="_blank" rel="noopener noreferrer">Source ↗</a>` : '';
+      ? `<a class="popup-link" href="${escapeHtml(p.source)}" target="_blank" rel="noopener noreferrer">Source ↗</a>` : '';
     return `
-      <div class="popup-title">${p.name}</div>
-      <div class="popup-sub">${typeLabel} · ${p.city}, ${p.state}</div>
-      <div class="popup-row"><span class="k">Operator</span><span class="v">${p.operator || '—'}</span></div>
+      <div class="popup-title">${escapeHtml(p.name)}</div>
+      <div class="popup-sub">${typeLabel} · ${escapeHtml(p.city)}, ${escapeHtml(p.state)}</div>
+      <div class="popup-row"><span class="k">Operator</span><span class="v">${escapeHtml(p.operator || '—')}</span></div>
       <div class="popup-row"><span class="k">Capacity</span><span class="v">${p.capacity_mw ? p.capacity_mw.toLocaleString() + ' MW' : '—'}</span></div>
       ${mwhRow}
       ${yearRow}
@@ -514,37 +373,121 @@
       ${sourceRow}
     `;
   }
-
   function makeMarker(p) {
     const fill = TYPE_COLOR[p.type] || '#94a3b8';
     const ring = STATUS_RING[p.status] || '#fff';
     const r = radiusFor(p.capacity_mw);
     const icon = L.divIcon({
       className: '',
-      html: `<div class="marker-dot" style="
-        width:${r * 2}px;height:${r * 2}px;
-        background:${fill};
-        border-color:${ring};
-      "></div>`,
-      iconSize: [r * 2, r * 2],
-      iconAnchor: [r, r],
+      html: `<div class="marker-dot" style="width:${r * 2}px;height:${r * 2}px;background:${fill};border-color:${ring};"></div>`,
+      iconSize: [r * 2, r * 2], iconAnchor: [r, r],
     });
     const marker = L.marker([p.lat, p.lng], { icon });
     marker.bindPopup(popupHTML(p), { maxWidth: 280 });
     marker._project = p;
+    // Hash routing on popup open
+    marker.on('popupopen', () => {
+      if (location.hash.slice(1) !== p.id) {
+        history.replaceState(null, '', '#' + p.id);
+      }
+    });
     return marker;
   }
 
   const allMarkers = projects.map(makeMarker);
   const markerById = new Map(allMarkers.map(m => [m._project.id, m]));
 
+  // ---------- Cluster click → custom popup with list ----------
+  cluster.on('clusterclick', e => {
+    const children = e.layer.getAllChildMarkers();
+    const items = children.map(m => m._project)
+      .sort((a,b) => (b.capacity_mw||0) - (a.capacity_mw||0));
+    const list = items.map(p => `
+      <div class="citem ${p.type === 'bess' ? 'bess' : ''}" data-id="${escapeHtml(p.id)}">
+        <div class="cn">${escapeHtml(p.name)}</div>
+        <div class="cm">
+          <span>${p.type === 'data_center' ? 'DC' : 'BESS'} · ${escapeHtml(p.city)}, ${escapeHtml(p.state)}</span>
+          <span class="mw">${p.capacity_mw ? p.capacity_mw.toLocaleString() + ' MW' : ''}</span>
+        </div>
+      </div>
+    `).join('');
+    const html = `
+      <div class="cluster-popup">
+        <div class="ch">
+          <div class="ctitle">${items.length} projects</div>
+          <a class="czoom" id="czoom">Zoom to area</a>
+        </div>
+        <div class="clist">${list}</div>
+      </div>
+    `;
+    const popup = L.popup({ maxWidth: 300, closeButton: true })
+      .setLatLng(e.layer.getLatLng())
+      .setContent(html)
+      .openOn(map);
+    // Wire up clicks inside the popup after it renders
+    setTimeout(() => {
+      const popEl = popup.getElement();
+      if (!popEl) return;
+      popEl.querySelectorAll('.citem').forEach(item => {
+        item.addEventListener('click', () => {
+          const id = item.dataset.id;
+          openProject(id);
+        });
+      });
+      const zoomBtn = popEl.querySelector('#czoom');
+      if (zoomBtn) {
+        zoomBtn.addEventListener('click', () => {
+          map.closePopup();
+          map.fitBounds(e.layer.getBounds().pad(0.2));
+        });
+      }
+    }, 0);
+  });
+
   // ---------- State filter dropdown ----------
   const stateSel = document.getElementById('filter-state');
-  const states = [...new Set(projects.map(p => p.state))].sort();
-  states.forEach(s => {
-    const opt = document.createElement('option');
-    opt.value = s; opt.textContent = s;
-    stateSel.appendChild(opt);
+  [...new Set(projects.map(p => p.state))].sort().forEach(s => {
+    const opt = document.createElement('option'); opt.value = s; opt.textContent = s; stateSel.appendChild(opt);
+  });
+
+  // ---------- Operator filter dropdown ----------
+  const opSel = document.getElementById('filter-operator');
+  const opCounts = {};
+  projects.forEach(p => {
+    const op = p.operator || '—';
+    opCounts[op] = (opCounts[op] || 0) + 1;
+  });
+  Object.entries(opCounts)
+    .sort((a,b) => b[1] - a[1] || a[0].localeCompare(b[0]))
+    .forEach(([op, n]) => {
+      const opt = document.createElement('option');
+      opt.value = op; opt.textContent = `${op} (${n})`;
+      opSel.appendChild(opt);
+    });
+
+  // ---------- ISO toggle chips ----------
+  const isoTogglesEl = document.getElementById('iso-toggles');
+  Object.entries(ISOS).forEach(([name, def]) => {
+    const chip = document.createElement('span');
+    chip.className = 'chip iso';
+    chip.dataset.iso = name;
+    chip.textContent = name;
+    chip.style.borderColor = def.color;
+    chip.style.color = def.color;
+    chip.addEventListener('click', () => {
+      if (activeIsos.has(name)) {
+        activeIsos.delete(name);
+        map.removeLayer(isoLayers[name]);
+        chip.classList.remove('active-iso');
+        chip.style.background = '';
+      } else {
+        activeIsos.add(name);
+        isoLayers[name].addTo(map);
+        chip.classList.add('active-iso');
+        chip.style.background = def.color + '33';
+      }
+    });
+    isoTogglesEl.appendChild(chip);
   });
 
   // ---------- Year range slider setup ----------
@@ -554,30 +497,21 @@
   const yMin = document.getElementById('year-min');
   const yMax = document.getElementById('year-max');
   const yVal = document.getElementById('year-val');
-  [yMin, yMax].forEach(el => {
-    el.min = minYear;
-    el.max = maxYear;
-    el.step = 1;
-  });
-  yMin.value = minYear;
-  yMax.value = maxYear;
+  [yMin, yMax].forEach(el => { el.min = minYear; el.max = maxYear; el.step = 1; });
+  yMin.value = minYear; yMax.value = maxYear;
 
   // ---------- Filter state ----------
   const filters = {
-    type: 'all',
-    status: 'all',
-    state: 'all',
-    minMw: 0,
-    minYear: minYear,
-    maxYear: maxYear,
-    search: '',
-    sort: 'mw-desc',
+    type: 'all', status: 'all', state: 'all', operator: 'all',
+    minMw: 0, minYear: minYear, maxYear: maxYear,
+    search: '', sort: 'mw-desc',
   };
 
   function passes(p) {
     if (filters.type !== 'all' && p.type !== filters.type) return false;
     if (filters.status !== 'all' && p.status !== filters.status) return false;
     if (filters.state !== 'all' && p.state !== filters.state) return false;
+    if (filters.operator !== 'all' && (p.operator || '—') !== filters.operator) return false;
     if (filters.minMw > 0 && (p.capacity_mw || 0) < filters.minMw) return false;
     if (p.year_online && (p.year_online < filters.minYear || p.year_online > filters.maxYear)) return false;
     if (filters.search) {
@@ -589,32 +523,30 @@
   }
 
   function sortProjects(arr) {
-    const s = filters.sort;
     const cmp = {
-      'mw-desc': (a,b) => (b.capacity_mw||0) - (a.capacity_mw||0),
-      'mw-asc':  (a,b) => (a.capacity_mw||0) - (b.capacity_mw||0),
-      'year-desc': (a,b) => (b.year_online||0) - (a.year_online||0),
-      'year-asc':  (a,b) => (a.year_online||0) - (b.year_online||0),
-      'name-asc':  (a,b) => a.name.localeCompare(b.name),
-    }[s];
+      'mw-desc':  (a,b) => (b.capacity_mw||0) - (a.capacity_mw||0),
+      'mw-asc':   (a,b) => (a.capacity_mw||0) - (b.capacity_mw||0),
+      'year-desc':(a,b) => (b.year_online||0) - (a.year_online||0),
+      'year-asc': (a,b) => (a.year_online||0) - (b.year_online||0),
+      'name-asc': (a,b) => a.name.localeCompare(b.name),
+    }[filters.sort];
     return [...arr].sort(cmp);
   }
 
-  // ---------- Render ----------
   const plistEl = document.getElementById('plist');
   const listCountEl = document.getElementById('list-count');
 
   function listItemHTML(p) {
     const typeShort = p.type === 'data_center' ? 'DC' : 'BESS';
     return `
-      <div class="pitem ${p.type === 'bess' ? 'bess' : ''}" data-id="${p.id}">
-        <div class="pname">${p.name}</div>
+      <div class="pitem ${p.type === 'bess' ? 'bess' : ''}" data-id="${escapeHtml(p.id)}">
+        <div class="pname">${escapeHtml(p.name)}</div>
         <div class="pmeta">
-          <span>${typeShort} · ${p.city}, ${p.state}${p.year_online ? ' · ' + p.year_online : ''}</span>
+          <span>${typeShort} · ${escapeHtml(p.city)}, ${escapeHtml(p.state)}${p.year_online ? ' · ' + p.year_online : ''}</span>
           <span><span class="pmw">${p.capacity_mw ? p.capacity_mw.toLocaleString() + ' MW' : '—'}</span></span>
         </div>
         <div class="pmeta" style="margin-top:3px;">
-          <span style="color:var(--muted);">${p.operator || ''}</span>
+          <span style="color:var(--muted);">${escapeHtml(p.operator || '')}</span>
           <span class="pstatus ${p.status}">${statusLabel(p.status).replace('Under Construction','UC')}</span>
         </div>
       </div>
@@ -636,31 +568,38 @@
     document.getElementById('stat-count').textContent = count;
     document.getElementById('stat-count-sub').textContent = `of ${projects.length}`;
     document.getElementById('stat-mw').textContent = mwSum.toLocaleString();
-
-    // List view
     const sorted = sortProjects(visible);
     listCountEl.textContent = `(${count})`;
-    if (sorted.length === 0) {
-      plistEl.innerHTML = '<div class="empty">No projects match the current filters.</div>';
-    } else {
-      plistEl.innerHTML = sorted.map(listItemHTML).join('');
-    }
+    plistEl.innerHTML = sorted.length === 0
+      ? '<div class="empty">No projects match the current filters.</div>'
+      : sorted.map(listItemHTML).join('');
   }
 
-  // ---------- List item click → fly + open popup ----------
-  plistEl.addEventListener('click', e => {
-    const item = e.target.closest('.pitem');
-    if (!item) return;
-    const id = item.dataset.id;
+  // ---------- Open project (fly + popup) — shared by list click + hash + cluster ----------
+  function openProject(id) {
     const marker = markerById.get(id);
     if (!marker) return;
     const ll = marker.getLatLng();
-    map.flyTo(ll, Math.max(map.getZoom(), 7), { duration: 0.6 });
-    // Wait for fly to start unspiderfying clusters, then open
+    map.flyTo(ll, Math.max(map.getZoom(), 7), { duration: 0.5 });
     setTimeout(() => {
       cluster.zoomToShowLayer(marker, () => marker.openPopup());
     }, 350);
+  }
+
+  plistEl.addEventListener('click', e => {
+    const item = e.target.closest('.pitem');
+    if (!item) return;
+    openProject(item.dataset.id);
   });
+
+  // ---------- Hash routing ----------
+  function handleHash() {
+    const id = location.hash.slice(1);
+    if (id && markerById.has(id)) openProject(id);
+  }
+  window.addEventListener('hashchange', handleHash);
+  // Open on initial load (after first render)
+  setTimeout(handleHash, 600);
 
   // ---------- Wire controls ----------
   function wireChips(groupId, key) {
@@ -677,61 +616,44 @@
   wireChips('filter-type', 'type');
   wireChips('filter-status', 'status');
 
-  stateSel.addEventListener('change', e => {
-    filters.state = e.target.value; render();
-  });
+  stateSel.addEventListener('change', e => { filters.state = e.target.value; render(); });
+  opSel.addEventListener('change', e => { filters.operator = e.target.value; render(); });
 
   const mwInput = document.getElementById('filter-mw');
   const mwLabel = document.getElementById('filter-mw-val');
   mwInput.addEventListener('input', e => {
-    filters.minMw = +e.target.value;
-    mwLabel.textContent = `${filters.minMw}+ MW`;
-    render();
+    filters.minMw = +e.target.value; mwLabel.textContent = `${filters.minMw}+ MW`; render();
   });
 
-  function updateYearLabel() {
-    yVal.textContent = `${filters.minYear}–${filters.maxYear}`;
-  }
+  function updateYearLabel() { yVal.textContent = `${filters.minYear}–${filters.maxYear}`; }
   yMin.addEventListener('input', () => {
     let mn = +yMin.value, mx = +yMax.value;
     if (mn > mx) { yMax.value = mn; mx = mn; }
-    filters.minYear = mn; filters.maxYear = mx;
-    updateYearLabel(); render();
+    filters.minYear = mn; filters.maxYear = mx; updateYearLabel(); render();
   });
   yMax.addEventListener('input', () => {
     let mn = +yMin.value, mx = +yMax.value;
     if (mx < mn) { yMin.value = mx; mn = mx; }
-    filters.minYear = mn; filters.maxYear = mx;
-    updateYearLabel(); render();
+    filters.minYear = mn; filters.maxYear = mx; updateYearLabel(); render();
   });
 
   const searchInput = document.getElementById('filter-search');
-  searchInput.addEventListener('input', e => {
-    filters.search = e.target.value.trim(); render();
-  });
+  searchInput.addEventListener('input', e => { filters.search = e.target.value.trim(); render(); });
 
-  const sortSel = document.getElementById('list-sort');
-  sortSel.addEventListener('change', e => {
-    filters.sort = e.target.value; render();
-  });
+  document.getElementById('list-sort').addEventListener('change', e => { filters.sort = e.target.value; render(); });
 
   document.getElementById('reset').addEventListener('click', () => {
-    filters.type = 'all';
-    filters.status = 'all';
-    filters.state = 'all';
-    filters.minMw = 0;
-    filters.minYear = minYear;
-    filters.maxYear = maxYear;
+    filters.type = 'all'; filters.status = 'all'; filters.state = 'all'; filters.operator = 'all';
+    filters.minMw = 0; filters.minYear = minYear; filters.maxYear = maxYear;
     filters.search = '';
     document.querySelectorAll('#filter-type .chip, #filter-status .chip').forEach(c => {
       c.classList.toggle('active', c.dataset.val === 'all');
     });
-    stateSel.value = 'all';
+    stateSel.value = 'all'; opSel.value = 'all';
     mwInput.value = 0; mwLabel.textContent = '0+ MW';
     yMin.value = minYear; yMax.value = maxYear;
     searchInput.value = '';
-    updateYearLabel();
-    render();
+    updateYearLabel(); render();
   });
 
   updateYearLabel();
