@@ -1,6 +1,7 @@
 # US Data Center & BESS Project Tracker
 
 **Live:** https://usenergymap.com
+**Repo:** https://github.com/umichsteve/usenergymap (push to `main` → Vercel auto-deploys)
 
 Interactive map of operating, under-construction, and planned data centers and
 battery energy storage system (BESS) projects in the United States.
@@ -54,13 +55,17 @@ python3 -m http.server 8080
 
 Opening `index.html` via `file://` will fail because `fetch()` needs HTTP.
 
-## Deploy to Vercel
+## Deploy
+
+Pushing to `main` on GitHub auto-deploys via the Vercel project's git binding:
 
 ```bash
-# from this folder, one-time:
-vercel link
+git add -A && git commit -m "your message" && git push
+```
 
-# every deploy:
+Manual deploys (rarely needed, e.g. to redeploy without code changes):
+
+```bash
 vercel --prod
 ```
 
