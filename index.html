@@ -37,6 +37,7 @@
     <a class="brand" href="/"><img src="/assets/mark-square.svg" alt="" /> US Energy Map</a>
     <div class="nav-links">
       <a href="/map">Map</a>
+      <a href="/explore">Explore</a>
       <a href="/methodology">Methodology</a>
       <a href="/about">About</a>
       <a class="cta" href="/map">Open the map →</a>
@@ -117,6 +118,21 @@
   </div>
 </section>
 
+<!-- DATA STORY -->
+<section class="alt">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="kicker">The buildout in numbers</div>
+      <h2>Capacity is scaling fast</h2>
+      <p>Megawatts coming online each year — data centers vs. battery storage — and the states absorbing the most. Built live from the dataset.</p>
+    </div>
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:24px;">
+      <div class="card"><h3 style="margin-top:0;">MW online by year</h3><div style="position:relative;height:300px;"><canvas id="chart-year"></canvas></div></div>
+      <div class="card"><h3 style="margin-top:0;">Top 10 states by capacity</h3><div style="position:relative;height:300px;"><canvas id="chart-states"></canvas></div></div>
+    </div>
+  </div>
+</section>
+
 <!-- METHODOLOGY TEASER + CTA -->
 <section>
   <div class="wrap">
@@ -161,6 +177,7 @@
   </div>
 </footer>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
 <script>
   document.getElementById('year').textContent = new Date().getFullYear();
   // Live stats from projects.json so the landing page never drifts from the dataset.
@@ -181,6 +198,48 @@
         const d = new Date(data.last_updated + 'T00:00:00');
         if (!isNaN(d)) document.getElementById('hero-updated').textContent =
           d.toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
+      }
+
+      // ---- Data-story charts ----
+      if (window.Chart) {
+        const grid = '#e2e8f0';
+        Chart.defaults.font.family = getComputedStyle(document.body).fontFamily;
+        Chart.defaults.color = '#64748b';
+        const kfmt = v => v >= 1000 ? (v / 1000) + 'k' : v;
+
+        // MW online by year, stacked DC vs BESS
+        const years = {};
+        p.forEach(x => {
+          if (!x.year_online) return;
+          const y = x.year_online;
+          years[y] = years[y] || { dc: 0, bess: 0 };
+          years[y][x.type === 'data_center' ? 'dc' : 'bess'] += (x.capacity_mw || 0);
+        });
+        const ys = Object.keys(years).map(Number).sort((a, b) => a - b);
+        new Chart(document.getElementById('chart-year'), {
+          type: 'bar',
+          data: { labels: ys, datasets: [
+            { label: 'Data centers', data: ys.map(y => Math.round(years[y].dc)), backgroundColor: '#2563eb' },
+            { label: 'Battery (BESS)', data: ys.map(y => Math.round(years[y].bess)), backgroundColor: '#16a34a' },
+          ] },
+          options: { responsive: true, maintainAspectRatio: false,
+            scales: { x: { stacked: true, grid: { display: false } },
+                      y: { stacked: true, grid: { color: grid }, ticks: { callback: kfmt } } },
+            plugins: { legend: { position: 'bottom' } } }
+        });
+
+        // Top 10 states by MW
+        const stateMw = {};
+        p.forEach(x => { stateMw[x.state] = (stateMw[x.state] || 0) + (x.capacity_mw || 0); });
+        const top = Object.entries(stateMw).sort((a, b) => b[1] - a[1]).slice(0, 10);
+        new Chart(document.getElementById('chart-states'), {
+          type: 'bar',
+          data: { labels: top.map(t => t[0]), datasets: [
+            { label: 'MW', data: top.map(t => Math.round(t[1])), backgroundColor: '#06b6d4' } ] },
+          options: { indexAxis: 'y', responsive: true, maintainAspectRatio: false,
+            plugins: { legend: { display: false } },
+            scales: { x: { grid: { color: grid }, ticks: { callback: kfmt } }, y: { grid: { display: false } } } }
+        });
       }
     } catch (e) { /* keep static fallback numbers */ }
   })();

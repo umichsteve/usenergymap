@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>US Energy Map — Embeddable Map</title>
+<meta name="robots" content="noindex, follow" />
+<link rel="icon" type="image/svg+xml" href="/assets/mark-square.svg" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+  integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.css" />
+<link rel="stylesheet" href="https://unpkg.com/leaflet.markercluster@1.5.3/dist/MarkerCluster.Default.css" />
+<style>
+  html, body { height: 100%; margin: 0; }
+  #map { width: 100%; height: 100%; background: #1a2236; font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; }
+  .marker-dot { border-radius: 50%; border: 2px solid #fff; box-shadow: 0 0 0 1px rgba(0,0,0,0.4), 0 2px 4px rgba(0,0,0,0.35); }
+  .leaflet-popup-content-wrapper { background: #1e293b; color: #e2e8f0; border-radius: 8px; border: 1px solid #334155; }
+  .leaflet-popup-tip { background: #1e293b; }
+  .leaflet-popup-content { margin: 11px 13px; line-height: 1.4; font-size: 13px; }
+  .pt { font-weight: 700; font-size: 14px; color: #fff; margin-bottom: 3px; }
+  .ps { color: #94a3b8; font-size: 11px; margin-bottom: 6px; text-transform: uppercase; letter-spacing: 0.4px; }
+  .pr { display: flex; justify-content: space-between; gap: 12px; margin: 2px 0; }
+  .pr .k { color: #94a3b8; } .pr .v { color: #e2e8f0; font-weight: 500; }
+  .badge { display:inline-block; padding:2px 8px; border-radius:999px; font-size:10px; font-weight:700; text-transform:uppercase; }
+  .b-operating{background:rgba(34,197,94,.18);color:#4ade80}.b-under_construction{background:rgba(245,158,11,.18);color:#fbbf24}
+  .b-planned{background:rgba(168,85,247,.18);color:#c084fc}.b-announced{background:rgba(56,189,248,.18);color:#38bdf8}
+  .credit {
+    position: absolute; bottom: 10px; left: 10px; z-index: 1000;
+    background: rgba(11,18,36,0.85); border: 1px solid #334155; border-radius: 8px;
+    padding: 6px 11px; font: 600 12px -apple-system, Arial, sans-serif; color: #e2e8f0; text-decoration: none;
+    display: flex; align-items: center; gap: 7px;
+  }
+  .credit img { width: 18px; height: 18px; }
+  .credit:hover { border-color: #38bdf8; }
+</style>
+</head>
+<body>
+<div id="map"></div>
+<a class="credit" href="https://usenergymap.com" target="_blank" rel="noopener">
+  <img src="/assets/mark-square.svg" alt="" /> Powered by US Energy Map
+</a>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+  integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+<script src="https://unpkg.com/leaflet.markercluster@1.5.3/dist/leaflet.markercluster.js"></script>
+<script>
+(async function () {
+  const res = await fetch('/projects.json', { cache: 'no-cache' });
+  const data = await res.json();
+  let projects = data.projects || [];
+
+  // Optional filtering via query params: ?state=TX&operator=Meta&type=bess&status=operating
+  const qs = new URLSearchParams(location.search);
+  const fState = (qs.get('state') || '').toUpperCase();
+  const fOperator = (qs.get('operator') || '').toLowerCase();
+  const fType = qs.get('type');
+  const fStatus = qs.get('status');
+  projects = projects.filter(p =>
+    (!fState || p.state === fState) &&
+    (!fOperator || (p.operator || '').toLowerCase() === fOperator) &&
+    (!fType || p.type === fType) &&
+    (!fStatus || p.status === fStatus));
+
+  const map = L.map('map', { center: [39.5, -98.35], zoom: 4, minZoom: 3, maxZoom: 12, scrollWheelZoom: false });
+  L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png', {
+    attribution: '&copy; OpenStreetMap &copy; CARTO', subdomains: 'abcd', maxZoom: 19,
+  }).addTo(map);
+
+  const TYPE_COLOR = { data_center: '#3b82f6', bess: '#22c55e' };
+  const RING = { operating: '#22c55e', under_construction: '#f59e0b', planned: '#a855f7', announced: '#38bdf8' };
+  const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+  const sl = s => ({operating:'Operating',under_construction:'Under Construction',planned:'Planned',announced:'Announced'}[s]||s);
+  const rad = mw => !mw ? 6 : Math.max(6, Math.min(30, Math.round(Math.sqrt(mw) * 0.9)));
+
+  const cluster = L.markerClusterGroup({ showCoverageOnHover: false, maxClusterRadius: 40 });
+  projects.forEach(p => {
+    const r = rad(p.capacity_mw);
+    const icon = L.divIcon({ className: '',
+      html: `<div class="marker-dot" style="width:${r*2}px;height:${r*2}px;background:${TYPE_COLOR[p.type]||'#94a3b8'};border-color:${RING[p.status]||'#fff'};"></div>`,
+      iconSize: [r*2, r*2], iconAnchor: [r, r] });
+    const m = L.marker([p.lat, p.lng], { icon });
+    const mwh = p.capacity_mwh ? `<div class="pr"><span class="k">Energy</span><span class="v">${p.capacity_mwh.toLocaleString()} MWh</span></div>` : '';
+    m.bindPopup(
+      `<div class="pt">${esc(p.name)}</div>
+       <div class="ps">${p.type==='data_center'?'Data Center':'BESS'} · ${esc(p.city)}, ${esc(p.state)}</div>
+       <div class="pr"><span class="k">Operator</span><span class="v">${esc(p.operator||'—')}</span></div>
+       <div class="pr"><span class="k">Capacity</span><span class="v">${p.capacity_mw?p.capacity_mw.toLocaleString()+' MW':'—'}</span></div>
+       ${mwh}
+       <div class="pr" style="margin-top:5px;"><span class="k">Status</span><span class="badge b-${p.status}">${sl(p.status)}</span></div>`,
+      { maxWidth: 260 });
+    cluster.addLayer(m);
+  });
+  map.addLayer(cluster);
+  if (projects.length) { try { map.fitBounds(cluster.getBounds().pad(0.15)); } catch (e) {} }
+})();
+</script>
+</body>
+</html>

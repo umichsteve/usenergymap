@@ -231,6 +231,7 @@
   </a>
   <nav>
     <a href="/map" class="active">Map</a>
+    <a href="/explore">Explore</a>
     <a href="/methodology">Methodology</a>
     <a href="/about">About</a>
     <span class="meta" id="updated">Loading…</span>
@@ -804,6 +805,31 @@
     searchInput.value = '';
     updateYearLabel(); render();
   });
+
+  // ---------- Deep-link filters from query params ----------
+  // e.g. /map?state=TX  ·  /map?operator=Meta  ·  /map?type=bess  ·  /map?status=operating
+  (function applyQueryFilters() {
+    const qs = new URLSearchParams(location.search);
+    const st = (qs.get('state') || '').toUpperCase();
+    if (st && [...stateSel.options].some(o => o.value === st)) {
+      filters.state = st; stateSel.value = st;
+    }
+    const opq = qs.get('operator');
+    if (opq) {
+      const match = [...opSel.options].find(o => o.value.toLowerCase() === opq.toLowerCase());
+      if (match) { filters.operator = match.value; opSel.value = match.value; }
+    }
+    const ty = qs.get('type');
+    if (ty === 'data_center' || ty === 'bess') {
+      filters.type = ty;
+      document.querySelectorAll('#filter-type .chip').forEach(c => c.classList.toggle('active', c.dataset.val === ty));
+    }
+    const stt = qs.get('status');
+    if (['operating', 'under_construction', 'planned'].includes(stt)) {
+      filters.status = stt;
+      document.querySelectorAll('#filter-status .chip').forEach(c => c.classList.toggle('active', c.dataset.val === stt));
+    }
+  })();
 
   updateYearLabel();
   render();

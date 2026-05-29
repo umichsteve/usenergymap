@@ -4,3 +4,7 @@
 *.pyc
 __pycache__/
 .DS_Store
+
+# Weekly Instagram generator output (regenerated; not source)
+assets/social/weekly/
+scripts/.weekly_snapshot.json
