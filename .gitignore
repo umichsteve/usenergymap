@@ -5,6 +5,7 @@
 __pycache__/
 .DS_Store
 
-# Weekly Instagram generator output (regenerated; not source)
-assets/social/weekly/
+# Internal marketing/strategy assets — not part of the public site.
+# (The site references /assets/og.png, mark*.svg, site.css, analytics.js — none live under social/.)
+assets/social/
 scripts/.weekly_snapshot.json
