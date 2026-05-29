@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <title>Interactive Map — US Energy Map</title>
 <meta name="description" content="Interactive map of operating, under-construction, and planned data centers and battery energy storage (BESS) projects across the United States." />
-<link rel="icon" type="image/svg+xml" href="/assets/mark.svg" />
+<link rel="icon" type="image/svg+xml" href="/assets/mark-square.svg" />
 <link rel="canonical" href="https://usenergymap.com/map" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="US Energy Map" />
@@ -183,13 +183,49 @@
   ::-webkit-scrollbar { width: 8px; }
   ::-webkit-scrollbar-track { background: transparent; }
   ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 4px; }
+
+  /* ---------- Access gate ---------- */
+  #uem-gate {
+    position: fixed; inset: 0; z-index: 3000;
+    display: flex; align-items: center; justify-content: center;
+    padding: 20px;
+    background: rgba(8, 14, 28, 0.78);
+    backdrop-filter: blur(7px); -webkit-backdrop-filter: blur(7px);
+  }
+  #uem-gate[hidden] { display: none; }
+  .gate-card {
+    width: 100%; max-width: 430px;
+    background: linear-gradient(180deg, #111c33 0%, #0d1730 100%);
+    border: 1px solid var(--border); border-radius: 16px;
+    padding: 32px 30px; box-shadow: 0 24px 60px -20px rgba(0,0,0,0.7);
+    text-align: center;
+  }
+  .gate-card .gmark { width: 52px; height: 52px; margin: 0 auto 16px; display: block; border-radius: 12px; }
+  .gate-card h2 { margin: 0 0 8px; font-size: 22px; font-weight: 800; color: #fff; letter-spacing: -0.3px; }
+  .gate-card p { margin: 0 0 22px; font-size: 14px; color: var(--muted); line-height: 1.5; }
+  .gate-card form { display: flex; flex-direction: column; gap: 10px; text-align: left; }
+  .gate-card label { font-size: 11px; text-transform: uppercase; letter-spacing: 0.6px; color: var(--muted); margin-bottom: -4px; }
+  .gate-card input {
+    width: 100%; background: var(--panel-2); border: 1px solid var(--border);
+    color: var(--text); padding: 11px 13px; border-radius: 9px; font-size: 14px; font-family: inherit;
+  }
+  .gate-card input:focus { outline: 2px solid var(--accent); }
+  .gate-card button {
+    margin-top: 8px; width: 100%; cursor: pointer; font-family: inherit;
+    background: linear-gradient(90deg, #2563eb, #06b6d4); color: #fff;
+    border: none; padding: 13px; border-radius: 10px; font-size: 15px; font-weight: 700;
+  }
+  .gate-card button:disabled { opacity: 0.6; cursor: default; }
+  .gate-err { color: #fca5a5; font-size: 12.5px; min-height: 16px; margin-top: 2px; }
+  .gate-fine { font-size: 11px; color: #64748b; margin-top: 14px; line-height: 1.5; }
+  .gate-fine a { color: var(--accent); text-decoration: none; }
 </style>
 </head>
 <body>
 
 <header>
   <a class="brand" href="/">
-    <img src="/assets/mark.svg" alt="" />
+    <img src="/assets/mark-square.svg" alt="" />
     <span class="name">US Energy Map</span>
   </a>
   <nav>
@@ -199,6 +235,24 @@
     <span class="meta" id="updated">Loading…</span>
   </nav>
 </header>
+
+<!-- ACCESS GATE — email + name required for full map access -->
+<div id="uem-gate" hidden>
+  <div class="gate-card">
+    <img class="gmark" src="/assets/mark-square.svg" alt="" />
+    <h2>See the full map</h2>
+    <p>Get instant access to all 1,400+ data center &amp; battery storage projects. Free — just tell us who you are.</p>
+    <form id="gate-form" novalidate>
+      <label for="gate-name">Name</label>
+      <input id="gate-name" name="name" type="text" autocomplete="name" placeholder="Your name" required />
+      <label for="gate-email">Email</label>
+      <input id="gate-email" name="email" type="email" autocomplete="email" placeholder="you@company.com" required />
+      <div class="gate-err" id="gate-err"></div>
+      <button type="submit" id="gate-submit">Unlock the full map →</button>
+    </form>
+    <p class="gate-fine">We'll only email you about US Energy Map. No spam, unsubscribe anytime. See our <a href="/about">about page</a>.</p>
+  </div>
+</div>
 
 <div id="layout">
   <aside id="sidebar">
@@ -303,6 +357,66 @@
 
   <main><div id="map"></div></main>
 </div>
+
+<script>
+/* ===== US Energy Map — access gate =====
+   Captures email + name via Web3Forms (free, unlimited, no database) before
+   granting full map access. To activate: get a free access key at
+   https://web3forms.com (enter your email, key is emailed instantly) and
+   paste it below. The key is safe to ship publicly — it only routes
+   submissions to your inbox. Until it's set, the gate still shows and never
+   bricks the map; it just won't capture leads. */
+(function () {
+  var WEB3FORMS_KEY = "afd4bc2b-26ce-4cc4-becf-c4392812906f";  // Web3Forms access key
+  var STORE_KEY = "uem_full_access";
+
+  var gate = document.getElementById('uem-gate');
+  var form = document.getElementById('gate-form');
+  var errEl = document.getElementById('gate-err');
+  var btn = document.getElementById('gate-submit');
+
+  // Already unlocked on this device? Skip the gate.
+  var unlocked = false;
+  try { unlocked = localStorage.getItem(STORE_KEY) === '1'; } catch (e) {}
+  if (unlocked) { gate.setAttribute('hidden', ''); return; }
+  gate.removeAttribute('hidden');
+
+  function validEmail(v) { return /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v); }
+
+  function persistLead(name, email) {
+    // Fire-and-forget; never blocks the user from entering.
+    if (!WEB3FORMS_KEY) return Promise.resolve();
+    return fetch('https://api.web3forms.com/submit', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Accept': 'application/json' },
+      body: JSON.stringify({
+        access_key: WEB3FORMS_KEY,
+        subject: 'New US Energy Map signup',
+        from_name: 'US Energy Map',
+        name: name,
+        email: email,
+        source: 'map_gate'
+      })
+    }).catch(function () { /* swallow — don't block access on network error */ });
+  }
+
+  function unlock() {
+    try { localStorage.setItem(STORE_KEY, '1'); } catch (e) {}
+    gate.setAttribute('hidden', '');
+  }
+
+  form.addEventListener('submit', function (e) {
+    e.preventDefault();
+    var name = document.getElementById('gate-name').value.trim();
+    var email = document.getElementById('gate-email').value.trim();
+    errEl.textContent = '';
+    if (!name) { errEl.textContent = 'Please enter your name.'; return; }
+    if (!validEmail(email)) { errEl.textContent = 'Please enter a valid email address.'; return; }
+    btn.disabled = true; btn.textContent = 'Unlocking…';
+    persistLead(name, email).finally(function () { unlock(); });
+  });
+})();
+</script>
 
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
   integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
