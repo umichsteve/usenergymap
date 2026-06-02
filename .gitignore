@@ -9,3 +9,6 @@ __pycache__/
 # (The site references /assets/og.png, mark*.svg, site.css, analytics.js — none live under social/.)
 assets/social/
 scripts/.weekly_snapshot.json
+
+# Temp render scratch files
+_shot_*.html
