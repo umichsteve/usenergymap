@@ -1,0 +1,10 @@
+{
+  "name": "usenergymap",
+  "version": "1.0.0",
+  "private": true,
+  "description": "US Energy Map — static site + serverless functions for paid dataset export",
+  "dependencies": {
+    "exceljs": "^4.4.0",
+    "stripe": "^16.12.0"
+  }
+}

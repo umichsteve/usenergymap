@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Get the Dataset — US Energy Map</title>
+<meta name="description" content="Download the full US Energy Map dataset — every tracked U.S. data center and battery storage project as enriched CSV + GeoJSON. One-time $4.99." />
+<link rel="icon" type="image/svg+xml" href="/assets/mark-square.svg" />
+<link rel="canonical" href="https://usenergymap.com/data" />
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="US Energy Map" />
+<meta property="og:title" content="Get the US Energy Map dataset (CSV + GeoJSON)" />
+<meta property="og:description" content="Every tracked U.S. data center and battery storage project, enriched and ready to analyze." />
+<meta property="og:url" content="https://usenergymap.com/data" />
+<meta property="og:image" content="https://usenergymap.com/assets/og.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://usenergymap.com/assets/og.png" />
+<link rel="stylesheet" href="/assets/site.css" />
+<script src="/assets/analytics.js"></script>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="/"><img src="/assets/mark-square.svg" alt="" /> US Energy Map</a>
+    <div class="nav-links">
+      <a href="/map">Map</a>
+      <a href="/explore">Explore</a>
+      <a href="/methodology">Methodology</a>
+      <a href="/about">About</a>
+      <a class="cta" href="/map">Open the map →</a>
+    </div>
+  </div>
+</nav>
+
+<section>
+  <div class="wrap">
+    <div class="prose" style="max-width:820px;">
+      <p class="kicker">Get the data</p>
+      <h1>The full dataset + a BD hunting list</h1>
+      <p class="sub">Every tracked U.S. data center and battery storage project — as a ready-to-work <strong>Excel hunting list</strong> plus clean <strong>CSV</strong> and <strong>GeoJSON</strong>. Skip the scraping.</p>
+
+      <div class="cards" style="grid-template-columns:1fr 1fr;margin:8px 0 32px;">
+        <div class="card">
+          <h3 style="margin-top:0;">What you get</h3>
+          <p>All <strong>1,400+ projects</strong> in three formats. The <strong>Excel workbook</strong> is built for business development: operators ranked by tracked capacity, with blank columns (contact, priority, status, notes) to work as a prospect list — plus full-projects and by-state tabs. CSV + GeoJSON for analysis and GIS.</p>
+        </div>
+        <div class="card">
+          <h3 style="margin-top:0;">Who it's for</h3>
+          <p><strong>Business-development &amp; sales teams</strong> who need a ranked operator hunting list, and analysts/developers who want the raw data in a spreadsheet or GIS tool. Single-user license; built from public sources (see <a href="/methodology">methodology</a>).</p>
+        </div>
+      </div>
+
+      <div class="cta-band" style="align-items:center;">
+        <div>
+          <h2 style="margin-bottom:6px;">BD hunting list + full dataset</h2>
+          <p>Excel · CSV · GeoJSON · one-time purchase · instant download · data dictionary &amp; license included.</p>
+        </div>
+        <div style="text-align:right;">
+          <div style="font-size:34px;font-weight:800;color:#fff;line-height:1;">$4.99</div>
+          <button class="btn btn-primary" id="buy" style="margin-top:10px;">Buy &amp; download →</button>
+          <div id="buy-msg" style="font-size:12px;color:#94a3b8;margin-top:8px;min-height:16px;"></div>
+        </div>
+      </div>
+
+      <p style="font-size:13px;color:var(--muted);margin-top:14px;">The interactive map and the state/operator pages stay <strong>free</strong> — this is just the bulk file for people who'd rather not pull it by hand.</p>
+
+      <h2>What's in each row</h2>
+      <table class="deftable">
+        <thead><tr><th>Column</th><th>Description</th></tr></thead>
+        <tbody>
+          <tr><td><code>id</code></td><td>Unique project ID (<code>eia-</code> prefix = federal EIA-860M source)</td></tr>
+          <tr><td><code>name</code></td><td>Project / campus name</td></tr>
+          <tr><td><code>type</code> · <code>type_label</code></td><td>data_center or bess (+ readable label)</td></tr>
+          <tr><td><code>operator</code></td><td>Operating company</td></tr>
+          <tr><td><code>city</code> · <code>state</code> · <code>state_name</code></td><td>Location (code + full state name)</td></tr>
+          <tr><td><code>latitude</code> · <code>longitude</code></td><td>Coordinates</td></tr>
+          <tr><td><code>capacity_mw</code> · <code>capacity_mwh</code></td><td>Power (MW) and, for batteries, energy (MWh)</td></tr>
+          <tr><td><code>duration_hours</code></td><td>Derived MWh ÷ MW for batteries</td></tr>
+          <tr><td><code>status</code> · <code>status_label</code></td><td>operating / under_construction / planned</td></tr>
+          <tr><td><code>year_online</code></td><td>Existing or target year</td></tr>
+          <tr><td><code>source</code></td><td>Primary public source URL</td></tr>
+        </tbody>
+      </table>
+
+      <div class="callout">
+        <p><strong>License:</strong> single-user. Use it in your analysis, reports, and internal tools. Please don't redistribute or resell the file itself. Need a team or commercial license, an API, or a custom cut? <a href="mailto:steve.demaagd@gmail.com?subject=US%20Energy%20Map%20data%20license">Get in touch</a>.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div>
+      <a class="brand" href="/"><img src="/assets/mark-square.svg" alt="" /> US Energy Map</a>
+      <p class="tag">An independent, public tracker of the data center and battery storage buildout across North America.</p>
+    </div>
+    <div class="footer-cols">
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <a href="/map">Interactive map</a>
+        <a href="/explore">By state &amp; operator</a>
+        <a href="/data">Get the dataset</a>
+        <a href="/methodology">Methodology</a>
+        <a href="/about">About</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+      <div class="footer-col">
+        <h4>Data sources</h4>
+        <a href="https://www.eia.gov/electricity/data/eia860m/" target="_blank" rel="noopener">EIA-860M (BESS)</a>
+        <a href="https://github.com/umichsteve/usenergymap" target="_blank" rel="noopener">Source on GitHub</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© <span id="year">2026</span> US Energy Map. Data for informational purposes only.</span>
+    <span>Not affiliated with any operator or government agency.</span>
+  </div>
+</footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  const buy = document.getElementById('buy');
+  const msg = document.getElementById('buy-msg');
+  buy.addEventListener('click', async () => {
+    buy.disabled = true; msg.textContent = 'Starting secure checkout…';
+    try {
+      const res = await fetch('/api/create-checkout', { method: 'POST' });
+      const data = await res.json();
+      if (res.ok && data.url) { window.location = data.url; return; }
+      msg.textContent = data.error || 'Checkout is not available yet — check back soon.';
+    } catch (e) {
+      msg.textContent = 'Something went wrong starting checkout. Please try again.';
+    }
+    buy.disabled = false;
+  });
+</script>
+
+</body>
+</html>
