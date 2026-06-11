@@ -71,6 +71,7 @@ def head(title, desc, canonical):
     <div class="nav-links">
       <a href="/map">Map</a>
       <a href="/explore">Explore</a>
+      <a href="/data">Data</a>
       <a href="/methodology">Methodology</a>
       <a href="/about">About</a>
       <a class="cta" href="/map">Open the map →</a>
@@ -111,6 +112,13 @@ FOOTER = """<footer class="footer">
 <script>document.getElementById('year').textContent = new Date().getFullYear();</script>
 </body>
 </html>"""
+
+DATA_CTA = """
+  <div class="callout" style="border-left-color:#16a34a;display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap;margin:26px 0;">
+    <div style="flex:1;min-width:240px;"><strong>Working this market?</strong> Get every operator below as a ranked <strong>BD hunting list</strong> — an Excel workbook with operators sorted by capacity plus blank contact / priority / notes columns, ready to work. CSV + GeoJSON included.</div>
+    <a class="btn btn-primary" href="/data" style="white-space:nowrap;">Get the dataset — $4.99 &rarr;</a>
+  </div>
+"""
 
 def stat_cards(projects):
     n = len(projects)
@@ -184,6 +192,7 @@ def main():
      ranked by capacity. Battery projects are sourced from the federal EIA-860M inventory; data centers
      are hand-curated with a public source on each entry. See the <a href="/methodology">methodology</a> for details.</p>
   <p><a class="btn btn-primary" href="/map?state={esc(code)}">View {esc(name)} on the map →</a></p>
+{DATA_CTA}
   <h2>All {esc(name)} projects</h2>
   {project_table(plist, show_state=False, show_operator=True)}
 </article></div></section>
@@ -219,6 +228,7 @@ def main():
   <p>Every {esc(op)} data center and battery storage project we track, ranked by capacity.
      See the <a href="/methodology">methodology</a> for how this data is sourced and defined.</p>
   <p><a class="btn btn-primary" href="/map?operator={esc(op)}">View {esc(op)} on the map →</a></p>
+{DATA_CTA}
   <h2>All {esc(op)} projects</h2>
   {project_table(plist, show_state=True, show_operator=False)}
 </article></div></section>
