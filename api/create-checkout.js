@@ -7,7 +7,7 @@
 
 const Stripe = require("stripe");
 
-const PRICE_CENTS = 499; // $4.99 one-time
+const PRICE_CENTS = 14999; // $149.99 one-time
 
 module.exports = async (req, res) => {
   if (req.method !== "POST") {
