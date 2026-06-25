@@ -9,16 +9,14 @@ Hand-curated entries (those without "eia-" id prefix) are preserved.
 EIA entries are fully replaced on each run (idempotent).
 
 Run: python3 scripts/ingest_eia.py
-Env: EIA_MONTH=december_generator2025 (optional override; defaults to latest archive)
+Env: EIA_MONTH=december_generator2025 (optional override; defaults to latest available file)
 """
 
-import io
 import json
 import os
 import re
-import sys
 import urllib.request
-from datetime import datetime
+from datetime import datetime, timezone
 from pathlib import Path
 
 import pandas as pd
@@ -29,6 +27,7 @@ CACHE_DIR = ROOT / ".cache"
 CACHE_DIR.mkdir(exist_ok=True)
 
 ARCHIVE_URL = "https://www.eia.gov/electricity/data/eia860m/archive/xls/{slug}.xlsx"
+CURRENT_URL = "https://www.eia.gov/electricity/data/eia860m/xls/{slug}.xlsx"
 SOURCE_URL = "https://www.eia.gov/electricity/data/eia860m/"
 
 # Map EIA "Status" codes to our status taxonomy.
@@ -43,38 +42,107 @@ PLANNED_STATUS_MAP = {
 }
 
 
-def latest_archive_slug() -> str:
-    """Return the most recent EIA-860M archive slug that exists."""
+def is_workbook_url(url: str, timeout: int = 6) -> bool:
+    req = urllib.request.Request(url, method="HEAD",
+                                 headers={"User-Agent": "Mozilla/5.0"})
+    try:
+        with urllib.request.urlopen(req, timeout=timeout) as r:
+            return r.status == 200 and int(r.headers.get("Content-Length", 0)) > 1_000_000
+    except Exception:
+        pass
+
+    req = urllib.request.Request(url, headers={
+        "User-Agent": "Mozilla/5.0",
+        "Range": "bytes=0-1023",
+    })
+    try:
+        with urllib.request.urlopen(req, timeout=timeout) as r:
+            chunk = r.read(4)
+            return r.status in (200, 206) and chunk.startswith(b"PK")
+    except Exception:
+        return False
+
+
+def workbook_url_for_slug(slug: str) -> str | None:
+    """Return a downloadable EIA workbook URL for a slug, if one exists."""
+    url = CURRENT_URL.format(slug=slug)
+    if is_workbook_url(url, timeout=20):
+        return url
+    url = ARCHIVE_URL.format(slug=slug)
+    if is_workbook_url(url, timeout=8):
+        return url
+    return None
+
+
+def previous_month_slug(dt: datetime, months: list[str]) -> str:
+    m = dt.month - 2
+    y = dt.year
+    while m < 0:
+        m += 12
+        y -= 1
+    return f"{months[m]}_generator{y}"
+
+
+def latest_slug_from_release_page(months: list[str]) -> str | None:
+    req = urllib.request.Request(SOURCE_URL, headers={"User-Agent": "Mozilla/5.0"})
+    try:
+        with urllib.request.urlopen(req, timeout=20) as r:
+            html = r.read().decode("utf-8", errors="ignore")
+    except Exception:
+        return None
+    m = re.search(r"Release Date:</span>\s*<span class=\"date\">([^<]+)</span>", html)
+    if not m:
+        return None
+    try:
+        release_date = datetime.strptime(m.group(1).strip(), "%B %d, %Y")
+    except ValueError:
+        return None
+    return previous_month_slug(release_date, months)
+
+
+def latest_workbook() -> tuple[str, str]:
+    """Return the most recent EIA-860M slug and downloadable workbook URL."""
     if os.environ.get("EIA_MONTH"):
-        return os.environ["EIA_MONTH"]
+        slug = os.environ["EIA_MONTH"]
+        url = workbook_url_for_slug(slug)
+        if not url:
+            raise RuntimeError(f"Could not download EIA-860M workbook for {slug}")
+        return slug, url
     months = ["january", "february", "march", "april", "may", "june",
               "july", "august", "september", "october", "november", "december"]
-    today = datetime.utcnow()
-    # Walk back month-by-month until a HEAD succeeds.
+    page_slug = latest_slug_from_release_page(months)
+    if page_slug:
+        url = workbook_url_for_slug(page_slug)
+        if url:
+            return page_slug, url
+
+    today = datetime.now(timezone.utc)
+    slugs = []
     for offset in range(0, 18):
-        m = today.month - 1 - offset
+        m = today.month - 2 - offset
         y = today.year
         while m < 0:
             m += 12
             y -= 1
-        slug = f"{months[m]}_generator{y}"
+        slugs.append(f"{months[m]}_generator{y}")
+
+    # EIA leaves future-month archive links on the page that redirect slowly.
+    # Current files in /xls/ are the first place a new public release appears.
+    for slug in slugs:
+        url = CURRENT_URL.format(slug=slug)
+        if is_workbook_url(url, timeout=20):
+            return slug, url
+    for slug in slugs:
         url = ARCHIVE_URL.format(slug=slug)
-        req = urllib.request.Request(url, method="HEAD",
-                                     headers={"User-Agent": "Mozilla/5.0"})
-        try:
-            with urllib.request.urlopen(req, timeout=15) as r:
-                if r.status == 200:
-                    return slug
-        except Exception:
-            continue
-    raise RuntimeError("Could not locate any EIA-860M archive within 18 months")
+        if is_workbook_url(url, timeout=8):
+            return slug, url
+    raise RuntimeError("Could not locate any EIA-860M workbook within 18 months")
 
 
-def download(slug: str) -> Path:
+def download(slug: str, url: str) -> Path:
     out = CACHE_DIR / f"{slug}.xlsx"
     if out.exists() and out.stat().st_size > 1_000_000:
         return out
-    url = ARCHIVE_URL.format(slug=slug)
     req = urllib.request.Request(url, headers={"User-Agent": "Mozilla/5.0"})
     print(f"[ingest] downloading {url}")
     with urllib.request.urlopen(req, timeout=90) as r:
@@ -170,10 +238,57 @@ def aggregate_plants(df: pd.DataFrame, status_override: str | None) -> list[dict
     return out
 
 
+def merge_duplicate_eia_plants(entries: list[dict]) -> list[dict]:
+    """Merge plants that have both operating and planned generator rows.
+
+    EIA can list the same Plant ID in both sheets when a facility has an
+    operating phase and a future battery expansion. The site schema uses one
+    row per plant, so keep one stable eia-{Plant ID} row with total MW.
+    """
+    by_id = {}
+    for entry in entries:
+        by_id.setdefault(entry["id"], []).append(entry)
+
+    merged = []
+    status_rank = {"operating": 0, "planned": 1, "under_construction": 2}
+    for plant_id, rows in by_id.items():
+        if len(rows) == 1:
+            merged.append(rows[0])
+            continue
+
+        rows = sorted(rows, key=lambda r: status_rank.get(r.get("status"), 0))
+        statuses = {r.get("status") for r in rows}
+        active_rows = [r for r in rows if r.get("status") != "operating"]
+        base = dict(active_rows[0] if active_rows else rows[0])
+        base["id"] = plant_id
+        base["capacity_mw"] = int(round(sum(r.get("capacity_mw") or 0 for r in rows)))
+        mwh = sum(r.get("capacity_mwh") or 0 for r in rows)
+        if mwh > 0:
+            base["capacity_mwh"] = int(round(mwh))
+        elif "capacity_mwh" in base:
+            del base["capacity_mwh"]
+
+        if "under_construction" in statuses:
+            base["status"] = "under_construction"
+        elif "planned" in statuses:
+            base["status"] = "planned"
+        else:
+            base["status"] = "operating"
+
+        years = [r.get("year_online") for r in (active_rows or rows) if r.get("year_online")]
+        if years:
+            base["year_online"] = max(years)
+        elif "year_online" in base:
+            del base["year_online"]
+        merged.append(base)
+
+    return merged
+
+
 def main():
-    slug = latest_archive_slug()
+    slug, url = latest_workbook()
     print(f"[ingest] using EIA-860M slug: {slug}")
-    xlsx = download(slug)
+    xlsx = download(slug, url)
 
     # Operating BESS
     df_op = pd.read_excel(xlsx, sheet_name="Operating", header=2)
@@ -189,8 +304,8 @@ def main():
     planned = aggregate_plants(pl_bess, status_override=None)
     print(f"[ingest]   -> {len(planned)} unique planned plants")
 
-    eia_entries = operating + planned
-    eia_ids = {e["id"] for e in eia_entries}
+    eia_entries = merge_duplicate_eia_plants(operating + planned)
+    print(f"[ingest]   -> {len(eia_entries)} unique EIA plant entries after cross-sheet merge")
 
     # Merge with existing projects.json — preserve hand-curated, replace EIA-sourced
     with open(PROJECTS_FILE) as f:
@@ -240,7 +355,7 @@ def main():
 
     merged = kept + deduped
     data["projects"] = merged
-    data["last_updated"] = datetime.utcnow().strftime("%Y-%m-%d")
+    data["last_updated"] = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     data.setdefault("notes", "")
     if "EIA-860M" not in data.get("notes", ""):
         data["notes"] += " | BESS entries with id prefix 'eia-' are auto-ingested monthly from EIA-860M; others are hand-curated."
