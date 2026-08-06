@@ -34,6 +34,7 @@
     --op: #22c55e;
     --uc: #f59e0b;
     --pl: #a855f7;
+    --an: #38bdf8;
     --border: #334155;
   }
   * { box-sizing: border-box; }
@@ -235,6 +236,7 @@
           <span class="chip" data-val="operating">Operating</span>
           <span class="chip" data-val="under_construction">Under Construction</span>
           <span class="chip" data-val="planned">Planned</span>
+          <span class="chip" data-val="announced">Announced</span>
         </div>
       </div>
 
@@ -285,6 +287,7 @@
           <div class="row"><span class="dot" style="background: #fff; border-color: var(--op);"></span> Operating</div>
           <div class="row"><span class="dot" style="background: #fff; border-color: var(--uc);"></span> Under Const.</div>
           <div class="row"><span class="dot" style="background: #fff; border-color: var(--pl);"></span> Planned</div>
+          <div class="row"><span class="dot" style="background: #fff; border-color: var(--an); border-style: dashed;"></span> Announced</div>
         </div>
       </div>
     </div>
@@ -379,21 +382,37 @@
   function escapeHtml(s) {
     return String(s).replace(/[&<>"']/g, c => ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;' }[c]));
   }
+  function fmtInvestment(v) {
+    if (v >= 1e9) return '$' + parseFloat((v / 1e9).toFixed(1)) + 'B';
+    if (v >= 1e6) return '$' + parseFloat((v / 1e6).toFixed(1)) + 'M';
+    return '$' + v.toLocaleString();
+  }
+  const ENERGY_LABEL = {
+    grid: 'Grid', onsite_gas: 'On-site gas', nuclear_ppa: 'Nuclear PPA',
+    solar_storage: 'Solar + storage', mixed: 'Mixed',
+  };
   function popupHTML(p) {
     const typeLabel = p.type === 'data_center' ? 'Data Center' : 'BESS';
+    const mwEst = p.capacity_estimated ? ' <span style="color:var(--muted);font-weight:400;">(est.)</span>' : '';
     const mwhRow = p.capacity_mwh
       ? `<div class="popup-row"><span class="k">Energy</span><span class="v">${p.capacity_mwh.toLocaleString()} MWh</span></div>` : '';
     const yearRow = p.year_online
       ? `<div class="popup-row"><span class="k">${p.status === 'operating' ? 'Online' : 'Target'}</span><span class="v">${p.year_online}</span></div>` : '';
+    const investRow = p.investment_usd
+      ? `<div class="popup-row"><span class="k">Investment</span><span class="v">${fmtInvestment(p.investment_usd)}</span></div>` : '';
+    const energyRow = p.energy_source && ENERGY_LABEL[p.energy_source]
+      ? `<div class="popup-row"><span class="k">Power</span><span class="v">${ENERGY_LABEL[p.energy_source]}</span></div>` : '';
     const sourceRow = p.source
       ? `<a class="popup-link" href="${escapeHtml(p.source)}" target="_blank" rel="noopener noreferrer">Source ↗</a>` : '';
     return `
       <div class="popup-title">${escapeHtml(p.name)}</div>
       <div class="popup-sub">${typeLabel} · ${escapeHtml(p.city)}, ${escapeHtml(p.state)}</div>
       <div class="popup-row"><span class="k">Operator</span><span class="v">${escapeHtml(p.operator || '—')}</span></div>
-      <div class="popup-row"><span class="k">Capacity</span><span class="v">${p.capacity_mw ? p.capacity_mw.toLocaleString() + ' MW' : '—'}</span></div>
+      <div class="popup-row"><span class="k">Capacity</span><span class="v">${p.capacity_mw ? p.capacity_mw.toLocaleString() + ' MW' + mwEst : '—'}</span></div>
       ${mwhRow}
       ${yearRow}
+      ${investRow}
+      ${energyRow}
       <div class="popup-row" style="margin-top:6px;">
         <span class="k">Status</span>
         <span class="popup-badge badge-${p.status}">${statusLabel(p.status)}</span>
@@ -405,9 +424,10 @@
     const fill = TYPE_COLOR[p.type] || '#94a3b8';
     const ring = STATUS_RING[p.status] || '#fff';
     const r = radiusFor(p.capacity_mw);
+    const ringStyle = p.status === 'announced' ? 'border-style:dashed;' : '';
     const icon = L.divIcon({
       className: '',
-      html: `<div class="marker-dot" style="width:${r * 2}px;height:${r * 2}px;background:${fill};border-color:${ring};"></div>`,
+      html: `<div class="marker-dot" style="width:${r * 2}px;height:${r * 2}px;background:${fill};border-color:${ring};${ringStyle}"></div>`,
       iconSize: [r * 2, r * 2], iconAnchor: [r, r],
     });
     const marker = L.marker([p.lat, p.lng], { icon });
@@ -712,7 +732,7 @@
       document.querySelectorAll('#filter-type .chip').forEach(c => c.classList.toggle('active', c.dataset.val === ty));
     }
     const stt = qs.get('status');
-    if (['operating', 'under_construction', 'planned'].includes(stt)) {
+    if (['operating', 'under_construction', 'planned', 'announced'].includes(stt)) {
       filters.status = stt;
       document.querySelectorAll('#filter-status .chip').forEach(c => c.classList.toggle('active', c.dataset.val === stt));
     }
