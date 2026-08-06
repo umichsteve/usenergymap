@@ -83,9 +83,10 @@
       "lat": 40.0814,
       "lng": -82.7913,
       "capacity_mw": 1000,
-      "status": "under_construction",
-      "year_online": 2026,
-      "source": "https://www.datacenterknowledge.com/data-center-construction/new-data-center-developments-may-2026"
+      "status": "operating",
+      "year_online": 2025,
+      "source": "https://epoch.ai/data/ai-data-centers/directory/meta-prometheus",
+      "energy_source": "mixed"
     },
     {
       "id": "dc-meta-hyperion",
@@ -96,10 +97,12 @@
       "state": "LA",
       "lat": 32.4209,
       "lng": -91.7515,
-      "capacity_mw": 2000,
+      "capacity_mw": 5000,
       "status": "under_construction",
       "year_online": 2030,
-      "source": "https://datacenters.atmeta.com/richland-parish-data-center/"
+      "source": "https://finance.yahoo.com/technology/ai/articles/meta-expands-louisiana-hyperion-data-120038782.html",
+      "investment_usd": 50000000000,
+      "energy_source": "mixed"
     },
     {
       "id": "dc-google-councilbluffs",
@@ -762,9 +765,11 @@
       "state": "TX",
       "lat": 31.7619,
       "lng": -106.485,
-      "capacity_mw": null,
+      "capacity_mw": 1000,
       "status": "under_construction",
-      "source": "https://datacenters.atmeta.com/us-locations/"
+      "source": "https://about.fb.com/news/2026/07/meta-announces-new-venture-with-blackrock-to-develop-data-center-in-el-paso/",
+      "year_online": 2028,
+      "investment_usd": 14000000000
     },
     {
       "id": "dc-meta-fort-worth",

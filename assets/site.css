@@ -177,6 +177,7 @@ section.alt { background: var(--bg-2); border-top: 1px solid var(--line); border
 .badge.op { background: rgba(22,163,74,0.14); color: #15803d; }
 .badge.uc { background: rgba(217,119,6,0.14); color: #b45309; }
 .badge.pl { background: rgba(147,51,234,0.14); color: #7e22ce; }
+.badge.an { background: rgba(2,132,199,0.12); color: #0369a1; }
 
 /* ---------- CTA band ---------- */
 .cta-band {
