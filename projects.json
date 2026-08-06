@@ -83,9 +83,10 @@
       "lat": 40.0814,
       "lng": -82.7913,
       "capacity_mw": 1000,
-      "status": "under_construction",
-      "year_online": 2026,
-      "source": "https://www.datacenterknowledge.com/data-center-construction/new-data-center-developments-may-2026"
+      "status": "operating",
+      "year_online": 2025,
+      "source": "https://epoch.ai/data/ai-data-centers/directory/meta-prometheus",
+      "energy_source": "mixed"
     },
     {
       "id": "dc-meta-hyperion",
@@ -96,10 +97,12 @@
       "state": "LA",
       "lat": 32.4209,
       "lng": -91.7515,
-      "capacity_mw": 2000,
+      "capacity_mw": 5000,
       "status": "under_construction",
       "year_online": 2030,
-      "source": "https://datacenters.atmeta.com/richland-parish-data-center/"
+      "source": "https://finance.yahoo.com/technology/ai/articles/meta-expands-louisiana-hyperion-data-120038782.html",
+      "investment_usd": 50000000000,
+      "energy_source": "mixed"
     },
     {
       "id": "dc-google-councilbluffs",
@@ -174,30 +177,32 @@
     {
       "id": "dc-vantage-frontier",
       "type": "data_center",
-      "name": "Vantage Frontier",
-      "operator": "Vantage Data Centers",
+      "name": "Stargate Shackelford County (Vantage Frontier)",
+      "operator": "Vantage / Oracle / OpenAI",
       "city": "Shackelford County",
       "state": "TX",
       "lat": 32.7357,
       "lng": -99.3289,
       "capacity_mw": 1400,
-      "status": "planned",
-      "year_online": 2027,
-      "source": "https://www.blackridgeresearch.com/blog/upcoming-largest-data-center-projects-in-united-states-usa"
+      "status": "under_construction",
+      "year_online": 2026,
+      "source": "https://vantage-dc.com/news/vantage-data-centers-unveils-plans-for-frontier-a-25b-mega-campus-in-texas-to-meet-unprecedented-ai-demand/",
+      "investment_usd": 25000000000
     },
     {
       "id": "dc-stargate-abilene",
       "type": "data_center",
-      "name": "Stargate (Oracle / Crusoe)",
+      "name": "Stargate Abilene",
       "operator": "Oracle / Crusoe / OpenAI",
       "city": "Abilene",
       "state": "TX",
       "lat": 32.4487,
       "lng": -99.7331,
       "capacity_mw": 1200,
-      "status": "under_construction",
-      "year_online": 2026,
-      "source": "https://www.datacenterknowledge.com/data-center-construction/new-data-center-developments-may-2026"
+      "status": "operating",
+      "year_online": 2025,
+      "source": "https://www.siliconreport.com/stargate-abilene-flagship-data-center-profile-d90595dc",
+      "energy_source": "mixed"
     },
     {
       "id": "dc-aligned-caprock",
@@ -230,8 +235,8 @@
     {
       "id": "dc-vantage-lighthouse",
       "type": "data_center",
-      "name": "Vantage Lighthouse",
-      "operator": "Vantage Data Centers",
+      "name": "Stargate Port Washington (Vantage Lighthouse)",
+      "operator": "Vantage / Oracle / OpenAI",
       "city": "Port Washington",
       "state": "WI",
       "lat": 43.3872,
@@ -239,7 +244,8 @@
       "capacity_mw": 902,
       "status": "under_construction",
       "year_online": 2028,
-      "source": "https://www.blackridgeresearch.com/blog/upcoming-largest-data-center-projects-in-united-states-usa"
+      "source": "https://dailyreporter.com/2026/01/22/turner-mccarthy-port-washington-data-center/",
+      "investment_usd": 15000000000
     },
     {
       "id": "dc-switch-citadel",
@@ -762,9 +768,11 @@
       "state": "TX",
       "lat": 31.7619,
       "lng": -106.485,
-      "capacity_mw": null,
+      "capacity_mw": 1000,
       "status": "under_construction",
-      "source": "https://datacenters.atmeta.com/us-locations/"
+      "source": "https://about.fb.com/news/2026/07/meta-announces-new-venture-with-blackrock-to-develop-data-center-in-el-paso/",
+      "year_online": 2028,
+      "investment_usd": 14000000000
     },
     {
       "id": "dc-meta-fort-worth",
@@ -1099,16 +1107,17 @@
     {
       "id": "dc-aws-newcarlisle",
       "type": "data_center",
-      "name": "AWS New Carlisle",
+      "name": "AWS Project Rainier (New Carlisle)",
       "operator": "Amazon Web Services",
       "city": "New Carlisle",
       "state": "IN",
       "lat": 41.7022,
       "lng": -86.5083,
-      "capacity_mw": 600,
-      "status": "under_construction",
-      "year_online": 2027,
-      "source": "https://www.datacenterknowledge.com/data-center-construction/new-data-center-developments-may-2026"
+      "capacity_mw": 2200,
+      "status": "operating",
+      "year_online": 2025,
+      "source": "https://sustainability.aboutamazon.com/stories/inside-amazons-approach-to-data-center-sustainability",
+      "investment_usd": 11000000000
     },
     {
       "id": "dc-google-lenoir",
@@ -1511,10 +1520,12 @@
       "state": "TN",
       "lat": 35.0567,
       "lng": -90.0668,
-      "capacity_mw": 150,
+      "capacity_mw": 340,
       "status": "operating",
       "year_online": 2024,
-      "source": "https://x.ai/memphis"
+      "source": "https://epoch.ai/data/ai-data-centers/directory/colossus-1",
+      "capacity_estimated": true,
+      "energy_source": "mixed"
     },
     {
       "id": "dc-xai-colossus2",
@@ -1526,9 +1537,11 @@
       "lat": 34.9889,
       "lng": -90.0126,
       "capacity_mw": 1000,
-      "status": "under_construction",
-      "year_online": 2026,
-      "source": "https://newsletter.semianalysis.com/p/xais-colossus-2-first-gigawatt-datacenter"
+      "status": "operating",
+      "year_online": 2025,
+      "source": "https://epoch.ai/data/ai-data-centers/directory/colossus-2",
+      "capacity_estimated": true,
+      "investment_usd": 20000000000
     },
     {
       "id": "dc-crusoe-tulsa",
@@ -22772,6 +22785,66 @@
       "status": "planned",
       "source": "https://www.eia.gov/electricity/data/eia860m/",
       "year_online": 2027
+    },
+    {
+      "id": "dc-stargate-milam",
+      "type": "data_center",
+      "name": "Stargate Milam County",
+      "operator": "OpenAI / SB Energy",
+      "city": "Milam County",
+      "state": "TX",
+      "lat": 30.79,
+      "lng": -96.98,
+      "capacity_mw": 1200,
+      "capacity_estimated": true,
+      "status": "under_construction",
+      "year_online": 2028,
+      "source": "https://epoch.ai/publications/openai-stargate-where-the-us-sites-stand"
+    },
+    {
+      "id": "dc-stargate-dona-ana",
+      "type": "data_center",
+      "name": "Stargate Do\u00f1a Ana County (Project Jupiter)",
+      "operator": "OpenAI / Oracle / STACK",
+      "city": "Do\u00f1a Ana County",
+      "state": "NM",
+      "lat": 32.35,
+      "lng": -106.83,
+      "capacity_mw": 1000,
+      "capacity_estimated": true,
+      "status": "under_construction",
+      "year_online": 2028,
+      "source": "https://www.stackinfra.com/about/news-press/press-releases/stack-infrastructure-delivers-digital-infrastructure-for-data-center-campus-in-new-mexico/"
+    },
+    {
+      "id": "dc-stargate-saline",
+      "type": "data_center",
+      "name": "Stargate Saline Township (Related Digital)",
+      "operator": "Related Digital / Oracle / OpenAI",
+      "city": "Saline Township",
+      "state": "MI",
+      "lat": 42.17,
+      "lng": -83.78,
+      "capacity_mw": 1400,
+      "capacity_estimated": true,
+      "status": "under_construction",
+      "year_online": 2028,
+      "source": "https://epoch.ai/publications/openai-stargate-where-the-us-sites-stand"
+    },
+    {
+      "id": "dc-msft-fairwater-wi",
+      "type": "data_center",
+      "name": "Microsoft Fairwater (Mount Pleasant)",
+      "operator": "Microsoft",
+      "city": "Mount Pleasant",
+      "state": "WI",
+      "lat": 42.71,
+      "lng": -87.89,
+      "capacity_mw": 369,
+      "capacity_estimated": true,
+      "status": "operating",
+      "year_online": 2026,
+      "source": "https://epoch.ai/data/ai-data-centers/directory/microsoft-fairwater-wisconsin"
     }
   ]
 }

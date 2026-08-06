@@ -66,10 +66,30 @@
         <tbody>
           <tr><td><span class="badge op">Operating</span></td><td>The project (or a phase of it) is energized and in service.</td></tr>
           <tr><td><span class="badge uc">Under construction</span></td><td>Construction has begun but the site is not yet fully in service.</td></tr>
-          <tr><td><span class="badge pl">Planned</span></td><td>Announced or permitted with a target year, but construction has not started.</td></tr>
+          <tr><td><span class="badge pl">Planned</span></td><td>Permitted or in active development with a target year, but construction has not started.</td></tr>
+          <tr><td><span class="badge an">Announced</span></td><td>Publicly announced, but earlier-stage than Planned: site work has not begun and key permits, agreements, or financing may still be pending.</td></tr>
         </tbody>
       </table>
-      <p>Capacity is reported in megawatts (MW) of power. For multi-phase campuses, capacity reflects the best available figure for the scope described by the source; large AI training clusters are evolving quickly and figures may lag announcements.</p>
+      <p>Capacity is reported in megawatts (MW) of power. Large AI training clusters are evolving quickly and figures may lag announcements.</p>
+
+      <h2>Multi-phase campuses</h2>
+      <p>Hyperscale campuses are built in phases over years, so a single row has to summarize a moving target. Two conventions keep that honest:</p>
+      <ul>
+        <li><strong>Capacity is the full announced campus buildout.</strong> If an operator has committed to a 5&nbsp;GW campus, the entry says 5,000 MW even while only the first phase is energized.</li>
+        <li><strong>Status reflects the most advanced phase.</strong> A campus is <em>Operating</em> as soon as any phase is live, even if later phases are still under construction.</li>
+      </ul>
+      <p>Where the capacity figure is an estimate — or the buildout it describes is incomplete or in flux — the entry carries a <code>capacity_estimated: true</code> flag.</p>
+
+      <h2>Optional fields</h2>
+      <p>Hand-curated entries may carry three optional fields when the information is publicly reported; they are omitted when unknown:</p>
+      <table class="deftable">
+        <thead><tr><th>Field</th><th>Meaning</th></tr></thead>
+        <tbody>
+          <tr><td><code>investment_usd</code></td><td>Total announced investment in US dollars, from the most recent public figure.</td></tr>
+          <tr><td><code>energy_source</code></td><td>How the project is powered: <code>grid</code>, <code>onsite_gas</code>, <code>nuclear_ppa</code>, <code>solar_storage</code>, or <code>mixed</code>.</td></tr>
+          <tr><td><code>capacity_estimated</code></td><td>The MW figure is an estimate, or describes a buildout that is not yet complete.</td></tr>
+        </tbody>
+      </table>
 
       <h2>Deduplication</h2>
       <p>Because batteries are auto-ingested and data centers are hand-entered, an automated battery entry can overlap a curated one. The ingest skips an EIA entry when it falls within ~10&nbsp;km of a hand-curated entry, or matches one strongly by name in the same state. Hand-curated entries are always preserved.</p>
