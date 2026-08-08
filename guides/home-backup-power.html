@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Home Backup Power in the Data-Center Era — A Practical Guide — US Energy Map</title>
+<meta name="description" content="Rising grid load is changing the outage math for households. A spec-first guide to sizing home battery backup around the Jackery Explorer 5000 Plus — from 5 kWh to 60 kWh." />
+<link rel="icon" type="image/svg+xml" href="/assets/mark-square.svg" />
+<link rel="canonical" href="https://usenergymap.com/guides/home-backup-power" />
+<meta property="og:type" content="article" />
+<meta property="og:site_name" content="US Energy Map" />
+<meta property="og:title" content="Home Backup Power in the Data-Center Era — A Practical Guide" />
+<meta property="og:description" content="What rising grid load means for outage exposure at your meter, and how to size a battery backup that actually covers your loads." />
+<meta property="og:url" content="https://usenergymap.com/guides/home-backup-power" />
+<meta property="og:image" content="https://usenergymap.com/assets/og.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:image" content="https://usenergymap.com/assets/og.png" />
+<link rel="stylesheet" href="/assets/site.css" />
+<script src="/assets/analytics.js"></script>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="/"><img src="/assets/mark-square.svg" alt="" /> US Energy Map</a>
+    <div class="nav-links">
+      <a href="/map">Map</a>
+      <a href="/explore">Explore</a>
+      <a href="/data">Data</a>
+      <a href="/methodology">Methodology</a>
+      <a href="/about">About</a>
+      <a class="cta" href="/map">Open the map →</a>
+    </div>
+  </div>
+</nav>
+
+<section>
+  <div class="wrap">
+    <article class="prose">
+      <p class="kicker">Guide</p>
+      <h1>Home backup power for a grid under new pressure</h1>
+      <p class="sub">What rising electricity demand means for outage exposure at your meter — and how to size a battery backup that actually covers your loads.</p>
+
+      <div class="callout" style="border-left-color:#64748b;">
+        <p style="font-size:14px;color:#64748b;">This page contains affiliate links. As an Amazon Associate, US Energy Map earns from qualifying purchases.</p>
+      </div>
+
+      <h2>The grid is being asked to do more</h2>
+      <p>For roughly two decades, U.S. electricity demand barely moved. That era is over. Federal EIA short-term outlooks now project record national consumption, driven by three overlapping forces: the data center buildout, the electrification of heating and transport, and industrial reshoring.</p>
+      <p>The data center wave is the piece we track most closely on this site. Our dataset currently covers <strong>153 data center campuses totaling roughly 51,000 MW</strong> of capacity — and across all project types, <strong>516 projects representing about 95,000 MW are still in the pipeline</strong> (under construction, planned, or announced). A single hyperscale AI campus can draw as much power as a mid-sized city, and utilities are being asked to interconnect dozens of them on timelines the grid wasn't planned around. You can see where this is landing on <a href="/map">the map</a>.</p>
+      <p>Reliability planners have taken notice. NERC's recent long-term reliability assessments flag a growing share of North America at elevated risk of electricity shortfalls during extreme conditions, with demand growth outpacing the pace of new firm supply in several regions.</p>
+
+      <h2>What that means at your meter</h2>
+      <p>Some honesty first: a data center three counties away does not cause the outage on your street. Most outages remain local distribution events — storms, vegetation, equipment failure. But the household outage math is shifting in three ways:</p>
+      <ul>
+        <li><strong>Tighter reserve margins.</strong> When regional demand grows faster than firm supply, grid operators lean more often on emergency measures during heat waves and cold snaps — including, in the worst case, rolling outages.</li>
+        <li><strong>More stress on aging infrastructure.</strong> Load growth pushes more power through transmission and distribution equipment that in much of the country is decades old, while extreme weather events keep testing it.</li>
+        <li><strong>Higher stakes per outage.</strong> Electrified households feel outages harder. If your heat is a heat pump, your car is an EV, your job is remote, or someone in the house depends on powered medical equipment, the cost of a dark day has gone up even if outage frequency hasn't.</li>
+      </ul>
+
+      <h2>Sizing backup: the two numbers that matter</h2>
+      <p>Backup sizing comes down to two figures, and confusing them is the most common mistake:</p>
+      <ul>
+        <li><strong>Power (watts)</strong> — how much the system can deliver at once. This must cover everything you want running simultaneously, including motor start-up surges. It sizes the inverter.</li>
+        <li><strong>Energy (watt-hours)</strong> — how long it can keep delivering. This sizes the battery.</li>
+      </ul>
+      <p>Typical household loads, for orientation:</p>
+      <table class="deftable">
+        <thead><tr><th>Load</th><th>Running draw</th><th>Notes</th></tr></thead>
+        <tbody>
+          <tr><td>Refrigerator</td><td>100–200 W</td><td>Cycles on and off; surges to 800–1,200 W at compressor start</td></tr>
+          <tr><td>Gas furnace blower</td><td>400–700 W</td><td>The furnace burns gas, but the fan is electric</td></tr>
+          <tr><td>Sump pump</td><td>800–1,500 W</td><td>Often the load that matters most in a storm</td></tr>
+          <tr><td>Well pump</td><td>1,000–2,000 W</td><td>Usually 240 V — many portable units can't run it at all</td></tr>
+          <tr><td>Window AC</td><td>500–1,500 W</td><td>Central AC condensers are 240 V and much larger</td></tr>
+          <tr><td>Wi-Fi router + laptop</td><td>50–100 W</td><td>Remote work essentials are cheap to run</td></tr>
+          <tr><td>CPAP machine</td><td>30–60 W</td><td>Small load, high priority</td></tr>
+          <tr><td>LED lights</td><td>~10 W each</td><td>Light the whole house for less than one incandescent bulb</td></tr>
+        </tbody>
+      </table>
+      <p>Add up what must run at the same time — that's your minimum inverter wattage. Multiply your average combined draw by the hours you want to ride through — that's your minimum battery capacity. One warning that saves a lot of disappointment: <strong>resistive heating loads</strong> (space heaters, electric ranges, electric water heaters) draw 1,000–5,000 W continuously and will drain any battery quickly. Plan around them, not through them.</p>
+
+      <h2>The base unit: Jackery Explorer 5000 Plus</h2>
+      <p>This guide is built around the Jackery Explorer 5000 Plus because its spec sheet lines up unusually well with the whole-home problem: enough surge and continuous power to start real appliances, 240 V output for the loads that need it, and a modular battery architecture that separates "how much power" from "how long."</p>
+      <div class="statbar" style="margin:0 0 26px;">
+        <div class="stat"><div class="num dc">5,040</div><div class="lbl">Wh capacity (base)</div></div>
+        <div class="stat"><div class="num mw">7,200</div><div class="lbl">W AC output</div></div>
+        <div class="stat"><div class="num bess">120/240</div><div class="lbl">V output</div></div>
+        <div class="stat"><div class="num st">60</div><div class="lbl">kWh max, expanded</div></div>
+      </div>
+      <table class="deftable">
+        <thead><tr><th>Spec</th><th>Jackery Explorer 5000 Plus</th></tr></thead>
+        <tbody>
+          <tr><td>Battery capacity</td><td>5,040 Wh</td></tr>
+          <tr><td>Chemistry</td><td>LiFePO4 (lithium iron phosphate)</td></tr>
+          <tr><td>AC output</td><td>7,200 W</td></tr>
+          <tr><td>Output voltage</td><td>120 V / 240 V</td></tr>
+          <tr><td>Expandable capacity</td><td>Up to 60 kWh with additional batteries</td></tr>
+          <tr><td>List price</td><td>$3,698.99 (at time of writing, August 2026)</td></tr>
+        </tbody>
+      </table>
+      <p>Reading the specs against the table above:</p>
+      <ul>
+        <li><strong>7,200 W of AC output</strong> covers a refrigerator, furnace blower, sump pump, lights, and electronics running together, with headroom for compressor and pump start-up surges that smaller stations can't absorb.</li>
+        <li><strong>240 V output</strong> is the dividing line between "extension-cord backup" and "runs the well pump." Most portable power stations are 120 V only; this one delivers split-phase 240 V, which is what well pumps and other double-pole loads in a U.S. panel require.</li>
+        <li><strong>LiFePO4 chemistry</strong> trades some weight against the NMC cells in older portable stations in exchange for substantially longer cycle life and better thermal stability — relevant properties for a unit that spends most of its life sitting at high charge waiting for an outage.</li>
+        <li><strong>5,040 Wh of energy</strong> is the honest constraint. A refrigerator averaging 150 W runs about 33 hours on paper; add a cycling furnace blower and communications and a realistic winter essentials load of ~450 W runs about 11 hours, before inverter losses (real-world figures land 10–15% lower). The base unit rides through a serious overnight outage. Multi-day events are what the expansion path below is for.</li>
+      </ul>
+      <p><a class="btn btn-primary" href="https://www.amazon.com/dp/B0DFGLG35L?tag=usenergymap-20" target="_blank" rel="sponsored noopener">Jackery Explorer 5000 Plus on Amazon →</a></p>
+
+      <h2>The expansion path: from 5 kWh toward whole-home</h2>
+      <p>The reason to pick a modular system over a sealed all-in-one is that you can buy the inverter once and grow the energy to match your actual outages. The <strong>Jackery Battery Pack 5000 Plus</strong> is the expansion unit: each pack adds 5,040 Wh to the same system, no additional inverter or wiring, scaling the Explorer 5000 Plus from its base 5 kWh up to 60 kWh.</p>
+      <p>For scale: the average U.S. home consumes around 30 kWh per day. A fully expanded 60 kWh system is therefore roughly two days of <em>normal, unrestricted</em> consumption — or considerably longer running essentials only. Somewhere between one and three packs, a battery stops being an emergency bridge and starts being genuine whole-home backup.</p>
+      <p>A sensible sequence: run the base unit through one real outage (or a deliberate weekend test with the main breaker off), meter what your essential loads actually draw, then add packs to cover the outage duration you're planning for — a number worth choosing deliberately if your region shows up in the elevated-risk sections of NERC's assessments.</p>
+      <p><a class="btn btn-primary" href="https://www.amazon.com/dp/B0DKJDRDDK?tag=usenergymap-20" target="_blank" rel="sponsored noopener">Jackery Battery Pack 5000 Plus on Amazon →</a></p>
+      <p>Jackery also sells the Explorer 5000 Plus bundled with a transfer switch for 240 V whole-home cutover — the configuration where the system is wired to your electrical panel and takes over selected circuits automatically. If you want panel-integrated backup rather than extension cords, that bundle plus a licensed electrician is the path to discuss.</p>
+
+      <h2>Where this fits — and where it doesn't</h2>
+      <table class="deftable">
+        <thead><tr><th>Option</th><th>Strengths</th><th>Limits</th></tr></thead>
+        <tbody>
+          <tr><td>Portable battery system<br />(this guide)</td><td>Silent, no fuel, safe indoors, no permits for cord-connected use, usable for off-grid work and travel between outages</td><td>Finite energy unless recharged (generator or solar input); meaningful up-front cost per kWh</td></tr>
+          <tr><td>Standby generator</td><td>Runs indefinitely on natural gas or propane; established whole-home solution</td><td>Fuel dependency, noise, exhaust, maintenance, permits and installation; useless indoors</td></tr>
+          <tr><td>Rooftop solar + storage</td><td>Permanent, self-recharging, offsets daily bills</td><td>Largest cost, permitting and interconnection timelines, tied to the house</td></tr>
+        </tbody>
+      </table>
+      <p>These aren't mutually exclusive — a battery system pairs naturally with either of the others as the instant-on, indoor-safe layer.</p>
+
+      <div class="callout">
+        <p><strong>Safety, non-negotiable:</strong> never backfeed a generator or battery inverter into a wall outlet. Powering household circuits through your electrical panel requires a transfer switch or interlock installed by a licensed electrician — it protects your equipment, your home, and the line workers restoring your neighborhood.</p>
+      </div>
+
+      <h2>The bigger picture</h2>
+      <p>Backup power is the household-scale answer to the same question this site tracks at grid scale: how do you keep the lights on while demand outruns the pace of new supply? The utility-scale version of that answer — over 1,400 battery storage sites, 122,000 MW of projects, growing monthly — is on the map.</p>
+      <p style="margin-top:36px;"><a class="btn btn-primary" href="/map">See what's being built near you →</a></p>
+    </article>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div>
+      <a class="brand" href="/"><img src="/assets/mark-square.svg" alt="" /> US Energy Map</a>
+      <p class="tag">An independent, public tracker of the data center and battery storage buildout across North America.</p>
+    </div>
+    <div class="footer-cols">
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <a href="/map">Interactive map</a>
+        <a href="/explore">By state &amp; operator</a>
+        <a href="/data">Get the dataset</a>
+        <a href="/methodology">Methodology</a>
+        <a href="/guides/home-backup-power">Home backup power guide</a>
+        <a href="/about">About</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+      <div class="footer-col">
+        <h4>Get involved</h4>
+        <a href="mailto:hello@grandroma.com?subject=Sponsoring%20US%20Energy%20Map">Sponsor this map</a>
+        <a href="https://grandroma.com" target="_blank" rel="noopener">Suggest a project</a>
+        <a href="https://www.eia.gov/electricity/data/eia860m/" target="_blank" rel="noopener">Data: EIA-860M</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>&copy; <span id="year">2026</span> US Energy Map. Data for informational purposes only.</span>
+    <span>Not affiliated with any operator or government agency.</span>
+  </div>
+</footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+
+</body>
+</html>
