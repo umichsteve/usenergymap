@@ -93,6 +93,7 @@ FOOTER = """<footer class="footer">
         <a href="/explore">By state &amp; operator</a>
         <a href="/data">Get the dataset</a>
         <a href="/methodology">Methodology</a>
+        <a href="/guides/home-backup-power">Home backup power guide</a>
         <a href="/about">About</a>
         <a href="/privacy">Privacy</a>
       </div>
@@ -165,7 +166,7 @@ def write(path, content):
 def main():
     data = json.load(open(os.path.join(ROOT, "projects.json")))
     projects = data.get("projects", [])
-    urls = ["/", "/map", "/explore", "/data", "/methodology", "/about"]
+    urls = ["/", "/map", "/explore", "/data", "/methodology", "/about", "/guides/home-backup-power"]
 
     # ---- State pages ----
     by_state = {}
