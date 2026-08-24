@@ -44,6 +44,13 @@ module.exports = async (req, res) => {
       customer_creation: "always",
     });
 
+    // A payment response must never be reused. This endpoint is POST-only today
+    // (so no CDN would cache it anyway), but launchdmanager.app/api/checkout was
+    // silently cached for 80 days in 2026 after a refactor left a GET path open,
+    // sending every buyer to one dead Stripe session. Set the header regardless.
+    res.setHeader("Cache-Control", "no-store, no-cache, must-revalidate, max-age=0");
+    res.setHeader("CDN-Cache-Control", "no-store");
+    res.setHeader("Vercel-CDN-Cache-Control", "no-store");
     return res.status(200).json({ url: session.url });
   } catch (err) {
     console.error("create-checkout error:", err);
