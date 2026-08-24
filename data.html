@@ -58,7 +58,11 @@
         </div>
         <div style="text-align:right;">
           <div style="font-size:34px;font-weight:800;color:#fff;line-height:1;">$149.99</div>
-          <button class="btn btn-primary" id="buy" style="margin-top:10px;">Buy &amp; download →</button>
+          <input id="buy-email" type="email" inputmode="email" autocomplete="email"
+                 placeholder="you@company.com"
+                 aria-label="Email for your receipt and download link"
+                 style="margin-top:10px;width:100%;max-width:262px;padding:9px 11px;border-radius:6px;border:1px solid #334155;background:#0f172a;color:#fff;font-size:14px;" />
+          <button class="btn btn-primary" id="buy" style="margin-top:8px;">Buy &amp; download →</button>
           <div id="buy-msg" style="font-size:12px;color:#94a3b8;margin-top:8px;min-height:16px;"></div>
         </div>
       </div>
@@ -124,10 +128,25 @@
   document.getElementById('year').textContent = new Date().getFullYear();
   const buy = document.getElementById('buy');
   const msg = document.getElementById('buy-msg');
+  const emailEl = document.getElementById('buy-email');
+  const validEmail = (v) => /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v);
+  emailEl.addEventListener('keydown', (e) => { if (e.key === 'Enter') buy.click(); });
   buy.addEventListener('click', async () => {
+    // Capture the address BEFORE the redirect. An abandoned $149.99 checkout with
+    // no email is an unreachable lead — six of seven were lost that way in 2026.
+    const email = (emailEl.value || '').trim();
+    if (!validEmail(email)) {
+      msg.textContent = 'Enter the email your receipt and download link should go to.';
+      emailEl.focus();
+      return;
+    }
     buy.disabled = true; msg.textContent = 'Starting secure checkout…';
     try {
-      const res = await fetch('/api/create-checkout', { method: 'POST' });
+      const res = await fetch('/api/create-checkout', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email }),
+      });
       const data = await res.json();
       if (res.ok && data.url) { window.location = data.url; return; }
       msg.textContent = data.error || 'Checkout is not available yet — check back soon.';

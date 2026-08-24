@@ -24,9 +24,16 @@ module.exports = async (req, res) => {
     const host = req.headers["x-forwarded-host"] || req.headers.host || "usenergymap.com";
     const origin = `${proto}://${host}`;
 
+    const email = typeof (req.body && req.body.email) === "string" ? req.body.email.trim() : "";
+
     const session = await stripe.checkout.sessions.create({
       mode: "payment",
       payment_method_types: ["card"],
+      // Buyers see this on their card statement. Without it the charge bills as the
+      // account default, which is another product's domain entirely.
+      payment_intent_data: { statement_descriptor_suffix: "ENERGYMAP" },
+      // Known before the redirect, so an abandoned cart is still a lead.
+      ...(email ? { customer_email: email } : {}),
       line_items: [{
         quantity: 1,
         price_data: {
