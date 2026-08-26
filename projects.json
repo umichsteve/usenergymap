@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "last_updated": "2026-08-05",
+  "last_updated": "2026-08-26",
   "notes": "Coordinates approximate to city/county centroid where exact site is not publicly disclosed. Capacity in MW (power). For BESS, capacity_mwh is duration when known. Status: operating | under_construction | planned | announced. | BESS entries with id prefix 'eia-' are auto-ingested monthly from EIA-860M; others are hand-curated.",
   "projects": [
     {
@@ -3500,6 +3500,66 @@
       "status": "planned",
       "year_online": 2027,
       "source": "https://www.aypa.com/"
+    },
+    {
+      "id": "dc-stargate-milam",
+      "type": "data_center",
+      "name": "Stargate Milam County",
+      "operator": "OpenAI / SB Energy",
+      "city": "Milam County",
+      "state": "TX",
+      "lat": 30.79,
+      "lng": -96.98,
+      "capacity_mw": 1200,
+      "capacity_estimated": true,
+      "status": "under_construction",
+      "year_online": 2028,
+      "source": "https://epoch.ai/publications/openai-stargate-where-the-us-sites-stand"
+    },
+    {
+      "id": "dc-stargate-dona-ana",
+      "type": "data_center",
+      "name": "Stargate Do\u00f1a Ana County (Project Jupiter)",
+      "operator": "OpenAI / Oracle / STACK",
+      "city": "Do\u00f1a Ana County",
+      "state": "NM",
+      "lat": 32.35,
+      "lng": -106.83,
+      "capacity_mw": 1000,
+      "capacity_estimated": true,
+      "status": "under_construction",
+      "year_online": 2028,
+      "source": "https://www.stackinfra.com/about/news-press/press-releases/stack-infrastructure-delivers-digital-infrastructure-for-data-center-campus-in-new-mexico/"
+    },
+    {
+      "id": "dc-stargate-saline",
+      "type": "data_center",
+      "name": "Stargate Saline Township (Related Digital)",
+      "operator": "Related Digital / Oracle / OpenAI",
+      "city": "Saline Township",
+      "state": "MI",
+      "lat": 42.17,
+      "lng": -83.78,
+      "capacity_mw": 1400,
+      "capacity_estimated": true,
+      "status": "under_construction",
+      "year_online": 2028,
+      "source": "https://epoch.ai/publications/openai-stargate-where-the-us-sites-stand"
+    },
+    {
+      "id": "dc-msft-fairwater-wi",
+      "type": "data_center",
+      "name": "Microsoft Fairwater (Mount Pleasant)",
+      "operator": "Microsoft",
+      "city": "Mount Pleasant",
+      "state": "WI",
+      "lat": 42.71,
+      "lng": -87.89,
+      "capacity_mw": 369,
+      "capacity_estimated": true,
+      "status": "operating",
+      "year_online": 2026,
+      "source": "https://epoch.ai/data/ai-data-centers/directory/microsoft-fairwater-wisconsin"
     },
     {
       "id": "eia-389",
@@ -22785,66 +22845,6 @@
       "status": "planned",
       "source": "https://www.eia.gov/electricity/data/eia860m/",
       "year_online": 2027
-    },
-    {
-      "id": "dc-stargate-milam",
-      "type": "data_center",
-      "name": "Stargate Milam County",
-      "operator": "OpenAI / SB Energy",
-      "city": "Milam County",
-      "state": "TX",
-      "lat": 30.79,
-      "lng": -96.98,
-      "capacity_mw": 1200,
-      "capacity_estimated": true,
-      "status": "under_construction",
-      "year_online": 2028,
-      "source": "https://epoch.ai/publications/openai-stargate-where-the-us-sites-stand"
-    },
-    {
-      "id": "dc-stargate-dona-ana",
-      "type": "data_center",
-      "name": "Stargate Do\u00f1a Ana County (Project Jupiter)",
-      "operator": "OpenAI / Oracle / STACK",
-      "city": "Do\u00f1a Ana County",
-      "state": "NM",
-      "lat": 32.35,
-      "lng": -106.83,
-      "capacity_mw": 1000,
-      "capacity_estimated": true,
-      "status": "under_construction",
-      "year_online": 2028,
-      "source": "https://www.stackinfra.com/about/news-press/press-releases/stack-infrastructure-delivers-digital-infrastructure-for-data-center-campus-in-new-mexico/"
-    },
-    {
-      "id": "dc-stargate-saline",
-      "type": "data_center",
-      "name": "Stargate Saline Township (Related Digital)",
-      "operator": "Related Digital / Oracle / OpenAI",
-      "city": "Saline Township",
-      "state": "MI",
-      "lat": 42.17,
-      "lng": -83.78,
-      "capacity_mw": 1400,
-      "capacity_estimated": true,
-      "status": "under_construction",
-      "year_online": 2028,
-      "source": "https://epoch.ai/publications/openai-stargate-where-the-us-sites-stand"
-    },
-    {
-      "id": "dc-msft-fairwater-wi",
-      "type": "data_center",
-      "name": "Microsoft Fairwater (Mount Pleasant)",
-      "operator": "Microsoft",
-      "city": "Mount Pleasant",
-      "state": "WI",
-      "lat": 42.71,
-      "lng": -87.89,
-      "capacity_mw": 369,
-      "capacity_estimated": true,
-      "status": "operating",
-      "year_online": 2026,
-      "source": "https://epoch.ai/data/ai-data-centers/directory/microsoft-fairwater-wisconsin"
     }
   ]
 }
