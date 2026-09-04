@@ -2,22 +2,22 @@
  "schema_version": "1.0",
  "generated": "2026-09-04",
  "summary": {
-  "from": "2026-08-05",
-  "to": "2026-08-26",
-  "added": 0,
-  "removed": 0,
-  "changed": 0,
-  "status_changes": 0,
-  "capacity_changes": 0,
-  "newly_operating": 0,
-  "added_mw": 0,
-  "total_projects": 1563,
-  "total_mw": 173227,
-  "net_mw": 0,
+  "from": "2026-08-26",
+  "to": "2026-09-04",
+  "added": 36,
+  "removed": 2,
+  "changed": 50,
+  "status_changes": 22,
+  "capacity_changes": 25,
+  "newly_operating": 16,
+  "added_mw": 4211,
+  "total_projects": 1597,
+  "total_mw": 177498,
+  "net_mw": 4271,
   "by_type": {
    "bess": {
-    "added": 0,
-    "changed": 0
+    "added": 36,
+    "changed": 50
    },
    "data_center": {
     "added": 0,
@@ -26,10 +26,140 @@
   }
  },
  "highlights": {
-  "top_added": [],
-  "newly_operating": []
+  "top_added": [
+   {
+    "name": "Tehuacana Creek Solar",
+    "type": "bess",
+    "state": "TX",
+    "capacity_mw": 418,
+    "operator": "Parliament Energy Holdings LLC"
+   },
+   {
+    "name": "Sierra Solar Hybrid",
+    "type": "bess",
+    "state": "NV",
+    "capacity_mw": 400,
+    "operator": "Sierra Pacific Power Co"
+   },
+   {
+    "name": "Rowdy Creek Solar and BESS",
+    "type": "bess",
+    "state": "TX",
+    "capacity_mw": 350,
+    "operator": "Parliament Energy Holdings LLC"
+   },
+   {
+    "name": "Banita Creek- Spindlepop Solar",
+    "type": "bess",
+    "state": "TX",
+    "capacity_mw": 303,
+    "operator": "Parliament Energy Holdings LLC"
+   },
+   {
+    "name": "O'Bannion Energy Storage",
+    "type": "bess",
+    "state": "TX",
+    "capacity_mw": 300,
+    "operator": "O'Bannion Energy Storage, LLC"
+   },
+   {
+    "name": "Royal Slope",
+    "type": "bess",
+    "state": "WA",
+    "capacity_mw": 260,
+    "operator": "Royal Slope Solar LLC"
+   },
+   {
+    "name": "Steel River Solar Phase 1",
+    "type": "bess",
+    "state": "AR",
+    "capacity_mw": 250,
+    "operator": "Cypress Creek Renewables"
+   },
+   {
+    "name": "Steel River Solar Phase 2",
+    "type": "bess",
+    "state": "AR",
+    "capacity_mw": 250,
+    "operator": "Cypress Creek Renewables"
+   }
+  ],
+  "newly_operating": [
+   {
+    "name": "SAHARA BESS (SOHO BESS)",
+    "type": "bess",
+    "state": "TX",
+    "capacity_mw": 409
+   },
+   {
+    "name": "Destiny Storage",
+    "type": "bess",
+    "state": "TX",
+    "capacity_mw": 200
+   },
+   {
+    "name": "Crowned Heron 1 - Storage, LLC",
+    "type": "bess",
+    "state": "TX",
+    "capacity_mw": 150
+   },
+   {
+    "name": "Headcamp BESS",
+    "type": "bess",
+    "state": "TX",
+    "capacity_mw": 150
+   },
+   {
+    "name": "Pastoria Power Bank",
+    "type": "bess",
+    "state": "CA",
+    "capacity_mw": 80
+   },
+   {
+    "name": "Gaia Hybrid",
+    "type": "bess",
+    "state": "TX",
+    "capacity_mw": 77
+   },
+   {
+    "name": "Aratina Solar Center 1A",
+    "type": "bess",
+    "state": "CA",
+    "capacity_mw": 75
+   },
+   {
+    "name": "Deer Creek Hybrid",
+    "type": "bess",
+    "state": "CA",
+    "capacity_mw": 51
+   }
+  ]
  },
  "history": [
+  {
+   "from": "2026-08-05",
+   "to": "2026-08-26",
+   "added": 0,
+   "removed": 0,
+   "changed": 0,
+   "status_changes": 0,
+   "capacity_changes": 0,
+   "newly_operating": 0,
+   "added_mw": 0,
+   "total_projects": 1563,
+   "total_mw": 173227,
+   "net_mw": 0,
+   "by_type": {
+    "bess": {
+     "added": 0,
+     "changed": 0
+    },
+    "data_center": {
+     "added": 0,
+     "changed": 0
+    }
+   }
+  },
   {
    "from": "2026-06-25",
    "to": "2026-08-05",
@@ -55,5 +185,1585 @@
    }
   }
  ],
- "changes": []
+ "changes": [
+  {
+   "kind": "added",
+   "id": "eia-65820",
+   "name": "Ocotillo Wells",
+   "type": "bess",
+   "operator": "Conductive Power",
+   "city": "San Diego",
+   "state": "CA",
+   "status": "operating",
+   "capacity_mw": 50,
+   "capacity_mwh": 200,
+   "year_online": 2023
+  },
+  {
+   "kind": "added",
+   "id": "eia-65853",
+   "name": "Banita Creek- Spindlepop Solar",
+   "type": "bess",
+   "operator": "Parliament Energy Holdings LLC",
+   "city": "Nacogdoches",
+   "state": "TX",
+   "status": "planned",
+   "capacity_mw": 303,
+   "capacity_mwh": null,
+   "year_online": 2027
+  },
+  {
+   "kind": "added",
+   "id": "eia-65854",
+   "name": "Rowdy Creek Solar and BESS",
+   "type": "bess",
+   "operator": "Parliament Energy Holdings LLC",
+   "city": "Lamar",
+   "state": "TX",
+   "status": "planned",
+   "capacity_mw": 350,
+   "capacity_mwh": null,
+   "year_online": 2027
+  },
+  {
+   "kind": "added",
+   "id": "eia-65855",
+   "name": "Tehuacana Creek Solar",
+   "type": "bess",
+   "operator": "Parliament Energy Holdings LLC",
+   "city": "Navarro",
+   "state": "TX",
+   "status": "under_construction",
+   "capacity_mw": 418,
+   "capacity_mwh": null,
+   "year_online": 2026
+  },
+  {
+   "kind": "added",
+   "id": "eia-66692",
+   "name": "Holly Branch Solar, LLC",
+   "type": "bess",
+   "operator": "Cypress Creek Renewables",
+   "city": "Robertson",
+   "state": "TX",
+   "status": "planned",
+   "capacity_mw": 100,
+   "capacity_mwh": null,
+   "year_online": 2027
+  },
+  {
+   "kind": "added",
+   "id": "eia-67660",
+   "name": "Malala",
+   "type": "bess",
+   "operator": "Cypress Creek Renewables",
+   "city": "Dallas",
+   "state": "TX",
+   "status": "planned",
+   "capacity_mw": 200,
+   "capacity_mwh": null,
+   "year_online": 2028
+  },
+  {
+   "kind": "added",
+   "id": "eia-67978",
+   "name": "Sierra Solar Hybrid",
+   "type": "bess",
+   "operator": "Sierra Pacific Power Co",
+   "city": "Churchill",
+   "state": "NV",
+   "status": "planned",
+   "capacity_mw": 400,
+   "capacity_mwh": null,
+   "year_online": 2026
+  },
+  {
+   "kind": "added",
+   "id": "eia-70040",
+   "name": "CA- US Foods- La Mirada",
+   "type": "bess",
+   "operator": "Generate USF La Mirada, LLC",
+   "city": "Los Angeles",
+   "state": "CA",
+   "status": "operating",
+   "capacity_mw": 1,
+   "capacity_mwh": 3,
+   "year_online": 2026
+  },
+  {
+   "kind": "added",
+   "id": "eia-70237",
+   "name": "Mule Shoe Energy Storage",
+   "type": "bess",
+   "operator": "Mule Shoe Energy Storage LLC",
+   "city": "Yoakum",
+   "state": "TX",
+   "status": "planned",
+   "capacity_mw": 207,
+   "capacity_mwh": null,
+   "year_online": 2028
+  },
+  {
+   "kind": "added",
+   "id": "eia-70307",
+   "name": "Milk Street Solar, LLC",
+   "type": "bess",
+   "operator": "ClearGen LLC",
+   "city": "Worcester",
+   "state": "MA",
+   "status": "operating",
+   "capacity_mw": 1,
+   "capacity_mwh": 3,
+   "year_online": 2025
+  },
+  {
+   "kind": "added",
+   "id": "eia-70311",
+   "name": "Eastern BlueBird Clean Energy LLC",
+   "type": "bess",
+   "operator": "NineDot Holdings, LLC",
+   "city": "Bronx",
+   "state": "NY",
+   "status": "under_construction",
+   "capacity_mw": 4,
+   "capacity_mwh": null,
+   "year_online": 2027
+  },
+  {
+   "kind": "added",
+   "id": "eia-70314",
+   "name": "Mourning Dove Clean Energy, LLC",
+   "type": "bess",
+   "operator": "NineDot Holdings, LLC",
+   "city": "Richmond",
+   "state": "NY",
+   "status": "operating",
+   "capacity_mw": 3,
+   "capacity_mwh": 12,
+   "year_online": 2026
+  },
+  {
+   "kind": "added",
+   "id": "eia-70315",
+   "name": "Northern Cardinal Clean Energy, LLC",
+   "type": "bess",
+   "operator": "NineDot Holdings, LLC",
+   "city": "Bronx",
+   "state": "NY",
+   "status": "under_construction",
+   "capacity_mw": 4,
+   "capacity_mwh": null,
+   "year_online": 2027
+  },
+  {
+   "kind": "added",
+   "id": "eia-70318",
+   "name": "Sugar Maple Clean Energy LLC",
+   "type": "bess",
+   "operator": "NineDot Holdings, LLC",
+   "city": "Richmond",
+   "state": "NY",
+   "status": "under_construction",
+   "capacity_mw": 2,
+   "capacity_mwh": null,
+   "year_online": 2026
+  },
+  {
+   "kind": "added",
+   "id": "eia-70320",
+   "name": "Water Willow A Clean Energy LLC",
+   "type": "bess",
+   "operator": "NineDot Holdings, LLC",
+   "city": "Queens",
+   "state": "NY",
+   "status": "under_construction",
+   "capacity_mw": 4,
+   "capacity_mwh": null,
+   "year_online": 2027
+  },
+  {
+   "kind": "added",
+   "id": "eia-70321",
+   "name": "Water Willow B Clean Energy LLC",
+   "type": "bess",
+   "operator": "NineDot Holdings, LLC",
+   "city": "Queens",
+   "state": "NY",
+   "status": "under_construction",
+   "capacity_mw": 4,
+   "capacity_mwh": null,
+   "year_online": 2027
+  },
+  {
+   "kind": "added",
+   "id": "eia-70326",
+   "name": "Coral Honeysuckle Clean Energy LLC",
+   "type": "bess",
+   "operator": "NineDot Holdings, LLC",
+   "city": "Queens",
+   "state": "NY",
+   "status": "under_construction",
+   "capacity_mw": 4,
+   "capacity_mwh": null,
+   "year_online": 2027
+  },
+  {
+   "kind": "added",
+   "id": "eia-70327",
+   "name": "Heron Clean Energy, LLC",
+   "type": "bess",
+   "operator": "NineDot Holdings, LLC",
+   "city": "Kings",
+   "state": "NY",
+   "status": "under_construction",
+   "capacity_mw": 5,
+   "capacity_mwh": null,
+   "year_online": 2026
+  },
+  {
+   "kind": "added",
+   "id": "eia-70328",
+   "name": "Jamaica Community Energy, LLC",
+   "type": "bess",
+   "operator": "NineDot Holdings, LLC",
+   "city": "Kings",
+   "state": "NY",
+   "status": "under_construction",
+   "capacity_mw": 5,
+   "capacity_mwh": null,
+   "year_online": 2027
+  },
+  {
+   "kind": "added",
+   "id": "eia-70329",
+   "name": "Linden Clean Energy, LLC",
+   "type": "bess",
+   "operator": "NineDot Holdings, LLC",
+   "city": "Queens",
+   "state": "NY",
+   "status": "under_construction",
+   "capacity_mw": 4,
+   "capacity_mwh": null,
+   "year_online": 2027
+  },
+  {
+   "kind": "added",
+   "id": "eia-70340",
+   "name": "Carousel Energy Storage, LLC",
+   "type": "bess",
+   "operator": "Carousel Energy Storage, LLC",
+   "city": "Kit Carson",
+   "state": "CO",
+   "status": "planned",
+   "capacity_mw": 150,
+   "capacity_mwh": null,
+   "year_online": 2027
+  },
+  {
+   "kind": "added",
+   "id": "eia-70345",
+   "name": "Steele Flats Energy Storage",
+   "type": "bess",
+   "operator": "Steele Flats Energy Storage, LLC",
+   "city": "Jefferson",
+   "state": "NE",
+   "status": "under_construction",
+   "capacity_mw": 50,
+   "capacity_mwh": null,
+   "year_online": 2026
+  },
+  {
+   "kind": "added",
+   "id": "eia-70365",
+   "name": "Bodkin BESS",
+   "type": "bess",
+   "operator": "Bodkin BESS LLC",
+   "city": "Brazoria",
+   "state": "TX",
+   "status": "planned",
+   "capacity_mw": 75,
+   "capacity_mwh": null,
+   "year_online": 2028
+  },
+  {
+   "kind": "added",
+   "id": "eia-70366",
+   "name": "Boot Hill Energy Storage",
+   "type": "bess",
+   "operator": "Boot Hill Energy Storage LLC",
+   "city": "Ford",
+   "state": "KS",
+   "status": "planned",
+   "capacity_mw": 75,
+   "capacity_mwh": null,
+   "year_online": 2028
+  },
+  {
+   "kind": "added",
+   "id": "eia-70367",
+   "name": "O'Bannion Energy Storage",
+   "type": "bess",
+   "operator": "O'Bannion Energy Storage, LLC",
+   "city": "Jack",
+   "state": "TX",
+   "status": "planned",
+   "capacity_mw": 300,
+   "capacity_mwh": null,
+   "year_online": 2028
+  },
+  {
+   "kind": "added",
+   "id": "eia-70377",
+   "name": "Boxcar Energy Storage",
+   "type": "bess",
+   "operator": "Boxcar Energy Storage, LLC",
+   "city": "Collin",
+   "state": "TX",
+   "status": "under_construction",
+   "capacity_mw": 150,
+   "capacity_mwh": null,
+   "year_online": 2027
+  },
+  {
+   "kind": "added",
+   "id": "eia-70384",
+   "name": "Yorktown NY 1, LLC",
+   "type": "bess",
+   "operator": "Valta Energy",
+   "city": "Westchester",
+   "state": "NY",
+   "status": "operating",
+   "capacity_mw": 2,
+   "capacity_mwh": null,
+   "year_online": 2025
+  },
+  {
+   "kind": "added",
+   "id": "eia-70386",
+   "name": "Chicopee BESS",
+   "type": "bess",
+   "operator": "Uriel Renovables S.A",
+   "city": "Hampden",
+   "state": "MA",
+   "status": "under_construction",
+   "capacity_mw": 5,
+   "capacity_mwh": null,
+   "year_online": 2026
+  },
+  {
+   "kind": "added",
+   "id": "eia-70387",
+   "name": "Framingham BESS",
+   "type": "bess",
+   "operator": "Uriel Renovables S.A",
+   "city": "Middlesex",
+   "state": "MA",
+   "status": "under_construction",
+   "capacity_mw": 5,
+   "capacity_mwh": null,
+   "year_online": 2026
+  },
+  {
+   "kind": "added",
+   "id": "eia-70395",
+   "name": "Pace Road Battery Storage",
+   "type": "bess",
+   "operator": "Tampa Electric Co",
+   "city": "Polk",
+   "state": "FL",
+   "status": "planned",
+   "capacity_mw": 20,
+   "capacity_mwh": null,
+   "year_online": 2027
+  },
+  {
+   "kind": "added",
+   "id": "eia-70397",
+   "name": "Steel River Solar Phase 1",
+   "type": "bess",
+   "operator": "Cypress Creek Renewables",
+   "city": "Mississippi",
+   "state": "AR",
+   "status": "under_construction",
+   "capacity_mw": 250,
+   "capacity_mwh": null,
+   "year_online": 2028
+  },
+  {
+   "kind": "added",
+   "id": "eia-70398",
+   "name": "Steel River Solar Phase 2",
+   "type": "bess",
+   "operator": "Cypress Creek Renewables",
+   "city": "Mississippi",
+   "state": "AR",
+   "status": "under_construction",
+   "capacity_mw": 250,
+   "capacity_mwh": null,
+   "year_online": 2029
+  },
+  {
+   "kind": "added",
+   "id": "eia-70399",
+   "name": "Steel River Solar Phase 3",
+   "type": "bess",
+   "operator": "Cypress Creek Renewables",
+   "city": "Mississippi",
+   "state": "AR",
+   "status": "under_construction",
+   "capacity_mw": 250,
+   "capacity_mwh": null,
+   "year_online": 2030
+  },
+  {
+   "kind": "added",
+   "id": "eia-70400",
+   "name": "Bee Branch IA",
+   "type": "bess",
+   "operator": "Bee Branch IA, LLC",
+   "city": "Robertson",
+   "state": "TX",
+   "status": "planned",
+   "capacity_mw": 200,
+   "capacity_mwh": null,
+   "year_online": 2027
+  },
+  {
+   "kind": "added",
+   "id": "eia-70403",
+   "name": "Grand Basin Energy Storage",
+   "type": "bess",
+   "operator": "Grand Basin Energy Storage, LLC",
+   "city": "Jackson",
+   "state": "MI",
+   "status": "planned",
+   "capacity_mw": 100,
+   "capacity_mwh": null,
+   "year_online": 2027
+  },
+  {
+   "kind": "added",
+   "id": "eia-70419",
+   "name": "Royal Slope",
+   "type": "bess",
+   "operator": "Royal Slope Solar LLC",
+   "city": "Grant",
+   "state": "WA",
+   "status": "planned",
+   "capacity_mw": 260,
+   "capacity_mwh": null,
+   "year_online": 2027
+  },
+  {
+   "kind": "removed",
+   "id": "eia-65136",
+   "name": "Royalston Solar One",
+   "type": "bess",
+   "operator": "Royalston Solar One, LLC",
+   "city": "Worcester",
+   "state": "MA",
+   "status": "planned",
+   "capacity_mw": 2,
+   "capacity_mwh": null,
+   "year_online": 2027
+  },
+  {
+   "kind": "removed",
+   "id": "eia-67934",
+   "name": "Vernon Solar and Storage",
+   "type": "bess",
+   "operator": "Vernon Solar and Storage, LLC",
+   "city": "Wilbarger",
+   "state": "TX",
+   "status": "planned",
+   "capacity_mw": 38,
+   "capacity_mwh": null,
+   "year_online": 2028
+  },
+  {
+   "kind": "changed",
+   "id": "eia-61167",
+   "name": "Aratina Solar Center 1B",
+   "type": "bess",
+   "operator": "91MC 8me LLC",
+   "city": "San Bernardino",
+   "state": "CA",
+   "status": "operating",
+   "capacity_mw": 50,
+   "capacity_mwh": 200,
+   "year_online": 2026,
+   "fields": [
+    {
+     "field": "status",
+     "from": "under_construction",
+     "to": "operating"
+    },
+    {
+     "field": "capacity_mwh",
+     "from": null,
+     "to": 200
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "eia-62729",
+   "name": "Painter Energy Storage",
+   "type": "bess",
+   "operator": "Painter Energy Storage, LLC",
+   "city": "Santa Barbara",
+   "state": "CA",
+   "status": "operating",
+   "capacity_mw": 10,
+   "capacity_mwh": 20,
+   "year_online": 2026,
+   "fields": [
+    {
+     "field": "status",
+     "from": "under_construction",
+     "to": "operating"
+    },
+    {
+     "field": "capacity_mwh",
+     "from": null,
+     "to": 20
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "eia-66342",
+   "name": "Gaia Hybrid",
+   "type": "bess",
+   "operator": "Sunraycer Assets I LLC",
+   "city": "Navarro",
+   "state": "TX",
+   "status": "operating",
+   "capacity_mw": 77,
+   "capacity_mwh": 307,
+   "year_online": 2026,
+   "fields": [
+    {
+     "field": "status",
+     "from": "under_construction",
+     "to": "operating"
+    },
+    {
+     "field": "capacity_mwh",
+     "from": null,
+     "to": 307
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "eia-67654",
+   "name": "Destiny Storage",
+   "type": "bess",
+   "operator": "Cypress Creek Renewables",
+   "city": "Harris",
+   "state": "TX",
+   "status": "operating",
+   "capacity_mw": 200,
+   "capacity_mwh": 400,
+   "year_online": 2026,
+   "fields": [
+    {
+     "field": "status",
+     "from": "under_construction",
+     "to": "operating"
+    },
+    {
+     "field": "capacity_mwh",
+     "from": null,
+     "to": 400
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "eia-67774",
+   "name": "Pecan BESS",
+   "type": "bess",
+   "operator": "Gransolar Texas Three, LLC",
+   "city": "Leon",
+   "state": "TX",
+   "status": "planned",
+   "capacity_mw": 157,
+   "capacity_mwh": null,
+   "year_online": 2028,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2027,
+     "to": 2028
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "eia-67782",
+   "name": "RedSun PV and BESS",
+   "type": "bess",
+   "operator": "Gransolar Texas Twenty Two LLC",
+   "city": "Burnet",
+   "state": "TX",
+   "status": "planned",
+   "capacity_mw": 84,
+   "capacity_mwh": null,
+   "year_online": 2028,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2027,
+     "to": 2028
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "eia-68168",
+   "name": "Kahla Storage",
+   "type": "bess",
+   "operator": "Belltown Power Texas 2, LLC",
+   "city": "Leon",
+   "state": "TX",
+   "status": "planned",
+   "capacity_mw": 201,
+   "capacity_mwh": null,
+   "year_online": 2028,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2027,
+     "to": 2028
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "eia-68173",
+   "name": "Sandford Solar and Storage",
+   "type": "bess",
+   "operator": "Belltown Power Texas 2, LLC",
+   "city": "Wise",
+   "state": "TX",
+   "status": "planned",
+   "capacity_mw": 101,
+   "capacity_mwh": null,
+   "year_online": 2028,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2027,
+     "to": 2028
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "eia-68349",
+   "name": "Avant Prairie ESS",
+   "type": "bess",
+   "operator": "Avant Prairie ESS LLC",
+   "city": "Freestone",
+   "state": "TX",
+   "status": "planned",
+   "capacity_mw": 200,
+   "capacity_mwh": null,
+   "year_online": 2029,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2027,
+     "to": 2029
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "eia-68350",
+   "name": "Bravo ESS",
+   "type": "bess",
+   "operator": "Bravo ESS LLC",
+   "city": "Zapata",
+   "state": "TX",
+   "status": "planned",
+   "capacity_mw": 200,
+   "capacity_mwh": null,
+   "year_online": 2029,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2027,
+     "to": 2029
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "eia-68353",
+   "name": "La Salle ESS",
+   "type": "bess",
+   "operator": "La Salle ESS LLC",
+   "city": "LaSalle",
+   "state": "TX",
+   "status": "planned",
+   "capacity_mw": 500,
+   "capacity_mwh": null,
+   "year_online": 2029,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2027,
+     "to": 2029
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "eia-68355",
+   "name": "Lazy U ESS 1",
+   "type": "bess",
+   "operator": "Lazy U ESS 1 LLC",
+   "city": "Hardeman",
+   "state": "TX",
+   "status": "planned",
+   "capacity_mw": 250,
+   "capacity_mwh": null,
+   "year_online": 2030,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2027,
+     "to": 2030
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "eia-68360",
+   "name": "Prost ESS",
+   "type": "bess",
+   "operator": "Prost ESS LLC",
+   "city": "Austin",
+   "state": "TX",
+   "status": "planned",
+   "capacity_mw": 200,
+   "capacity_mwh": null,
+   "year_online": 2029,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2027,
+     "to": 2029
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "eia-68361",
+   "name": "Rush ESS",
+   "type": "bess",
+   "operator": "Rush ESS LLC",
+   "city": "Bexar",
+   "state": "TX",
+   "status": "planned",
+   "capacity_mw": 200,
+   "capacity_mwh": null,
+   "year_online": 2031,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2027,
+     "to": 2031
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "eia-68363",
+   "name": "SunShiner ESS",
+   "type": "bess",
+   "operator": "SunShiner ESS LLC",
+   "city": "Zavala",
+   "state": "TX",
+   "status": "planned",
+   "capacity_mw": 200,
+   "capacity_mwh": null,
+   "year_online": 2029,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2027,
+     "to": 2029
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "eia-68364",
+   "name": "Tex-Bar ESS",
+   "type": "bess",
+   "operator": "Tex-Bar ESS LLC",
+   "city": "Madison",
+   "state": "TX",
+   "status": "planned",
+   "capacity_mw": 200,
+   "capacity_mwh": null,
+   "year_online": 2029,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2027,
+     "to": 2029
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "eia-68366",
+   "name": "AGATE BESS",
+   "type": "bess",
+   "operator": "BrightNight Power",
+   "city": "Kitsap",
+   "state": "WA",
+   "status": "planned",
+   "capacity_mw": 170,
+   "capacity_mwh": null,
+   "year_online": 2029,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2027,
+     "to": 2029
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "eia-68367",
+   "name": "Pepper Hammock Solar and Storage",
+   "type": "bess",
+   "operator": "BrightNight Power",
+   "city": "Wayne",
+   "state": "GA",
+   "status": "planned",
+   "capacity_mw": 400,
+   "capacity_mwh": null,
+   "year_online": 2029,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2028,
+     "to": 2029
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "eia-68370",
+   "name": "Salmonfly Solar and Storage",
+   "type": "bess",
+   "operator": "BrightNight Power",
+   "city": "Jefferson",
+   "state": "OR",
+   "status": "planned",
+   "capacity_mw": 247,
+   "capacity_mwh": null,
+   "year_online": 2029,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2028,
+     "to": 2029
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "eia-68371",
+   "name": "Red Butte Solar and Storage",
+   "type": "bess",
+   "operator": "BrightNight Power",
+   "city": "Iron",
+   "state": "UT",
+   "status": "planned",
+   "capacity_mw": 300,
+   "capacity_mwh": null,
+   "year_online": 2029,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2027,
+     "to": 2029
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "eia-68466",
+   "name": "Centennial Flats",
+   "type": "bess",
+   "operator": "Copia Power",
+   "city": "La Paz",
+   "state": "AZ",
+   "status": "under_construction",
+   "capacity_mw": 267,
+   "capacity_mwh": 178,
+   "year_online": 2026,
+   "fields": [
+    {
+     "field": "capacity_mwh",
+     "from": 89,
+     "to": 178
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "eia-68499",
+   "name": "Crowned Heron 1 - Storage, LLC",
+   "type": "bess",
+   "operator": "RWE Clean Energy",
+   "city": "Fort Bend",
+   "state": "TX",
+   "status": "operating",
+   "capacity_mw": 150,
+   "capacity_mwh": 300,
+   "year_online": 2026,
+   "fields": [
+    {
+     "field": "status",
+     "from": "under_construction",
+     "to": "operating"
+    },
+    {
+     "field": "capacity_mwh",
+     "from": null,
+     "to": 300
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "eia-68519",
+   "name": "Madena 3",
+   "type": "bess",
+   "operator": "ZGlobal Inc",
+   "city": "Yuba",
+   "state": "CA",
+   "status": "under_construction",
+   "capacity_mw": 4,
+   "capacity_mwh": null,
+   "year_online": 2027,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2026,
+     "to": 2027
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "eia-68520",
+   "name": "Madena 4",
+   "type": "bess",
+   "operator": "ZGlobal Inc",
+   "city": "Placer",
+   "state": "CA",
+   "status": "planned",
+   "capacity_mw": 5,
+   "capacity_mwh": null,
+   "year_online": 2027,
+   "fields": [
+    {
+     "field": "status",
+     "from": "under_construction",
+     "to": "planned"
+    },
+    {
+     "field": "year_online",
+     "from": 2026,
+     "to": 2027
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "eia-68580",
+   "name": "Headcamp BESS",
+   "type": "bess",
+   "operator": "Lydian Energy",
+   "city": "Pecos",
+   "state": "TX",
+   "status": "operating",
+   "capacity_mw": 150,
+   "capacity_mwh": 300,
+   "year_online": 2026,
+   "fields": [
+    {
+     "field": "status",
+     "from": "under_construction",
+     "to": "operating"
+    },
+    {
+     "field": "capacity_mwh",
+     "from": null,
+     "to": 300
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "eia-68661",
+   "name": "Aratina Solar Center 1A",
+   "type": "bess",
+   "operator": "64NB 8me LLC",
+   "city": "San Bernardino",
+   "state": "CA",
+   "status": "operating",
+   "capacity_mw": 75,
+   "capacity_mwh": 300,
+   "year_online": 2026,
+   "fields": [
+    {
+     "field": "status",
+     "from": "under_construction",
+     "to": "operating"
+    },
+    {
+     "field": "capacity_mwh",
+     "from": null,
+     "to": 300
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "eia-68794",
+   "name": "Tracy 18 - SLCVA418",
+   "type": "bess",
+   "operator": "Prologis Logistics Services Incorporated",
+   "city": "San Joaquin",
+   "state": "CA",
+   "status": "operating",
+   "capacity_mw": 2,
+   "capacity_mwh": 1,
+   "year_online": 2026,
+   "fields": [
+    {
+     "field": "capacity_mwh",
+     "from": null,
+     "to": 1
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "eia-68923",
+   "name": "Enterprise BESS",
+   "type": "bess",
+   "operator": "Enterprise BESS LLC",
+   "city": "San Diego",
+   "state": "CA",
+   "status": "planned",
+   "capacity_mw": 54,
+   "capacity_mwh": null,
+   "year_online": 2027,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2026,
+     "to": 2027
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "eia-68997",
+   "name": "Thermo Fisher Pleasanton",
+   "type": "bess",
+   "operator": "TotalEnergies Renewables USA LLC",
+   "city": "Alameda",
+   "state": "CA",
+   "status": "operating",
+   "capacity_mw": 1,
+   "capacity_mwh": 3,
+   "year_online": 2025,
+   "fields": [
+    {
+     "field": "capacity_mwh",
+     "from": null,
+     "to": 3
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "eia-69121",
+   "name": "Deer Creek Hybrid",
+   "type": "bess",
+   "operator": "Deer Creek Solar I, LLC",
+   "city": "Tulare",
+   "state": "CA",
+   "status": "operating",
+   "capacity_mw": 51,
+   "capacity_mwh": 200,
+   "year_online": 2026,
+   "fields": [
+    {
+     "field": "status",
+     "from": "under_construction",
+     "to": "operating"
+    },
+    {
+     "field": "capacity_mwh",
+     "from": null,
+     "to": 200
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "eia-69171",
+   "name": "Allen 1 Battery Energy Storage System",
+   "type": "bess",
+   "operator": "Duke Energy Carolinas, LLC",
+   "city": "Gaston",
+   "state": "NC",
+   "status": "operating",
+   "capacity_mw": 50,
+   "capacity_mwh": 200,
+   "year_online": 2025,
+   "fields": [
+    {
+     "field": "capacity_mwh",
+     "from": null,
+     "to": 200
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "eia-69200",
+   "name": "SAHARA BESS (SOHO BESS)",
+   "type": "bess",
+   "operator": "ESTX-PLD-HOUSTON2, LLC",
+   "city": "Brazoria",
+   "state": "TX",
+   "status": "operating",
+   "capacity_mw": 409,
+   "capacity_mwh": 817,
+   "year_online": 2026,
+   "fields": [
+    {
+     "field": "status",
+     "from": "under_construction",
+     "to": "operating"
+    },
+    {
+     "field": "capacity_mwh",
+     "from": null,
+     "to": 817
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "eia-69250",
+   "name": "Suwannee",
+   "type": "bess",
+   "operator": "Duke Energy Florida, LLC",
+   "city": "Suwannee",
+   "state": "FL",
+   "status": "operating",
+   "capacity_mw": 5,
+   "capacity_mwh": 5,
+   "year_online": 2025,
+   "fields": [
+    {
+     "field": "capacity_mwh",
+     "from": null,
+     "to": 5
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "eia-69324",
+   "name": "Buda BESS",
+   "type": "bess",
+   "operator": "Buda Infra LLC",
+   "city": "Hays",
+   "state": "TX",
+   "status": "operating",
+   "capacity_mw": 10,
+   "capacity_mwh": 25,
+   "year_online": 2026,
+   "fields": [
+    {
+     "field": "status",
+     "from": "under_construction",
+     "to": "operating"
+    },
+    {
+     "field": "capacity_mwh",
+     "from": null,
+     "to": 25
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "eia-69333",
+   "name": "Regis Goodwin LLC",
+   "type": "bess",
+   "operator": "Regis Goodwin LLC",
+   "city": "Starr",
+   "state": "TX",
+   "status": "operating",
+   "capacity_mw": 10,
+   "capacity_mwh": 10,
+   "year_online": 2025,
+   "fields": [
+    {
+     "field": "capacity_mwh",
+     "from": null,
+     "to": 10
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "eia-69437",
+   "name": "Lathrop 4 - SLCVA204",
+   "type": "bess",
+   "operator": "Prologis Logistics Services Incorporated",
+   "city": "San Joaquin",
+   "state": "CA",
+   "status": "operating",
+   "capacity_mw": 2,
+   "capacity_mwh": 2,
+   "year_online": 2026,
+   "fields": [
+    {
+     "field": "status",
+     "from": "under_construction",
+     "to": "operating"
+    },
+    {
+     "field": "capacity_mwh",
+     "from": null,
+     "to": 2
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "eia-69446",
+   "name": "Frieden",
+   "type": "bess",
+   "operator": "Duke Energy Carolinas, LLC",
+   "city": "Guilford",
+   "state": "NC",
+   "status": "operating",
+   "capacity_mw": 4,
+   "capacity_mwh": 4,
+   "year_online": 2026,
+   "fields": [
+    {
+     "field": "capacity_mwh",
+     "from": null,
+     "to": 4
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "eia-69510",
+   "name": "Cotulla BESS 1",
+   "type": "bess",
+   "operator": "Marubeni Power International, Inc.",
+   "city": "La Salle",
+   "state": "TX",
+   "status": "operating",
+   "capacity_mw": 10,
+   "capacity_mwh": 25,
+   "year_online": 2026,
+   "fields": [
+    {
+     "field": "status",
+     "from": "under_construction",
+     "to": "operating"
+    },
+    {
+     "field": "capacity_mwh",
+     "from": null,
+     "to": 25
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "eia-69511",
+   "name": "Palmview BESS",
+   "type": "bess",
+   "operator": "Marubeni Power International, Inc.",
+   "city": "Hidalgo",
+   "state": "TX",
+   "status": "operating",
+   "capacity_mw": 10,
+   "capacity_mwh": 25,
+   "year_online": 2026,
+   "fields": [
+    {
+     "field": "status",
+     "from": "under_construction",
+     "to": "operating"
+    },
+    {
+     "field": "capacity_mwh",
+     "from": null,
+     "to": 25
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "eia-69512",
+   "name": "SE Edinburg BESS",
+   "type": "bess",
+   "operator": "Marubeni Power International, Inc.",
+   "city": "Hidalgo",
+   "state": "TX",
+   "status": "operating",
+   "capacity_mw": 10,
+   "capacity_mwh": 25,
+   "year_online": 2026,
+   "fields": [
+    {
+     "field": "status",
+     "from": "under_construction",
+     "to": "operating"
+    },
+    {
+     "field": "capacity_mwh",
+     "from": null,
+     "to": 25
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "eia-69858",
+   "name": "Pastoria Power Bank",
+   "type": "bess",
+   "operator": "Pastoria Power, LLC",
+   "city": "Kern",
+   "state": "CA",
+   "status": "operating",
+   "capacity_mw": 80,
+   "capacity_mwh": 320,
+   "year_online": 2026,
+   "fields": [
+    {
+     "field": "status",
+     "from": "under_construction",
+     "to": "operating"
+    },
+    {
+     "field": "capacity_mwh",
+     "from": null,
+     "to": 320
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "eia-69942",
+   "name": "Dudley",
+   "type": "bess",
+   "operator": "Navisun LLC",
+   "city": "Worcester",
+   "state": "MA",
+   "status": "operating",
+   "capacity_mw": 2,
+   "capacity_mwh": null,
+   "year_online": 2024,
+   "fields": [
+    {
+     "field": "capacity_mwh",
+     "from": 2,
+     "to": null
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "eia-69966",
+   "name": "Four Mile Mesa Solar, LLC",
+   "type": "bess",
+   "operator": "Four Mile Mesa Solar, LLC",
+   "city": "San Juan",
+   "state": "NM",
+   "status": "under_construction",
+   "capacity_mw": 100,
+   "capacity_mwh": null,
+   "year_online": 2027,
+   "fields": [
+    {
+     "field": "status",
+     "from": "planned",
+     "to": "under_construction"
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "eia-70053",
+   "name": "South Platte Storage",
+   "type": "bess",
+   "operator": "South Platte Storage, LLC",
+   "city": "Morgan",
+   "state": "CO",
+   "status": "under_construction",
+   "capacity_mw": 250,
+   "capacity_mwh": null,
+   "year_online": 2027,
+   "fields": [
+    {
+     "field": "status",
+     "from": "planned",
+     "to": "under_construction"
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "eia-70137",
+   "name": "Dry Land Prairie Energy Storage",
+   "type": "bess",
+   "operator": "Dry Land Prairie Energy Storage, LLC",
+   "city": "Cheyenne",
+   "state": "CO",
+   "status": "under_construction",
+   "capacity_mw": 250,
+   "capacity_mwh": null,
+   "year_online": 2026,
+   "fields": [
+    {
+     "field": "status",
+     "from": "planned",
+     "to": "under_construction"
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "eia-70188",
+   "name": "Weld Energy Storage",
+   "type": "bess",
+   "operator": "Weld Energy Storage, LLC",
+   "city": "Weld",
+   "state": "CO",
+   "status": "under_construction",
+   "capacity_mw": 100,
+   "capacity_mwh": null,
+   "year_online": 2026,
+   "fields": [
+    {
+     "field": "status",
+     "from": "planned",
+     "to": "under_construction"
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "eia-70219",
+   "name": "Valley Farms Energy Center",
+   "type": "bess",
+   "operator": "Valley Farms Energy Center, LLC",
+   "city": "Pinal",
+   "state": "AZ",
+   "status": "under_construction",
+   "capacity_mw": 400,
+   "capacity_mwh": null,
+   "year_online": 2027,
+   "fields": [
+    {
+     "field": "capacity_mw",
+     "from": 300,
+     "to": 400
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "eia-70226",
+   "name": "2nd & N BESS",
+   "type": "bess",
+   "operator": "Lincoln Electric System",
+   "city": "Lancaster",
+   "state": "NE",
+   "status": "operating",
+   "capacity_mw": 3,
+   "capacity_mwh": 12,
+   "year_online": 2026,
+   "fields": [
+    {
+     "field": "status",
+     "from": "under_construction",
+     "to": "operating"
+    },
+    {
+     "field": "capacity_mwh",
+     "from": null,
+     "to": 12
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "eia-70232",
+   "name": "Evergreen Energy Center, LLC",
+   "type": "bess",
+   "operator": "East Point Energy, LLC",
+   "city": "Loudoun",
+   "state": "VA",
+   "status": "under_construction",
+   "capacity_mw": 20,
+   "capacity_mwh": null,
+   "year_online": 2026,
+   "fields": [
+    {
+     "field": "city",
+     "from": "Loudon",
+     "to": "Loudoun"
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "eia-70234",
+   "name": "Reid Energy Center, LLC",
+   "type": "bess",
+   "operator": "East Point Energy, LLC",
+   "city": "Prince William",
+   "state": "VA",
+   "status": "under_construction",
+   "capacity_mw": 20,
+   "capacity_mwh": null,
+   "year_online": 2026,
+   "fields": [
+    {
+     "field": "status",
+     "from": "planned",
+     "to": "under_construction"
+    }
+   ]
+  }
+ ]
 }

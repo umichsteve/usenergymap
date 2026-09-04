@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "last_updated": "2026-08-26",
+  "last_updated": "2026-09-04",
   "notes": "Coordinates approximate to city/county centroid where exact site is not publicly disclosed. Capacity in MW (power). For BESS, capacity_mwh is duration when known. Status: operating | under_construction | planned | announced. | BESS entries with id prefix 'eia-' are auto-ingested monthly from EIA-860M; others are hand-curated.",
   "projects": [
     {
@@ -4837,6 +4837,21 @@
       "year_online": 2017
     },
     {
+      "id": "eia-61167",
+      "type": "bess",
+      "name": "Aratina Solar Center 1B",
+      "operator": "91MC 8me LLC",
+      "city": "San Bernardino",
+      "state": "CA",
+      "lat": 34.988,
+      "lng": -117.5716,
+      "capacity_mw": 50,
+      "status": "operating",
+      "source": "https://www.eia.gov/electricity/data/eia860m/",
+      "capacity_mwh": 200,
+      "year_online": 2026
+    },
+    {
       "id": "eia-61186",
       "type": "bess",
       "name": "Boston Medical Center CHP Plant",
@@ -5795,6 +5810,21 @@
       "source": "https://www.eia.gov/electricity/data/eia860m/",
       "capacity_mwh": 1,
       "year_online": 2019
+    },
+    {
+      "id": "eia-62729",
+      "type": "bess",
+      "name": "Painter Energy Storage",
+      "operator": "Painter Energy Storage, LLC",
+      "city": "Santa Barbara",
+      "state": "CA",
+      "lat": 34.41,
+      "lng": -119.515,
+      "capacity_mw": 10,
+      "status": "operating",
+      "source": "https://www.eia.gov/electricity/data/eia860m/",
+      "capacity_mwh": 20,
+      "year_online": 2026
     },
     {
       "id": "eia-62733",
@@ -10267,6 +10297,21 @@
       "year_online": 2022
     },
     {
+      "id": "eia-65820",
+      "type": "bess",
+      "name": "Ocotillo Wells",
+      "operator": "Conductive Power",
+      "city": "San Diego",
+      "state": "CA",
+      "lat": 33.0747,
+      "lng": -116.0912,
+      "capacity_mw": 50,
+      "status": "operating",
+      "source": "https://www.eia.gov/electricity/data/eia860m/",
+      "capacity_mwh": 200,
+      "year_online": 2023
+    },
+    {
       "id": "eia-65829",
       "type": "bess",
       "name": "Holcomb (TX)",
@@ -11300,6 +11345,21 @@
       "source": "https://www.eia.gov/electricity/data/eia860m/",
       "capacity_mwh": 400,
       "year_online": 2025
+    },
+    {
+      "id": "eia-66342",
+      "type": "bess",
+      "name": "Gaia Hybrid",
+      "operator": "Sunraycer Assets I LLC",
+      "city": "Navarro",
+      "state": "TX",
+      "lat": 32.1608,
+      "lng": -96.1953,
+      "capacity_mw": 77,
+      "status": "operating",
+      "source": "https://www.eia.gov/electricity/data/eia860m/",
+      "capacity_mwh": 307,
+      "year_online": 2026
     },
     {
       "id": "eia-66357",
@@ -13747,6 +13807,21 @@
       "year_online": 2025
     },
     {
+      "id": "eia-67654",
+      "type": "bess",
+      "name": "Destiny Storage",
+      "operator": "Cypress Creek Renewables",
+      "city": "Harris",
+      "state": "TX",
+      "lat": 29.8872,
+      "lng": -95.0237,
+      "capacity_mw": 200,
+      "status": "operating",
+      "source": "https://www.eia.gov/electricity/data/eia860m/",
+      "capacity_mwh": 400,
+      "year_online": 2026
+    },
+    {
       "id": "eia-67680",
       "type": "bess",
       "name": "Kola Energy Center",
@@ -14719,7 +14794,7 @@
       "status": "under_construction",
       "source": "https://www.eia.gov/electricity/data/eia860m/",
       "year_online": 2026,
-      "capacity_mwh": 89
+      "capacity_mwh": 178
     },
     {
       "id": "eia-68475",
@@ -14825,6 +14900,21 @@
       "source": "https://www.eia.gov/electricity/data/eia860m/",
       "capacity_mwh": 120,
       "year_online": 2025
+    },
+    {
+      "id": "eia-68499",
+      "type": "bess",
+      "name": "Crowned Heron 1 - Storage, LLC",
+      "operator": "RWE Clean Energy",
+      "city": "Fort Bend",
+      "state": "TX",
+      "lat": 29.4822,
+      "lng": -95.6189,
+      "capacity_mw": 150,
+      "status": "operating",
+      "source": "https://www.eia.gov/electricity/data/eia860m/",
+      "capacity_mwh": 300,
+      "year_online": 2026
     },
     {
       "id": "eia-68509",
@@ -14962,6 +15052,21 @@
       "year_online": 2025
     },
     {
+      "id": "eia-68580",
+      "type": "bess",
+      "name": "Headcamp BESS",
+      "operator": "Lydian Energy",
+      "city": "Pecos",
+      "state": "TX",
+      "lat": 30.9161,
+      "lng": -102.8553,
+      "capacity_mw": 150,
+      "status": "operating",
+      "source": "https://www.eia.gov/electricity/data/eia860m/",
+      "capacity_mwh": 300,
+      "year_online": 2026
+    },
+    {
       "id": "eia-68596",
       "type": "bess",
       "name": "Dominguez Energy Storage",
@@ -15035,6 +15140,21 @@
       "source": "https://www.eia.gov/electricity/data/eia860m/",
       "capacity_mwh": 400,
       "year_online": 2025
+    },
+    {
+      "id": "eia-68661",
+      "type": "bess",
+      "name": "Aratina Solar Center 1A",
+      "operator": "64NB 8me LLC",
+      "city": "San Bernardino",
+      "state": "CA",
+      "lat": 34.988,
+      "lng": -117.5716,
+      "capacity_mw": 75,
+      "status": "operating",
+      "source": "https://www.eia.gov/electricity/data/eia860m/",
+      "capacity_mwh": 300,
+      "year_online": 2026
     },
     {
       "id": "eia-68679",
@@ -15213,6 +15333,7 @@
       "capacity_mw": 2,
       "status": "operating",
       "source": "https://www.eia.gov/electricity/data/eia860m/",
+      "capacity_mwh": 1,
       "year_online": 2026
     },
     {
@@ -15527,6 +15648,7 @@
       "capacity_mw": 1,
       "status": "operating",
       "source": "https://www.eia.gov/electricity/data/eia860m/",
+      "capacity_mwh": 3,
       "year_online": 2025
     },
     {
@@ -15694,6 +15816,21 @@
       "year_online": 2026
     },
     {
+      "id": "eia-69121",
+      "type": "bess",
+      "name": "Deer Creek Hybrid",
+      "operator": "Deer Creek Solar I, LLC",
+      "city": "Tulare",
+      "state": "CA",
+      "lat": 35.965,
+      "lng": -119.07,
+      "capacity_mw": 51,
+      "status": "operating",
+      "source": "https://www.eia.gov/electricity/data/eia860m/",
+      "capacity_mwh": 200,
+      "year_online": 2026
+    },
+    {
       "id": "eia-69122",
       "type": "bess",
       "name": "Jackson Fuller Energy Storage",
@@ -15825,6 +15962,7 @@
       "capacity_mw": 50,
       "status": "operating",
       "source": "https://www.eia.gov/electricity/data/eia860m/",
+      "capacity_mwh": 200,
       "year_online": 2025
     },
     {
@@ -15841,6 +15979,21 @@
       "source": "https://www.eia.gov/electricity/data/eia860m/",
       "capacity_mwh": 25,
       "year_online": 2019
+    },
+    {
+      "id": "eia-69200",
+      "type": "bess",
+      "name": "SAHARA BESS (SOHO BESS)",
+      "operator": "ESTX-PLD-HOUSTON2, LLC",
+      "city": "Brazoria",
+      "state": "TX",
+      "lat": 29.4521,
+      "lng": -95.3083,
+      "capacity_mw": 409,
+      "status": "operating",
+      "source": "https://www.eia.gov/electricity/data/eia860m/",
+      "capacity_mwh": 817,
+      "year_online": 2026
     },
     {
       "id": "eia-69210",
@@ -15899,6 +16052,7 @@
       "capacity_mw": 5,
       "status": "operating",
       "source": "https://www.eia.gov/electricity/data/eia860m/",
+      "capacity_mwh": 5,
       "year_online": 2025
     },
     {
@@ -16097,6 +16251,21 @@
       "year_online": 2026
     },
     {
+      "id": "eia-69324",
+      "type": "bess",
+      "name": "Buda BESS",
+      "operator": "Buda Infra LLC",
+      "city": "Hays",
+      "state": "TX",
+      "lat": 30.0756,
+      "lng": -97.851,
+      "capacity_mw": 10,
+      "status": "operating",
+      "source": "https://www.eia.gov/electricity/data/eia860m/",
+      "capacity_mwh": 25,
+      "year_online": 2026
+    },
+    {
       "id": "eia-69329",
       "type": "bess",
       "name": "TE Smith Storage",
@@ -16138,6 +16307,7 @@
       "capacity_mw": 10,
       "status": "operating",
       "source": "https://www.eia.gov/electricity/data/eia860m/",
+      "capacity_mwh": 10,
       "year_online": 2025
     },
     {
@@ -16621,6 +16791,21 @@
       "year_online": 2026
     },
     {
+      "id": "eia-69437",
+      "type": "bess",
+      "name": "Lathrop 4 - SLCVA204",
+      "operator": "Prologis Logistics Services Incorporated",
+      "city": "San Joaquin",
+      "state": "CA",
+      "lat": 37.8094,
+      "lng": -121.283,
+      "capacity_mw": 2,
+      "status": "operating",
+      "source": "https://www.eia.gov/electricity/data/eia860m/",
+      "capacity_mwh": 2,
+      "year_online": 2026
+    },
+    {
       "id": "eia-69446",
       "type": "bess",
       "name": "Frieden",
@@ -16632,6 +16817,7 @@
       "capacity_mw": 4,
       "status": "operating",
       "source": "https://www.eia.gov/electricity/data/eia860m/",
+      "capacity_mwh": 4,
       "year_online": 2026
     },
     {
@@ -16722,6 +16908,51 @@
       "status": "operating",
       "source": "https://www.eia.gov/electricity/data/eia860m/",
       "capacity_mwh": 600,
+      "year_online": 2026
+    },
+    {
+      "id": "eia-69510",
+      "type": "bess",
+      "name": "Cotulla BESS 1",
+      "operator": "Marubeni Power International, Inc.",
+      "city": "La Salle",
+      "state": "TX",
+      "lat": 28.4423,
+      "lng": -99.2525,
+      "capacity_mw": 10,
+      "status": "operating",
+      "source": "https://www.eia.gov/electricity/data/eia860m/",
+      "capacity_mwh": 25,
+      "year_online": 2026
+    },
+    {
+      "id": "eia-69511",
+      "type": "bess",
+      "name": "Palmview BESS",
+      "operator": "Marubeni Power International, Inc.",
+      "city": "Hidalgo",
+      "state": "TX",
+      "lat": 26.2383,
+      "lng": -98.3695,
+      "capacity_mw": 10,
+      "status": "operating",
+      "source": "https://www.eia.gov/electricity/data/eia860m/",
+      "capacity_mwh": 25,
+      "year_online": 2026
+    },
+    {
+      "id": "eia-69512",
+      "type": "bess",
+      "name": "SE Edinburg BESS",
+      "operator": "Marubeni Power International, Inc.",
+      "city": "Hidalgo",
+      "state": "TX",
+      "lat": 26.2883,
+      "lng": -98.1467,
+      "capacity_mw": 10,
+      "status": "operating",
+      "source": "https://www.eia.gov/electricity/data/eia860m/",
+      "capacity_mwh": 25,
       "year_online": 2026
     },
     {
@@ -16935,6 +17166,21 @@
       "year_online": 2026
     },
     {
+      "id": "eia-69858",
+      "type": "bess",
+      "name": "Pastoria Power Bank",
+      "operator": "Pastoria Power, LLC",
+      "city": "Kern",
+      "state": "CA",
+      "lat": 34.959,
+      "lng": -118.8559,
+      "capacity_mw": 80,
+      "status": "operating",
+      "source": "https://www.eia.gov/electricity/data/eia860m/",
+      "capacity_mwh": 320,
+      "year_online": 2026
+    },
+    {
       "id": "eia-69942",
       "type": "bess",
       "name": "Dudley",
@@ -16946,7 +17192,6 @@
       "capacity_mw": 2,
       "status": "operating",
       "source": "https://www.eia.gov/electricity/data/eia860m/",
-      "capacity_mwh": 2,
       "year_online": 2024
     },
     {
@@ -16980,6 +17225,21 @@
       "year_online": 2025
     },
     {
+      "id": "eia-70040",
+      "type": "bess",
+      "name": "CA- US Foods- La Mirada",
+      "operator": "Generate USF La Mirada, LLC",
+      "city": "Los Angeles",
+      "state": "CA",
+      "lat": 33.8847,
+      "lng": -118.0094,
+      "capacity_mw": 1,
+      "status": "operating",
+      "source": "https://www.eia.gov/electricity/data/eia860m/",
+      "capacity_mwh": 3,
+      "year_online": 2026
+    },
+    {
       "id": "eia-70214",
       "type": "bess",
       "name": "KSU Solar Array",
@@ -16992,6 +17252,65 @@
       "status": "operating",
       "source": "https://www.eia.gov/electricity/data/eia860m/",
       "capacity_mwh": 2,
+      "year_online": 2025
+    },
+    {
+      "id": "eia-70226",
+      "type": "bess",
+      "name": "2nd & N BESS",
+      "operator": "Lincoln Electric System",
+      "city": "Lancaster",
+      "state": "NE",
+      "lat": 40.8126,
+      "lng": -96.7188,
+      "capacity_mw": 3,
+      "status": "operating",
+      "source": "https://www.eia.gov/electricity/data/eia860m/",
+      "capacity_mwh": 12,
+      "year_online": 2026
+    },
+    {
+      "id": "eia-70307",
+      "type": "bess",
+      "name": "Milk Street Solar, LLC",
+      "operator": "ClearGen LLC",
+      "city": "Worcester",
+      "state": "MA",
+      "lat": 42.038,
+      "lng": -71.557,
+      "capacity_mw": 1,
+      "status": "operating",
+      "source": "https://www.eia.gov/electricity/data/eia860m/",
+      "capacity_mwh": 3,
+      "year_online": 2025
+    },
+    {
+      "id": "eia-70314",
+      "type": "bess",
+      "name": "Mourning Dove Clean Energy, LLC",
+      "operator": "NineDot Holdings, LLC",
+      "city": "Richmond",
+      "state": "NY",
+      "lat": 40.6048,
+      "lng": -74.1203,
+      "capacity_mw": 3,
+      "status": "operating",
+      "source": "https://www.eia.gov/electricity/data/eia860m/",
+      "capacity_mwh": 12,
+      "year_online": 2026
+    },
+    {
+      "id": "eia-70384",
+      "type": "bess",
+      "name": "Yorktown NY 1, LLC",
+      "operator": "Valta Energy",
+      "city": "Westchester",
+      "state": "NY",
+      "lat": 41.3333,
+      "lng": -73.8591,
+      "capacity_mw": 2,
+      "status": "operating",
+      "source": "https://www.eia.gov/electricity/data/eia860m/",
       "year_online": 2025
     },
     {
@@ -17149,20 +17468,6 @@
       "year_online": 2027
     },
     {
-      "id": "eia-61167",
-      "type": "bess",
-      "name": "Aratina Solar Center 1B",
-      "operator": "91MC 8me LLC",
-      "city": "San Bernardino",
-      "state": "CA",
-      "lat": 34.988,
-      "lng": -117.5716,
-      "capacity_mw": 50,
-      "status": "under_construction",
-      "source": "https://www.eia.gov/electricity/data/eia860m/",
-      "year_online": 2026
-    },
-    {
       "id": "eia-61170",
       "type": "bess",
       "name": "Gale 1 Solar",
@@ -17189,20 +17494,6 @@
       "status": "planned",
       "source": "https://www.eia.gov/electricity/data/eia860m/",
       "year_online": 2027
-    },
-    {
-      "id": "eia-62729",
-      "type": "bess",
-      "name": "Painter Energy Storage",
-      "operator": "Painter Energy Storage, LLC",
-      "city": "Santa Barbara",
-      "state": "CA",
-      "lat": 34.41,
-      "lng": -119.515,
-      "capacity_mw": 10,
-      "status": "under_construction",
-      "source": "https://www.eia.gov/electricity/data/eia860m/",
-      "year_online": 2026
     },
     {
       "id": "eia-62892",
@@ -17513,20 +17804,6 @@
       "year_online": 2026
     },
     {
-      "id": "eia-65136",
-      "type": "bess",
-      "name": "Royalston Solar One",
-      "operator": "Royalston Solar One, LLC",
-      "city": "Worcester",
-      "state": "MA",
-      "lat": 42.6684,
-      "lng": -72.1858,
-      "capacity_mw": 2,
-      "status": "planned",
-      "source": "https://www.eia.gov/electricity/data/eia860m/",
-      "year_online": 2027
-    },
-    {
       "id": "eia-65141",
       "type": "bess",
       "name": "Boulder Solar III LLC",
@@ -17765,6 +18042,48 @@
       "year_online": 2027
     },
     {
+      "id": "eia-65853",
+      "type": "bess",
+      "name": "Banita Creek- Spindlepop Solar",
+      "operator": "Parliament Energy Holdings LLC",
+      "city": "Nacogdoches",
+      "state": "TX",
+      "lat": 31.5552,
+      "lng": -94.7919,
+      "capacity_mw": 303,
+      "status": "planned",
+      "source": "https://www.eia.gov/electricity/data/eia860m/",
+      "year_online": 2027
+    },
+    {
+      "id": "eia-65854",
+      "type": "bess",
+      "name": "Rowdy Creek Solar and BESS",
+      "operator": "Parliament Energy Holdings LLC",
+      "city": "Lamar",
+      "state": "TX",
+      "lat": 33.7569,
+      "lng": -95.6458,
+      "capacity_mw": 350,
+      "status": "planned",
+      "source": "https://www.eia.gov/electricity/data/eia860m/",
+      "year_online": 2027
+    },
+    {
+      "id": "eia-65855",
+      "type": "bess",
+      "name": "Tehuacana Creek Solar",
+      "operator": "Parliament Energy Holdings LLC",
+      "city": "Navarro",
+      "state": "TX",
+      "lat": 31.9141,
+      "lng": -96.4135,
+      "capacity_mw": 418,
+      "status": "under_construction",
+      "source": "https://www.eia.gov/electricity/data/eia860m/",
+      "year_online": 2026
+    },
+    {
       "id": "eia-65870",
       "type": "bess",
       "name": "Castor",
@@ -17886,20 +18205,6 @@
       "lat": 33.4333,
       "lng": -95.5744,
       "capacity_mw": 55,
-      "status": "under_construction",
-      "source": "https://www.eia.gov/electricity/data/eia860m/",
-      "year_online": 2026
-    },
-    {
-      "id": "eia-66342",
-      "type": "bess",
-      "name": "Gaia Hybrid",
-      "operator": "Sunraycer Assets I LLC",
-      "city": "Navarro",
-      "state": "TX",
-      "lat": 32.1608,
-      "lng": -96.1953,
-      "capacity_mw": 77,
       "status": "under_construction",
       "source": "https://www.eia.gov/electricity/data/eia860m/",
       "year_online": 2026
@@ -18138,6 +18443,20 @@
       "lat": 33.1443,
       "lng": -99.5598,
       "capacity_mw": 70,
+      "status": "planned",
+      "source": "https://www.eia.gov/electricity/data/eia860m/",
+      "year_online": 2027
+    },
+    {
+      "id": "eia-66692",
+      "type": "bess",
+      "name": "Holly Branch Solar, LLC",
+      "operator": "Cypress Creek Renewables",
+      "city": "Robertson",
+      "state": "TX",
+      "lat": 31.0946,
+      "lng": -96.4141,
+      "capacity_mw": 100,
       "status": "planned",
       "source": "https://www.eia.gov/electricity/data/eia860m/",
       "year_online": 2027
@@ -18535,18 +18854,18 @@
       "year_online": 2027
     },
     {
-      "id": "eia-67654",
+      "id": "eia-67660",
       "type": "bess",
-      "name": "Destiny Storage",
+      "name": "Malala",
       "operator": "Cypress Creek Renewables",
-      "city": "Harris",
+      "city": "Dallas",
       "state": "TX",
-      "lat": 29.8872,
-      "lng": -95.0237,
+      "lat": 32.6752,
+      "lng": -96.5474,
       "capacity_mw": 200,
-      "status": "under_construction",
+      "status": "planned",
       "source": "https://www.eia.gov/electricity/data/eia860m/",
-      "year_online": 2026
+      "year_online": 2028
     },
     {
       "id": "eia-67666",
@@ -18686,7 +19005,7 @@
       "capacity_mw": 157,
       "status": "planned",
       "source": "https://www.eia.gov/electricity/data/eia860m/",
-      "year_online": 2027
+      "year_online": 2028
     },
     {
       "id": "eia-67776",
@@ -18756,7 +19075,7 @@
       "capacity_mw": 84,
       "status": "planned",
       "source": "https://www.eia.gov/electricity/data/eia860m/",
-      "year_online": 2027
+      "year_online": 2028
     },
     {
       "id": "eia-67783",
@@ -18927,20 +19246,6 @@
       "year_online": 2028
     },
     {
-      "id": "eia-67934",
-      "type": "bess",
-      "name": "Vernon Solar and Storage",
-      "operator": "Vernon Solar and Storage, LLC",
-      "city": "Wilbarger",
-      "state": "TX",
-      "lat": 34.1096,
-      "lng": -99.2969,
-      "capacity_mw": 38,
-      "status": "planned",
-      "source": "https://www.eia.gov/electricity/data/eia860m/",
-      "year_online": 2028
-    },
-    {
       "id": "eia-67945",
       "type": "bess",
       "name": "Juniper Creek Storage",
@@ -18979,6 +19284,20 @@
       "lng": -112.8397,
       "capacity_mw": 150,
       "status": "under_construction",
+      "source": "https://www.eia.gov/electricity/data/eia860m/",
+      "year_online": 2026
+    },
+    {
+      "id": "eia-67978",
+      "type": "bess",
+      "name": "Sierra Solar Hybrid",
+      "operator": "Sierra Pacific Power Co",
+      "city": "Churchill",
+      "state": "NV",
+      "lat": 39.8536,
+      "lng": -119.0394,
+      "capacity_mw": 400,
+      "status": "planned",
       "source": "https://www.eia.gov/electricity/data/eia860m/",
       "year_online": 2026
     },
@@ -19330,7 +19649,7 @@
       "capacity_mw": 201,
       "status": "planned",
       "source": "https://www.eia.gov/electricity/data/eia860m/",
-      "year_online": 2027
+      "year_online": 2028
     },
     {
       "id": "eia-68171",
@@ -19358,7 +19677,7 @@
       "capacity_mw": 101,
       "status": "planned",
       "source": "https://www.eia.gov/electricity/data/eia860m/",
-      "year_online": 2027
+      "year_online": 2028
     },
     {
       "id": "eia-68176",
@@ -19778,7 +20097,7 @@
       "capacity_mw": 200,
       "status": "planned",
       "source": "https://www.eia.gov/electricity/data/eia860m/",
-      "year_online": 2027
+      "year_online": 2029
     },
     {
       "id": "eia-68350",
@@ -19792,7 +20111,7 @@
       "capacity_mw": 200,
       "status": "planned",
       "source": "https://www.eia.gov/electricity/data/eia860m/",
-      "year_online": 2027
+      "year_online": 2029
     },
     {
       "id": "eia-68353",
@@ -19806,7 +20125,7 @@
       "capacity_mw": 500,
       "status": "planned",
       "source": "https://www.eia.gov/electricity/data/eia860m/",
-      "year_online": 2027
+      "year_online": 2029
     },
     {
       "id": "eia-68355",
@@ -19820,7 +20139,7 @@
       "capacity_mw": 250,
       "status": "planned",
       "source": "https://www.eia.gov/electricity/data/eia860m/",
-      "year_online": 2027
+      "year_online": 2030
     },
     {
       "id": "eia-68356",
@@ -19848,7 +20167,7 @@
       "capacity_mw": 200,
       "status": "planned",
       "source": "https://www.eia.gov/electricity/data/eia860m/",
-      "year_online": 2027
+      "year_online": 2029
     },
     {
       "id": "eia-68361",
@@ -19862,7 +20181,7 @@
       "capacity_mw": 200,
       "status": "planned",
       "source": "https://www.eia.gov/electricity/data/eia860m/",
-      "year_online": 2027
+      "year_online": 2031
     },
     {
       "id": "eia-68362",
@@ -19890,7 +20209,7 @@
       "capacity_mw": 200,
       "status": "planned",
       "source": "https://www.eia.gov/electricity/data/eia860m/",
-      "year_online": 2027
+      "year_online": 2029
     },
     {
       "id": "eia-68364",
@@ -19904,7 +20223,7 @@
       "capacity_mw": 200,
       "status": "planned",
       "source": "https://www.eia.gov/electricity/data/eia860m/",
-      "year_online": 2027
+      "year_online": 2029
     },
     {
       "id": "eia-68366",
@@ -19918,7 +20237,7 @@
       "capacity_mw": 170,
       "status": "planned",
       "source": "https://www.eia.gov/electricity/data/eia860m/",
-      "year_online": 2027
+      "year_online": 2029
     },
     {
       "id": "eia-68367",
@@ -19932,7 +20251,7 @@
       "capacity_mw": 400,
       "status": "planned",
       "source": "https://www.eia.gov/electricity/data/eia860m/",
-      "year_online": 2028
+      "year_online": 2029
     },
     {
       "id": "eia-68370",
@@ -19946,7 +20265,7 @@
       "capacity_mw": 247,
       "status": "planned",
       "source": "https://www.eia.gov/electricity/data/eia860m/",
-      "year_online": 2028
+      "year_online": 2029
     },
     {
       "id": "eia-68371",
@@ -19960,7 +20279,7 @@
       "capacity_mw": 300,
       "status": "planned",
       "source": "https://www.eia.gov/electricity/data/eia860m/",
-      "year_online": 2027
+      "year_online": 2029
     },
     {
       "id": "eia-68396",
@@ -20089,20 +20408,6 @@
       "year_online": 2026
     },
     {
-      "id": "eia-68499",
-      "type": "bess",
-      "name": "Crowned Heron 1 - Storage, LLC",
-      "operator": "RWE Clean Energy",
-      "city": "Fort Bend",
-      "state": "TX",
-      "lat": 29.4822,
-      "lng": -95.6189,
-      "capacity_mw": 150,
-      "status": "under_construction",
-      "source": "https://www.eia.gov/electricity/data/eia860m/",
-      "year_online": 2026
-    },
-    {
       "id": "eia-68500",
       "type": "bess",
       "name": "Crowned Heron 2 - Storage, LLC",
@@ -20156,7 +20461,7 @@
       "capacity_mw": 4,
       "status": "under_construction",
       "source": "https://www.eia.gov/electricity/data/eia860m/",
-      "year_online": 2026
+      "year_online": 2027
     },
     {
       "id": "eia-68520",
@@ -20168,9 +20473,9 @@
       "lat": 38.9776,
       "lng": -121.3765,
       "capacity_mw": 5,
-      "status": "under_construction",
+      "status": "planned",
       "source": "https://www.eia.gov/electricity/data/eia860m/",
-      "year_online": 2026
+      "year_online": 2027
     },
     {
       "id": "eia-68543",
@@ -20185,20 +20490,6 @@
       "status": "under_construction",
       "source": "https://www.eia.gov/electricity/data/eia860m/",
       "year_online": 2027
-    },
-    {
-      "id": "eia-68580",
-      "type": "bess",
-      "name": "Headcamp BESS",
-      "operator": "Lydian Energy",
-      "city": "Pecos",
-      "state": "TX",
-      "lat": 30.9161,
-      "lng": -102.8553,
-      "capacity_mw": 150,
-      "status": "under_construction",
-      "source": "https://www.eia.gov/electricity/data/eia860m/",
-      "year_online": 2026
     },
     {
       "id": "eia-68581",
@@ -20269,20 +20560,6 @@
       "status": "under_construction",
       "source": "https://www.eia.gov/electricity/data/eia860m/",
       "year_online": 2027
-    },
-    {
-      "id": "eia-68661",
-      "type": "bess",
-      "name": "Aratina Solar Center 1A",
-      "operator": "64NB 8me LLC",
-      "city": "San Bernardino",
-      "state": "CA",
-      "lat": 34.988,
-      "lng": -117.5716,
-      "capacity_mw": 75,
-      "status": "under_construction",
-      "source": "https://www.eia.gov/electricity/data/eia860m/",
-      "year_online": 2026
     },
     {
       "id": "eia-68665",
@@ -20618,7 +20895,7 @@
       "capacity_mw": 54,
       "status": "planned",
       "source": "https://www.eia.gov/electricity/data/eia860m/",
-      "year_online": 2026
+      "year_online": 2027
     },
     {
       "id": "eia-68924",
@@ -20873,20 +21150,6 @@
       "year_online": 2027
     },
     {
-      "id": "eia-69121",
-      "type": "bess",
-      "name": "Deer Creek Hybrid",
-      "operator": "Deer Creek Solar I, LLC",
-      "city": "Tulare",
-      "state": "CA",
-      "lat": 35.965,
-      "lng": -119.07,
-      "capacity_mw": 51,
-      "status": "under_construction",
-      "source": "https://www.eia.gov/electricity/data/eia860m/",
-      "year_online": 2026
-    },
-    {
       "id": "eia-69148",
       "type": "bess",
       "name": "Allen 2 BESS",
@@ -20994,20 +21257,6 @@
       "lat": 35.7917,
       "lng": -81.851,
       "capacity_mw": 3,
-      "status": "under_construction",
-      "source": "https://www.eia.gov/electricity/data/eia860m/",
-      "year_online": 2026
-    },
-    {
-      "id": "eia-69200",
-      "type": "bess",
-      "name": "SAHARA BESS (SOHO BESS)",
-      "operator": "ESTX-PLD-HOUSTON2, LLC",
-      "city": "Brazoria",
-      "state": "TX",
-      "lat": 29.4521,
-      "lng": -95.3083,
-      "capacity_mw": 409,
       "status": "under_construction",
       "source": "https://www.eia.gov/electricity/data/eia860m/",
       "year_online": 2026
@@ -21133,20 +21382,6 @@
       "state": "TX",
       "lat": 31.6757,
       "lng": -102.3638,
-      "capacity_mw": 10,
-      "status": "under_construction",
-      "source": "https://www.eia.gov/electricity/data/eia860m/",
-      "year_online": 2026
-    },
-    {
-      "id": "eia-69324",
-      "type": "bess",
-      "name": "Buda BESS",
-      "operator": "Buda Infra LLC",
-      "city": "Hays",
-      "state": "TX",
-      "lat": 30.0756,
-      "lng": -97.851,
       "capacity_mw": 10,
       "status": "under_construction",
       "source": "https://www.eia.gov/electricity/data/eia860m/",
@@ -21321,20 +21556,6 @@
       "year_online": 2026
     },
     {
-      "id": "eia-69437",
-      "type": "bess",
-      "name": "Lathrop 4 - SLCVA204",
-      "operator": "Prologis Logistics Services Incorporated",
-      "city": "San Joaquin",
-      "state": "CA",
-      "lat": 37.8094,
-      "lng": -121.283,
-      "capacity_mw": 2,
-      "status": "under_construction",
-      "source": "https://www.eia.gov/electricity/data/eia860m/",
-      "year_online": 2026
-    },
-    {
       "id": "eia-69444",
       "type": "bess",
       "name": "Elm City BESS",
@@ -21403,48 +21624,6 @@
       "status": "planned",
       "source": "https://www.eia.gov/electricity/data/eia860m/",
       "year_online": 2027
-    },
-    {
-      "id": "eia-69510",
-      "type": "bess",
-      "name": "Cotulla BESS 1",
-      "operator": "Marubeni Power International, Inc.",
-      "city": "La Salle",
-      "state": "TX",
-      "lat": 28.4423,
-      "lng": -99.2525,
-      "capacity_mw": 10,
-      "status": "under_construction",
-      "source": "https://www.eia.gov/electricity/data/eia860m/",
-      "year_online": 2026
-    },
-    {
-      "id": "eia-69511",
-      "type": "bess",
-      "name": "Palmview BESS",
-      "operator": "Marubeni Power International, Inc.",
-      "city": "Hidalgo",
-      "state": "TX",
-      "lat": 26.2383,
-      "lng": -98.3695,
-      "capacity_mw": 10,
-      "status": "under_construction",
-      "source": "https://www.eia.gov/electricity/data/eia860m/",
-      "year_online": 2026
-    },
-    {
-      "id": "eia-69512",
-      "type": "bess",
-      "name": "SE Edinburg BESS",
-      "operator": "Marubeni Power International, Inc.",
-      "city": "Hidalgo",
-      "state": "TX",
-      "lat": 26.2883,
-      "lng": -98.1467,
-      "capacity_mw": 10,
-      "status": "under_construction",
-      "source": "https://www.eia.gov/electricity/data/eia860m/",
-      "year_online": 2026
     },
     {
       "id": "eia-69517",
@@ -22007,20 +22186,6 @@
       "year_online": 2027
     },
     {
-      "id": "eia-69858",
-      "type": "bess",
-      "name": "Pastoria Power Bank",
-      "operator": "Pastoria Power, LLC",
-      "city": "Kern",
-      "state": "CA",
-      "lat": 34.959,
-      "lng": -118.8559,
-      "capacity_mw": 80,
-      "status": "under_construction",
-      "source": "https://www.eia.gov/electricity/data/eia860m/",
-      "year_online": 2026
-    },
-    {
       "id": "eia-69864",
       "type": "bess",
       "name": "Colorado Clean Energy Center (BESS)",
@@ -22296,7 +22461,7 @@
       "lat": 36.8685,
       "lng": -108.277,
       "capacity_mw": 100,
-      "status": "planned",
+      "status": "under_construction",
       "source": "https://www.eia.gov/electricity/data/eia860m/",
       "year_online": 2027
     },
@@ -22478,7 +22643,7 @@
       "lat": 40.12,
       "lng": -103.42,
       "capacity_mw": 250,
-      "status": "planned",
+      "status": "under_construction",
       "source": "https://www.eia.gov/electricity/data/eia860m/",
       "year_online": 2027
     },
@@ -22576,7 +22741,7 @@
       "lat": 38.9997,
       "lng": -102.4943,
       "capacity_mw": 250,
-      "status": "planned",
+      "status": "under_construction",
       "source": "https://www.eia.gov/electricity/data/eia860m/",
       "year_online": 2026
     },
@@ -22618,7 +22783,7 @@
       "lat": 40.6135,
       "lng": -104.8467,
       "capacity_mw": 100,
-      "status": "planned",
+      "status": "under_construction",
       "source": "https://www.eia.gov/electricity/data/eia860m/",
       "year_online": 2026
     },
@@ -22715,7 +22880,7 @@
       "state": "AZ",
       "lat": 32.9479,
       "lng": -111.4576,
-      "capacity_mw": 300,
+      "capacity_mw": 400,
       "status": "under_construction",
       "source": "https://www.eia.gov/electricity/data/eia860m/",
       "year_online": 2027
@@ -22733,20 +22898,6 @@
       "status": "under_construction",
       "source": "https://www.eia.gov/electricity/data/eia860m/",
       "year_online": 2028
-    },
-    {
-      "id": "eia-70226",
-      "type": "bess",
-      "name": "2nd & N BESS",
-      "operator": "Lincoln Electric System",
-      "city": "Lancaster",
-      "state": "NE",
-      "lat": 40.8126,
-      "lng": -96.7188,
-      "capacity_mw": 3,
-      "status": "under_construction",
-      "source": "https://www.eia.gov/electricity/data/eia860m/",
-      "year_online": 2026
     },
     {
       "id": "eia-70231",
@@ -22767,7 +22918,7 @@
       "type": "bess",
       "name": "Evergreen Energy Center, LLC",
       "operator": "East Point Energy, LLC",
-      "city": "Loudon",
+      "city": "Loudoun",
       "state": "VA",
       "lat": 39.0449,
       "lng": -77.5819,
@@ -22800,9 +22951,23 @@
       "lat": 38.7299,
       "lng": -77.5924,
       "capacity_mw": 20,
-      "status": "planned",
+      "status": "under_construction",
       "source": "https://www.eia.gov/electricity/data/eia860m/",
       "year_online": 2026
+    },
+    {
+      "id": "eia-70237",
+      "type": "bess",
+      "name": "Mule Shoe Energy Storage",
+      "operator": "Mule Shoe Energy Storage LLC",
+      "city": "Yoakum",
+      "state": "TX",
+      "lat": 33.1259,
+      "lng": -102.76,
+      "capacity_mw": 207,
+      "status": "planned",
+      "source": "https://www.eia.gov/electricity/data/eia860m/",
+      "year_online": 2028
     },
     {
       "id": "eia-70240",
@@ -22842,6 +23007,342 @@
       "lat": 38.3471,
       "lng": -121.1209,
       "capacity_mw": 160,
+      "status": "planned",
+      "source": "https://www.eia.gov/electricity/data/eia860m/",
+      "year_online": 2027
+    },
+    {
+      "id": "eia-70311",
+      "type": "bess",
+      "name": "Eastern BlueBird Clean Energy LLC",
+      "operator": "NineDot Holdings, LLC",
+      "city": "Bronx",
+      "state": "NY",
+      "lat": 40.8849,
+      "lng": -73.829,
+      "capacity_mw": 4,
+      "status": "under_construction",
+      "source": "https://www.eia.gov/electricity/data/eia860m/",
+      "year_online": 2027
+    },
+    {
+      "id": "eia-70315",
+      "type": "bess",
+      "name": "Northern Cardinal Clean Energy, LLC",
+      "operator": "NineDot Holdings, LLC",
+      "city": "Bronx",
+      "state": "NY",
+      "lat": 40.8849,
+      "lng": -73.829,
+      "capacity_mw": 4,
+      "status": "under_construction",
+      "source": "https://www.eia.gov/electricity/data/eia860m/",
+      "year_online": 2027
+    },
+    {
+      "id": "eia-70318",
+      "type": "bess",
+      "name": "Sugar Maple Clean Energy LLC",
+      "operator": "NineDot Holdings, LLC",
+      "city": "Richmond",
+      "state": "NY",
+      "lat": 40.6048,
+      "lng": -74.1205,
+      "capacity_mw": 2,
+      "status": "under_construction",
+      "source": "https://www.eia.gov/electricity/data/eia860m/",
+      "year_online": 2026
+    },
+    {
+      "id": "eia-70320",
+      "type": "bess",
+      "name": "Water Willow A Clean Energy LLC",
+      "operator": "NineDot Holdings, LLC",
+      "city": "Queens",
+      "state": "NY",
+      "lat": 40.7089,
+      "lng": -73.7794,
+      "capacity_mw": 4,
+      "status": "under_construction",
+      "source": "https://www.eia.gov/electricity/data/eia860m/",
+      "year_online": 2027
+    },
+    {
+      "id": "eia-70321",
+      "type": "bess",
+      "name": "Water Willow B Clean Energy LLC",
+      "operator": "NineDot Holdings, LLC",
+      "city": "Queens",
+      "state": "NY",
+      "lat": 40.7089,
+      "lng": -73.7794,
+      "capacity_mw": 4,
+      "status": "under_construction",
+      "source": "https://www.eia.gov/electricity/data/eia860m/",
+      "year_online": 2027
+    },
+    {
+      "id": "eia-70326",
+      "type": "bess",
+      "name": "Coral Honeysuckle Clean Energy LLC",
+      "operator": "NineDot Holdings, LLC",
+      "city": "Queens",
+      "state": "NY",
+      "lat": 40.679,
+      "lng": -73.8203,
+      "capacity_mw": 4,
+      "status": "under_construction",
+      "source": "https://www.eia.gov/electricity/data/eia860m/",
+      "year_online": 2027
+    },
+    {
+      "id": "eia-70327",
+      "type": "bess",
+      "name": "Heron Clean Energy, LLC",
+      "operator": "NineDot Holdings, LLC",
+      "city": "Kings",
+      "state": "NY",
+      "lat": 40.6182,
+      "lng": -73.9324,
+      "capacity_mw": 5,
+      "status": "under_construction",
+      "source": "https://www.eia.gov/electricity/data/eia860m/",
+      "year_online": 2026
+    },
+    {
+      "id": "eia-70328",
+      "type": "bess",
+      "name": "Jamaica Community Energy, LLC",
+      "operator": "NineDot Holdings, LLC",
+      "city": "Kings",
+      "state": "NY",
+      "lat": 40.638,
+      "lng": -73.9282,
+      "capacity_mw": 5,
+      "status": "under_construction",
+      "source": "https://www.eia.gov/electricity/data/eia860m/",
+      "year_online": 2027
+    },
+    {
+      "id": "eia-70329",
+      "type": "bess",
+      "name": "Linden Clean Energy, LLC",
+      "operator": "NineDot Holdings, LLC",
+      "city": "Queens",
+      "state": "NY",
+      "lat": 40.6791,
+      "lng": -73.8204,
+      "capacity_mw": 4,
+      "status": "under_construction",
+      "source": "https://www.eia.gov/electricity/data/eia860m/",
+      "year_online": 2027
+    },
+    {
+      "id": "eia-70340",
+      "type": "bess",
+      "name": "Carousel Energy Storage, LLC",
+      "operator": "Carousel Energy Storage, LLC",
+      "city": "Kit Carson",
+      "state": "CO",
+      "lat": 39.2133,
+      "lng": -102.1036,
+      "capacity_mw": 150,
+      "status": "planned",
+      "source": "https://www.eia.gov/electricity/data/eia860m/",
+      "year_online": 2027
+    },
+    {
+      "id": "eia-70345",
+      "type": "bess",
+      "name": "Steele Flats Energy Storage",
+      "operator": "Steele Flats Energy Storage, LLC",
+      "city": "Jefferson",
+      "state": "NE",
+      "lat": 40.0513,
+      "lng": -96.9518,
+      "capacity_mw": 50,
+      "status": "under_construction",
+      "source": "https://www.eia.gov/electricity/data/eia860m/",
+      "year_online": 2026
+    },
+    {
+      "id": "eia-70365",
+      "type": "bess",
+      "name": "Bodkin BESS",
+      "operator": "Bodkin BESS LLC",
+      "city": "Brazoria",
+      "state": "TX",
+      "lat": 29.292,
+      "lng": -95.301,
+      "capacity_mw": 75,
+      "status": "planned",
+      "source": "https://www.eia.gov/electricity/data/eia860m/",
+      "year_online": 2028
+    },
+    {
+      "id": "eia-70366",
+      "type": "bess",
+      "name": "Boot Hill Energy Storage",
+      "operator": "Boot Hill Energy Storage LLC",
+      "city": "Ford",
+      "state": "KS",
+      "lat": 37.704,
+      "lng": -99.977,
+      "capacity_mw": 75,
+      "status": "planned",
+      "source": "https://www.eia.gov/electricity/data/eia860m/",
+      "year_online": 2028
+    },
+    {
+      "id": "eia-70367",
+      "type": "bess",
+      "name": "O'Bannion Energy Storage",
+      "operator": "O'Bannion Energy Storage, LLC",
+      "city": "Jack",
+      "state": "TX",
+      "lat": 33.041,
+      "lng": -98.339,
+      "capacity_mw": 300,
+      "status": "planned",
+      "source": "https://www.eia.gov/electricity/data/eia860m/",
+      "year_online": 2028
+    },
+    {
+      "id": "eia-70377",
+      "type": "bess",
+      "name": "Boxcar Energy Storage",
+      "operator": "Boxcar Energy Storage, LLC",
+      "city": "Collin",
+      "state": "TX",
+      "lat": 33.0185,
+      "lng": -96.52,
+      "capacity_mw": 150,
+      "status": "under_construction",
+      "source": "https://www.eia.gov/electricity/data/eia860m/",
+      "year_online": 2027
+    },
+    {
+      "id": "eia-70386",
+      "type": "bess",
+      "name": "Chicopee BESS",
+      "operator": "Uriel Renovables S.A",
+      "city": "Hampden",
+      "state": "MA",
+      "lat": 42.1737,
+      "lng": -72.6119,
+      "capacity_mw": 5,
+      "status": "under_construction",
+      "source": "https://www.eia.gov/electricity/data/eia860m/",
+      "year_online": 2026
+    },
+    {
+      "id": "eia-70387",
+      "type": "bess",
+      "name": "Framingham BESS",
+      "operator": "Uriel Renovables S.A",
+      "city": "Middlesex",
+      "state": "MA",
+      "lat": 42.3131,
+      "lng": -71.3895,
+      "capacity_mw": 5,
+      "status": "under_construction",
+      "source": "https://www.eia.gov/electricity/data/eia860m/",
+      "year_online": 2026
+    },
+    {
+      "id": "eia-70395",
+      "type": "bess",
+      "name": "Pace Road Battery Storage",
+      "operator": "Tampa Electric Co",
+      "city": "Polk",
+      "state": "FL",
+      "lat": 28.1362,
+      "lng": -81.8298,
+      "capacity_mw": 20,
+      "status": "planned",
+      "source": "https://www.eia.gov/electricity/data/eia860m/",
+      "year_online": 2027
+    },
+    {
+      "id": "eia-70397",
+      "type": "bess",
+      "name": "Steel River Solar Phase 1",
+      "operator": "Cypress Creek Renewables",
+      "city": "Mississippi",
+      "state": "AR",
+      "lat": 35.5786,
+      "lng": -90.0976,
+      "capacity_mw": 250,
+      "status": "under_construction",
+      "source": "https://www.eia.gov/electricity/data/eia860m/",
+      "year_online": 2028
+    },
+    {
+      "id": "eia-70398",
+      "type": "bess",
+      "name": "Steel River Solar Phase 2",
+      "operator": "Cypress Creek Renewables",
+      "city": "Mississippi",
+      "state": "AR",
+      "lat": 35.5786,
+      "lng": -90.0976,
+      "capacity_mw": 250,
+      "status": "under_construction",
+      "source": "https://www.eia.gov/electricity/data/eia860m/",
+      "year_online": 2029
+    },
+    {
+      "id": "eia-70399",
+      "type": "bess",
+      "name": "Steel River Solar Phase 3",
+      "operator": "Cypress Creek Renewables",
+      "city": "Mississippi",
+      "state": "AR",
+      "lat": 35.5786,
+      "lng": -90.0976,
+      "capacity_mw": 250,
+      "status": "under_construction",
+      "source": "https://www.eia.gov/electricity/data/eia860m/",
+      "year_online": 2030
+    },
+    {
+      "id": "eia-70400",
+      "type": "bess",
+      "name": "Bee Branch IA",
+      "operator": "Bee Branch IA, LLC",
+      "city": "Robertson",
+      "state": "TX",
+      "lat": 31.1048,
+      "lng": -96.6648,
+      "capacity_mw": 200,
+      "status": "planned",
+      "source": "https://www.eia.gov/electricity/data/eia860m/",
+      "year_online": 2027
+    },
+    {
+      "id": "eia-70403",
+      "type": "bess",
+      "name": "Grand Basin Energy Storage",
+      "operator": "Grand Basin Energy Storage, LLC",
+      "city": "Jackson",
+      "state": "MI",
+      "lat": 42.4202,
+      "lng": -84.4875,
+      "capacity_mw": 100,
+      "status": "planned",
+      "source": "https://www.eia.gov/electricity/data/eia860m/",
+      "year_online": 2027
+    },
+    {
+      "id": "eia-70419",
+      "type": "bess",
+      "name": "Royal Slope",
+      "operator": "Royal Slope Solar LLC",
+      "city": "Grant",
+      "state": "WA",
+      "lat": 46.8831,
+      "lng": -119.9207,
+      "capacity_mw": 260,
       "status": "planned",
       "source": "https://www.eia.gov/electricity/data/eia860m/",
       "year_online": 2027
