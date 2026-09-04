@@ -143,8 +143,9 @@
 
   fetch('/changelog.json', { cache: 'no-cache' }).then(r => r.json()).then(log => {
     const s = log.summary || {};
+    const src = s.eia_source_month ? ` Federal source: <code>EIA-860M ${esc(s.eia_source_month.replace('_generator',' '))}</code>.` : '';
     document.getElementById('cl-period').innerHTML =
-      `Latest refresh: <strong>${fmtDate(s.to)}</strong>` + (s.from ? ` — compared with the ${fmtDate(s.from)} build.` : '.');
+      `Latest refresh: <strong>${fmtDate(s.to)}</strong>` + (s.from ? ` — compared with the ${fmtDate(s.from)} build.` : '.') + src;
 
     document.getElementById('s-added').textContent = fmt(s.added);
     document.getElementById('s-status').textContent = fmt(s.status_changes);

@@ -241,11 +241,12 @@
       "state": "WI",
       "lat": 43.3872,
       "lng": -87.8728,
-      "capacity_mw": 902,
+      "capacity_mw": 1300,
       "status": "under_construction",
       "year_online": 2028,
-      "source": "https://dailyreporter.com/2026/01/22/turner-mccarthy-port-washington-data-center/",
-      "investment_usd": 15000000000
+      "source": "https://epoch.ai/publications/openai-stargate-where-the-us-sites-stand",
+      "investment_usd": 15000000000,
+      "capacity_estimated": true
     },
     {
       "id": "dc-switch-citadel",
@@ -300,7 +301,8 @@
       "lng": -86.5861,
       "capacity_mw": null,
       "status": "operating",
-      "source": "https://datacenters.atmeta.com/us-locations/"
+      "source": "https://dgtlinfra.com/meta-data-center-locations-facebook/",
+      "investment_usd": 1500000000
     },
     {
       "id": "dc-meta-montgomery",
@@ -313,7 +315,8 @@
       "lng": -86.3,
       "capacity_mw": null,
       "status": "under_construction",
-      "source": "https://datacenters.atmeta.com/us-locations/"
+      "source": "https://www.alreporter.com/2025/09/24/meta-to-expand-montgomery-data-center-upping-local-investments-to-1-5-billion/",
+      "investment_usd": 1500000000
     },
     {
       "id": "dc-google-west-memphis",
@@ -326,7 +329,9 @@
       "lng": -90.1845,
       "capacity_mw": null,
       "status": "planned",
-      "source": "https://datacenters.google/locations/"
+      "source": "https://www.powermag.com/entergy-will-power-4-billion-google-data-center-in-arkansas/",
+      "investment_usd": 4000000000,
+      "year_online": 2027
     },
     {
       "id": "dc-meta-mesa",
@@ -338,8 +343,10 @@
       "lat": 33.4152,
       "lng": -111.8315,
       "capacity_mw": null,
-      "status": "under_construction",
-      "source": "https://datacenters.atmeta.com/us-locations/"
+      "status": "operating",
+      "source": "https://www.datacenterdynamics.com/en/news/metas-mesa-arizona-data-center-comes-online/",
+      "year_online": 2025,
+      "investment_usd": 1000000000
     },
     {
       "id": "dc-msft-alviso-san-jose",
@@ -377,9 +384,9 @@
       "state": "GA",
       "lat": 33.0393,
       "lng": -85.0313,
-      "capacity_mw": null,
+      "capacity_mw": 100,
       "status": "planned",
-      "source": "https://datacenters.google/locations/"
+      "source": "https://www.datacenterdynamics.com/en/news/google-confirms-plans-for-data-center-in-lagrange-georgia/"
     },
     {
       "id": "dc-google-cedar-rapids",
@@ -392,7 +399,8 @@
       "lng": -91.6656,
       "capacity_mw": null,
       "status": "planned",
-      "source": "https://datacenters.google/locations/"
+      "source": "https://www.datacenterdynamics.com/en/news/google-pledges-7bn-to-expand-iowa-data-center-footprint/",
+      "investment_usd": 576000000
     },
     {
       "id": "dc-meta-altoona",
@@ -405,7 +413,8 @@
       "lng": -93.4647,
       "capacity_mw": null,
       "status": "operating",
-      "source": "https://datacenters.atmeta.com/us-locations/"
+      "source": "https://dgtlinfra.com/meta-data-center-locations-facebook/",
+      "investment_usd": 2500000000
     },
     {
       "id": "dc-meta-kuna",
@@ -437,15 +446,17 @@
     {
       "id": "dc-google-indiana",
       "type": "data_center",
-      "name": "Google Indiana",
+      "name": "Google Fort Wayne",
       "operator": "Google",
-      "city": "Indiana",
+      "city": "Fort Wayne",
       "state": "IN",
-      "lat": 39.7684,
-      "lng": -86.1581,
+      "lat": 41.0793,
+      "lng": -85.1394,
       "capacity_mw": null,
-      "status": "planned",
-      "source": "https://datacenters.google/locations/"
+      "status": "operating",
+      "source": "https://www.datacenterdynamics.com/en/news/googles-2bn-data-center-now-operational-in-fort-wayne-indiana/",
+      "year_online": 2025,
+      "investment_usd": 2000000000
     },
     {
       "id": "dc-google-michigan-city",
@@ -457,8 +468,9 @@
       "lat": 41.7075,
       "lng": -86.895,
       "capacity_mw": null,
-      "status": "planned",
-      "source": "https://datacenters.google/locations/"
+      "status": "under_construction",
+      "source": "https://www.datacenterdynamics.com/en/news/google-takes-over-project-maize-data-center-campus-in-michigan-city-indiana/",
+      "investment_usd": 832000000
     },
     {
       "id": "dc-meta-jeffersonville",
@@ -471,7 +483,8 @@
       "lng": -85.7372,
       "capacity_mw": null,
       "status": "under_construction",
-      "source": "https://datacenters.atmeta.com/us-locations/"
+      "source": "https://www.bisnow.com/news/national/data-center-development/meta-unveils-10b-data-center-megacampus-planned-near-indianapolis-133195",
+      "investment_usd": 800000000
     },
     {
       "id": "dc-meta-lebanon-in",
@@ -482,9 +495,10 @@
       "state": "IN",
       "lat": 40.0484,
       "lng": -86.4692,
-      "capacity_mw": null,
+      "capacity_mw": 1000,
       "status": "under_construction",
-      "source": "https://datacenters.atmeta.com/us-locations/"
+      "source": "https://www.datacenterknowledge.com/data-center-construction/meta-breaks-ground-on-1-gw-indiana-data-center",
+      "investment_usd": 10000000000
     },
     {
       "id": "dc-aws-northwest-louisiana",
@@ -497,7 +511,8 @@
       "lng": -93.7502,
       "capacity_mw": null,
       "status": "planned",
-      "source": "https://www.aboutamazon.com/news/company-news/amazon-data-center-louisiana-new-jobs"
+      "source": "https://www.aboutamazon.com/news/company-news/amazon-data-center-louisiana-new-jobs",
+      "investment_usd": 18000000000
     },
     {
       "id": "dc-google-hermantown",
@@ -532,11 +547,12 @@
       "operator": "Amazon Web Services",
       "city": "Montgomery County",
       "state": "MO",
-      "lat": 38.9364,
-      "lng": -91.4654,
+      "lat": 38.9775,
+      "lng": -91.5049,
       "capacity_mw": null,
       "status": "planned",
-      "source": "https://www.aboutamazon.com/news/company-news/amazon-data-center-missouri-new-jobs"
+      "source": "https://www.prnewswire.com/news-releases/amazon-selects-missouri-for-10-billion-data-center-campus-302800859.html",
+      "investment_usd": 10000000000
     },
     {
       "id": "dc-google-kansas-city",
@@ -548,8 +564,9 @@
       "lat": 39.0997,
       "lng": -94.5786,
       "capacity_mw": null,
-      "status": "planned",
-      "source": "https://datacenters.google/locations/"
+      "status": "under_construction",
+      "source": "https://www.kshb.com/news/local-news/missouri/kansas-city/google-announces-construction-underway-for-second-data-center-campus-in-kansas-city",
+      "investment_usd": 1000000000
     },
     {
       "id": "dc-google-new-florence",
@@ -560,9 +577,11 @@
       "state": "MO",
       "lat": 38.9109,
       "lng": -91.4482,
-      "capacity_mw": null,
+      "capacity_mw": 1200,
       "status": "planned",
-      "source": "https://datacenters.google/locations/"
+      "source": "https://www.datacenterdynamics.com/en/news/google-pledges-15bn-investment-in-new-florence-missouri/",
+      "investment_usd": 15000000000,
+      "year_online": 2028
     },
     {
       "id": "dc-google-lincoln",
@@ -575,7 +594,8 @@
       "lng": -96.7026,
       "capacity_mw": null,
       "status": "planned",
-      "source": "https://datacenters.google/locations/"
+      "source": "https://nebraskaexaminer.com/2023/08/22/google-confirms-lincolns-600m-data-center-touts-this-years-1-2b-spend-on-ne-infrastructure/",
+      "investment_usd": 600000000
     },
     {
       "id": "dc-google-omaha",
@@ -588,7 +608,8 @@
       "lng": -95.9345,
       "capacity_mw": null,
       "status": "operating",
-      "source": "https://datacenters.google/locations/"
+      "source": "https://www.datacenterdynamics.com/en/news/google-to-build-another-data-center-in-omaha-nebraska/",
+      "investment_usd": 750000000
     },
     {
       "id": "dc-google-papillion",
@@ -601,7 +622,8 @@
       "lng": -96.0422,
       "capacity_mw": null,
       "status": "operating",
-      "source": "https://datacenters.google/locations/"
+      "source": "https://www.datacenterdynamics.com/en/news/google-to-build-another-data-center-in-omaha-nebraska/",
+      "investment_usd": 600000000
     },
     {
       "id": "dc-meta-bowling-green",
@@ -614,7 +636,8 @@
       "lng": -83.6513,
       "capacity_mw": null,
       "status": "under_construction",
-      "source": "https://datacenters.atmeta.com/us-locations/"
+      "source": "https://www.jobsohio.com/newsroom/news-press/regional-growth-partnership-and-jobsohio-welcome-meta-to-northwest-ohio-with-new-800-million-data-center-announcement",
+      "investment_usd": 800000000
     },
     {
       "id": "dc-google-muskogee-county",
@@ -626,8 +649,8 @@
       "lat": 35.7479,
       "lng": -95.3697,
       "capacity_mw": null,
-      "status": "planned",
-      "source": "https://datacenters.google/locations/"
+      "status": "under_construction",
+      "source": "https://www.fox23.com/news/officials-share-new-details-about-two-google-data-centers-coming-to-muskogee-county/article_f838a180-72a6-400a-8ada-47cb8aa26143.html"
     },
     {
       "id": "dc-google-stillwater",
@@ -653,7 +676,8 @@
       "lng": -95.9928,
       "capacity_mw": null,
       "status": "under_construction",
-      "source": "https://datacenters.atmeta.com/us-locations/"
+      "source": "https://about.fb.com/news/2026/04/breaking-ground-new-ai-optimized-data-center-tulsa-oklahoma/",
+      "investment_usd": 1000000000
     },
     {
       "id": "dc-google-dorchester-county",
@@ -665,8 +689,8 @@
       "lat": 33.082,
       "lng": -80.404,
       "capacity_mw": null,
-      "status": "planned",
-      "source": "https://datacenters.google/locations/"
+      "status": "under_construction",
+      "source": "https://www.datacenterdynamics.com/en/news/google-to-invest-9bn-in-south-carolina-data-centers/"
     },
     {
       "id": "dc-meta-aiken",
@@ -679,7 +703,8 @@
       "lng": -81.7196,
       "capacity_mw": null,
       "status": "under_construction",
-      "source": "https://datacenters.atmeta.com/us-locations/"
+      "source": "https://www.datacenterdynamics.com/en/news/meta-plans-800m-data-center-campus-in-aiken-county-south-carolina/",
+      "investment_usd": 800000000
     },
     {
       "id": "dc-google-montgomery-county-tn",
@@ -692,7 +717,9 @@
       "lng": -87.3595,
       "capacity_mw": null,
       "status": "operating",
-      "source": "https://datacenters.google/locations/"
+      "source": "https://www.datacenterdynamics.com/en/news/google-opens-600m-tennessee-data-center/",
+      "investment_usd": 600000000,
+      "year_online": 2019
     },
     {
       "id": "dc-google-armstrong-county",
@@ -723,15 +750,16 @@
     {
       "id": "dc-google-pampa",
       "type": "data_center",
-      "name": "Google Pampa",
+      "name": "Google Pampa (Meitner Energy Center)",
       "operator": "Google",
       "city": "Pampa",
       "state": "TX",
       "lat": 35.5362,
       "lng": -100.9599,
       "capacity_mw": null,
-      "status": "planned",
-      "source": "https://datacenters.google/locations/"
+      "status": "under_construction",
+      "source": "https://www.powermag.com/google-launches-1-gw-plus-co-located-data-center-and-generation-complex-in-texas-panhandle/",
+      "energy_source": "mixed"
     },
     {
       "id": "dc-google-red-oak",
@@ -785,7 +813,8 @@
       "lng": -97.3308,
       "capacity_mw": null,
       "status": "operating",
-      "source": "https://datacenters.atmeta.com/us-locations/"
+      "source": "https://dgtlinfra.com/meta-data-center-locations-facebook/",
+      "investment_usd": 1500000000
     },
     {
       "id": "dc-google-chesterfield-county",
@@ -824,7 +853,9 @@
       "lng": -88.8373,
       "capacity_mw": null,
       "status": "under_construction",
-      "source": "https://datacenters.atmeta.com/us-locations/"
+      "source": "https://wedc.org/meta-state-and-local-officials-announce-1-billion-data-center-investment-in-beaver-dam-project/",
+      "investment_usd": 1000000000,
+      "year_online": 2027
     },
     {
       "id": "dc-nscale-monarch",
@@ -864,7 +895,8 @@
       "lng": -104.8202,
       "capacity_mw": null,
       "status": "under_construction",
-      "source": "https://datacenters.atmeta.com/us-locations/"
+      "source": "https://www.datacenterdynamics.com/en/news/meta-officially-announces-data-center-in-cheyenne-wyoming/",
+      "investment_usd": 800000000
     },
     {
       "id": "bess-moss-landing",
@@ -1230,20 +1262,6 @@
       "status": "operating",
       "year_online": 2008,
       "source": "https://datacenters.microsoft.com/"
-    },
-    {
-      "id": "dc-msft-mtpleasant",
-      "type": "data_center",
-      "name": "Microsoft Mt. Pleasant",
-      "operator": "Microsoft",
-      "city": "Mt. Pleasant",
-      "state": "WI",
-      "lat": 42.7211,
-      "lng": -87.9112,
-      "capacity_mw": 750,
-      "status": "under_construction",
-      "year_online": 2026,
-      "source": "https://news.microsoft.com/source/features/sustainability/wisconsin-datacenters/"
     },
     {
       "id": "dc-msft-goodyear",
@@ -2192,16 +2210,16 @@
     {
       "id": "dc-msft-atlanta",
       "type": "data_center",
-      "name": "Microsoft Atlanta",
+      "name": "Microsoft Fairwater Atlanta",
       "operator": "Microsoft",
       "city": "Palmetto",
       "state": "GA",
       "lat": 33.5187,
       "lng": -84.6688,
       "capacity_mw": 400,
-      "status": "under_construction",
-      "year_online": 2026,
-      "source": "https://datacenters.microsoft.com/"
+      "status": "operating",
+      "year_online": 2025,
+      "source": "https://www.datacenterdynamics.com/en/news/microsoft-launches-atlanta-fairwater-data-center-two-stories-no-ups-or-gen-sets/"
     },
     {
       "id": "dc-msft-elmirage",
@@ -3525,11 +3543,11 @@
       "state": "NM",
       "lat": 32.35,
       "lng": -106.83,
-      "capacity_mw": 1000,
-      "capacity_estimated": true,
+      "capacity_mw": 2200,
+      "capacity_estimated": false,
       "status": "under_construction",
       "year_online": 2028,
-      "source": "https://www.stackinfra.com/about/news-press/press-releases/stack-infrastructure-delivers-digital-infrastructure-for-data-center-campus-in-new-mexico/"
+      "source": "https://epoch.ai/publications/openai-stargate-where-the-us-sites-stand"
     },
     {
       "id": "dc-stargate-saline",
@@ -3555,8 +3573,7 @@
       "state": "WI",
       "lat": 42.71,
       "lng": -87.89,
-      "capacity_mw": 369,
-      "capacity_estimated": true,
+      "capacity_mw": 750,
       "status": "operating",
       "year_online": 2026,
       "source": "https://epoch.ai/data/ai-data-centers/directory/microsoft-fairwater-wisconsin"
@@ -23346,6 +23363,136 @@
       "status": "planned",
       "source": "https://www.eia.gov/electricity/data/eia860m/",
       "year_online": 2027
+    },
+    {
+      "id": "dc-stargate-lordstown",
+      "type": "data_center",
+      "name": "Stargate Lordstown (SoftBank / Foxconn)",
+      "operator": "SoftBank / OpenAI / Foxconn",
+      "city": "Lordstown",
+      "state": "OH",
+      "lat": 41.1609,
+      "lng": -80.8576,
+      "capacity_mw": null,
+      "status": "planned",
+      "year_online": 2026,
+      "source": "https://businessjournaldaily.com/preparation-work-begins-on-lordstown-data-center/"
+    },
+    {
+      "id": "dc-fermi-matador-amarillo",
+      "type": "data_center",
+      "name": "Fermi America Project Matador",
+      "operator": "Fermi America",
+      "city": "Carson County",
+      "state": "TX",
+      "lat": 35.4034,
+      "lng": -101.354,
+      "capacity_mw": 11000,
+      "status": "announced",
+      "year_online": 2027,
+      "source": "https://www.datacenterdynamics.com/en/news/fermi-share-price-craters-as-tenant-pulls-back-from-150m-texas-data-center-deal/",
+      "energy_source": "mixed"
+    },
+    {
+      "id": "dc-applied-digital-ellendale",
+      "type": "data_center",
+      "name": "Applied Digital Polaris Forge 1",
+      "operator": "Applied Digital / CoreWeave",
+      "city": "Ellendale",
+      "state": "ND",
+      "lat": 46.0025,
+      "lng": -98.5271,
+      "capacity_mw": 400,
+      "status": "operating",
+      "year_online": 2025,
+      "source": "https://www.globenewswire.com/news-release/2026/07/01/3320913/0/en/applied-digital-delivers-second-building-at-polaris-forge-1.html"
+    },
+    {
+      "id": "dc-nebius-vineland",
+      "type": "data_center",
+      "name": "Nebius Vineland",
+      "operator": "Nebius / DataOne",
+      "city": "Vineland",
+      "state": "NJ",
+      "lat": 39.4864,
+      "lng": -75.026,
+      "capacity_mw": 300,
+      "status": "under_construction",
+      "year_online": 2026,
+      "source": "https://whyy.org/articles/vineland-planning-board-approves-data-center-plan/"
+    },
+    {
+      "id": "dc-aws-richmond-county-nc",
+      "type": "data_center",
+      "name": "AWS Richmond County (Energy Way)",
+      "operator": "Amazon Web Services",
+      "city": "Hamlet",
+      "state": "NC",
+      "lat": 34.8849,
+      "lng": -79.6942,
+      "capacity_mw": null,
+      "status": "under_construction",
+      "investment_usd": 10000000000,
+      "source": "https://www.datacenterdynamics.com/en/news/amazon-breaks-ground-on-10bn-data-center-complex-in-richmond-county-north-carolina/"
+    },
+    {
+      "id": "dc-aws-salem-township-pa",
+      "type": "data_center",
+      "name": "AWS Salem Township (Susquehanna)",
+      "operator": "Amazon Web Services",
+      "city": "Salem Township",
+      "state": "PA",
+      "lat": 41.0918,
+      "lng": -76.1463,
+      "capacity_mw": null,
+      "status": "planned",
+      "investment_usd": 20000000000,
+      "source": "https://www.datacenterdynamics.com/en/news/amazon-to-invest-20bn-in-data-centers-in-pennsylvania/"
+    },
+    {
+      "id": "dc-aws-butts-county-ga",
+      "type": "data_center",
+      "name": "AWS Georgia (Butts / Douglas Counties)",
+      "operator": "Amazon Web Services",
+      "city": "Butts County",
+      "state": "GA",
+      "lat": 33.2946,
+      "lng": -83.9666,
+      "capacity_mw": null,
+      "status": "planned",
+      "investment_usd": 11000000000,
+      "source": "https://www.datacenterdynamics.com/en/news/aws-reveals-11bn-data-center-investment-plan-for-georgia/"
+    },
+    {
+      "id": "dc-coreweave-lancaster",
+      "type": "data_center",
+      "name": "CoreWeave Lancaster",
+      "operator": "CoreWeave",
+      "city": "Lancaster County",
+      "state": "PA",
+      "lat": 40.0379,
+      "lng": -76.3055,
+      "capacity_mw": 300,
+      "status": "planned",
+      "investment_usd": 6000000000,
+      "source": "https://www.rcrwireless.com/20250716/ai-infrastructure/coreweave-ai-data"
+    },
+    {
+      "id": "dc-coreweave-denton",
+      "type": "data_center",
+      "name": "CoreWeave Denton (Core Scientific)",
+      "operator": "CoreWeave / Core Scientific",
+      "city": "Denton",
+      "state": "TX",
+      "lat": 33.2148,
+      "lng": -97.1331,
+      "capacity_mw": null,
+      "status": "operating",
+      "year_online": 2025,
+      "source": "https://www.datacenterdynamics.com/en/news/coreweave-deploys-16000-gpus-at-delayed-data-center-in-denton-texas/"
     }
-  ]
+  ],
+  "eia_source_month": "july_generator2026",
+  "eia_source_url": "https://www.eia.gov/electricity/data/eia860m/xls/july_generator2026.xlsx",
+  "eia_ingested_at": "2026-09-04T02:36:00Z"
 }

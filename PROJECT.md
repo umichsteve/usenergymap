@@ -148,9 +148,27 @@ Mechanics (no database, Stripe is the source of truth):
 Change log:
 - `scripts/build_changelog.py` diffs the working-tree `projects.json` against `HEAD` (order-independent) → `changelog.json`
   with `summary`, `highlights`, `history` (public) and row-level `changes` (gated CSV).
-- Wired into `.github/workflows/refresh-eia.yml`; the PR body carries the summary line.
+- Wired into `.github/workflows/refresh-eia.yml` (cron now the 28th — the 26th raced EIA's release); the PR body carries the summary line and the EIA file used.
+- `projects.json` records `eia_source_month` / `eia_source_url` / `eia_ingested_at`; the ingest warns when it re-pulls the same file.
 - The same workflow re-runs `scripts/build_pages.py`, so state/operator pages, the explore hub and sitemap never drift from the data. Orphaned operator pages are pruned and 301'd to /explore via `vercel.json` redirects. Each page's CTA shows that page's own change count from the latest refresh.
 - `/changelog` renders the public summary client-side; `/license` holds the tiered terms.
+
+## Proximity API (Embedded tier)
+
+`GET /api/nearest?lat=&lng=` or `?address=` (US Census geocoder — free, no key, no redistribution terms)
+with optional `type`, `status`, `min_mw`, `radius_miles`, `limit`. Pure Haversine over the public
+`projects.json` (`lib/geo.js`); no database. Demo mode without a key returns 3 results and no radius
+counts; a key in `NEAREST_API_KEYS` (Vercel env, comma-separated) unlocks up to 50 results, radius
+counts and `no-store` caching. Issue one key per Embedded customer; rotate by editing the env var.
+
+## Data center layer (Sept 2026 pass)
+
+161 rows. Conventions live in methodology.html. A research pass on 2026-09-04 filled MW or
+`investment_usd` on ~30 Google/Meta/AWS rows, advanced 7 statuses, repointed the Indiana placeholder
+to Fort Wayne, merged the duplicate Mount Pleasant rows, and added 9 campuses (Stargate Lordstown,
+Fermi Matador, Applied Digital Ellendale, Nebius Vineland, AWS NC/PA/GA, CoreWeave PA/TX).
+Open flags to revisit: Google Red Oak may be a tenant inside Compass Red Oak (possible double count);
+Vantage Frontier 1.4 vs 2.0 GW; Crusoe Tulsa status; Meta Hyperion first-phase year.
 
 ## Open questions for next phase
 
