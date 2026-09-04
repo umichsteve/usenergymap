@@ -1,0 +1,59 @@
+{
+ "schema_version": "1.0",
+ "generated": "2026-09-04",
+ "summary": {
+  "from": "2026-08-05",
+  "to": "2026-08-26",
+  "added": 0,
+  "removed": 0,
+  "changed": 0,
+  "status_changes": 0,
+  "capacity_changes": 0,
+  "newly_operating": 0,
+  "added_mw": 0,
+  "total_projects": 1563,
+  "total_mw": 173227,
+  "net_mw": 0,
+  "by_type": {
+   "bess": {
+    "added": 0,
+    "changed": 0
+   },
+   "data_center": {
+    "added": 0,
+    "changed": 0
+   }
+  }
+ },
+ "highlights": {
+  "top_added": [],
+  "newly_operating": []
+ },
+ "history": [
+  {
+   "from": "2026-06-25",
+   "to": "2026-08-05",
+   "added": 41,
+   "removed": 8,
+   "changed": 92,
+   "status_changes": 46,
+   "capacity_changes": 43,
+   "newly_operating": 25,
+   "added_mw": 5634,
+   "total_projects": 1559,
+   "total_mw": 163468,
+   "net_mw": 3112,
+   "by_type": {
+    "bess": {
+     "added": 41,
+     "changed": 92
+    },
+    "data_center": {
+     "added": 0,
+     "changed": 0
+    }
+   }
+  }
+ ],
+ "changes": []
+}

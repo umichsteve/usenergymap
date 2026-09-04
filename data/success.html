@@ -3,11 +3,18 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Download — US Energy Map</title>
+<title>Your data — US Energy Map</title>
 <meta name="robots" content="noindex, nofollow" />
 <link rel="icon" type="image/svg+xml" href="/assets/mark-square.svg" />
 <link rel="stylesheet" href="/assets/site.css" />
 <script src="/assets/analytics.js"></script>
+<style>
+  [hidden]{display:none!important}
+  .dl{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin:24px 0}
+  .status{display:inline-block;font-size:12px;font-weight:700;letter-spacing:.03em;text-transform:uppercase;padding:4px 10px;border-radius:999px;background:#dcfce7;color:#166534}
+  .status.warn{background:#fef3c7;color:#92400e} .status.bad{background:#fee2e2;color:#991b1b}
+  .meta{font-size:14px;color:var(--muted);margin-top:8px}
+</style>
 </head>
 <body>
 
@@ -17,6 +24,7 @@
     <div class="nav-links">
       <a href="/map">Map</a>
       <a href="/explore">Explore</a>
+      <a href="/changelog">What changed</a>
       <a href="/data">Data</a>
       <a class="cta" href="/map">Open the map →</a>
     </div>
@@ -25,40 +33,82 @@
 
 <section>
   <div class="wrap">
-    <div class="prose" style="max-width:620px;text-align:center;">
-      <div style="font-size:46px;">✅</div>
-      <h1>Thanks — your download is ready</h1>
-      <p class="sub" id="sub">Payment confirmed. Grab the dataset in either format below.</p>
+    <div class="prose" style="max-width:640px;text-align:center;">
+      <div style="font-size:46px;" id="icon">✅</div>
+      <h1 id="h1">Thanks — your download is ready</h1>
+      <p class="sub" id="sub">Confirming your purchase…</p>
+      <div id="badge" hidden><span class="status" id="status"></span><div class="meta" id="meta"></div></div>
 
-      <div id="dl" style="display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin:24px 0;">
+      <div id="dl" class="dl" hidden>
         <a class="btn btn-primary" id="dl-xlsx">Download Excel hunting list</a>
         <a class="btn btn-ghost" id="dl-csv">CSV</a>
         <a class="btn btn-ghost" id="dl-geojson">GeoJSON</a>
+        <a class="btn btn-ghost" id="dl-changelog" hidden>Change log (CSV)</a>
       </div>
 
-      <div class="callout" style="text-align:left;">
-        <p>Keep this tab — your download links work as long as this page is open. A receipt was emailed to you by Stripe. Questions or need a team/commercial license? <a href="mailto:hello@grandroma.com">Email us</a>.</p>
+      <div class="callout" style="text-align:left;" id="note-snapshot" hidden>
+        <p>Keep this tab, or bookmark it — your download links stay live. A receipt was emailed to you by Stripe. This build is dated in the filename so you can cite it. Want it refreshed every month with a change log? <a href="/data#current">Always Current</a> is $49/mo.</p>
       </div>
 
-      <p style="margin-top:24px;"><a href="/">← Back to US Energy Map</a></p>
+      <div class="callout" style="text-align:left;" id="note-current" hidden>
+        <p><strong>Bookmark this page.</strong> It's your personal access link: come back after each monthly refresh (the 26th) for the new build and the change log of what moved. It stays live while your subscription is active. <a href="#" id="portal">Manage billing, update card, or cancel</a>.</p>
+      </div>
+
+      <div class="callout" style="text-align:left;" id="note-fail" hidden>
+        <p id="fail-text"></p>
+      </div>
+
+      <p style="margin-top:24px;font-size:14px;color:var(--muted);">Questions, lost link, or need a team/commercial license? <a href="mailto:hello@usenergymap.com">hello@usenergymap.com</a> · <a href="/license">License terms</a></p>
+      <p style="margin-top:8px;"><a href="/">← Back to US Energy Map</a></p>
     </div>
   </div>
 </section>
 
 <script>
   (function () {
+    const $ = (id) => document.getElementById(id);
     const sid = new URLSearchParams(location.search).get('session_id');
-    const sub = document.getElementById('sub');
-    const dl = document.getElementById('dl');
-    if (!sid) {
-      sub.textContent = 'We couldn’t find your purchase. If you just paid, return from the Stripe receipt link, or email us.';
-      dl.style.display = 'none';
-      return;
-    }
+    const fail = (msg) => {
+      $('icon').textContent = '⚠️'; $('h1').textContent = 'We couldn’t verify this purchase';
+      $('sub').textContent = ''; $('note-fail').hidden = false; $('fail-text').textContent = msg;
+    };
+    if (!sid) return fail('No purchase reference in this link. If you just paid, use the link from your Stripe receipt or email us from your purchase address.');
+
     const base = '/api/download?session_id=' + encodeURIComponent(sid);
-    document.getElementById('dl-xlsx').href = base + '&format=xlsx';
-    document.getElementById('dl-csv').href = base + '&format=csv';
-    document.getElementById('dl-geojson').href = base + '&format=geojson';
+    $('dl-xlsx').href = base + '&format=xlsx';
+    $('dl-csv').href = base + '&format=csv';
+    $('dl-geojson').href = base + '&format=geojson';
+    $('dl-changelog').href = base + '&format=changelog';
+
+    fetch('/api/session?session_id=' + encodeURIComponent(sid), { cache: 'no-store' })
+      .then(r => r.json().then(j => ({ ok: r.ok, j })))
+      .then(({ ok, j }) => {
+        if (!ok || !j.ok) {
+          if (j && j.mode === undefined && j.subscription_status) {
+            return fail('Your Always Current subscription is ' + j.subscription_status + '. Update billing to restore access, or email us.');
+          }
+          return fail((j && j.error) || 'Payment not found. If you just paid, wait a moment and refresh.');
+        }
+        $('dl').hidden = false; $('badge').hidden = false;
+        if (j.mode === 'subscription') {
+          $('h1').textContent = 'You’re set — Always Current is active';
+          $('sub').textContent = 'Download the latest build and the change log below. Come back after the 26th for next month’s.';
+          $('dl-changelog').hidden = false; $('note-current').hidden = false;
+          const s = $('status'); s.textContent = j.subscription_status === 'past_due' ? 'Payment retrying' : (j.cancel_at_period_end ? 'Cancels at period end' : 'Active');
+          if (j.subscription_status === 'past_due') s.classList.add('warn');
+          if (j.cancel_at_period_end) s.classList.add('warn');
+          if (j.current_period_end) $('meta').textContent = (j.cancel_at_period_end ? 'Access until ' : 'Renews ') + new Date(j.current_period_end).toLocaleDateString(undefined, { month: 'long', day: 'numeric', year: 'numeric' });
+          $('portal').addEventListener('click', async (e) => {
+            e.preventDefault();
+            const r = await fetch('/api/portal', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ session_id: sid }) });
+            const d = await r.json(); if (d.url) location.href = d.url; else alert(d.error || 'Could not open billing portal.');
+          });
+        } else {
+          $('sub').textContent = 'Payment confirmed. Grab the dataset in any format below.';
+          $('status').textContent = 'Snapshot purchased'; $('note-snapshot').hidden = false;
+        }
+      })
+      .catch(() => fail('Could not reach the verification service. Refresh in a moment.'));
   })();
 </script>
 
