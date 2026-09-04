@@ -34,10 +34,13 @@ jobs:
           SUMMARY=$(python3 scripts/build_changelog.py)
           echo "summary=$SUMMARY" >> $GITHUB_OUTPUT
 
+      - name: Rebuild state / operator pages, explore hub, sitemap
+        run: python3 scripts/build_pages.py
+
       - name: Check for changes
         id: diff
         run: |
-          if git diff --quiet projects.json; then
+          if [ -z "$(git status --porcelain)" ]; then
             echo "changed=false" >> $GITHUB_OUTPUT
           else
             echo "changed=true" >> $GITHUB_OUTPUT
@@ -56,6 +59,7 @@ jobs:
             - Re-ingested operating + planned BESS projects
             - Preserved hand-curated entries (ids not starting with `eia-`)
             - Rebuilt `changelog.json` — **${{ steps.changelog.outputs.summary }}**
+            - Regenerated state & operator pages, explore hub, sitemap (stale counts fixed; orphaned operator pages pruned → 301)
 
             Review the diff, then merge — pushing to `main` will auto-deploy to usenergymap.com.
           branch: data/eia-refresh
@@ -63,3 +67,9 @@ jobs:
           add-paths: |
             projects.json
             changelog.json
+            state/
+            operator/
+            explore.html
+            sitemap.xml
+            robots.txt
+            vercel.json

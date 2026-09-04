@@ -71,9 +71,9 @@ def head(title, desc, canonical):
     <div class="nav-links">
       <a href="/map">Map</a>
       <a href="/explore">Explore</a>
+      <a href="/changelog">What changed</a>
       <a href="/data">Data</a>
       <a href="/methodology">Methodology</a>
-      <a href="/about">About</a>
       <a class="cta" href="/map">Open the map →</a>
     </div>
   </div>
@@ -91,16 +91,18 @@ FOOTER = """<footer class="footer">
         <h4>Explore</h4>
         <a href="/map">Interactive map</a>
         <a href="/explore">By state &amp; operator</a>
-        <a href="/data">Get the dataset</a>
+        <a href="/changelog">What changed</a>
+        <a href="/data">Data &amp; pricing</a>
         <a href="/methodology">Methodology</a>
+        <a href="/license">License</a>
         <a href="/guides/home-backup-power">Home backup power guide</a>
         <a href="/about">About</a>
         <a href="/privacy">Privacy</a>
       </div>
       <div class="footer-col">
         <h4>Get involved</h4>
-        <a href="mailto:hello@grandroma.com?subject=Sponsoring%20US%20Energy%20Map">Sponsor this map</a>
-        <a href="https://grandroma.com" target="_blank" rel="noopener">Suggest a project</a>
+        <a href="mailto:hello@usenergymap.com?subject=Sponsoring%20US%20Energy%20Map">Sponsor this map</a>
+        <a href="mailto:hello@usenergymap.com?subject=Suggest%20a%20project%20%E2%80%94%20US%20Energy%20Map">Suggest a project</a>
         <a href="https://www.eia.gov/electricity/data/eia860m/" target="_blank" rel="noopener">Data: EIA-860M</a>
       </div>
     </div>
@@ -116,10 +118,40 @@ FOOTER = """<footer class="footer">
 
 DATA_CTA = """
   <div class="callout" style="border-left-color:#16a34a;display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap;margin:26px 0;">
-    <div style="flex:1;min-width:240px;"><strong>Working this market?</strong> Get every operator below as a ranked <strong>BD hunting list</strong> — an Excel workbook with operators sorted by capacity plus blank contact / priority / notes columns, ready to work. CSV + GeoJSON included.</div>
-    <a class="btn btn-primary" href="/data" style="white-space:nowrap;">Get the dataset — $4.99 &rarr;</a>
+    <div style="flex:1;min-width:240px;"><strong>Working this market?</strong> {changed_line}Get every operator below as a ranked <strong>BD hunting list</strong> (Excel + CSV + GeoJSON) — <strong>$199</strong> once, or <strong>$49/mo</strong> refreshed monthly with a row-level change log.</div>
+    <a class="btn btn-primary" href="/data" style="white-space:nowrap;">See data &amp; pricing &rarr;</a>
   </div>
 """
+
+_CHANGELOG = None
+def _changelog():
+    """Latest changelog.json (built by scripts/build_changelog.py), or None."""
+    global _CHANGELOG
+    if _CHANGELOG is None:
+        path = os.path.join(ROOT, "changelog.json")
+        try:
+            with open(path) as f:
+                _CHANGELOG = json.load(f)
+        except Exception:
+            _CHANGELOG = {}
+    return _CHANGELOG or None
+
+def data_cta(projects):
+    """CTA with a live 'what changed here this month' line when the changelog has rows for these projects."""
+    log = _changelog()
+    changed_line = ""
+    if log and log.get("changes"):
+        ids = {p["id"] for p in projects}
+        hits = [c for c in log["changes"] if c.get("id") in ids]
+        if hits:
+            added = sum(1 for c in hits if c["kind"] == "added")
+            status = sum(1 for c in hits if c["kind"] == "changed" and any(f["field"] == "status" for f in c.get("fields", [])))
+            parts = []
+            if added: parts.append(f"{added} added")
+            if status: parts.append(f"{status} status change{'s' if status != 1 else ''}")
+            if not parts: parts.append(f"{len(hits)} record{'s' if len(hits) != 1 else ''} updated")
+            changed_line = f'<a href="/changelog">{", ".join(parts)} here in the latest refresh</a>. '
+    return DATA_CTA.format(changed_line=changed_line)
 
 def stat_cards(projects):
     n = len(projects)
@@ -166,7 +198,7 @@ def write(path, content):
 def main():
     data = json.load(open(os.path.join(ROOT, "projects.json")))
     projects = data.get("projects", [])
-    urls = ["/", "/map", "/explore", "/data", "/methodology", "/about", "/guides/home-backup-power"]
+    urls = ["/", "/map", "/explore", "/changelog", "/data", "/license", "/methodology", "/about", "/guides/home-backup-power"]
 
     # ---- State pages ----
     by_state = {}
@@ -193,7 +225,7 @@ def main():
      ranked by capacity. Battery projects are sourced from the federal EIA-860M inventory; data centers
      are hand-curated with a public source on each entry. See the <a href="/methodology">methodology</a> for details.</p>
   <p><a class="btn btn-primary" href="/map?state={esc(code)}">View {esc(name)} on the map →</a></p>
-{DATA_CTA}
+{data_cta(plist)}
   <h2>All {esc(name)} projects</h2>
   {project_table(plist, show_state=False, show_operator=True)}
 </article></div></section>
@@ -229,7 +261,7 @@ def main():
   <p>Every {esc(op)} data center and battery storage project we track, ranked by capacity.
      See the <a href="/methodology">methodology</a> for how this data is sourced and defined.</p>
   <p><a class="btn btn-primary" href="/map?operator={esc(op)}">View {esc(op)} on the map →</a></p>
-{DATA_CTA}
+{data_cta(plist)}
   <h2>All {esc(op)} projects</h2>
   {project_table(plist, show_state=True, show_operator=False)}
 </article></div></section>
@@ -277,6 +309,26 @@ def main():
     sm.append("</urlset>")
     write("sitemap.xml", "\n".join(sm))
     write("robots.txt", f"User-agent: *\nAllow: /\nSitemap: {SITE}/sitemap.xml\n")
+
+    # ---- Prune orphaned operator pages (operator renamed by EIA or portfolio fell below MIN_OPERATOR) ----
+    # Deleting them would 404 any indexed link, so each pruned slug gets a 301 → /explore in vercel.json.
+    generated = {slug for _, slug, _, _ in op_links}
+    op_dir = os.path.join(ROOT, "operator")
+    pruned = []
+    for fn in sorted(os.listdir(op_dir)):
+        if fn.endswith(".html") and fn[:-5] not in generated:
+            os.remove(os.path.join(op_dir, fn)); pruned.append(fn[:-5])
+    if pruned:
+        vpath = os.path.join(ROOT, "vercel.json")
+        v = json.load(open(vpath))
+        existing = {r["source"] for r in v.get("redirects", [])}
+        for slug in pruned:
+            src = f"/operator/{slug}"
+            if src not in existing:
+                v.setdefault("redirects", []).append({"source": src, "destination": "/explore", "permanent": True})
+        with open(vpath, "w") as f:
+            f.write(json.dumps(v, indent=2) + "\n")
+        print(f"Pruned {len(pruned)} orphaned operator pages → 301 to /explore: {', '.join(pruned)}")
 
     print(f"Generated {len(state_links)} state pages, {len(op_links)} operator pages, "
           f"explore hub, sitemap ({len(urls)} urls), robots.txt")

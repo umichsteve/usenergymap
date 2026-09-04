@@ -46,5 +46,32 @@
         }
       ]
     }
+  ],
+  "redirects": [
+    {
+      "source": "/operator/alpin-holding-llc",
+      "destination": "/explore",
+      "permanent": true
+    },
+    {
+      "source": "/operator/enersmart-storage",
+      "destination": "/explore",
+      "permanent": true
+    },
+    {
+      "source": "/operator/pacifico-power",
+      "destination": "/explore",
+      "permanent": true
+    },
+    {
+      "source": "/operator/solar-proponent-llc",
+      "destination": "/explore",
+      "permanent": true
+    },
+    {
+      "source": "/operator/vantage-data-centers",
+      "destination": "/explore",
+      "permanent": true
+    }
   ]
 }

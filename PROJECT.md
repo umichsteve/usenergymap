@@ -149,6 +149,7 @@ Change log:
 - `scripts/build_changelog.py` diffs the working-tree `projects.json` against `HEAD` (order-independent) → `changelog.json`
   with `summary`, `highlights`, `history` (public) and row-level `changes` (gated CSV).
 - Wired into `.github/workflows/refresh-eia.yml`; the PR body carries the summary line.
+- The same workflow re-runs `scripts/build_pages.py`, so state/operator pages, the explore hub and sitemap never drift from the data. Orphaned operator pages are pruned and 301'd to /explore via `vercel.json` redirects. Each page's CTA shows that page's own change count from the latest refresh.
 - `/changelog` renders the public summary client-side; `/license` holds the tiered terms.
 
 ## Open questions for next phase
