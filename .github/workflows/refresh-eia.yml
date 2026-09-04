@@ -28,6 +28,12 @@ jobs:
       - name: Run EIA ingest
         run: python3 scripts/ingest_eia.py
 
+      - name: Build change log (diff vs. last committed dataset)
+        id: changelog
+        run: |
+          SUMMARY=$(python3 scripts/build_changelog.py)
+          echo "summary=$SUMMARY" >> $GITHUB_OUTPUT
+
       - name: Check for changes
         id: diff
         run: |
@@ -49,8 +55,11 @@ jobs:
             - Pulled latest EIA-860M archive
             - Re-ingested operating + planned BESS projects
             - Preserved hand-curated entries (ids not starting with `eia-`)
+            - Rebuilt `changelog.json` — **${{ steps.changelog.outputs.summary }}**
 
             Review the diff, then merge — pushing to `main` will auto-deploy to usenergymap.com.
           branch: data/eia-refresh
           delete-branch: true
-          add-paths: projects.json
+          add-paths: |
+            projects.json
+            changelog.json

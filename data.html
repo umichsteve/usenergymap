@@ -3,20 +3,48 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Get the Dataset — US Energy Map</title>
-<meta name="description" content="Download the full US Energy Map dataset — every tracked U.S. data center and battery storage project as enriched CSV + GeoJSON. One-time $149.99." />
+<title>Data &amp; Pricing — US Energy Map</title>
+<meta name="description" content="Get the US Energy Map dataset — every tracked U.S. data center and battery storage project as Excel, CSV and GeoJSON. One-time snapshot from $199, monthly-refreshed feed with change log from $49/mo, licensed feeds for teams and products." />
 <link rel="icon" type="image/svg+xml" href="/assets/mark-square.svg" />
 <link rel="canonical" href="https://usenergymap.com/data" />
 <meta property="og:type" content="website" />
 <meta property="og:site_name" content="US Energy Map" />
-<meta property="og:title" content="Get the US Energy Map dataset (CSV + GeoJSON)" />
-<meta property="og:description" content="Every tracked U.S. data center and battery storage project, enriched and ready to analyze." />
+<meta property="og:title" content="US Energy Map — Data &amp; Pricing" />
+<meta property="og:description" content="Every tracked U.S. data center and battery storage project, enriched and ready to analyze. Snapshot, monthly feed, or licensed for your product." />
 <meta property="og:url" content="https://usenergymap.com/data" />
 <meta property="og:image" content="https://usenergymap.com/assets/og.png" />
 <meta name="twitter:card" content="summary_large_image" />
 <meta name="twitter:image" content="https://usenergymap.com/assets/og.png" />
 <link rel="stylesheet" href="/assets/site.css" />
 <script src="/assets/analytics.js"></script>
+<style>
+  [hidden]{display:none!important}
+  .tiers{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;margin:26px 0 12px}
+  .tier{border:1px solid var(--line);border-radius:var(--radius);padding:24px;background:var(--bg);display:flex;flex-direction:column;position:relative}
+  .tier.featured{border-color:var(--brand);box-shadow:0 0 0 3px rgba(37,99,235,.12)}
+  .tier .flag{position:absolute;top:-12px;left:20px;background:var(--brand);color:#fff;font-size:11px;font-weight:700;letter-spacing:.04em;text-transform:uppercase;padding:4px 10px;border-radius:999px}
+  .tier h3{margin:0 0 4px;font-size:19px}
+  .tier .who{color:var(--muted);font-size:14px;margin:0 0 14px;min-height:40px}
+  .tier .price{font-size:34px;font-weight:800;line-height:1;color:var(--ink)}
+  .tier .price small{font-size:14px;font-weight:600;color:var(--muted);margin-left:4px}
+  .tier .from{font-size:12px;color:var(--muted);margin-top:4px}
+  .tier ul{list-style:none;padding:0;margin:16px 0 20px;font-size:14px;color:var(--ink-2)}
+  .tier ul li{padding:5px 0 5px 24px;position:relative}
+  .tier ul li::before{content:"✓";position:absolute;left:2px;color:var(--bess);font-weight:800}
+  .tier ul li.no{color:var(--muted)} .tier ul li.no::before{content:"—";color:var(--line)}
+  .tier .act{margin-top:auto}
+  .tier .btn{width:100%;text-align:center;box-sizing:border-box}
+  .tier .btn-ghost{border:1px solid var(--line)}
+  .buy-email{width:100%;box-sizing:border-box;padding:10px 12px;border-radius:8px;border:1px solid var(--line);background:var(--bg-2);color:var(--ink);font-size:14px;margin:6px 0 10px}
+  .buy-msg{font-size:12px;color:var(--muted);min-height:16px;margin-top:8px}
+  .teams-head{display:flex;align-items:baseline;justify-content:space-between;gap:16px;margin-top:40px;flex-wrap:wrap}
+  .teams-head h2{margin:0}
+  .cmp td:not(:first-child),.cmp th:not(:first-child){text-align:center;white-space:nowrap}
+  .cmp .y{color:var(--bess);font-weight:800} .cmp .n{color:var(--line)}
+  .faq details{border-bottom:1px solid var(--line);padding:12px 0}
+  .faq summary{cursor:pointer;font-weight:600;color:var(--ink)}
+  .faq p{margin:8px 0 0;color:var(--ink-2)}
+</style>
 </head>
 <body>
 
@@ -26,8 +54,9 @@
     <div class="nav-links">
       <a href="/map">Map</a>
       <a href="/explore">Explore</a>
+      <a href="/changelog">What changed</a>
+      <a href="/data">Data</a>
       <a href="/methodology">Methodology</a>
-      <a href="/about">About</a>
       <a class="cta" href="/map">Open the map →</a>
     </div>
   </div>
@@ -35,40 +64,131 @@
 
 <section>
   <div class="wrap">
-    <div class="prose" style="max-width:820px;">
-      <p class="kicker">Get the data</p>
-      <h1>The full dataset + a BD hunting list</h1>
-      <p class="sub">Every tracked U.S. data center and battery storage project — as a ready-to-work <strong>Excel hunting list</strong> plus clean <strong>CSV</strong> and <strong>GeoJSON</strong>. Skip the scraping.</p>
+    <div class="prose" style="max-width:1000px;">
+      <p class="kicker">Data &amp; pricing</p>
+      <h1>The map is free. The feed is the product.</h1>
+      <p class="sub" style="max-width:760px;">Every tracked U.S. data center and battery storage project — <strong id="hero-count">1,500+</strong> sites, <strong id="hero-gw">170+ GW</strong> — as a ready-to-work Excel hunting list plus clean CSV and GeoJSON. Buy it once, keep it current every month, or license it into your own product.</p>
 
-      <div class="cards" style="grid-template-columns:1fr 1fr;margin:8px 0 32px;">
-        <div class="card">
-          <h3 style="margin-top:0;">What you get</h3>
-          <p>All <strong>1,400+ projects</strong> in three formats. The <strong>Excel workbook</strong> is built for business development: operators ranked by tracked capacity, with blank columns (contact, priority, status, notes) to work as a prospect list — plus full-projects and by-state tabs. CSV + GeoJSON for analysis and GIS.</p>
+      <!-- ─────────────── Self-serve ─────────────── -->
+      <div class="tiers">
+        <div class="tier" id="snapshot">
+          <h3>Snapshot</h3>
+          <p class="who">One clean pull of the current build. For a deck, a model, a one-time prospect list.</p>
+          <div class="price">$199<small>one-time</small></div>
+          <div class="from">Current dataset build · no updates</div>
+          <ul>
+            <li>All projects, all states — data centers + BESS</li>
+            <li>Excel BD hunting list (operators ranked by MW, working columns)</li>
+            <li>CSV + GeoJSON with enriched columns</li>
+            <li>Data dictionary &amp; single-user license</li>
+            <li class="no">Monthly refresh</li>
+            <li class="no">Row-level change log</li>
+          </ul>
+          <div class="act">
+            <input class="buy-email" type="email" inputmode="email" autocomplete="email" placeholder="you@company.com" aria-label="Email for receipt and download link" data-email-for="snapshot" />
+            <button class="btn btn-primary" data-buy="snapshot">Buy the snapshot →</button>
+            <div class="buy-msg" data-msg-for="snapshot"></div>
+          </div>
         </div>
-        <div class="card">
-          <h3 style="margin-top:0;">Who it's for</h3>
-          <p><strong>Business-development &amp; sales teams</strong> who need a ranked operator hunting list, and analysts/developers who want the raw data in a spreadsheet or GIS tool. Single-user license; built from public sources (see <a href="/methodology">methodology</a>).</p>
+
+        <div class="tier featured" id="current">
+          <span class="flag">Most useful</span>
+          <h3>Always Current</h3>
+          <p class="who">The dataset refreshed every month, plus exactly what changed. For anyone who tracks this market for a living.</p>
+          <div class="price">$49<small>/ month</small></div>
+          <div class="from">Cancel anytime · $588/yr</div>
+          <ul>
+            <li>Everything in Snapshot, re-downloadable after every refresh</li>
+            <li><strong>Row-level change log</strong> — added, removed, status &amp; capacity changes with before/after values</li>
+            <li>Federal BESS refresh on the 26th; data center updates as verified</li>
+            <li>Dated file builds so your analysis is reproducible</li>
+            <li>Single-user license</li>
+            <li class="no">Redistribution inside your product</li>
+          </ul>
+          <div class="act">
+            <input class="buy-email" type="email" inputmode="email" autocomplete="email" placeholder="you@company.com" aria-label="Email for receipt and access link" data-email-for="current" />
+            <button class="btn btn-primary" data-buy="current">Subscribe →</button>
+            <div class="buy-msg" data-msg-for="current"></div>
+          </div>
+        </div>
+      </div>
+      <p style="font-size:13px;color:var(--muted);margin:6px 0 0;">Secure checkout by Stripe. Receipt and access link go to the email you enter. The interactive <a href="/map">map</a> and <a href="/explore">state / operator pages</a> stay free — this is for people who'd rather not pull it by hand.</p>
+
+      <!-- ─────────────── Teams & products ─────────────── -->
+      <div class="teams-head" id="teams">
+        <h2>For teams and products</h2>
+        <p style="margin:0;color:var(--muted);font-size:14px;">Licensed for redistribution · scheduled delivery · a person to call</p>
+      </div>
+      <p class="sub" style="max-width:760px;margin-top:8px;">Our battery records derive from the federal EIA-860M inventory, which is public domain — so we can license redistribution into your customer-facing reports and tools <strong>without upstream restrictions</strong>. That's usually the sticking point with third-party risk and market layers. It isn't one here.</p>
+
+      <div class="tiers" style="grid-template-columns:repeat(auto-fit,minmax(250px,1fr));">
+        <div class="tier" id="region">
+          <h3>Region or Sector Feed</h3>
+          <p class="who">One state, one ISO/RTO, or one asset class (BESS-only or data centers-only), delivered on schedule.</p>
+          <div class="price">$3,000<small>/ year</small></div>
+          <div class="from">Founding-customer pricing · 12-month term</div>
+          <ul>
+            <li>Monthly refresh + change log, scoped to your region or sector</li>
+            <li><strong>Redistribution license</strong> — embed in customer-facing reports, one product</li>
+            <li>Scheduled delivery: file drop (CSV / GeoJSON) to your bucket or endpoint</li>
+            <li>Stable schema with 30-day notice of changes</li>
+            <li>Email support · 2-business-day response</li>
+          </ul>
+          <div class="act"><a class="btn btn-ghost" href="mailto:hello@usenergymap.com?subject=Region%20%2F%20Sector%20Feed%20%E2%80%94%20US%20Energy%20Map&body=Region%20or%20sector%20of%20interest%3A%0AHow%20you%27ll%20use%20it%20(internal%20%2F%20customer-facing)%3A%0APreferred%20delivery%20(file%20drop%20%2F%20API)%3A%0A">Talk to us →</a></div>
+        </div>
+
+        <div class="tier" id="full">
+          <h3>Full Feed</h3>
+          <p class="who">The whole dataset — every state, both asset classes, including the hand-verified data center layer.</p>
+          <div class="price">$7,500<small>/ year</small></div>
+          <div class="from">12-month term · invoiced annually</div>
+          <ul>
+            <li>Everything in Region Feed, nationwide, both asset classes</li>
+            <li><strong>Redistribution license</strong> across your products</li>
+            <li>Data center layer: hyperscale, colo &amp; AI campuses with sources</li>
+            <li>Historical builds on request for time-series work</li>
+            <li>Priority support · next-business-day response</li>
+          </ul>
+          <div class="act"><a class="btn btn-ghost" href="mailto:hello@usenergymap.com?subject=Full%20Feed%20%E2%80%94%20US%20Energy%20Map&body=Company%3A%0AHow%20you%27ll%20use%20it%3A%0APreferred%20delivery%20(file%20drop%20%2F%20API)%3A%0A">Talk to us →</a></div>
+        </div>
+
+        <div class="tier" id="embedded">
+          <h3>Embedded &amp; API</h3>
+          <p class="who">Per-address proximity lookups, a hosted endpoint, or a custom cut wired into your workflow.</p>
+          <div class="price"><small style="margin:0 4px 0 0;">from</small>$12,000<small>/ year</small></div>
+          <div class="from">Scoped to your volume and use case</div>
+          <ul>
+            <li>Nearest-facility lookup: send an address, get distance, MW, status, operator</li>
+            <li>Hosted JSON endpoint or scheduled push, your schema</li>
+            <li>Redistribution license, unlimited products</li>
+            <li>Uptime SLA and a named contact</li>
+            <li>Custom fields, filters, or build-and-transfer of the pipeline</li>
+          </ul>
+          <div class="act"><a class="btn btn-ghost" href="mailto:hello@usenergymap.com?subject=Embedded%20%2F%20API%20%E2%80%94%20US%20Energy%20Map&body=Company%3A%0AUse%20case%3A%0AExpected%20lookups%20or%20records%20per%20month%3A%0A">Talk to us →</a></div>
         </div>
       </div>
 
-      <div class="cta-band" style="align-items:center;">
-        <div>
-          <h2 style="margin-bottom:6px;">BD hunting list + full dataset</h2>
-          <p>Excel · CSV · GeoJSON · one-time purchase · instant download · data dictionary &amp; license included.</p>
-        </div>
-        <div style="text-align:right;">
-          <div style="font-size:34px;font-weight:800;color:#fff;line-height:1;">$149.99</div>
-          <input id="buy-email" type="email" inputmode="email" autocomplete="email"
-                 placeholder="you@company.com"
-                 aria-label="Email for your receipt and download link"
-                 style="margin-top:10px;width:100%;max-width:262px;padding:9px 11px;border-radius:6px;border:1px solid #334155;background:#0f172a;color:#fff;font-size:14px;" />
-          <button class="btn btn-primary" id="buy" style="margin-top:8px;">Buy &amp; download →</button>
-          <div id="buy-msg" style="font-size:12px;color:#94a3b8;margin-top:8px;min-height:16px;"></div>
-        </div>
+      <!-- ─────────────── Comparison ─────────────── -->
+      <h2 style="margin-top:40px;">What's included</h2>
+      <div style="overflow-x:auto;">
+      <table class="deftable cmp">
+        <thead><tr><th></th><th>Snapshot</th><th>Always Current</th><th>Region / Sector</th><th>Full Feed</th><th>Embedded</th></tr></thead>
+        <tbody>
+          <tr><td>Excel BD list · CSV · GeoJSON</td><td class="y">✓</td><td class="y">✓</td><td class="y">✓</td><td class="y">✓</td><td class="y">✓</td></tr>
+          <tr><td>Coverage</td><td>National</td><td>National</td><td>Your scope</td><td>National</td><td>Your scope</td></tr>
+          <tr><td>Monthly refresh</td><td class="n">—</td><td class="y">✓</td><td class="y">✓</td><td class="y">✓</td><td class="y">✓</td></tr>
+          <tr><td>Row-level change log</td><td class="n">—</td><td class="y">✓</td><td class="y">✓</td><td class="y">✓</td><td class="y">✓</td></tr>
+          <tr><td>Scheduled delivery to your systems</td><td class="n">—</td><td class="n">—</td><td class="y">✓</td><td class="y">✓</td><td class="y">✓</td></tr>
+          <tr><td>Redistribution in your products</td><td class="n">—</td><td class="n">—</td><td>1 product</td><td>All products</td><td>All products</td></tr>
+          <tr><td>Per-address proximity API</td><td class="n">—</td><td class="n">—</td><td class="n">—</td><td class="n">—</td><td class="y">✓</td></tr>
+          <tr><td>Support</td><td>Email</td><td>Email</td><td>2 business days</td><td>Next business day</td><td>SLA + named contact</td></tr>
+          <tr><td>License</td><td>Single-user</td><td>Single-user</td><td>Commercial</td><td>Commercial</td><td>Commercial</td></tr>
+        </tbody>
+      </table>
       </div>
+      <p style="font-size:13px;color:var(--muted);">Full terms for every tier: <a href="/license">usenergymap.com/license</a>.</p>
 
-      <p style="font-size:13px;color:var(--muted);margin-top:14px;">The interactive map and the state/operator pages stay <strong>free</strong> — this is just the bulk file for people who'd rather not pull it by hand.</p>
-
+      <!-- ─────────────── Dictionary ─────────────── -->
       <h2>What's in each row</h2>
       <table class="deftable">
         <thead><tr><th>Column</th><th>Description</th></tr></thead>
@@ -78,17 +198,29 @@
           <tr><td><code>type</code> · <code>type_label</code></td><td>data_center or bess (+ readable label)</td></tr>
           <tr><td><code>operator</code></td><td>Operating company</td></tr>
           <tr><td><code>city</code> · <code>state</code> · <code>state_name</code></td><td>Location (code + full state name)</td></tr>
-          <tr><td><code>latitude</code> · <code>longitude</code></td><td>Coordinates</td></tr>
+          <tr><td><code>latitude</code> · <code>longitude</code></td><td>Coordinates — exact site for EIA records; city/county centroid for data centers where the site isn't public</td></tr>
           <tr><td><code>capacity_mw</code> · <code>capacity_mwh</code></td><td>Power (MW) and, for batteries, energy (MWh)</td></tr>
           <tr><td><code>duration_hours</code></td><td>Derived MWh ÷ MW for batteries</td></tr>
-          <tr><td><code>status</code> · <code>status_label</code></td><td>operating / under_construction / planned</td></tr>
+          <tr><td><code>status</code> · <code>status_label</code></td><td>operating / under_construction / planned / announced</td></tr>
           <tr><td><code>year_online</code></td><td>Existing or target year</td></tr>
           <tr><td><code>source</code></td><td>Primary public source URL</td></tr>
         </tbody>
       </table>
+      <p style="font-size:13px;color:var(--muted);">Change-log rows (subscribers) add <code>kind</code> (added / removed / changed), <code>field</code>, <code>from</code>, <code>to</code>, and the refresh period.</p>
 
-      <div class="callout">
-        <p><strong>License:</strong> single-user. Use it in your analysis, reports, and internal tools. Please don't redistribute or resell the file itself. Need a team or commercial license, an API, or a custom cut? <a href="mailto:hello@grandroma.com?subject=US%20Energy%20Map%20data%20license">Get in touch</a>.</p>
+      <!-- ─────────────── FAQ ─────────────── -->
+      <h2>Questions people ask</h2>
+      <div class="faq">
+        <details><summary>The battery data comes from a free federal file. Why pay?</summary>
+          <p>You're not paying for the records — you're paying to never think about them again. EIA-860M is a multi-sheet spreadsheet whose layout shifts, that needs de-duplication against real-world sites, and that says nothing about what changed since last month. We do that on the 26th, every month, and hand you a clean file and a diff. Data centers have no federal registry at all; that layer is hand-verified from operator disclosures with a source on every row.</p></details>
+        <details><summary>What's the coverage floor?</summary>
+          <p>Battery records cover utility-scale systems of 1 MW and above that report to the federal inventory. Behind-the-meter, residential, and small commercial storage are out of scope. Data center records focus on hyperscale, major colocation, and AI training campuses.</p></details>
+        <details><summary>Can I put this in a product my customers see?</summary>
+          <p>Not on Snapshot or Always Current — those are single-user licenses for your own analysis and internal tools. Region, Full, and Embedded tiers include a redistribution license. Because our BESS source is public domain, there are no upstream restrictions to pass through to you.</p></details>
+        <details><summary>How does access work for Always Current?</summary>
+          <p>After checkout you land on a personal access page. Bookmark it — it's your download link every month, and it stays live while your subscription is active. Manage or cancel billing from the same page. If you lose the link, email <a href="mailto:hello@usenergymap.com">hello@usenergymap.com</a> from your purchase address.</p></details>
+        <details><summary>Can I get an invoice, PO, or W-9?</summary>
+          <p>Yes for the annual tiers — that's how they're billed. Self-serve tiers get a Stripe receipt automatically; ask if you need more.</p></details>
       </div>
     </div>
   </div>
@@ -105,9 +237,10 @@
         <h4>Explore</h4>
         <a href="/map">Interactive map</a>
         <a href="/explore">By state &amp; operator</a>
-        <a href="/data">Get the dataset</a>
+        <a href="/changelog">What changed</a>
+        <a href="/data">Data &amp; pricing</a>
         <a href="/methodology">Methodology</a>
-        <a href="/guides/home-backup-power">Home backup power guide</a>
+        <a href="/license">License</a>
         <a href="/about">About</a>
         <a href="/privacy">Privacy</a>
       </div>
@@ -126,34 +259,39 @@
 
 <script>
   document.getElementById('year').textContent = new Date().getFullYear();
-  const buy = document.getElementById('buy');
-  const msg = document.getElementById('buy-msg');
-  const emailEl = document.getElementById('buy-email');
+
+  // Live counts in the hero so the page never quotes a stale number.
+  fetch('/projects.json').then(r => r.json()).then(d => {
+    const ps = d.projects || [];
+    const mw = ps.reduce((a, p) => a + (p.capacity_mw || 0), 0);
+    document.getElementById('hero-count').textContent = ps.length.toLocaleString();
+    document.getElementById('hero-gw').textContent = (mw / 1000).toFixed(0) + ' GW';
+  }).catch(() => {});
+
   const validEmail = (v) => /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v);
-  emailEl.addEventListener('keydown', (e) => { if (e.key === 'Enter') buy.click(); });
-  buy.addEventListener('click', async () => {
-    // Capture the address BEFORE the redirect. An abandoned $149.99 checkout with
-    // no email is an unreachable lead — six of seven were lost that way in 2026.
-    const email = (emailEl.value || '').trim();
-    if (!validEmail(email)) {
-      msg.textContent = 'Enter the email your receipt and download link should go to.';
-      emailEl.focus();
-      return;
-    }
-    buy.disabled = true; msg.textContent = 'Starting secure checkout…';
-    try {
-      const res = await fetch('/api/create-checkout', {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ email }),
-      });
-      const data = await res.json();
-      if (res.ok && data.url) { window.location = data.url; return; }
-      msg.textContent = data.error || 'Checkout is not available yet — check back soon.';
-    } catch (e) {
-      msg.textContent = 'Something went wrong starting checkout. Please try again.';
-    }
-    buy.disabled = false;
+  document.querySelectorAll('[data-buy]').forEach(btn => {
+    const plan = btn.dataset.buy;
+    const emailEl = document.querySelector(`[data-email-for="${plan}"]`);
+    const msg = document.querySelector(`[data-msg-for="${plan}"]`);
+    emailEl.addEventListener('keydown', (e) => { if (e.key === 'Enter') btn.click(); });
+    btn.addEventListener('click', async () => {
+      // Capture the address BEFORE the redirect — an abandoned checkout with no email is an unreachable lead.
+      const email = (emailEl.value || '').trim();
+      if (!validEmail(email)) { msg.textContent = 'Enter the email your receipt and access link should go to.'; emailEl.focus(); return; }
+      btn.disabled = true; msg.textContent = 'Starting secure checkout…';
+      try {
+        const res = await fetch('/api/create-checkout', {
+          method: 'POST', headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ plan, email }),
+        });
+        const data = await res.json();
+        if (res.ok && data.url) { window.location = data.url; return; }
+        msg.textContent = data.error || 'Checkout is not available yet — check back soon.';
+      } catch (e) {
+        msg.textContent = 'Something went wrong starting checkout. Please try again.';
+      }
+      btn.disabled = false;
+    });
   });
 </script>
 

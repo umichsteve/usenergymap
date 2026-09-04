@@ -79,7 +79,12 @@ vercel.json                         # Static deploy config + cache headers
 README.md                           # Build / deploy / data instructions
 PROJECT.md                          # This file — full project brief
 scripts/ingest_eia.py               # Monthly EIA-860M BESS ingest
+scripts/build_changelog.py          # Diff vs. last commit → changelog.json
+changelog.json                      # Latest refresh summary + row-level changes
 .github/workflows/refresh-eia.yml   # Cron + PR for automated refresh
+api/                                # Vercel functions: checkout, download, session, portal
+lib/                                # dataset.js (exports), entitlement.js, changelog.js
+data.html · license.html · changelog.html · data/success.html
 .cache/                             # EIA xlsx cache (gitignored)
 ```
 
@@ -111,7 +116,7 @@ when exact site isn't publicly disclosed.
 ## What's intentionally NOT in v1
 
 - No CMS or admin UI. JSON edits are commits.
-- No login, no per-user state, no subscriptions, no monetization.
+- No login, no per-user state. (Monetization added Sept 2026 — see “Paid tiers” below; still no accounts or DB.)
 - No backend, no database. Static + JSON only.
 - No data center automated ingest (no federal registry exists; commercial
   data would be the only path).
@@ -119,6 +124,32 @@ when exact site isn't publicly disclosed.
 - No charts / analytics / time-series views (the data is point-in-time per project).
 
 ---
+
+## Paid tiers (Sept 2026)
+
+The map stays free. `/data` sells the *service* around the dataset, not the records
+(BESS source is public-domain EIA-860M; the data center layer is our own curation).
+
+| Tier | Price | Checkout | License |
+|---|---|---|---|
+| Snapshot | $199 one-time | Stripe (`plan=snapshot`) | Single-user |
+| Always Current | $49 / month | Stripe subscription (`plan=current`) | Single-user + change log |
+| Region / Sector Feed | $3,000 / yr | Contact → invoice | Commercial, 1 product |
+| Full Feed | $7,500 / yr | Contact → invoice | Commercial, all products |
+| Embedded & API | from $12,000 / yr | Contact → order form | Commercial + SLA |
+
+Mechanics (no database, Stripe is the source of truth):
+- `api/create-checkout.js` — plan-aware Checkout Session; both tiers land on `/data/success?session_id=…`.
+- `lib/entitlement.js` — verifies a session: one-time = `payment_status: paid`; subscription = status active/trialing/past_due.
+- `api/download.js` — streams xlsx/csv/geojson for any entitled session; `format=changelog` for subscribers only.
+- `api/session.js` / `api/portal.js` — success-page status and Stripe billing portal (enable the portal once in the Stripe Dashboard).
+- The success-page URL is the subscriber's permanent access link. Lost-link recovery is manual (email) for now.
+
+Change log:
+- `scripts/build_changelog.py` diffs the working-tree `projects.json` against `HEAD` (order-independent) → `changelog.json`
+  with `summary`, `highlights`, `history` (public) and row-level `changes` (gated CSV).
+- Wired into `.github/workflows/refresh-eia.yml`; the PR body carries the summary line.
+- `/changelog` renders the public summary client-side; `/license` holds the tiered terms.
 
 ## Open questions for next phase
 

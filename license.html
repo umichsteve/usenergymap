@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Data License — US Energy Map</title>
+<meta name="description" content="License terms for US Energy Map datasets and feeds: single-user, commercial redistribution, and embedded tiers." />
+<link rel="icon" type="image/svg+xml" href="/assets/mark-square.svg" />
+<link rel="canonical" href="https://usenergymap.com/license" />
+<link rel="stylesheet" href="/assets/site.css" />
+<script src="/assets/analytics.js"></script>
+<style>
+  [hidden]{display:none!important}
+  .lic h2{margin-top:36px} .lic h3{margin-top:22px;font-size:17px}
+  .lic ol,.lic ul{color:var(--ink-2)} .lic li{margin:6px 0}
+  .lic .tierbox{border:1px solid var(--line);border-radius:var(--radius);padding:18px 20px;margin:14px 0;background:var(--bg-2)}
+  .lic .tierbox h3{margin-top:0}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="/"><img src="/assets/mark-square.svg" alt="" /> US Energy Map</a>
+    <div class="nav-links">
+      <a href="/map">Map</a>
+      <a href="/explore">Explore</a>
+      <a href="/changelog">What changed</a>
+      <a href="/data">Data</a>
+      <a href="/methodology">Methodology</a>
+      <a class="cta" href="/map">Open the map →</a>
+    </div>
+  </div>
+</nav>
+
+<section>
+  <div class="wrap">
+    <div class="prose lic" style="max-width:800px;">
+      <p class="kicker">License</p>
+      <h1>US Energy Map Data License</h1>
+      <p class="sub">Effective September 2026. This is a service agreement written in plain English. It governs the files, feeds, and endpoints you buy from US Energy Map ("we", "us"). The free interactive map and public pages are governed by their own <a href="/privacy">privacy policy</a> and normal web use — nothing here restricts them.</p>
+
+      <h2>1. What you're licensing</h2>
+      <p>The <strong>Dataset</strong> means the compiled project records we deliver to you (Excel, CSV, GeoJSON, or via endpoint), including derived columns, the change log, and the schema and data dictionary. The underlying facts about power plants are not ours — most battery records derive from the U.S. Energy Information Administration's public-domain EIA-860M inventory, and data center records are compiled from public disclosures. What you pay for is our compilation, enrichment, verification, refresh schedule, delivery, and support — the <em>service</em>, delivered as files.</p>
+
+      <h2>2. Tiers and what each one allows</h2>
+
+      <div class="tierbox">
+        <h3>Snapshot (one-time) and Always Current (subscription) — Single-User License</h3>
+        <p><strong>You may:</strong> use the Dataset for your own analysis, models, presentations, internal tools, and reports; share charts, summaries, and conclusions derived from it; keep the files you downloaded after a subscription ends.</p>
+        <p><strong>You may not:</strong> redistribute, resell, sublicense, or publicly post the files or any substantial extract of them; load them into a product, API, or dataset that others access; share your access link or files with people outside your single seat. One license covers one named person. Teams need one seat each, or a commercial tier.</p>
+      </div>
+
+      <div class="tierbox">
+        <h3>Region / Sector Feed and Full Feed — Commercial Redistribution License</h3>
+        <p><strong>You may:</strong> everything above, for your whole organization; embed the Dataset (or the scoped subset you licensed) in customer-facing reports, dashboards, and tools — <em>one product</em> on Region / Sector, <em>all your products</em> on Full Feed; store and process it in your systems; deliver derived outputs to your customers.</p>
+        <p><strong>You may not:</strong> resell or sublicense the Dataset as a standalone data product; provide bulk export of our records to your customers; represent our records as your own primary research; remove attribution where the order form requires it.</p>
+      </div>
+
+      <div class="tierbox">
+        <h3>Embedded &amp; API — Custom Order Form</h3>
+        <p>Governed by these terms plus an order form covering volume, uptime commitment, endpoint scope, and any build-and-transfer of pipelines. Where the order form and this page disagree, the order form wins.</p>
+      </div>
+
+      <h2>3. Attribution</h2>
+      <p>Single-user tiers: none required, though "Source: usenergymap.com" is appreciated when you publish charts. Commercial tiers: attribute as specified in your order form (default: "Project data: US Energy Map" wherever our records are shown to end users). Do not imply we endorse your product or that we are affiliated with any operator or government agency.</p>
+
+      <h2>4. Accuracy, coverage, and warranty</h2>
+      <ul>
+        <li>Battery records cover utility-scale systems of 1 MW and above that report to the federal inventory. Behind-the-meter, residential, and small commercial storage are out of scope. Data center records focus on hyperscale, major colocation, and AI campuses; coordinates may be city or county centroids where the exact site is not public.</li>
+        <li>Statuses and capacities reflect the most recent source available at the refresh date. Projects change; the change log tells you what moved.</li>
+        <li><strong>The Dataset is provided "as is" for informational purposes.</strong> We don't warrant that it is complete, error-free, or fit for a particular purpose, including regulatory disclosure, safety determinations, or investment decisions. Verify against primary sources before relying on any single record for a consequential decision.</li>
+        <li>Our total liability to you for anything arising from the Dataset is limited to the amount you paid us in the twelve months before the claim.</li>
+      </ul>
+
+      <h2>5. Refresh, delivery, and changes</h2>
+      <ul>
+        <li>Battery records refresh from EIA-860M on or about the 26th of each month; data center records update as we verify announcements. We aim to keep the schedule but a missed or late federal release isn't a breach.</li>
+        <li>We'll give commercial tiers at least 30 days' notice before removing or renaming a column. Adding columns is not a breaking change.</li>
+        <li>We may update these terms; changes apply to renewals and new purchases, not to a term already paid for.</li>
+      </ul>
+
+      <h2>6. Billing, cancellation, and refunds</h2>
+      <ul>
+        <li><strong>Snapshot:</strong> one-time charge. Because the file is delivered instantly, it isn't refundable once downloaded — if something is wrong with it, email us and we'll fix it or make it right.</li>
+        <li><strong>Always Current:</strong> billed monthly; cancel anytime from your access page and keep access through the period you paid for. No partial-month refunds.</li>
+        <li><strong>Annual tiers:</strong> invoiced annually, 12-month term, net 30. Either side may decline to renew with 30 days' notice. Redistribution rights end when the term ends, but your customers may keep reports already delivered.</li>
+      </ul>
+
+      <h2>7. Termination</h2>
+      <p>We may end a license if you break these terms and don't fix it within 14 days of being told. On termination you stop using the Dataset in any product and delete copies, except archival copies kept for legal reasons and reports already delivered to your customers.</p>
+
+      <h2>8. Everything else</h2>
+      <p>These terms are governed by the laws of the State of Michigan, USA. If a clause is unenforceable the rest still applies. This page plus any order form is the whole agreement about the Dataset. Questions: <a href="mailto:hello@usenergymap.com">hello@usenergymap.com</a>.</p>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="footer-inner">
+    <div>
+      <a class="brand" href="/"><img src="/assets/mark-square.svg" alt="" /> US Energy Map</a>
+      <p class="tag">An independent, public tracker of the data center and battery storage buildout across North America.</p>
+    </div>
+    <div class="footer-cols">
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <a href="/map">Interactive map</a>
+        <a href="/explore">By state &amp; operator</a>
+        <a href="/changelog">What changed</a>
+        <a href="/data">Data &amp; pricing</a>
+        <a href="/methodology">Methodology</a>
+        <a href="/license">License</a>
+        <a href="/about">About</a>
+        <a href="/privacy">Privacy</a>
+      </div>
+      <div class="footer-col">
+        <h4>Data sources</h4>
+        <a href="https://www.eia.gov/electricity/data/eia860m/" target="_blank" rel="noopener">EIA-860M (BESS)</a>
+        <a href="https://github.com/umichsteve/usenergymap" target="_blank" rel="noopener">Source on GitHub</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© <span id="year">2026</span> US Energy Map. Data for informational purposes only.</span>
+    <span>Not affiliated with any operator or government agency.</span>
+  </div>
+</footer>
+<script>document.getElementById('year').textContent = new Date().getFullYear();</script>
+</body>
+</html>
