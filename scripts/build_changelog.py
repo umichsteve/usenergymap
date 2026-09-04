@@ -15,7 +15,7 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "changelog.json"
-TRACKED = ["name", "operator", "city", "state", "status", "capacity_mw", "capacity_mwh", "year_online", "type"]
+TRACKED = ["name", "operator", "city", "state", "status", "capacity_mw", "capacity_mwh", "year_online", "type", "investment_usd", "lat", "lng"]
 HISTORY_MAX = 24  # months of summaries kept on the public page
 
 
@@ -76,6 +76,8 @@ def main():
     summary = {
         "from": old.get("last_updated"),
         "to": new.get("last_updated"),
+        "eia_source_month": new.get("eia_source_month"),
+        "eia_source_month_prev": old.get("eia_source_month"),
         "added": count("added"),
         "removed": count("removed"),
         "changed": count("changed"),
@@ -99,8 +101,12 @@ def main():
         try:
             prev = load(OUT)
             history = prev.get("history", [])
-            if prev.get("summary") and prev["summary"].get("to") != summary["to"]:
-                history.insert(0, prev["summary"])
+            ps_ = prev.get("summary")
+            # Keep the prior summary unless this run is a pure re-run of the same diff
+            # (same period and identical counts). Two distinct passes on one day both survive.
+            same = ps_ and all(ps_.get(k) == summary.get(k) for k in ("from", "to", "added", "removed", "changed"))
+            if ps_ and not same:
+                history.insert(0, ps_)
         except Exception:
             pass
     history = history[:HISTORY_MAX]

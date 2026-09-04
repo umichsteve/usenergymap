@@ -355,6 +355,14 @@ def main():
 
     merged = kept + deduped
     data["projects"] = merged
+    # Provenance: which federal file this build came from. Lets a no-op month (same file
+    # re-ingested because EIA published late) be detected instead of silently bumping the date.
+    prev_slug = data.get("eia_source_month")
+    data["eia_source_month"] = slug
+    data["eia_source_url"] = url
+    data["eia_ingested_at"] = datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ")
+    if prev_slug == slug:
+        print(f"[ingest] WARNING: EIA file {slug} is the same as the last build — EIA may not have published yet.")
     data["last_updated"] = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     data.setdefault("notes", "")
     if "EIA-860M" not in data.get("notes", ""):

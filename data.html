@@ -158,7 +158,7 @@
           <div class="price"><small style="margin:0 4px 0 0;">from</small>$12,000<small>/ year</small></div>
           <div class="from">Scoped to your volume and use case</div>
           <ul>
-            <li>Nearest-facility lookup: send an address, get distance, MW, status, operator</li>
+            <li>Nearest-facility lookup: send an address or lat/lng, get distance, bearing, MW, status, operator — <a href="/api/nearest?address=Moss+Landing%2C+CA&type=bess" target="_blank" rel="noopener">try the demo</a></li>
             <li>Hosted JSON endpoint or scheduled push, your schema</li>
             <li>Redistribution license, unlimited products</li>
             <li>Uptime SLA and a named contact</li>
@@ -199,10 +199,13 @@
           <tr><td><code>operator</code></td><td>Operating company</td></tr>
           <tr><td><code>city</code> · <code>state</code> · <code>state_name</code></td><td>Location (code + full state name)</td></tr>
           <tr><td><code>latitude</code> · <code>longitude</code></td><td>Coordinates — exact site for EIA records; city/county centroid for data centers where the site isn't public</td></tr>
-          <tr><td><code>capacity_mw</code> · <code>capacity_mwh</code></td><td>Power (MW) and, for batteries, energy (MWh)</td></tr>
+          <tr><td><code>capacity_mw</code> · <code>capacity_mwh</code></td><td>Power (MW) and, for batteries, energy (MWh). MWh is reported by EIA for operating sites (99%+ coverage) but not for planned or under-construction projects — expect it blank there.</td></tr>
           <tr><td><code>duration_hours</code></td><td>Derived MWh ÷ MW for batteries</td></tr>
           <tr><td><code>status</code> · <code>status_label</code></td><td>operating / under_construction / planned / announced</td></tr>
           <tr><td><code>year_online</code></td><td>Existing or target year</td></tr>
+          <tr><td><code>investment_usd</code></td><td>Announced capital investment in dollars, where an operator publishes $ but not MW (data centers)</td></tr>
+          <tr><td><code>capacity_estimated</code></td><td><code>true</code> when MW is derived from a stated $ or square-footage figure rather than an operator-published power number</td></tr>
+          <tr><td><code>energy_source</code></td><td>Dedicated or co-located generation where disclosed (e.g. <code>mixed</code>, <code>gas</code>, <code>solar</code>)</td></tr>
           <tr><td><code>source</code></td><td>Primary public source URL</td></tr>
         </tbody>
       </table>

@@ -46,7 +46,7 @@
       <p>Battery entries are ingested automatically from <a href="https://www.eia.gov/electricity/data/eia860m/" target="_blank" rel="noopener">EIA-860M</a>, the U.S. Energy Information Administration's preliminary monthly inventory of electric generators. We filter the inventory to battery technology and aggregate individual generator rows up to the plant level (a single site often reports several generators).</p>
       <ul>
         <li>Coordinates are the <strong>exact site coordinates</strong> reported to the EIA.</li>
-        <li>Power capacity (MW) is the nameplate value; energy capacity (MWh) is shown where reported.</li>
+        <li>Power capacity (MW) is the nameplate value; energy capacity (MWh) is shown where reported — EIA reports it for operating sites but not on its planned-generator sheet, so under-construction and planned batteries show MW only. Each build records the exact EIA-860M file it was ingested from.</li>
         <li>Entries from this pipeline carry an <code>eia-</code> id prefix.</li>
       </ul>
       <div class="callout">

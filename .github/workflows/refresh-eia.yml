@@ -1,10 +1,10 @@
 name: Monthly EIA-860M refresh
 
-# Runs on the 26th of each month (EIA-860M typically drops on the ~24th).
+# Runs on the 28th of each month (EIA-860M typically drops on the 24th–26th; the 26th raced it and re-ingested the prior file).
 # Manual trigger also available via the Actions tab.
 on:
   schedule:
-    - cron: "0 13 26 * *"
+    - cron: "0 13 28 * *"
   workflow_dispatch:
 
 permissions:
@@ -26,7 +26,10 @@ jobs:
         run: pip install pandas openpyxl
 
       - name: Run EIA ingest
-        run: python3 scripts/ingest_eia.py
+        id: ingest
+        run: |
+          python3 scripts/ingest_eia.py
+          echo "source=$(python3 -c 'import json;print(json.load(open("projects.json")).get("eia_source_month","?"))')" >> $GITHUB_OUTPUT
 
       - name: Build change log (diff vs. last committed dataset)
         id: changelog
@@ -34,10 +37,13 @@ jobs:
           SUMMARY=$(python3 scripts/build_changelog.py)
           echo "summary=$SUMMARY" >> $GITHUB_OUTPUT
 
+      - name: Rebuild state / operator pages, explore hub, sitemap
+        run: python3 scripts/build_pages.py
+
       - name: Check for changes
         id: diff
         run: |
-          if git diff --quiet projects.json; then
+          if [ -z "$(git status --porcelain)" ]; then
             echo "changed=false" >> $GITHUB_OUTPUT
           else
             echo "changed=true" >> $GITHUB_OUTPUT
@@ -52,10 +58,11 @@ jobs:
           body: |
             Automated PR from the `refresh-eia` workflow.
 
-            - Pulled latest EIA-860M archive
+            - Pulled EIA-860M file **${{ steps.ingest.outputs.source }}**
             - Re-ingested operating + planned BESS projects
             - Preserved hand-curated entries (ids not starting with `eia-`)
             - Rebuilt `changelog.json` — **${{ steps.changelog.outputs.summary }}**
+            - Regenerated state & operator pages, explore hub, sitemap (stale counts fixed; orphaned operator pages pruned → 301)
 
             Review the diff, then merge — pushing to `main` will auto-deploy to usenergymap.com.
           branch: data/eia-refresh
@@ -63,3 +70,9 @@ jobs:
           add-paths: |
             projects.json
             changelog.json
+            state/
+            operator/
+            explore.html
+            sitemap.xml
+            robots.txt
+            vercel.json
