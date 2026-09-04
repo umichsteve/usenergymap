@@ -10,9 +10,9 @@
 //   - x-api-key header (or ?key=) matching one of NEAREST_API_KEYS (comma-separated env var):
 //     full results (limit ≤ 50), radius counts, CORS for the customer's origin.
 //
-// Geocoding: if `address` is given without lat/lng we geocode via the US Census Bureau
-// geocoder — public, free, no key, and its results carry no redistribution restriction
-// (unlike Google/Mapbox terms). US addresses only, which is the whole dataset anyway.
+// Geocoding: if `address` is given without lat/lng we geocode it — US Census Bureau geocoder for
+// street addresses (public, free, no key, no redistribution terms — unlike Google/Mapbox), with
+// OpenStreetMap Nominatim as the fallback for place-level queries (city, county, ZIP).
 
 const { fetchProjects } = require("../lib/dataset");
 const { nearest } = require("../lib/geo");
@@ -28,14 +28,40 @@ async function loadProjects(origin) {
   return projects;
 }
 
+// Census handles street addresses only; place-level queries ("Moss Landing, CA", a ZIP, a county)
+// fall back to OpenStreetMap's Nominatim. We geocode one query point and return its coordinates —
+// no OSM data is stored or redistributed, so ODbL isn't engaged; usage stays within Nominatim's
+// policy (identified user-agent, low volume, attribution in every response).
+const UA = "usenergymap.com nearest-api (hello@usenergymap.com)";
+
 async function geocodeCensus(address) {
   const url = "https://geocoding.geo.census.gov/geocoder/locations/onelineaddress?benchmark=Public_AR_Current&format=json&address=" + encodeURIComponent(address);
-  const res = await fetch(url, { headers: { "user-agent": "usenergymap.com nearest-api" } });
-  if (!res.ok) throw new Error("geocoder " + res.status);
+  const res = await fetch(url, { headers: { "user-agent": UA } });
+  if (!res.ok) return null;
   const j = await res.json();
   const m = j && j.result && j.result.addressMatches && j.result.addressMatches[0];
   if (!m) return null;
-  return { lat: m.coordinates.y, lng: m.coordinates.x, matched_address: m.matchedAddress };
+  return { lat: m.coordinates.y, lng: m.coordinates.x, matched_address: m.matchedAddress, geocoder: "census" };
+}
+
+async function geocodeNominatim(q) {
+  const url = "https://nominatim.openstreetmap.org/search?format=jsonv2&limit=1&countrycodes=us&q=" + encodeURIComponent(q);
+  const res = await fetch(url, { headers: { "user-agent": UA, "accept-language": "en" } });
+  if (!res.ok) return null;
+  const j = await res.json();
+  const m = Array.isArray(j) && j[0];
+  if (!m) return null;
+  return { lat: Number(m.lat), lng: Number(m.lon), matched_address: m.display_name, geocoder: "nominatim" };
+}
+
+async function geocode(address) {
+  // Street addresses (start with a number) → Census first; anything else → Nominatim first.
+  const streetish = /^\s*\d+\s+\S/.test(address);
+  const order = streetish ? [geocodeCensus, geocodeNominatim] : [geocodeNominatim, geocodeCensus];
+  for (const fn of order) {
+    try { const r = await fn(address); if (r) return r; } catch (e) { console.warn("geocoder failed:", fn.name, e.message); }
+  }
+  return null;
 }
 
 function isAuthorized(req) {
@@ -59,8 +85,8 @@ module.exports = async (req, res) => {
 
   try {
     if ((lat == null || lng == null) && q.address) {
-      geocoded = await geocodeCensus(String(q.address).slice(0, 300));
-      if (!geocoded) return res.status(404).json({ error: "Address not found by the Census geocoder. Try adding city, state, and ZIP, or pass lat/lng." });
+      geocoded = await geocode(String(q.address).slice(0, 300));
+      if (!geocoded) return res.status(404).json({ error: "Could not geocode that query. Street addresses with city, state and ZIP resolve reliably; place names are best-effort. Or pass lat/lng." });
       lat = geocoded.lat; lng = geocoded.lng;
     }
     if (!(Number.isFinite(lat) && Number.isFinite(lng)) || Math.abs(lat) > 90 || Math.abs(lng) > 180) {
@@ -80,7 +106,7 @@ module.exports = async (req, res) => {
 
     res.setHeader("Cache-Control", authorized ? "no-store" : "public, max-age=300");
     return res.status(200).json({
-      query: { lat, lng, ...(geocoded ? { address: q.address, matched_address: geocoded.matched_address } : {}),
+      query: { lat, lng, ...(geocoded ? { address: q.address, matched_address: geocoded.matched_address, geocoder: geocoded.geocoder } : {}),
                type: q.type || "all", status: q.status || "all", radius_miles: authorized && q.radius_miles ? Number(q.radius_miles) : null },
       tier: authorized ? "licensed" : "demo",
       ...(authorized ? {} : { note: `Demo response: ${DEMO_LIMIT} results, no radius counts. Licensed access: usenergymap.com/data#embedded` }),
