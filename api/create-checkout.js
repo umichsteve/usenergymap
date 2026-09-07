@@ -63,7 +63,9 @@ module.exports = async (req, res) => {
       // Both tiers land on the same success page; it reads the session and adapts.
       success_url: `${origin}/data/success?session_id={CHECKOUT_SESSION_ID}`,
       cancel_url: `${origin}/data`,
-      metadata: { plan: planKey },
+      // `app` lets the webhook recognise its own sessions; `plan` is unchanged and
+      // still what lib/entitlement.js reads. Purely additive.
+      metadata: { plan: planKey, app: "usenergymap" },
       allow_promotion_codes: true,
     };
 
@@ -72,7 +74,7 @@ module.exports = async (req, res) => {
       params.payment_intent_data = { statement_descriptor_suffix: "ENERGYMAP" };
       params.customer_creation = "always";
     } else {
-      params.subscription_data = { metadata: { plan: planKey } };
+      params.subscription_data = { metadata: { plan: planKey, app: "usenergymap" } };
     }
 
     const session = await stripe.checkout.sessions.create(params);

@@ -143,7 +143,7 @@ Mechanics (no database, Stripe is the source of truth):
 - `lib/entitlement.js` — verifies a session: one-time = `payment_status: paid`; subscription = status active/trialing/past_due.
 - `api/download.js` — streams xlsx/csv/geojson for any entitled session; `format=changelog` for subscribers only.
 - `api/session.js` / `api/portal.js` — success-page status and Stripe billing portal (enable the portal once in the Stripe Dashboard).
-- The success-page URL is the subscriber's permanent access link. Lost-link recovery is manual (email) for now.
+- The success-page URL is the subscriber's permanent access link; `api/stripe/webhook.js` emails it on `checkout.session.completed` / `checkout.session.async_payment_succeeded` (signed, Resend, no database), so losing the redirect no longer loses access.
 
 Change log:
 - `scripts/build_changelog.py` diffs the working-tree `projects.json` against `HEAD` (order-independent) → `changelog.json`
