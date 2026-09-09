@@ -71,7 +71,7 @@ module.exports = async (req, res) => {
 
     if (plan.mode === "payment") {
       // Shows on the card statement; otherwise it bills as the account default.
-      params.payment_intent_data = { statement_descriptor_suffix: "ENERGYMAP" };
+      params.payment_intent_data = { statement_descriptor_suffix: "USENERGYMAP" };
       params.customer_creation = "always";
     } else {
       params.subscription_data = { metadata: { plan: planKey, app: "usenergymap" } };
