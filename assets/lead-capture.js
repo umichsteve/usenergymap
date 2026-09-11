@@ -9,15 +9,23 @@
   var EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/;
 
   // A visitor who submits on one state page and then another is one lead, not two.
-  // Google Ads would happily count both; the ad spend decision that follows would be
-  // wrong. sessionStorage is enough — it is one browsing session, which is the window
-  // that actually inflates a campaign's numbers.
-  var FIRED_KEY = "uem_lead_fired";
+  // Google Ads would happily count both, and the spend decision that follows would be
+  // wrong. localStorage, not sessionStorage: sessionStorage is scoped to a single tab,
+  // so opening a second state page in a new tab would have re-counted the same person
+  // (observed on the preview before this was changed).
+  //
+  // Suppression expires after 30 days. Permanent would under-count a prospect who
+  // genuinely comes back a quarter later, which is a real lead worth bidding on.
+  var FIRED_KEY = "uem_lead_fired_at";
+  var SUPPRESS_MS = 30 * 24 * 60 * 60 * 1000;
   function alreadyFired() {
-    try { return sessionStorage.getItem(FIRED_KEY) === "1"; } catch (e) { return false; }
+    try {
+      var at = parseInt(localStorage.getItem(FIRED_KEY), 10);
+      return !!at && (Date.now() - at) < SUPPRESS_MS;
+    } catch (e) { return false; }
   }
   function markFired() {
-    try { sessionStorage.setItem(FIRED_KEY, "1"); } catch (e) { /* private mode */ }
+    try { localStorage.setItem(FIRED_KEY, String(Date.now())); } catch (e) { /* private mode */ }
   }
 
   function init(block) {
