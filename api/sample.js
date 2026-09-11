@@ -8,15 +8,38 @@
 // Deliberately not the full dataset and deliberately not the change log: those are
 // /api/download, which verifies a Stripe session first.
 
+const fs = require("fs");
+const path = require("path");
 const { fetchProjects, toCSV } = require("../lib/dataset");
 
 const SAMPLE_SIZE = 100;
 
+// projects.json ships in the same deployment as this function, so read it off disk
+// rather than over HTTP to our own origin. The HTTP path (lib/dataset.fetchProjects,
+// which the paid /api/download uses) fails on any deployment with Vercel Authentication
+// on: the function's own unauthenticated request gets the protection login page and
+// JSON.parse sees "<!DOCTYPE". Disk also drops a round trip and cannot drift from the
+// build being served. vercel.json pins the file into the bundle via includeFiles.
+// fetchProjects stays as the fallback so an unexpected bundling change degrades to
+// the old behaviour instead of a 500.
+function loadFromDisk() {
+  const file = path.join(__dirname, "..", "projects.json");
+  const data = JSON.parse(fs.readFileSync(file, "utf8"));
+  return { projects: data.projects || [], last_updated: data.last_updated || null };
+}
+
 module.exports = async (req, res) => {
   try {
-    const proto = (req.headers["x-forwarded-proto"] || "https").split(",")[0];
-    const host = req.headers["x-forwarded-host"] || req.headers.host || "usenergymap.com";
-    const { projects, last_updated } = await fetchProjects(`${proto}://${host}`);
+    let loaded;
+    try {
+      loaded = loadFromDisk();
+    } catch (diskErr) {
+      console.warn("sample: projects.json not readable from disk, falling back to HTTP:", diskErr.message);
+      const proto = (req.headers["x-forwarded-proto"] || "https").split(",")[0];
+      const host = req.headers["x-forwarded-host"] || req.headers.host || "usenergymap.com";
+      loaded = await fetchProjects(`${proto}://${host}`);
+    }
+    const { projects, last_updated } = loaded;
 
     const top = projects
       .slice()
