@@ -1,6 +1,8 @@
 // GET /api/session?session_id=cs_...
-// Read-only status for the success page: which plan, whether it's active, when it renews.
-// Never returns anything a stranger couldn't already infer from holding the link.
+// Read-only status for the success page: which plan, whether it's active, when it renews,
+// and what Stripe charged (the success page reports that as the Google Ads conversion value).
+// Never returns anything a stranger couldn't already infer from holding the link — the
+// amount is the public list price of the plan the link already identifies.
 
 const Stripe = require("stripe");
 const { verifySession } = require("../lib/entitlement");

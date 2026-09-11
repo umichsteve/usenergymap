@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>US Battery Energy Storage (BESS) Project Database — US Energy Map</title>
+<meta name="description" content="Every utility-scale battery energy storage (BESS) project in the United States — operator, location, MW and MWh, status and year online — sourced from the federal EIA-860M inventory and refreshed monthly. Free sample, no card." />
+<link rel="icon" type="image/svg+xml" href="/assets/mark-square.svg" />
+<link rel="canonical" href="https://usenergymap.com/bess" />
+
+<!-- Open Graph / Twitter -->
+<meta property="og:type" content="website" />
+<meta property="og:site_name" content="US Energy Map" />
+<meta property="og:title" content="US Battery Energy Storage (BESS) Project Database" />
+<meta property="og:description" content="Every utility-scale BESS project in the U.S. — MW, MWh, operator, status — refreshed monthly from EIA-860M." />
+<meta property="og:url" content="https://usenergymap.com/bess" />
+<meta property="og:image" content="https://usenergymap.com/assets/og.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="US Battery Energy Storage (BESS) Project Database" />
+<meta name="twitter:description" content="Every utility-scale BESS project in the U.S. — MW, MWh, operator, status — refreshed monthly from EIA-860M." />
+<meta name="twitter:image" content="https://usenergymap.com/assets/og.png" />
+
+<link rel="stylesheet" href="/assets/site.css" />
+<script src="/assets/analytics.js"></script>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-inner">
+    <a class="brand" href="/"><img src="/assets/mark-square.svg" alt="" /> US Energy Map</a>
+    <div class="nav-links">
+      <a href="/map">Map</a>
+      <a href="/explore">Explore</a>
+      <a href="/data">Data</a>
+      <a href="/methodology">Methodology</a>
+      <a href="/about">About</a>
+      <a class="cta" href="/map?type=bess">Open the map →</a>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero">
+  <div class="hero-grid"></div>
+  <div class="hero-inner">
+    <span class="eyebrow"><span class="pulse"></span> Federal source · refreshed monthly</span>
+    <h1 class="display">Every U.S. <span class="grad">battery storage</span> project, in one database.</h1>
+    <p class="lede">Utility-scale battery energy storage (BESS) across the United States — power, energy, operator, status and year online, with a public source on every row. Built from the federal EIA-860M generator inventory and re-ingested every month.</p>
+    <div class="hero-cta">
+      <a class="btn btn-primary" href="/map?type=bess">Open the BESS map →</a>
+      <a class="btn btn-ghost" href="#sample">Get the free sample</a>
+    </div>
+
+    <div class="statbar">
+      <div class="stat"><div class="num bess" id="s-bess">1,327</div><div class="lbl">BESS projects tracked</div></div>
+      <div class="stat"><div class="num mw" id="s-bess-mw">—</div><div class="lbl">MW of storage power</div></div>
+      <div class="stat"><div class="num dc" id="s-bess-op">—</div><div class="lbl">operating today</div></div>
+      <div class="stat"><div class="num st" id="s-bess-states">—</div><div class="lbl">states covered</div></div>
+    </div>
+  </div>
+</header>
+
+<!-- FREE SAMPLE — the reason ad traffic has somewhere to go that isn't a $199 button -->
+<section id="sample">
+  <div class="wrap">
+    <div class="prose" style="max-width:880px;">
+      <div class="sample-cta" data-sample-form data-source="bess">
+        <h3>Free sample — the 100 largest tracked projects</h3>
+        <p>Every column we publish: operator, city, capacity (MW/MWh), status, year online and a
+           public source on each row. Opens straight in Excel or Sheets. No card, no call.</p>
+        <form class="sample-form" novalidate>
+          <input type="email" name="email" inputmode="email" autocomplete="email"
+                 placeholder="you@company.com" aria-label="Email address for the free sample" required />
+          <button class="btn btn-primary" type="submit">Email me the sample &rarr;</button>
+        </form>
+        <p class="sample-msg" role="status" aria-live="polite"></p>
+        <p class="sample-fine">One email with the file. No list, no drip sequence &mdash; see our
+           <a href="/privacy">privacy policy</a>.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT'S IN IT -->
+<section class="alt">
+  <div class="wrap">
+    <div class="section-head">
+      <div class="kicker">What a BESS record holds</div>
+      <h2>The fields a real analysis needs</h2>
+      <p>Not a headline count — the row-level detail you would otherwise assemble by hand from EIA spreadsheets and press releases.</p>
+    </div>
+    <div class="cards">
+      <div class="card">
+        <div class="ic green">▮</div>
+        <h3>Power and energy</h3>
+        <p>Nameplate power in MW and, where the operator reports it, energy capacity in MWh — the pair that tells you whether a site is a frequency-response asset or a four-hour shifting asset.</p>
+      </div>
+      <div class="card">
+        <div class="ic blue">▣</div>
+        <h3>Operator and ownership</h3>
+        <p>The entity EIA has on file for the plant, normalized so a portfolio reads as one operator instead of six spellings.</p>
+      </div>
+      <div class="card">
+        <div class="ic cyan">◆</div>
+        <h3>Status and year online</h3>
+        <p>Operating, under construction, or planned, with a target year — so you can separate today's fleet from the pipeline.</p>
+      </div>
+      <div class="card">
+        <div class="ic purple">◈</div>
+        <h3>Location and market</h3>
+        <p>City, state and coordinates, plus the ISO/RTO the site sits inside (ERCOT, CAISO, PJM, MISO, SPP, NYISO, ISO-NE) on the map.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHERE THE BUILDOUT IS -->
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <div class="kicker">Where it's concentrated</div>
+      <h2>Storage by state</h2>
+      <p>Battery storage is not spread evenly — a handful of markets carry most of the megawatts. Jump straight into any state's full project list.</p>
+    </div>
+    <div class="cards" id="state-cards">
+      <div class="card"><h3 style="margin:0 0 4px;">Loading states…</h3><p style="margin:0;">Reading the live dataset.</p></div>
+    </div>
+    <div style="margin-top:28px;">
+      <a class="btn btn-ghost" href="/explore">Browse every state &amp; operator →</a>
+    </div>
+  </div>
+</section>
+
+<!-- SOURCE -->
+<section class="alt">
+  <div class="wrap">
+    <div class="prose">
+      <h2>Where the battery data comes from</h2>
+      <p>Battery records are ingested from <a href="https://www.eia.gov/electricity/data/eia860m/" target="_blank" rel="noopener">EIA-860M</a>, the U.S. Energy Information Administration's monthly generator inventory, covering utility-scale plants of 1 MW or more that report to the federal government. The ingest runs after each monthly release; the <a href="/changelog">change log</a> records every project added, removed, or moved between statuses.</p>
+      <p>Because EIA-860M is a U.S. government work in the public domain, these records carry <strong>no upstream redistribution restriction</strong> — which is usually the sticking point when a third-party market layer goes into a customer-facing product. It is not one here. The <a href="/methodology">methodology</a> covers definitions, normalization, and what the federal inventory does not include (behind-the-meter and small commercial systems below the 1 MW reporting threshold).</p>
+      <p><a class="btn btn-primary" href="/map?type=bess">See it on the map →</a></p>
+    </div>
+  </div>
+</section>
+
+<!-- DATA PROMO -->
+<section>
+  <div class="wrap">
+    <div class="cta-band" style="background:radial-gradient(700px 300px at 85% 0%, rgba(22,163,74,0.18), transparent 60%), var(--midnight);">
+      <div style="flex:1;min-width:280px;">
+        <div class="kicker" style="color:#34d399;">Data &amp; feeds</div>
+        <h2>Sample first. Buy when it earns it.</h2>
+        <p style="max-width:56ch;">The sample above is 100 rows. The full dataset is every tracked battery and data center project as an <strong style="color:#e2e8f0;">Excel hunting list</strong>, CSV and GeoJSON — with a <strong style="color:#e2e8f0;">row-level change log</strong> each month if you subscribe.</p>
+      </div>
+      <div style="text-align:right;display:flex;flex-direction:column;gap:10px;align-items:flex-end;">
+        <a class="btn btn-primary" href="/data">See data &amp; pricing →</a>
+        <a class="btn btn-ghost" href="/changelog" style="color:#cbd5e1;border-color:#334155;">What changed this month</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer">
+  <div class="footer-inner">
+    <div>
+      <a class="brand" href="/"><img src="/assets/mark-square.svg" alt="" /> US Energy Map</a>
+      <p class="tag">An independent, public tracker of the data center and battery storage buildout across North America.</p>
+    </div>
+    <div class="footer-cols">
+      <div class="footer-col">
+        <h4>Explore</h4>
+        <a href="/map">Interactive map</a>
+        <a href="/explore">By state &amp; operator</a>
+        <a href="/bess">Battery storage (BESS)</a>
+        <a href="/changelog">What changed</a>
+        <a href="/data">Data &amp; pricing</a>
+        <a href="/license">License</a>
+        <a href="/methodology">Methodology</a>
+        <a href="/guides/home-backup-power">Home backup power guide</a>
+        <a href="/about">About</a>
+        <a href="/privacy">Privacy</a>
+        <a href="/disclosure">Affiliate disclosure</a>
+      </div>
+      <div class="footer-col">
+        <h4>Get involved</h4>
+        <a href="mailto:hello@usenergymap.com?subject=Sponsoring%20US%20Energy%20Map">Sponsor this map</a>
+        <a href="mailto:hello@usenergymap.com?subject=Suggest%20a%20project%20%E2%80%94%20US%20Energy%20Map">Suggest a project</a>
+        <a href="https://www.eia.gov/electricity/data/eia860m/" target="_blank" rel="noopener">Data: EIA-860M</a>
+      </div>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>&copy; <span id="year">2026</span> US Energy Map. Data for informational purposes only.</span>
+    <span>Not affiliated with any operator or government agency.</span>
+  </div>
+</footer>
+
+<script src="/assets/lead-capture.js" defer></script>
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+
+  // Live figures so the page never quotes a number the dataset has moved past.
+  // Same pattern as the home page and /data: read projects.json, count client-side.
+  var STATE_SLUG = {
+    AL:'alabama',AK:'alaska',AZ:'arizona',AR:'arkansas',CA:'california',CO:'colorado',
+    CT:'connecticut',DE:'delaware',FL:'florida',GA:'georgia',HI:'hawaii',ID:'idaho',
+    IL:'illinois',IN:'indiana',IA:'iowa',KS:'kansas',KY:'kentucky',LA:'louisiana',
+    ME:'maine',MD:'maryland',MA:'massachusetts',MI:'michigan',MN:'minnesota',
+    MS:'mississippi',MO:'missouri',MT:'montana',NE:'nebraska',NV:'nevada',
+    NH:'new-hampshire',NJ:'new-jersey',NM:'new-mexico',NY:'new-york',
+    NC:'north-carolina',ND:'north-dakota',OH:'ohio',OK:'oklahoma',OR:'oregon',
+    PA:'pennsylvania',RI:'rhode-island',SC:'south-carolina',SD:'south-dakota',
+    TN:'tennessee',TX:'texas',UT:'utah',VT:'vermont',VA:'virginia',WA:'washington',
+    WV:'west-virginia',WI:'wisconsin',WY:'wyoming',DC:'district-of-columbia',PR:'puerto-rico'
+  };
+  var STATE_NAME = {
+    AL:'Alabama',AK:'Alaska',AZ:'Arizona',AR:'Arkansas',CA:'California',CO:'Colorado',
+    CT:'Connecticut',DE:'Delaware',FL:'Florida',GA:'Georgia',HI:'Hawaii',ID:'Idaho',
+    IL:'Illinois',IN:'Indiana',IA:'Iowa',KS:'Kansas',KY:'Kentucky',LA:'Louisiana',
+    ME:'Maine',MD:'Maryland',MA:'Massachusetts',MI:'Michigan',MN:'Minnesota',
+    MS:'Mississippi',MO:'Missouri',MT:'Montana',NE:'Nebraska',NV:'Nevada',
+    NH:'New Hampshire',NJ:'New Jersey',NM:'New Mexico',NY:'New York',
+    NC:'North Carolina',ND:'North Dakota',OH:'Ohio',OK:'Oklahoma',OR:'Oregon',
+    PA:'Pennsylvania',RI:'Rhode Island',SC:'South Carolina',SD:'South Dakota',
+    TN:'Tennessee',TX:'Texas',UT:'Utah',VT:'Vermont',VA:'Virginia',WA:'Washington',
+    WV:'West Virginia',WI:'Wisconsin',WY:'Wyoming',DC:'District of Columbia',PR:'Puerto Rico'
+  };
+
+  fetch('/projects.json').then(function (r) { return r.json(); }).then(function (d) {
+    var bess = (d.projects || []).filter(function (p) { return p.type === 'bess'; });
+    if (!bess.length) return;
+
+    var mw = bess.reduce(function (a, p) { return a + (p.capacity_mw || 0); }, 0);
+    var op = bess.filter(function (p) { return p.status === 'operating'; }).length;
+    var byState = {};
+    bess.forEach(function (p) {
+      if (!p.state) return;
+      var s = byState[p.state] || (byState[p.state] = { n: 0, mw: 0 });
+      s.n += 1; s.mw += (p.capacity_mw || 0);
+    });
+
+    var fmt = function (n) { return Math.round(n).toLocaleString(); };
+    document.getElementById('s-bess').textContent = fmt(bess.length);
+    document.getElementById('s-bess-mw').textContent = fmt(mw);
+    document.getElementById('s-bess-op').textContent = fmt(op);
+    document.getElementById('s-bess-states').textContent = fmt(Object.keys(byState).length);
+
+    var top = Object.keys(byState)
+      .sort(function (a, b) { return byState[b].mw - byState[a].mw; })
+      .slice(0, 8);
+
+    document.getElementById('state-cards').innerHTML = top.map(function (code) {
+      var s = byState[code];
+      var name = STATE_NAME[code] || code;
+      var slug = STATE_SLUG[code];
+      var label = '<h3 style="margin:0 0 4px;">' + name + '</h3>' +
+                  '<p style="margin:0;">' + fmt(s.n) + ' BESS projects · ' + fmt(s.mw) + ' MW</p>';
+      return slug
+        ? '<a class="card" href="/state/' + slug + '" style="display:block;text-decoration:none;">' + label + '</a>'
+        : '<div class="card">' + label + '</div>';
+    }).join('');
+  }).catch(function () { /* the static copy above still stands on its own */ });
+</script>
+
+</body>
+</html>
