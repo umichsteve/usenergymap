@@ -91,6 +91,7 @@ FOOTER = """<footer class="footer">
         <h4>Explore</h4>
         <a href="/map">Interactive map</a>
         <a href="/explore">By state &amp; operator</a>
+        <a href="/bess">Battery storage (BESS)</a>
         <a href="/changelog">What changed</a>
         <a href="/data">Data &amp; pricing</a>
         <a href="/methodology">Methodology</a>
@@ -98,6 +99,7 @@ FOOTER = """<footer class="footer">
         <a href="/guides/home-backup-power">Home backup power guide</a>
         <a href="/about">About</a>
         <a href="/privacy">Privacy</a>
+        <a href="/disclosure">Affiliate disclosure</a>
       </div>
       <div class="footer-col">
         <h4>Get involved</h4>
@@ -120,6 +122,26 @@ DATA_CTA = """
   <div class="callout" style="border-left-color:#16a34a;display:flex;justify-content:space-between;align-items:center;gap:18px;flex-wrap:wrap;margin:26px 0;">
     <div style="flex:1;min-width:240px;"><strong>Working this market?</strong> {changed_line}Get every operator below as a ranked <strong>BD hunting list</strong> (Excel + CSV + GeoJSON) — <strong>$199</strong> once, or <strong>$49/mo</strong> refreshed monthly with a row-level change log.</div>
     <a class="btn btn-primary" href="/data" style="white-space:nowrap;">See data &amp; pricing &rarr;</a>
+  </div>
+"""
+
+# Free-sample capture. Paid ads land on these pages, so the page needs something to
+# convert on that is not a $199 button — the sample is the cheap yes that makes the
+# expensive yes possible. Markup is shared with bess.html; behaviour and the Google Ads
+# "lead" conversion live in /assets/lead-capture.js.
+SAMPLE_CAPTURE = """
+  <div class="sample-cta" data-sample-form data-source="{source}">
+    <h3>Free sample — the 100 largest tracked projects</h3>
+    <p>Every column we publish: operator, city, capacity (MW/MWh), status, year online and a
+       public source on each row. Opens straight in Excel or Sheets. No card, no call.</p>
+    <form class="sample-form" novalidate>
+      <input type="email" name="email" inputmode="email" autocomplete="email"
+             placeholder="you@company.com" aria-label="Email address for the free sample" required />
+      <button class="btn btn-primary" type="submit">Email me the sample &rarr;</button>
+    </form>
+    <p class="sample-msg" role="status" aria-live="polite"></p>
+    <p class="sample-fine">One email with the file. No list, no drip sequence &mdash; see our
+       <a href="/privacy">privacy policy</a>.</p>
   </div>
 """
 
@@ -198,7 +220,7 @@ def write(path, content):
 def main():
     data = json.load(open(os.path.join(ROOT, "projects.json")))
     projects = data.get("projects", [])
-    urls = ["/", "/map", "/explore", "/changelog", "/data", "/license", "/methodology", "/about", "/guides/home-backup-power"]
+    urls = ["/", "/map", "/explore", "/changelog", "/data", "/bess", "/license", "/methodology", "/about", "/disclosure", "/guides/home-backup-power"]
 
     # ---- State pages ----
     by_state = {}
@@ -225,10 +247,12 @@ def main():
      ranked by capacity. Battery projects are sourced from the federal EIA-860M inventory; data centers
      are hand-curated with a public source on each entry. See the <a href="/methodology">methodology</a> for details.</p>
   <p><a class="btn btn-primary" href="/map?state={esc(code)}">View {esc(name)} on the map →</a></p>
+{SAMPLE_CAPTURE.format(source=f"state/{slug}")}
 {data_cta(plist)}
   <h2>All {esc(name)} projects</h2>
   {project_table(plist, show_state=False, show_operator=True)}
 </article></div></section>
+<script src="/assets/lead-capture.js" defer></script>
 {FOOTER}"""
         write(f"state/{slug}.html", body)
         urls.append(f"/state/{slug}")

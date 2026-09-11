@@ -68,6 +68,44 @@
   (function () {
     const $ = (id) => document.getElementById(id);
     const sid = new URLSearchParams(location.search).get('session_id');
+
+    // Google Ads "purchase" conversion.
+    //
+    // This page is deliberately a permanent, bookmarkable access link — the copy below
+    // tells subscribers to come back to it every month — so "the page loaded" is not the
+    // same event as "a purchase happened". Firing on every visit would report one sale
+    // as a dozen and hand Smart Bidding a fictional ROAS. The session id is the purchase,
+    // so it is also the dedup key: one conversion per checkout session, forever, per
+    // browser. transaction_id carries the same id to Google, which de-duplicates server
+    // side across browsers and devices.
+    const FIRED_PREFIX = 'uem_purchase_fired:';
+    function alreadyCounted(id) {
+      try { return localStorage.getItem(FIRED_PREFIX + id) === '1'; } catch (e) { return false; }
+    }
+    function markCounted(id) {
+      try { localStorage.setItem(FIRED_PREFIX + id, '1'); } catch (e) { /* private mode */ }
+    }
+    function trackPurchase(ent) {
+      if (!sid || alreadyCounted(sid)) return;
+      markCounted(sid);
+      // Value comes from Stripe via /api/session, not from a price hardcoded here, so a
+      // promotion code or a price change is reflected without touching this file.
+      const params = { transaction_id: sid };
+      if (typeof ent.amount === 'number') {
+        params.value = ent.amount;
+        params.currency = ent.currency || 'USD';
+      }
+      if (typeof window.uemAdsConversion === 'function') window.uemAdsConversion('purchase', params);
+      if (typeof window.gtag === 'function') {
+        window.gtag('event', 'purchase', {
+          transaction_id: sid,
+          value: typeof ent.amount === 'number' ? ent.amount : undefined,
+          currency: ent.currency || 'USD',
+          items: [{ item_id: ent.plan || 'snapshot', item_name: 'US Energy Map dataset', quantity: 1 }]
+        });
+      }
+    }
+
     const fail = (msg) => {
       $('icon').textContent = '⚠️'; $('h1').textContent = 'We couldn’t verify this purchase';
       $('sub').textContent = ''; $('note-fail').hidden = false; $('fail-text').textContent = msg;
@@ -90,6 +128,8 @@
           return fail((j && j.error) || 'Payment not found. If you just paid, wait a moment and refresh.');
         }
         $('dl').hidden = false; $('badge').hidden = false;
+        // Verified paid — this is the only branch that counts as a conversion.
+        trackPurchase(j);
         if (j.mode === 'subscription') {
           $('h1').textContent = 'You’re set — Always Current is active';
           $('sub').textContent = 'Download the latest build and the change log below. Come back after the 26th for next month’s.';

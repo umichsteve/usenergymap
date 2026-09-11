@@ -73,5 +73,16 @@
       "destination": "/explore",
       "permanent": true
     }
-  ]
+  ],
+  "rewrites": [
+    {
+      "source": "/assets/ads.js",
+      "destination": "/api/ads"
+    }
+  ],
+  "functions": {
+    "api/sample.js": {
+      "includeFiles": "projects.json"
+    }
+  }
 }
