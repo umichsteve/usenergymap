@@ -122,10 +122,13 @@
       .then(r => r.json().then(j => ({ ok: r.ok, j })))
       .then(({ ok, j }) => {
         if (!ok || !j.ok) {
-          if (j && j.mode === undefined && j.subscription_status) {
-            return fail('Your Always Current subscription is ' + j.subscription_status + '. Update billing to restore access, or email us.');
-          }
-          return fail((j && j.error) || 'Payment not found. If you just paid, wait a moment and refresh.');
+          // One message for every rejection. /api/session deliberately answers the same
+          // way whether the link is unpaid, lapsed, from a sibling property on the same
+          // Stripe account, or simply not a session at all — telling those apart is an
+          // oracle for live session ids. The branch that used to read back
+          // j.subscription_status is gone with the data it read. Anyone genuinely stuck
+          // is a person, and a person can reach a human.
+          return fail('We couldn’t verify a purchase for this link. If you just paid, wait a moment and refresh — it can take a few seconds to settle. If your subscription has lapsed, or you believe this is wrong, email hello@usenergymap.com from your purchase address and we will sort it out.');
         }
         $('dl').hidden = false; $('badge').hidden = false;
         // Verified paid — this is the only branch that counts as a conversion.
