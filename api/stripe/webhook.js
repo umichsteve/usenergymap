@@ -14,6 +14,9 @@
 //
 //   * The account carries other products' webhooks, so a delivery may not be ours.
 //     Ownership is decided BEFORE anything sends, calls out, or logs an address.
+//     The test itself lives in lib/ownership.js, shared with lib/entitlement.js so
+//     the read paths (/api/session, /api/download, /api/portal) reject a sibling
+//     property's session by exactly the same rule this handler ignores it by.
 //
 //   * The access link is CONSTRUCTED, never read from the payload. Stripe stores
 //     success_url with {CHECKOUT_SESSION_ID} unsubstituted — substitution happens
@@ -37,11 +40,11 @@
 
 const Stripe = require("stripe");
 const { verifySession } = require("../../lib/entitlement");
+const { isOurSession } = require("../../lib/ownership");
 
 // The buyer's link always points at the canonical domain, never at whatever host
 // happened to serve the checkout (a preview deployment must not mint preview links).
 const ACCESS_LINK_BASE = "https://usenergymap.com/data/success";
-const OWNER_HOST = "usenergymap.com";
 const FROM = "US Energy Map <data@usenergymap.com>";
 const RESEND_ENDPOINT = "https://api.resend.com/emails";
 
@@ -77,19 +80,6 @@ function readRawBody(req) {
     req.on("end", () => settle(resolve, Buffer.concat(chunks)));
     req.on("error", (err) => settle(reject, err));
   });
-}
-
-// Either signal is sufficient. metadata.app is set by api/create-checkout.js from
-// this build forward; the success_url host is what recognises sessions created
-// before the tag existed. Same fallback idiom as lib/entitlement.js:17.
-function isOurSession(session) {
-  if (!session) return false;
-  if (session.metadata && session.metadata.app === "usenergymap") return true;
-  try {
-    return new URL(session.success_url).hostname === OWNER_HOST;
-  } catch (_) {
-    return false; // absent or malformed success_url — not a signal either way
-  }
 }
 
 // A transport-level fault: Stripe is down or unreachable, so the event is worth

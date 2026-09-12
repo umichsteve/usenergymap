@@ -83,7 +83,8 @@ scripts/build_changelog.py          # Diff vs. last commit → changelog.json
 changelog.json                      # Latest refresh summary + row-level changes
 .github/workflows/refresh-eia.yml   # Cron + PR for automated refresh
 api/                                # Vercel functions: checkout, download, session, portal
-lib/                                # dataset.js (exports), entitlement.js, changelog.js
+lib/                                # dataset.js (exports), ownership.js, entitlement.js, changelog.js
+scripts/test-entitlement.js         # npm test — ownership/entitlement suite, offline, no deps
 data.html · license.html · changelog.html · data/success.html
 .cache/                             # EIA xlsx cache (gitignored)
 ```
@@ -140,9 +141,16 @@ The map stays free. `/data` sells the *service* around the dataset, not the reco
 
 Mechanics (no database, Stripe is the source of truth):
 - `api/create-checkout.js` — plan-aware Checkout Session; both tiers land on `/data/success?session_id=…`.
-- `lib/entitlement.js` — verifies a session: one-time = `payment_status: paid`; subscription = status active/trialing/past_due.
-- `api/download.js` — streams xlsx/csv/geojson for any entitled session; `format=changelog` for subscribers only.
-- `api/session.js` / `api/portal.js` — success-page status and Stripe billing portal (enable the portal once in the Stripe Dashboard).
+- `lib/ownership.js` — decides whether a Checkout Session belongs to THIS property. The Stripe
+  account is shared across seven properties, so a paid session is not by itself a US Energy Map
+  purchase. Two signals, either sufficient: `metadata.app === "usenergymap"`, or a `success_url`
+  hostname of `usenergymap.com` (which is what recognises buyers from before the tag existed —
+  do not remove it or make it conditional on metadata). No signal fails closed.
+- `lib/entitlement.js` — ownership first, then verifies a session: one-time = `payment_status: paid`;
+  subscription = status active/trialing/past_due. Every rejection returns one identical shape, so a
+  caller cannot tell "not ours" from "not paid" from "no such session".
+- `api/download.js` — streams xlsx/csv/geojson for any entitled session; `format=changelog` for subscribers only (ours, per the ownership gate — `mode === "subscription"` is only ever set on a session that passed it).
+- `api/session.js` / `api/portal.js` — success-page status and Stripe billing portal (enable the portal once in the Stripe Dashboard). The portal requires an ACCEPTED session that also carries a customer; a customer id alone is not an entitlement.
 - The success-page URL is the subscriber's permanent access link; `api/stripe/webhook.js` emails it on `checkout.session.completed` / `checkout.session.async_payment_succeeded` (signed, Resend, no database), so losing the redirect no longer loses access.
 
 Change log:

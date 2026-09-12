@@ -2,14 +2,17 @@
 // Verifies the purchase with Stripe on every call, then streams the file. Files are
 // generated server-side and never exposed at a public URL.
 //
-//   csv / geojson / xlsx  → any paid session (snapshot or active subscription)
+//   csv / geojson / xlsx  → any paid session for THIS property (snapshot or active sub)
 //   changelog             → active "Always Current" subscribers only
+//
+// "For this property" is not decoration: the Stripe account is shared, and ownership is
+// settled inside verifySession (lib/ownership.js) before payment status is even read.
 //
 // Env required: STRIPE_SECRET_KEY
 
 const Stripe = require("stripe");
 const { fetchProjects, toCSV, toGeoJSON, buildWorkbookBuffer } = require("../lib/dataset");
-const { verifySession } = require("../lib/entitlement");
+const { verifySession, DENIED } = require("../lib/entitlement");
 const { fetchChangelog, changelogToCSV } = require("../lib/changelog");
 
 module.exports = async (req, res) => {
@@ -32,6 +35,11 @@ module.exports = async (req, res) => {
     const origin = `${proto}://${host}`;
 
     if (format === "changelog") {
+      // "OUR subscription", not "a subscription". ent.mode is set on the accepted
+      // returns only, both of which sit after verifySession's ownership gate, so a
+      // sibling property's active subscription never reaches this line — it was
+      // rejected at ent.ok above. Before that gate existed, a $4.99/mo subscription
+      // on another property read as mode "subscription" and passed straight through.
       if (ent.mode !== "subscription") {
         return res.status(403).json({ error: "The change log is part of the Always Current subscription." });
       }
@@ -62,7 +70,7 @@ module.exports = async (req, res) => {
     return res.status(200).send(toCSV(projects));
   } catch (err) {
     console.error("download error:", err);
-    // Stripe throws on malformed/unknown ids — treat as unauthorized.
-    return res.status(402).json({ error: "Could not verify purchase." });
+    // Stripe unreachable, or an id it choked on — same answer as every other rejection.
+    return res.status(DENIED.status).json({ error: DENIED.error });
   }
 };
