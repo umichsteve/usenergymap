@@ -1,113 +1,150 @@
 {
  "schema_version": "1.0",
- "generated": "2026-09-04",
+ "generated": "2026-09-28",
  "summary": {
   "from": "2026-09-04",
-  "to": "2026-09-04",
-  "eia_source_month": "july_generator2026",
-  "eia_source_month_prev": null,
-  "added": 9,
-  "removed": 1,
-  "changed": 32,
-  "status_changes": 8,
-  "capacity_changes": 6,
-  "newly_operating": 3,
-  "added_mw": 12000,
-  "total_projects": 1605,
-  "total_mw": 193027,
-  "net_mw": 15529,
+  "to": "2026-09-28",
+  "eia_source_month": "august_generator2026",
+  "eia_source_month_prev": "july_generator2026",
+  "added": 7,
+  "removed": 4,
+  "changed": 17,
+  "status_changes": 10,
+  "capacity_changes": 11,
+  "newly_operating": 6,
+  "added_mw": 768,
+  "total_projects": 1608,
+  "total_mw": 193310,
+  "net_mw": 283,
   "by_type": {
    "bess": {
-    "added": 0,
-    "changed": 0
+    "added": 7,
+    "changed": 17
    },
    "data_center": {
-    "added": 9,
-    "changed": 32
+    "added": 0,
+    "changed": 0
    }
   }
  },
  "highlights": {
   "top_added": [
    {
-    "name": "Fermi America Project Matador",
-    "type": "data_center",
+    "name": "Willow Creek Energy Storage",
+    "type": "bess",
+    "state": "OK",
+    "capacity_mw": 200,
+    "operator": "Willow Creek Energy Storage, LLC"
+   },
+   {
+    "name": "Palo Duro Energy Storage II",
+    "type": "bess",
     "state": "TX",
-    "capacity_mw": 11000,
-    "operator": "Fermi America"
+    "capacity_mw": 166,
+    "operator": "Palo Duro Energy Center, LLC"
    },
    {
-    "name": "Applied Digital Polaris Forge 1",
-    "type": "data_center",
-    "state": "ND",
-    "capacity_mw": 400,
-    "operator": "Applied Digital / CoreWeave"
+    "name": "Mammoth Plains Energy Storage II",
+    "type": "bess",
+    "state": "OK",
+    "capacity_mw": 101,
+    "operator": "Mammoth Plains Energy Center, LLC"
    },
    {
-    "name": "CoreWeave Lancaster",
-    "type": "data_center",
-    "state": "PA",
-    "capacity_mw": 300,
-    "operator": "CoreWeave"
+    "name": "Winchester Solar I, LLC",
+    "type": "bess",
+    "state": "AZ",
+    "capacity_mw": 88,
+    "operator": "Torch Operating Company, LLC"
    },
    {
-    "name": "Nebius Vineland",
-    "type": "data_center",
-    "state": "NJ",
-    "capacity_mw": 300,
-    "operator": "Nebius / DataOne"
+    "name": "Winchester Solar II, LLC",
+    "type": "bess",
+    "state": "AZ",
+    "capacity_mw": 88,
+    "operator": "Torch Operating Company, LLC"
    },
    {
-    "name": "AWS Georgia (Butts / Douglas Counties)",
-    "type": "data_center",
-    "state": "GA",
-    "capacity_mw": null,
-    "operator": "Amazon Web Services"
+    "name": "Wheatridge Optimization I",
+    "type": "bess",
+    "state": "OR",
+    "capacity_mw": 65,
+    "operator": "Wheatridge Optimization I, LLC"
    },
    {
-    "name": "AWS Richmond County (Energy Way)",
-    "type": "data_center",
-    "state": "NC",
-    "capacity_mw": null,
-    "operator": "Amazon Web Services"
-   },
-   {
-    "name": "AWS Salem Township (Susquehanna)",
-    "type": "data_center",
-    "state": "PA",
-    "capacity_mw": null,
-    "operator": "Amazon Web Services"
-   },
-   {
-    "name": "CoreWeave Denton (Core Scientific)",
-    "type": "data_center",
-    "state": "TX",
-    "capacity_mw": null,
-    "operator": "CoreWeave / Core Scientific"
+    "name": "Wheatridge Optimization II",
+    "type": "bess",
+    "state": "OR",
+    "capacity_mw": 60,
+    "operator": "Wheatridge Optimization II, LLC"
    }
   ],
   "newly_operating": [
    {
-    "name": "Microsoft Fairwater Atlanta",
-    "type": "data_center",
+    "name": "McGrau Ford Battery Storage Facility",
+    "type": "bess",
     "state": "GA",
+    "capacity_mw": 530
+   },
+   {
+    "name": "Sierra Solar Hybrid",
+    "type": "bess",
+    "state": "NV",
     "capacity_mw": 400
    },
    {
-    "name": "Google Fort Wayne",
-    "type": "data_center",
-    "state": "IN",
-    "capacity_mw": null
+    "name": "Project Lynx",
+    "type": "bess",
+    "state": "TX",
+    "capacity_mw": 125
    },
    {
-    "name": "Meta Mesa",
-    "type": "data_center",
-    "state": "AZ",
-    "capacity_mw": null
+    "name": "Grayson",
+    "type": "bess",
+    "state": "CA",
+    "capacity_mw": 75
+   },
+   {
+    "name": "Regis Escondido",
+    "type": "bess",
+    "state": "TX",
+    "capacity_mw": 10
+   },
+   {
+    "name": "Sugar Maple Clean Energy LLC",
+    "type": "bess",
+    "state": "NY",
+    "capacity_mw": 2
    }
   ]
  },
  "history": [
+  {
+   "from": "2026-09-04",
+   "to": "2026-09-04",
+   "eia_source_month": "july_generator2026",
+   "eia_source_month_prev": null,
+   "added": 9,
+   "removed": 1,
+   "changed": 32,
+   "status_changes": 8,
+   "capacity_changes": 6,
+   "newly_operating": 3,
+   "added_mw": 12000,
+   "total_projects": 1605,
+   "total_mw": 193027,
+   "net_mw": 15529,
+   "by_type": {
+    "bess": {
+     "added": 0,
+     "changed": 0
+    },
+    "data_center": {
+     "added": 9,
+     "changed": 32
+    }
+   }
+  },
   {
    "from": "2026-08-26",
    "to": "2026-09-04",
@@ -184,876 +221,519 @@
  "changes": [
   {
    "kind": "added",
-   "id": "dc-applied-digital-ellendale",
-   "name": "Applied Digital Polaris Forge 1",
-   "type": "data_center",
-   "operator": "Applied Digital / CoreWeave",
-   "city": "Ellendale",
-   "state": "ND",
-   "status": "operating",
-   "capacity_mw": 400,
-   "capacity_mwh": null,
-   "year_online": 2025
-  },
-  {
-   "kind": "added",
-   "id": "dc-aws-butts-county-ga",
-   "name": "AWS Georgia (Butts / Douglas Counties)",
-   "type": "data_center",
-   "operator": "Amazon Web Services",
-   "city": "Butts County",
-   "state": "GA",
-   "status": "planned",
-   "capacity_mw": null,
-   "capacity_mwh": null,
-   "year_online": null
-  },
-  {
-   "kind": "added",
-   "id": "dc-aws-richmond-county-nc",
-   "name": "AWS Richmond County (Energy Way)",
-   "type": "data_center",
-   "operator": "Amazon Web Services",
-   "city": "Hamlet",
-   "state": "NC",
+   "id": "eia-70405",
+   "name": "Winchester Solar I, LLC",
+   "type": "bess",
+   "operator": "Torch Operating Company, LLC",
+   "city": "Cochise",
+   "state": "AZ",
    "status": "under_construction",
-   "capacity_mw": null,
-   "capacity_mwh": null,
-   "year_online": null
-  },
-  {
-   "kind": "added",
-   "id": "dc-aws-salem-township-pa",
-   "name": "AWS Salem Township (Susquehanna)",
-   "type": "data_center",
-   "operator": "Amazon Web Services",
-   "city": "Salem Township",
-   "state": "PA",
-   "status": "planned",
-   "capacity_mw": null,
-   "capacity_mwh": null,
-   "year_online": null
-  },
-  {
-   "kind": "added",
-   "id": "dc-coreweave-denton",
-   "name": "CoreWeave Denton (Core Scientific)",
-   "type": "data_center",
-   "operator": "CoreWeave / Core Scientific",
-   "city": "Denton",
-   "state": "TX",
-   "status": "operating",
-   "capacity_mw": null,
-   "capacity_mwh": null,
-   "year_online": 2025
-  },
-  {
-   "kind": "added",
-   "id": "dc-coreweave-lancaster",
-   "name": "CoreWeave Lancaster",
-   "type": "data_center",
-   "operator": "CoreWeave",
-   "city": "Lancaster County",
-   "state": "PA",
-   "status": "planned",
-   "capacity_mw": 300,
-   "capacity_mwh": null,
-   "year_online": null
-  },
-  {
-   "kind": "added",
-   "id": "dc-fermi-matador-amarillo",
-   "name": "Fermi America Project Matador",
-   "type": "data_center",
-   "operator": "Fermi America",
-   "city": "Carson County",
-   "state": "TX",
-   "status": "announced",
-   "capacity_mw": 11000,
+   "capacity_mw": 88,
    "capacity_mwh": null,
    "year_online": 2027
   },
   {
    "kind": "added",
-   "id": "dc-nebius-vineland",
-   "name": "Nebius Vineland",
-   "type": "data_center",
-   "operator": "Nebius / DataOne",
-   "city": "Vineland",
-   "state": "NJ",
+   "id": "eia-70406",
+   "name": "Winchester Solar II, LLC",
+   "type": "bess",
+   "operator": "Torch Operating Company, LLC",
+   "city": "Cochise",
+   "state": "AZ",
    "status": "under_construction",
-   "capacity_mw": 300,
+   "capacity_mw": 88,
+   "capacity_mwh": null,
+   "year_online": 2027
+  },
+  {
+   "kind": "added",
+   "id": "eia-70408",
+   "name": "Willow Creek Energy Storage",
+   "type": "bess",
+   "operator": "Willow Creek Energy Storage, LLC",
+   "city": "Pawnee",
+   "state": "OK",
+   "status": "under_construction",
+   "capacity_mw": 200,
    "capacity_mwh": null,
    "year_online": 2026
   },
   {
    "kind": "added",
-   "id": "dc-stargate-lordstown",
-   "name": "Stargate Lordstown (SoftBank / Foxconn)",
-   "type": "data_center",
-   "operator": "SoftBank / OpenAI / Foxconn",
-   "city": "Lordstown",
-   "state": "OH",
-   "status": "planned",
-   "capacity_mw": null,
+   "id": "eia-70420",
+   "name": "Wheatridge Optimization I",
+   "type": "bess",
+   "operator": "Wheatridge Optimization I, LLC",
+   "city": "Morrow",
+   "state": "OR",
+   "status": "under_construction",
+   "capacity_mw": 65,
    "capacity_mwh": null,
-   "year_online": 2026
+   "year_online": 2027
+  },
+  {
+   "kind": "added",
+   "id": "eia-70441",
+   "name": "Palo Duro Energy Storage II",
+   "type": "bess",
+   "operator": "Palo Duro Energy Center, LLC",
+   "city": "Ochiltree",
+   "state": "TX",
+   "status": "planned",
+   "capacity_mw": 166,
+   "capacity_mwh": null,
+   "year_online": 2029
+  },
+  {
+   "kind": "added",
+   "id": "eia-70443",
+   "name": "Mammoth Plains Energy Storage II",
+   "type": "bess",
+   "operator": "Mammoth Plains Energy Center, LLC",
+   "city": "Dewey",
+   "state": "OK",
+   "status": "planned",
+   "capacity_mw": 101,
+   "capacity_mwh": null,
+   "year_online": 2029
+  },
+  {
+   "kind": "added",
+   "id": "eia-70450",
+   "name": "Wheatridge Optimization II",
+   "type": "bess",
+   "operator": "Wheatridge Optimization II, LLC",
+   "city": "Morrow",
+   "state": "OR",
+   "status": "under_construction",
+   "capacity_mw": 60,
+   "capacity_mwh": null,
+   "year_online": 2027
   },
   {
    "kind": "removed",
-   "id": "dc-msft-mtpleasant",
-   "name": "Microsoft Mt. Pleasant",
-   "type": "data_center",
-   "operator": "Microsoft",
-   "city": "Mt. Pleasant",
-   "state": "WI",
+   "id": "eia-65655",
+   "name": "Chiquito Grid, LLC",
+   "type": "bess",
+   "operator": "Chiquito Grid, LLC",
+   "city": "Riverside",
+   "state": "CA",
+   "status": "planned",
+   "capacity_mw": 80,
+   "capacity_mwh": null,
+   "year_online": 2027
+  },
+  {
+   "kind": "removed",
+   "id": "eia-66692",
+   "name": "Holly Branch Solar, LLC",
+   "type": "bess",
+   "operator": "Cypress Creek Renewables",
+   "city": "Robertson",
+   "state": "TX",
+   "status": "planned",
+   "capacity_mw": 100,
+   "capacity_mwh": null,
+   "year_online": 2027
+  },
+  {
+   "kind": "removed",
+   "id": "eia-67660",
+   "name": "Malala",
+   "type": "bess",
+   "operator": "Cypress Creek Renewables",
+   "city": "Dallas",
+   "state": "TX",
+   "status": "planned",
+   "capacity_mw": 200,
+   "capacity_mwh": null,
+   "year_online": 2028
+  },
+  {
+   "kind": "removed",
+   "id": "eia-68334",
+   "name": "Evans Creek Energy Storage Project",
+   "type": "bess",
+   "operator": "Evans Creek Energy Storage LLC",
+   "city": "Val Verde",
+   "state": "TX",
    "status": "under_construction",
-   "capacity_mw": 750,
+   "capacity_mw": 103,
    "capacity_mwh": null,
    "year_online": 2026
   },
   {
    "kind": "changed",
-   "id": "dc-aws-montgomery-county-mo",
-   "name": "AWS Montgomery County Missouri Campus",
-   "type": "data_center",
-   "operator": "Amazon Web Services",
-   "city": "Montgomery County",
-   "state": "MO",
-   "status": "planned",
-   "capacity_mw": null,
-   "capacity_mwh": null,
-   "year_online": null,
-   "fields": [
-    {
-     "field": "investment_usd",
-     "from": null,
-     "to": 10000000000
-    },
-    {
-     "field": "lat",
-     "from": 38.9364,
-     "to": 38.9775
-    },
-    {
-     "field": "lng",
-     "from": -91.4654,
-     "to": -91.5049
-    }
-   ]
-  },
-  {
-   "kind": "changed",
-   "id": "dc-aws-northwest-louisiana",
-   "name": "AWS Northwest Louisiana Campuses",
-   "type": "data_center",
-   "operator": "Amazon Web Services / STACK",
-   "city": "Caddo and Bossier Parishes",
-   "state": "LA",
-   "status": "planned",
-   "capacity_mw": null,
-   "capacity_mwh": null,
-   "year_online": null,
-   "fields": [
-    {
-     "field": "investment_usd",
-     "from": null,
-     "to": 18000000000
-    }
-   ]
-  },
-  {
-   "kind": "changed",
-   "id": "dc-google-cedar-rapids",
-   "name": "Google Cedar Rapids",
-   "type": "data_center",
-   "operator": "Google",
-   "city": "Cedar Rapids",
-   "state": "IA",
-   "status": "planned",
-   "capacity_mw": null,
-   "capacity_mwh": null,
-   "year_online": null,
-   "fields": [
-    {
-     "field": "investment_usd",
-     "from": null,
-     "to": 576000000
-    }
-   ]
-  },
-  {
-   "kind": "changed",
-   "id": "dc-google-dorchester-county",
-   "name": "Google Dorchester County",
-   "type": "data_center",
-   "operator": "Google",
-   "city": "Dorchester County",
-   "state": "SC",
+   "id": "eia-2038",
+   "name": "Cambridge CT Hybrid",
+   "type": "bess",
+   "operator": "Great River Energy",
+   "city": "Isanti",
+   "state": "MN",
    "status": "under_construction",
-   "capacity_mw": null,
-   "capacity_mwh": null,
-   "year_online": null,
-   "fields": [
-    {
-     "field": "status",
-     "from": "planned",
-     "to": "under_construction"
-    }
-   ]
-  },
-  {
-   "kind": "changed",
-   "id": "dc-google-indiana",
-   "name": "Google Fort Wayne",
-   "type": "data_center",
-   "operator": "Google",
-   "city": "Fort Wayne",
-   "state": "IN",
-   "status": "operating",
-   "capacity_mw": null,
-   "capacity_mwh": null,
-   "year_online": 2025,
-   "fields": [
-    {
-     "field": "name",
-     "from": "Google Indiana",
-     "to": "Google Fort Wayne"
-    },
-    {
-     "field": "city",
-     "from": "Indiana",
-     "to": "Fort Wayne"
-    },
-    {
-     "field": "status",
-     "from": "planned",
-     "to": "operating"
-    },
-    {
-     "field": "year_online",
-     "from": null,
-     "to": 2025
-    },
-    {
-     "field": "investment_usd",
-     "from": null,
-     "to": 2000000000
-    },
-    {
-     "field": "lat",
-     "from": 39.7684,
-     "to": 41.0793
-    },
-    {
-     "field": "lng",
-     "from": -86.1581,
-     "to": -85.1394
-    }
-   ]
-  },
-  {
-   "kind": "changed",
-   "id": "dc-google-kansas-city",
-   "name": "Google Kansas City",
-   "type": "data_center",
-   "operator": "Google",
-   "city": "Kansas City",
-   "state": "MO",
-   "status": "under_construction",
-   "capacity_mw": null,
-   "capacity_mwh": null,
-   "year_online": null,
-   "fields": [
-    {
-     "field": "status",
-     "from": "planned",
-     "to": "under_construction"
-    },
-    {
-     "field": "investment_usd",
-     "from": null,
-     "to": 1000000000
-    }
-   ]
-  },
-  {
-   "kind": "changed",
-   "id": "dc-google-lagrange",
-   "name": "Google LaGrange",
-   "type": "data_center",
-   "operator": "Google",
-   "city": "LaGrange",
-   "state": "GA",
-   "status": "planned",
-   "capacity_mw": 100,
-   "capacity_mwh": null,
-   "year_online": null,
-   "fields": [
-    {
-     "field": "capacity_mw",
-     "from": null,
-     "to": 100
-    }
-   ]
-  },
-  {
-   "kind": "changed",
-   "id": "dc-google-lincoln",
-   "name": "Google Lincoln",
-   "type": "data_center",
-   "operator": "Google",
-   "city": "Lincoln",
-   "state": "NE",
-   "status": "planned",
-   "capacity_mw": null,
-   "capacity_mwh": null,
-   "year_online": null,
-   "fields": [
-    {
-     "field": "investment_usd",
-     "from": null,
-     "to": 600000000
-    }
-   ]
-  },
-  {
-   "kind": "changed",
-   "id": "dc-google-michigan-city",
-   "name": "Google Michigan City",
-   "type": "data_center",
-   "operator": "Google",
-   "city": "Michigan City",
-   "state": "IN",
-   "status": "under_construction",
-   "capacity_mw": null,
-   "capacity_mwh": null,
-   "year_online": null,
-   "fields": [
-    {
-     "field": "status",
-     "from": "planned",
-     "to": "under_construction"
-    },
-    {
-     "field": "investment_usd",
-     "from": null,
-     "to": 832000000
-    }
-   ]
-  },
-  {
-   "kind": "changed",
-   "id": "dc-google-montgomery-county-tn",
-   "name": "Google Montgomery County",
-   "type": "data_center",
-   "operator": "Google",
-   "city": "Montgomery County",
-   "state": "TN",
-   "status": "operating",
-   "capacity_mw": null,
-   "capacity_mwh": null,
-   "year_online": 2019,
-   "fields": [
-    {
-     "field": "year_online",
-     "from": null,
-     "to": 2019
-    },
-    {
-     "field": "investment_usd",
-     "from": null,
-     "to": 600000000
-    }
-   ]
-  },
-  {
-   "kind": "changed",
-   "id": "dc-google-muskogee-county",
-   "name": "Google Muskogee County",
-   "type": "data_center",
-   "operator": "Google",
-   "city": "Muskogee County",
-   "state": "OK",
-   "status": "under_construction",
-   "capacity_mw": null,
-   "capacity_mwh": null,
-   "year_online": null,
-   "fields": [
-    {
-     "field": "status",
-     "from": "planned",
-     "to": "under_construction"
-    }
-   ]
-  },
-  {
-   "kind": "changed",
-   "id": "dc-google-new-florence",
-   "name": "Google New Florence",
-   "type": "data_center",
-   "operator": "Google",
-   "city": "New Florence",
-   "state": "MO",
-   "status": "planned",
-   "capacity_mw": 1200,
-   "capacity_mwh": null,
-   "year_online": 2028,
-   "fields": [
-    {
-     "field": "capacity_mw",
-     "from": null,
-     "to": 1200
-    },
-    {
-     "field": "year_online",
-     "from": null,
-     "to": 2028
-    },
-    {
-     "field": "investment_usd",
-     "from": null,
-     "to": 15000000000
-    }
-   ]
-  },
-  {
-   "kind": "changed",
-   "id": "dc-google-omaha",
-   "name": "Google Omaha",
-   "type": "data_center",
-   "operator": "Google",
-   "city": "Omaha",
-   "state": "NE",
-   "status": "operating",
-   "capacity_mw": null,
-   "capacity_mwh": null,
-   "year_online": null,
-   "fields": [
-    {
-     "field": "investment_usd",
-     "from": null,
-     "to": 750000000
-    }
-   ]
-  },
-  {
-   "kind": "changed",
-   "id": "dc-google-pampa",
-   "name": "Google Pampa (Meitner Energy Center)",
-   "type": "data_center",
-   "operator": "Google",
-   "city": "Pampa",
-   "state": "TX",
-   "status": "under_construction",
-   "capacity_mw": null,
-   "capacity_mwh": null,
-   "year_online": null,
-   "fields": [
-    {
-     "field": "name",
-     "from": "Google Pampa",
-     "to": "Google Pampa (Meitner Energy Center)"
-    },
-    {
-     "field": "status",
-     "from": "planned",
-     "to": "under_construction"
-    }
-   ]
-  },
-  {
-   "kind": "changed",
-   "id": "dc-google-papillion",
-   "name": "Google Papillion",
-   "type": "data_center",
-   "operator": "Google",
-   "city": "Papillion",
-   "state": "NE",
-   "status": "operating",
-   "capacity_mw": null,
-   "capacity_mwh": null,
-   "year_online": null,
-   "fields": [
-    {
-     "field": "investment_usd",
-     "from": null,
-     "to": 600000000
-    }
-   ]
-  },
-  {
-   "kind": "changed",
-   "id": "dc-google-west-memphis",
-   "name": "Google West Memphis",
-   "type": "data_center",
-   "operator": "Google",
-   "city": "West Memphis",
-   "state": "AR",
-   "status": "planned",
-   "capacity_mw": null,
+   "capacity_mw": 1,
    "capacity_mwh": null,
    "year_online": 2027,
    "fields": [
     {
-     "field": "year_online",
-     "from": null,
-     "to": 2027
-    },
-    {
-     "field": "investment_usd",
-     "from": null,
-     "to": 4000000000
-    }
-   ]
-  },
-  {
-   "kind": "changed",
-   "id": "dc-meta-aiken",
-   "name": "Meta Aiken",
-   "type": "data_center",
-   "operator": "Meta",
-   "city": "Aiken",
-   "state": "SC",
-   "status": "under_construction",
-   "capacity_mw": null,
-   "capacity_mwh": null,
-   "year_online": null,
-   "fields": [
-    {
-     "field": "investment_usd",
-     "from": null,
-     "to": 800000000
-    }
-   ]
-  },
-  {
-   "kind": "changed",
-   "id": "dc-meta-altoona",
-   "name": "Meta Altoona",
-   "type": "data_center",
-   "operator": "Meta",
-   "city": "Altoona",
-   "state": "IA",
-   "status": "operating",
-   "capacity_mw": null,
-   "capacity_mwh": null,
-   "year_online": null,
-   "fields": [
-    {
-     "field": "investment_usd",
-     "from": null,
-     "to": 2500000000
-    }
-   ]
-  },
-  {
-   "kind": "changed",
-   "id": "dc-meta-beaver-dam",
-   "name": "Meta Beaver Dam",
-   "type": "data_center",
-   "operator": "Meta",
-   "city": "Beaver Dam",
-   "state": "WI",
-   "status": "under_construction",
-   "capacity_mw": null,
-   "capacity_mwh": null,
-   "year_online": 2027,
-   "fields": [
-    {
-     "field": "year_online",
-     "from": null,
-     "to": 2027
-    },
-    {
-     "field": "investment_usd",
-     "from": null,
-     "to": 1000000000
-    }
-   ]
-  },
-  {
-   "kind": "changed",
-   "id": "dc-meta-bowling-green",
-   "name": "Meta Bowling Green",
-   "type": "data_center",
-   "operator": "Meta",
-   "city": "Bowling Green",
-   "state": "OH",
-   "status": "under_construction",
-   "capacity_mw": null,
-   "capacity_mwh": null,
-   "year_online": null,
-   "fields": [
-    {
-     "field": "investment_usd",
-     "from": null,
-     "to": 800000000
-    }
-   ]
-  },
-  {
-   "kind": "changed",
-   "id": "dc-meta-cheyenne",
-   "name": "Meta Cheyenne",
-   "type": "data_center",
-   "operator": "Meta",
-   "city": "Cheyenne",
-   "state": "WY",
-   "status": "under_construction",
-   "capacity_mw": null,
-   "capacity_mwh": null,
-   "year_online": null,
-   "fields": [
-    {
-     "field": "investment_usd",
-     "from": null,
-     "to": 800000000
-    }
-   ]
-  },
-  {
-   "kind": "changed",
-   "id": "dc-meta-fort-worth",
-   "name": "Meta Fort Worth",
-   "type": "data_center",
-   "operator": "Meta",
-   "city": "Fort Worth",
-   "state": "TX",
-   "status": "operating",
-   "capacity_mw": null,
-   "capacity_mwh": null,
-   "year_online": null,
-   "fields": [
-    {
-     "field": "investment_usd",
-     "from": null,
-     "to": 1500000000
-    }
-   ]
-  },
-  {
-   "kind": "changed",
-   "id": "dc-meta-huntsville",
-   "name": "Meta Huntsville",
-   "type": "data_center",
-   "operator": "Meta",
-   "city": "Huntsville",
-   "state": "AL",
-   "status": "operating",
-   "capacity_mw": null,
-   "capacity_mwh": null,
-   "year_online": null,
-   "fields": [
-    {
-     "field": "investment_usd",
-     "from": null,
-     "to": 1500000000
-    }
-   ]
-  },
-  {
-   "kind": "changed",
-   "id": "dc-meta-jeffersonville",
-   "name": "Meta Jeffersonville",
-   "type": "data_center",
-   "operator": "Meta",
-   "city": "Jeffersonville",
-   "state": "IN",
-   "status": "under_construction",
-   "capacity_mw": null,
-   "capacity_mwh": null,
-   "year_online": null,
-   "fields": [
-    {
-     "field": "investment_usd",
-     "from": null,
-     "to": 800000000
-    }
-   ]
-  },
-  {
-   "kind": "changed",
-   "id": "dc-meta-lebanon-in",
-   "name": "Meta Lebanon",
-   "type": "data_center",
-   "operator": "Meta",
-   "city": "Lebanon",
-   "state": "IN",
-   "status": "under_construction",
-   "capacity_mw": 1000,
-   "capacity_mwh": null,
-   "year_online": null,
-   "fields": [
-    {
      "field": "capacity_mw",
-     "from": null,
-     "to": 1000
-    },
-    {
-     "field": "investment_usd",
-     "from": null,
-     "to": 10000000000
-    }
-   ]
-  },
-  {
-   "kind": "changed",
-   "id": "dc-meta-mesa",
-   "name": "Meta Mesa",
-   "type": "data_center",
-   "operator": "Meta",
-   "city": "Mesa",
-   "state": "AZ",
-   "status": "operating",
-   "capacity_mw": null,
-   "capacity_mwh": null,
-   "year_online": 2025,
-   "fields": [
-    {
-     "field": "status",
-     "from": "under_construction",
-     "to": "operating"
-    },
-    {
-     "field": "year_online",
-     "from": null,
-     "to": 2025
-    },
-    {
-     "field": "investment_usd",
-     "from": null,
-     "to": 1000000000
-    }
-   ]
-  },
-  {
-   "kind": "changed",
-   "id": "dc-meta-montgomery",
-   "name": "Meta Montgomery",
-   "type": "data_center",
-   "operator": "Meta",
-   "city": "Montgomery",
-   "state": "AL",
-   "status": "under_construction",
-   "capacity_mw": null,
-   "capacity_mwh": null,
-   "year_online": null,
-   "fields": [
-    {
-     "field": "investment_usd",
-     "from": null,
-     "to": 1500000000
-    }
-   ]
-  },
-  {
-   "kind": "changed",
-   "id": "dc-meta-tulsa",
-   "name": "Meta Tulsa",
-   "type": "data_center",
-   "operator": "Meta",
-   "city": "Tulsa",
-   "state": "OK",
-   "status": "under_construction",
-   "capacity_mw": null,
-   "capacity_mwh": null,
-   "year_online": null,
-   "fields": [
-    {
-     "field": "investment_usd",
-     "from": null,
-     "to": 1000000000
-    }
-   ]
-  },
-  {
-   "kind": "changed",
-   "id": "dc-msft-atlanta",
-   "name": "Microsoft Fairwater Atlanta",
-   "type": "data_center",
-   "operator": "Microsoft",
-   "city": "Palmetto",
-   "state": "GA",
-   "status": "operating",
-   "capacity_mw": 400,
-   "capacity_mwh": null,
-   "year_online": 2025,
-   "fields": [
-    {
-     "field": "name",
-     "from": "Microsoft Atlanta",
-     "to": "Microsoft Fairwater Atlanta"
-    },
-    {
-     "field": "status",
-     "from": "under_construction",
-     "to": "operating"
+     "from": 2,
+     "to": 1
     },
     {
      "field": "year_online",
      "from": 2026,
-     "to": 2025
+     "to": 2027
     }
    ]
   },
   {
    "kind": "changed",
-   "id": "dc-msft-fairwater-wi",
-   "name": "Microsoft Fairwater (Mount Pleasant)",
-   "type": "data_center",
-   "operator": "Microsoft",
-   "city": "Mount Pleasant",
-   "state": "WI",
+   "id": "eia-377",
+   "name": "Grayson",
+   "type": "bess",
+   "operator": "City of Glendale - (CA)",
+   "city": "Los Angeles",
+   "state": "CA",
    "status": "operating",
-   "capacity_mw": 750,
-   "capacity_mwh": null,
+   "capacity_mw": 75,
+   "capacity_mwh": 300,
    "year_online": 2026,
    "fields": [
     {
-     "field": "capacity_mw",
-     "from": 369,
-     "to": 750
-    }
-   ]
-  },
-  {
-   "kind": "changed",
-   "id": "dc-stargate-dona-ana",
-   "name": "Stargate Doña Ana County (Project Jupiter)",
-   "type": "data_center",
-   "operator": "OpenAI / Oracle / STACK",
-   "city": "Doña Ana County",
-   "state": "NM",
-   "status": "under_construction",
-   "capacity_mw": 2200,
-   "capacity_mwh": null,
-   "year_online": 2028,
-   "fields": [
+     "field": "status",
+     "from": "under_construction",
+     "to": "operating"
+    },
     {
-     "field": "capacity_mw",
-     "from": 1000,
-     "to": 2200
+     "field": "capacity_mwh",
+     "from": null,
+     "to": 300
     }
    ]
   },
   {
    "kind": "changed",
-   "id": "dc-vantage-lighthouse",
-   "name": "Stargate Port Washington (Vantage Lighthouse)",
-   "type": "data_center",
-   "operator": "Vantage / Oracle / OpenAI",
-   "city": "Port Washington",
+   "id": "eia-4050",
+   "name": "Edgewater",
+   "type": "bess",
+   "operator": "Wisconsin Power & Light Co",
+   "city": "Sheboygan",
    "state": "WI",
    "status": "under_construction",
-   "capacity_mw": 1300,
+   "capacity_mw": 99,
+   "capacity_mwh": null,
+   "year_online": 2027,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2026,
+     "to": 2027
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "eia-67565",
+   "name": "East Road Storage Project",
+   "type": "bess",
+   "operator": "Form Energy Inc.",
+   "city": "Mendocino",
+   "state": "CA",
+   "status": "planned",
+   "capacity_mw": 1,
+   "capacity_mwh": null,
+   "year_online": 2027,
+   "fields": [
+    {
+     "field": "capacity_mw",
+     "from": 2,
+     "to": 1
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "eia-67978",
+   "name": "Sierra Solar Hybrid",
+   "type": "bess",
+   "operator": "Sierra Pacific Power Co",
+   "city": "Churchill",
+   "state": "NV",
+   "status": "operating",
+   "capacity_mw": 400,
+   "capacity_mwh": 1600,
+   "year_online": 2026,
+   "fields": [
+    {
+     "field": "status",
+     "from": "planned",
+     "to": "operating"
+    },
+    {
+     "field": "capacity_mwh",
+     "from": null,
+     "to": 1600
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "eia-68512",
+   "name": "McGrau Ford Battery Storage Facility",
+   "type": "bess",
+   "operator": "Georgia Power Co",
+   "city": "Cherokee",
+   "state": "GA",
+   "status": "operating",
+   "capacity_mw": 530,
+   "capacity_mwh": 1590,
+   "year_online": 2026,
+   "fields": [
+    {
+     "field": "status",
+     "from": "under_construction",
+     "to": "operating"
+    },
+    {
+     "field": "capacity_mwh",
+     "from": null,
+     "to": 1590
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "eia-69004",
+   "name": "Adelite Storage Project LLC",
+   "type": "bess",
+   "operator": "Acciona Energy USA Global, LLC",
+   "city": "Milam",
+   "state": "TX",
+   "status": "planned",
+   "capacity_mw": 230,
    "capacity_mwh": null,
    "year_online": 2028,
    "fields": [
     {
-     "field": "capacity_mw",
-     "from": 902,
-     "to": 1300
+     "field": "year_online",
+     "from": 2027,
+     "to": 2028
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "eia-69100",
+   "name": "Rocky Mountain Solar",
+   "type": "bess",
+   "operator": "Public Service Co of Colorado",
+   "city": "Pueblo",
+   "state": "CO",
+   "status": "operating",
+   "capacity_mw": 200,
+   "capacity_mwh": 800,
+   "year_online": 2026,
+   "fields": [
+    {
+     "field": "capacity_mwh",
+     "from": null,
+     "to": 800
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "eia-69286",
+   "name": "Project Lynx",
+   "type": "bess",
+   "operator": "Project Lynx - Giga Texas Energy",
+   "city": "Nueces",
+   "state": "TX",
+   "status": "operating",
+   "capacity_mw": 125,
+   "capacity_mwh": 250,
+   "year_online": 2026,
+   "fields": [
+    {
+     "field": "status",
+     "from": "under_construction",
+     "to": "operating"
+    },
+    {
+     "field": "capacity_mwh",
+     "from": null,
+     "to": 250
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "eia-69332",
+   "name": "Regis Escondido",
+   "type": "bess",
+   "operator": "Regis Escondido LLC",
+   "city": "Maverick",
+   "state": "TX",
+   "status": "operating",
+   "capacity_mw": 10,
+   "capacity_mwh": 10,
+   "year_online": 2026,
+   "fields": [
+    {
+     "field": "status",
+     "from": "under_construction",
+     "to": "operating"
+    },
+    {
+     "field": "capacity_mwh",
+     "from": null,
+     "to": 10
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "eia-69356",
+   "name": "Powerline Energy Storage",
+   "type": "bess",
+   "operator": "Duke Energy Florida, LLC",
+   "city": "Citrus",
+   "state": "FL",
+   "status": "under_construction",
+   "capacity_mw": 100,
+   "capacity_mwh": null,
+   "year_online": 2027,
+   "fields": [
+    {
+     "field": "status",
+     "from": "planned",
+     "to": "under_construction"
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "eia-69508",
+   "name": "Marici",
+   "type": "bess",
+   "operator": "Marici Project LLC",
+   "city": "Los Angeles",
+   "state": "CA",
+   "status": "under_construction",
+   "capacity_mw": 400,
+   "capacity_mwh": null,
+   "year_online": 2027,
+   "fields": [
+    {
+     "field": "status",
+     "from": "planned",
+     "to": "under_construction"
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "eia-69509",
+   "name": "Gabriel",
+   "type": "bess",
+   "operator": "San Gabriel Project LLC",
+   "city": "Los Angeles",
+   "state": "CA",
+   "status": "under_construction",
+   "capacity_mw": 400,
+   "capacity_mwh": null,
+   "year_online": 2027,
+   "fields": [
+    {
+     "field": "status",
+     "from": "planned",
+     "to": "under_construction"
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "eia-69942",
+   "name": "Dudley",
+   "type": "bess",
+   "operator": "Navisun LLC",
+   "city": "Worcester",
+   "state": "MA",
+   "status": "operating",
+   "capacity_mw": 2,
+   "capacity_mwh": 2,
+   "year_online": 2024,
+   "fields": [
+    {
+     "field": "capacity_mwh",
+     "from": null,
+     "to": 2
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "eia-70318",
+   "name": "Sugar Maple Clean Energy LLC",
+   "type": "bess",
+   "operator": "NineDot Holdings, LLC",
+   "city": "Richmond",
+   "state": "NY",
+   "status": "operating",
+   "capacity_mw": 2,
+   "capacity_mwh": 12,
+   "year_online": 2026,
+   "fields": [
+    {
+     "field": "status",
+     "from": "under_construction",
+     "to": "operating"
+    },
+    {
+     "field": "capacity_mwh",
+     "from": null,
+     "to": 12
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "eia-70384",
+   "name": "Yorktown NY 1, LLC",
+   "type": "bess",
+   "operator": "Valta Energy",
+   "city": "Westchester",
+   "state": "NY",
+   "status": "operating",
+   "capacity_mw": 2,
+   "capacity_mwh": 6,
+   "year_online": 2025,
+   "fields": [
+    {
+     "field": "capacity_mwh",
+     "from": null,
+     "to": 6
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "eia-70400",
+   "name": "Bee Branch IA",
+   "type": "bess",
+   "operator": "Bee Branch IA, LLC",
+   "city": "Robertson",
+   "state": "TX",
+   "status": "under_construction",
+   "capacity_mw": 200,
+   "capacity_mwh": null,
+   "year_online": 2027,
+   "fields": [
+    {
+     "field": "status",
+     "from": "planned",
+     "to": "under_construction"
     }
    ]
   }
