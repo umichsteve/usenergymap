@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "last_updated": "2026-09-04",
+  "last_updated": "2026-09-28",
   "notes": "Coordinates approximate to city/county centroid where exact site is not publicly disclosed. Capacity in MW (power). For BESS, capacity_mwh is duration when known. Status: operating | under_construction | planned | announced. | BESS entries with id prefix 'eia-' are auto-ingested monthly from EIA-860M; others are hand-curated.",
   "projects": [
     {
@@ -3577,6 +3577,148 @@
       "status": "operating",
       "year_online": 2026,
       "source": "https://epoch.ai/data/ai-data-centers/directory/microsoft-fairwater-wisconsin"
+    },
+    {
+      "id": "dc-stargate-lordstown",
+      "type": "data_center",
+      "name": "Stargate Lordstown (SoftBank / Foxconn)",
+      "operator": "SoftBank / OpenAI / Foxconn",
+      "city": "Lordstown",
+      "state": "OH",
+      "lat": 41.1609,
+      "lng": -80.8576,
+      "capacity_mw": null,
+      "status": "planned",
+      "year_online": 2026,
+      "source": "https://businessjournaldaily.com/preparation-work-begins-on-lordstown-data-center/"
+    },
+    {
+      "id": "dc-fermi-matador-amarillo",
+      "type": "data_center",
+      "name": "Fermi America Project Matador",
+      "operator": "Fermi America",
+      "city": "Carson County",
+      "state": "TX",
+      "lat": 35.4034,
+      "lng": -101.354,
+      "capacity_mw": 11000,
+      "status": "announced",
+      "year_online": 2027,
+      "source": "https://www.datacenterdynamics.com/en/news/fermi-share-price-craters-as-tenant-pulls-back-from-150m-texas-data-center-deal/",
+      "energy_source": "mixed"
+    },
+    {
+      "id": "dc-applied-digital-ellendale",
+      "type": "data_center",
+      "name": "Applied Digital Polaris Forge 1",
+      "operator": "Applied Digital / CoreWeave",
+      "city": "Ellendale",
+      "state": "ND",
+      "lat": 46.0025,
+      "lng": -98.5271,
+      "capacity_mw": 400,
+      "status": "operating",
+      "year_online": 2025,
+      "source": "https://www.globenewswire.com/news-release/2026/07/01/3320913/0/en/applied-digital-delivers-second-building-at-polaris-forge-1.html"
+    },
+    {
+      "id": "dc-nebius-vineland",
+      "type": "data_center",
+      "name": "Nebius Vineland",
+      "operator": "Nebius / DataOne",
+      "city": "Vineland",
+      "state": "NJ",
+      "lat": 39.4864,
+      "lng": -75.026,
+      "capacity_mw": 300,
+      "status": "under_construction",
+      "year_online": 2026,
+      "source": "https://whyy.org/articles/vineland-planning-board-approves-data-center-plan/"
+    },
+    {
+      "id": "dc-aws-richmond-county-nc",
+      "type": "data_center",
+      "name": "AWS Richmond County (Energy Way)",
+      "operator": "Amazon Web Services",
+      "city": "Hamlet",
+      "state": "NC",
+      "lat": 34.8849,
+      "lng": -79.6942,
+      "capacity_mw": null,
+      "status": "under_construction",
+      "investment_usd": 10000000000,
+      "source": "https://www.datacenterdynamics.com/en/news/amazon-breaks-ground-on-10bn-data-center-complex-in-richmond-county-north-carolina/"
+    },
+    {
+      "id": "dc-aws-salem-township-pa",
+      "type": "data_center",
+      "name": "AWS Salem Township (Susquehanna)",
+      "operator": "Amazon Web Services",
+      "city": "Salem Township",
+      "state": "PA",
+      "lat": 41.0918,
+      "lng": -76.1463,
+      "capacity_mw": null,
+      "status": "planned",
+      "investment_usd": 20000000000,
+      "source": "https://www.datacenterdynamics.com/en/news/amazon-to-invest-20bn-in-data-centers-in-pennsylvania/"
+    },
+    {
+      "id": "dc-aws-butts-county-ga",
+      "type": "data_center",
+      "name": "AWS Georgia (Butts / Douglas Counties)",
+      "operator": "Amazon Web Services",
+      "city": "Butts County",
+      "state": "GA",
+      "lat": 33.2946,
+      "lng": -83.9666,
+      "capacity_mw": null,
+      "status": "planned",
+      "investment_usd": 11000000000,
+      "source": "https://www.datacenterdynamics.com/en/news/aws-reveals-11bn-data-center-investment-plan-for-georgia/"
+    },
+    {
+      "id": "dc-coreweave-lancaster",
+      "type": "data_center",
+      "name": "CoreWeave Lancaster",
+      "operator": "CoreWeave",
+      "city": "Lancaster County",
+      "state": "PA",
+      "lat": 40.0379,
+      "lng": -76.3055,
+      "capacity_mw": 300,
+      "status": "planned",
+      "investment_usd": 6000000000,
+      "source": "https://www.rcrwireless.com/20250716/ai-infrastructure/coreweave-ai-data"
+    },
+    {
+      "id": "dc-coreweave-denton",
+      "type": "data_center",
+      "name": "CoreWeave Denton (Core Scientific)",
+      "operator": "CoreWeave / Core Scientific",
+      "city": "Denton",
+      "state": "TX",
+      "lat": 33.2148,
+      "lng": -97.1331,
+      "capacity_mw": null,
+      "status": "operating",
+      "year_online": 2025,
+      "source": "https://www.datacenterdynamics.com/en/news/coreweave-deploys-16000-gpus-at-delayed-data-center-in-denton-texas/"
+    },
+    {
+      "id": "eia-377",
+      "type": "bess",
+      "name": "Grayson",
+      "operator": "City of Glendale - (CA)",
+      "city": "Los Angeles",
+      "state": "CA",
+      "lat": 34.1556,
+      "lng": -118.2782,
+      "capacity_mw": 75,
+      "status": "operating",
+      "source": "https://www.eia.gov/electricity/data/eia860m/",
+      "capacity_mwh": 300,
+      "year_online": 2026
     },
     {
       "id": "eia-389",
@@ -14514,6 +14656,21 @@
       "year_online": 2025
     },
     {
+      "id": "eia-67978",
+      "type": "bess",
+      "name": "Sierra Solar Hybrid",
+      "operator": "Sierra Pacific Power Co",
+      "city": "Churchill",
+      "state": "NV",
+      "lat": 39.8536,
+      "lng": -119.0394,
+      "capacity_mw": 400,
+      "status": "operating",
+      "source": "https://www.eia.gov/electricity/data/eia860m/",
+      "capacity_mwh": 1600,
+      "year_online": 2026
+    },
+    {
       "id": "eia-68012",
       "type": "bess",
       "name": "Caballero",
@@ -14946,6 +15103,21 @@
       "status": "operating",
       "source": "https://www.eia.gov/electricity/data/eia860m/",
       "capacity_mwh": 200,
+      "year_online": 2026
+    },
+    {
+      "id": "eia-68512",
+      "type": "bess",
+      "name": "McGrau Ford Battery Storage Facility",
+      "operator": "Georgia Power Co",
+      "city": "Cherokee",
+      "state": "GA",
+      "lat": 34.325,
+      "lng": -84.3289,
+      "capacity_mw": 530,
+      "status": "operating",
+      "source": "https://www.eia.gov/electricity/data/eia860m/",
+      "capacity_mwh": 1590,
       "year_online": 2026
     },
     {
@@ -15830,6 +16002,7 @@
       "capacity_mw": 200,
       "status": "operating",
       "source": "https://www.eia.gov/electricity/data/eia860m/",
+      "capacity_mwh": 800,
       "year_online": 2026
     },
     {
@@ -16118,6 +16291,21 @@
       "year_online": 2026
     },
     {
+      "id": "eia-69286",
+      "type": "bess",
+      "name": "Project Lynx",
+      "operator": "Project Lynx - Giga Texas Energy",
+      "city": "Nueces",
+      "state": "TX",
+      "lat": 27.7292,
+      "lng": -97.7331,
+      "capacity_mw": 125,
+      "status": "operating",
+      "source": "https://www.eia.gov/electricity/data/eia860m/",
+      "capacity_mwh": 250,
+      "year_online": 2026
+    },
+    {
       "id": "eia-69296",
       "type": "bess",
       "name": "BESS La Feria",
@@ -16311,6 +16499,21 @@
       "source": "https://www.eia.gov/electricity/data/eia860m/",
       "capacity_mwh": 10,
       "year_online": 2025
+    },
+    {
+      "id": "eia-69332",
+      "type": "bess",
+      "name": "Regis Escondido",
+      "operator": "Regis Escondido LLC",
+      "city": "Maverick",
+      "state": "TX",
+      "lat": 28.7307,
+      "lng": -100.4746,
+      "capacity_mw": 10,
+      "status": "operating",
+      "source": "https://www.eia.gov/electricity/data/eia860m/",
+      "capacity_mwh": 10,
+      "year_online": 2026
     },
     {
       "id": "eia-69333",
@@ -17209,6 +17412,7 @@
       "capacity_mw": 2,
       "status": "operating",
       "source": "https://www.eia.gov/electricity/data/eia860m/",
+      "capacity_mwh": 2,
       "year_online": 2024
     },
     {
@@ -17317,6 +17521,21 @@
       "year_online": 2026
     },
     {
+      "id": "eia-70318",
+      "type": "bess",
+      "name": "Sugar Maple Clean Energy LLC",
+      "operator": "NineDot Holdings, LLC",
+      "city": "Richmond",
+      "state": "NY",
+      "lat": 40.6048,
+      "lng": -74.1205,
+      "capacity_mw": 2,
+      "status": "operating",
+      "source": "https://www.eia.gov/electricity/data/eia860m/",
+      "capacity_mwh": 12,
+      "year_online": 2026
+    },
+    {
       "id": "eia-70384",
       "type": "bess",
       "name": "Yorktown NY 1, LLC",
@@ -17328,21 +17547,8 @@
       "capacity_mw": 2,
       "status": "operating",
       "source": "https://www.eia.gov/electricity/data/eia860m/",
+      "capacity_mwh": 6,
       "year_online": 2025
-    },
-    {
-      "id": "eia-377",
-      "type": "bess",
-      "name": "Grayson",
-      "operator": "City of Glendale - (CA)",
-      "city": "Los Angeles",
-      "state": "CA",
-      "lat": 34.1556,
-      "lng": -118.2782,
-      "capacity_mw": 75,
-      "status": "under_construction",
-      "source": "https://www.eia.gov/electricity/data/eia860m/",
-      "year_online": 2026
     },
     {
       "id": "eia-708",
@@ -17381,10 +17587,10 @@
       "state": "MN",
       "lat": 45.601,
       "lng": -93.2081,
-      "capacity_mw": 2,
+      "capacity_mw": 1,
       "status": "under_construction",
       "source": "https://www.eia.gov/electricity/data/eia860m/",
-      "year_online": 2026
+      "year_online": 2027
     },
     {
       "id": "eia-2161",
@@ -17412,7 +17618,7 @@
       "capacity_mw": 99,
       "status": "under_construction",
       "source": "https://www.eia.gov/electricity/data/eia860m/",
-      "year_online": 2026
+      "year_online": 2027
     },
     {
       "id": "eia-6211",
@@ -17961,20 +18167,6 @@
       "year_online": 2028
     },
     {
-      "id": "eia-65655",
-      "type": "bess",
-      "name": "Chiquito Grid, LLC",
-      "operator": "Chiquito Grid, LLC",
-      "city": "Riverside",
-      "state": "CA",
-      "lat": 33.5855,
-      "lng": -117.2545,
-      "capacity_mw": 80,
-      "status": "planned",
-      "source": "https://www.eia.gov/electricity/data/eia860m/",
-      "year_online": 2027
-    },
-    {
       "id": "eia-65703",
       "type": "bess",
       "name": "Humidor Storage I",
@@ -18465,20 +18657,6 @@
       "year_online": 2027
     },
     {
-      "id": "eia-66692",
-      "type": "bess",
-      "name": "Holly Branch Solar, LLC",
-      "operator": "Cypress Creek Renewables",
-      "city": "Robertson",
-      "state": "TX",
-      "lat": 31.0946,
-      "lng": -96.4141,
-      "capacity_mw": 100,
-      "status": "planned",
-      "source": "https://www.eia.gov/electricity/data/eia860m/",
-      "year_online": 2027
-    },
-    {
       "id": "eia-66785",
       "type": "bess",
       "name": "Elevate Arthur Kill",
@@ -18823,7 +19001,7 @@
       "state": "CA",
       "lat": 39.25,
       "lng": -123.196,
-      "capacity_mw": 2,
+      "capacity_mw": 1,
       "status": "planned",
       "source": "https://www.eia.gov/electricity/data/eia860m/",
       "year_online": 2027
@@ -18869,20 +19047,6 @@
       "status": "planned",
       "source": "https://www.eia.gov/electricity/data/eia860m/",
       "year_online": 2027
-    },
-    {
-      "id": "eia-67660",
-      "type": "bess",
-      "name": "Malala",
-      "operator": "Cypress Creek Renewables",
-      "city": "Dallas",
-      "state": "TX",
-      "lat": 32.6752,
-      "lng": -96.5474,
-      "capacity_mw": 200,
-      "status": "planned",
-      "source": "https://www.eia.gov/electricity/data/eia860m/",
-      "year_online": 2028
     },
     {
       "id": "eia-67666",
@@ -19301,20 +19465,6 @@
       "lng": -112.8397,
       "capacity_mw": 150,
       "status": "under_construction",
-      "source": "https://www.eia.gov/electricity/data/eia860m/",
-      "year_online": 2026
-    },
-    {
-      "id": "eia-67978",
-      "type": "bess",
-      "name": "Sierra Solar Hybrid",
-      "operator": "Sierra Pacific Power Co",
-      "city": "Churchill",
-      "state": "NV",
-      "lat": 39.8536,
-      "lng": -119.0394,
-      "capacity_mw": 400,
-      "status": "planned",
       "source": "https://www.eia.gov/electricity/data/eia860m/",
       "year_online": 2026
     },
@@ -20019,20 +20169,6 @@
       "year_online": 2029
     },
     {
-      "id": "eia-68334",
-      "type": "bess",
-      "name": "Evans Creek Energy Storage Project",
-      "operator": "Evans Creek Energy Storage LLC",
-      "city": "Val Verde",
-      "state": "TX",
-      "lat": 29.746,
-      "lng": -101.1406,
-      "capacity_mw": 103,
-      "status": "under_construction",
-      "source": "https://www.eia.gov/electricity/data/eia860m/",
-      "year_online": 2026
-    },
-    {
       "id": "eia-68341",
       "type": "bess",
       "name": "Greenwater BESS",
@@ -20434,20 +20570,6 @@
       "lat": 29.4827,
       "lng": -95.62,
       "capacity_mw": 150,
-      "status": "under_construction",
-      "source": "https://www.eia.gov/electricity/data/eia860m/",
-      "year_online": 2026
-    },
-    {
-      "id": "eia-68512",
-      "type": "bess",
-      "name": "McGrau Ford Battery Storage Facility",
-      "operator": "Georgia Power Co",
-      "city": "Cherokee",
-      "state": "GA",
-      "lat": 34.325,
-      "lng": -84.3289,
-      "capacity_mw": 530,
       "status": "under_construction",
       "source": "https://www.eia.gov/electricity/data/eia860m/",
       "year_online": 2026
@@ -21024,7 +21146,7 @@
       "capacity_mw": 230,
       "status": "planned",
       "source": "https://www.eia.gov/electricity/data/eia860m/",
-      "year_online": 2027
+      "year_online": 2028
     },
     {
       "id": "eia-69024",
@@ -21349,20 +21471,6 @@
       "year_online": 2028
     },
     {
-      "id": "eia-69286",
-      "type": "bess",
-      "name": "Project Lynx",
-      "operator": "Project Lynx - Giga Texas Energy",
-      "city": "Nueces",
-      "state": "TX",
-      "lat": 27.7292,
-      "lng": -97.7331,
-      "capacity_mw": 125,
-      "status": "under_construction",
-      "source": "https://www.eia.gov/electricity/data/eia860m/",
-      "year_online": 2026
-    },
-    {
       "id": "eia-69290",
       "type": "bess",
       "name": "Desert Bloom",
@@ -21399,20 +21507,6 @@
       "state": "TX",
       "lat": 31.6757,
       "lng": -102.3638,
-      "capacity_mw": 10,
-      "status": "under_construction",
-      "source": "https://www.eia.gov/electricity/data/eia860m/",
-      "year_online": 2026
-    },
-    {
-      "id": "eia-69332",
-      "type": "bess",
-      "name": "Regis Escondido",
-      "operator": "Regis Escondido LLC",
-      "city": "Maverick",
-      "state": "TX",
-      "lat": 28.7307,
-      "lng": -100.4746,
       "capacity_mw": 10,
       "status": "under_construction",
       "source": "https://www.eia.gov/electricity/data/eia860m/",
@@ -21470,7 +21564,7 @@
       "lat": 28.9668,
       "lng": -82.6175,
       "capacity_mw": 100,
-      "status": "planned",
+      "status": "under_construction",
       "source": "https://www.eia.gov/electricity/data/eia860m/",
       "year_online": 2027
     },
@@ -21624,7 +21718,7 @@
       "lat": 34.0078,
       "lng": -117.9462,
       "capacity_mw": 400,
-      "status": "planned",
+      "status": "under_construction",
       "source": "https://www.eia.gov/electricity/data/eia860m/",
       "year_online": 2027
     },
@@ -21638,7 +21732,7 @@
       "lat": 34.11,
       "lng": -117.97,
       "capacity_mw": 400,
-      "status": "planned",
+      "status": "under_construction",
       "source": "https://www.eia.gov/electricity/data/eia860m/",
       "year_online": 2027
     },
@@ -23057,20 +23151,6 @@
       "year_online": 2027
     },
     {
-      "id": "eia-70318",
-      "type": "bess",
-      "name": "Sugar Maple Clean Energy LLC",
-      "operator": "NineDot Holdings, LLC",
-      "city": "Richmond",
-      "state": "NY",
-      "lat": 40.6048,
-      "lng": -74.1205,
-      "capacity_mw": 2,
-      "status": "under_construction",
-      "source": "https://www.eia.gov/electricity/data/eia860m/",
-      "year_online": 2026
-    },
-    {
       "id": "eia-70320",
       "type": "bess",
       "name": "Water Willow A Clean Energy LLC",
@@ -23332,7 +23412,7 @@
       "lat": 31.1048,
       "lng": -96.6648,
       "capacity_mw": 200,
-      "status": "planned",
+      "status": "under_construction",
       "source": "https://www.eia.gov/electricity/data/eia860m/",
       "year_online": 2027
     },
@@ -23351,6 +23431,48 @@
       "year_online": 2027
     },
     {
+      "id": "eia-70405",
+      "type": "bess",
+      "name": "Winchester Solar I, LLC",
+      "operator": "Torch Operating Company, LLC",
+      "city": "Cochise",
+      "state": "AZ",
+      "lat": 32.1864,
+      "lng": -109.9531,
+      "capacity_mw": 88,
+      "status": "under_construction",
+      "source": "https://www.eia.gov/electricity/data/eia860m/",
+      "year_online": 2027
+    },
+    {
+      "id": "eia-70406",
+      "type": "bess",
+      "name": "Winchester Solar II, LLC",
+      "operator": "Torch Operating Company, LLC",
+      "city": "Cochise",
+      "state": "AZ",
+      "lat": 32.2071,
+      "lng": -109.9435,
+      "capacity_mw": 88,
+      "status": "under_construction",
+      "source": "https://www.eia.gov/electricity/data/eia860m/",
+      "year_online": 2027
+    },
+    {
+      "id": "eia-70408",
+      "type": "bess",
+      "name": "Willow Creek Energy Storage",
+      "operator": "Willow Creek Energy Storage, LLC",
+      "city": "Pawnee",
+      "state": "OK",
+      "lat": 36.3896,
+      "lng": -97.0278,
+      "capacity_mw": 200,
+      "status": "under_construction",
+      "source": "https://www.eia.gov/electricity/data/eia860m/",
+      "year_online": 2026
+    },
+    {
       "id": "eia-70419",
       "type": "bess",
       "name": "Royal Slope",
@@ -23365,134 +23487,63 @@
       "year_online": 2027
     },
     {
-      "id": "dc-stargate-lordstown",
-      "type": "data_center",
-      "name": "Stargate Lordstown (SoftBank / Foxconn)",
-      "operator": "SoftBank / OpenAI / Foxconn",
-      "city": "Lordstown",
-      "state": "OH",
-      "lat": 41.1609,
-      "lng": -80.8576,
-      "capacity_mw": null,
-      "status": "planned",
-      "year_online": 2026,
-      "source": "https://businessjournaldaily.com/preparation-work-begins-on-lordstown-data-center/"
-    },
-    {
-      "id": "dc-fermi-matador-amarillo",
-      "type": "data_center",
-      "name": "Fermi America Project Matador",
-      "operator": "Fermi America",
-      "city": "Carson County",
-      "state": "TX",
-      "lat": 35.4034,
-      "lng": -101.354,
-      "capacity_mw": 11000,
-      "status": "announced",
-      "year_online": 2027,
-      "source": "https://www.datacenterdynamics.com/en/news/fermi-share-price-craters-as-tenant-pulls-back-from-150m-texas-data-center-deal/",
-      "energy_source": "mixed"
-    },
-    {
-      "id": "dc-applied-digital-ellendale",
-      "type": "data_center",
-      "name": "Applied Digital Polaris Forge 1",
-      "operator": "Applied Digital / CoreWeave",
-      "city": "Ellendale",
-      "state": "ND",
-      "lat": 46.0025,
-      "lng": -98.5271,
-      "capacity_mw": 400,
-      "status": "operating",
-      "year_online": 2025,
-      "source": "https://www.globenewswire.com/news-release/2026/07/01/3320913/0/en/applied-digital-delivers-second-building-at-polaris-forge-1.html"
-    },
-    {
-      "id": "dc-nebius-vineland",
-      "type": "data_center",
-      "name": "Nebius Vineland",
-      "operator": "Nebius / DataOne",
-      "city": "Vineland",
-      "state": "NJ",
-      "lat": 39.4864,
-      "lng": -75.026,
-      "capacity_mw": 300,
+      "id": "eia-70420",
+      "type": "bess",
+      "name": "Wheatridge Optimization I",
+      "operator": "Wheatridge Optimization I, LLC",
+      "city": "Morrow",
+      "state": "OR",
+      "lat": 45.5601,
+      "lng": -119.6224,
+      "capacity_mw": 65,
       "status": "under_construction",
-      "year_online": 2026,
-      "source": "https://whyy.org/articles/vineland-planning-board-approves-data-center-plan/"
+      "source": "https://www.eia.gov/electricity/data/eia860m/",
+      "year_online": 2027
     },
     {
-      "id": "dc-aws-richmond-county-nc",
-      "type": "data_center",
-      "name": "AWS Richmond County (Energy Way)",
-      "operator": "Amazon Web Services",
-      "city": "Hamlet",
-      "state": "NC",
-      "lat": 34.8849,
-      "lng": -79.6942,
-      "capacity_mw": null,
-      "status": "under_construction",
-      "investment_usd": 10000000000,
-      "source": "https://www.datacenterdynamics.com/en/news/amazon-breaks-ground-on-10bn-data-center-complex-in-richmond-county-north-carolina/"
-    },
-    {
-      "id": "dc-aws-salem-township-pa",
-      "type": "data_center",
-      "name": "AWS Salem Township (Susquehanna)",
-      "operator": "Amazon Web Services",
-      "city": "Salem Township",
-      "state": "PA",
-      "lat": 41.0918,
-      "lng": -76.1463,
-      "capacity_mw": null,
-      "status": "planned",
-      "investment_usd": 20000000000,
-      "source": "https://www.datacenterdynamics.com/en/news/amazon-to-invest-20bn-in-data-centers-in-pennsylvania/"
-    },
-    {
-      "id": "dc-aws-butts-county-ga",
-      "type": "data_center",
-      "name": "AWS Georgia (Butts / Douglas Counties)",
-      "operator": "Amazon Web Services",
-      "city": "Butts County",
-      "state": "GA",
-      "lat": 33.2946,
-      "lng": -83.9666,
-      "capacity_mw": null,
-      "status": "planned",
-      "investment_usd": 11000000000,
-      "source": "https://www.datacenterdynamics.com/en/news/aws-reveals-11bn-data-center-investment-plan-for-georgia/"
-    },
-    {
-      "id": "dc-coreweave-lancaster",
-      "type": "data_center",
-      "name": "CoreWeave Lancaster",
-      "operator": "CoreWeave",
-      "city": "Lancaster County",
-      "state": "PA",
-      "lat": 40.0379,
-      "lng": -76.3055,
-      "capacity_mw": 300,
-      "status": "planned",
-      "investment_usd": 6000000000,
-      "source": "https://www.rcrwireless.com/20250716/ai-infrastructure/coreweave-ai-data"
-    },
-    {
-      "id": "dc-coreweave-denton",
-      "type": "data_center",
-      "name": "CoreWeave Denton (Core Scientific)",
-      "operator": "CoreWeave / Core Scientific",
-      "city": "Denton",
+      "id": "eia-70441",
+      "type": "bess",
+      "name": "Palo Duro Energy Storage II",
+      "operator": "Palo Duro Energy Center, LLC",
+      "city": "Ochiltree",
       "state": "TX",
-      "lat": 33.2148,
-      "lng": -97.1331,
-      "capacity_mw": null,
-      "status": "operating",
-      "year_online": 2025,
-      "source": "https://www.datacenterdynamics.com/en/news/coreweave-deploys-16000-gpus-at-delayed-data-center-in-denton-texas/"
+      "lat": 36.4107,
+      "lng": -101.0149,
+      "capacity_mw": 166,
+      "status": "planned",
+      "source": "https://www.eia.gov/electricity/data/eia860m/",
+      "year_online": 2029
+    },
+    {
+      "id": "eia-70443",
+      "type": "bess",
+      "name": "Mammoth Plains Energy Storage II",
+      "operator": "Mammoth Plains Energy Center, LLC",
+      "city": "Dewey",
+      "state": "OK",
+      "lat": 35.9797,
+      "lng": -98.7061,
+      "capacity_mw": 101,
+      "status": "planned",
+      "source": "https://www.eia.gov/electricity/data/eia860m/",
+      "year_online": 2029
+    },
+    {
+      "id": "eia-70450",
+      "type": "bess",
+      "name": "Wheatridge Optimization II",
+      "operator": "Wheatridge Optimization II, LLC",
+      "city": "Morrow",
+      "state": "OR",
+      "lat": 45.56,
+      "lng": -119.6292,
+      "capacity_mw": 60,
+      "status": "under_construction",
+      "source": "https://www.eia.gov/electricity/data/eia860m/",
+      "year_online": 2027
     }
   ],
-  "eia_source_month": "july_generator2026",
-  "eia_source_url": "https://www.eia.gov/electricity/data/eia860m/xls/july_generator2026.xlsx",
-  "eia_ingested_at": "2026-09-04T02:36:00Z"
+  "eia_source_month": "august_generator2026",
+  "eia_source_url": "https://www.eia.gov/electricity/data/eia860m/xls/august_generator2026.xlsx",
+  "eia_ingested_at": "2026-09-28T20:03:04Z"
 }
