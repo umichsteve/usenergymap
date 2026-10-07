@@ -204,6 +204,8 @@
           <tr><td><code>duration_hours</code></td><td>Derived MWh ÷ MW for batteries</td></tr>
           <tr><td><code>status</code> · <code>status_label</code></td><td>operating / under_construction / planned / announced</td></tr>
           <tr><td><code>year_online</code></td><td>Existing or target year</td></tr>
+          <tr><td><code>announcement_date</code></td><td>Date the project was first publicly announced (<code>YYYY-MM-DD</code>), from operator press releases, local filings or news coverage. Data centers only; blank where no first announcement could be verified.</td></tr>
+          <tr><td><code>announcement_date_precision</code></td><td>How precise <code>announcement_date</code> is, which varies by record: <code>day</code>, <code>month</code> (date set to the 1st of the month), or <code>year</code> (date set to January 1). Filter on <code>day</code> if you need exact dates.</td></tr>
           <tr><td><code>investment_usd</code></td><td>Announced capital investment in dollars, where an operator publishes $ but not MW (data centers)</td></tr>
           <tr><td><code>capacity_estimated</code></td><td><code>true</code> when MW is derived from a stated $ or square-footage figure rather than an operator-published power number</td></tr>
           <tr><td><code>energy_source</code></td><td>Dedicated or co-located generation where disclosed (e.g. <code>mixed</code>, <code>gas</code>, <code>solar</code>)</td></tr>
