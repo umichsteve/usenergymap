@@ -17,6 +17,8 @@
       "capacity_mw": 600,
       "status": "operating",
       "year_online": 2010,
+      "announcement_date": "2010-08-27",
+      "announcement_date_precision": "day",
       "source": "https://datacenters.microsoft.com/"
     },
     {
@@ -33,6 +35,8 @@
       "capacity_mw": 350,
       "status": "operating",
       "year_online": 2006,
+      "announcement_date": "2005-02-18",
+      "announcement_date_precision": "day",
       "source": "https://www.google.com/about/datacenters/locations/the-dalles/"
     },
     {
@@ -49,6 +53,8 @@
       "capacity_mw": 970,
       "status": "operating",
       "year_online": 2018,
+      "announcement_date": "2018-05-30",
+      "announcement_date_precision": "day",
       "source": "https://datacenters.atmeta.com/"
     },
     {
@@ -65,6 +71,8 @@
       "capacity_mw": 500,
       "status": "operating",
       "year_online": 2011,
+      "announcement_date": "2010-01-21",
+      "announcement_date_precision": "day",
       "source": "https://datacenters.atmeta.com/"
     },
     {
@@ -81,6 +89,8 @@
       "capacity_mw": 350,
       "status": "operating",
       "year_online": 2012,
+      "announcement_date": "2010-11-11",
+      "announcement_date_precision": "day",
       "source": "https://datacenters.atmeta.com/"
     },
     {
@@ -97,6 +107,8 @@
       "capacity_mw": 1000,
       "status": "operating",
       "year_online": 2025,
+      "announcement_date": "2017-08-15",
+      "announcement_date_precision": "day",
       "source": "https://epoch.ai/data/ai-data-centers/directory/meta-prometheus",
       "energy_source": "mixed"
     },
@@ -114,6 +126,8 @@
       "capacity_mw": 5000,
       "status": "under_construction",
       "year_online": 2030,
+      "announcement_date": "2024-12-04",
+      "announcement_date_precision": "day",
       "source": "https://finance.yahoo.com/technology/ai/articles/meta-expands-louisiana-hyperion-data-120038782.html",
       "investment_usd": 50000000000,
       "energy_source": "mixed"
@@ -132,6 +146,8 @@
       "capacity_mw": 600,
       "status": "operating",
       "year_online": 2009,
+      "announcement_date": "2007-06-19",
+      "announcement_date_precision": "day",
       "source": "https://www.google.com/about/datacenters/locations/council-bluffs/"
     },
     {
@@ -148,6 +164,8 @@
       "capacity_mw": 100,
       "status": "operating",
       "year_online": 2011,
+      "announcement_date": "2009-06-03",
+      "announcement_date_precision": "day",
       "source": "https://www.apple.com/environment/"
     },
     {
@@ -164,6 +182,8 @@
       "capacity_mw": 470,
       "status": "operating",
       "year_online": 2007,
+      "announcement_date": "2006-01-15",
+      "announcement_date_precision": "day",
       "source": "https://datacenters.microsoft.com/"
     },
     {
@@ -180,6 +200,8 @@
       "capacity_mw": 250,
       "status": "operating",
       "year_online": 2017,
+      "announcement_date": "2017-10-25",
+      "announcement_date_precision": "day",
       "source": "https://www.qtsdatacenters.com/"
     },
     {
@@ -212,6 +234,8 @@
       "capacity_mw": 1400,
       "status": "under_construction",
       "year_online": 2026,
+      "announcement_date": "2025-07-24",
+      "announcement_date_precision": "day",
       "source": "https://vantage-dc.com/news/vantage-data-centers-unveils-plans-for-frontier-a-25b-mega-campus-in-texas-to-meet-unprecedented-ai-demand/",
       "investment_usd": 25000000000
     },
@@ -229,6 +253,8 @@
       "capacity_mw": 1200,
       "status": "operating",
       "year_online": 2025,
+      "announcement_date": "2024-07-18",
+      "announcement_date_precision": "day",
       "source": "https://www.siliconreport.com/stargate-abilene-flagship-data-center-profile-d90595dc",
       "energy_source": "mixed"
     },
@@ -246,6 +272,8 @@
       "capacity_mw": 540,
       "status": "under_construction",
       "year_online": 2027,
+      "announcement_date": "2026-02-27",
+      "announcement_date_precision": "day",
       "source": "https://www.blackridgeresearch.com/blog/upcoming-largest-data-center-projects-in-united-states-usa"
     },
     {
@@ -262,6 +290,8 @@
       "capacity_mw": 900,
       "status": "under_construction",
       "year_online": 2028,
+      "announcement_date": "2024-11-21",
+      "announcement_date_precision": "day",
       "source": "https://www.constructiondive.com/news/data-center-cleanarc-breaks-ground-virginia-campus/806489/"
     },
     {
@@ -278,6 +308,8 @@
       "capacity_mw": 1300,
       "status": "under_construction",
       "year_online": 2028,
+      "announcement_date": "2025-06-11",
+      "announcement_date_precision": "day",
       "source": "https://epoch.ai/publications/openai-stargate-where-the-us-sites-stand",
       "investment_usd": 15000000000,
       "capacity_estimated": true
@@ -296,6 +328,8 @@
       "capacity_mw": 650,
       "status": "operating",
       "year_online": 2018,
+      "announcement_date": "2015-01-15",
+      "announcement_date_precision": "day",
       "source": "https://www.switch.com/"
     },
     {
@@ -312,6 +346,8 @@
       "capacity_mw": 142,
       "status": "operating",
       "year_online": 2017,
+      "announcement_date": "2016-03-09",
+      "announcement_date_precision": "day",
       "source": "https://www.ironmountain.com/data-centers"
     },
     {
@@ -328,6 +364,8 @@
       "capacity_mw": 280,
       "status": "operating",
       "year_online": 2020,
+      "announcement_date": "2020-01-29",
+      "announcement_date_precision": "day",
       "source": "https://www.compassdatacenters.com/"
     },
     {
@@ -343,6 +381,8 @@
       "lng": -86.5861,
       "capacity_mw": null,
       "status": "operating",
+      "announcement_date": "2018-06-14",
+      "announcement_date_precision": "day",
       "source": "https://dgtlinfra.com/meta-data-center-locations-facebook/",
       "investment_usd": 1500000000
     },
@@ -359,6 +399,8 @@
       "lng": -86.3,
       "capacity_mw": null,
       "status": "under_construction",
+      "announcement_date": "2024-05-02",
+      "announcement_date_precision": "day",
       "source": "https://www.alreporter.com/2025/09/24/meta-to-expand-montgomery-data-center-upping-local-investments-to-1-5-billion/",
       "investment_usd": 1500000000
     },
@@ -377,7 +419,9 @@
       "status": "planned",
       "source": "https://www.powermag.com/entergy-will-power-4-billion-google-data-center-in-arkansas/",
       "investment_usd": 4000000000,
-      "year_online": 2027
+      "year_online": 2027,
+      "announcement_date": "2025-10-02",
+      "announcement_date_precision": "day"
     },
     {
       "id": "dc-meta-mesa",
@@ -394,6 +438,8 @@
       "status": "operating",
       "source": "https://www.datacenterdynamics.com/en/news/metas-mesa-arizona-data-center-comes-online/",
       "year_online": 2025,
+      "announcement_date": "2021-05-01",
+      "announcement_date_precision": "month",
       "investment_usd": 1000000000
     },
     {
@@ -410,7 +456,9 @@
       "capacity_mw": 48,
       "status": "under_construction",
       "source": "https://www.nbcbayarea.com/news/local/microsoft-breaks-ground-on-new-data-center-in-san-jose/4097643/",
-      "year_online": 2028
+      "year_online": 2028,
+      "announcement_date": "2017-09-29",
+      "announcement_date_precision": "day"
     },
     {
       "id": "dc-google-douglas-county",
@@ -440,6 +488,8 @@
       "lng": -85.0313,
       "capacity_mw": 100,
       "status": "planned",
+      "announcement_date": "2026-04-21",
+      "announcement_date_precision": "day",
       "source": "https://www.datacenterdynamics.com/en/news/google-confirms-plans-for-data-center-in-lagrange-georgia/"
     },
     {
@@ -455,6 +505,8 @@
       "lng": -91.6656,
       "capacity_mw": null,
       "status": "planned",
+      "announcement_date": "2024-02-01",
+      "announcement_date_precision": "month",
       "source": "https://www.datacenterdynamics.com/en/news/google-pledges-7bn-to-expand-iowa-data-center-footprint/",
       "investment_usd": 576000000
     },
@@ -471,6 +523,8 @@
       "lng": -93.4647,
       "capacity_mw": null,
       "status": "operating",
+      "announcement_date": "2012-06-25",
+      "announcement_date_precision": "day",
       "source": "https://dgtlinfra.com/meta-data-center-locations-facebook/",
       "investment_usd": 2500000000
     },
@@ -488,6 +542,8 @@
       "capacity_mw": 500,
       "status": "planned",
       "year_online": 2027,
+      "announcement_date": "2022-02-16",
+      "announcement_date_precision": "day",
       "source": "https://datacenters.atmeta.com/us-locations/"
     },
     {
@@ -503,6 +559,8 @@
       "lng": -87.255,
       "capacity_mw": 2400,
       "status": "planned",
+      "announcement_date": "2025-11-24",
+      "announcement_date_precision": "day",
       "source": "https://www.aboutamazon.com/news/company-news/amazon-15-billion-indiana-data-centers"
     },
     {
@@ -520,6 +578,8 @@
       "status": "operating",
       "source": "https://www.datacenterdynamics.com/en/news/googles-2bn-data-center-now-operational-in-fort-wayne-indiana/",
       "year_online": 2025,
+      "announcement_date": "2023-10-09",
+      "announcement_date_precision": "day",
       "investment_usd": 2000000000
     },
     {
@@ -535,6 +595,8 @@
       "lng": -86.895,
       "capacity_mw": null,
       "status": "under_construction",
+      "announcement_date": "2025-07-01",
+      "announcement_date_precision": "month",
       "source": "https://www.datacenterdynamics.com/en/news/google-takes-over-project-maize-data-center-campus-in-michigan-city-indiana/",
       "investment_usd": 832000000
     },
@@ -551,6 +613,8 @@
       "lng": -85.7372,
       "capacity_mw": null,
       "status": "under_construction",
+      "announcement_date": "2024-01-25",
+      "announcement_date_precision": "day",
       "source": "https://www.bisnow.com/news/national/data-center-development/meta-unveils-10b-data-center-megacampus-planned-near-indianapolis-133195",
       "investment_usd": 800000000
     },
@@ -567,6 +631,8 @@
       "lng": -86.4692,
       "capacity_mw": 1000,
       "status": "under_construction",
+      "announcement_date": "2024-11-25",
+      "announcement_date_precision": "day",
       "source": "https://www.datacenterknowledge.com/data-center-construction/meta-breaks-ground-on-1-gw-indiana-data-center",
       "investment_usd": 10000000000
     },
@@ -583,6 +649,8 @@
       "lng": -93.7502,
       "capacity_mw": null,
       "status": "planned",
+      "announcement_date": "2026-02-23",
+      "announcement_date_precision": "day",
       "source": "https://www.aboutamazon.com/news/company-news/amazon-data-center-louisiana-new-jobs",
       "investment_usd": 18000000000
     },
@@ -614,6 +682,8 @@
       "lng": -92.6463,
       "capacity_mw": null,
       "status": "planned",
+      "announcement_date": "2025-10-07",
+      "announcement_date_precision": "day",
       "source": "https://datacenters.google/locations/"
     },
     {
@@ -663,7 +733,9 @@
       "status": "planned",
       "source": "https://www.datacenterdynamics.com/en/news/google-pledges-15bn-investment-in-new-florence-missouri/",
       "investment_usd": 15000000000,
-      "year_online": 2028
+      "year_online": 2028,
+      "announcement_date": "2026-05-20",
+      "announcement_date_precision": "day"
     },
     {
       "id": "dc-google-lincoln",
@@ -694,6 +766,8 @@
       "lng": -95.9345,
       "capacity_mw": null,
       "status": "operating",
+      "announcement_date": "2022-01-01",
+      "announcement_date_precision": "year",
       "source": "https://www.datacenterdynamics.com/en/news/google-to-build-another-data-center-in-omaha-nebraska/",
       "investment_usd": 750000000
     },
@@ -710,6 +784,8 @@
       "lng": -96.0422,
       "capacity_mw": null,
       "status": "operating",
+      "announcement_date": "2019-01-01",
+      "announcement_date_precision": "year",
       "source": "https://www.datacenterdynamics.com/en/news/google-to-build-another-data-center-in-omaha-nebraska/",
       "investment_usd": 600000000
     },
@@ -742,6 +818,8 @@
       "lng": -95.3697,
       "capacity_mw": null,
       "status": "under_construction",
+      "announcement_date": "2025-01-01",
+      "announcement_date_precision": "year",
       "source": "https://www.fox23.com/news/officials-share-new-details-about-two-google-data-centers-coming-to-muskogee-county/article_f838a180-72a6-400a-8ada-47cb8aa26143.html"
     },
     {
@@ -757,6 +835,8 @@
       "lng": -97.0584,
       "capacity_mw": null,
       "status": "planned",
+      "announcement_date": "2025-01-01",
+      "announcement_date_precision": "year",
       "source": "https://datacenters.google/locations/"
     },
     {
@@ -772,6 +852,8 @@
       "lng": -95.9928,
       "capacity_mw": null,
       "status": "under_construction",
+      "announcement_date": "2024-03-08",
+      "announcement_date_precision": "day",
       "source": "https://about.fb.com/news/2026/04/breaking-ground-new-ai-optimized-data-center-tulsa-oklahoma/",
       "investment_usd": 1000000000
     },
@@ -788,6 +870,8 @@
       "lng": -80.404,
       "capacity_mw": null,
       "status": "under_construction",
+      "announcement_date": "2024-09-26",
+      "announcement_date_precision": "day",
       "source": "https://www.datacenterdynamics.com/en/news/google-to-invest-9bn-in-south-carolina-data-centers/"
     },
     {
@@ -803,6 +887,8 @@
       "lng": -81.7196,
       "capacity_mw": null,
       "status": "under_construction",
+      "announcement_date": "2024-08-29",
+      "announcement_date_precision": "day",
       "source": "https://www.datacenterdynamics.com/en/news/meta-plans-800m-data-center-campus-in-aiken-county-south-carolina/",
       "investment_usd": 800000000
     },
@@ -821,7 +907,9 @@
       "status": "operating",
       "source": "https://www.datacenterdynamics.com/en/news/google-opens-600m-tennessee-data-center/",
       "investment_usd": 600000000,
-      "year_online": 2019
+      "year_online": 2019,
+      "announcement_date": "2015-01-01",
+      "announcement_date_precision": "year"
     },
     {
       "id": "dc-google-armstrong-county",
@@ -836,6 +924,8 @@
       "lng": -101.3575,
       "capacity_mw": null,
       "status": "planned",
+      "announcement_date": "2025-01-01",
+      "announcement_date_precision": "year",
       "source": "https://datacenters.google/locations/"
     },
     {
@@ -851,6 +941,8 @@
       "lng": -99.7304,
       "capacity_mw": null,
       "status": "planned",
+      "announcement_date": "2025-01-01",
+      "announcement_date_precision": "year",
       "source": "https://datacenters.google/locations/"
     },
     {
@@ -866,6 +958,8 @@
       "lng": -100.9599,
       "capacity_mw": null,
       "status": "under_construction",
+      "announcement_date": "2026-01-01",
+      "announcement_date_precision": "year",
       "source": "https://www.powermag.com/google-launches-1-gw-plus-co-located-data-center-and-generation-complex-in-texas-panhandle/",
       "energy_source": "mixed"
     },
@@ -882,6 +976,8 @@
       "lng": -96.8044,
       "capacity_mw": null,
       "status": "operating",
+      "announcement_date": "2023-08-31",
+      "announcement_date_precision": "day",
       "source": "https://datacenters.google/locations/"
     },
     {
@@ -897,6 +993,8 @@
       "lng": -99.2413,
       "capacity_mw": null,
       "status": "planned",
+      "announcement_date": "2026-02-24",
+      "announcement_date_precision": "day",
       "source": "https://datacenters.google/locations/"
     },
     {
@@ -914,6 +1012,8 @@
       "status": "under_construction",
       "source": "https://about.fb.com/news/2026/07/meta-announces-new-venture-with-blackrock-to-develop-data-center-in-el-paso/",
       "year_online": 2028,
+      "announcement_date": "2023-12-04",
+      "announcement_date_precision": "day",
       "investment_usd": 14000000000
     },
     {
@@ -929,6 +1029,8 @@
       "lng": -97.3308,
       "capacity_mw": null,
       "status": "operating",
+      "announcement_date": "2015-05-22",
+      "announcement_date_precision": "day",
       "source": "https://dgtlinfra.com/meta-data-center-locations-facebook/",
       "investment_usd": 1500000000
     },
@@ -945,6 +1047,8 @@
       "lng": -77.505,
       "capacity_mw": null,
       "status": "planned",
+      "announcement_date": "2025-08-27",
+      "announcement_date_precision": "day",
       "source": "https://datacenters.google/locations/"
     },
     {
@@ -960,6 +1064,8 @@
       "lng": -77.3861,
       "capacity_mw": null,
       "status": "operating",
+      "announcement_date": "2017-11-29",
+      "announcement_date_precision": "day",
       "source": "https://datacenters.google/locations/"
     },
     {
@@ -977,7 +1083,9 @@
       "status": "under_construction",
       "source": "https://wedc.org/meta-state-and-local-officials-announce-1-billion-data-center-investment-in-beaver-dam-project/",
       "investment_usd": 1000000000,
-      "year_online": 2027
+      "year_online": 2027,
+      "announcement_date": "2025-02-01",
+      "announcement_date_precision": "month"
     },
     {
       "id": "dc-nscale-monarch",
@@ -993,7 +1101,9 @@
       "capacity_mw": 1350,
       "status": "planned",
       "source": "https://www.nscale.com/press-releases/nscale-west-virginia-ai-factory",
-      "year_online": 2027
+      "year_online": 2027,
+      "announcement_date": "2023-08-16",
+      "announcement_date_precision": "day"
     },
     {
       "id": "dc-penzance-bedington",
@@ -1008,6 +1118,8 @@
       "lng": -77.9636,
       "capacity_mw": 600,
       "status": "planned",
+      "announcement_date": "2026-02-26",
+      "announcement_date_precision": "day",
       "source": "https://governor.wv.gov/article/governor-morrisey-announces-4-billion-private-investment-west-virginias-first-high-impact"
     },
     {
@@ -1023,6 +1135,8 @@
       "lng": -104.8202,
       "capacity_mw": null,
       "status": "under_construction",
+      "announcement_date": "2023-11-07",
+      "announcement_date_precision": "day",
       "source": "https://www.datacenterdynamics.com/en/news/meta-officially-announces-data-center-in-cheyenne-wyoming/",
       "investment_usd": 800000000
     },
@@ -1278,6 +1392,8 @@
       "capacity_mw": 400,
       "status": "operating",
       "year_online": 2016,
+      "announcement_date": "2014-09-01",
+      "announcement_date_precision": "month",
       "source": "https://aws.amazon.com/about-aws/global-infrastructure/"
     },
     {
@@ -1294,6 +1410,8 @@
       "capacity_mw": 300,
       "status": "operating",
       "year_online": 2018,
+      "announcement_date": "2017-03-19",
+      "announcement_date_precision": "day",
       "source": "https://aws.amazon.com/about-aws/global-infrastructure/"
     },
     {
@@ -1310,6 +1428,8 @@
       "capacity_mw": 2200,
       "status": "operating",
       "year_online": 2025,
+      "announcement_date": "2024-04-25",
+      "announcement_date_precision": "day",
       "source": "https://sustainability.aboutamazon.com/stories/inside-amazons-approach-to-data-center-sustainability",
       "investment_usd": 11000000000
     },
@@ -1327,6 +1447,8 @@
       "capacity_mw": 250,
       "status": "operating",
       "year_online": 2008,
+      "announcement_date": "2007-01-19",
+      "announcement_date_precision": "day",
       "source": "https://www.google.com/about/datacenters/locations/lenoir/"
     },
     {
@@ -1343,6 +1465,8 @@
       "capacity_mw": 200,
       "status": "operating",
       "year_online": 2013,
+      "announcement_date": "2007-04-04",
+      "announcement_date_precision": "day",
       "source": "https://www.google.com/about/datacenters/locations/berkeley-county/"
     },
     {
@@ -1359,6 +1483,8 @@
       "capacity_mw": 350,
       "status": "operating",
       "year_online": 2020,
+      "announcement_date": "2018-11-15",
+      "announcement_date_precision": "day",
       "source": "https://www.google.com/about/datacenters/locations/henderson/"
     },
     {
@@ -1375,6 +1501,8 @@
       "capacity_mw": 400,
       "status": "operating",
       "year_online": 2021,
+      "announcement_date": "2017-04-17",
+      "announcement_date_precision": "day",
       "source": "https://www.google.com/about/datacenters/locations/storey-county/"
     },
     {
@@ -1391,6 +1519,8 @@
       "capacity_mw": 600,
       "status": "under_construction",
       "year_online": 2027,
+      "announcement_date": "2019-07-01",
+      "announcement_date_precision": "day",
       "source": "https://www.datacenterknowledge.com/data-center-construction/new-data-center-developments-may-2026"
     },
     {
@@ -1407,6 +1537,8 @@
       "capacity_mw": 280,
       "status": "operating",
       "year_online": 2012,
+      "announcement_date": "2012-04-09",
+      "announcement_date_precision": "day",
       "source": "https://azure.microsoft.com/en-us/blog/microsoft-expands-cloud-services-with-two-new-datacenters-in-wyoming/"
     },
     {
@@ -1423,6 +1555,8 @@
       "capacity_mw": 600,
       "status": "operating",
       "year_online": 2014,
+      "announcement_date": "2008-08-21",
+      "announcement_date_precision": "day",
       "source": "https://datacenters.microsoft.com/"
     },
     {
@@ -1439,6 +1573,8 @@
       "capacity_mw": 400,
       "status": "operating",
       "year_online": 2008,
+      "announcement_date": "2007-01-19",
+      "announcement_date_precision": "day",
       "source": "https://datacenters.microsoft.com/"
     },
     {
@@ -1455,6 +1591,8 @@
       "capacity_mw": 480,
       "status": "operating",
       "year_online": 2022,
+      "announcement_date": "2019-04-01",
+      "announcement_date_precision": "month",
       "source": "https://datacenters.microsoft.com/"
     },
     {
@@ -1471,6 +1609,8 @@
       "capacity_mw": 450,
       "status": "operating",
       "year_online": 2020,
+      "announcement_date": "2017-04-06",
+      "announcement_date_precision": "day",
       "source": "https://datacenters.atmeta.com/"
     },
     {
@@ -1487,6 +1627,8 @@
       "capacity_mw": 500,
       "status": "operating",
       "year_online": 2023,
+      "announcement_date": "2020-06-30",
+      "announcement_date_precision": "day",
       "source": "https://datacenters.atmeta.com/"
     },
     {
@@ -1503,6 +1645,8 @@
       "capacity_mw": 400,
       "status": "operating",
       "year_online": 2022,
+      "announcement_date": "2022-03-31",
+      "announcement_date_precision": "day",
       "source": "https://datacenters.atmeta.com/"
     },
     {
@@ -1519,6 +1663,8 @@
       "capacity_mw": 400,
       "status": "under_construction",
       "year_online": 2026,
+      "announcement_date": "2020-08-12",
+      "announcement_date_precision": "day",
       "source": "https://datacenters.atmeta.com/"
     },
     {
@@ -1535,6 +1681,8 @@
       "capacity_mw": 800,
       "status": "planned",
       "year_online": 2028,
+      "announcement_date": "2017-10-05",
+      "announcement_date_precision": "day",
       "source": "https://datacenters.atmeta.com/"
     },
     {
@@ -1551,6 +1699,8 @@
       "capacity_mw": 400,
       "status": "operating",
       "year_online": 2019,
+      "announcement_date": "2016-07-09",
+      "announcement_date_precision": "day",
       "source": "https://datacenters.atmeta.com/"
     },
     {
@@ -1567,6 +1717,8 @@
       "capacity_mw": 175,
       "status": "operating",
       "year_online": 2013,
+      "announcement_date": "2012-06-26",
+      "announcement_date_precision": "day",
       "source": "https://www.apple.com/environment/"
     },
     {
@@ -1583,6 +1735,8 @@
       "capacity_mw": 100,
       "status": "operating",
       "year_online": 2017,
+      "announcement_date": "2015-02-02",
+      "announcement_date_precision": "day",
       "source": "https://www.apple.com/environment/"
     },
     {
@@ -1599,6 +1753,8 @@
       "capacity_mw": 400,
       "status": "planned",
       "year_online": 2027,
+      "announcement_date": "2017-08-24",
+      "announcement_date_precision": "day",
       "source": "https://www.apple.com/newsroom/"
     },
     {
@@ -1615,6 +1771,8 @@
       "capacity_mw": 40,
       "status": "operating",
       "year_online": 2017,
+      "announcement_date": "2009-07-15",
+      "announcement_date_precision": "day",
       "source": "https://www.equinix.com/data-centers/americas-colocation/united-states-colocation/chicago-data-centers/ch4"
     },
     {
@@ -1631,6 +1789,8 @@
       "capacity_mw": 30,
       "status": "operating",
       "year_online": 2018,
+      "announcement_date": "2016-08-03",
+      "announcement_date_precision": "day",
       "source": "https://www.equinix.com/data-centers/americas-colocation/united-states-colocation/washington-dc-data-centers/dc12"
     },
     {
@@ -1647,6 +1807,8 @@
       "capacity_mw": 36,
       "status": "operating",
       "year_online": 2019,
+      "announcement_date": "2016-06-14",
+      "announcement_date_precision": "day",
       "source": "https://www.equinix.com/"
     },
     {
@@ -1663,6 +1825,8 @@
       "capacity_mw": 80,
       "status": "operating",
       "year_online": 2019,
+      "announcement_date": "2017-08-25",
+      "announcement_date_precision": "day",
       "source": "https://www.digitalrealty.com/"
     },
     {
@@ -1679,6 +1843,8 @@
       "capacity_mw": 65,
       "status": "operating",
       "year_online": 2017,
+      "announcement_date": "2017-10-24",
+      "announcement_date_precision": "day",
       "source": "https://www.digitalrealty.com/"
     },
     {
@@ -1695,6 +1861,8 @@
       "capacity_mw": 250,
       "status": "operating",
       "year_online": 2024,
+      "announcement_date": "2023-07-26",
+      "announcement_date_precision": "day",
       "source": "https://www.coreweave.com/blog"
     },
     {
@@ -1743,6 +1911,8 @@
       "capacity_mw": 120,
       "status": "operating",
       "year_online": 2021,
+      "announcement_date": "2018-03-22",
+      "announcement_date_precision": "day",
       "source": "https://www.aligneddc.com/"
     },
     {
@@ -1759,6 +1929,8 @@
       "capacity_mw": 340,
       "status": "operating",
       "year_online": 2024,
+      "announcement_date": "2024-06-05",
+      "announcement_date_precision": "day",
       "source": "https://epoch.ai/data/ai-data-centers/directory/colossus-1",
       "capacity_estimated": true,
       "energy_source": "mixed"
@@ -1777,6 +1949,8 @@
       "capacity_mw": 1000,
       "status": "operating",
       "year_online": 2025,
+      "announcement_date": "2025-03-07",
+      "announcement_date_precision": "day",
       "source": "https://epoch.ai/data/ai-data-centers/directory/colossus-2",
       "capacity_estimated": true,
       "investment_usd": 20000000000
@@ -1811,6 +1985,8 @@
       "capacity_mw": 60,
       "status": "operating",
       "year_online": 2019,
+      "announcement_date": "2011-09-27",
+      "announcement_date_precision": "day",
       "source": "https://www.vantage-dc.com/"
     },
     {
@@ -2353,6 +2529,8 @@
       "capacity_mw": 250,
       "status": "operating",
       "year_online": 2014,
+      "announcement_date": "2008-11-07",
+      "announcement_date_precision": "day",
       "source": "https://aws.amazon.com/about-aws/global-infrastructure/"
     },
     {
@@ -2449,6 +2627,8 @@
       "capacity_mw": 500,
       "status": "planned",
       "year_online": 2027,
+      "announcement_date": "2024-01-25",
+      "announcement_date_precision": "day",
       "source": "https://www.datacenterknowledge.com/data-center-construction/new-data-center-developments-may-2026"
     },
     {
@@ -2465,6 +2645,8 @@
       "capacity_mw": 350,
       "status": "operating",
       "year_online": 2011,
+      "announcement_date": "2007-05-01",
+      "announcement_date_precision": "month",
       "source": "https://www.google.com/about/datacenters/locations/mayes-county/"
     },
     {
@@ -2481,6 +2663,8 @@
       "capacity_mw": 250,
       "status": "operating",
       "year_online": 2023,
+      "announcement_date": "2015-06-24",
+      "announcement_date_precision": "day",
       "source": "https://www.google.com/about/datacenters/"
     },
     {
@@ -2497,6 +2681,8 @@
       "capacity_mw": 400,
       "status": "under_construction",
       "year_online": 2026,
+      "announcement_date": "2018-08-01",
+      "announcement_date_precision": "day",
       "source": "https://www.datacenterknowledge.com/data-center-construction/new-data-center-developments-may-2026"
     },
     {
@@ -2513,6 +2699,8 @@
       "capacity_mw": 500,
       "status": "planned",
       "year_online": 2027,
+      "announcement_date": "2021-03-01",
+      "announcement_date_precision": "month",
       "source": "https://www.datacenterknowledge.com/data-center-construction/new-data-center-developments-may-2026"
     },
     {
@@ -2545,6 +2733,8 @@
       "capacity_mw": 350,
       "status": "operating",
       "year_online": 2023,
+      "announcement_date": "2019-05-02",
+      "announcement_date_precision": "day",
       "source": "https://datacenters.microsoft.com/"
     },
     {
@@ -2561,6 +2751,8 @@
       "capacity_mw": 500,
       "status": "planned",
       "year_online": 2027,
+      "announcement_date": "2022-03-11",
+      "announcement_date_precision": "day",
       "source": "https://datacenters.atmeta.com/"
     },
     {
@@ -2577,6 +2769,8 @@
       "capacity_mw": 750,
       "status": "under_construction",
       "year_online": 2026,
+      "announcement_date": "2024-03-14",
+      "announcement_date_precision": "day",
       "source": "https://datacenters.atmeta.com/"
     },
     {
@@ -2593,6 +2787,8 @@
       "capacity_mw": 400,
       "status": "operating",
       "year_online": 2018,
+      "announcement_date": "2018-03-07",
+      "announcement_date_precision": "day",
       "source": "https://datacenters.atmeta.com/"
     },
     {
@@ -2609,6 +2805,8 @@
       "capacity_mw": 200,
       "status": "operating",
       "year_online": 2014,
+      "announcement_date": "2011-12-01",
+      "announcement_date_precision": "month",
       "source": "https://www.apple.com/environment/"
     },
     {
@@ -2641,6 +2839,8 @@
       "capacity_mw": 30,
       "status": "operating",
       "year_online": 2016,
+      "announcement_date": "2011-07-27",
+      "announcement_date_precision": "day",
       "source": "https://www.equinix.com/"
     },
     {
@@ -2801,6 +3001,8 @@
       "capacity_mw": 90,
       "status": "operating",
       "year_online": 2018,
+      "announcement_date": "2018-07-26",
+      "announcement_date_precision": "day",
       "source": "https://www.digitalrealty.com/"
     },
     {
@@ -2865,6 +3067,8 @@
       "capacity_mw": 70,
       "status": "operating",
       "year_online": 2014,
+      "announcement_date": "2011-12-23",
+      "announcement_date_precision": "day",
       "source": "https://cyrusone.com/"
     },
     {
@@ -2881,6 +3085,8 @@
       "capacity_mw": 80,
       "status": "operating",
       "year_online": 2016,
+      "announcement_date": "2011-09-01",
+      "announcement_date_precision": "month",
       "source": "https://cyrusone.com/"
     },
     {
@@ -2961,6 +3167,8 @@
       "capacity_mw": 65,
       "status": "operating",
       "year_online": 2018,
+      "announcement_date": "2015-08-20",
+      "announcement_date_precision": "day",
       "source": "https://services.global.ntt/"
     },
     {
@@ -2993,6 +3201,8 @@
       "capacity_mw": 30,
       "status": "operating",
       "year_online": 2017,
+      "announcement_date": "2017-01-17",
+      "announcement_date_precision": "day",
       "source": "https://www.databank.com/"
     },
     {
@@ -3025,6 +3235,8 @@
       "capacity_mw": 220,
       "status": "operating",
       "year_online": 2022,
+      "announcement_date": "2020-01-22",
+      "announcement_date_precision": "day",
       "source": "https://stackinfra.com/"
     },
     {
@@ -3041,6 +3253,8 @@
       "capacity_mw": 80,
       "status": "operating",
       "year_online": 2021,
+      "announcement_date": "2020-01-16",
+      "announcement_date_precision": "day",
       "source": "https://stackinfra.com/"
     },
     {
@@ -3057,6 +3271,8 @@
       "capacity_mw": 22,
       "status": "operating",
       "year_online": 2018,
+      "announcement_date": "2014-02-04",
+      "announcement_date_precision": "day",
       "source": "https://www.cologix.com/"
     },
     {
@@ -3105,6 +3321,8 @@
       "capacity_mw": 250,
       "status": "planned",
       "year_online": 2027,
+      "announcement_date": "2023-10-03",
+      "announcement_date_precision": "day",
       "source": "https://tract.com/"
     },
     {
@@ -3121,6 +3339,8 @@
       "capacity_mw": 850,
       "status": "planned",
       "year_online": 2027,
+      "announcement_date": "2025-12-30",
+      "announcement_date_precision": "day",
       "source": "https://www.datacenterdynamics.com/en/news/xai-plans-third-data-center-musk-claims-will-bring-capacity-up-to-almost-2gw/"
     },
     {
@@ -4022,6 +4242,8 @@
       "capacity_estimated": true,
       "status": "under_construction",
       "year_online": 2028,
+      "announcement_date": "2025-09-23",
+      "announcement_date_precision": "day",
       "source": "https://epoch.ai/publications/openai-stargate-where-the-us-sites-stand"
     },
     {
@@ -4039,6 +4261,8 @@
       "capacity_estimated": false,
       "status": "under_construction",
       "year_online": 2028,
+      "announcement_date": "2025-09-23",
+      "announcement_date_precision": "day",
       "source": "https://epoch.ai/publications/openai-stargate-where-the-us-sites-stand"
     },
     {
@@ -4056,6 +4280,8 @@
       "capacity_estimated": true,
       "status": "under_construction",
       "year_online": 2028,
+      "announcement_date": "2025-10-30",
+      "announcement_date_precision": "day",
       "source": "https://epoch.ai/publications/openai-stargate-where-the-us-sites-stand"
     },
     {
@@ -4088,6 +4314,8 @@
       "capacity_mw": null,
       "status": "planned",
       "year_online": 2026,
+      "announcement_date": "2025-09-23",
+      "announcement_date_precision": "day",
       "source": "https://businessjournaldaily.com/preparation-work-begins-on-lordstown-data-center/"
     },
     {
@@ -4104,6 +4332,8 @@
       "capacity_mw": 11000,
       "status": "announced",
       "year_online": 2027,
+      "announcement_date": "2025-06-26",
+      "announcement_date_precision": "day",
       "source": "https://www.datacenterdynamics.com/en/news/fermi-share-price-craters-as-tenant-pulls-back-from-150m-texas-data-center-deal/",
       "energy_source": "mixed"
     },
@@ -4137,6 +4367,8 @@
       "capacity_mw": 300,
       "status": "under_construction",
       "year_online": 2026,
+      "announcement_date": "2025-03-05",
+      "announcement_date_precision": "day",
       "source": "https://whyy.org/articles/vineland-planning-board-approves-data-center-plan/"
     },
     {
@@ -4152,6 +4384,8 @@
       "lng": -79.6942,
       "capacity_mw": null,
       "status": "under_construction",
+      "announcement_date": "2025-06-04",
+      "announcement_date_precision": "day",
       "investment_usd": 10000000000,
       "source": "https://www.datacenterdynamics.com/en/news/amazon-breaks-ground-on-10bn-data-center-complex-in-richmond-county-north-carolina/"
     },
@@ -4168,6 +4402,8 @@
       "lng": -76.1463,
       "capacity_mw": null,
       "status": "planned",
+      "announcement_date": "2024-03-04",
+      "announcement_date_precision": "day",
       "investment_usd": 20000000000,
       "source": "https://www.datacenterdynamics.com/en/news/amazon-to-invest-20bn-in-data-centers-in-pennsylvania/"
     },
@@ -4184,6 +4420,8 @@
       "lng": -83.9666,
       "capacity_mw": null,
       "status": "planned",
+      "announcement_date": "2025-01-07",
+      "announcement_date_precision": "day",
       "investment_usd": 11000000000,
       "source": "https://www.datacenterdynamics.com/en/news/aws-reveals-11bn-data-center-investment-plan-for-georgia/"
     },
@@ -4200,6 +4438,8 @@
       "lng": -76.3055,
       "capacity_mw": 300,
       "status": "planned",
+      "announcement_date": "2025-07-16",
+      "announcement_date_precision": "day",
       "investment_usd": 6000000000,
       "source": "https://www.rcrwireless.com/20250716/ai-infrastructure/coreweave-ai-data"
     },
