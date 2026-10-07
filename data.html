@@ -198,6 +198,7 @@
           <tr><td><code>type</code> · <code>type_label</code></td><td>data_center or bess (+ readable label)</td></tr>
           <tr><td><code>operator</code></td><td>Operating company</td></tr>
           <tr><td><code>city</code> · <code>state</code> · <code>state_name</code></td><td>Location (code + full state name)</td></tr>
+          <tr><td><code>county_name</code> · <code>county_fips</code></td><td>County containing the coordinates (e.g. <code>Loudoun County</code>, <code>51107</code>) — from a point-in-polygon match against the U.S. Census 2024 county boundaries. FIPS is a 5-digit string (keep leading zeros). Blank if the coordinates fall outside every county.</td></tr>
           <tr><td><code>latitude</code> · <code>longitude</code></td><td>Coordinates — exact site for EIA records; city/county centroid for data centers where the site isn't public</td></tr>
           <tr><td><code>capacity_mw</code> · <code>capacity_mwh</code></td><td>Power (MW) and, for batteries, energy (MWh). MWh is reported by EIA for operating sites (99%+ coverage) but not for planned or under-construction projects — expect it blank there.</td></tr>
           <tr><td><code>duration_hours</code></td><td>Derived MWh ÷ MW for batteries</td></tr>

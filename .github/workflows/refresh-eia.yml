@@ -31,6 +31,15 @@ jobs:
           python3 scripts/ingest_eia.py
           echo "source=$(python3 -c 'import json;print(json.load(open("projects.json")).get("eia_source_month","?"))')" >> $GITHUB_OUTPUT
 
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      # ingest_eia.py rebuilds every eia- record, so re-derive counties before the diff.
+      - name: Add county (Census point-in-polygon)
+        run: node scripts/add-county.mjs
+
       - name: Build change log (diff vs. last committed dataset)
         id: changelog
         run: |
@@ -61,6 +70,7 @@ jobs:
             - Pulled EIA-860M file **${{ steps.ingest.outputs.source }}**
             - Re-ingested operating + planned BESS projects
             - Preserved hand-curated entries (ids not starting with `eia-`)
+            - Re-derived `county_name` / `county_fips` from lat/lng (Census 2024 county boundaries)
             - Rebuilt `changelog.json` — **${{ steps.changelog.outputs.summary }}**
             - Regenerated state & operator pages, explore hub, sitemap (stale counts fixed; orphaned operator pages pruned → 301)
 
