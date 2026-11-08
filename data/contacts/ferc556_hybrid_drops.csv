@@ -1,0 +1,52 @@
+docket_number,submission_date,applicant_name,facility_name,state,capacity_mw,energy_input,drop_reason
+QF18-187-002,2026-10-14,"GRP Franklin, LLC",GRP Franklin,GA,59.45,B-O- Biomass-Other,no_battery_term
+QF18-188-002,2026-10-14,"GRP Madison, LLC",GRP Madison,GA,59.45,B-O- Biomass-Other,no_battery_term
+QF19-1330-001,2026-09-24,Chevelon Butte RE LLC,Chevelon Butte RE Facility,AZ,79.61,R-W- Renewable-Wind,no_battery_term
+QF88-142-011,2026-04-20,"Reworld Plymouth, LLC",Reworld Plymouth,PA,28.0,B-MSW- Municipal solid waste,no_battery_term
+QF85-206-009,2026-04-20,Reworld Essex Company,Essex County Resource Recovery Facility,NJ,65.5,B-MSW- Municipal solid waste,no_battery_term
+QF86-124-009,2026-04-20,Reworld Hempstead Company,Reworld Hempstead,NY,76.56,B-MSW- Municipal solid waste,no_battery_term
+QF82-83-010,2026-04-20,"Reworld Niagara I, LLC",Reworld Niagara,NY,37.61,B-MSW- Municipal solid waste,no_battery_term
+QF85-102-009,2026-02-17,"WestRock CP, LLC",Florence Mill,SC,64.6,B-O- Biomass-Other,no_battery_term
+QF26-406-000,2026-01-05,"Broadwing Energy, LLC",Broadwing Energy Center,IL,399.527,F-NG- Fossil-Natural Gas,no_battery_term
+QF86-748-009,2025-10-22,Curtis/Palmer Hydroelectric Company L.P.,Curtis Palmer Facilities,NY,58.32,R-HR- Renewable-Hydro River,no_battery_term
+QF07-213-008,2025-06-18,NGP Blue Mountain I LLC,Blue Mountain Geothermal Project,NV,38.007,G- Geothermal,no_battery_term
+QF25-2-000,2024-10-03,"Farmhouse Solar Project, LLC",Farmhouse Solar Project,NC,80.0,R-SP- Renewable-Solar Photovoltaic,no_battery_term
+QF24-1000-000,2024-09-27,"Elderberry Solar Project, LLC","Elderberry Solar Project, LLC",NC,80.0,R-SP- Renewable-Solar Photovoltaic,no_battery_term
+QF22-724-001,2024-03-28,ORNI 50 LLC,Casa Diablo 4 Project,CA,40.7,G- Geothermal,no_battery_term
+QF24-365-000,2024-02-05,Eco Green Generation LLC,Kalaeloa Clean Energy Power Plant,HI,514.656,F-O- Fossil-Other,no_battery_term
+QF94-142-012,2023-11-13,"LSP-Cottage Grove, L.P.",Cottage Grove Facility,MN,262.0,F-NG- Fossil-Natural Gas,no_battery_term
+QF86-185-010,2023-11-03,Malacha Hydro Limited Partnership,Muck Valley Hydroelectric Project,CA,29.4,R-HR- Renewable-Hydro River,no_battery_term
+QF23-473-000,2023-01-30,ORNI 36 LLC,North Valley Geothermal Project,NV,24.961,G- Geothermal,no_battery_term
+QF14-305-008,2025-12-11,"Innovative Solar 42, LLC",Innovative Solar 42,NC,70.0,R-SP- Renewable-Solar Photovoltaic,battery_negated
+QF24-365-000,2024-02-05,Eco Green Generation LLC,Kalaeloa Clean Energy Power Plant,HI,514.656,F-O- Fossil-Other,non_battery_storage_only
+QF21-396-005,2026-09-28,"AES Kuihelani Solar, LLC",Maui 17-2,HI,77.763,R-SP- Renewable-Solar Photovoltaic,no_bess_sizing:no_bess_sizing
+QF26-1250-000,2026-07-20,Axiom Grid LLC,Axiom Grid Malheur Solar,OR,80.0,R-SP- Renewable-Solar Photovoltaic,no_bess_sizing:no_bess_sizing
+QF24-742-002,2026-07-06,"Waiawa Phase 2 Solar, LLC",Waiawa Phase 2 Solar,HI,30.0,R-SP- Renewable-Solar Photovoltaic,no_bess_sizing:no_bess_sizing
+QF20-474-004,2026-06-04,"CO Buffalo Flats, LLC",CO Buffalo Flats,CO,21.78,R-SP- Renewable-Solar Photovoltaic,no_bess_sizing:no_bess_sizing
+QF19-14-001,2026-05-11,"Buffalo PV1, LLC",Buffalo PV1,SC,68.642,R-SP- Renewable-Solar Photovoltaic,no_bess_sizing:no_bess_sizing
+QF26-807-000,2026-05-06,"Castleberry PV1, LLC",Castleberry PV,AL,75.095,R-SP- Renewable-Solar Photovoltaic,no_bess_sizing:no_bess_sizing
+QF18-1531-001,2026-05-06,"Evergreen PV1, LLC",Evergreen PV1,AL,74.941,R-SP- Renewable-Solar Photovoltaic,no_bess_sizing:no_bess_sizing
+QF25-577-002,2026-03-16,Hale Kuawehi Solar LLC,Hale Kuawehi,HI,47.4835,R-SP- Renewable-Solar Photovoltaic,no_bess_sizing:no_bess_sizing
+QF23-711-002,2026-01-28,"Onaway Solar, LLC","Onaway Solar, LLC",NC,44.31,R-SP- Renewable-Solar Photovoltaic,no_bess_sizing:no_bess_sizing
+QF22-802-002,2026-01-28,"Rain Tree Solar, LLC","Rain Tree Solar, LLC",NC,73.177,R-SP- Renewable-Solar Photovoltaic,no_bess_sizing:no_bess_sizing
+QF11-236-006,2026-01-12,Auwahi Wind Energy LLC,Auwahi Wind,IL,22.086,R-W- Renewable-Wind,no_bess_sizing:no_bess_sizing
+QF17-733-002,2025-10-08,"Sundance Solar, LLC","Sundance Solar, LLC",CO,74.976,R-SP- Renewable-Solar Photovoltaic,no_bess_sizing:no_bess_sizing
+QF25-1342-000,2025-09-23,Fieldstone Solar SC LLC,Fieldstone Solar,SC,74.99,R-SP- Renewable-Solar Photovoltaic,no_bess_sizing:no_bess_sizing
+QF22-796-001,2025-04-30,"Panther Branch Solar, LLC","Panther Branch Solar, LLC",NC,80.0,R-SP- Renewable-Solar Photovoltaic,no_bess_sizing:no_bess_sizing
+QF23-608-002,2024-12-02,"Rango Solar, LLC","Rango Solar, LLC",SC,29.31,R-SP- Renewable-Solar Photovoltaic,no_bess_sizing:no_bess_sizing
+QF23-601-002,2024-12-02,"Gaskin Solar, LLC","Gaskin Solar, LLC",SC,29.31,R-SP- Renewable-Solar Photovoltaic,no_bess_sizing:no_bess_sizing
+QF23-1289-002,2024-12-02,"Fremont Solar, LLC","Fremont Solar, LLC",SC,24.521,R-SP- Renewable-Solar Photovoltaic,no_bess_sizing:no_bess_sizing
+QF14-792-010,2024-10-18,"Enterprise Solar, LLC",Enterprise Solar Plant,UT,78.808,R-SP- Renewable-Solar Photovoltaic,no_bess_sizing:no_bess_sizing
+QF24-998-000,2024-09-26,"Moseley Creek Solar, LLC","Moseley Creek Solar, LLC",NC,70.0,R-SP- Renewable-Solar Photovoltaic,no_bess_sizing:no_bess_sizing
+QF17-1371-004,2024-09-24,"Lone Star Solar, LLC",Lone Star Solar,SC,66.0,R-SP- Renewable-Solar Photovoltaic,no_bess_sizing:no_bess_sizing
+QF21-1048-002,2024-08-27,"Monarch Energy, LLC","Monarch Energy, LLC",SC,71.955,R-SP- Renewable-Solar Photovoltaic,no_bess_sizing:no_bess_sizing
+QF20-409-002,2024-05-22,"Olin Creek Farm Solar, LLC",Olin Creek Farm,NC,35.0,R-SP- Renewable-Solar Photovoltaic,no_bess_sizing:no_bess_sizing
+QF19-1042-001,2023-12-21,"Fresh Air Energy II, LLC",Prairie City PV1,OR,30.0,R-O- Renewable-Other,no_bess_sizing:no_bess_sizing
+QF19-1239-001,2023-12-21,"Fresh Air Energy II, LLC",Moore's Hollow PV1,OR,42.0,R-O- Renewable-Other,no_bess_sizing:no_bess_sizing
+QF17-881-000,2023-10-10,"FRESH AIR ENERGY II, LLC",HAMAKER MOUNTAIN PV1,OR,50.0,R-O- Renewable-Other,no_bess_sizing:no_bess_sizing
+QF23-1321-000,2023-09-29,1802 Solar LLC,1802 Solar,SC,86.346,R-SP- Renewable-Solar Photovoltaic,no_bess_sizing:no_bess_sizing
+QF22-441-001,2023-03-07,"AES Waikoloa Solar, LLC",Big Island Waikoloa,HI,40.503,R-SP- Renewable-Solar Photovoltaic,no_bess_sizing:no_bess_sizing
+QF22-859-002,2025-03-03,"RGP Bowman Solar, LLC",RGP Bowman Solar,GA,78.2,R-SP- Renewable-Solar Photovoltaic,below_storage_mw_floor
+QF21-528-005,2024-07-03,"Lone Cactus Solar, LLC",Lone Cactus Solar,AZ,55.998,R-SP- Renewable-Solar Photovoltaic,below_storage_mw_floor
+QF22-739-001,2023-08-31,"BCE Los Alamitos, LLC","BCE Los Alamitos, LLC",CA,20.0,R-SP- Renewable-Solar Photovoltaic,below_storage_mw_floor
+QF23-1244-000,2023-08-31,"West Grand Ridge Solar, LLC",West Grand Ridge Solar,FL,74.9,R-SP- Renewable-Solar Photovoltaic,below_storage_mw_floor

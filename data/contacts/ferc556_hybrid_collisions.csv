@@ -1,0 +1,10 @@
+ferc_docket,ferc_facility,ferc_applicant,ferc_state,ferc_storage_mw,project_id,reason
+QF23-1217-003,Robeson Solar,"Robeson Solar I, LLC",NC,28.0,eia-68043,proximity_0.22km
+QF23-1217-003,Robeson Solar,"Robeson Solar I, LLC",NC,28.0,eia-68043,name_jaccard_1.00
+QF19-140-004,Lawa'i,"AES Lawa'i Solar, LLC",HI,100.0,eia-61068,proximity_0.41km
+QF19-752-011,Eastover Solar,Eastover Solar LLC,SC,18.0,eia-66717,proximity_0.06km
+QF19-752-011,Eastover Solar,Eastover Solar LLC,SC,18.0,eia-66717,name_jaccard_1.00
+QF10-417-004,Kaheawa Wind Power II,"Kaheawa Wind Power II, LLC",HI,10.0,eia-57082,name_jaccard_1.00
+QF23-860-001,Ocotillo Solar LLC,Ocotillo Solar LLC,CA,50.0,eia-65820,proximity_0.04km
+QF23-860-001,Ocotillo Solar LLC,Ocotillo Solar LLC,CA,50.0,eia-65820,name_jaccard_0.50
+QF23-1318-000,"Timber Mill Solar, LLC","Timber Mill Solar, LLC",NC,32.0,eia-68871,name_jaccard_1.00
