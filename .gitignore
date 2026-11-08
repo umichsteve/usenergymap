@@ -13,3 +13,10 @@ scripts/.weekly_snapshot.json
 
 # Temp render scratch files
 _shot_*.html
+.env.ferc
+
+# Raw FERC downloads (large, re-fetchable)
+data/contacts/raw/
+
+# Matcher output — contains named individuals' phone numbers; keep local only.
+data/contacts/ferc556_matches.csv

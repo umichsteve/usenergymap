@@ -1,0 +1,257 @@
+docket_number,submission_date,applicant_name,facility_name,state,lat,lng,capacity_mw,energy_input,drop_reason
+QF26-1220-000,2026-07-06,Pivot Energy IL 7 LLC,Pivot Energy IL 7 LLC,IL,40.269,-89.237,1.344,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF26-859-000,2026-05-11,"Project Southbridge MA 1, LLC","Project Southbridge MA 1, LLC",MA,42.093,-72.035,1.996,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF26-763-000,2026-05-01,"Kama 1, LLC",Kama 1,CA,38.991,-123.1,1.486,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF87-42-008,2026-03-30,Brookfield White Pine Hydro LLC,Brassua Project No. P-2615,ME,45.66,-69.812,4.1775,R-HR- Renewable-Hydro River,superseded_by_newer_recert
+QF23-1140-001,2026-03-24,"BWC Mill Brook, LLC",BWC Mill Brook,MA,42.644,-72.562,0.951,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF83-193-003,2026-03-18,Black River Limited Partnership,Alverno Hydroelectric Project,MI,45.552,-84.395,1.0895,R-HR- Renewable-Hydro River,superseded_by_newer_recert
+QF16-134-002,2026-03-18,Tower Kleber Limited Partnership,Kleber Hydroelectric Project,MI,45.392,-84.333,1.134,R-HR- Renewable-Hydro River,superseded_by_newer_recert
+QF23-70-001,2026-03-10,Obsidian I West Coast Holding LLC,Santa Ana - Walker,CA,33.74,-117.857,0.0783,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF22-929-001,2026-03-10,Obsidian I West Coast Holding LLC,Santa Ana - Davis,CA,33.757,-117.864,0.1372,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF23-61-001,2026-03-10,Obsidian I West Coast Holding LLC,Santa Ana - Lincoln,CA,33.741,-117.902,0.1839,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF23-71-001,2026-03-10,Obsidian I West Coast Holding LLC,Santa Ana - Martin,CA,33.732,-117.878,0.15780000000000002,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF23-60-001,2026-03-10,Obsidian I West Coast Holding LLC,Santa Ana - Muir,CA,33.763,-117.843,0.18430000000000002,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF23-72-001,2026-03-10,Obsidian I West Coast Holding LLC,Santa Ana - Romero Cruz,CA,33.75,-117.905,0.4021,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF22-928-001,2026-03-10,Obsidian I West Coast Holding LLC,Santa Ana - Spurgeon Admin,CA,33.743,-117.847,0.6632,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF23-73-002,2026-02-20,Obsidian I West Coast Holding LLC,Santa Ana - Villa,CA,33.742,-117.849,0.2747,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF26-436-000,2026-01-20,"SMS CA MG01A, LLC",Trinity Packing Company,CA,36.596,119.451,0.408,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF25-1136-000,2026-01-12,NextGrid Toyon LLC,376 Nash,MA,41.665,-70.936,0.48660000000000003,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF24-899-000,2026-01-08,"Nextgrid Jamaica Caper, LLC",989 Freemans Way,MA,41.737,-70.016,0.9698,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF24-930-003,2025-12-22,"Yorktown NY 1, LLC","Yorktown NY 1, LLC",NY,41.333,-73.859,3.357,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF24-742-001,2025-12-18,"Waiawa Phase 2 Solar, LLC",Waiawa Phase 2 Solar,HI,21.425,-157.99,30.0,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF24-741-001,2025-12-17,"AES Mountain View Solar, LLC",AES Mountain View Solar,HI,21.454,-158.173,8.0979,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF87-42-007,2025-12-12,Brookfield White Pine Hydro LLC,Brassua Project No. P-2615,ME,45.66,-69.812,4.1775,R-HR- Renewable-Hydro River,superseded_by_newer_recert
+QF26-164-000,2025-11-17,Cartwright Solar I LLC,Cartwright Solar I,OR,44.231,-120.947,40.0,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF23-24-001,2025-11-17,"Braley Hill North Solar, LLC",Braley Hill North Solar,MA,41.768,-70.904,4.646,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF23-27-001,2025-11-17,"Snipatuit Road Solar, LLC",Snipatuit Road Solar,MA,41.768,-70.882,3.8455,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF25-577-001,2025-10-22,Hale Kuawehi Solar LLC,Hale Kuawehi,HI,19.938,-155.679,47.4835,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF18-188-001,2025-10-16,"GRP Madison, LLC",GRP Madison,GA,34.041,-83.195,59.45,B-O- Biomass-Other,superseded_by_newer_recert
+QF18-187-001,2025-10-16,"GRP Franklin, LLC",GRP Franklin,GA,34.379,-83.329,59.45,B-O- Biomass-Other,superseded_by_newer_recert
+QF19-1359-001,2025-10-14,Kearsarge William Way LLC,Kearsarge William Way,MA,42.081,-71.493,4.8243,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF21-1240-004,2025-10-02,"IGS KSBD, LLC",IGS KSBD,CA,34.105,-117.235,4.384399999999999,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF25-1314-000,2025-09-15,Phoenix East Coast Holdings II LLC,East Longmeadow Solar,MA,42.055,-72.518,2.832,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF25-1264-000,2025-08-28,"Lepton Solar, LLC",Stockton East Water District,CA,37.963,-121.205,2.6837,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF25-638-001,2025-08-25,"GreenStruxure GGD012, LLC",GSX - Gotham Green,CA,38.514,-121.778,0.937,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF23-579-003,2025-08-19,reNRG AZ 1 LLC,Erimos 2 Solar Project,AZ,35.032,-114.201,79.9225,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF25-1200-000,2025-08-11,Paradise 1 Lahaina LLC,Ritz-Carlton - Kapalua East,HI,21.0,-156.653,0.8912,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF23-824-001,2025-08-11,"BWC Pine Meadow Brook, LLC",BWC Pine Meadow Brook,MA,42.63,-72.478,1.94,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF23-823-001,2025-08-11,"BWC Merriam Brook, LLC",BWC Merriam Brook,MA,42.631,-72.478,2.91,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF17-733-001,2025-08-04,"Sundance Solar, LLC","Sundance Solar, LLC",CO,39.415,-104.448,74.976,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF25-1171-000,2025-07-31,"SCS Van Wyck 012823 Croton on Hudson, LLC",Croton Harmon,NY,41.191,-73.882,3.2238,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF25-1-002,2025-07-01,"Copicut Solar 1, LLC",New Leaf - Copicut,MA,41.773,-71.074,4.91,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF22-418-002,2025-06-09,NextGrid Deer Brush LLC,NexGrid Deer Brush LLC,MA,42.022,-71.342,4.082,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF25-903-000,2025-06-02,AR NY CDG 001 LLC,Spring Street Road,NY,42.847,-76.676,4.865,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF25-899-000,2025-06-02,NextGrid Papaya LLC,342 Circuit,MA,42.109,-70.866,0.9791,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF25-1-001,2025-05-21,"Copicut Solar 1, LLC",New Leaf - Copicut,MA,41.773,-71.074,4.91,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF25-802-000,2025-05-13,Waxmyrtle Solar LLC,Waxmyrtle Solar,MA,42.666,-71.588,2.097,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF18-1388-004,2025-05-05,"MA Solar Storage 1, LLC",Sterling Community Solar + Storage,MA,42.45,-71.742,2.0,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF24-295-002,2025-05-05,Pacifico Power Visalia 01 LLC,Ventura Coastal Visalia 1 Solar Facility,CA,36.463,-119.32,4.082,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF14-305-007,2025-04-30,"Innovative Solar 42, LLC",Innovative Solar 42,NC,34.848,-78.877,70.0,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF18-1273-004,2025-04-29,"HG Solar Development, LLC","HG Solar Development, LLC",MA,42.351,-70.594,7.88,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF82-83-009,2025-04-28,"Reworld Niagara I, LLC",Reworld Niagara,NY,43.082,-79.008,37.61,B-MSW- Municipal solid waste,superseded_by_newer_recert
+QF23-579-002,2025-04-21,reNRG AZ 1 LLC,Erimos 2 Solar Project,AZ,35.032,-114.201,79.9225,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF25-681-000,2025-04-10,"FFP Fund VIII P1 ProjectCo1, LLC",CA - Tehachapi USD - Tehachapi HS (Solar & Storage),CA,35.122,-118.434,0.6925,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF25-638-000,2025-03-26,"GreenStruxure GGD012, LLC",GSX - Gotham Green,CA,38.514,-121.778,0.937,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF23-1005-001,2025-03-26,"BWC Trumble Brook, LLC",BWC Trumble Brook,MA,42.06,-72.898,1.9319000000000002,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF23-1004-001,2025-03-26,"BWC Tillotson Brook, LLC",BWC Tillotson Brook,MA,42.058,-72.882,1.9319000000000002,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF23-1003-001,2025-03-26,"BWC Seymour Brook, LLC",BWC Seymour Brook,MA,42.047,-72.887,1.9319000000000002,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF25-600-000,2025-03-13,ESA Solar Energy LLC,"Bullet BESSolar 1, LLC",CA,34.139,-116.183,0.9962000000000001,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF25-577-000,2025-02-28,Hale Kuawehi Solar LLC,Hale Kuawehi,HI,19.938,-155.679,47.4835,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF22-766-002,2025-02-27,"Fort River Solar 2, LLC","Fort River Solar 2, LLC",MA,42.343,-72.529,3.679,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF20-965-006,2025-02-21,"Old Middleboro Road Solar, LLC",Old Middleboro Road Solar Farm,MA,41.797,-70.827,4.975,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF19-270-006,2025-02-21,"Leicester Street Solar, LLC",Leicester Street Solar Farms,MA,42.217,-72.868,4.732,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF21-53-004,2025-02-21,"Frankland Road Solar, LLC",Frankland Road Solar Farm,MA,42.245,-71.498,4.332,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF18-1980-002,2025-02-21,ZPD-PT Solar Project 2017-040 LLC,Belchertown Ferenz Solar Farm,MA,42.276,-72.372,2.662,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF21-787-003,2025-02-21,"Beaman Road Solar, LLC",Beaman Road Solar Farm,MA,42.251,-72.195,3.817,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF87-447-008,2025-02-11,Reworld Connecticut Company,Southeastern Connecticut Resource Recovery Facility,CT,41.475,-72.068,17.0,B-MSW- Municipal solid waste,superseded_by_newer_recert
+QF88-142-010,2025-02-11,"Reworld Plymouth, LLC",Reworld Plymouth,PA,40.092,-75.317,28.0,B-MSW- Municipal solid waste,superseded_by_newer_recert
+QF86-124-008,2025-02-11,Reworld Hempstead Company,Reworld Hempstead,NY,40.738,-73.59,76.56,B-MSW- Municipal solid waste,superseded_by_newer_recert
+QF85-206-008,2025-02-11,Reworld Essex Company,Essex County Resource Recovery Facility,NJ,40.737,-74.125,65.5,B-MSW- Municipal solid waste,superseded_by_newer_recert
+QF25-490-000,2025-02-07,"Division Road Solar 1, LLC",New Leaf Division,MA,41.563,-71.031,0.973,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF24-203-000,2025-02-04,NextGrid Geiger LLC,401 South,MA,42.464,-73.184,0.499,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF24-203-001,2025-02-04,NextGrid Geiger LLC,401 South,MA,42.464,-73.184,0.499,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF21-1240-003,2025-01-03,"IGS KSBD, LLC",IGS KSBD,CA,34.105,-117.235,6.913399999999999,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF25-294-000,2024-12-13,"RPCA Solar 10, LLC","RPCA Solar 10, LLC",CA,39.182,-123.19,4.0,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF23-711-001,2024-12-02,"Onaway Solar, LLC","Onaway Solar, LLC",NC,34.953,-79.191,44.31,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF87-42-006,2024-11-15,Brookfield White Pine Hydro LLC,Brassua Project No. P-2615,ME,45.66,-69.812,4.1775,R-HR- Renewable-Hydro River,superseded_by_newer_recert
+QF25-80-000,2024-10-30,"FFP Fund VIII P1 ProjectCo10, LLC",City of Fresno - Regional Wastewater Reclamation Facility (Solar & Storage),CA,36.703,-119.891,13.9649,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF25-77-000,2024-10-29,"GreenStruxure BBU006, LLC",GSX Bimbo Oxnard,CA,34.176,-119.167,0.352,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF18-1388-003,2024-10-15,"MA Solar Storage 1, LLC",Sterling Community Solar + Storage,MA,42.45,-71.742,2.0,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF22-517-003,2024-10-08,Attleboro Renewable Energy LLC,Richardson Ave Renewable Energy,MA,41.958,-71.254,4.46,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF24-294-002,2024-10-08,Pacifico Power Tipton 02 LLC,Ventura Coastal Tipton 2 Solar Facility,CA,36.046,-119.318,2.0413,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF24-309-002,2024-10-08,Pacifico Power Tipton 01 LLC,Ventura Coastal Tipton 1 Solar Facility,CA,36.046,-119.32,4.0826,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF25-1-000,2024-10-02,"Copicut Solar 1, LLC",New Leaf - Copicut,MA,41.773,-71.074,4.91,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF23-1217-002,2024-09-30,"Robeson Solar I, LLC",Robeson Solar,NC,34.616,-78.933,80.0,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF23-1301-001,2024-09-27,Seeley Solar LLC,Seeley Solar,SC,34.76,-81.258,66.436,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF82-83-008,2024-09-26,"Reworld Niagara I, LLC",Reworld Niagara,NY,43.082,-79.008,37.61,B-MSW- Municipal solid waste,superseded_by_newer_recert
+QF20-403-005,2024-09-25,"Ring Road Solar, LLC",Ring Road Solar,MA,41.975,-70.781,1.8844,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF20-74-003,2024-09-19,Bernardston Renewable Energy LLC,Bernardston Road Renewable Energy,MA,42.655,-72.557,4.46,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF24-296-002,2024-09-19,Pacifico Power RSM 01 LLC,IMI CCI Solar Facility,CA,33.634,-117.608,0.8661,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF22-291-002,2024-09-18,"Upland Road Solar 1, LLC",Upland,MA,41.964,-70.789,4.8161000000000005,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF24-941-000,2024-09-12,"FFP Fund VIII P1 ProjectCo7, LLC",City of Vacaville - Easterly Wastewater Treatment Plant,CA,38.345,-121.904,3.2611999999999997,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF87-447-007,2024-09-11,Reworld Connecticut Company,Southeastern Connecticut Resource Recovery Facility,CT,41.475,-72.068,17.0,B-MSW- Municipal solid waste,superseded_by_newer_recert
+QF86-124-007,2024-09-11,Reworld Hempstead Company,Reworld Hempstead,NY,40.738,-73.59,76.56,B-MSW- Municipal solid waste,superseded_by_newer_recert
+QF88-142-009,2024-09-11,"Reworld Plymouth, LLC",Reworld Plymouth,PA,40.092,-75.317,28.0,B-MSW- Municipal solid waste,superseded_by_newer_recert
+QF85-206-007,2024-09-11,Reworld Essex Company,Essex County Resource Recovery Facility,NJ,40.737,-74.125,65.5,B-MSW- Municipal solid waste,superseded_by_newer_recert
+QF23-609-002,2024-08-22,"Ridgewood Solar, LLC","Ridgewood Solar, LLC",SC,33.958,-79.941,4.8753,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF23-601-001,2024-08-22,"Gaskin Solar, LLC","Gaskin Solar, LLC",SC,34.464,-79.928,49.31,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF23-1289-001,2024-08-22,"Fremont Solar, LLC","Fremont Solar, LLC",SC,34.366,-80.233,24.521,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF23-608-001,2024-08-22,"Rango Solar, LLC","Rango Solar, LLC",SC,34.721,-79.932,73.1773,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF24-846-000,2024-08-02,Nextgrid Vauquelina LLC,Nextgrid Vauquelina LLC,MA,41.657,-70.946,0.49410000000000004,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF24-845-000,2024-08-02,NextGrid Plum LLC,NextGrid Plum LLC,MA,42.115,-71.237,0.49410000000000004,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF06-163-004,2024-07-31,Collins Hydro LLC,Collins Project,MA,42.157,-72.422,1.43,R-HR- Renewable-Hydro River,superseded_by_newer_recert
+QF23-126-002,2024-07-26,"Wareham MA 3, LLC",Wareham MA 3,MA,41.767,-70.769,6.16,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF19-571-003,2024-07-26,"CED Northampton Solar, LLC",CED Northampton Solar,MA,42.306,-72.703,4.32,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF22-25-002,2024-07-25,"CED Amherst Solar, LLC",UMASS PV Lot 21-22,MA,42.381,-72.533,4.05,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF18-1980-001,2024-07-23,ZPD-PT Solar Project 2017-040 LLC,Belchertown Ferenz Solar Project,MA,42.276,-72.372,2.662,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF24-745-000,2024-07-02,"JACKSON SOLAR 1, LLC","JACKSON SOLAR 1, LLC",NY,43.078,-73.38,4.932,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF24-742-000,2024-06-28,"Waiawa Phase 2 Solar, LLC",Waiawa Phase 2 Solar,HI,21.425,-157.99,32.3389,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF24-741-000,2024-06-28,"AES Mountain View Solar, LLC",AES Mountain View Solar,HI,21.454,-158.173,8.0979,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF14-305-006,2024-06-17,"Innovative Solar 42, LLC",Innovative Solar 42,NC,34.848,-78.877,70.0,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF20-1390-004,2024-06-12,"SCS Nathan Ellis 011282 Falmouth West, LLC",Barnstable - West,MA,41.618,-70.533,3.999,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF20-1389-004,2024-06-12,"SCS Nathan Ellis 011282 Falmouth East, LLC",Barnstable - East,MA,41.618,-70.533,0.998,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF22-862-002,2024-06-12,"Executive Parkway BR8-Q Solar Project 2020, LLC",Bishop Ranch - BR 8 - Q,CA,37.768,-121.968,0.6492,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF21-995-001,2024-06-11,"Bollinger Canyon Road BRY-1 Solar Project 2020, LLC",Bishop Ranch - BR 1-Y,CA,37.759,-121.955,1.058,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF21-1056-001,2024-06-11,"Bollinger Canyon Road BR 1-X Solar Project 2020, LLC",Bishop Ranch - BR 1-X,CA,37.762,-121.958,0.826,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF24-660-000,2024-06-10,BluePath Solar Brockton LLC,Signature Healthcare Brockton Hospital,MA,42.087,-70.991,1.3620999999999999,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF22-517-002,2024-06-04,Attleboro Renewable Energy LLC,Richardson Ave Renewable Energy,MA,41.958,-71.254,4.46,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF20-74-002,2024-06-04,Bernardston Renewable Energy LLC,Bernardston Road Renewable Energy,MA,42.655,-72.557,4.46,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF24-309-001,2024-06-04,Pacifico Power Tipton 01 LLC,Ventura Coastal Tipton 1 Solar Facility,CA,36.046,-119.32,4.0826,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF24-294-001,2024-06-04,Pacifico Power Tipton 02 LLC,Ventura Coastal Tipton 2 Solar Facility,CA,36.046,-119.318,2.0413,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF24-295-001,2024-06-04,Pacifico Power Visalia 01 LLC,Ventura Coastal Visalia 1 Solar Facility,CA,36.463,-119.32,4.082,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF24-296-001,2024-06-04,Pacifico Power RSM 01 LLC,IMI CCI Solar Facility,CA,33.634,-117.608,0.8661,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF19-752-010,2024-05-23,Eastover Solar LLC,Eastover Solar LLC,SC,33.919,-80.647,73.6,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF20-217-006,2024-05-22,"Solar Carver 3, LLC","Solar Carver 3, LLC",MA,41.843,-70.768,1.0,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF19-1572-007,2024-05-22,"Solar Carver 1, LLC","Solar Carver 1, LLC",MA,41.824,-70.753,1.9,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF19-752-009,2024-05-17,Eastover Solar LLC,Eastover Solar LLC,SC,33.919,-80.647,73.6,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF18-292-005,2024-04-23,"Hadley 3 Solar, LLC",Hadley 3,MA,42.357,-72.543,1.9192,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF24-475-000,2024-04-15,"AES Mamm Creek Solar, LLC",Mamm Creek Solar,CO,39.527,-107.698,10.0,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF20-828-003,2024-04-10,"Town of Amherst Solar, LLC","Town of Amherst Solar, LLC",MA,42.357,-72.478,2.4965,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF21-1240-002,2024-04-05,"IGS KSBD, LLC",IGS KSBD,CA,34.105,-117.235,6.913399999999999,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF20-965-005,2024-04-01,"Old Middleboro Road Solar, LLC",Old Middleboro Road Solar Farm,MA,41.797,-70.827,4.805,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF21-787-002,2024-04-01,"Beaman Road Solar, LLC",Beaman Road Solar Farm,MA,42.251,-72.195,3.817,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF21-53-003,2024-04-01,"Frankland Road Solar, LLC",Frankland Road Solar Farm,MA,42.245,-71.498,4.332,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF19-270-004,2024-03-06,"Leicester Street Solar, LLC",Leicester Street Solar Farm,MA,42.217,-71.868,4.732,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF17-1371-003,2024-03-01,"Lone Star Solar, LLC",Lone Star Solar,SC,33.648,-80.639,66.0,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF21-53-002,2024-02-29,"Frankland Road Solar, LLC",Frankland Road Solar Farm,MA,42.245,-71.498,4.332,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF21-787-001,2024-02-29,"Beaman Road Solar, LLC",Beaman Road Solar Farm,MA,42.251,-72.195,3.817,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF83-193-002,2024-02-26,Black River Limited Partnership,Alverno Hydroelectric Project,MI,45.552,-84.395,1.0895,R-HR- Renewable-Hydro River,superseded_by_newer_recert
+QF16-134-001,2024-02-26,Tower Kleber Limited Partnership,Kleber Hydroelectric Project,MI,45.392,-84.333,1.134,R-HR- Renewable-Hydro River,superseded_by_newer_recert
+QF22-377-002,2024-02-15,"Westbound Solar 2, LLC",BYU Hawaii,HI,21.642,-157.926,4.8676,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF20-1390-003,2024-02-14,"SCS Nathan Ellis 011282 Falmouth West, LLC",Barnstable - West,MA,41.618,-70.533,3.999,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF20-1389-003,2024-02-14,"SCS Nathan Ellis 011282 Falmouth East, LLC",Barnstable - East,MA,41.618,-70.533,0.998,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF18-1273-003,2024-02-07,"HG Solar Development, LLC","HG Solar Development, LLC",MA,42.351,-70.594,7.88,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF22-517-001,2024-01-30,Attleboro Renewable Energy LLC,Richardson Ave Renewable Energy,MA,41.958,-71.254,4.46,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF20-74-001,2024-01-30,Bernardston Renewable Energy LLC,Bernardston Road Renewable Energy,MA,42.655,-72.557,4.46,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF24-295-000,2024-01-26,Pacifico Power Visalia 01 LLC,Ventura Coastal Visalia 1 Solar Facility,CA,36.463,-119.32,4.082,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF24-294-000,2024-01-26,Pacifico Power Tipton 02 LLC,Ventura Coastal Tipton 2 Solar Facility,CA,36.046,-119.318,2.0413,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF24-309-000,2024-01-26,Pacifico Power Tipton 01 LLC,Ventura Coastal Tipton 1 Solar Facility,CA,36.046,-119.32,4.0826,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF24-296-000,2024-01-26,Pacifico Power RSM 01 LLC,IMI CCI Solar Facility,CA,33.634,-117.608,0.8661,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF24-314-000,2024-01-22,"Northwest Ohio Solar, LLC",Northwest Ohio Solar + Storage Project,OH,41.017,-84.595,3.15,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF24-288-000,2024-01-11,Pacifico Power Tipton 01 LLC,Ventura Coastal Tipton 1 Solar Facility,CA,36.046,-119.32,4.0826,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF18-1958-003,2024-01-05,ZPD-PT Solar Project 2017-001 LLC,McDougle-Mitchell,MA,42.164,-72.001,6.0748,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF24-255-000,2024-01-04,RPG Energy Group,American Saw & MFG Co,MA,42.053,-72.52,4.946,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF21-1230-001,2024-01-04,NextGrid Sequoia 1 LLC,NextGrid Sequoia 1 LLC,MA,41.77,-70.574,4.939100000000001,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF18-1999-004,2023-12-29,Ryan Road Solar LLC,Orchards,MA,42.263,-72.063,8.584,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF21-396-003,2023-12-28,"AES Kuihelani Solar, LLC",Maui Kuihelani,HI,20.844,-156.485,77.763,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF18-1965-004,2023-12-28,ZPD-PT Solar Project 2017-003 LLC,Partridge Hill,MA,42.118,-71.937,2.6784,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF18-1973-003,2023-12-28,ZPD-PT Solar Project 2017-021,Tetreault,MA,42.102,-72.468,1.6367,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF19-156-003,2023-12-28,"BWC Muddy Brook, LLC",Mendon,MA,42.097,-71.505,0.936,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF18-1961-002,2023-12-28,ZPD-PT Solar Project 2017-014 LLC,Hurteau,MA,42.024,-71.592,1.9184,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF19-140-003,2023-12-28,"AES Lawa'i Solar, LLC",Lawa'i,HI,21.905,-159.49,27.3111,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF20-207-002,2023-12-28,"AES Kekaha Solar, LLC",Kekaha,HI,22.0,-159.762,18.407400000000003,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF21-1073-002,2023-12-28,South Goshen Solar LLC,South Goshen,NY,41.393,-74.348,5.0,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF21-568-002,2023-12-28,"Glenmere Lake Solar, LLC","Glenmere Lake Solar, LLC",NY,41.37,-74.336,1.935,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF18-1969-004,2023-12-28,Particle Wave LLC,West Haydenville PJ,MA,42.383,-72.711,4.95,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF19-568-003,2023-12-28,ZPD-PT Solar Project 2017-038 LLC,Driving Range A (West),MA,42.516,-71.673,6.5371999999999995,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF20-129-003,2023-12-28,"Finchville Solar, LLC",Finchville,NY,41.456,-74.546,6.4401,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF20-132-003,2023-12-28,"RT52 Walden Solar 1, LLC",Walden,NY,41.584,-74.216,5.446,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF19-472-003,2023-12-27,ZPD-PT Solar Project 2017-023 LLC,Remillard,MA,42.078,-72.004,4.2542,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF20-471-003,2023-12-27,"Brookwood Drive Solar 1, LLC",Brookwood Drive,MA,41.59,-71.094,4.9,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF19-665-003,2023-12-27,"Assonet Solar 1, LLC",South Main,MA,41.788,-71.081,11.301,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF19-857-003,2023-12-27,"Bullock Freetown Solar 1, LLC",Bullock Rd,MA,41.747,-71.004,11.59,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF18-1968-003,2023-12-27,ZPD-PT Solar Project 2017-017 LLC,Randall,MA,42.392,-71.661,7.4094,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF19-153-003,2023-12-27,"BWC Lake Ripple, LLC",Grafton,MA,42.221,-71.663,2.0,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF20-997-001,2023-12-26,"Mattapoisett Renewables, LLC",Mattapoisett Renewables,MA,41.693,-70.82,1.4424000000000001,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF22-418-001,2023-12-11,NextGrid Deer Brush LLC,NexGrid Deer Brush LLC,MA,42.022,-71.342,4.082,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF22-291-001,2023-12-05,"Upland Road Solar 1, LLC",Upland,MA,41.964,-70.789,4.8212,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF20-1359-002,2023-12-04,"Westbound Solar, LLC",Pleasanton USD - Amador Valley High School,CA,37.668,-121.873,1.106,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF20-1287-002,2023-12-04,"Westbound Solar 2, LLC",Home Depot Store #1009,CA,37.263,-121.921,0.58,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF23-818-001,2023-12-04,"Westbound Solar 3, LLC",The City of Sierra Madre,CA,34.162,-118.039,0.46,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF22-377-001,2023-12-04,"Westbound Solar 2, LLC",BYU Hawaii,HI,21.642,-157.926,4.8676,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF21-781-001,2023-12-04,"Westbound Solar 2, LLC",Home Depot Store #1705,HI,21.968,-159.382,0.375,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF21-549-001,2023-12-04,"Westbound Solar 2, LLC",Home Depot Store #1706,HI,21.329,-158.089,0.9925,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF21-548-001,2023-12-04,"Westbound Solar 2, LLC",Home Depot Store #1704,HI,19.69,-156.017,0.9925,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF21-547-001,2023-12-04,"Westbound Solar 2, LLC",Home Depot Store #1703,HI,20.877,-156.457,1.0457,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF22-537-002,2023-11-27,"AES West Oahu Solar, LLC",AES West Oahu Solar,HI,21.372,-158.062,13.4309,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF23-772-002,2023-11-22,Adams Solar LLC,Adams Solar LLC,PA,39.889,-77.214,79.805,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF22-862-001,2023-11-07,"Executive Parkway BR8-Q Solar Project 2020, LLC",Bishop Ranch - BR 8 - Q,CA,37.768,-121.968,0.6492,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF21-1165-002,2023-11-06,"Alcosta Boulevard BR 15-AA Solar Project 2020, LLC",Bishop Ranch - BR 15-AA,CA,37.772,-121.958,0.645,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF20-409-001,2023-11-06,"Olin Creek Farm Solar, LLC",Olin Creek Farm,NC,35.911,-80.826,35.0,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF18-1189-006,2023-11-03,"Wolf Pit Branch Solar, LLC","Wolf Pit Branch Solar, LLC",SC,33.741,-81.4,59.799,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF20-217-005,2023-11-02,"Solar Carver 3, LLC","Solar Carver 3, LLC",MA,41.843,-70.768,1.0,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF19-1572-006,2023-11-02,"Solar Carver 1, LLC","Solar Carver 1, LLC",MA,41.824,-70.753,1.9,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF20-66-004,2023-11-01,"Grissom Solar, LLC","Grissom Solar, LLC",NC,36.239,-77.84,5.0,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF19-752-008,2023-11-01,Eastover Solar LLC,Eastover Solar LLC,SC,33.919,-80.647,73.6,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF17-1371-002,2023-10-19,"Lone Star Solar, LLC",Lone Star Solar,SC,33.648,-80.639,66.0,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF19-752-007,2023-10-06,Eastover Solar LLC,Eastover Solar LLC,SC,33.919,-80.647,73.6,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF21-14-002,2023-09-26,ASD Cotuit MA Solar LLC,ASD Cotuit MA Solar LLC,MA,41.689,-70.477,3.0248000000000004,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF21-16-002,2023-09-18,ASD Three Rivers MA Solar LLC,ASD Three Rivers MA Solar LLC,MA,42.169,-72.395,3.878,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF22-766-001,2023-09-18,"Fort River Solar 2, LLC","Fort River Solar 2, LLC",MA,42.343,-72.529,3.679,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF20-437-002,2023-09-14,Oak Hill Solar 2 LLC,Oak Hill Solar 2 LLC,NY,42.728,-74.251,4.73,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF20-435-003,2023-09-14,"Elmbrook Solar, LLC","Elmbrook Solar, LLC",NY,42.558,-73.717,4.73,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF21-53-001,2023-08-30,"Frankland Road Solar, LLC",Frankland Road Solar Farm,MA,42.245,-71.498,4.332,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF23-1232-000,2023-08-29,"APPARENT SOLAR INVESTMENTS X-1, LLC","APPARENT SOLAR INVESTMENTS X-1, LLC",HI,19.692,-155.066,0.5835,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF19-1235-002,2023-08-28,"BWC Greene Brook, LLC","BWC Greene Brook, LLC",MA,41.857,-71.151,1.9562,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF20-1299-001,2023-08-28,"BWC Whitin Reservoir, LLC","BWC Whitin Reservoir, LLC",MA,42.082,-71.771,1.9565,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF20-7-001,2023-08-28,"BWC Dumplin Brook, LLC","BWC Dumplin Brook, LLC",MA,42.192,-72.341,4.8743,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF22-243-003,2023-08-25,"FFP Fund III Lessee10, LLC",South Bay USD - Mendoza ES,CA,32.578,-117.089,0.4845,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF23-1217-000,2023-08-23,"Robeson Solar I, LLC",Robeson Solar,NC,34.625,-78.937,88.48710000000001,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF23-1140-000,2023-07-24,"BWC Mill Brook, LLC","BWC Mill Brook, LLC",MA,42.644,-72.562,0.993,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF20-1198-002,2023-07-20,"Marshall Street Solar, LLC",Marshall Street Solar Project,MA,42.203,-71.476,4.999,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF13-50-005,2023-07-12,"SunE AZ2, LLC",Saddle Mountain Solar,AZ,33.378,-113.183,15.0,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF19-212-004,2023-06-28,"Catalyze Blackstone 83 Federal Street Microgrid, LLC","83 Federal St., Blackstone",MA,42.027,-71.525,4.114,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF20-965-004,2023-06-12,"Old Middleboro Road Solar, LLC",Old Middleboro Road Solar Farm,MA,41.797,-70.827,4.805,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF21-1165-001,2023-06-08,"Alcosta Boulevard BR 15-AA Solar Project 2020, LLC",Bishop Ranch - BR 15-AA,CA,37.772,-121.958,0.645,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF20-1287-001,2023-06-07,"Westbound Solar 2, LLC",Home Depot Store #1009,CA,37.263,-121.921,0.58,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF20-1359-001,2023-06-07,"Westbound Solar, LLC",Pleasanton USD - Amador Valley High School,CA,37.668,-121.873,1.106,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF23-1005-000,2023-06-02,"BWC Trumble Brook, LLC","BWC Trumble Brook, LLC",MA,42.06,-72.898,1.9392,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF23-1004-000,2023-06-02,"BWC Tillotson Brook, LLC","BWC Tillotson Brook, LLC",MA,42.058,-72.882,1.9392,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF23-1003-000,2023-06-02,"BWC Seymour Brook, LLC","BWC Seymour Brook, LLC",MA,42.047,-72.887,1.9392,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF23-73-001,2023-06-02,Obsidian I West Coast Holding LLC,Santa Ana - Villa,CA,33.742,-117.849,0.2747,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF22-533-001,2023-05-10,"Deerfield Renewables, LLC",Deerfield Renewables,MA,42.51,-72.632,0.8067000000000001,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF22-529-001,2023-05-10,"Spruce Street Solar, LLC",Spruce Street Solar,MA,42.479,-71.474,1.0740999999999998,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF22-577-001,2023-05-09,"WeBo Solar Partners, LLC",WeBo Solar,MA,42.444,-71.428,0.945,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF19-1563-002,2023-04-24,"Huxley Solar, LLC","Huxley Solar, LLC",MA,42.2,-72.48,7.7737,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF19-1691-002,2023-04-24,"Beacon Solar, LLC","Beacon Solar, LLC",MA,42.284,-72.677,6.2563,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF21-849-001,2023-04-21,LSE Ophiuchus LLC,Victory Drive Solar,MA,41.718,-70.479,2.015,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF23-860-000,2023-04-18,Ocotillo Solar LLC,Ocotillo Solar LLC,CA,33.075,-116.091,51.0,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF23-859-000,2023-04-18,Warren Farms Solar LLC,Warren Farms Solar,MA,42.485,-73.173,2.615,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF23-772-001,2023-04-17,Adams Solar LLC,Adams Solar LLC,PA,39.889,-77.214,79.805,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF06-163-002,2023-04-17,Dichotomy Collins Hydro LLC,Collins Project,MA,42.157,-72.422,1.43,R-HR- Renewable-Hydro River,superseded_by_newer_recert
+QF23-835-000,2023-04-13,"FFP Fund VII P1 ProjectCo9, LLC",CA - Central Unified School District - Central East High School - Phase 2,CA,36.788,-119.881,0.9519,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF23-834-000,2023-04-13,"FFP Fund VII P1 ProjectCo9, LLC",CA - Central Unified School District - Harvest ES / Stadium / Glacier MS,CA,36.766,-119.971,0.9272,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF23-824-000,2023-04-07,"BWC Pine Meadow Brook, LLC","BWC Pine Meadow Brook, LLC",MA,42.63,-72.478,1.94,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF23-823-000,2023-04-07,"BWC Merriam Brook, LLC","BWC Merriam Brook, LLC",MA,42.631,-72.478,2.91,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF22-25-001,2023-04-06,"CED Amherst Solar, LLC",UMASS PV Lot 22,MA,42.381,-72.533,4.05,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF23-818-000,2023-04-04,"Westbound Solar 3, LLC",The City of Sierra Madre,CA,34.162,-118.039,0.46,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF19-212-003,2023-03-27,"Catalyze Blackstone 83 Federal Street Microgrid, LLC","83 Federal St., Blackstone",MA,42.027,-71.525,4.114,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF23-126-001,2023-03-27,"Wareham MA 3, LLC",Wareham MA 3,MA,41.767,-70.769,6.16,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF23-330-001,2023-03-24,"Fairhaven MA 4, LLC",Fairhaven MA 4,MA,41.668,-70.872,2.0,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF19-571-002,2023-03-24,"CED Northampton Solar, LLC",CED Northampton Solar,MA,42.306,-72.703,4.32,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF21-1212-001,2023-03-10,NextGrid Red Cedar LLC,NextGrid Red Cedar LLC,MA,41.69,-70.01,2.425,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF23-772-000,2023-03-07,Adams Solar LLC,Adams Solar LLC,PA,39.889,-77.214,79.805,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF22-537-001,2023-03-07,"AES West Oahu Solar, LLC",AES West Oahu Solar,HI,21.372,-158.062,13.4309,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF21-396-002,2023-03-07,"AES Kuihelani Solar, LLC",Maui Kuihelani,HI,20.844,-156.485,77.763,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF16-1062-002,2023-02-27,"FRESH AIR ENERGY II, LLC",RIVERTON PV1,WY,43.088,-108.484,74.3757,R-O- Renewable-Other,superseded_by_newer_recert
+QF19-212-002,2023-02-21,"Catalyze Blackstone 83 Federal Street Microgrid, LLC","83 Federal St., Blackstone",MA,42.027,-71.525,4.114,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF19-1316-003,2023-02-16,"Hedges Pond Solar 1, LLC",Hedges Pond Solar 1,MA,41.832,-70.555,1.6038,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF23-630-000,2023-02-06,Ameresco HCE Solar LLC,Ameresco HCE Solar,CO,39.466,-107.235,9.4406,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF21-528-004,2023-02-06,"Lone Cactus Solar, LLC",Lone Cactus Solar,AZ,33.834,-113.881,56.0,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF20-976-001,2023-02-06,"CES Agawam Tuckahoe Solar, LLC","CES Agawam Tuckahoe Solar, LLC",MA,42.059,-72.691,3.6,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF23-176-001,2023-02-02,"FFP Fund VII P1 ProjectCo7, LLC",CA - Grossmont-Cuyamaca CCD - Cuyamaca College,CA,32.746,-116.939,2.3668,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF20-403-003,2023-01-04,"Ring Road Solar, LLC",Ring Road Solar,MA,41.976,-70.783,2.0,R-ST- Renewable-Solar Thermal,superseded_by_newer_recert
+QF23-330-000,2023-01-04,"Fairhaven MA 4, LLC",Fairhaven MA 4,MA,41.668,-70.872,2.0,R-SP- Renewable-Solar Photovoltaic,superseded_by_newer_recert
+QF26-44-000,2025-10-14,"Panama PV, LLC",Elsinore Valley Municipal Water District,CA,33.681,-117.341,1.9414,O- Other Energy Imput,below_mw_floor
+QF25-567-000,2025-02-28,E South Hero Co. LLC,E South Hero,VT,44.666,-73.338,4.998,R-O- Renewable-Other,below_mw_floor
+QF25-563-000,2025-02-27,ER South Street Storage LLC,ER South Street Storage LLC,VT,43.987,-73.176,1.9022999999999999,R-O- Renewable-Other,below_mw_floor
