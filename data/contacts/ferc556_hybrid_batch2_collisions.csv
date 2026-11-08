@@ -1,0 +1,3 @@
+ferc_docket,ferc_facility,ferc_applicant,ferc_state,ferc_storage_mw,project_id,reason
+QF24-475-001,Mamm Creek Solar,"AES Mamm Creek Solar, LLC",CO,10.0,eia-67322,proximity_0.04km
+QF24-475-001,Mamm Creek Solar,"AES Mamm Creek Solar, LLC",CO,10.0,eia-67322,name_jaccard_1.00
