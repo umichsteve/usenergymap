@@ -20,3 +20,4 @@ data/contacts/raw/
 
 # Matcher output — contains named individuals' phone numbers; keep local only.
 data/contacts/ferc556_matches.csv
+data/queues/raw/

@@ -135,6 +135,13 @@
     border-radius: 50%; border: 2px solid #fff;
     box-shadow: 0 0 0 1px rgba(0,0,0,0.4), 0 2px 4px rgba(0,0,0,0.35);
   }
+  /* Hollow ring for county-level (approximate) coordinates — same color as status,
+     but no filled interior to signal "not sited to the parcel yet". */
+  .marker-dot.approx {
+    background: transparent !important;
+    border-width: 3px;
+    box-shadow: 0 0 0 1px rgba(0,0,0,0.4), 0 2px 4px rgba(0,0,0,0.25);
+  }
   .leaflet-popup-content-wrapper {
     background: var(--panel); color: var(--text);
     border-radius: 8px; border: 1px solid var(--border);
@@ -405,6 +412,14 @@
       ? `<div class="popup-row"><span class="k">Investment</span><span class="v">${fmtInvestment(p.investment_usd)}</span></div>` : '';
     const energyRow = p.energy_source && ENERGY_LABEL[p.energy_source]
       ? `<div class="popup-row"><span class="k">Power</span><span class="v">${ENERGY_LABEL[p.energy_source]}</span></div>` : '';
+    const queueRow = p.queue_id && p.iso
+      ? `<div class="popup-row"><span class="k">Queue ID</span><span class="v">${escapeHtml(p.iso)} ${escapeHtml(p.queue_id)}</span></div>` : '';
+    const operatorRow = p.operator
+      ? `<div class="popup-row"><span class="k">Operator</span><span class="v">${escapeHtml(p.operator)}</span></div>` : '';
+    const approxRow = p.location_approximate
+      ? `<div class="popup-row" style="color:var(--muted);font-size:11px;font-style:italic;">County-level location</div>` : '';
+    const asofRow = p.queue_asof
+      ? `<div class="popup-row" style="color:var(--muted);font-size:11px;">Queue data as of ${escapeHtml(p.queue_asof)}</div>` : '';
     const sourceRow = p.source
       ? `<a class="popup-link" href="${escapeHtml(p.source)}" target="_blank" rel="noopener noreferrer">Source ↗</a>` : '';
     const fercDocketRow = p.ferc_docket && p.ferc_docket !== p.source
@@ -412,16 +427,19 @@
     return `
       <div class="popup-title">${escapeHtml(p.name)}</div>
       <div class="popup-sub">${typeLabel} · ${escapeHtml(p.city)}, ${escapeHtml(p.state)}</div>
-      <div class="popup-row"><span class="k">Operator</span><span class="v">${escapeHtml(p.operator || '—')}</span></div>
+      ${operatorRow}
       <div class="popup-row"><span class="k">Capacity</span><span class="v">${p.capacity_mw ? p.capacity_mw.toLocaleString() + ' MW' + mwEst : '—'}</span></div>
       ${mwhRow}
       ${yearRow}
       ${investRow}
       ${energyRow}
+      ${queueRow}
       <div class="popup-row" style="margin-top:6px;">
         <span class="k">Status</span>
         <span class="popup-badge badge-${p.status}">${statusLabel(p.status)}</span>
       </div>
+      ${approxRow}
+      ${asofRow}
       ${sourceRow}
       ${fercDocketRow}
     `;
@@ -431,9 +449,13 @@
     const ring = STATUS_RING[p.status] || '#fff';
     const r = radiusFor(p.capacity_mw);
     const ringStyle = p.status === 'announced' ? 'border-style:dashed;' : '';
+    // Approximate (county-level) rows render as a hollow ring in the STATUS color to signal
+    // that the pin is not sited to the actual parcel yet.
+    const approxCls = p.location_approximate ? ' approx' : '';
+    const bg = p.location_approximate ? 'transparent' : fill;
     const icon = L.divIcon({
       className: '',
-      html: `<div class="marker-dot" style="width:${r * 2}px;height:${r * 2}px;background:${fill};border-color:${ring};${ringStyle}"></div>`,
+      html: `<div class="marker-dot${approxCls}" style="width:${r * 2}px;height:${r * 2}px;background:${bg};border-color:${ring};${ringStyle}"></div>`,
       iconSize: [r * 2, r * 2], iconAnchor: [r, r],
     });
     const marker = L.marker([p.lat, p.lng], { icon });

@@ -1,0 +1,524 @@
+queue_id,iso,queue_name,queue_state,queue_county,queue_mw,queue_status,queue_prop_year,existing_id,existing_name,existing_state,existing_county,existing_mw,existing_status
+1045,CAISO,Chula Vista Energy Center 2,CA,San Diego County,50,planned,2026,eia-55510,Border Hybrid Energy Center,CA,San Diego County,54,operating
+1045,CAISO,Chula Vista Energy Center 2,CA,San Diego County,50,planned,2026,eia-61365,Fallbrook Energy Storage,CA,San Diego County,40,operating
+1045,CAISO,Chula Vista Energy Center 2,CA,San Diego County,50,planned,2026,eia-61661,Vista Energy Storage System,CA,San Diego County,40,operating
+1045,CAISO,Chula Vista Energy Center 2,CA,San Diego County,50,planned,2026,eia-66502,Valley Center 54,CA,San Diego County,54,operating
+1045,CAISO,Chula Vista Energy Center 2,CA,San Diego County,50,planned,2026,eia-67878,Chula Vista Energy Center 2,CA,San Diego County,50,operating
+1045,CAISO,Chula Vista Energy Center 2,CA,San Diego County,50,planned,2026,eia-68509,"Ventasso Energy Storage, LLC",CA,San Diego County,50,operating
+1045,CAISO,Chula Vista Energy Center 2,CA,San Diego County,50,planned,2026,eia-69030,North Johnson Energy Center,CA,San Diego County,50,operating
+1045,CAISO,Chula Vista Energy Center 2,CA,San Diego County,50,planned,2026,eia-68923,Enterprise BESS,CA,San Diego County,54,planned
+1047,CAISO,North Johnson Energy Center,CA,San Diego County,50,planned,2026,eia-55510,Border Hybrid Energy Center,CA,San Diego County,54,operating
+1047,CAISO,North Johnson Energy Center,CA,San Diego County,50,planned,2026,eia-61365,Fallbrook Energy Storage,CA,San Diego County,40,operating
+1047,CAISO,North Johnson Energy Center,CA,San Diego County,50,planned,2026,eia-61661,Vista Energy Storage System,CA,San Diego County,40,operating
+1047,CAISO,North Johnson Energy Center,CA,San Diego County,50,planned,2026,eia-66502,Valley Center 54,CA,San Diego County,54,operating
+1047,CAISO,North Johnson Energy Center,CA,San Diego County,50,planned,2026,eia-67878,Chula Vista Energy Center 2,CA,San Diego County,50,operating
+1047,CAISO,North Johnson Energy Center,CA,San Diego County,50,planned,2026,eia-68509,"Ventasso Energy Storage, LLC",CA,San Diego County,50,operating
+1047,CAISO,North Johnson Energy Center,CA,San Diego County,50,planned,2026,eia-69030,North Johnson Energy Center,CA,San Diego County,50,operating
+1047,CAISO,North Johnson Energy Center,CA,San Diego County,50,planned,2026,eia-68923,Enterprise BESS,CA,San Diego County,54,planned
+1048,CAISO,Escondido Energy Center 2,CA,San Diego County,33,planned,2030,dc-databank-sandiego,DataBank SAN1,CA,San Diego County,25,operating
+1048,CAISO,Escondido Energy Center 2,CA,San Diego County,33,planned,2030,eia-60570,Escondido Energy Storage,CA,San Diego County,30,operating
+1048,CAISO,Escondido Energy Center 2,CA,San Diego County,33,planned,2030,eia-61365,Fallbrook Energy Storage,CA,San Diego County,40,operating
+1048,CAISO,Escondido Energy Center 2,CA,San Diego County,33,planned,2030,eia-61366,Top Gun Energy Storage,CA,San Diego County,30,operating
+1048,CAISO,Escondido Energy Center 2,CA,San Diego County,33,planned,2030,eia-61661,Vista Energy Storage System,CA,San Diego County,40,operating
+1076,CAISO,Willow Springs Solar 3,CA,Kern County,50,planned,2026,eia-64993,"BigBeau Solar, LLC",CA,Kern County,40,operating
+1076,CAISO,Willow Springs Solar 3,CA,Kern County,50,planned,2026,eia-65673,Sanborn BESS 4,CA,Kern County,47,operating
+1076,CAISO,Willow Springs Solar 3,CA,Kern County,50,planned,2026,eia-66890,"SF Azalea, LLC",CA,Kern County,38,operating
+1076,CAISO,Willow Springs Solar 3,CA,Kern County,50,planned,2026,eia-66949,Sagebrush Solar 2 ESS 40,CA,Kern County,40,operating
+1076,CAISO,Willow Springs Solar 3,CA,Kern County,50,planned,2026,eia-66950,Sagebrush Solar 2 ESS 59,CA,Kern County,59,operating
+1076,CAISO,Willow Springs Solar 3,CA,Kern County,50,planned,2026,eia-68035,Syracuse and Tours Renewable Energy,CA,Kern County,40,planned
+1076,CAISO,Willow Springs Solar 3,CA,Kern County,50,planned,2026,eia-70109,Jasmine,CA,Kern County,64,under_construction
+1166,CAISO,Big Rock Solar Farm,CA,Imperial County,200,planned,2025,bess-arevon-eland-2-arevon,Vikings BESS,CA,Imperial County,157,operating
+1166,CAISO,Big Rock Solar Farm,CA,Imperial County,200,planned,2025,eia-64636,Big Rock Solar Farm,CA,Imperial County,200,operating
+1166,CAISO,Big Rock Solar Farm,CA,Imperial County,200,planned,2025,eia-65711,Vikings Energy Farm,CA,Imperial County,150,operating
+1169,CAISO,Fallbrook Energy Storage,CA,San Diego County,69.6,planned,2026,eia-55510,Border Hybrid Energy Center,CA,San Diego County,54,operating
+1169,CAISO,Fallbrook Energy Storage,CA,San Diego County,69.6,planned,2026,eia-66500,Valley Center 85,CA,San Diego County,85,operating
+1169,CAISO,Fallbrook Energy Storage,CA,San Diego County,69.6,planned,2026,eia-66502,Valley Center 54,CA,San Diego County,54,operating
+1169,CAISO,Fallbrook Energy Storage,CA,San Diego County,69.6,planned,2026,eia-64428,JVR Energy Park LLC,CA,San Diego County,70,planned
+1169,CAISO,Fallbrook Energy Storage,CA,San Diego County,69.6,planned,2026,eia-68923,Enterprise BESS,CA,San Diego County,54,planned
+1175,CAISO,Leconte Energy Storage,CA,Imperial County,125,planned,2026,bess-arevon-eland-2-arevon,Vikings BESS,CA,Imperial County,157,operating
+1175,CAISO,Leconte Energy Storage,CA,Imperial County,125,planned,2026,eia-64701,LeConte Energy Storage,CA,Imperial County,125,operating
+1175,CAISO,Leconte Energy Storage,CA,Imperial County,125,planned,2026,eia-65711,Vikings Energy Farm,CA,Imperial County,150,operating
+1175,CAISO,Leconte Energy Storage,CA,Imperial County,125,planned,2026,eia-65980,CED West Side Canal Battery Storage,CA,Imperial County,131,operating
+1175,CAISO,Leconte Energy Storage,CA,Imperial County,125,planned,2026,eia-68909,Imperial Sun Solar,CA,Imperial County,100,planned
+1217,CAISO,Willow Springs Solar 4,CA,Kern County,75,planned,2026,eia-60233,RE Garland,CA,Kern County,88,operating
+1217,CAISO,Willow Springs Solar 4,CA,Kern County,75,planned,2026,eia-64712,Sanborn BESS 1,CA,Kern County,100,operating
+1217,CAISO,Willow Springs Solar 4,CA,Kern County,75,planned,2026,eia-64713,Sanborn BESS 2,CA,Kern County,100,operating
+1217,CAISO,Willow Springs Solar 4,CA,Kern County,75,planned,2026,eia-64864,Chaparral Springs,CA,Kern County,88,operating
+1217,CAISO,Willow Springs Solar 4,CA,Kern County,75,planned,2026,eia-65664,Sandrini Solar 100,CA,Kern County,95,operating
+1217,CAISO,Willow Springs Solar 4,CA,Kern County,75,planned,2026,eia-65933,Sagebrush ESS,CA,Kern County,80,operating
+1217,CAISO,Willow Springs Solar 4,CA,Kern County,75,planned,2026,eia-66773,Raceway Solar & Storage,CA,Kern County,80,operating
+1217,CAISO,Willow Springs Solar 4,CA,Kern County,75,planned,2026,eia-66950,Sagebrush Solar 2 ESS 59,CA,Kern County,59,operating
+1217,CAISO,Willow Springs Solar 4,CA,Kern County,75,planned,2026,eia-67039,"Northern Orchard Solar PV, LLC",CA,Kern County,92,operating
+1217,CAISO,Willow Springs Solar 4,CA,Kern County,75,planned,2026,eia-67093,Mojave 16/17/18 BESS,CA,Kern County,77,operating
+1217,CAISO,Willow Springs Solar 4,CA,Kern County,75,planned,2026,eia-69858,Pastoria Power Bank,CA,Kern County,80,operating
+1217,CAISO,Willow Springs Solar 4,CA,Kern County,75,planned,2026,eia-70109,Jasmine,CA,Kern County,64,under_construction
+1339,CAISO,Tahoe,NV,Clark County,300,planned,2026,bess-gemini,Gemini Solar + Storage,NV,Clark County,380,operating
+1339,CAISO,Tahoe,NV,Clark County,300,planned,2026,dc-google-henderson,Google Henderson,NV,Clark County,350,operating
+1339,CAISO,Tahoe,NV,Clark County,300,planned,2026,eia-63352,Gemini Solar Hybrid,NV,Clark County,380,operating
+1339,CAISO,Tahoe,NV,Clark County,300,planned,2026,eia-67736,Silver Peak,NV,Clark County,279,operating
+1339,CAISO,Tahoe,NV,Clark County,300,planned,2026,eia-63113,Southern Bighorn Solar Hybrid,NV,Clark County,300,planned
+1339,CAISO,Tahoe,NV,Clark County,300,planned,2026,eia-63841,Arida Solar (Hybrid),NV,Clark County,370,planned
+1339,CAISO,Tahoe,NV,Clark County,300,planned,2026,eia-68209,Purple Sage Energy Center,NV,Clark County,400,planned
+1339,CAISO,Tahoe,NV,Clark County,300,planned,2026,eia-68813,Vitex Storage,NV,Clark County,300,planned
+1347,CAISO,Roccasecca Bess,NV,Clark County,303,planned,2026,bess-gemini,Gemini Solar + Storage,NV,Clark County,380,operating
+1347,CAISO,Roccasecca Bess,NV,Clark County,303,planned,2026,dc-google-henderson,Google Henderson,NV,Clark County,350,operating
+1347,CAISO,Roccasecca Bess,NV,Clark County,303,planned,2026,eia-63352,Gemini Solar Hybrid,NV,Clark County,380,operating
+1347,CAISO,Roccasecca Bess,NV,Clark County,303,planned,2026,eia-67736,Silver Peak,NV,Clark County,279,operating
+1347,CAISO,Roccasecca Bess,NV,Clark County,303,planned,2026,eia-63113,Southern Bighorn Solar Hybrid,NV,Clark County,300,planned
+1347,CAISO,Roccasecca Bess,NV,Clark County,303,planned,2026,eia-63841,Arida Solar (Hybrid),NV,Clark County,370,planned
+1347,CAISO,Roccasecca Bess,NV,Clark County,303,planned,2026,eia-68209,Purple Sage Energy Center,NV,Clark County,400,planned
+1347,CAISO,Roccasecca Bess,NV,Clark County,303,planned,2026,eia-68813,Vitex Storage,NV,Clark County,300,planned
+1454,CAISO,Hummingbird Energy Storage,CA,Santa Clara County,75,planned,2025,dc-stack-sanjose,Stack Infrastructure San Jose,CA,Santa Clara County,80,operating
+1454,CAISO,Hummingbird Energy Storage,CA,Santa Clara County,75,planned,2025,eia-65395,Hummingbird Energy Storage LLC,CA,Santa Clara County,75,operating
+1461,CAISO,Reclaimed Wind,CA,Alameda County,114.4,planned,2026,eia-66678,Aramis I Solar Project,CA,Alameda County,100,under_construction
+1479,CAISO,Key Storage 1,CA,Fresno County,309.3,planned,2026,bess-westlands,Westlands Solar + Storage,CA,Fresno County,250,under_construction
+1479,CAISO,Key Storage 1,CA,Fresno County,309.3,planned,2026,bess-edf-bigsun,Big Sun BESS,CA,Fresno County,250,under_construction
+1479,CAISO,Key Storage 1,CA,Fresno County,309.3,planned,2026,eia-68461,Key Energy Storage,CA,Fresno County,300,under_construction
+1479,CAISO,Key Storage 1,CA,Fresno County,309.3,planned,2026,eia-69661,Darden I Solar,CA,Fresno County,304,planned
+1479,CAISO,Key Storage 1,CA,Fresno County,309.3,planned,2026,eia-69662,Darden II Solar,CA,Fresno County,304,planned
+1479,CAISO,Key Storage 1,CA,Fresno County,309.3,planned,2026,eia-69663,Darden III Solar,CA,Fresno County,304,planned
+1479,CAISO,Key Storage 1,CA,Fresno County,309.3,planned,2026,eia-69664,Darden IV Solar,CA,Fresno County,304,planned
+1539,CAISO,Irving Storage,CA,Monterey County,782.79,planned,2025,bess-moss-landing,Moss Landing Energy Storage Facility,CA,Monterey County,750,operating
+1557,CAISO,Noosa Energy Storage,CA,San Joaquin County,99,planned,2029,eia-66208,North Central Valley,CA,San Joaquin County,132,operating
+1557,CAISO,Noosa Energy Storage,CA,San Joaquin County,99,planned,2029,eia-64531,Noosa Energy Storage LLC,CA,San Joaquin County,99,under_construction
+1608,CAISO,Avocet Storage,CA,Los Angeles County,200,planned,2026,eia-65457,Cathode (Hinson) BESS,CA,Los Angeles County,200,operating
+1611,CAISO,Commerce Energy Storage,CA,Los Angeles County,250,planned,2026,eia-65457,Cathode (Hinson) BESS,CA,Los Angeles County,200,operating
+1615,CAISO,Kestrel Storage,CA,Los Angeles County,200,planned,2027,eia-65457,Cathode (Hinson) BESS,CA,Los Angeles County,200,operating
+1629,CAISO,Humidor Storage 1,CA,Los Angeles County,305,planned,2028,eia-69508,Marici,CA,Los Angeles County,400,under_construction
+1629,CAISO,Humidor Storage 1,CA,Los Angeles County,305,planned,2028,eia-69509,Gabriel,CA,Los Angeles County,400,under_construction
+1645,CAISO,Menifee Power Bank,CA,Riverside County,680,planned,2025,bess-menifee,Menifee Power Bank,CA,Riverside County,680,operating
+1645,CAISO,Menifee Power Bank,CA,Riverside County,680,planned,2025,eia-68758,Easley Solar,CA,Riverside County,650,planned
+1646,CAISO,Double Butte Storage,CA,Riverside County,507.6,planned,2030,eia-68758,Easley Solar,CA,Riverside County,650,planned
+1646,CAISO,Double Butte Storage,CA,Riverside County,507.6,planned,2030,eia-64290,"SE Athos II, LLC",CA,Riverside County,402,under_construction
+1646,CAISO,Double Butte Storage,CA,Riverside County,507.6,planned,2030,eia-66805,Lycan Solar Project,CA,Riverside County,400,planned
+1662,CAISO,Ventasso Energy Storage,CA,San Diego County,50.774,planned,2026,eia-55510,Border Hybrid Energy Center,CA,San Diego County,54,operating
+1662,CAISO,Ventasso Energy Storage,CA,San Diego County,50.774,planned,2026,eia-61365,Fallbrook Energy Storage,CA,San Diego County,40,operating
+1662,CAISO,Ventasso Energy Storage,CA,San Diego County,50.774,planned,2026,eia-61661,Vista Energy Storage System,CA,San Diego County,40,operating
+1662,CAISO,Ventasso Energy Storage,CA,San Diego County,50.774,planned,2026,eia-66502,Valley Center 54,CA,San Diego County,54,operating
+1662,CAISO,Ventasso Energy Storage,CA,San Diego County,50.774,planned,2026,eia-67878,Chula Vista Energy Center 2,CA,San Diego County,50,operating
+1662,CAISO,Ventasso Energy Storage,CA,San Diego County,50.774,planned,2026,eia-68509,"Ventasso Energy Storage, LLC",CA,San Diego County,50,operating
+1662,CAISO,Ventasso Energy Storage,CA,San Diego County,50.774,planned,2026,eia-69030,North Johnson Energy Center,CA,San Diego County,50,operating
+1662,CAISO,Ventasso Energy Storage,CA,San Diego County,50.774,planned,2026,eia-68923,Enterprise BESS,CA,San Diego County,54,planned
+1673,CAISO,Nighthawk Storage,CA,San Diego County,300,planned,2026,eia-63834,Gateway Energy Storage System,CA,San Diego County,250,operating
+1673,CAISO,Nighthawk Storage,CA,San Diego County,300,planned,2026,eia-65889,"Nighthawk Energy Storage, LLC",CA,San Diego County,300,operating
+1690,CAISO,Denali Energy Storage,CA,San Joaquin County,102,planned,2028,eia-66208,North Central Valley,CA,San Joaquin County,132,operating
+1690,CAISO,Denali Energy Storage,CA,San Joaquin County,102,planned,2028,eia-64531,Noosa Energy Storage LLC,CA,San Joaquin County,99,under_construction
+1758,CAISO,Desert Sands,CA,Riverside County,300,planned,2035,bess-crimson,Crimson Storage,CA,Riverside County,350,operating
+1758,CAISO,Desert Sands,CA,Riverside County,300,planned,2035,bess-mccoy,McCoy Solar + Storage,CA,Riverside County,230,operating
+1758,CAISO,Desert Sands,CA,Riverside County,300,planned,2035,eia-65140,Crimson,CA,Riverside County,350,operating
+1758,CAISO,Desert Sands,CA,Riverside County,300,planned,2035,eia-65857,Sunlight Storage,CA,Riverside County,230,operating
+1758,CAISO,Desert Sands,CA,Riverside County,300,planned,2035,eia-65987,Desert Peak Energy Storage I,CA,Riverside County,325,operating
+1758,CAISO,Desert Sands,CA,Riverside County,300,planned,2035,eia-66575,Sunlight Storage II,CA,Riverside County,230,operating
+1758,CAISO,Desert Sands,CA,Riverside County,300,planned,2035,eia-66805,Lycan Solar Project,CA,Riverside County,400,planned
+1796,CAISO,Delamar Energy Storage,NV,Clark County,256.29,planned,2027,eia-67734,Silver State South Storage,NV,Clark County,200,operating
+1796,CAISO,Delamar Energy Storage,NV,Clark County,256.29,planned,2027,eia-67736,Silver Peak,NV,Clark County,279,operating
+1796,CAISO,Delamar Energy Storage,NV,Clark County,256.29,planned,2027,eia-63113,Southern Bighorn Solar Hybrid,NV,Clark County,300,planned
+1796,CAISO,Delamar Energy Storage,NV,Clark County,256.29,planned,2027,eia-66908,Bonanza Solar and Storage Project,NV,Clark County,195,planned
+1796,CAISO,Delamar Energy Storage,NV,Clark County,256.29,planned,2027,eia-68813,Vitex Storage,NV,Clark County,300,planned
+1810,CAISO,East Field Energy Storage,CA,San Diego County,312.96,planned,2030,eia-63834,Gateway Energy Storage System,CA,San Diego County,250,operating
+1810,CAISO,East Field Energy Storage,CA,San Diego County,312.96,planned,2030,eia-65889,"Nighthawk Energy Storage, LLC",CA,San Diego County,300,operating
+1866,CAISO,Tokay Storage,CA,Santa Clara County,101.888,planned,2030,dc-stack-sanjose,Stack Infrastructure San Jose,CA,Santa Clara County,80,operating
+1896,CAISO,Pathfinder Storage,CA,San Joaquin County,268.065,planned,2031,eia-69654,Zeus BESS,CA,San Joaquin County,214,planned
+1914,CAISO,Black Diamond Es2,CA,Contra Costa County,179.4,planned,2031,bess-diablo-tehama,Diablo BESS,CA,Contra Costa County,200,operating
+1914,CAISO,Black Diamond Es2,CA,Contra Costa County,179.4,planned,2031,eia-62175,Diablo Energy Storage,CA,Contra Costa County,200,operating
+1920,CAISO,Zeus Bess,CA,San Joaquin County,213.55,planned,2031,eia-69654,Zeus BESS,CA,San Joaquin County,214,planned
+1922,CAISO,Alta Casa Storage,CA,San Joaquin County,515.418,planned,2031,eia-67680,Kola Energy Center,CA,San Joaquin County,400,operating
+1930,CAISO,Apache Storage,CA,Fresno County,203.699,planned,2029,bess-westlands,Westlands Solar + Storage,CA,Fresno County,250,under_construction
+1930,CAISO,Apache Storage,CA,Fresno County,203.699,planned,2029,bess-edf-bigsun,Big Sun BESS,CA,Fresno County,250,under_construction
+1973,CAISO,Peaceful Hollow Bess,CA,Fresno County,100,planned,2028,bess-coalinga,Coalinga BESS,CA,Fresno County,100,operating
+1973,CAISO,Peaceful Hollow Bess,CA,Fresno County,100,planned,2028,eia-66659,Acid BESS,CA,Fresno County,97,operating
+1973,CAISO,Peaceful Hollow Bess,CA,Fresno County,100,planned,2028,eia-68925,Midway BESS,CA,Fresno County,125,under_construction
+2001,CAISO,Serena Storage,CA,Kern County,114.264,planned,2029,bess-big-beau,Big Beau BESS,CA,Kern County,128,operating
+2001,CAISO,Serena Storage,CA,Kern County,114.264,planned,2029,eia-60233,RE Garland,CA,Kern County,88,operating
+2001,CAISO,Serena Storage,CA,Kern County,114.264,planned,2029,eia-63859,"Golden Field Solar III, LLC",CA,Kern County,147,operating
+2001,CAISO,Serena Storage,CA,Kern County,114.264,planned,2029,eia-64712,Sanborn BESS 1,CA,Kern County,100,operating
+2001,CAISO,Serena Storage,CA,Kern County,114.264,planned,2029,eia-64713,Sanborn BESS 2,CA,Kern County,100,operating
+2001,CAISO,Serena Storage,CA,Kern County,114.264,planned,2029,eia-64864,Chaparral Springs,CA,Kern County,88,operating
+2001,CAISO,Serena Storage,CA,Kern County,114.264,planned,2029,eia-65591,AVEP BESS,CA,Kern County,126,operating
+2001,CAISO,Serena Storage,CA,Kern County,114.264,planned,2029,eia-65664,Sandrini Solar 100,CA,Kern County,95,operating
+2001,CAISO,Serena Storage,CA,Kern County,114.264,planned,2029,eia-66666,Tumbleweed Energy Storage,CA,Kern County,125,operating
+2001,CAISO,Serena Storage,CA,Kern County,114.264,planned,2029,eia-67039,"Northern Orchard Solar PV, LLC",CA,Kern County,92,operating
+2001,CAISO,Serena Storage,CA,Kern County,114.264,planned,2029,eia-67764,Rosamond South 1,CA,Kern County,117,operating
+2001,CAISO,Serena Storage,CA,Kern County,114.264,planned,2029,eia-64215,Aratina Solar Center 2,CA,Kern County,113,under_construction
+2001,CAISO,Serena Storage,CA,Kern County,114.264,planned,2029,eia-69648,Rosamond South II,CA,Kern County,140,under_construction
+2039,CAISO,Sandrift Storage 1,CA,Riverside County,254.77,planned,2030,bess-mccoy,McCoy Solar + Storage,CA,Riverside County,230,operating
+2039,CAISO,Sandrift Storage 1,CA,Riverside County,254.77,planned,2030,bess-crimson2,Crimson 2 BESS,CA,Riverside County,200,planned
+2039,CAISO,Sandrift Storage 1,CA,Riverside County,254.77,planned,2030,eia-65857,Sunlight Storage,CA,Riverside County,230,operating
+2039,CAISO,Sandrift Storage 1,CA,Riverside County,254.77,planned,2030,eia-65987,Desert Peak Energy Storage I,CA,Riverside County,325,operating
+2039,CAISO,Sandrift Storage 1,CA,Riverside County,254.77,planned,2030,eia-66575,Sunlight Storage II,CA,Riverside County,230,operating
+2041,CAISO,Sandrift Storage 2,CA,Riverside County,254.77,planned,2031,bess-mccoy,McCoy Solar + Storage,CA,Riverside County,230,operating
+2041,CAISO,Sandrift Storage 2,CA,Riverside County,254.77,planned,2031,bess-crimson2,Crimson 2 BESS,CA,Riverside County,200,planned
+2041,CAISO,Sandrift Storage 2,CA,Riverside County,254.77,planned,2031,eia-65857,Sunlight Storage,CA,Riverside County,230,operating
+2041,CAISO,Sandrift Storage 2,CA,Riverside County,254.77,planned,2031,eia-65987,Desert Peak Energy Storage I,CA,Riverside County,325,operating
+2041,CAISO,Sandrift Storage 2,CA,Riverside County,254.77,planned,2031,eia-66575,Sunlight Storage II,CA,Riverside County,230,operating
+2059,CAISO,J90 Energy Storage,CA,Los Angeles County,261,planned,2033,eia-65457,Cathode (Hinson) BESS,CA,Los Angeles County,200,operating
+2062,CAISO,Dorian Storage,CA,Los Angeles County,213.5926,planned,2034,eia-65457,Cathode (Hinson) BESS,CA,Los Angeles County,200,operating
+2064,CAISO,Elion Energy Storage,CA,Los Angeles County,302.4,planned,2034,eia-69508,Marici,CA,Los Angeles County,400,under_construction
+2064,CAISO,Elion Energy Storage,CA,Los Angeles County,302.4,planned,2034,eia-69509,Gabriel,CA,Los Angeles County,400,under_construction
+2082,CAISO,Electron,CA,Los Angeles County,300,planned,2033,eia-69508,Marici,CA,Los Angeles County,400,under_construction
+2082,CAISO,Electron,CA,Los Angeles County,300,planned,2033,eia-69509,Gabriel,CA,Los Angeles County,400,under_construction
+2089,CAISO,Greasewood Energy Storage,CA,Kern County,513.2,planned,2033,eia-64210,Bellefield Solar and Energy Storage Farm,CA,Kern County,500,operating
+2089,CAISO,Greasewood Energy Storage,CA,Kern County,513.2,planned,2033,eia-64209,Bellefield 2 Solar & Energy Storage Farm,CA,Kern County,500,under_construction
+2105,CAISO,Conduit Energy Storage,CA,San Bernardino County,512.58,planned,2031,bess-roadhouse,Roadhouse Energy Storage,CA,San Bernardino County,600,under_construction
+2113,CAISO,Gabriel Storage,CA,Los Angeles County,405.750886,planned,2033,eia-69508,Marici,CA,Los Angeles County,400,under_construction
+2113,CAISO,Gabriel Storage,CA,Los Angeles County,405.750886,planned,2033,eia-69509,Gabriel,CA,Los Angeles County,400,under_construction
+2116,CAISO,Marici,CA,Los Angeles County,405.514808,planned,2031,eia-69508,Marici,CA,Los Angeles County,400,under_construction
+2116,CAISO,Marici,CA,Los Angeles County,405.514808,planned,2031,eia-69509,Gabriel,CA,Los Angeles County,400,under_construction
+2121,CAISO,Greenwood Energy Storage,CA,Los Angeles County,252,planned,2032,eia-65457,Cathode (Hinson) BESS,CA,Los Angeles County,200,operating
+2124,CAISO,Tabla Energy Storage,CA,Los Angeles County,302.4,planned,2032,eia-69508,Marici,CA,Los Angeles County,400,under_construction
+2124,CAISO,Tabla Energy Storage,CA,Los Angeles County,302.4,planned,2032,eia-69509,Gabriel,CA,Los Angeles County,400,under_construction
+2129,CAISO,Los Nietos,CA,Orange County,102.26,planned,2031,eia-63843,"Johanna Energy Center, LLC",CA,Orange County,80,operating
+2136,CAISO,Haven Storage,CA,Los Angeles County,312.96,planned,2031,eia-69508,Marici,CA,Los Angeles County,400,under_construction
+2136,CAISO,Haven Storage,CA,Los Angeles County,312.96,planned,2031,eia-69509,Gabriel,CA,Los Angeles County,400,under_construction
+2139,CAISO,Commerce Energy Storage 3,CA,Los Angeles County,256.29,planned,2031,eia-65457,Cathode (Hinson) BESS,CA,Los Angeles County,200,operating
+2173,CAISO,Desert Jewel Storage,CA,San Diego County,206.31,planned,2029,eia-63834,Gateway Energy Storage System,CA,San Diego County,250,operating
+2173,CAISO,Desert Jewel Storage,CA,San Diego County,206.31,planned,2029,eia-66286,Peregrine Energy Storage LLC,CA,San Diego County,200,operating
+72,CAISO,Lake Elsinore Advanced Pumped Storage Project,CA,Riverside County,500,planned,2028,eia-68758,Easley Solar,CA,Riverside County,650,planned
+72,CAISO,Lake Elsinore Advanced Pumped Storage Project,CA,Riverside County,500,planned,2028,eia-64290,"SE Athos II, LLC",CA,Riverside County,402,under_construction
+72,CAISO,Lake Elsinore Advanced Pumped Storage Project,CA,Riverside County,500,planned,2028,eia-66805,Lycan Solar Project,CA,Riverside County,400,planned
+186466,Southeast,"Southeast queue 186466 (Gaston, NC)",NC,Gaston County,50,under_construction,2025,eia-69171,Allen 1 Battery Energy Storage System,NC,Gaston County,50,operating
+327,Southeast,"Southeast queue 327 (Citrus, FL)",FL,Citrus County,100,under_construction,2027,eia-69356,Powerline Energy Storage,FL,Citrus County,100,under_construction
+191894,Southeast,"Southeast queue 191894 (Buncombe, NC)",NC,Buncombe County,30.5,under_construction,2026,eia-69404,Craggy Energy Storage,NC,Buncombe County,30,under_construction
+38056,Southeast,"Southeast queue 38056 (Wake, NC)",NC,Wake County,100,planned,,eia-69023,Knightdale Battery,NC,Wake County,100,operating
+566170,Southeast,"Southeast queue 566170 (Wake, NC)",NC,Wake County,56,planned,2026,eia-69119,New Hill 1 Battery,NC,Wake County,56,under_construction
+LG-24-3-5,West,Co200B,TX,El Paso County,200,planned,2027,eia-70034,"Evlou Solar, LLC",TX,El Paso County,250,under_construction
+639,West,"West queue 639 (Ada, ID)",ID,Ada County,150,planned,2026,eia-67549,Kuna BESS,ID,Ada County,150,operating
+639,West,"West queue 639 (Ada, ID)",ID,Ada County,150,planned,2026,eia-68799,Boise Bench BESS,ID,Ada County,150,operating
+1115,ISO-NE,Hecate Energy Eastern Ave Energy Center,MA,Suffolk County,250,planned,2026,eia-69721,Energizar BESS,MA,Suffolk County,250,planned
+1148,ISO-NE,Lite Brite Battery Storage,MA,Suffolk County,305.623992919921,planned,2028,eia-69721,Energizar BESS,MA,Suffolk County,250,planned
+1320,ISO-NE,Battery Storage,MA,Worcester County,203.949996948242,planned,2027,eia-69723,Taft BESS,MA,Worcester County,200,under_construction
+844,ISO-NE,Medway Grid Battery Storage,MA,Norfolk County,250,planned,2025,eia-69720,Medway Grid,MA,Norfolk County,250,operating
+J1635,MISO,"MISO queue J1635 (Branch, MI)",MI,Branch County,100,planned,2025,eia-68424,Tibbits Energy Storage,MI,Branch County,105,operating
+J1659,MISO,"MISO queue J1659 (Washtenaw, MI)",MI,Washtenaw County,100,under_construction,2025,eia-68426,Voyager Energy Storage,MI,Washtenaw County,100,under_construction
+Company 211,West,"West queue Company 211 (Clark, NV)",NV,Clark County,220,planned,2029,eia-67734,Silver State South Storage,NV,Clark County,200,operating
+Company 211,West,"West queue Company 211 (Clark, NV)",NV,Clark County,220,planned,2029,eia-67736,Silver Peak,NV,Clark County,279,operating
+Company 211,West,"West queue Company 211 (Clark, NV)",NV,Clark County,220,planned,2029,eia-66908,Bonanza Solar and Storage Project,NV,Clark County,195,planned
+Company 237,West,"West queue Company 237 (Clark, NV)",NV,Clark County,250,planned,2026,eia-67734,Silver State South Storage,NV,Clark County,200,operating
+Company 237,West,"West queue Company 237 (Clark, NV)",NV,Clark County,250,planned,2026,eia-67736,Silver Peak,NV,Clark County,279,operating
+Company 237,West,"West queue Company 237 (Clark, NV)",NV,Clark County,250,planned,2026,eia-63113,Southern Bighorn Solar Hybrid,NV,Clark County,300,planned
+Company 237,West,"West queue Company 237 (Clark, NV)",NV,Clark County,250,planned,2026,eia-66908,Bonanza Solar and Storage Project,NV,Clark County,195,planned
+Company 237,West,"West queue Company 237 (Clark, NV)",NV,Clark County,250,planned,2026,eia-68813,Vitex Storage,NV,Clark County,300,planned
+Company 242,West,"West queue Company 242 (Clark, NV)",NV,Clark County,350,planned,2028,bess-gemini,Gemini Solar + Storage,NV,Clark County,380,operating
+Company 242,West,"West queue Company 242 (Clark, NV)",NV,Clark County,350,planned,2028,dc-google-henderson,Google Henderson,NV,Clark County,350,operating
+Company 242,West,"West queue Company 242 (Clark, NV)",NV,Clark County,350,planned,2028,eia-63352,Gemini Solar Hybrid,NV,Clark County,380,operating
+Company 242,West,"West queue Company 242 (Clark, NV)",NV,Clark County,350,planned,2028,eia-67736,Silver Peak,NV,Clark County,279,operating
+Company 242,West,"West queue Company 242 (Clark, NV)",NV,Clark County,350,planned,2028,eia-63113,Southern Bighorn Solar Hybrid,NV,Clark County,300,planned
+Company 242,West,"West queue Company 242 (Clark, NV)",NV,Clark County,350,planned,2028,eia-63841,Arida Solar (Hybrid),NV,Clark County,370,planned
+Company 242,West,"West queue Company 242 (Clark, NV)",NV,Clark County,350,planned,2028,eia-68209,Purple Sage Energy Center,NV,Clark County,400,planned
+Company 242,West,"West queue Company 242 (Clark, NV)",NV,Clark County,350,planned,2028,eia-68813,Vitex Storage,NV,Clark County,300,planned
+Company 248,West,"West queue Company 248 (Clark, NV)",NV,Clark County,200,planned,2030,eia-67734,Silver State South Storage,NV,Clark County,200,operating
+Company 248,West,"West queue Company 248 (Clark, NV)",NV,Clark County,200,planned,2030,eia-66908,Bonanza Solar and Storage Project,NV,Clark County,195,planned
+C2-178,West,"West queue C2-178 (Crook, OR)",OR,Crook County,199,planned,2032,dc-apple-prineville,Apple Prineville,OR,Crook County,200,operating
+C2-28,West,"West queue C2-28 (Salt Lake, UT)",UT,Salt Lake County,199,planned,2031,eia-68596,Dominguez Energy Storage,UT,Salt Lake County,200,operating
+S0007,West,"West queue S0007 (Beaver, UT)",UT,Beaver County,80,planned,2025,eia-69677,Escalante BESS I,UT,Beaver County,80,operating
+S0010,West,"West queue S0010 (Iron, UT)",UT,Iron County,80,planned,2025,eia-69041,Iron Springs BESS,UT,Iron County,80,operating
+S0010,West,"West queue S0010 (Iron, UT)",UT,Iron County,80,planned,2025,eia-69678,Enterprise Storage,UT,Iron County,80,operating
+S0010,West,"West queue S0010 (Iron, UT)",UT,Iron County,80,planned,2025,eia-69679,Granite Mountain BESS East,UT,Iron County,80,operating
+S0011,West,"West queue S0011 (Iron, UT)",UT,Iron County,80,planned,2025,eia-69041,Iron Springs BESS,UT,Iron County,80,operating
+S0011,West,"West queue S0011 (Iron, UT)",UT,Iron County,80,planned,2025,eia-69678,Enterprise Storage,UT,Iron County,80,operating
+S0011,West,"West queue S0011 (Iron, UT)",UT,Iron County,80,planned,2025,eia-69679,Granite Mountain BESS East,UT,Iron County,80,operating
+S0013,West,"West queue S0013 (Iron, UT)",UT,Iron County,80,planned,2025,eia-69041,Iron Springs BESS,UT,Iron County,80,operating
+S0013,West,"West queue S0013 (Iron, UT)",UT,Iron County,80,planned,2025,eia-69678,Enterprise Storage,UT,Iron County,80,operating
+S0013,West,"West queue S0013 (Iron, UT)",UT,Iron County,80,planned,2025,eia-69679,Granite Mountain BESS East,UT,Iron County,80,operating
+AE2-019,PJM,New Road Storage,VA,Loudoun County,120,planned,2027,dc-cyrusone-sterling,CyrusOne Sterling,VA,Loudoun County,90,operating
+AF1-028,PJM,Prospect Power,VA,Rockingham County,200,planned,2026,eia-68055,Prospect Power BESS,VA,Rockingham County,150,operating
+AF1-062,PJM,Flint Grid,OH,Licking County,200,planned,2027,eia-68911,Flint,OH,Licking County,200,under_construction
+AF1-325,PJM,Houses Corner Storage,NJ,Sussex County,20,planned,2026,eia-65952,Andover Energy Storage Project,NJ,Sussex County,20,operating
+AF1-325,PJM,Houses Corner Storage,NJ,Sussex County,20,planned,2026,eia-67851,Montague Energy Storage,NJ,Sussex County,20,operating
+AF1-328,PJM,Mansfield #3,NJ,Warren County,20,planned,2025,eia-61891,"Stryker 22, L.L.C.",NJ,Warren County,20,operating
+AG1-221,PJM,Dulles Solar and BESS,VA,Loudoun County,50,planned,2027,eia-65043,Dulles Solar and Storage,VA,Loudoun County,50,under_construction
+17-067,West,"West queue 17-067 (Multnomah, OR)",OR,Multnomah County,200,planned,2031,eia-67711,Seaside BESS,OR,Multnomah County,200,operating
+17-067,West,"West queue 17-067 (Multnomah, OR)",OR,Multnomah County,200,planned,2031,eia-67869,Sundial (Troutdale) BESS,OR,Multnomah County,200,operating
+21-102,West,"West queue 21-102 (Multnomah, OR)",OR,Multnomah County,200,planned,2030,eia-67711,Seaside BESS,OR,Multnomah County,200,operating
+21-102,West,"West queue 21-102 (Multnomah, OR)",OR,Multnomah County,200,planned,2030,eia-67869,Sundial (Troutdale) BESS,OR,Multnomah County,200,operating
+129,West,"West queue 129 (Kitsap, WA)",WA,Kitsap County,170,planned,2029,eia-68366,AGATE BESS,WA,Kitsap County,170,planned
+60,West,"West queue 60 (Pierce, WA)",WA,Pierce County,200,planned,2028,eia-68341,Greenwater BESS,WA,Pierce County,200,under_construction
+98,West,"West queue 98 (Pierce, WA)",WA,Pierce County,200,planned,2026,eia-68341,Greenwater BESS,WA,Pierce County,200,under_construction
+IC-1267,Southeast,"Southeast queue IC-1267 (Floyd, GA)",GA,Floyd County,57.5,planned,2026,eia-708,Hammond,GA,Floyd County,58,under_construction
+GEN-2017-178,SPP,"SPP queue GEN-2017-178 (Garfield, OK)",OK,Garfield County,52,planned,2025,eia-68576,Breckinridge Energy Storage,OK,Garfield County,65,operating
+GEN-2018-028,SPP,"SPP queue GEN-2018-028 (Tulsa, OK)",OK,Tulsa County,200,planned,2028,dc-crusoe-tulsa,Crusoe Tulsa,OK,Tulsa County,200,planned
+GEN-2019-011,SPP,"SPP queue GEN-2019-011 (Yoakum, TX)",TX,Yoakum County,207,planned,2028,eia-70237,Mule Shoe Energy Storage,TX,Yoakum County,207,planned
+GEN-2023-SR12,SPP,"SPP queue GEN-2023-SR12 (Cochran, TX)",TX,Cochran County,120,planned,2025,eia-68877,Wildcat Ranch Energy Storage,TX,Cochran County,120,planned
+GEN-2023-SR5,SPP,"SPP queue GEN-2023-SR5 (Dewey, OK)",OK,Dewey County,85,planned,2026,eia-70443,Mammoth Plains Energy Storage II,OK,Dewey County,101,planned
+GEN-2023-SR9,SPP,"SPP queue GEN-2023-SR9 (Crosby, TX)",TX,Crosby County,50,planned,2026,eia-70197,Lorenzo Energy Storage,TX,Crosby County,50,planned
+GEN-2024-SR11,SPP,"SPP queue GEN-2024-SR11 (Garfield, OK)",OK,Garfield County,200,planned,2025,eia-62494,Skeleton Creek Energy Center Hybrid,OK,Garfield County,252,operating
+GEN-2024-SR14,SPP,"SPP queue GEN-2024-SR14 (Lea, NM)",NM,Lea County,36,planned,2026,eia-69258,Cunningham Solar I & BESS,NM,Lea County,36,operating
+424,Southeast,"Southeast queue 424 (Clay, MS)",MS,Clay County,50,planned,2026,eia-68536,Optimist,MS,Clay County,50,operating
+20INR0246,ERCOT,Ryan Energy Storage,TX,Coryell County,51.6,planned,2026,eia-69770,Ryan Storage,TX,Coryell County,50,under_construction
+21INR0469,ERCOT,Big Star Storage,TX,Bastrop County,80,planned,2026,eia-64202,"Big Star Solar, LLC (Hybrid)",TX,Bastrop County,80,under_construction
+22INR0401,ERCOT,Eval Storage,TX,Cameron County,251.85,planned,2028,eia-66411,Hecate Grid East Valley Storage,TX,Cameron County,255,planned
+22INR0401,ERCOT,Eval Storage,TX,Cameron County,251.85,planned,2028,eia-67777,Harryoung PV and BESS,TX,Cameron County,190,planned
+22INR0401,ERCOT,Eval Storage,TX,Cameron County,251.85,planned,2028,eia-69120,Resaca Oasis Storage,TX,Cameron County,201,planned
+22INR0422,ERCOT,Ferdinand Grid BESS,TX,Bexar County,205.5,planned,2026,eia-68915,Ferdinand Energy Center,TX,Bexar County,200,operating
+22INR0422,ERCOT,Ferdinand Grid BESS,TX,Bexar County,205.5,planned,2026,eia-68348,Alamo City ESS,TX,Bexar County,200,planned
+22INR0422,ERCOT,Ferdinand Grid BESS,TX,Bexar County,205.5,planned,2026,eia-68361,Rush ESS,TX,Bexar County,200,planned
+22INR0422,ERCOT,Ferdinand Grid BESS,TX,Bexar County,205.5,planned,2026,eia-68914,Padua 3,TX,Bexar County,200,under_construction
+22INR0443,ERCOT,Bowstring BESS,TX,San Patricio County,155,planned,2028,eia-68582,Pintail BESS,TX,San Patricio County,200,under_construction
+22INR0466,ERCOT,Pajarita BESS,TX,Cameron County,205.5,planned,2028,eia-66411,Hecate Grid East Valley Storage,TX,Cameron County,255,planned
+22INR0466,ERCOT,Pajarita BESS,TX,Cameron County,205.5,planned,2028,eia-67777,Harryoung PV and BESS,TX,Cameron County,190,planned
+22INR0466,ERCOT,Pajarita BESS,TX,Cameron County,205.5,planned,2028,eia-69120,Resaca Oasis Storage,TX,Cameron County,201,planned
+22INR0466,ERCOT,Pajarita BESS,TX,Cameron County,205.5,planned,2028,eia-69151,Arroyo Storage,TX,Cameron County,180,under_construction
+22INR0467,ERCOT,Bird Dog Energy Storage,TX,Live Oak County,60.4,planned,2026,eia-68495,Bird Dog Energy Storage,TX,Live Oak County,60,under_construction
+22INR0503,ERCOT,Tidwell Prairie II Batt,TX,Robertson County,203.62,planned,2026,eia-66337,Tidwell Prairie Storage 1,TX,Robertson County,200,operating
+22INR0503,ERCOT,Tidwell Prairie II Batt,TX,Robertson County,203.62,planned,2026,eia-68425,Tidwell Prairie II,TX,Robertson County,200,under_construction
+22INR0503,ERCOT,Tidwell Prairie II Batt,TX,Robertson County,203.62,planned,2026,eia-69392,Barton Branch IA,TX,Robertson County,200,under_construction
+22INR0503,ERCOT,Tidwell Prairie II Batt,TX,Robertson County,203.62,planned,2026,eia-70400,Bee Branch IA,TX,Robertson County,200,under_construction
+22INR0504,ERCOT,Barton Branch IA,TX,Robertson County,203.62,planned,2026,eia-66337,Tidwell Prairie Storage 1,TX,Robertson County,200,operating
+22INR0504,ERCOT,Barton Branch IA,TX,Robertson County,203.62,planned,2026,eia-68425,Tidwell Prairie II,TX,Robertson County,200,under_construction
+22INR0504,ERCOT,Barton Branch IA,TX,Robertson County,203.62,planned,2026,eia-69392,Barton Branch IA,TX,Robertson County,200,under_construction
+22INR0504,ERCOT,Barton Branch IA,TX,Robertson County,203.62,planned,2026,eia-70400,Bee Branch IA,TX,Robertson County,200,under_construction
+22INR0526,ERCOT,Pine Forest BESS,TX,Hopkins County,200.74,planned,2025,eia-68171,Mcmurtre Storage,TX,Hopkins County,176,planned
+22INR0552,ERCOT,Sowers Storage,TX,Kaufman County,203.9,planned,2026,eia-67987,Mystic Springs Renewable Energy (Hybrid),TX,Kaufman County,250,planned
+22INR0554,ERCOT,Platinum Storage,TX,Fannin County,309.53,planned,2026,eia-69044,Platinum Storage,TX,Fannin County,348,operating
+22INR0555,ERCOT,TE Smith Storage,TX,Rockwall County,125.36,planned,2026,eia-69329,TE Smith Storage,TX,Rockwall County,125,operating
+22INR0558,ERCOT,Callisto II Energy Center,TX,Harris County,203.2,planned,2026,bess-jupiter-callisto,Callisto BESS,TX,Harris County,200,operating
+22INR0558,ERCOT,Callisto II Energy Center,TX,Harris County,203.2,planned,2026,eia-67654,Destiny Storage,TX,Harris County,200,operating
+22INR0558,ERCOT,Callisto II Energy Center,TX,Harris County,203.2,planned,2026,eia-67738,Citadel Battery Storage Plant,TX,Harris County,204,operating
+23INR0137,ERCOT,BRP Diran BESS,TX,Wharton County,100.63,planned,2028,eia-68149,Raven Storage,TX,Wharton County,100,under_construction
+23INR0290,ERCOT,Zeya BESS,TX,Galveston County,255.33,planned,2026,eia-68809,Hidden Lakes Reliability Project,TX,Galveston County,220,operating
+23INR0290,ERCOT,Zeya BESS,TX,Galveston County,255.33,planned,2026,eia-65880,Zeya,TX,Galveston County,250,under_construction
+23INR0290,ERCOT,Zeya BESS,TX,Galveston County,255.33,planned,2026,eia-69255,Vertus Energy Storage Plant,TX,Galveston County,200,under_construction
+23INR0290,ERCOT,Zeya BESS,TX,Galveston County,255.33,planned,2026,eia-69364,Red Egret,TX,Galveston County,300,under_construction
+23INR0336,ERCOT,Bypass Battery Storage,TX,Fort Bend County,207.89,planned,2025,bess-aypa-cinco,Cinco BESS,TX,Fort Bend County,200,operating
+23INR0336,ERCOT,Bypass Battery Storage,TX,Fort Bend County,207.89,planned,2025,eia-67761,Bypass BESS,TX,Fort Bend County,200,operating
+23INR0336,ERCOT,Bypass Battery Storage,TX,Fort Bend County,207.89,planned,2025,eia-68365,Old 300 Storage Center,TX,Fort Bend County,250,operating
+23INR0336,ERCOT,Bypass Battery Storage,TX,Fort Bend County,207.89,planned,2025,eia-67249,Rock Rose Energy Storage,TX,Fort Bend County,200,under_construction
+23INR0351,ERCOT,Seven Flags BESS,TX,Webb County,102.7,planned,2026,eia-66689,Seven Flags BESS LLC,TX,Webb County,100,operating
+23INR0358,ERCOT,Castor BESS,TX,Brazoria County,205.39,planned,2026,bess-aypa-amelia,Amelia BESS,TX,Brazoria County,200,under_construction
+23INR0358,ERCOT,Castor BESS,TX,Brazoria County,205.39,planned,2026,eia-65876,Desna,TX,Brazoria County,200,operating
+23INR0358,ERCOT,Castor BESS,TX,Brazoria County,205.39,planned,2026,eia-67083,"Longbow BESS, LLC",TX,Brazoria County,174,operating
+23INR0358,ERCOT,Castor BESS,TX,Brazoria County,205.39,planned,2026,eia-65870,Castor,TX,Brazoria County,200,under_construction
+23INR0358,ERCOT,Castor BESS,TX,Brazoria County,205.39,planned,2026,eia-67535,Bell Creek BESS LLC,TX,Brazoria County,201,planned
+23INR0358,ERCOT,Castor BESS,TX,Brazoria County,205.39,planned,2026,eia-68583,Rock N' Roll,TX,Brazoria County,250,planned
+23INR0358,ERCOT,Castor BESS,TX,Brazoria County,205.39,planned,2026,eia-68814,Brazos River BESS LLC,TX,Brazoria County,180,planned
+23INR0361,ERCOT,Third Coast BESS,TX,Jackson County,102.82,planned,2027,eia-67667,"Third Coast BESS, LLC",TX,Jackson County,100,planned
+23INR0364,ERCOT,Tierra Seca BESS,TX,Val Verde County,102.7,planned,2026,eia-68748,Tierra Seca,TX,Val Verde County,100,operating
+23INR0381,ERCOT,Bexar ESS,TX,Bexar County,102.6,planned,2025,eia-66400,Bexar ESS,TX,Bexar County,100,operating
+23INR0401,ERCOT,Headcamp Energy Storage Plant,TX,Pecos County,152.88,planned,2025,bess-spearmint-solidad,Solidad BESS,TX,Pecos County,150,operating
+23INR0401,ERCOT,Headcamp Energy Storage Plant,TX,Pecos County,152.88,planned,2025,eia-65490,Hydra,TX,Pecos County,200,operating
+23INR0401,ERCOT,Headcamp Energy Storage Plant,TX,Pecos County,152.88,planned,2025,eia-65492,Pavo,TX,Pecos County,175,operating
+23INR0401,ERCOT,Headcamp Energy Storage Plant,TX,Pecos County,152.88,planned,2025,eia-65860,Avila,TX,Pecos County,160,operating
+23INR0401,ERCOT,Headcamp Energy Storage Plant,TX,Pecos County,152.88,planned,2025,eia-68580,Headcamp BESS,TX,Pecos County,150,operating
+23INR0401,ERCOT,Headcamp Energy Storage Plant,TX,Pecos County,152.88,planned,2025,eia-65590,Octans,TX,Pecos County,125,under_construction
+23INR0419,ERCOT,Sahara Bess (Soho Bess),TX,Brazoria County,204.4,planned,2026,bess-aypa-amelia,Amelia BESS,TX,Brazoria County,200,under_construction
+23INR0419,ERCOT,Sahara Bess (Soho Bess),TX,Brazoria County,204.4,planned,2026,eia-65876,Desna,TX,Brazoria County,200,operating
+23INR0419,ERCOT,Sahara Bess (Soho Bess),TX,Brazoria County,204.4,planned,2026,eia-67083,"Longbow BESS, LLC",TX,Brazoria County,174,operating
+23INR0419,ERCOT,Sahara Bess (Soho Bess),TX,Brazoria County,204.4,planned,2026,eia-65870,Castor,TX,Brazoria County,200,under_construction
+23INR0419,ERCOT,Sahara Bess (Soho Bess),TX,Brazoria County,204.4,planned,2026,eia-67535,Bell Creek BESS LLC,TX,Brazoria County,201,planned
+23INR0419,ERCOT,Sahara Bess (Soho Bess),TX,Brazoria County,204.4,planned,2026,eia-68583,Rock N' Roll,TX,Brazoria County,250,planned
+23INR0419,ERCOT,Sahara Bess (Soho Bess),TX,Brazoria County,204.4,planned,2026,eia-68814,Brazos River BESS LLC,TX,Brazoria County,180,planned
+23INR0425,ERCOT,Coneflower Storage Project,TX,Chambers County,170.85,planned,2027,eia-69110,Coneflower Storage Project LLC,TX,Chambers County,171,planned
+23INR0467,ERCOT,Lavender Storage Project,TX,Bexar County,231.9,planned,2029,eia-68915,Ferdinand Energy Center,TX,Bexar County,200,operating
+23INR0467,ERCOT,Lavender Storage Project,TX,Bexar County,231.9,planned,2029,eia-68348,Alamo City ESS,TX,Bexar County,200,planned
+23INR0467,ERCOT,Lavender Storage Project,TX,Bexar County,231.9,planned,2029,eia-68361,Rush ESS,TX,Bexar County,200,planned
+23INR0467,ERCOT,Lavender Storage Project,TX,Bexar County,231.9,planned,2029,eia-68914,Padua 3,TX,Bexar County,200,under_construction
+23INR0479,ERCOT,Taormina Storage,TX,Bexar County,231.86,planned,2029,eia-68915,Ferdinand Energy Center,TX,Bexar County,200,operating
+23INR0479,ERCOT,Taormina Storage,TX,Bexar County,231.86,planned,2029,eia-68348,Alamo City ESS,TX,Bexar County,200,planned
+23INR0479,ERCOT,Taormina Storage,TX,Bexar County,231.86,planned,2029,eia-68361,Rush ESS,TX,Bexar County,200,planned
+23INR0479,ERCOT,Taormina Storage,TX,Bexar County,231.86,planned,2029,eia-68914,Padua 3,TX,Bexar County,200,under_construction
+23INR0494,ERCOT,Cartwheel BESS 1,TX,Hopkins County,154.2,planned,2025,eia-68171,Mcmurtre Storage,TX,Hopkins County,176,planned
+23INR0501,ERCOT,Soda Lake BESS 1,TX,Crane County,203.87,planned,2026,eia-66009,Crossett Power Management LLC,TX,Crane County,203,operating
+23INR0501,ERCOT,Soda Lake BESS 1,TX,Crane County,203.87,planned,2026,eia-68581,Mendoza Trail BESS,TX,Crane County,200,under_construction
+23INR0502,ERCOT,Adelite Storage,TX,Milam County,231.88,planned,2027,eia-69004,Adelite Storage Project LLC,TX,Milam County,230,planned
+24INR0108,ERCOT,Louisa Energy Storage,TX,Bexar County,102.77,planned,2029,eia-66400,Bexar ESS,TX,Bexar County,100,operating
+24INR0128,ERCOT,Desna BESS,TX,Brazoria County,205.46,planned,2026,bess-aypa-amelia,Amelia BESS,TX,Brazoria County,200,under_construction
+24INR0128,ERCOT,Desna BESS,TX,Brazoria County,205.46,planned,2026,eia-65876,Desna,TX,Brazoria County,200,operating
+24INR0128,ERCOT,Desna BESS,TX,Brazoria County,205.46,planned,2026,eia-67083,"Longbow BESS, LLC",TX,Brazoria County,174,operating
+24INR0128,ERCOT,Desna BESS,TX,Brazoria County,205.46,planned,2026,eia-65870,Castor,TX,Brazoria County,200,under_construction
+24INR0128,ERCOT,Desna BESS,TX,Brazoria County,205.46,planned,2026,eia-67535,Bell Creek BESS LLC,TX,Brazoria County,201,planned
+24INR0128,ERCOT,Desna BESS,TX,Brazoria County,205.46,planned,2026,eia-68583,Rock N' Roll,TX,Brazoria County,250,planned
+24INR0128,ERCOT,Desna BESS,TX,Brazoria County,205.46,planned,2026,eia-68814,Brazos River BESS LLC,TX,Brazoria County,180,planned
+24INR0138,ERCOT,Midpoint Storage,TX,Hill County,50.9,planned,2026,eia-66897,"Midpoint Solar, LLC",TX,Hill County,50,operating
+24INR0178,ERCOT,Cumulus Grid BESS,TX,Ellis County,210.74,planned,2028,dc-compass-redoak,Compass Red Oak,TX,Ellis County,280,operating
+24INR0210,ERCOT,Raven Storage,TX,Wharton County,101.4,planned,2026,eia-68149,Raven Storage,TX,Wharton County,100,under_construction
+24INR0274,ERCOT,Bufflehead BESS,TX,Collin County,153.3,planned,2027,eia-67739,Wigeon Whistle Battery Storage Plant,TX,Collin County,120,operating
+24INR0274,ERCOT,Bufflehead BESS,TX,Collin County,153.3,planned,2027,eia-70377,Boxcar Energy Storage,TX,Collin County,150,under_construction
+24INR0281,ERCOT,Red Egret BESS,TX,Galveston County,310.58,planned,2026,eia-65880,Zeya,TX,Galveston County,250,under_construction
+24INR0281,ERCOT,Red Egret BESS,TX,Galveston County,310.58,planned,2026,eia-69364,Red Egret,TX,Galveston County,300,under_construction
+24INR0285,ERCOT,APV Plumwood Storage,TX,Chambers County,200.82,planned,2027,eia-69110,Coneflower Storage Project LLC,TX,Chambers County,171,planned
+24INR0294,ERCOT,Citrus Flatts BESS,TX,Cameron County,101.2,planned,2026,eia-69352,"Citrus Flatts Energy Center, LLC",TX,Cameron County,100,operating
+24INR0302,ERCOT,Pintail Pass BESS,TX,San Patricio County,207.25,planned,2026,eia-68582,Pintail BESS,TX,San Patricio County,200,under_construction
+24INR0313,ERCOT,Backbone Creek BESS,TX,Burnet County,124.1,planned,2026,eia-69167,Backbone Creek BESS,TX,Burnet County,121,under_construction
+24INR0397,ERCOT,Rhapsody Storage,TX,Harris County,205.57,planned,2026,bess-jupiter-callisto,Callisto BESS,TX,Harris County,200,operating
+24INR0397,ERCOT,Rhapsody Storage,TX,Harris County,205.57,planned,2026,eia-67654,Destiny Storage,TX,Harris County,200,operating
+24INR0397,ERCOT,Rhapsody Storage,TX,Harris County,205.57,planned,2026,eia-67738,Citadel Battery Storage Plant,TX,Harris County,204,operating
+24INR0405,ERCOT,Crowned Heron BESS,TX,Fort Bend County,154.2,planned,2026,bess-aypa-cinco,Cinco BESS,TX,Fort Bend County,200,operating
+24INR0405,ERCOT,Crowned Heron BESS,TX,Fort Bend County,154.2,planned,2026,eia-67761,Bypass BESS,TX,Fort Bend County,200,operating
+24INR0405,ERCOT,Crowned Heron BESS,TX,Fort Bend County,154.2,planned,2026,eia-68499,"Crowned Heron 1 - Storage, LLC",TX,Fort Bend County,150,operating
+24INR0405,ERCOT,Crowned Heron BESS,TX,Fort Bend County,154.2,planned,2026,eia-67249,Rock Rose Energy Storage,TX,Fort Bend County,200,under_construction
+24INR0405,ERCOT,Crowned Heron BESS,TX,Fort Bend County,154.2,planned,2026,eia-68500,"Crowned Heron 2 - Storage, LLC",TX,Fort Bend County,150,under_construction
+24INR0436,ERCOT,Carambola BESS,TX,Hidalgo County,100.9,planned,2026,eia-63757,Madero Grid,TX,Hidalgo County,100,operating
+24INR0436,ERCOT,Carambola BESS,TX,Hidalgo County,100.9,planned,2026,eia-64089,Ignacio Grid Energy Storage System,TX,Hidalgo County,100,operating
+24INR0436,ERCOT,Carambola BESS,TX,Hidalgo County,100.9,planned,2026,eia-68189,Great Kiskadee Storage,TX,Hidalgo County,100,operating
+24INR0436,ERCOT,Carambola BESS,TX,Hidalgo County,100.9,planned,2026,eia-69168,Carambola BESS,TX,Hidalgo County,98,operating
+24INR0485,ERCOT,Rutile BESS,TX,Runnels County,100.65,planned,2028,eia-67896,Holstein 2 Battery Storage,TX,Runnels County,100,planned
+24INR0491,ERCOT,Gunnar BESS,TX,Hidalgo County,154.75,planned,2026,bess-gunnar,Gunnar Reliability Project,TX,Hidalgo County,150,under_construction
+24INR0491,ERCOT,Gunnar BESS,TX,Hidalgo County,154.75,planned,2026,eia-67236,Anemoi Energy Storage,TX,Hidalgo County,200,operating
+24INR0493,ERCOT,Crowned Heron BESS 2,TX,Fort Bend County,154.2,planned,2026,bess-aypa-cinco,Cinco BESS,TX,Fort Bend County,200,operating
+24INR0493,ERCOT,Crowned Heron BESS 2,TX,Fort Bend County,154.2,planned,2026,eia-67761,Bypass BESS,TX,Fort Bend County,200,operating
+24INR0493,ERCOT,Crowned Heron BESS 2,TX,Fort Bend County,154.2,planned,2026,eia-68499,"Crowned Heron 1 - Storage, LLC",TX,Fort Bend County,150,operating
+24INR0493,ERCOT,Crowned Heron BESS 2,TX,Fort Bend County,154.2,planned,2026,eia-67249,Rock Rose Energy Storage,TX,Fort Bend County,200,under_construction
+24INR0493,ERCOT,Crowned Heron BESS 2,TX,Fort Bend County,154.2,planned,2026,eia-68500,"Crowned Heron 2 - Storage, LLC",TX,Fort Bend County,150,under_construction
+24INR0528,ERCOT,Blanquilla BESS,TX,Nueces County,200.78,planned,2027,eia-67768,Cumbia Energy Center,TX,Nueces County,200,planned
+24INR0533,ERCOT,Padua Grid BESS Unit 2,TX,Bexar County,150.94,planned,2026,eia-68913,Padua 2,TX,Bexar County,150,operating
+24INR0533,ERCOT,Padua Grid BESS Unit 2,TX,Bexar County,150.94,planned,2026,eia-68915,Ferdinand Energy Center,TX,Bexar County,200,operating
+24INR0533,ERCOT,Padua Grid BESS Unit 2,TX,Bexar County,150.94,planned,2026,eia-68348,Alamo City ESS,TX,Bexar County,200,planned
+24INR0533,ERCOT,Padua Grid BESS Unit 2,TX,Bexar County,150.94,planned,2026,eia-68361,Rush ESS,TX,Bexar County,200,planned
+24INR0533,ERCOT,Padua Grid BESS Unit 2,TX,Bexar County,150.94,planned,2026,eia-68914,Padua 3,TX,Bexar County,200,under_construction
+24INR0584,ERCOT,Houston IV BESS,TX,Harris County,164.6,planned,2026,bess-jupiter-callisto,Callisto BESS,TX,Harris County,200,operating
+24INR0584,ERCOT,Houston IV BESS,TX,Harris County,164.6,planned,2026,eia-67654,Destiny Storage,TX,Harris County,200,operating
+24INR0584,ERCOT,Houston IV BESS,TX,Harris County,164.6,planned,2026,eia-67738,Citadel Battery Storage Plant,TX,Harris County,204,operating
+25INR0046,ERCOT,Blue Skies BESS,TX,Hill County,306.26,planned,2027,eia-66391,Ash Creek BESS,TX,Hill County,306,planned
+25INR0100,ERCOT,Goldeneye BESS,TX,Bell County,201.6,planned,2028,eia-66420,Five Wells Solar Center - Hybrid,TX,Bell County,262,operating
+25INR0101,ERCOT,Drake BESS,TX,Collin County,257.3,planned,2026,dc-coreweave-plano,CoreWeave Plano,TX,Collin County,250,operating
+25INR0101,ERCOT,Drake BESS,TX,Collin County,257.3,planned,2026,eia-69681,Mallard Energy Storage,TX,Collin County,250,under_construction
+25INR0103,ERCOT,Elio BESS,TX,Brazoria County,317.2,planned,2027,eia-67737,SMT Ironman Battery Storage Plant,TX,Brazoria County,304,operating
+25INR0103,ERCOT,Elio BESS,TX,Brazoria County,317.2,planned,2027,eia-69200,SAHARA BESS (SOHO BESS),TX,Brazoria County,409,operating
+25INR0103,ERCOT,Elio BESS,TX,Brazoria County,317.2,planned,2027,eia-65850,Elio Energy LLC,TX,Brazoria County,300,planned
+25INR0103,ERCOT,Elio BESS,TX,Brazoria County,317.2,planned,2027,eia-68583,Rock N' Roll,TX,Brazoria County,250,planned
+25INR0131,ERCOT,SOSA Storage,TX,Madison County,155.3,planned,2027,bess-sosa,SOSA Energy Center,TX,Madison County,150,under_construction
+25INR0131,ERCOT,SOSA Storage,TX,Madison County,155.3,planned,2027,eia-68364,Tex-Bar ESS,TX,Madison County,200,planned
+25INR0138,ERCOT,Champaign BESS,TX,Glasscock County,201.13,planned,2027,eia-67917,"Champaign BESS, LLC",TX,Glasscock County,203,planned
+25INR0162,ERCOT,Sahara Ii Bess (Soho Ii Bess),TX,Brazoria County,204.3,planned,2026,bess-aypa-amelia,Amelia BESS,TX,Brazoria County,200,under_construction
+25INR0162,ERCOT,Sahara Ii Bess (Soho Ii Bess),TX,Brazoria County,204.3,planned,2026,eia-65876,Desna,TX,Brazoria County,200,operating
+25INR0162,ERCOT,Sahara Ii Bess (Soho Ii Bess),TX,Brazoria County,204.3,planned,2026,eia-67083,"Longbow BESS, LLC",TX,Brazoria County,174,operating
+25INR0162,ERCOT,Sahara Ii Bess (Soho Ii Bess),TX,Brazoria County,204.3,planned,2026,eia-65870,Castor,TX,Brazoria County,200,under_construction
+25INR0162,ERCOT,Sahara Ii Bess (Soho Ii Bess),TX,Brazoria County,204.3,planned,2026,eia-67535,Bell Creek BESS LLC,TX,Brazoria County,201,planned
+25INR0162,ERCOT,Sahara Ii Bess (Soho Ii Bess),TX,Brazoria County,204.3,planned,2026,eia-68583,Rock N' Roll,TX,Brazoria County,250,planned
+25INR0162,ERCOT,Sahara Ii Bess (Soho Ii Bess),TX,Brazoria County,204.3,planned,2026,eia-68814,Brazos River BESS LLC,TX,Brazoria County,180,planned
+25INR0208,ERCOT,Iron Belt Energy Storage,TX,Borden County,401.9,planned,2027,eia-67059,Iron Belt,TX,Borden County,400,planned
+25INR0231,ERCOT,Apache Hill BESS,TX,Hood County,201.15,planned,2026,eia-69155,Apache Hill Energy Center,TX,Hood County,200,under_construction
+25INR0262,ERCOT,Shepard Energy Storage,TX,Galveston County,256.79,planned,2027,eia-68809,Hidden Lakes Reliability Project,TX,Galveston County,220,operating
+25INR0262,ERCOT,Shepard Energy Storage,TX,Galveston County,256.79,planned,2027,eia-65880,Zeya,TX,Galveston County,250,under_construction
+25INR0262,ERCOT,Shepard Energy Storage,TX,Galveston County,256.79,planned,2027,eia-69255,Vertus Energy Storage Plant,TX,Galveston County,200,under_construction
+25INR0262,ERCOT,Shepard Energy Storage,TX,Galveston County,256.79,planned,2027,eia-69364,Red Egret,TX,Galveston County,300,under_construction
+25INR0300,ERCOT,Wizard BESS,TX,Galveston County,150.82,planned,2026,eia-69152,Wizard Energy Storage,TX,Galveston County,150,operating
+25INR0300,ERCOT,Wizard BESS,TX,Galveston County,150.82,planned,2026,eia-69255,Vertus Energy Storage Plant,TX,Galveston County,200,under_construction
+25INR0329,ERCOT,Project Lynx BESS,TX,Nueces County,125.3,planned,2026,eia-65589,Carina,TX,Nueces County,150,operating
+25INR0329,ERCOT,Project Lynx BESS,TX,Nueces County,125.3,planned,2026,eia-69286,Project Lynx,TX,Nueces County,125,operating
+25INR0370,ERCOT,Willis Storage,TX,Rains County,176.13,planned,2027,eia-68176,Willis Storage,TX,Rains County,176,planned
+25INR0389,ERCOT,Stoneridge BESS,TX,Milam County,101.9,planned,2026,eia-66216,Yaupon Solar Project (Hybrid),TX,Milam County,100,planned
+25INR0389,ERCOT,Stoneridge BESS,TX,Milam County,101.9,planned,2026,eia-69027,"Stoneridge Solar, LLC",TX,Milam County,100,under_construction
+25INR0391,ERCOT,Purple Sage BESS 1,TX,Collin County,156,planned,2027,eia-67739,Wigeon Whistle Battery Storage Plant,TX,Collin County,120,operating
+25INR0391,ERCOT,Purple Sage BESS 1,TX,Collin County,156,planned,2027,eia-70377,Boxcar Energy Storage,TX,Collin County,150,under_construction
+25INR0392,ERCOT,Purple Sage BESS 2,TX,Collin County,156,planned,2027,eia-67739,Wigeon Whistle Battery Storage Plant,TX,Collin County,120,operating
+25INR0392,ERCOT,Purple Sage BESS 2,TX,Collin County,156,planned,2027,eia-70377,Boxcar Energy Storage,TX,Collin County,150,under_construction
+25INR0421,ERCOT,Aldrin 138 BESS,TX,Brazoria County,207,planned,2027,bess-aypa-amelia,Amelia BESS,TX,Brazoria County,200,under_construction
+25INR0421,ERCOT,Aldrin 138 BESS,TX,Brazoria County,207,planned,2027,eia-65876,Desna,TX,Brazoria County,200,operating
+25INR0421,ERCOT,Aldrin 138 BESS,TX,Brazoria County,207,planned,2027,eia-67083,"Longbow BESS, LLC",TX,Brazoria County,174,operating
+25INR0421,ERCOT,Aldrin 138 BESS,TX,Brazoria County,207,planned,2027,eia-65870,Castor,TX,Brazoria County,200,under_construction
+25INR0421,ERCOT,Aldrin 138 BESS,TX,Brazoria County,207,planned,2027,eia-67535,Bell Creek BESS LLC,TX,Brazoria County,201,planned
+25INR0421,ERCOT,Aldrin 138 BESS,TX,Brazoria County,207,planned,2027,eia-68583,Rock N' Roll,TX,Brazoria County,250,planned
+25INR0421,ERCOT,Aldrin 138 BESS,TX,Brazoria County,207,planned,2027,eia-68814,Brazos River BESS LLC,TX,Brazoria County,180,planned
+25INR0425,ERCOT,Aldrin 345 BESS,TX,Brazoria County,362,planned,2027,eia-67737,SMT Ironman Battery Storage Plant,TX,Brazoria County,304,operating
+25INR0425,ERCOT,Aldrin 345 BESS,TX,Brazoria County,362,planned,2027,eia-69200,SAHARA BESS (SOHO BESS),TX,Brazoria County,409,operating
+25INR0425,ERCOT,Aldrin 345 BESS,TX,Brazoria County,362,planned,2027,eia-65850,Elio Energy LLC,TX,Brazoria County,300,planned
+25INR0432,ERCOT,Brotherton Storage,TX,Anderson County,176.13,planned,2027,bess-jupiter-jasper,Jasper Solar + Storage,TX,Anderson County,200,operating
+25INR0432,ERCOT,Brotherton Storage,TX,Anderson County,176.13,planned,2027,eia-68165,Brotherton Storage,TX,Anderson County,176,planned
+25INR0441,ERCOT,Dios BESS,TX,Jackson County,201.08,planned,2027,eia-67918,"Dios BESS, LLC",TX,Jackson County,202,planned
+25INR0480,ERCOT,Bell Creek BESS,TX,Brazoria County,200.9,planned,2027,bess-aypa-amelia,Amelia BESS,TX,Brazoria County,200,under_construction
+25INR0480,ERCOT,Bell Creek BESS,TX,Brazoria County,200.9,planned,2027,eia-65876,Desna,TX,Brazoria County,200,operating
+25INR0480,ERCOT,Bell Creek BESS,TX,Brazoria County,200.9,planned,2027,eia-67083,"Longbow BESS, LLC",TX,Brazoria County,174,operating
+25INR0480,ERCOT,Bell Creek BESS,TX,Brazoria County,200.9,planned,2027,eia-65870,Castor,TX,Brazoria County,200,under_construction
+25INR0480,ERCOT,Bell Creek BESS,TX,Brazoria County,200.9,planned,2027,eia-67535,Bell Creek BESS LLC,TX,Brazoria County,201,planned
+25INR0480,ERCOT,Bell Creek BESS,TX,Brazoria County,200.9,planned,2027,eia-68583,Rock N' Roll,TX,Brazoria County,250,planned
+25INR0480,ERCOT,Bell Creek BESS,TX,Brazoria County,200.9,planned,2027,eia-68814,Brazos River BESS LLC,TX,Brazoria County,180,planned
+25INR0554,ERCOT,Dan Kearney BESS,TX,Brazoria County,204.38,planned,2027,bess-aypa-amelia,Amelia BESS,TX,Brazoria County,200,under_construction
+25INR0554,ERCOT,Dan Kearney BESS,TX,Brazoria County,204.38,planned,2027,eia-65876,Desna,TX,Brazoria County,200,operating
+25INR0554,ERCOT,Dan Kearney BESS,TX,Brazoria County,204.38,planned,2027,eia-67083,"Longbow BESS, LLC",TX,Brazoria County,174,operating
+25INR0554,ERCOT,Dan Kearney BESS,TX,Brazoria County,204.38,planned,2027,eia-65870,Castor,TX,Brazoria County,200,under_construction
+25INR0554,ERCOT,Dan Kearney BESS,TX,Brazoria County,204.38,planned,2027,eia-67535,Bell Creek BESS LLC,TX,Brazoria County,201,planned
+25INR0554,ERCOT,Dan Kearney BESS,TX,Brazoria County,204.38,planned,2027,eia-68583,Rock N' Roll,TX,Brazoria County,250,planned
+25INR0554,ERCOT,Dan Kearney BESS,TX,Brazoria County,204.38,planned,2027,eia-68814,Brazos River BESS LLC,TX,Brazoria County,180,planned
+25INR0657,ERCOT,O'Bannion Energy Storage,TX,Jack County,306.4,planned,2028,eia-70367,O'Bannion Energy Storage,TX,Jack County,300,planned
+25INR0688,ERCOT,Giga Texas Data Center,TX,Travis County,133,planned,2025,eia-65695,TX12 Silicon Hill Storage,TX,Travis County,100,operating
+25INR0688,ERCOT,Giga Texas Data Center,TX,Travis County,133,planned,2025,eia-67860,GFTX BESS,TX,Travis County,125,operating
+25INR0706,ERCOT,Bocanova Power II,TX,Brazoria County,150.46,planned,2026,bess-aypa-amelia,Amelia BESS,TX,Brazoria County,200,under_construction
+25INR0706,ERCOT,Bocanova Power II,TX,Brazoria County,150.46,planned,2026,eia-65876,Desna,TX,Brazoria County,200,operating
+25INR0706,ERCOT,Bocanova Power II,TX,Brazoria County,150.46,planned,2026,eia-67083,"Longbow BESS, LLC",TX,Brazoria County,174,operating
+25INR0706,ERCOT,Bocanova Power II,TX,Brazoria County,150.46,planned,2026,eia-68879,Bocanova Energy Storage,TX,Brazoria County,150,operating
+25INR0706,ERCOT,Bocanova Power II,TX,Brazoria County,150.46,planned,2026,eia-69251,Cottonwood Bayou Storage,TX,Brazoria County,150,operating
+25INR0706,ERCOT,Bocanova Power II,TX,Brazoria County,150.46,planned,2026,eia-65870,Castor,TX,Brazoria County,200,under_construction
+25INR0706,ERCOT,Bocanova Power II,TX,Brazoria County,150.46,planned,2026,eia-68814,Brazos River BESS LLC,TX,Brazoria County,180,planned
+25INR0706,ERCOT,Bocanova Power II,TX,Brazoria County,150.46,planned,2026,eia-69423,Bocanova Energy Storage II,TX,Brazoria County,150,under_construction
+26INR0034,ERCOT,Bracero Pecan Storage,TX,Reeves County,238.21,planned,2027,bess-rodeo-ranch,Rodeo Ranch Energy Storage,TX,Reeves County,300,operating
+26INR0189,ERCOT,Skipjack Energy Storage,TX,Brazoria County,150.6,planned,2028,bess-aypa-amelia,Amelia BESS,TX,Brazoria County,200,under_construction
+26INR0189,ERCOT,Skipjack Energy Storage,TX,Brazoria County,150.6,planned,2028,eia-65876,Desna,TX,Brazoria County,200,operating
+26INR0189,ERCOT,Skipjack Energy Storage,TX,Brazoria County,150.6,planned,2028,eia-67083,"Longbow BESS, LLC",TX,Brazoria County,174,operating
+26INR0189,ERCOT,Skipjack Energy Storage,TX,Brazoria County,150.6,planned,2028,eia-68879,Bocanova Energy Storage,TX,Brazoria County,150,operating
+26INR0189,ERCOT,Skipjack Energy Storage,TX,Brazoria County,150.6,planned,2028,eia-69251,Cottonwood Bayou Storage,TX,Brazoria County,150,operating
+26INR0189,ERCOT,Skipjack Energy Storage,TX,Brazoria County,150.6,planned,2028,eia-65870,Castor,TX,Brazoria County,200,under_construction
+26INR0189,ERCOT,Skipjack Energy Storage,TX,Brazoria County,150.6,planned,2028,eia-68814,Brazos River BESS LLC,TX,Brazoria County,180,planned
+26INR0189,ERCOT,Skipjack Energy Storage,TX,Brazoria County,150.6,planned,2028,eia-69423,Bocanova Energy Storage II,TX,Brazoria County,150,under_construction
+26INR0201,ERCOT,Rock Rose BESS,TX,Fort Bend County,211.5,planned,2026,bess-aypa-cinco,Cinco BESS,TX,Fort Bend County,200,operating
+26INR0201,ERCOT,Rock Rose BESS,TX,Fort Bend County,211.5,planned,2026,eia-67761,Bypass BESS,TX,Fort Bend County,200,operating
+26INR0201,ERCOT,Rock Rose BESS,TX,Fort Bend County,211.5,planned,2026,eia-68365,Old 300 Storage Center,TX,Fort Bend County,250,operating
+26INR0201,ERCOT,Rock Rose BESS,TX,Fort Bend County,211.5,planned,2026,eia-67249,Rock Rose Energy Storage,TX,Fort Bend County,200,under_construction
+26INR0226,ERCOT,First Capitol BESS,TX,Brazoria County,257.48,planned,2027,bess-aypa-amelia,Amelia BESS,TX,Brazoria County,200,under_construction
+26INR0226,ERCOT,First Capitol BESS,TX,Brazoria County,257.48,planned,2027,eia-65876,Desna,TX,Brazoria County,200,operating
+26INR0226,ERCOT,First Capitol BESS,TX,Brazoria County,257.48,planned,2027,eia-67737,SMT Ironman Battery Storage Plant,TX,Brazoria County,304,operating
+26INR0226,ERCOT,First Capitol BESS,TX,Brazoria County,257.48,planned,2027,eia-65850,Elio Energy LLC,TX,Brazoria County,300,planned
+26INR0226,ERCOT,First Capitol BESS,TX,Brazoria County,257.48,planned,2027,eia-65870,Castor,TX,Brazoria County,200,under_construction
+26INR0226,ERCOT,First Capitol BESS,TX,Brazoria County,257.48,planned,2027,eia-67535,Bell Creek BESS LLC,TX,Brazoria County,201,planned
+26INR0226,ERCOT,First Capitol BESS,TX,Brazoria County,257.48,planned,2027,eia-68583,Rock N' Roll,TX,Brazoria County,250,planned
+26INR0296,ERCOT,Sherbino II BESS SLF,TX,Pecos County,77.37,planned,2027,eia-66336,St. Gall Energy Storage I,TX,Pecos County,103,operating
+26INR0296,ERCOT,Sherbino II BESS SLF,TX,Pecos County,77.37,planned,2027,eia-68423,St Gall Energy Storage II,TX,Pecos County,100,operating
+26INR0296,ERCOT,Sherbino II BESS SLF,TX,Pecos County,77.37,planned,2027,eia-69407,Dogfish BESS,TX,Pecos County,75,operating
+26INR0296,ERCOT,Sherbino II BESS SLF,TX,Pecos County,77.37,planned,2027,eia-68428,Gatsby Energy Storage Project,TX,Pecos County,103,under_construction
+26INR0314,ERCOT,Brazos River BESS,TX,Brazoria County,180.36,planned,2027,bess-aypa-amelia,Amelia BESS,TX,Brazoria County,200,under_construction
+26INR0314,ERCOT,Brazos River BESS,TX,Brazoria County,180.36,planned,2027,eia-65876,Desna,TX,Brazoria County,200,operating
+26INR0314,ERCOT,Brazos River BESS,TX,Brazoria County,180.36,planned,2027,eia-67083,"Longbow BESS, LLC",TX,Brazoria County,174,operating
+26INR0314,ERCOT,Brazos River BESS,TX,Brazoria County,180.36,planned,2027,eia-68879,Bocanova Energy Storage,TX,Brazoria County,150,operating
+26INR0314,ERCOT,Brazos River BESS,TX,Brazoria County,180.36,planned,2027,eia-69251,Cottonwood Bayou Storage,TX,Brazoria County,150,operating
+26INR0314,ERCOT,Brazos River BESS,TX,Brazoria County,180.36,planned,2027,eia-65870,Castor,TX,Brazoria County,200,under_construction
+26INR0314,ERCOT,Brazos River BESS,TX,Brazoria County,180.36,planned,2027,eia-67535,Bell Creek BESS LLC,TX,Brazoria County,201,planned
+26INR0314,ERCOT,Brazos River BESS,TX,Brazoria County,180.36,planned,2027,eia-68814,Brazos River BESS LLC,TX,Brazoria County,180,planned
+26INR0314,ERCOT,Brazos River BESS,TX,Brazoria County,180.36,planned,2027,eia-69423,Bocanova Energy Storage II,TX,Brazoria County,150,under_construction
+26INR0330,ERCOT,Alamo City BESS,TX,Bexar County,128.2,planned,2027,eia-66400,Bexar ESS,TX,Bexar County,100,operating
+26INR0330,ERCOT,Alamo City BESS,TX,Bexar County,128.2,planned,2027,eia-68913,Padua 2,TX,Bexar County,150,operating
+26INR0333,ERCOT,Vertus Energy Storage,TX,Galveston County,207.3,planned,2026,eia-68809,Hidden Lakes Reliability Project,TX,Galveston County,220,operating
+26INR0333,ERCOT,Vertus Energy Storage,TX,Galveston County,207.3,planned,2026,eia-65880,Zeya,TX,Galveston County,250,under_construction
+26INR0333,ERCOT,Vertus Energy Storage,TX,Galveston County,207.3,planned,2026,eia-69255,Vertus Energy Storage Plant,TX,Galveston County,200,under_construction
+26INR0340,ERCOT,Southern Select Energy Storage,TX,Galveston County,204.76,planned,2027,eia-68809,Hidden Lakes Reliability Project,TX,Galveston County,220,operating
+26INR0340,ERCOT,Southern Select Energy Storage,TX,Galveston County,204.76,planned,2027,eia-65880,Zeya,TX,Galveston County,250,under_construction
+26INR0340,ERCOT,Southern Select Energy Storage,TX,Galveston County,204.76,planned,2027,eia-69255,Vertus Energy Storage Plant,TX,Galveston County,200,under_construction
+26INR0341,ERCOT,Megamouth Energy Storage,TX,Harris County,101.3,planned,2028,eia-69393,Pamela Heights I Energy Center,TX,Harris County,100,under_construction
+26INR0405,ERCOT,Buffalo Creek BESS,TX,Fort Bend County,251.4,planned,2026,bess-aypa-cinco,Cinco BESS,TX,Fort Bend County,200,operating
+26INR0405,ERCOT,Buffalo Creek BESS,TX,Fort Bend County,251.4,planned,2026,eia-67761,Bypass BESS,TX,Fort Bend County,200,operating
+26INR0405,ERCOT,Buffalo Creek BESS,TX,Fort Bend County,251.4,planned,2026,eia-68365,Old 300 Storage Center,TX,Fort Bend County,250,operating
+26INR0405,ERCOT,Buffalo Creek BESS,TX,Fort Bend County,251.4,planned,2026,eia-67249,Rock Rose Energy Storage,TX,Fort Bend County,200,under_construction
+26INR0417,ERCOT,Gamay Energy Storage,TX,Brazoria County,418.6,planned,2027,eia-69200,SAHARA BESS (SOHO BESS),TX,Brazoria County,409,operating
+26INR0551,ERCOT,Hastings Park BESS,TX,Brazoria County,256.34,planned,2027,bess-aypa-amelia,Amelia BESS,TX,Brazoria County,200,under_construction
+26INR0551,ERCOT,Hastings Park BESS,TX,Brazoria County,256.34,planned,2027,eia-65876,Desna,TX,Brazoria County,200,operating
+26INR0551,ERCOT,Hastings Park BESS,TX,Brazoria County,256.34,planned,2027,eia-67737,SMT Ironman Battery Storage Plant,TX,Brazoria County,304,operating
+26INR0551,ERCOT,Hastings Park BESS,TX,Brazoria County,256.34,planned,2027,eia-65850,Elio Energy LLC,TX,Brazoria County,300,planned
+26INR0551,ERCOT,Hastings Park BESS,TX,Brazoria County,256.34,planned,2027,eia-65870,Castor,TX,Brazoria County,200,under_construction
+26INR0551,ERCOT,Hastings Park BESS,TX,Brazoria County,256.34,planned,2027,eia-67535,Bell Creek BESS LLC,TX,Brazoria County,201,planned
+26INR0551,ERCOT,Hastings Park BESS,TX,Brazoria County,256.34,planned,2027,eia-68583,Rock N' Roll,TX,Brazoria County,250,planned
+27INR0243,ERCOT,Brookview Road BESS,TX,Harris County,203.2,planned,2028,bess-jupiter-callisto,Callisto BESS,TX,Harris County,200,operating
+27INR0243,ERCOT,Brookview Road BESS,TX,Harris County,203.2,planned,2028,eia-67654,Destiny Storage,TX,Harris County,200,operating
+27INR0243,ERCOT,Brookview Road BESS,TX,Harris County,203.2,planned,2028,eia-67738,Citadel Battery Storage Plant,TX,Harris County,204,operating
+27INR0399,ERCOT,Resaca Oasis Storage,TX,Cameron County,200.7,planned,2027,eia-66411,Hecate Grid East Valley Storage,TX,Cameron County,255,planned
+27INR0399,ERCOT,Resaca Oasis Storage,TX,Cameron County,200.7,planned,2027,eia-67777,Harryoung PV and BESS,TX,Cameron County,190,planned
+27INR0399,ERCOT,Resaca Oasis Storage,TX,Cameron County,200.7,planned,2027,eia-69120,Resaca Oasis Storage,TX,Cameron County,201,planned
+27INR0399,ERCOT,Resaca Oasis Storage,TX,Cameron County,200.7,planned,2027,eia-69151,Arroyo Storage,TX,Cameron County,180,under_construction
+28INR0024,ERCOT,Padua Grid BESS Unit 3,TX,Bexar County,201.35,planned,2026,eia-68915,Ferdinand Energy Center,TX,Bexar County,200,operating
+28INR0024,ERCOT,Padua Grid BESS Unit 3,TX,Bexar County,201.35,planned,2026,eia-68348,Alamo City ESS,TX,Bexar County,200,planned
+28INR0024,ERCOT,Padua Grid BESS Unit 3,TX,Bexar County,201.35,planned,2026,eia-68361,Rush ESS,TX,Bexar County,200,planned
+28INR0024,ERCOT,Padua Grid BESS Unit 3,TX,Bexar County,201.35,planned,2026,eia-68914,Padua 3,TX,Bexar County,200,under_construction
+28INR0154,ERCOT,Pamela Heights I,TX,Harris County,101.65,planned,2026,eia-69393,Pamela Heights I Energy Center,TX,Harris County,100,under_construction
+1212,CAISO,Golden Fields Solar,CA,Kern County,100,planned,2026,bess-big-beau,Big Beau BESS,CA,Kern County,128,operating
+1212,CAISO,Golden Fields Solar,CA,Kern County,100,planned,2026,eia-60233,RE Garland,CA,Kern County,88,operating
+1212,CAISO,Golden Fields Solar,CA,Kern County,100,planned,2026,eia-64712,Sanborn BESS 1,CA,Kern County,100,operating
+1212,CAISO,Golden Fields Solar,CA,Kern County,100,planned,2026,eia-64713,Sanborn BESS 2,CA,Kern County,100,operating
+1212,CAISO,Golden Fields Solar,CA,Kern County,100,planned,2026,eia-64864,Chaparral Springs,CA,Kern County,88,operating
+1212,CAISO,Golden Fields Solar,CA,Kern County,100,planned,2026,eia-65591,AVEP BESS,CA,Kern County,126,operating
+1212,CAISO,Golden Fields Solar,CA,Kern County,100,planned,2026,eia-65664,Sandrini Solar 100,CA,Kern County,95,operating
+1212,CAISO,Golden Fields Solar,CA,Kern County,100,planned,2026,eia-65933,Sagebrush ESS,CA,Kern County,80,operating
+1212,CAISO,Golden Fields Solar,CA,Kern County,100,planned,2026,eia-66666,Tumbleweed Energy Storage,CA,Kern County,125,operating
+1212,CAISO,Golden Fields Solar,CA,Kern County,100,planned,2026,eia-66773,Raceway Solar & Storage,CA,Kern County,80,operating
+1212,CAISO,Golden Fields Solar,CA,Kern County,100,planned,2026,eia-67039,"Northern Orchard Solar PV, LLC",CA,Kern County,92,operating
+1212,CAISO,Golden Fields Solar,CA,Kern County,100,planned,2026,eia-67093,Mojave 16/17/18 BESS,CA,Kern County,77,operating
+1212,CAISO,Golden Fields Solar,CA,Kern County,100,planned,2026,eia-67764,Rosamond South 1,CA,Kern County,117,operating
+1212,CAISO,Golden Fields Solar,CA,Kern County,100,planned,2026,eia-69858,Pastoria Power Bank,CA,Kern County,80,operating
+1212,CAISO,Golden Fields Solar,CA,Kern County,100,planned,2026,eia-64215,Aratina Solar Center 2,CA,Kern County,113,under_construction
