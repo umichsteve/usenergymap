@@ -27505,12 +27505,13 @@
       "capacity_mw": 523.9,
       "status": "planned",
       "year_online": 2028,
-      "source": "https://www.ercot.com/gridinfo/resource",
+      "source": "https://www.ercotqueue.com/project/24INR0442",
       "source_label": "ERCOTQueue (ERCOT GIS Report)",
       "queue_id": "24INR0442",
       "iso": "ERCOT",
       "queue_asof": "2026-11-05",
-      "location_approximate": true
+      "location_approximate": true,
+      "ia_signed_date": "2025-07-14"
     },
     {
       "id": "iso-ercot-26inr0375",
@@ -27525,12 +27526,13 @@
       "capacity_mw": 522.1,
       "status": "planned",
       "year_online": 2026,
-      "source": "https://www.ercot.com/gridinfo/resource",
+      "source": "https://www.ercotqueue.com/project/26INR0375",
       "source_label": "ERCOTQueue (ERCOT GIS Report)",
       "queue_id": "26INR0375",
       "iso": "ERCOT",
       "queue_asof": "2026-11-05",
-      "location_approximate": true
+      "location_approximate": true,
+      "ia_signed_date": "2024-12-17"
     },
     {
       "id": "iso-caiso-1962",
@@ -27550,7 +27552,8 @@
       "queue_id": "1962",
       "iso": "CAISO",
       "queue_asof": "2026-11-08",
-      "location_approximate": true
+      "location_approximate": true,
+      "current_status": "ACTIVE, IA Executed"
     },
     {
       "id": "iso-caiso-1619",
@@ -27570,7 +27573,8 @@
       "queue_id": "1619",
       "iso": "CAISO",
       "queue_asof": "2026-11-08",
-      "location_approximate": true
+      "location_approximate": true,
+      "current_status": "ACTIVE, IA Executed"
     },
     {
       "id": "iso-caiso-1875",
@@ -27590,7 +27594,8 @@
       "queue_id": "1875",
       "iso": "CAISO",
       "queue_asof": "2026-11-08",
-      "location_approximate": true
+      "location_approximate": true,
+      "current_status": "ACTIVE, IA Executed"
     },
     {
       "id": "iso-caiso-1881",
@@ -27610,7 +27615,8 @@
       "queue_id": "1881",
       "iso": "CAISO",
       "queue_asof": "2026-11-08",
-      "location_approximate": true
+      "location_approximate": true,
+      "current_status": "ACTIVE, IA Executed"
     },
     {
       "id": "iso-caiso-2066",
@@ -27630,7 +27636,8 @@
       "queue_id": "2066",
       "iso": "CAISO",
       "queue_asof": "2026-11-08",
-      "location_approximate": true
+      "location_approximate": true,
+      "current_status": "ACTIVE, IA Executed"
     },
     {
       "id": "iso-ercot-21inr0505",
@@ -27645,12 +27652,13 @@
       "capacity_mw": 500,
       "status": "planned",
       "year_online": 2028,
-      "source": "https://www.ercot.com/gridinfo/resource",
+      "source": "https://www.ercotqueue.com/project/21INR0505",
       "source_label": "ERCOTQueue (ERCOT GIS Report)",
       "queue_id": "21INR0505",
       "iso": "ERCOT",
       "queue_asof": "2026-11-05",
-      "location_approximate": true
+      "location_approximate": true,
+      "ia_signed_date": "2022-08-11"
     },
     {
       "id": "iso-spp-gen-2020-057",
@@ -27685,12 +27693,13 @@
       "capacity_mw": 409.6,
       "status": "under_construction",
       "year_online": 2028,
-      "source": "https://www.ercot.com/gridinfo/resource",
+      "source": "https://www.ercotqueue.com/project/25INR0557",
       "source_label": "ERCOTQueue (ERCOT GIS Report)",
       "queue_id": "25INR0557",
       "iso": "ERCOT",
       "queue_asof": "2026-11-05",
-      "location_approximate": true
+      "location_approximate": true,
+      "ia_signed_date": "2025-03-20"
     },
     {
       "id": "iso-caiso-1783",
@@ -27710,7 +27719,8 @@
       "queue_id": "1783",
       "iso": "CAISO",
       "queue_asof": "2026-11-08",
-      "location_approximate": true
+      "location_approximate": true,
+      "current_status": "ACTIVE, IA Executed"
     },
     {
       "id": "iso-caiso-2032",
@@ -27730,7 +27740,8 @@
       "queue_id": "2032",
       "iso": "CAISO",
       "queue_asof": "2026-11-08",
-      "location_approximate": true
+      "location_approximate": true,
+      "current_status": "ACTIVE, IA Executed"
     },
     {
       "id": "iso-caiso-1872",
@@ -27750,7 +27761,8 @@
       "queue_id": "1872",
       "iso": "CAISO",
       "queue_asof": "2026-11-08",
-      "location_approximate": true
+      "location_approximate": true,
+      "current_status": "ACTIVE, IA Executed"
     },
     {
       "id": "iso-ercot-24inr0198",
@@ -27765,12 +27777,13 @@
       "capacity_mw": 309.8,
       "status": "planned",
       "year_online": 2028,
-      "source": "https://www.ercot.com/gridinfo/resource",
+      "source": "https://www.ercotqueue.com/project/24INR0198",
       "source_label": "ERCOTQueue (ERCOT GIS Report)",
       "queue_id": "24INR0198",
       "iso": "ERCOT",
       "queue_asof": "2026-11-05",
-      "location_approximate": true
+      "location_approximate": true,
+      "ia_signed_date": "2024-05-03"
     },
     {
       "id": "iso-ercot-23inr0140",
@@ -27785,12 +27798,13 @@
       "capacity_mw": 308.9,
       "status": "planned",
       "year_online": 2027,
-      "source": "https://www.ercot.com/gridinfo/resource",
+      "source": "https://www.ercotqueue.com/project/23INR0140",
       "source_label": "ERCOTQueue (ERCOT GIS Report)",
       "queue_id": "23INR0140",
       "iso": "ERCOT",
       "queue_asof": "2026-11-05",
-      "location_approximate": true
+      "location_approximate": true,
+      "ia_signed_date": "2024-12-01"
     },
     {
       "id": "iso-ercot-25inr0661",
@@ -27805,12 +27819,13 @@
       "capacity_mw": 306.4,
       "status": "planned",
       "year_online": 2028,
-      "source": "https://www.ercot.com/gridinfo/resource",
+      "source": "https://www.ercotqueue.com/project/25INR0661",
       "source_label": "ERCOTQueue (ERCOT GIS Report)",
       "queue_id": "25INR0661",
       "iso": "ERCOT",
       "queue_asof": "2026-11-05",
-      "location_approximate": true
+      "location_approximate": true,
+      "ia_signed_date": "2025-12-30"
     },
     {
       "id": "iso-ercot-25inr0375",
@@ -27825,12 +27840,13 @@
       "capacity_mw": 303.7,
       "status": "planned",
       "year_online": 2029,
-      "source": "https://www.ercot.com/gridinfo/resource",
+      "source": "https://www.ercotqueue.com/project/25INR0375",
       "source_label": "ERCOTQueue (ERCOT GIS Report)",
       "queue_id": "25INR0375",
       "iso": "ERCOT",
       "queue_asof": "2026-11-05",
-      "location_approximate": true
+      "location_approximate": true,
+      "ia_signed_date": "2025-10-20"
     },
     {
       "id": "iso-ercot-25inr0460",
@@ -27845,12 +27861,13 @@
       "capacity_mw": 301.0,
       "status": "planned",
       "year_online": 2029,
-      "source": "https://www.ercot.com/gridinfo/resource",
+      "source": "https://www.ercotqueue.com/project/25INR0460",
       "source_label": "ERCOTQueue (ERCOT GIS Report)",
       "queue_id": "25INR0460",
       "iso": "ERCOT",
       "queue_asof": "2026-11-05",
-      "location_approximate": true
+      "location_approximate": true,
+      "ia_signed_date": "2025-04-21"
     },
     {
       "id": "iso-ercot-25inr0230",
@@ -27865,12 +27882,13 @@
       "capacity_mw": 300.9,
       "status": "under_construction",
       "year_online": 2027,
-      "source": "https://www.ercot.com/gridinfo/resource",
+      "source": "https://www.ercotqueue.com/project/25INR0230",
       "source_label": "ERCOTQueue (ERCOT GIS Report)",
       "queue_id": "25INR0230",
       "iso": "ERCOT",
       "queue_asof": "2026-11-05",
-      "location_approximate": true
+      "location_approximate": true,
+      "ia_signed_date": "2024-08-23"
     },
     {
       "id": "iso-caiso-1270",
@@ -27890,7 +27908,8 @@
       "queue_id": "1270",
       "iso": "CAISO",
       "queue_asof": "2026-11-08",
-      "location_approximate": true
+      "location_approximate": true,
+      "current_status": "ACTIVE, IA Executed"
     },
     {
       "id": "iso-caiso-1768",
@@ -27910,7 +27929,8 @@
       "queue_id": "1768",
       "iso": "CAISO",
       "queue_asof": "2026-11-08",
-      "location_approximate": true
+      "location_approximate": true,
+      "current_status": "ACTIVE, IA Executed"
     },
     {
       "id": "iso-caiso-1903",
@@ -27930,7 +27950,8 @@
       "queue_id": "1903",
       "iso": "CAISO",
       "queue_asof": "2026-11-08",
-      "location_approximate": true
+      "location_approximate": true,
+      "current_status": "ACTIVE, IA Executed"
     },
     {
       "id": "iso-caiso-1912",
@@ -27950,7 +27971,8 @@
       "queue_id": "1912",
       "iso": "CAISO",
       "queue_asof": "2026-11-08",
-      "location_approximate": true
+      "location_approximate": true,
+      "current_status": "ACTIVE, IA Executed"
     },
     {
       "id": "iso-caiso-2125",
@@ -27970,7 +27992,8 @@
       "queue_id": "2125",
       "iso": "CAISO",
       "queue_asof": "2026-11-08",
-      "location_approximate": true
+      "location_approximate": true,
+      "current_status": "ACTIVE, IA Executed"
     },
     {
       "id": "iso-spp-gen-2024-sr6",

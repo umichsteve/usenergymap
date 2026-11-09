@@ -1,36 +1,36 @@
 iso,q_id,name,state,county_name,mw_1,cur_mw,cur_year,status_raw,status,verdict
 West,CS23-12,"West queue CS23-12 (Franklin, WA)",WA,Franklin County,199,,,,,non_iso_utility
 CAISO,1064,Ares Nevada,NV,Nye County,44,44.0,2027,ACTIVE,planned,keep
-CAISO,1270,Corby,CA,Solano County,313.5,300.0,2027,ACTIVE,planned,keep
+CAISO,1270,Corby,CA,Solano County,313.5,300.0,2027,"ACTIVE, IA Executed",planned,keep
 CAISO,1442,Ajo Power Bank,CA,Santa Clara County,124.3,,,WITHDRAWN,,withdrawn
 CAISO,1444,Saloon Energy Storage,CA,Colusa County,150,150.0,2027,ACTIVE,planned,keep
 CAISO,1550,Tanager Storage,CA,Santa Clara County,200,200.0,2027,ACTIVE,planned,keep
 CAISO,1552,Cormorant Storage,CA,San Francisco County,250,250.0,2027,ACTIVE,planned,keep
 CAISO,1553,Jewelflower Storage,CA,Santa Clara County,354.88,,,WITHDRAWN,,withdrawn
-CAISO,1619,Goldback Solar Center,CA,Ventura County,500,500.0,2029,ACTIVE,planned,keep
+CAISO,1619,Goldback Solar Center,CA,Ventura County,500,500.0,2029,"ACTIVE, IA Executed",planned,keep
 CAISO,1657,Sandpiper Storage,CA,Orange County,200,,,WITHDRAWN,,withdrawn
 CAISO,1705,Steel City Battery Storage,CA,Contra Costa County,675,,,WITHDRAWN,,withdrawn
-CAISO,1768,Roadhouse Storage,CA,San Bernardino County,312.96,300.0,2027,ACTIVE,planned,keep
-CAISO,1783,Shoals Energy Storage,CA,Ventura County,409,400.0,2030,ACTIVE,planned,keep
+CAISO,1768,Roadhouse Storage,CA,San Bernardino County,312.96,300.0,2027,"ACTIVE, IA Executed",planned,keep
+CAISO,1783,Shoals Energy Storage,CA,Ventura County,409,400.0,2030,"ACTIVE, IA Executed",planned,keep
 CAISO,1806,Captiva Energy Storage,CA,Orange County,256.875,,,WITHDRAWN,,withdrawn
 CAISO,1865,Seahawk Storage,CA,Santa Cruz County,203.699,200.0,2029,ACTIVE,planned,keep
-CAISO,1872,Allegheny Energy Storage,CA,Contra Costa County,353.2,325.0,2032,ACTIVE,planned,keep
-CAISO,1875,Delilah Energy Storage,CA,Contra Costa County,504,500.0,2032,ACTIVE,planned,keep
+CAISO,1872,Allegheny Energy Storage,CA,Contra Costa County,353.2,325.0,2032,"ACTIVE, IA Executed",planned,keep
+CAISO,1875,Delilah Energy Storage,CA,Contra Costa County,504,500.0,2032,"ACTIVE, IA Executed",planned,keep
 CAISO,1876,Double Springs Energy Storage,CA,Calaveras County,101,100.0,2029,ACTIVE,planned,keep
-CAISO,1881,Spectrum Energy Storage,CA,Alameda County,504,500.0,2032,ACTIVE,planned,keep
+CAISO,1881,Spectrum Energy Storage,CA,Alameda County,504,500.0,2032,"ACTIVE, IA Executed",planned,keep
 CAISO,1895,Oakdale Storage,CA,Stanislaus County,102.672,100.0,2031,ACTIVE,planned,keep
 CAISO,1900,Baylands Battery,CA,San Mateo County,250,250.0,2030,ACTIVE,planned,keep
-CAISO,1903,Golden Flats,CA,Stanislaus County,365.12,300.0,2031,ACTIVE,planned,keep
+CAISO,1903,Golden Flats,CA,Stanislaus County,365.12,300.0,2031,"ACTIVE, IA Executed",planned,keep
 CAISO,1911,Zorin Storage,CA,Alameda County,252,180.0,2034,ACTIVE,planned,keep
-CAISO,1912,Espresso,CA,Alameda County,365.12,300.0,2031,ACTIVE,planned,keep
+CAISO,1912,Espresso,CA,Alameda County,365.12,300.0,2031,"ACTIVE, IA Executed",planned,keep
 CAISO,1919,Sunbeam Storage,CA,San Mateo County,100.9,,,WITHDRAWN,,withdrawn
 CAISO,1932,Cougar Storage,CA,Merced County,203.699,200.0,2030,ACTIVE,planned,keep
-CAISO,1962,Lock Storage,CA,Fresno County,508,500.01,2027,ACTIVE,planned,keep
-CAISO,2032,Trolley,CA,San Bernardino County,405.663412,400.0,2031,ACTIVE,planned,keep
-CAISO,2066,Drifter Energy Storage,CA,Ventura County,504.8,500.0,2033,ACTIVE,planned,keep
+CAISO,1962,Lock Storage,CA,Fresno County,508,500.01,2027,"ACTIVE, IA Executed",planned,keep
+CAISO,2032,Trolley,CA,San Bernardino County,405.663412,400.0,2031,"ACTIVE, IA Executed",planned,keep
+CAISO,2066,Drifter Energy Storage,CA,Ventura County,504.8,500.0,2033,"ACTIVE, IA Executed",planned,keep
 CAISO,2096,Hidalgo Energy Storage,CA,San Bernardino County,408.12,,,WITHDRAWN,,withdrawn
 CAISO,2104,Dos Palmas,CA,San Bernardino County,410.76,,,WITHDRAWN,,withdrawn
-CAISO,2125,Tyrell Energy Storage,CA,Orange County,302.4,300.0,2032,ACTIVE,planned,keep
+CAISO,2125,Tyrell Energy Storage,CA,Orange County,302.4,300.0,2032,"ACTIVE, IA Executed",planned,keep
 Southeast,899053,"Southeast queue 899053 (Wilkes, NC)",NC,Wilkes County,120,,,,,non_iso_utility
 Southeast,292,"Southeast queue 292 (Pinellas, FL)",FL,Pinellas County,225,,,,,non_iso_utility
 Southeast,FC100008,"Southeast queue FC100008 (Highlands, FL)",FL,Highlands County,100,,,,,non_iso_utility
@@ -156,7 +156,7 @@ SPP,GEN-2023-SR4,"SPP queue GEN-2023-SR4 (Burke, ND)",ND,Burke County,170,170.0,
 SPP,GEN-2023-SR8,"SPP queue GEN-2023-SR8 (Hansford, TX)",TX,Hansford County,200,200.0,2026,IA FULLY EXECUTED/ON SCHEDULE,planned,keep
 SPP,GEN-2024-SR12,"SPP queue GEN-2024-SR12 (LaMoure, ND)",ND,LaMoure County,20,,,,,not_found
 SPP,GEN-2024-SR13,"SPP queue GEN-2024-SR13 (Bryan, OK)",OK,Bryan County,52.2,,,,,not_found
-SPP,GEN-2024-SR15,"SPP queue GEN-2024-SR15 (Yoakum, TX)",TX,Yoakum County,300,300.0,2028,IA FULLY EXECUTED/ON SCHEDULE,planned,keep
+SPP,GEN-2024-SR15,"SPP queue GEN-2024-SR15 (Yoakum, TX)",TX,Yoakum County,300,300.0,2028,DISIS CLUSTER STUDY,planned,drop_disis
 SPP,GEN-2024-SR16,"SPP queue GEN-2024-SR16 (Rogers, OK)",OK,Rogers County,100,100.0,2026,IA PENDING,planned,keep
 SPP,GEN-2024-SR17,"SPP queue GEN-2024-SR17 (Kay, OK)",OK,Kay County,50,50.0,2027,IA FULLY EXECUTED/ON SCHEDULE,planned,keep
 SPP,GEN-2024-SR2,"SPP queue GEN-2024-SR2 (Franklin, AR)",AR,Franklin County,72.5,72.5,2027,IA FULLY EXECUTED/ON SCHEDULE,planned,keep
