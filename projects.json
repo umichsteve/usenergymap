@@ -4898,6 +4898,7 @@
       "capacity_mw": 10,
       "status": "operating",
       "source": "https://www.eia.gov/electricity/data/eia860m/",
+      "ferc_docket": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=QF10-417-004",
       "capacity_mwh": 20,
       "year_online": 2012
     },
@@ -5884,6 +5885,7 @@
       "capacity_mw": 20,
       "status": "operating",
       "source": "https://www.eia.gov/electricity/data/eia860m/",
+      "ferc_docket": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=QF19-140-004",
       "capacity_mwh": 100,
       "year_online": 2018
     },
@@ -12123,6 +12125,7 @@
       "capacity_mw": 50,
       "status": "operating",
       "source": "https://www.eia.gov/electricity/data/eia860m/",
+      "ferc_docket": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=QF23-860-001",
       "capacity_mwh": 200,
       "year_online": 2023
     },
@@ -14078,6 +14081,7 @@
       "capacity_mw": 18,
       "status": "operating",
       "source": "https://www.eia.gov/electricity/data/eia860m/",
+      "ferc_docket": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=QF19-752-011",
       "capacity_mwh": 72,
       "year_online": 2023
     },
@@ -22594,6 +22598,7 @@
       "capacity_mw": 28,
       "status": "planned",
       "source": "https://www.eia.gov/electricity/data/eia860m/",
+      "ferc_docket": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=QF23-1217-003",
       "year_online": 2028
     },
     {
@@ -24002,6 +24007,7 @@
       "capacity_mw": 32,
       "status": "planned",
       "source": "https://www.eia.gov/electricity/data/eia860m/",
+      "ferc_docket": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=QF23-1318-000",
       "year_online": 2028
     },
     {
@@ -27012,7 +27018,8 @@
       "co_located": true,
       "status": "planned",
       "source": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=QF24-408-000",
-      "source_label": "FERC Form 556"
+      "source_label": "FERC Form 556",
+      "ferc_docket": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=QF24-408-000"
     },
     {
       "id": "bess-ferc-qf22-1134-001",
@@ -27030,7 +27037,8 @@
       "co_located": true,
       "status": "planned",
       "source": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=QF22-1134-001",
-      "source_label": "FERC Form 556"
+      "source_label": "FERC Form 556",
+      "ferc_docket": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=QF22-1134-001"
     },
     {
       "id": "bess-ferc-qf23-579-004",
@@ -27048,7 +27056,8 @@
       "co_located": true,
       "status": "planned",
       "source": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=QF23-579-004",
-      "source_label": "FERC Form 556"
+      "source_label": "FERC Form 556",
+      "ferc_docket": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=QF23-579-004"
     },
     {
       "id": "bess-ferc-qf25-355-000",
@@ -27066,7 +27075,8 @@
       "co_located": true,
       "status": "planned",
       "source": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=QF25-355-000",
-      "source_label": "FERC Form 556"
+      "source_label": "FERC Form 556",
+      "ferc_docket": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=QF25-355-000"
     },
     {
       "id": "bess-ferc-qf24-325-000",
@@ -27084,7 +27094,8 @@
       "co_located": true,
       "status": "planned",
       "source": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=QF24-325-000",
-      "source_label": "FERC Form 556"
+      "source_label": "FERC Form 556",
+      "ferc_docket": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=QF24-325-000"
     },
     {
       "id": "bess-ferc-qf25-1313-000",
@@ -27102,7 +27113,8 @@
       "co_located": true,
       "status": "planned",
       "source": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=QF25-1313-000",
-      "source_label": "FERC Form 556"
+      "source_label": "FERC Form 556",
+      "ferc_docket": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=QF25-1313-000"
     },
     {
       "id": "bess-ferc-qf24-8-000",
@@ -27119,7 +27131,8 @@
       "co_located": true,
       "status": "planned",
       "source": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=QF24-8-000",
-      "source_label": "FERC Form 556"
+      "source_label": "FERC Form 556",
+      "ferc_docket": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=QF24-8-000"
     },
     {
       "id": "bess-ferc-qf23-1317-000",
@@ -27136,7 +27149,8 @@
       "co_located": true,
       "status": "planned",
       "source": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=QF23-1317-000",
-      "source_label": "FERC Form 556"
+      "source_label": "FERC Form 556",
+      "ferc_docket": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=QF23-1317-000"
     },
     {
       "id": "bess-ferc-qf23-1314-000",
@@ -27153,7 +27167,8 @@
       "co_located": true,
       "status": "planned",
       "source": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=QF23-1314-000",
-      "source_label": "FERC Form 556"
+      "source_label": "FERC Form 556",
+      "ferc_docket": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=QF23-1314-000"
     },
     {
       "id": "bess-ferc-qf24-999-000",
@@ -27171,7 +27186,8 @@
       "co_located": true,
       "status": "planned",
       "source": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=QF24-999-000",
-      "source_label": "FERC Form 556"
+      "source_label": "FERC Form 556",
+      "ferc_docket": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=QF24-999-000"
     },
     {
       "id": "bess-ferc-qf22-837-001",
@@ -27189,7 +27205,8 @@
       "co_located": true,
       "status": "planned",
       "source": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=QF22-837-001",
-      "source_label": "FERC Form 556"
+      "source_label": "FERC Form 556",
+      "ferc_docket": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=QF22-837-001"
     },
     {
       "id": "bess-ferc-qf23-1315-000",
@@ -27206,7 +27223,8 @@
       "co_located": true,
       "status": "planned",
       "source": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=QF23-1315-000",
-      "source_label": "FERC Form 556"
+      "source_label": "FERC Form 556",
+      "ferc_docket": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=QF23-1315-000"
     },
     {
       "id": "bess-ferc-qf23-1291-001",
@@ -27224,7 +27242,8 @@
       "co_located": true,
       "status": "planned",
       "source": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=QF23-1291-001",
-      "source_label": "FERC Form 556"
+      "source_label": "FERC Form 556",
+      "ferc_docket": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=QF23-1291-001"
     },
     {
       "id": "bess-ferc-qf23-1292-000",
@@ -27242,7 +27261,8 @@
       "co_located": true,
       "status": "planned",
       "source": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=QF23-1292-000",
-      "source_label": "FERC Form 556"
+      "source_label": "FERC Form 556",
+      "ferc_docket": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=QF23-1292-000"
     },
     {
       "id": "bess-ferc-qf23-1301-002",
@@ -27260,7 +27280,8 @@
       "co_located": true,
       "status": "planned",
       "source": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=QF23-1301-002",
-      "source_label": "FERC Form 556"
+      "source_label": "FERC Form 556",
+      "ferc_docket": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=QF23-1301-002"
     },
     {
       "id": "bess-ferc-qf23-1302-001",
@@ -27278,7 +27299,8 @@
       "co_located": true,
       "status": "planned",
       "source": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=QF23-1302-001",
-      "source_label": "FERC Form 556"
+      "source_label": "FERC Form 556",
+      "ferc_docket": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=QF23-1302-001"
     },
     {
       "id": "bess-ferc-qf23-1296-001",
@@ -27296,7 +27318,8 @@
       "co_located": true,
       "status": "planned",
       "source": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=QF23-1296-001",
-      "source_label": "FERC Form 556"
+      "source_label": "FERC Form 556",
+      "ferc_docket": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=QF23-1296-001"
     },
     {
       "id": "bess-ferc-qf25-1352-000",
@@ -27314,7 +27337,8 @@
       "co_located": true,
       "status": "planned",
       "source": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=QF25-1352-000",
-      "source_label": "FERC Form 556"
+      "source_label": "FERC Form 556",
+      "ferc_docket": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=QF25-1352-000"
     },
     {
       "id": "bess-ferc-qf23-1312-001",
@@ -27332,7 +27356,8 @@
       "co_located": true,
       "status": "planned",
       "source": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=QF23-1312-001",
-      "source_label": "FERC Form 556"
+      "source_label": "FERC Form 556",
+      "ferc_docket": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=QF23-1312-001"
     },
     {
       "id": "bess-ferc-qf23-1287-001",
@@ -27350,7 +27375,8 @@
       "co_located": true,
       "status": "planned",
       "source": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=QF23-1287-001",
-      "source_label": "FERC Form 556"
+      "source_label": "FERC Form 556",
+      "ferc_docket": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=QF23-1287-001"
     },
     {
       "id": "bess-ferc-qf24-975-000",
@@ -27368,7 +27394,8 @@
       "co_located": true,
       "status": "planned",
       "source": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=QF24-975-000",
-      "source_label": "FERC Form 556"
+      "source_label": "FERC Form 556",
+      "ferc_docket": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=QF24-975-000"
     },
     {
       "id": "bess-ferc-qf23-772-003",
@@ -27385,7 +27412,8 @@
       "co_located": true,
       "status": "planned",
       "source": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=QF23-772-003",
-      "source_label": "FERC Form 556"
+      "source_label": "FERC Form 556",
+      "ferc_docket": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=QF23-772-003"
     },
     {
       "id": "bess-ferc-qf22-852-001",
@@ -27403,7 +27431,8 @@
       "co_located": true,
       "status": "planned",
       "source": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=QF22-852-001",
-      "source_label": "FERC Form 556"
+      "source_label": "FERC Form 556",
+      "ferc_docket": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=QF22-852-001"
     },
     {
       "id": "bess-ferc-qf23-1293-001",
@@ -27421,7 +27450,8 @@
       "co_located": true,
       "status": "planned",
       "source": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=QF23-1293-001",
-      "source_label": "FERC Form 556"
+      "source_label": "FERC Form 556",
+      "ferc_docket": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=QF23-1293-001"
     },
     {
       "id": "bess-ferc-qf24-1014-000",
@@ -27439,7 +27469,27 @@
       "co_located": true,
       "status": "planned",
       "source": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=QF24-1014-000",
-      "source_label": "FERC Form 556"
+      "source_label": "FERC Form 556",
+      "ferc_docket": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=QF24-1014-000"
+    },
+    {
+      "id": "bess-ferc-qf23-1297-001",
+      "type": "bess",
+      "name": "Farmview Solar Hybrid",
+      "operator": "Farmview Solar LLC",
+      "city": "Thomasville",
+      "state": "NC",
+      "county_name": "Davidson County",
+      "county_fips": "37057",
+      "lat": 35.872,
+      "lng": -80.101,
+      "capacity_mw": 11.25,
+      "capacity_mwh": 45.0,
+      "co_located": true,
+      "status": "planned",
+      "source": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=QF23-1297-001",
+      "source_label": "FERC Form 556",
+      "ferc_docket": "https://elibrary.ferc.gov/eLibrary/docketsheet?docket_number=QF23-1297-001"
     }
   ],
   "eia_source_month": "august_generator2026",

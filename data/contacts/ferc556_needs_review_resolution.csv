@@ -1,0 +1,13 @@
+docket,ferc_facility,state,ferc_storage_mw,ferc_storage_mwh,eia_plant_id,eia_plant_name,eia_dist_km,eia_name_jaccard,eia_has_battery,eia_batt_status,eia_batt_mw,eia_batt_mwh,eia_tech_summary,classification,reason
+QF19-140-004,Lawa'i Hybrid,HI,100.0,,61068,AES Lawai Solar Hybrid,0.41,0.00,True,operating,20.0,100.0,"Batteries, Solar Photovoltaic",duplicate_in_projects,EIA battery already a projects.json row
+QF21-1158-001,1874 Solar Project Hybrid,AZ,80.0,320.0,,,,,False,,,,,no_eia_match,status unconfirmed
+QF17-1494-002,Jeffrey City Hybrid,WY,80.0,320.0,,,,,False,,,,,no_eia_match,status unconfirmed
+QF18-671-001,Fairview Solar Hybrid,SC,74.9,299.6,,,,,False,,,,,no_eia_match,status unconfirmed
+QF16-1062-003,Riverton Pv1 Hybrid,WY,74.9,299.6,,,,,False,,,,,no_eia_match,status unconfirmed
+QF17-454-010,Broadview Solar Hybrid,MT,50.0,200.0,,,,,False,,,,,no_eia_match,status unconfirmed
+QF18-1035-002,Ten Governors Solar Hybrid,SC,20.0,100.0,,,,,False,,,,,no_eia_match,status unconfirmed
+QF17-574-001,Melsam Solar Hybrid,SC,20.0,100.0,62280,Melsam Solar,0.25,1.00,False,nan,nan,nan,Solar Photovoltaic,no_eia_battery,EIA plant exists (Solar Photovoltaic) but battery not reported
+QF19-752-011,Eastover Solar Hybrid,SC,18.0,72.0,66717,Eastover Solar,0.06,1.00,True,operating,18.0,72.0,"Batteries, Solar Photovoltaic",duplicate_in_projects,EIA battery already a projects.json row
+QF18-1189-007,Wolf Pit Branch Solar Hybrid,SC,15.5,62.0,65437,"Wolf Pit Branch Solar, LLC",0.00,1.00,True,canceled,15.5,nan,"Batteries, Solar Photovoltaic",eia_battery_canceled,EIA battery filing was canceled or postponed
+QF21-700-002,Meadowlark Solar Hybrid,MT,12.5,50.0,,,,,False,,,,,no_eia_match,status unconfirmed
+QF10-417-004,Kaheawa Wind Power II Hybrid,HI,10.0,20.0,56449,Kaheawa Pastures Wind Farm Hybrid,1.08,0.67,False,nan,nan,nan,Onshore Wind Turbine,no_eia_battery,EIA plant exists (Onshore Wind Turbine) but battery not reported

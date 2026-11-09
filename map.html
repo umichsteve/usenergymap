@@ -407,6 +407,8 @@
       ? `<div class="popup-row"><span class="k">Power</span><span class="v">${ENERGY_LABEL[p.energy_source]}</span></div>` : '';
     const sourceRow = p.source
       ? `<a class="popup-link" href="${escapeHtml(p.source)}" target="_blank" rel="noopener noreferrer">Source ↗</a>` : '';
+    const fercDocketRow = p.ferc_docket && p.ferc_docket !== p.source
+      ? `<a class="popup-link" href="${escapeHtml(p.ferc_docket)}" target="_blank" rel="noopener noreferrer">FERC docket ↗</a>` : '';
     return `
       <div class="popup-title">${escapeHtml(p.name)}</div>
       <div class="popup-sub">${typeLabel} · ${escapeHtml(p.city)}, ${escapeHtml(p.state)}</div>
@@ -421,6 +423,7 @@
         <span class="popup-badge badge-${p.status}">${statusLabel(p.status)}</span>
       </div>
       ${sourceRow}
+      ${fercDocketRow}
     `;
   }
   function makeMarker(p) {
