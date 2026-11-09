@@ -414,8 +414,12 @@
       ? `<div class="popup-row"><span class="k">Power</span><span class="v">${ENERGY_LABEL[p.energy_source]}</span></div>` : '';
     const queueRow = p.queue_id && p.iso
       ? `<div class="popup-row"><span class="k">Queue ID</span><span class="v">${escapeHtml(p.iso)} ${escapeHtml(p.queue_id)}</span></div>` : '';
+    const operatorRow = p.operator
+      ? `<div class="popup-row"><span class="k">Operator</span><span class="v">${escapeHtml(p.operator)}</span></div>` : '';
     const approxRow = p.location_approximate
       ? `<div class="popup-row" style="color:var(--muted);font-size:11px;font-style:italic;">County-level location</div>` : '';
+    const asofRow = p.queue_asof
+      ? `<div class="popup-row" style="color:var(--muted);font-size:11px;">Queue data as of ${escapeHtml(p.queue_asof)}</div>` : '';
     const sourceRow = p.source
       ? `<a class="popup-link" href="${escapeHtml(p.source)}" target="_blank" rel="noopener noreferrer">Source ↗</a>` : '';
     const fercDocketRow = p.ferc_docket && p.ferc_docket !== p.source
@@ -423,7 +427,7 @@
     return `
       <div class="popup-title">${escapeHtml(p.name)}</div>
       <div class="popup-sub">${typeLabel} · ${escapeHtml(p.city)}, ${escapeHtml(p.state)}</div>
-      <div class="popup-row"><span class="k">Operator</span><span class="v">${escapeHtml(p.operator || '—')}</span></div>
+      ${operatorRow}
       <div class="popup-row"><span class="k">Capacity</span><span class="v">${p.capacity_mw ? p.capacity_mw.toLocaleString() + ' MW' + mwEst : '—'}</span></div>
       ${mwhRow}
       ${yearRow}
@@ -435,6 +439,7 @@
         <span class="popup-badge badge-${p.status}">${statusLabel(p.status)}</span>
       </div>
       ${approxRow}
+      ${asofRow}
       ${sourceRow}
       ${fercDocketRow}
     `;
