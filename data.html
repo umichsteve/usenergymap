@@ -69,12 +69,24 @@
       <h1>The map is free. The feed is the product.</h1>
       <p class="sub" style="max-width:760px;">Every tracked U.S. data center and battery storage project — <strong id="hero-count">1,500+</strong> sites, <strong id="hero-gw">170+ GW</strong> — as a ready-to-work Excel hunting list plus clean CSV and GeoJSON. Buy it once, keep it current every month, or license it into your own product.</p>
 
+      <!-- ─────────────── Free sample ─────────────── -->
+      <div class="sample-cta" id="sample" style="margin-top:26px;">
+        <h3>Get the free 25-project sample CSV</h3>
+        <p>The largest tracked data centers and battery storage projects — same columns as the paid file. We email the CSV straight to you.</p>
+        <form class="sample-form" id="sample25-form" novalidate>
+          <input type="email" name="email" inputmode="email" autocomplete="email" placeholder="you@company.com" aria-label="Email address for the free sample" required />
+          <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0" />
+          <button class="btn btn-primary" type="submit">Email me the sample &rarr;</button>
+        </form>
+        <p class="sample-msg" id="sample25-msg" role="status" aria-live="polite"></p>
+      </div>
+
       <!-- ─────────────── Self-serve ─────────────── -->
       <div class="tiers">
         <div class="tier" id="snapshot">
           <h3>Snapshot</h3>
           <p class="who">One clean pull of the current build. For a deck, a model, a one-time prospect list.</p>
-          <div class="price">$199<small>one-time</small></div>
+          <div class="price"><span data-price="snapshot">$199</span><small>one-time</small></div>
           <div class="from">Current dataset build · no updates</div>
           <ul>
             <li>All projects, all states — data centers + BESS</li>
@@ -111,8 +123,28 @@
             <div class="buy-msg" data-msg-for="current"></div>
           </div>
         </div>
+
+        <div class="tier" id="annual">
+          <h3>Always Current — Annual</h3>
+          <p class="who">Everything in Always Current, billed once a year. Easier to expense, cheaper than monthly.</p>
+          <div class="price"><span data-price="annual">$490</span><small>/ year</small></div>
+          <div class="from" data-price-note="annual">≈ $41/mo · save $98 vs monthly</div>
+          <ul>
+            <li>Everything in Always Current</li>
+            <li><strong>Row-level change log</strong> every refresh</li>
+            <li>One charge per year, one receipt</li>
+            <li>Single-user license</li>
+            <li class="no">Redistribution inside your product</li>
+          </ul>
+          <div class="act">
+            <input class="buy-email" type="email" inputmode="email" autocomplete="email" placeholder="you@company.com" aria-label="Email for receipt and access link" data-email-for="annual" />
+            <button class="btn btn-primary" data-buy="annual">Subscribe yearly →</button>
+            <div class="buy-msg" data-msg-for="annual"></div>
+          </div>
+        </div>
       </div>
       <p style="font-size:13px;color:var(--muted);margin:6px 0 0;">Secure checkout by Stripe. Receipt and access link go to the email you enter. The interactive <a href="/map">map</a> and <a href="/explore">state / operator pages</a> stay free — this is for people who'd rather not pull it by hand.</p>
+      <p style="font-size:14px;margin:8px 0 0;">Need an invoice or team license? Email <a href="mailto:steve@usenergymap.com?subject=Invoice%20%2F%20team%20license%20%E2%80%94%20US%20Energy%20Map">steve@usenergymap.com</a></p>
 
       <!-- ─────────────── Teams & products ─────────────── -->
       <div class="teams-head" id="teams">
@@ -275,7 +307,49 @@
     document.getElementById('hero-gw').textContent = (mw / 1000).toFixed(0) + ' GW';
   }).catch(() => {});
 
+  // Prices come from /api/pricing, which reads the same env vars checkout charges from.
+  // The static text in the markup is only a no-JS / failed-fetch fallback.
+  fetch('/api/pricing').then(r => r.ok ? r.json() : null).then(p => {
+    if (!p) return;
+    const set = (sel, v) => { if (v) document.querySelectorAll(sel).forEach(el => { el.textContent = v; }); };
+    set('[data-price="snapshot"]', p.snapshot && p.snapshot.display);
+    set('[data-price="annual"]', p.annual && p.annual.display);
+    if (p.annual && p.annual.display) {
+      const note = '≈ ' + p.annual.per_month_display + '/mo' + (p.annual.savings_display ? ' · save ' + p.annual.savings_display + ' vs monthly' : '');
+      set('[data-price-note="annual"]', note);
+    }
+  }).catch(() => {});
+
   const validEmail = (v) => /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v);
+
+  // Free 25-project sample: /api/sample-request stores the address (Resend contact)
+  // and emails the CSV as an attachment.
+  (function () {
+    const form = document.getElementById('sample25-form');
+    const msg = document.getElementById('sample25-msg');
+    const input = form.querySelector('input[name="email"]');
+    const hp = form.querySelector('input[name="website"]');
+    const btn = form.querySelector('button');
+    const say = (t, cls) => { msg.textContent = t; msg.className = 'sample-msg' + (cls ? ' ' + cls : ''); };
+    form.addEventListener('submit', async (e) => {
+      e.preventDefault();
+      const email = (input.value || '').trim();
+      if (!validEmail(email)) { say('Enter a valid email and the sample is on its way.', 'err'); input.focus(); return; }
+      btn.disabled = true; say('Sending…');
+      try {
+        const res = await fetch('/api/sample-request', {
+          method: 'POST', headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ email, source: 'data', website: hp.value }),
+        });
+        const d = await res.json().catch(() => ({}));
+        if (!res.ok || !d.ok) { say(d.error || "We couldn't send that just now. Try again in a moment.", 'err'); btn.disabled = false; return; }
+        say('Sent — check your inbox for the CSV (from data@usenergymap.com).', 'ok');
+        input.disabled = true; btn.textContent = 'Sample sent ✓';
+      } catch (err) {
+        say("We couldn't reach the server. Try again in a moment.", 'err'); btn.disabled = false;
+      }
+    });
+  })();
   document.querySelectorAll('[data-buy]').forEach(btn => {
     const plan = btn.dataset.buy;
     const emailEl = document.querySelector(`[data-email-for="${plan}"]`);

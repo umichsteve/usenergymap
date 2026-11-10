@@ -83,6 +83,9 @@
   "functions": {
     "api/sample.js": {
       "includeFiles": "projects.json"
+    },
+    "api/sample-request.js": {
+      "includeFiles": "projects.json"
     }
   }
 }

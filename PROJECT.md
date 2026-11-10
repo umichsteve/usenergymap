@@ -133,11 +133,27 @@ The map stays free. `/data` sells the *service* around the dataset, not the reco
 
 | Tier | Price | Checkout | License |
 |---|---|---|---|
-| Snapshot | $199 one-time | Stripe (`plan=snapshot`) | Single-user |
+| Snapshot | $199 one-time (env) | Stripe (`plan=snapshot`) | Single-user |
 | Always Current | $49 / month | Stripe subscription (`plan=current`) | Single-user + change log |
+| Always Current — Annual | $490 / yr (env) | Stripe subscription (`plan=annual` → metadata `plan=current`, `billing=annual`) | Single-user + change log |
 | Region / Sector Feed | $3,000 / yr | Contact → invoice | Commercial, 1 product |
 | Full Feed | $7,500 / yr | Contact → invoice | Commercial, all products |
 | Embedded & API | from $12,000 / yr | Contact → order form | Commercial + SLA |
+
+Prices (Nov 2026): `lib/pricing.js` is the one place self-serve prices come from. Checkout, `/api/pricing`
+(which `/data` renders from) and the sample emails all read it.
+- `STRIPE_PRICE_SNAPSHOT` / `STRIPE_PRICE_ANNUAL` — `price_...` ids. When set, checkout charges that Price
+  and the page displays its `unit_amount` (validated: active, USD, one-time / yearly respectively).
+- `PRICE_SNAPSHOT_CENTS` / `PRICE_ANNUAL_CENTS` — integer cents, used when no Price id is set
+  (inline `price_data`, the old behaviour). Defaults 19900 / 49000.
+- Monthly stays $49 inline. Annual is sold as plan `current` in metadata so entitlement, the change-log
+  gate and the webhook email need no changes.
+- `/api/pricing` reports a `source` per plan (`stripe` / `env` / `default`) for checking a deploy.
+
+Free sample on /data: `api/sample-request.js` stores the address as a Resend contact (optional
+`RESEND_SEGMENT_ID`) and emails a 25-row CSV (13 largest data centers + 12 largest BESS) as an
+attachment, BCC `DELIVERY_BCC`. Honeypot field `website`. The older `/api/lead` (link to the 100-row
+sample) still serves /bess and the state pages.
 
 Mechanics (no database, Stripe is the source of truth):
 - `api/create-checkout.js` — plan-aware Checkout Session; both tiers land on `/data/success?session_id=…`.

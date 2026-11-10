@@ -11,6 +11,8 @@
 //   RESEND_API_KEY   re_...
 //   DELIVERY_BCC     address that gets a copy of every send
 
+const { resolveAll } = require("../lib/pricing");
+
 const RESEND_ENDPOINT = "https://api.resend.com/emails";
 const FROM = "US Energy Map <data@usenergymap.com>";
 
@@ -31,7 +33,17 @@ function cleanSource(v) {
   return v.trim().replace(/[^A-Za-z0-9/\-_ .]/g, "").slice(0, 80);
 }
 
-function buildEmail(sampleLink) {
+// Prices come from lib/pricing.js so this copy follows the env vars checkout charges from.
+function offerLine(prices) {
+  const parts = [];
+  if (prices.snapshot.display) parts.push(`${prices.snapshot.display} once`);
+  parts.push(`${prices.monthly.display}/mo`);
+  if (prices.annual.display) parts.push(`${prices.annual.display}/yr`);
+  return parts.join(", or ");
+}
+
+function buildEmail(sampleLink, prices) {
+  const offer = offerLine(prices);
   const text = [
     "Here's your free sample from US Energy Map.",
     "",
@@ -40,8 +52,8 @@ function buildEmail(sampleLink) {
     sampleLink,
     "",
     "It opens straight in Excel or Sheets. The full dataset (every tracked project, as",
-    "Excel + CSV + GeoJSON) is at https://usenergymap.com/data — $199 once, or $49/mo",
-    "refreshed monthly with a row-level change log of what moved.",
+    `Excel + CSV + GeoJSON) is at https://usenergymap.com/data — ${offer}.`,
+    "Subscriptions refresh monthly with a row-level change log of what moved.",
     "",
     "Questions, or need a state or sector cut? Just reply to this email.",
     "",
@@ -54,7 +66,7 @@ function buildEmail(sampleLink) {
     "<p>Here's your free sample from <strong>US Energy Map</strong>.</p>",
     "<p>100 largest tracked projects — data centers and battery storage (BESS) — with operator, location, capacity, status, year online and a public source on each row.</p>",
     `<p><a href="${escapeHtml(sampleLink)}" style="color:#0b6">Download the sample CSV</a></p>`,
-    '<p>It opens straight in Excel or Sheets. The full dataset (every tracked project, as Excel + CSV + GeoJSON) is at <a href="https://usenergymap.com/data" style="color:#0b6">usenergymap.com/data</a> — $199 once, or $49/mo refreshed monthly with a row-level change log of what moved.</p>',
+    `<p>It opens straight in Excel or Sheets. The full dataset (every tracked project, as Excel + CSV + GeoJSON) is at <a href="https://usenergymap.com/data" style="color:#0b6">usenergymap.com/data</a> — ${escapeHtml(offer)}. Subscriptions refresh monthly with a row-level change log of what moved.</p>`,
     "<p>Questions, or need a state or sector cut? Just reply to this email.</p>",
     '<p style="color:#666;font-size:13px">— US Energy Map · <a href="https://usenergymap.com" style="color:#666">usenergymap.com</a></p>',
     "</div>",
@@ -89,7 +101,9 @@ module.exports = async (req, res) => {
     const host = req.headers["x-forwarded-host"] || req.headers.host || "usenergymap.com";
     const sampleLink = `${proto}://${host}/api/sample?format=csv`;
 
-    const { subject, text, html } = buildEmail(sampleLink);
+    const Stripe = require("stripe");
+    const prices = await resolveAll(process.env.STRIPE_SECRET_KEY ? new Stripe(process.env.STRIPE_SECRET_KEY) : null);
+    const { subject, text, html } = buildEmail(sampleLink, prices);
     const payload = { from: FROM, to: [email], subject, text, html, reply_to: "hello@usenergymap.com" };
     const bcc = process.env.DELIVERY_BCC;
     if (bcc) {
