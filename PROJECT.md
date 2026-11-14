@@ -194,6 +194,21 @@ Fermi Matador, Applied Digital Ellendale, Nebius Vineland, AWS NC/PA/GA, CoreWea
 Open flags to revisit: Google Red Oak may be a tenant inside Compass Red Oak (possible double count);
 Vantage Frontier 1.4 vs 2.0 GW; Crusoe Tulsa status; Meta Hyperion first-phase year.
 
+## Data center map pages (Nov 2026)
+
+Keyword research (Nov 2026) showed search demand for "data center map" (about 12,100 US searches a
+month) and "<state> data center map", which the mixed state pages and the bare /map title did not
+answer. `scripts/build_pages.py` now also generates:
+
+- `/data-centers` — landing page: live map (`/embed?type=data_center`), the planned and
+  under-construction pipeline first, by-state and by-operator cards, then the full campus table.
+- `/data-centers/<state>` — one per state with `MIN_DC_STATE` (3) or more campuses. A state that
+  falls below the threshold is pruned and 301'd to `/data-centers`.
+
+Both are rebuilt by the monthly refresh workflow along with the other generated pages, so counts
+never drift. The layer is still ~160 hand-curated campuses; growing it is the next lever for these
+pages (see open question 6).
+
 ## Open questions for next phase
 
 1. **Information architecture.** Is a single full-screen map the right home
