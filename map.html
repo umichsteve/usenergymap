@@ -401,6 +401,18 @@
     grid: 'Grid', onsite_gas: 'On-site gas', nuclear_ppa: 'Nuclear PPA',
     solar_storage: 'Solar + storage', mixed: 'Mixed',
   };
+  const MONTH_ABBR = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  function fmtAnnounced(date, precision) {
+    if (!date || !precision) return '';
+    const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(date);
+    if (!m) return '';
+    const mi = parseInt(m[2], 10) - 1;
+    if (mi < 0 || mi > 11) return '';
+    if (precision === 'day')   return `${MONTH_ABBR[mi]} ${parseInt(m[3], 10)}, ${m[1]}`;
+    if (precision === 'month') return `${MONTH_ABBR[mi]} ${m[1]}`;
+    if (precision === 'year')  return m[1];
+    return '';
+  }
   function popupHTML(p) {
     const typeLabel = p.type === 'data_center' ? 'Data Center' : 'BESS';
     const mwEst = p.capacity_estimated ? ' <span style="color:var(--muted);font-weight:400;">(est.)</span>' : '';
@@ -416,6 +428,12 @@
       ? `<div class="popup-row"><span class="k">Queue ID</span><span class="v">${escapeHtml(p.iso)} ${escapeHtml(p.queue_id)}</span></div>` : '';
     const operatorRow = p.operator
       ? `<div class="popup-row"><span class="k">Operator</span><span class="v">${escapeHtml(p.operator)}</span></div>` : '';
+    const countyName = (p.county_name && p.county_name.toLowerCase() !== (p.city || '').toLowerCase()) ? p.county_name : '';
+    const countyRow = countyName
+      ? `<div class="popup-row"><span class="k">County</span><span class="v">${escapeHtml(countyName)}</span></div>` : '';
+    const announcedText = p.type === 'data_center' ? fmtAnnounced(p.announcement_date, p.announcement_date_precision) : '';
+    const announcedRow = announcedText
+      ? `<div class="popup-row"><span class="k">Announced</span><span class="v">${escapeHtml(announcedText)}</span></div>` : '';
     const approxRow = p.location_approximate
       ? `<div class="popup-row" style="color:var(--muted);font-size:11px;font-style:italic;">County-level location</div>` : '';
     const asofRow = p.queue_asof
@@ -428,9 +446,11 @@
       <div class="popup-title">${escapeHtml(p.name)}</div>
       <div class="popup-sub">${typeLabel} · ${escapeHtml(p.city)}, ${escapeHtml(p.state)}</div>
       ${operatorRow}
+      ${countyRow}
       <div class="popup-row"><span class="k">Capacity</span><span class="v">${p.capacity_mw ? p.capacity_mw.toLocaleString() + ' MW' + mwEst : '—'}</span></div>
       ${mwhRow}
       ${yearRow}
+      ${announcedRow}
       ${investRow}
       ${energyRow}
       ${queueRow}

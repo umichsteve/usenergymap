@@ -12,7 +12,7 @@
 // publish=no rows are listed in research/record-review.md for manual follow-up; their
 // records are left untouched.
 
-import { readFileSync, writeFileSync } from "node:fs";
+import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
 
@@ -155,6 +155,7 @@ function main() {
     }
   });
   writeFileSync(PROJECTS, next);
+  mkdirSync(dirname(REVIEW), { recursive: true });
   writeFileSync(REVIEW, review);
   console.log(`[announce] wrote ${byId.size} records to projects.json and research/record-review.md`);
 }

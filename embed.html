@@ -72,6 +72,18 @@
   const esc = s => String(s == null ? '' : s).replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
   const sl = s => ({operating:'Operating',under_construction:'Under Construction',planned:'Planned',announced:'Announced'}[s]||s);
   const rad = mw => !mw ? 6 : Math.max(6, Math.min(30, Math.round(Math.sqrt(mw) * 0.9)));
+  const MONTH = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec'];
+  const fmtAnn = (date, prec) => {
+    if (!date || !prec) return '';
+    const m = /^(\d{4})-(\d{2})-(\d{2})$/.exec(date);
+    if (!m) return '';
+    const mi = parseInt(m[2], 10) - 1;
+    if (mi < 0 || mi > 11) return '';
+    if (prec === 'day')   return `${MONTH[mi]} ${parseInt(m[3], 10)}, ${m[1]}`;
+    if (prec === 'month') return `${MONTH[mi]} ${m[1]}`;
+    if (prec === 'year')  return m[1];
+    return '';
+  };
 
   const cluster = L.markerClusterGroup({ showCoverageOnHover: false, maxClusterRadius: 40 });
   projects.forEach(p => {
@@ -81,12 +93,18 @@
       iconSize: [r*2, r*2], iconAnchor: [r, r] });
     const m = L.marker([p.lat, p.lng], { icon });
     const mwh = p.capacity_mwh ? `<div class="pr"><span class="k">Energy</span><span class="v">${p.capacity_mwh.toLocaleString()} MWh</span></div>` : '';
+    const cn = (p.county_name && p.county_name.toLowerCase() !== (p.city || '').toLowerCase()) ? p.county_name : '';
+    const countyRow = cn ? `<div class="pr"><span class="k">County</span><span class="v">${esc(cn)}</span></div>` : '';
+    const annText = p.type === 'data_center' ? fmtAnn(p.announcement_date, p.announcement_date_precision) : '';
+    const annRow = annText ? `<div class="pr"><span class="k">Announced</span><span class="v">${esc(annText)}</span></div>` : '';
     m.bindPopup(
       `<div class="pt">${esc(p.name)}</div>
        <div class="ps">${p.type==='data_center'?'Data Center':'BESS'} · ${esc(p.city)}, ${esc(p.state)}</div>
        <div class="pr"><span class="k">Operator</span><span class="v">${esc(p.operator||'—')}</span></div>
+       ${countyRow}
        <div class="pr"><span class="k">Capacity</span><span class="v">${p.capacity_mw?p.capacity_mw.toLocaleString()+' MW':'—'}</span></div>
        ${mwh}
+       ${annRow}
        <div class="pr" style="margin-top:5px;"><span class="k">Status</span><span class="badge b-${p.status}">${sl(p.status)}</span></div>`,
       { maxWidth: 260 });
     cluster.addLayer(m);
