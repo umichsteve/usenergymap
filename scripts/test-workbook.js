@@ -75,8 +75,22 @@ const { buildWorkbookBuffer, loadProjectsFromDisk } = require("../lib/dataset");
       `Announced cell for ${dayDc.name} not formatted as "Mon D, YYYY": ${announced}`);
   }
 
+  // Nothing in projects.json should still reference ids that record_fixes.json removed.
+  // If the fix pipeline is skipped, or rerun with a stale ingest, this guard catches it.
+  const REMOVED_IDS = [
+    "dc-crusoe-tulsa", "dc-aws-pendleton", "dc-aws-marion", "dc-aws-pflugerville",
+    "dc-aws-surprise", "dc-crusoe-anson",
+    // Renamed (old id must not come back either):
+    "dc-coreweave-kenosha", "dc-equinix-ny9",
+  ];
+  const ids = new Set(projects.map(p => p.id));
+  for (const id of REMOVED_IDS) {
+    assert.ok(!ids.has(id), `removed id "${id}" is still in projects.json`);
+  }
+
   console.log(`  ✓ XLSX has ${expected.length} tabs in the right order`);
   console.log(`  ✓ Data Center Pipeline: ${dcCount} rows`);
   console.log(`  ✓ By County: ${fips.size} rows, sorted by MW desc`);
-  console.log(`\n  3/3 passed\n`);
+  console.log(`  ✓ no removed ids present in projects.json`);
+  console.log(`\n  4/4 passed\n`);
 })().catch(err => { console.error(err); process.exit(1); });

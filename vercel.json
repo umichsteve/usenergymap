@@ -72,6 +72,11 @@
       "source": "/operator/vantage-data-centers",
       "destination": "/explore",
       "permanent": true
+    },
+    {
+      "source": "/operator/coreweave",
+      "destination": "/explore",
+      "permanent": true
     }
   ],
   "rewrites": [
