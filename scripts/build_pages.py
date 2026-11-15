@@ -259,9 +259,9 @@ def dc_table(projects, show_state=True):
         city = p.get("city") or ""
         state = p.get("state", "") if show_state else ""
         loc = ", ".join(x for x in (city, state) if x)
+        # Render county_name whenever it's set — repeating "Carson County" in both Location and County
+        # is less surprising than silently hiding a populated field on only some rows.
         county = p.get("county_name") or ""
-        if county and county.lower() == city.lower():  # county-level placements carry the county as the city
-            county = ""
         if p.get("capacity_mw"):
             mw = ("~" if p.get("capacity_estimated") else "") + fmt(p["capacity_mw"]) + " MW"
         else:
