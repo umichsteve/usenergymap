@@ -65,9 +65,11 @@ function normDate(raw, precision) {
 // is the record's last field, it gains a comma and the inserted precision line goes without one.
 function writeDates(text, byId) {
   const lines = text.split("\n").filter(l => !/^      "announcement_date(_precision)?": /.test(l));
-  // Strip any trailing comma we added to an anchor line on a previous run.
+  // After stripping, the invariant is that no field line directly before `    }` keeps a
+  // trailing comma. Handles both the comma a prior run added to an anchor line AND any
+  // record whose final field was rewritten by another script (apply-record-fixes.mjs).
   for (let i = 0; i < lines.length - 1; i++) {
-    if (/^      "(year_online|status)": .*,$/.test(lines[i]) && /^    }/.test(lines[i + 1])) {
+    if (/^      "[^"]+": .*,$/.test(lines[i]) && /^    }/.test(lines[i + 1])) {
       lines[i] = lines[i].slice(0, -1);
     }
   }
@@ -162,7 +164,9 @@ function main() {
 
 function buildReview(unpublished) {
   const cell = s => String(s ?? "").replace(/\|/g, "\\|").replace(/\s*\n\s*/g, " ");
-  const isRecordCheck = ({ r }) => /record check/i.test(`${r.review} ${r.note}`);
+  // Match the `review` column only: `note` is retained context (e.g. "RECORD CHECK: …")
+  // even after a fix resolves the row, and we don't want it to re-flag a fixed record.
+  const isRecordCheck = ({ r }) => /record check/i.test(r.review || "");
   const isAfterOnline = ({ r, p }) =>
     !isRecordCheck({ r }) && p.year_online != null && /^\d{4}/.test(r.announcement_date) &&
     +r.announcement_date.slice(0, 4) > p.year_online;

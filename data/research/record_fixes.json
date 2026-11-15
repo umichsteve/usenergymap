@@ -1,0 +1,382 @@
+[
+ {
+  "id": "dc-google-kansas-city",
+  "action": "FIX",
+  "new_id": null,
+  "fields": {
+   "name": "Google Kansas City (Project Shale, Hunt Midwest Business Center)",
+   "city": "Kansas City",
+   "state": "MO",
+   "county_name": "Clay County",
+   "county_fips": "29047",
+   "lat": 39.1803,
+   "lng": -94.4627,
+   "status": "under_construction",
+   "announcement_date": "2024-03-20",
+   "announcement_date_precision": "day",
+   "source": "https://huntmidwest.com/hunt-midwest-newsroom/google-announces-1-billion-data-center-at-hunt-midwest-business-center/"
+  },
+  "sources": [
+   "https://huntmidwest.com/hunt-midwest-newsroom/google-announces-1-billion-data-center-at-hunt-midwest-business-center/",
+   "https://www.datacentermap.com/usa/missouri/kansas-city-mo/google-project-shale-dc1",
+   "https://www.kshb.com/news/local-news/missouri/kansas-city/google-announces-construction-underway-for-second-data-center-campus-in-kansas-city",
+   "https://nominatim.openstreetmap.org/search?format=json&q=Google+data+center+Kansas+City+Missouri"
+  ],
+  "rationale": "Record carries the $1B investment of the first campus (Project Shale, announced 2024-03-20, still under construction per KSHB Feb 2026) but cites the Project Mica article and sits at downtown KC in Jackson County; pin it to Shale near N Arlington Ave and Parvin Rd (OSM-mapped site). Project Mica (I-435 / US-169, OSM 39.3214, -94.5766, confirmed 2026-02-12) should be added as a separate record, e.g. dc-google-kansas-city-mica."
+ },
+ {
+  "id": "dc-coreweave-kenosha",
+  "action": "FIX",
+  "new_id": "dc-msft-kenosha",
+  "fields": {
+   "name": "Microsoft Kenosha (I-94 / Highway 142)",
+   "operator": "Microsoft",
+   "city": "Kenosha",
+   "state": "WI",
+   "lat": 42.626,
+   "lng": -87.964,
+   "capacity_mw": null,
+   "status": "planned",
+   "year_online": null,
+   "announcement_date": "2025-01-27",
+   "announcement_date_precision": "day",
+   "source": "https://biztimes.com/microsoft-buys-240-acres-of-land-in-kenosha-for-data-center-development/"
+  },
+  "sources": [
+   "https://biztimes.com/microsoft-buys-240-acres-of-land-in-kenosha-for-data-center-development/",
+   "https://www.datacenterdynamics.com/en/news/microsoft-acquires-240-acres-in-kenosha-wisconsin-for-data-center-development",
+   "https://morethanjustparks.com/data-center-tracker/microsoft-kenosha-data-center-i-94-highway-142-wi--a16e6a37-0d80-401d-98ce-3efbdcc67096"
+  ],
+  "rationale": "The Kenosha four-building, 1M sq ft campus filed Nov 2024 is on 240 acres bought by Microsoft (confirmed Jan 2025), not CoreWeave; no MW or online date disclosed and it was still described as proposed in Sep 2026. Coordinates are approximate, NE of Hwy 142 and 136th Ave just west of I-94 per BizTimes."
+ },
+ {
+  "id": "dc-stack-atlanta",
+  "action": "FIX",
+  "new_id": null,
+  "fields": {
+   "name": "STACK Infrastructure ATL02 (Lithia Springs)",
+   "city": "Lithia Springs",
+   "state": "GA",
+   "lat": 33.7635,
+   "lng": -84.6024,
+   "capacity_mw": 48,
+   "status": "under_construction",
+   "year_online": 2027,
+   "announcement_date": "2023-10-16",
+   "announcement_date_precision": "day",
+   "source": "https://www.bisnow.com/news/national/data-center/stack-infrastructure-planning-new-data-center-campus-near-atlanta-121126"
+  },
+  "sources": [
+   "https://www.bisnow.com/news/national/data-center/stack-infrastructure-planning-new-data-center-campus-near-atlanta-121126",
+   "https://datacenterdynamics.com/en/news/stack-files-to-build-two-data-centers-outside-atlanta-georgia",
+   "https://baxtel.com/campus/stack-lithia-springs-atl02-campus"
+  ],
+  "rationale": "The Lithia Springs campus (808 Factory Shoals Rd) was first filed 2023-10-16 with completion projected May 2026 and 48 MW; it is not operating since 2022 (STACK's legacy 7 MW Atlanta site is in Alpharetta). Baxtel lists ATL02A/B under construction for 2027, so year_online 2027 is the best current estimate (medium confidence)."
+ },
+ {
+  "id": "dc-crusoe-tulsa",
+  "action": "REMOVE",
+  "new_id": null,
+  "fields": {},
+  "sources": [
+   "https://www.crusoe.ai/resources/newsroom/crusoe-opens-second-tulsa-factory-ai-infrastructure",
+   "https://www.datacenterknowledge.com/data-center-construction/new-data-center-developments-may-2026"
+  ],
+  "rationale": "Crusoe's Tulsa sites are manufacturing plants for electrical gear, not a data center; the cited DCK May 2026 roundup does not mention Crusoe or Tulsa."
+ },
+ {
+  "id": "dc-sweetwater1",
+  "action": "FIX",
+  "new_id": null,
+  "fields": {
+   "name": "IREN Sweetwater 1",
+   "operator": "IREN",
+   "city": "Sweetwater",
+   "state": "TX",
+   "county_name": "Fisher County",
+   "county_fips": "48151",
+   "lat": 32.628,
+   "lng": -100.547,
+   "capacity_mw": 1400,
+   "status": "under_construction",
+   "year_online": 2027,
+   "source": "https://iren.gcs-web.com/news-releases/news-release-details/irens-2gw-sweetwater-hub-included-base-load-ercot-batch-zero"
+  },
+  "sources": [
+   "https://www.globenewswire.com/news-release/2026/05/01/3286213/0/en/index.html",
+   "https://iren.gcs-web.com/news-releases/news-release-details/irens-2gw-sweetwater-hub-included-base-load-ercot-batch-zero",
+   "https://baxtel.com/data-center/iren-sweetwater",
+   "https://cleanview.co/data-centers/texas/iren-sweetwater-1-1013",
+   "https://morethanjustparks.com/data-center-tracker/iren-sweetwater-1-tx--6ea0b85e-de0a-4301-9f78-43aefc0950e5"
+  ],
+  "rationale": "Sweetwater 1 is IREN's 1.4 GW site (substation energized 2026, first 300 MW of data center capacity targeted Q4 2027), unrelated to Lancium or Crusoe. Baxtel and Cleanview place it in Fisher County north of Sweetwater; the coordinate is from a third-party tracker and is low confidence."
+ },
+ {
+  "id": "dc-aws-pendleton",
+  "action": "REMOVE",
+  "new_id": null,
+  "fields": {},
+  "sources": [
+   "https://spokesman.com/stories/2017/mar/20/amazon-planning-third-data-complex-near-hermiston"
+  ],
+  "rationale": "No AWS campus exists in Pendleton; the likely origin is a 2017 AP story datelined Pendleton about Amazon's third complex near Hermiston, which is already covered by dc-aws-hermiston."
+ },
+ {
+  "id": "dc-aws-marion",
+  "action": "REMOVE",
+  "new_id": null,
+  "fields": {},
+  "sources": [
+   "https://www.constructiondive.com/news/amazon-indiana-data-center-campus/714457/",
+   "https://www.datacenterknowledge.com/data-center-construction/new-data-center-developments-may-2026"
+  ],
+  "rationale": "No AWS campus in Marion County (Indianapolis) found; AWS Indiana campus is New Carlisle, St. Joseph County (already dc-aws-newcarlisle), and the cited DCK roundup does not mention Indiana."
+ },
+ {
+  "id": "dc-aws-pflugerville",
+  "action": "REMOVE",
+  "new_id": null,
+  "fields": {},
+  "sources": [
+   "https://baxtel.com/data-center/amazon-round-rock-tx"
+  ],
+  "rationale": "No AWS data center in Pflugerville found (search turns up only Amazon distribution facilities there). The nearest AWS data center site is in Round Rock (CR 172 and McNeil Rd, zoned 2024), a different city and timeline; add separately if wanted rather than repointing."
+ },
+ {
+  "id": "dc-aws-surprise",
+  "action": "REMOVE",
+  "new_id": null,
+  "fields": {},
+  "sources": [
+   "https://datacenterdynamics.com/en/news/aws-plots-four-data-centers-in-mesa-arizona",
+   "https://morethanjustparks.com/data-center-tracker/aws-goodyear-campus-az--b2c79d09-99fc-4b11-9622-c9459bfa1198"
+  ],
+  "rationale": "No AWS data center in Surprise AZ found; AWS Arizona activity is in Mesa, Phoenix (Pecos Rd, Laveen) and Goodyear (first reported 2025, under construction), none matching an operating 2023 Surprise site."
+ },
+ {
+  "id": "dc-msft-atlanta",
+  "action": "FIX",
+  "new_id": null,
+  "fields": {
+   "city": "Fayetteville",
+   "state": "GA",
+   "county_name": "Fayette County",
+   "county_fips": "13113",
+   "lat": 33.4484,
+   "lng": -84.5225,
+   "capacity_mw": null,
+   "status": "operating",
+   "year_online": 2025,
+   "announcement_date": "2022-08-01",
+   "announcement_date_precision": "month",
+   "source": "https://www.ajc.com/business/2025/11/microsofts-newest-ai-superfactory-opens-at-sprawling-fayetteville-campus"
+  },
+  "sources": [
+   "https://www.ajc.com/business/2025/11/microsofts-newest-ai-superfactory-opens-at-sprawling-fayetteville-campus",
+   "https://baxtel.com/data-center/qts-fayetteville-dc1",
+   "https://www.datacenterdynamics.com/en/news/microsoft-launches-atlanta-fairwater-data-center-two-stories-no-ups-or-gen-sets/"
+  ],
+  "rationale": "Fairwater Atlanta is on QTS's 615-acre Project Excalibur campus on GA Hwy 54 in Fayetteville (unveiled Aug 2022, operating Oct 2025), not Palmetto; Microsoft has not disclosed MW so the 400 MW value is unsourced."
+ },
+ {
+  "id": "dc-equinix-da11",
+  "action": "FIX",
+  "new_id": null,
+  "fields": {
+   "lat": 32.801,
+   "lng": -96.8195,
+   "capacity_mw": 42,
+   "year_online": 2020,
+   "announcement_date": "2019-02-21",
+   "announcement_date_precision": "day",
+   "source": "https://investor.equinix.com/news-events/press-releases/detail/104/equinix-expands-dallas-infomart-campus-with-new-142m-data"
+  },
+  "sources": [
+   "https://datacenterfrontier.com/equinix-adding-a-new-data-center-building-at-the-dallas-infomart/",
+   "https://investor.equinix.com/news-events/press-releases/detail/104/equinix-expands-dallas-infomart-campus-with-new-142m-data"
+  ],
+  "rationale": "Date conflict resolved by fixing year_online: DA11 was disclosed 2019-02-21 (42 MW planned, adjacent to the Infomart) and opened 2020-06-24, so 2018 is wrong; the 2019 date is a real build announcement and stays. Coordinates moved from downtown to the Infomart campus at 1950 N Stemmons Fwy."
+ },
+ {
+  "id": "dc-equinix-ny9",
+  "action": "FIX",
+  "new_id": "dc-equinix-ny6",
+  "fields": {
+   "name": "Equinix NY6 Secaucus",
+   "city": "Secaucus",
+   "state": "NJ",
+   "lat": 40.7764,
+   "lng": -74.0719,
+   "capacity_mw": null,
+   "status": "operating",
+   "year_online": 2015,
+   "source": "https://www.equinix.com/locations/americas-colocation/united-states-colocation/new-york-data-centers/ny6/"
+  },
+  "sources": [
+   "https://investor.equinix.com/news-events/press-releases/detail/474/equinix-expands-new-york-campus-with-state-of-the-art",
+   "https://www.equinix.com/locations/americas-colocation/united-states-colocation/new-york-data-centers/ny6/"
+  ],
+  "rationale": "NY9 is in Manhattan, not Secaucus; repoint to the Secaucus IBX closest to the record's era, NY6 at 105 Enterprise Ave S, opened 2015-03-09. NY6 is only about 16,000 sq ft, so the 25 MW figure is implausible and unsourced."
+ },
+ {
+  "id": "dc-equinix-la1",
+  "action": "FIX",
+  "new_id": null,
+  "fields": {
+   "name": "Equinix LA1 Los Angeles",
+   "city": "Los Angeles",
+   "state": "CA",
+   "lat": 34.0475,
+   "lng": -118.2573,
+   "capacity_mw": null,
+   "year_online": null,
+   "source": "https://www.peeringdb.com/fac/8"
+  },
+  "sources": [
+   "https://www.peeringdb.com/fac/8",
+   "https://www.datacentermap.com/usa/california/los-angeles/switch-data-los-angeles/"
+  ],
+  "rationale": "LA1 occupies floors 6-7 of 600 W 7th St in downtown Los Angeles, not El Segundo; no source confirms a 2003 opening or 22 MW, so those are cleared."
+ },
+ {
+  "id": "dc-equinix-mi1",
+  "action": "FIX",
+  "new_id": null,
+  "fields": {
+   "name": "Equinix MI1 Miami (NAP of the Americas)",
+   "lat": 25.7824,
+   "lng": -80.1931,
+   "capacity_mw": 17,
+   "year_online": 2001,
+   "announcement_date": null,
+   "source": "https://www.datacentermap.com/usa/florida/miami/terremark-miami/"
+  },
+  "sources": [
+   "https://www.datacentermap.com/usa/florida/miami/terremark-miami/"
+  ],
+  "rationale": "MI1 is the NAP of the Americas at 50 NE 9th St, in operation since July 2001 under Terremark and acquired by Equinix from Verizon in 2017; 2007 is wrong. Datacentermap lists 17 MW (medium confidence)."
+ },
+ {
+  "id": "dc-dlr-lakeside",
+  "action": "FIX",
+  "new_id": null,
+  "fields": {
+   "lat": 41.8538,
+   "lng": -87.6184,
+   "year_online": 1999,
+   "announcement_date": null,
+   "announcement_date_precision": null,
+   "source": "https://www.datacenterknowledge.com/business/chicago-s-data-fortress-for-the-digital-economy"
+  },
+  "sources": [
+   "https://www.datacenterknowledge.com/business/chicago-s-data-fortress-for-the-digital-economy"
+  ],
+  "rationale": "Date conflict: year_online 1999 is correct (Carlyle converted the building in 1999) and 2005 is Digital Realty's acquisition, so announcement_date should be blank. Coordinates nudged onto the building; 100+ MW is supported by DCK."
+ },
+ {
+  "id": "dc-dlr-westin-seattle",
+  "action": "FIX",
+  "new_id": null,
+  "fields": {
+   "lat": 47.6144,
+   "lng": -122.3389,
+   "year_online": 1997,
+   "announcement_date": null,
+   "announcement_date_precision": null,
+   "source": "https://datacenterfrontier.com/digital-realty-will-buy-controlling-stake-in-seattles-westin-building/"
+  },
+  "sources": [
+   "https://datacenterfrontier.com/digital-realty-will-buy-controlling-stake-in-seattles-westin-building/",
+   "https://www.seattleix.net/about",
+   "https://en.wikipedia.org/wiki/Westin_Building"
+  ],
+  "rationale": "Date conflict: 2020 is Digital Realty's stake increase (it first bought in 2006), so announcement_date should be blank. Year_online 2003 is unsupported; the building was an interconnection hub by 1997 when the Seattle Internet Exchange started there (medium confidence)."
+ },
+ {
+  "id": "dc-dlr-piscataway",
+  "action": "FIX",
+  "new_id": null,
+  "fields": {
+   "name": "Digital Realty Piscataway Campus (3 Corporate Place / 365 S Randolphville Rd)",
+   "lat": 40.5534,
+   "lng": -74.4582,
+   "year_online": null,
+   "source": "https://www.highlandassociates.com/dlrpiscataway"
+  },
+  "sources": [
+   "https://www.highlandassociates.com/dlrpiscataway",
+   "https://globest.com/2006/07/27/digital-realty-deals-total-300m",
+   "https://datacenterknowledge.com/next-gen-data-centers/digital-realty-buying-two-new-jersey-properties"
+  ],
+  "rationale": "Treat as the two-building campus: 3 Corporate Place (conversion begun 2006, 26 MW utility power) and 365 S Randolphville Rd (bought 2008, converted later). No source supports 2014, so year_online is cleared; campus-total 55 MW remains unverified."
+ },
+ {
+  "id": "dc-cyrusone-aurora",
+  "action": "FIX",
+  "new_id": null,
+  "fields": {
+   "name": "CyrusOne Aurora (CHI1, former CME data center)",
+   "county_name": "DuPage County",
+   "county_fips": "17043",
+   "lat": 41.798,
+   "lng": -88.2436,
+   "year_online": 2009,
+   "announcement_date": null,
+   "announcement_date_precision": null,
+   "source": "https://www.commercialsearch.com/news/cyrusone-grabs-major-data-center-in-chicago"
+  },
+  "sources": [
+   "https://www.commercialsearch.com/news/cyrusone-grabs-major-data-center-in-chicago",
+   "https://baxtel.com/data-center/cyrusone-aurora-cme-chi1"
+  ],
+  "rationale": "Date conflict: the 2016 date is CyrusOne's $130M sale-leaseback of CME's 2905 Diehl Rd facility, so announcement_date should be blank; year_online is also wrong, as CME's facility began in 2009 per Baxtel (medium confidence). The site is in DuPage County, not Kane."
+ },
+ {
+  "id": "dc-databank-atl2",
+  "action": "FIX",
+  "new_id": null,
+  "fields": {
+   "lat": 33.7339,
+   "lng": -84.4257,
+   "year_online": null,
+   "announcement_date": null,
+   "announcement_date_precision": null,
+   "source": "https://baxtel.com/data-center/databank-atlanta-atl2"
+  },
+  "sources": [
+   "https://baxtel.com/data-center/databank-atlanta-atl2",
+   "https://www.streetinsider.com/PRNewswire/DataBank+to+Acquire+zColo+Data+Center+Assets/17408723.html"
+  ],
+  "rationale": "Date conflict: ATL2 (1100 White St SW, ex-AtlantaNAP, Zayo 2014) came to DataBank via the zColo deal announced 2020-09-29, so announcement_date should be blank and the 2019 year_online is unsupported. Coordinates were in Buckhead and move to the West End site; 40 MW is unverified."
+ },
+ {
+  "id": "dc-databank-sandiego",
+  "action": "FIX",
+  "new_id": null,
+  "fields": {
+   "lat": 32.9886,
+   "lng": -117.0732,
+   "capacity_mw": 7.2,
+   "year_online": null,
+   "announcement_date": null,
+   "announcement_date_precision": null,
+   "source": "https://www.datacentermap.com/usa/california/san-diego/castle-access"
+  },
+  "sources": [
+   "https://www.datacentermap.com/usa/california/san-diego/castle-access",
+   "https://www.streetinsider.com/PRNewswire/DataBank+to+Acquire+zColo+Data+Center+Assets/17408723.html"
+  ],
+  "rationale": "Date conflict: SAN1 at 12270 World Trade Dr (Carmel Mountain Ranch) predates 2010 (Castle Access, redIT 2010, KIO 2014, Zayo 2017, DataBank 2020), so announcement_date should be blank and 2016 is wrong; original opening year not found. Datacentermap lists 7.2 MW."
+ },
+ {
+  "id": "dc-crusoe-anson",
+  "action": "REMOVE",
+  "new_id": null,
+  "fields": {},
+  "sources": [
+   "https://www.crusoe.ai/about/communities/abilene",
+   "https://baxtel.com/news/crusoe-confirms-google-ai-campus-in-texas-with-531mw-wind-link"
+  ],
+  "rationale": "No source ties Crusoe to Anson or Jones County; Crusoe's Texas campuses are Abilene (Lancium Clean Campus, already dc-stargate-abilene) and Goodnight in Armstrong County, so this looks like a duplicate of Abilene."
+ }
+]
