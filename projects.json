@@ -721,6 +721,25 @@
       "investment_usd": 1000000000
     },
     {
+      "id": "dc-google-kansas-city-mica",
+      "type": "data_center",
+      "name": "Google Kansas City Northland Campus (Project Mica, Rocky Branch Creek)",
+      "operator": "Google",
+      "city": "Kansas City",
+      "state": "MO",
+      "county_name": "Clay County",
+      "county_fips": "29047",
+      "lat": 39.3201,
+      "lng": -94.5765,
+      "capacity_mw": 500,
+      "status": "under_construction",
+      "year_online": 2027,
+      "announcement_date": "2022-04-26",
+      "announcement_date_precision": "day",
+      "source": "https://www.axios.com/local/kansas-city/2026/02/12/google-project-mica-data-center-northland",
+      "investment_usd": 10000000000
+    },
+    {
       "id": "dc-google-new-florence",
       "type": "data_center",
       "name": "Google New Florence",
