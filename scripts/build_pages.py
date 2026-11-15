@@ -225,6 +225,22 @@ def fmt_usd(n):
         return f"${v:.1f}B".replace(".0B", "B")
     return f"${n/1e6:.0f}M"
 
+_MONTH_ABBR = ["Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec"]
+
+def fmt_announced(date_str, precision):
+    """Format announcement_date per its precision: day → 'Mar 14, 2024', month → 'Mar 2024', year → '2024'."""
+    if not date_str or not precision: return "—"
+    try:
+        y, m, d = date_str.split("-")
+        mi = int(m) - 1
+        if not (0 <= mi < 12): return "—"
+        if precision == "day":   return f"{_MONTH_ABBR[mi]} {int(d)}, {y}"
+        if precision == "month": return f"{_MONTH_ABBR[mi]} {y}"
+        if precision == "year":  return y
+    except Exception:
+        return "—"
+    return "—"
+
 def dc_stats(projects):
     """Headline figures for a set of data center rows. MW counts only rows with a disclosed figure."""
     n = len(projects)
@@ -237,31 +253,34 @@ def dc_stats(projects):
             "states": len({p["state"] for p in projects})}
 
 def dc_table(projects, show_state=True):
-    """Data center rows ranked by MW. Adds county and disclosed investment, which the mixed table omits."""
+    """Data center rows ranked by MW. County and Announced live in their own columns; the mixed table omits both."""
     rows = []
     for p in sorted(projects, key=lambda x: (x.get("capacity_mw") or 0, x.get("investment_usd") or 0), reverse=True):
         city = p.get("city") or ""
+        state = p.get("state", "") if show_state else ""
+        loc = ", ".join(x for x in (city, state) if x)
+        # Render county_name whenever it's set — repeating "Carson County" in both Location and County
+        # is less surprising than silently hiding a populated field on only some rows.
         county = p.get("county_name") or ""
-        if county.lower() == city.lower():  # county-level placements carry the county as the city
-            county = ""
-        loc = ", ".join(x for x in (city, county, p.get("state", "") if show_state else "") if x)
         if p.get("capacity_mw"):
             mw = ("~" if p.get("capacity_estimated") else "") + fmt(p["capacity_mw"]) + " MW"
         else:
             mw = "—"
         badge = {"operating":"op","under_construction":"uc","planned":"pl","announced":"pl"}.get(p["status"],"pl")
         src = f'<a href="{esc(p["source"])}" target="_blank" rel="noopener">source ↗</a>' if p.get("source") else ""
+        announced = fmt_announced(p.get("announcement_date"), p.get("announcement_date_precision"))
         rows.append(
             f'<tr id="{esc(p["id"])}"><td><strong><a href="/map#{esc(p["id"])}">{esc(p["name"])}</a></strong></td>'
-            f'<td>{esc(p.get("operator","—"))}</td><td>{esc(loc)}</td><td>{mw}</td>'
+            f'<td>{esc(p.get("operator","—"))}</td><td>{esc(loc)}</td><td>{esc(county) or "—"}</td><td>{mw}</td>'
             f'<td>{fmt_usd(p.get("investment_usd"))}</td>'
             f'<td><span class="badge {badge}">{status_label(p["status"])}</span></td>'
+            f'<td>{announced}</td>'
             f'<td>{p.get("year_online","—")}</td><td>{src}</td></tr>'
         )
     return (
         '<div style="overflow-x:auto;"><table class="deftable"><thead><tr>'
-        '<th>Campus</th><th>Operator</th><th>Location</th><th>Power</th><th>Investment</th>'
-        '<th>Status</th><th>Year</th><th>Source</th></tr></thead><tbody>'
+        '<th>Campus</th><th>Operator</th><th>Location</th><th>County</th><th>Power</th><th>Investment</th>'
+        '<th>Status</th><th>Announced</th><th>Year</th><th>Source</th></tr></thead><tbody>'
         + "".join(rows) + "</tbody></table></div>"
     )
 
