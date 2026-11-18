@@ -8,13 +8,140 @@
    "lat": 37.482,
    "lng": -77.234,
    "county_name": "Henrico County",
-   "county_fips": "51087"
+   "county_fips": "51087",
+   "status": "operating",
+   "year_online": 2020,
+   "capacity_estimated": true,
+   "source": "https://baxtel.com/data-center/facebook-henrico"
   },
   "sources": [
-   "https://www.compute-atlas.com/facilities/meta-henrico-white-oak-sandston-va",
    "https://baxtel.com/data-center/facebook-henrico",
-   "https://datacenters.atmeta.com/"
+   "https://datacenters.atmeta.com/us-locations/",
+   "https://www.compute-atlas.com/facilities/meta-henrico-white-oak-sandston-va"
   ],
-  "rationale": "Record carried 37.5407,-77.436 (downtown Richmond, FIPS 51760) but Meta Henrico sits in White Oak Technology Park (6200/7301 Technology Blvd, Sandston, VA 23150) per Compute Atlas and Baxtel; pin to 37.482,-77.234 which the FCC/Census block lookup confirms is Henrico County (FIPS 51087)."
+  "rationale": "Pin stays in White Oak Technology Park (Sandston/Henrico, FIPS 51087) per prior fix. Baxtel reports Building 1 online 2020 and campus 'fully operational'; 7-building campus still expanding. Flip planned/2028 -> operating/2020. No primary MW figure for the campus (Baxtel redacts and Meta's own page omits it), so keep the existing 800 but mark capacity_estimated true."
+ },
+ {
+  "id": "dc-apple-waukee",
+  "action": "FIX",
+  "new_id": null,
+  "fields": {
+   "status": "operating",
+   "year_online": 2024,
+   "capacity_estimated": true,
+   "source": "https://baxtel.com/data-center/apple-waukee-ia"
+  },
+  "sources": [
+   "https://baxtel.com/data-center/apple-waukee-ia"
+  ],
+  "rationale": "Baxtel: 'In 2024, Apple opened its first data center at the Waukee campus in Iowa' (WKE-01, 315,800 sq ft). Campus is 1-of-6 buildings; WKE-02..06 still planned. Flip planned/2027 -> operating/2024. No public MW figure (Baxtel redacts), keep 400 and mark capacity_estimated true."
+ },
+ {
+  "id": "dc-msft-alviso-san-jose",
+  "action": "FIX",
+  "new_id": null,
+  "fields": {
+   "source": "https://svdaily.com/2026/06/23/microsoft-breaks-ground-on-data-center-in-alviso/"
+  },
+  "sources": [
+   "https://svdaily.com/2026/06/23/microsoft-breaks-ground-on-data-center-in-alviso/"
+  ],
+  "rationale": "Status/year/MW already correct. SV Daily (2026-06-23) confirms groundbreaking June 2026, 48 MW critical capacity, completion slated 2028 - matches existing under_construction/2028/48. Refresh source URL from the stale 2017 NBC Bay Area piece to the dated 2026 groundbreaking article."
+ },
+ {
+  "id": "dc-google-midlothian",
+  "action": "FIX",
+  "new_id": null,
+  "fields": {
+   "status": "operating",
+   "year_online": 2020,
+   "capacity_estimated": true,
+   "source": "https://baxtel.com/data-center/google-midlothian-tx"
+  },
+  "sources": [
+   "https://baxtel.com/data-center/google-midlothian-tx",
+   "https://epoch.ai/data/ai-data-centers/directory/google-midlothian"
+  ],
+  "rationale": "Baxtel: 'Google Midlothian 1 ... two-story building rose between October 2018 and March 2020 ... fully operational facility'; 1-of-5 campus with others in later phases. Epoch.ai lists site as operational. Flip under_construction/2026 -> operating/2020. No primary MW figure for the campus (Baxtel redacts), keep 400 and mark capacity_estimated true."
+ },
+ {
+  "id": "dc-google-mesa",
+  "action": "FIX",
+  "new_id": null,
+  "fields": {
+   "status": "operating",
+   "year_online": 2025,
+   "capacity_estimated": true,
+   "source": "https://baxtel.com/data-center/google-mesa-redhawk-1"
+  },
+  "sources": [
+   "https://baxtel.com/data-center/google-mesa-redhawk-1",
+   "https://epoch.ai/data/ai-data-centers/directory/google-mesa"
+  ],
+  "rationale": "Baxtel: Redhawk 1 'fully operational', year built 2025. Epoch.ai: 'Phase 1 operational since July 2025'. Phase 2/3 still under construction. Flip under_construction/2027 -> operating/2025. No primary total-campus MW figure (Epoch estimates 183 MW IT for Phase 1; Phase 2 adds ~400 MW in later planning filings), keep existing 600 and mark capacity_estimated true."
+ },
+ {
+  "id": "dc-meta-gallatin",
+  "action": "FIX",
+  "new_id": null,
+  "fields": {
+   "status": "operating",
+   "year_online": 2024,
+   "capacity_estimated": true,
+   "source": "https://datacenters.atmeta.com/2024/11/gallatin-we-are-online/"
+  },
+  "sources": [
+   "https://datacenters.atmeta.com/2024/11/gallatin-we-are-online/",
+   "https://datacenters.atmeta.com/us-locations/"
+  ],
+  "rationale": "Meta's own blog 'Gallatin, we are online!' (2024-11-14) confirms the campus began serving traffic November 2024. Four of a planned 12 buildings completed per external trackers. Flip under_construction/2026 -> operating/2024. Meta's post gives no MW for the DC itself (only 530 MW of new renewable energy in TN); keep existing 400 and mark capacity_estimated true."
+ },
+ {
+  "id": "dc-google-columbus",
+  "action": "FIX",
+  "new_id": null,
+  "fields": {
+   "status": "operating",
+   "year_online": 2024,
+   "capacity_estimated": true,
+   "source": "https://aigridwatch.com/projects/google-columbus"
+  },
+  "sources": [
+   "https://aigridwatch.com/projects/google-columbus",
+   "https://epoch.ai/data/ai-data-centers/directory/google-columbus"
+  ],
+  "rationale": "AI Gridwatch: 'The Google Lockbourne data center at 5076 S. High Street in Columbus became fully operational in 2024, comprising four buildings.' Epoch.ai: operational with buildings 4 and 5 online by mid-2026. Flip planned/2027 -> operating/2024. No primary campus-wide MW (Epoch estimates ~303 MW; our record has 500, which may include future expansion), keep 500 and mark capacity_estimated true."
+ },
+ {
+  "id": "dc-meta-kuna",
+  "action": "FIX",
+  "new_id": null,
+  "fields": {
+   "status": "operating",
+   "year_online": 2026,
+   "capacity_estimated": true,
+   "source": "https://datacenters.atmeta.com/2026/09/kuna-we-are-online/"
+  },
+  "sources": [
+   "https://datacenters.atmeta.com/2026/09/kuna-we-are-online/",
+   "https://www.datacenterdynamics.com/en/news/metas-12bn-data-center-in-kuna-idaho-goes-live/"
+  ],
+  "rationale": "Meta's own blog 'Kuna, we are online!' (2026-09-03) confirms Meta Kuna Data Center 'is online and operational', two buildings serving traffic. DCD corroborates 2026 go-live. Flip planned/2027 -> operating/2026. Meta's post does not state DC MW (645 MW figure in the post is renewable energy added to Ada County, not DC capacity); keep existing 500 and mark capacity_estimated true."
+ },
+ {
+  "id": "dc-meta-kansas-city",
+  "action": "FIX",
+  "new_id": null,
+  "fields": {
+   "status": "operating",
+   "year_online": 2025,
+   "capacity_estimated": true,
+   "source": "https://about.fb.com/news/2025/08/metas-kansas-city-data-center/"
+  },
+  "sources": [
+   "https://about.fb.com/news/2025/08/metas-kansas-city-data-center/",
+   "https://www.datacenterdynamics.com/en/news/metas-latest-data-center-campus-goes-live-in-kansas-city-missouri/"
+  ],
+  "rationale": "Meta's own August 2025 announcement: Kansas City Data Center 'is now operational and serving traffic', three DC buildings plus one warehouse, 1.4M sq ft. Flip planned/2027 -> operating/2025. No MW figure in the post; keep existing 500 and mark capacity_estimated true. NOTE for follow-up: Meta campus is the Northland site (Clay County references), while this record has county Jackson (29095) and downtown KC coords - possible geo fix out of audit scope."
  }
 ]

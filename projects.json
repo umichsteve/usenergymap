@@ -455,7 +455,7 @@
       "lng": -121.975,
       "capacity_mw": 48,
       "status": "under_construction",
-      "source": "https://www.nbcbayarea.com/news/local/microsoft-breaks-ground-on-new-data-center-in-san-jose/4097643/",
+      "source": "https://svdaily.com/2026/06/23/microsoft-breaks-ground-on-data-center-in-alviso/",
       "year_online": 2028,
       "announcement_date": "2017-09-29",
       "announcement_date_precision": "day"
@@ -540,11 +540,12 @@
       "lat": 43.4915,
       "lng": -116.4202,
       "capacity_mw": 500,
-      "status": "planned",
-      "year_online": 2027,
+      "status": "operating",
+      "year_online": 2026,
       "announcement_date": "2022-02-16",
       "announcement_date_precision": "day",
-      "source": "https://datacenters.atmeta.com/us-locations/"
+      "source": "https://datacenters.atmeta.com/2026/09/kuna-we-are-online/",
+      "capacity_estimated": true
     },
     {
       "id": "dc-aws-northern-indiana",
@@ -1538,11 +1539,12 @@
       "lat": 33.4152,
       "lng": -111.8315,
       "capacity_mw": 600,
-      "status": "under_construction",
-      "year_online": 2027,
+      "status": "operating",
+      "year_online": 2025,
       "announcement_date": "2019-07-01",
       "announcement_date_precision": "day",
-      "source": "https://www.datacenterknowledge.com/data-center-construction/new-data-center-developments-may-2026"
+      "source": "https://baxtel.com/data-center/google-mesa-redhawk-1",
+      "capacity_estimated": true
     },
     {
       "id": "dc-msft-cheyenne",
@@ -1682,11 +1684,12 @@
       "lat": 36.3881,
       "lng": -86.4467,
       "capacity_mw": 400,
-      "status": "under_construction",
-      "year_online": 2026,
+      "status": "operating",
+      "year_online": 2024,
       "announcement_date": "2020-08-12",
       "announcement_date_precision": "day",
-      "source": "https://datacenters.atmeta.com/"
+      "source": "https://datacenters.atmeta.com/2024/11/gallatin-we-are-online/",
+      "capacity_estimated": true
     },
     {
       "id": "dc-meta-henrico",
@@ -1700,11 +1703,12 @@
       "lat": 37.482,
       "lng": -77.234,
       "capacity_mw": 800,
-      "status": "planned",
-      "year_online": 2028,
+      "status": "operating",
+      "year_online": 2020,
       "announcement_date": "2017-10-05",
       "announcement_date_precision": "day",
-      "source": "https://datacenters.atmeta.com/"
+      "source": "https://baxtel.com/data-center/facebook-henrico",
+      "capacity_estimated": true
     },
     {
       "id": "dc-meta-albuquerque",
@@ -1772,11 +1776,12 @@
       "lat": 41.6033,
       "lng": -93.8853,
       "capacity_mw": 400,
-      "status": "planned",
-      "year_online": 2027,
+      "status": "operating",
+      "year_online": 2024,
       "announcement_date": "2017-08-24",
       "announcement_date_precision": "day",
-      "source": "https://www.apple.com/newsroom/"
+      "source": "https://baxtel.com/data-center/apple-waukee-ia",
+      "capacity_estimated": true
     },
     {
       "id": "dc-equinix-ch4",
@@ -2622,11 +2627,12 @@
       "lat": 32.4824,
       "lng": -97.0142,
       "capacity_mw": 400,
-      "status": "under_construction",
-      "year_online": 2026,
+      "status": "operating",
+      "year_online": 2020,
       "announcement_date": "2018-08-01",
       "announcement_date_precision": "day",
-      "source": "https://www.datacenterknowledge.com/data-center-construction/new-data-center-developments-may-2026"
+      "source": "https://baxtel.com/data-center/google-midlothian-tx",
+      "capacity_estimated": true
     },
     {
       "id": "dc-google-columbus",
@@ -2640,11 +2646,12 @@
       "lat": 39.9612,
       "lng": -82.9988,
       "capacity_mw": 500,
-      "status": "planned",
-      "year_online": 2027,
+      "status": "operating",
+      "year_online": 2024,
       "announcement_date": "2021-03-01",
       "announcement_date_precision": "month",
-      "source": "https://www.datacenterknowledge.com/data-center-construction/new-data-center-developments-may-2026"
+      "source": "https://aigridwatch.com/projects/google-columbus",
+      "capacity_estimated": true
     },
     {
       "id": "dc-msft-atlanta",
@@ -2693,11 +2700,12 @@
       "lat": 39.0997,
       "lng": -94.5786,
       "capacity_mw": 500,
-      "status": "planned",
-      "year_online": 2027,
+      "status": "operating",
+      "year_online": 2025,
       "announcement_date": "2022-03-11",
       "announcement_date_precision": "day",
-      "source": "https://datacenters.atmeta.com/"
+      "source": "https://about.fb.com/news/2025/08/metas-kansas-city-data-center/",
+      "capacity_estimated": true
     },
     {
       "id": "dc-meta-rosemount",
