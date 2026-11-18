@@ -197,7 +197,10 @@ def project_table(projects, show_state=True, show_operator=True):
     for p in sorted(projects, key=lambda x: (x.get("capacity_mw") or 0), reverse=True):
         loc = f'{esc(p.get("city",""))}, {esc(p.get("state",""))}' if show_state else esc(p.get("city",""))
         typ = "Data center" if p["type"] == "data_center" else "BESS"
-        mw = fmt(p["capacity_mw"]) + " MW" if p.get("capacity_mw") else "—"
+        if p.get("capacity_mw"):
+            mw = ("~" if p.get("capacity_estimated") else "") + fmt(p["capacity_mw"]) + " MW"
+        else:
+            mw = "—"
         badge = {"operating":"op","under_construction":"uc","planned":"pl","announced":"pl"}.get(p["status"],"pl")
         src = f'<a href="{esc(p["source"])}" target="_blank" rel="noopener">source ↗</a>' if p.get("source") else ""
         opcell = f"<td>{esc(p.get('operator','—'))}</td>" if show_operator else ""

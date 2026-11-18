@@ -133,6 +133,10 @@
   "action": "FIX",
   "new_id": null,
   "fields": {
+   "lat": 39.3255,
+   "lng": -94.6037,
+   "county_name": "Platte County",
+   "county_fips": "29165",
    "status": "operating",
    "year_online": 2025,
    "capacity_estimated": true,
@@ -140,8 +144,11 @@
   },
   "sources": [
    "https://about.fb.com/news/2025/08/metas-kansas-city-data-center/",
-   "https://www.datacenterdynamics.com/en/news/metas-latest-data-center-campus-goes-live-in-kansas-city-missouri/"
+   "https://www.datacenterdynamics.com/en/news/metas-latest-data-center-campus-goes-live-in-kansas-city-missouri/",
+   "https://www.interconnection.fyi/data-center/project/meta-415d66e9",
+   "https://plattecountylandmark.com/2022/03/16/facebook-headed-to-northland/",
+   "https://www.diodeventures.com/insights/diodes-golden-plains-technology-park-announced-as-site-of-metas-new-800-million-hyperscale-data-center"
   ],
-  "rationale": "Meta's own August 2025 announcement: Kansas City Data Center 'is now operational and serving traffic', three DC buildings plus one warehouse, 1.4M sq ft. Flip planned/2027 -> operating/2025. No MW figure in the post; keep existing 500 and mark capacity_estimated true. NOTE for follow-up: Meta campus is the Northland site (Clay County references), while this record has county Jackson (29095) and downtown KC coords - possible geo fix out of audit scope."
+  "rationale": "Meta's own August 2025 announcement: Kansas City Data Center 'is now operational and serving traffic', three DC buildings plus one warehouse, 1.4M sq ft. Flip planned/2027 -> operating/2025. No MW figure in the post; keep existing 500 and mark capacity_estimated true. Geo fix: Meta campus is in Golden Plains Technology Park at the northwest corner of I-435 and US-169, address 1800 NW 128th St KCMO 64164 per Interconnection.fyi, Diode Ventures (seller), and the Platte County Landmark. Move lat/lng from downtown KC (39.0997, -94.5786) to the campus on NW 128th St (39.3255, -94.6037 — OpenStreetMap 'Meta Kansas City Data Center' in Platte County). Flip county Jackson (29095) -> Platte (29165); add-county.mjs re-derives from lat/lng."
  }
 ]
