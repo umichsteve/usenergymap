@@ -77,6 +77,26 @@
       "source": "/operator/coreweave",
       "destination": "/explore",
       "permanent": true
+    },
+    {
+      "source": "/operator/aets-am-llc",
+      "destination": "/explore",
+      "permanent": true
+    },
+    {
+      "source": "/operator/electrodes",
+      "destination": "/explore",
+      "permanent": true
+    },
+    {
+      "source": "/operator/rewild-renewables-llc",
+      "destination": "/explore",
+      "permanent": true
+    },
+    {
+      "source": "/operator/rwe-clean-energy",
+      "destination": "/explore",
+      "permanent": true
     }
   ],
   "rewrites": [
