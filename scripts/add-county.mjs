@@ -14,6 +14,7 @@ import { readFileSync, writeFileSync, existsSync, mkdirSync } from "node:fs";
 import { execFileSync } from "node:child_process";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
+import { stampLastUpdated, todayUtc } from "./_last-updated.mjs";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const PROJECTS = join(ROOT, "projects.json");
@@ -150,7 +151,8 @@ async function main() {
   }
 
   if (CHECK) { console.log("[county] --check: projects.json not written"); return; }
-  const next = writeCounties(text, byId);
+  let next = writeCounties(text, byId);
+  if (next !== text) next = stampLastUpdated(next, todayUtc());
   // Safety net: parsed result must equal the original plus exactly the county fields we computed.
   const after = JSON.parse(next).projects;
   after.forEach((p, i) => {
