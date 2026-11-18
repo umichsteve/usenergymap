@@ -15,6 +15,7 @@
 import { mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
+import { stampLastUpdated, todayUtc } from "./_last-updated.mjs";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const PROJECTS = join(ROOT, "projects.json");
@@ -143,7 +144,8 @@ function main() {
   const review = buildReview(unpublished);
   if (CHECK) { console.log("[announce] --check: nothing written"); return; }
 
-  const next = writeDates(text, byId);
+  let next = writeDates(text, byId);
+  if (next !== text) next = stampLastUpdated(next, todayUtc());
   // Safety net: parsed result must equal the original plus exactly the two fields we computed.
   const after = JSON.parse(next).projects;
   if (after.length !== data.projects.length) throw new Error("record count changed");

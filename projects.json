@@ -1,6 +1,6 @@
 {
   "schema_version": "1.0",
-  "last_updated": "2026-09-28",
+  "last_updated": "2026-11-15",
   "notes": "Coordinates approximate to city/county centroid where exact site is not publicly disclosed. Capacity in MW (power). For BESS, capacity_mwh is duration when known. Status: operating | under_construction | planned | announced. | BESS entries with id prefix 'eia-' are auto-ingested monthly from EIA-860M; others are hand-curated.",
   "projects": [
     {

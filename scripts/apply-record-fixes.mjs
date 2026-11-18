@@ -19,6 +19,7 @@
 import { readFileSync, writeFileSync } from "node:fs";
 import { dirname, join } from "node:path";
 import { fileURLToPath } from "node:url";
+import { stampLastUpdated, todayUtc } from "./_last-updated.mjs";
 
 const ROOT = join(dirname(fileURLToPath(import.meta.url)), "..");
 const PROJECTS = join(ROOT, "projects.json");
@@ -232,7 +233,8 @@ function main() {
   }
 
   const keptRecords = records.filter(Boolean);
-  const outText = prologue + keptRecords.map(r => r.text).join(",\n") + epilogue;
+  let outText = prologue + keptRecords.map(r => r.text).join(",\n") + epilogue;
+  if (outText !== text) outText = stampLastUpdated(outText, todayUtc());
 
   // Parse-check + id-uniqueness: fail loudly if the serializer or the fixes produced duplicates.
   const parsed = JSON.parse(outText);
