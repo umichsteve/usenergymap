@@ -163,7 +163,7 @@ async function check(name, fn) {
     return { ok: true, status: 200, json: async () => ({ id: "x" }), text: async () => "{}" };
   };
 
-  await check("sample: stores contact (with segment) and emails a 25-row CSV attachment", async () => {
+  await check("sample: stores contact (with segment) and emails the 100-largest-projects CSV attachment", async () => {
     resetEnv({ RESEND_API_KEY: "re_test", DELIVERY_BCC: "leads@example.com", RESEND_SEGMENT_ID: "seg_1", PRICE_SNAPSHOT_CENTS: "24900" });
     sent.length = 0;
     const res = await call(sampleRequest, { body: { email: "buyer@example.com", source: "data" } });
@@ -173,13 +173,19 @@ async function check(name, fn) {
     const mail = sent.find((s) => s.url.endsWith("/emails")).body;
     assert.deepStrictEqual(mail.to, ["buyer@example.com"]);
     assert.deepStrictEqual(mail.bcc, ["leads@example.com"]);
+    assert.ok(/100 projects/.test(mail.subject), "subject names the 100-project size");
     const csv = Buffer.from(mail.attachments[0].content, "base64").toString("utf8");
     const lines = csv.trim().split("\n");
-    assert.strictEqual(lines.length, 26, "header + 25 rows");
+    assert.strictEqual(lines.length, 101, "header + 100 rows");
     assert.ok(lines[0].startsWith("id,name,type"));
-    assert.ok(/data_center/.test(csv) && /,bess,/.test(csv), "sample has both layers");
     assert.ok(mail.text.includes("$249 once"), "email quotes env price");
     assert.ok(mail.text.includes("steve@usenergymap.com"));
+
+    // Same set /api/sample serves: top-100 by capacity_mw.
+    const projects = require("../projects.json").projects;
+    const top = projects.slice().sort((a, b) => (b.capacity_mw || 0) - (a.capacity_mw || 0)).slice(0, 100);
+    const firstDataId = lines[1].split(",")[0];
+    assert.strictEqual(firstDataId, top[0].id, "CSV starts with the largest-MW project");
   });
 
   await check("sample: an already-stored contact still gets the file", async () => {

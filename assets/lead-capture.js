@@ -2,7 +2,11 @@
    Drives every [data-sample-form] block on the page: posts the address to /api/lead,
    which emails the sample, then fires the Google Ads "lead" conversion.
 
-   Included on /bess and the state pages. The conversion call goes through
+   Also exposes window.uemFireLead(source) for pages that drive their own form —
+   /data posts to /api/sample-request and calls the helper on success so both paths
+   share the 30-day dedupe window.
+
+   Included on /bess, the state pages and /data. The conversion call goes through
    window.uemAdsConversion, which is queued in assets/analytics.js until
    /assets/ads.js lands — so a fast submit still counts. */
 (function () {
@@ -27,6 +31,24 @@
   function markFired() {
     try { localStorage.setItem(FIRED_KEY, String(Date.now())); } catch (e) { /* private mode */ }
   }
+
+  // Shared success-side firing: dedupe + Google Ads conversion + GA4 generate_lead.
+  // Exposed so /data (which posts to /api/sample-request, not /api/lead) can reuse the
+  // same dedupe window — a visitor who submits on a state page and on /data is one lead.
+  window.uemFireLead = function (source) {
+    if (alreadyFired()) return false;
+    markFired();
+    // Google Ads conversion. No value: a free sample has no revenue attached,
+    // and a made-up number would poison Smart Bidding's target.
+    if (typeof window.uemAdsConversion === "function") {
+      window.uemAdsConversion("lead", { event_callback: function () {} });
+    }
+    // GA4 keeps its own standard event so the funnel is visible there too.
+    if (typeof window.gtag === "function") {
+      window.gtag("event", "generate_lead", { source: source, method: "free_sample" });
+    }
+    return true;
+  };
 
   function init(block) {
     var form = block.querySelector("form");
@@ -79,18 +101,7 @@
           direct.innerHTML = 'Didn\'t arrive? <a href="/api/sample?format=csv">Download the sample CSV directly</a>.';
           form.parentNode.insertBefore(direct, msg.nextSibling);
 
-          if (!alreadyFired()) {
-            markFired();
-            // Google Ads conversion. No value: a free sample has no revenue attached,
-            // and a made-up number would poison Smart Bidding's target.
-            if (typeof window.uemAdsConversion === "function") {
-              window.uemAdsConversion("lead", { event_callback: function () {} });
-            }
-            // GA4 keeps its own standard event so the funnel is visible there too.
-            if (typeof window.gtag === "function") {
-              window.gtag("event", "generate_lead", { source: source, method: "free_sample" });
-            }
-          }
+          window.uemFireLead(source);
         })
         .catch(function () {
           say("We couldn't reach the server. Try again in a moment.", "err");

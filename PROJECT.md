@@ -151,9 +151,10 @@ Prices (Nov 2026): `lib/pricing.js` is the one place self-serve prices come from
 - `/api/pricing` reports a `source` per plan (`stripe` / `env` / `default`) for checking a deploy.
 
 Free sample on /data: `api/sample-request.js` stores the address as a Resend contact (optional
-`RESEND_SEGMENT_ID`) and emails a 25-row CSV (13 largest data centers + 12 largest BESS) as an
-attachment, BCC `DELIVERY_BCC`. Honeypot field `website`. The older `/api/lead` (link to the 100-row
-sample) still serves /bess and the state pages.
+`RESEND_SEGMENT_ID`) and emails the 100-largest-projects CSV (same set `/api/sample` serves) as an
+attachment, BCC `DELIVERY_BCC`. Honeypot field `website`. Success fires `window.uemFireLead('data')`
+from `/assets/lead-capture.js`, sharing the 30-day dedupe with /bess and the state pages (`/api/lead`,
+which emails the same sample as a link) so a visitor who submits on both is one lead.
 
 Mechanics (no database, Stripe is the source of truth):
 - `api/create-checkout.js` — plan-aware Checkout Session; both tiers land on `/data/success?session_id=…`.
