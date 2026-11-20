@@ -17,6 +17,7 @@
 <meta name="twitter:image" content="https://usenergymap.com/assets/og.png" />
 <link rel="stylesheet" href="/assets/site.css" />
 <script src="/assets/analytics.js"></script>
+<script src="/assets/lead-capture.js" defer></script>
 <style>
   [hidden]{display:none!important}
   .tiers{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;margin:26px 0 12px}
@@ -71,14 +72,14 @@
 
       <!-- ─────────────── Free sample ─────────────── -->
       <div class="sample-cta" id="sample" style="margin-top:26px;">
-        <h3>Get the free 25-project sample CSV</h3>
-        <p>The largest tracked data centers and battery storage projects — same columns as the paid file. We email the CSV straight to you.</p>
-        <form class="sample-form" id="sample25-form" novalidate>
+        <h3>Free sample — the 100 largest tracked projects</h3>
+        <p>Every column we publish: operator, city, capacity (MW/MWh), status, year online and a public source on each row. Opens straight in Excel or Sheets. No card, no call.</p>
+        <form class="sample-form" id="sample-form" novalidate>
           <input type="email" name="email" inputmode="email" autocomplete="email" placeholder="you@company.com" aria-label="Email address for the free sample" required />
           <input type="text" name="website" tabindex="-1" autocomplete="off" aria-hidden="true" style="position:absolute;left:-9999px;width:1px;height:1px;opacity:0" />
           <button class="btn btn-primary" type="submit">Email me the sample &rarr;</button>
         </form>
-        <p class="sample-msg" id="sample25-msg" role="status" aria-live="polite"></p>
+        <p class="sample-msg" id="sample-msg" role="status" aria-live="polite"></p>
       </div>
 
       <!-- ─────────────── Self-serve ─────────────── -->
@@ -322,11 +323,13 @@
 
   const validEmail = (v) => /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(v);
 
-  // Free 25-project sample: /api/sample-request stores the address (Resend contact)
-  // and emails the CSV as an attachment.
+  // Free 100-project sample: /api/sample-request stores the address (Resend contact)
+  // and emails the CSV as an attachment. Lead-firing (GA4 generate_lead + Google Ads)
+  // is deferred to window.uemFireLead from /assets/lead-capture.js, which shares the
+  // 30-day dedupe with the state-page forms so one visitor is one lead across pages.
   (function () {
-    const form = document.getElementById('sample25-form');
-    const msg = document.getElementById('sample25-msg');
+    const form = document.getElementById('sample-form');
+    const msg = document.getElementById('sample-msg');
     const input = form.querySelector('input[name="email"]');
     const hp = form.querySelector('input[name="website"]');
     const btn = form.querySelector('button');
@@ -343,8 +346,17 @@
         });
         const d = await res.json().catch(() => ({}));
         if (!res.ok || !d.ok) { say(d.error || "We couldn't send that just now. Try again in a moment.", 'err'); btn.disabled = false; return; }
-        say('Sent — check your inbox for the CSV (from data@usenergymap.com).', 'ok');
+        say('Sent — check your inbox for the sample CSV (100 largest projects, from data@usenergymap.com).', 'ok');
         input.disabled = true; btn.textContent = 'Sample sent ✓';
+
+        // A direct link too: the email can be slow, filtered, or mistyped, and a
+        // visitor who never gets the file is a lead that converts to nothing.
+        const direct = document.createElement('p');
+        direct.className = 'sample-fine';
+        direct.innerHTML = 'Didn\'t arrive? <a href="/api/sample?format=csv">Download the sample CSV directly</a>.';
+        form.parentNode.insertBefore(direct, msg.nextSibling);
+
+        if (typeof window.uemFireLead === 'function') window.uemFireLead('data');
       } catch (err) {
         say("We couldn't reach the server. Try again in a moment.", 'err'); btn.disabled = false;
       }

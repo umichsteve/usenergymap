@@ -1,7 +1,7 @@
 // POST /api/sample-request   body: { email, source?, website? }
 //
-// The "free 25-project sample CSV" form on /data. Unlike /api/lead (which emails a
-// LINK to the 100-row sample from /bess and the state pages), this one:
+// The "free 100-project sample CSV" form on /data. Unlike /api/lead (which emails a
+// LINK to the same 100-row sample from /bess and the state pages), this one:
 //
 //   1. stores the address as a Resend contact — the site has no database, and Resend is
 //      already the email provider, so the list lives there (optionally in a segment);
@@ -21,12 +21,17 @@
 // gets a normal-looking 200 and nothing is sent, so this route can't be pointed at a
 // stranger's inbox by a naive form-filler.
 
-const { loadProjectsFromDisk, fetchProjects, pickBalancedSample, toCSV } = require("../lib/dataset");
+const { loadProjectsFromDisk, fetchProjects, toCSV } = require("../lib/dataset");
 const { resolveAll } = require("../lib/pricing");
 
 const RESEND_API = "https://api.resend.com";
 const FROM = "US Energy Map <data@usenergymap.com>";
-const SAMPLE_SIZE = 25;
+// Same set and same order /api/sample serves, so /data and the state pages deliver the
+// identical file — just this one as an attachment instead of a download link.
+const SAMPLE_SIZE = 100;
+function topBySize(projects, n) {
+  return projects.slice().sort((a, b) => (b.capacity_mw || 0) - (a.capacity_mw || 0)).slice(0, n);
+}
 const EMAIL_RE = /^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/; // same loose shape as /api/lead and the buy form
 
 function escapeHtml(s) {
@@ -65,11 +70,11 @@ function priceLine(prices) {
 function buildEmail(prices) {
   const offer = priceLine(prices);
   const text = [
-    "Here's your free 25-project sample from US Energy Map (CSV attached).",
+    "Here's your free 100-project sample from US Energy Map (CSV attached).",
     "",
-    "The largest tracked data centers and battery storage (BESS) projects, with operator,",
-    "location, county, capacity, status, year online and a public source on each row.",
-    "It opens straight in Excel or Sheets.",
+    "The 100 largest tracked projects — data centers and battery storage (BESS) — with",
+    "operator, location, county, capacity, status, year online and a public source on",
+    "each row. It opens straight in Excel or Sheets.",
     "",
     `The full dataset — every tracked project as Excel + CSV + GeoJSON — is at`,
     `https://usenergymap.com/data (${offer}; subscriptions add a monthly row-level change log).`,
@@ -82,15 +87,15 @@ function buildEmail(prices) {
 
   const html = [
     '<div style="font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif;font-size:15px;line-height:1.6;color:#111">',
-    "<p>Here's your free 25-project sample from <strong>US Energy Map</strong> — the CSV is attached.</p>",
-    "<p>The largest tracked data centers and battery storage (BESS) projects, with operator, location, county, capacity, status, year online and a public source on each row. It opens straight in Excel or Sheets.</p>",
+    "<p>Here's your free 100-project sample from <strong>US Energy Map</strong> — the CSV is attached.</p>",
+    "<p>The 100 largest tracked projects — data centers and battery storage (BESS) — with operator, location, county, capacity, status, year online and a public source on each row. It opens straight in Excel or Sheets.</p>",
     `<p>The full dataset — every tracked project as Excel + CSV + GeoJSON — is at <a href="https://usenergymap.com/data" style="color:#0b6">usenergymap.com/data</a> (${escapeHtml(offer)}; subscriptions add a monthly row-level change log).</p>`,
     '<p>Need an invoice or a team license? Email <a href="mailto:steve@usenergymap.com" style="color:#0b6">steve@usenergymap.com</a>.</p>',
     '<p style="color:#666;font-size:13px">— US Energy Map · <a href="https://usenergymap.com" style="color:#666">usenergymap.com</a></p>',
     "</div>",
   ].join("");
 
-  return { subject: "Your free US Energy Map sample (25 projects, CSV attached)", text, html };
+  return { subject: "Your free US Energy Map sample (100 projects, CSV attached)", text, html };
 }
 
 // Resend answers a duplicate contact with an error; that is "already stored", not a
@@ -141,7 +146,7 @@ module.exports = async (req, res) => {
 
   try {
     const { projects, last_updated } = await loadProjects(req);
-    const rows = pickBalancedSample(projects, SAMPLE_SIZE);
+    const rows = topBySize(projects, SAMPLE_SIZE);
     const stamp = (last_updated || new Date().toISOString()).slice(0, 10);
     const csv = toCSV(rows);
 
@@ -158,7 +163,7 @@ module.exports = async (req, res) => {
       html,
       reply_to: "hello@usenergymap.com",
       attachments: [
-        { filename: `usenergymap-sample-25-${stamp}.csv`, content: Buffer.from(csv, "utf8").toString("base64") },
+        { filename: `usenergymap-sample-${stamp}.csv`, content: Buffer.from(csv, "utf8").toString("base64") },
       ],
       headers: { "X-UEM-Lead-Source": source },
     };
@@ -170,7 +175,7 @@ module.exports = async (req, res) => {
         Authorization: `Bearer ${process.env.RESEND_API_KEY}`,
         "Content-Type": "application/json",
         // Double-clicks and repeat submits within the hour collapse into one send.
-        "Idempotency-Key": `usenergymap-sample25-${email.toLowerCase()}-${new Date().toISOString().slice(0, 13)}`,
+        "Idempotency-Key": `usenergymap-sample-${email.toLowerCase()}-${new Date().toISOString().slice(0, 13)}`,
       },
       body: JSON.stringify(payload),
     });
