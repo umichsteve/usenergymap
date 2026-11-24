@@ -2,24 +2,24 @@
  "schema_version": "1.0",
  "generated": "2026-11-24",
  "summary": {
-  "from": "2026-11-18",
+  "from": "2026-11-24",
   "to": "2026-11-24",
   "eia_source_month": "september_generator2026",
   "eia_source_month_prev": "september_generator2026",
-  "added": 118,
-  "removed": 0,
-  "changed": 25,
-  "status_changes": 25,
+  "added": 0,
+  "removed": 1,
+  "changed": 67,
+  "status_changes": 0,
   "capacity_changes": 0,
   "newly_operating": 0,
-  "added_mw": 17470,
-  "total_projects": 1773,
-  "total_mw": 219875,
-  "net_mw": 17469,
+  "added_mw": 0,
+  "total_projects": 1772,
+  "total_mw": 219668,
+  "net_mw": -207,
   "by_type": {
    "bess": {
-    "added": 118,
-    "changed": 25
+    "added": 0,
+    "changed": 67
    },
    "data_center": {
     "added": 0,
@@ -28,67 +28,36 @@
   }
  },
  "highlights": {
-  "top_added": [
-   {
-    "name": "SPP queue GEN-2026-SR10 (Hansford, TX)",
-    "type": "bess",
-    "state": "TX",
-    "capacity_mw": 457,
-    "operator": null
-   },
-   {
-    "name": "SPP queue GEN-2025-SR1 (Clinton, MO)",
-    "type": "bess",
-    "state": "MO",
-    "capacity_mw": 400,
-    "operator": null
-   },
-   {
-    "name": "SPP queue GEN-2021-006 (Labette, KS)",
-    "type": "bess",
-    "state": "KS",
-    "capacity_mw": 300,
-    "operator": null
-   },
-   {
-    "name": "SPP queue GEN-2022-139 (Harrison, TX)",
-    "type": "bess",
-    "state": "TX",
-    "capacity_mw": 300,
-    "operator": null
-   },
-   {
-    "name": "SPP queue GEN-2024-SR15 (Yoakum, TX)",
-    "type": "bess",
-    "state": "TX",
-    "capacity_mw": 300,
-    "operator": null
-   },
-   {
-    "name": "SPP queue GEN-2025-SR16 (Sumner, KS)",
-    "type": "bess",
-    "state": "KS",
-    "capacity_mw": 300,
-    "operator": null
-   },
-   {
-    "name": "SPP queue GEN-2025-SR28 (Beaver, OK)",
-    "type": "bess",
-    "state": "OK",
-    "capacity_mw": 263.1,
-    "operator": null
-   },
-   {
-    "name": "SPP queue GEN-2026-SR11 (Johnston, OK)",
-    "type": "bess",
-    "state": "OK",
-    "capacity_mw": 258,
-    "operator": null
-   }
-  ],
+  "top_added": [],
   "newly_operating": []
  },
  "history": [
+  {
+   "from": "2026-11-18",
+   "to": "2026-11-24",
+   "eia_source_month": "september_generator2026",
+   "eia_source_month_prev": "september_generator2026",
+   "added": 118,
+   "removed": 0,
+   "changed": 25,
+   "status_changes": 25,
+   "capacity_changes": 0,
+   "newly_operating": 0,
+   "added_mw": 17470,
+   "total_projects": 1773,
+   "total_mw": 219875,
+   "net_mw": 17469,
+   "by_type": {
+    "bess": {
+     "added": 118,
+     "changed": 25
+    },
+    "data_center": {
+     "added": 0,
+     "changed": 0
+    }
+   }
+  },
   {
    "from": "2026-11-15",
    "to": "2026-11-18",
@@ -242,319 +211,7 @@
  ],
  "changes": [
   {
-   "kind": "added",
-   "id": "iso-spp-21-11157",
-   "name": "SPP queue 21-11157 (Larimer, CO)",
-   "type": "bess",
-   "operator": null,
-   "city": "Larimer",
-   "state": "CO",
-   "status": "queued",
-   "capacity_mw": 125,
-   "capacity_mwh": null,
-   "year_online": 2026
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-24-03011",
-   "name": "SPP queue 24-03011 (Boulder, CO)",
-   "type": "bess",
-   "operator": null,
-   "city": "Boulder",
-   "state": "CO",
-   "status": "queued",
-   "capacity_mw": 130,
-   "capacity_mwh": null,
-   "year_online": 2028
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-eras-2025-027",
-   "name": "SPP queue ERAS-2025-027 (Yoakum, TX)",
-   "type": "bess",
-   "operator": null,
-   "city": "Yoakum",
-   "state": "TX",
-   "status": "queued",
-   "capacity_mw": 250,
-   "capacity_mwh": null,
-   "year_online": 2028
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-eras-2025-029",
-   "name": "SPP queue ERAS-2025-029 (Wyandotte, KS)",
-   "type": "bess",
-   "operator": null,
-   "city": "Wyandotte",
-   "state": "KS",
-   "status": "queued",
-   "capacity_mw": 170,
-   "capacity_mwh": null,
-   "year_online": 2026
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-eras-2025-036",
-   "name": "SPP queue ERAS-2025-036 (Potter, TX)",
-   "type": "bess",
-   "operator": null,
-   "city": "Potter",
-   "state": "TX",
-   "status": "queued",
-   "capacity_mw": 140,
-   "capacity_mwh": null,
-   "year_online": 2029
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-gen-2016-160",
-   "name": "SPP queue GEN-2016-160 (Ellis, KS)",
-   "type": "bess",
-   "operator": null,
-   "city": "Ellis",
-   "state": "KS",
-   "status": "queued",
-   "capacity_mw": 20,
-   "capacity_mwh": null,
-   "year_online": 2023
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-gen-2017-196",
-   "name": "SPP queue GEN-2017-196 (Johnson, KS)",
-   "type": "bess",
-   "operator": null,
-   "city": "Johnson",
-   "state": "KS",
-   "status": "queued",
-   "capacity_mw": 128,
-   "capacity_mwh": null,
-   "year_online": 2020
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-gen-2017-221",
-   "name": "SPP queue GEN-2017-221 (Sedgwick, KS)",
-   "type": "bess",
-   "operator": null,
-   "city": "Sedgwick",
-   "state": "KS",
-   "status": "queued",
-   "capacity_mw": 152,
-   "capacity_mwh": null,
-   "year_online": 2020
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-gen-2017-227",
-   "name": "SPP queue GEN-2017-227 (Sedgwick, KS)",
-   "type": "bess",
-   "operator": null,
-   "city": "Sedgwick",
-   "state": "KS",
-   "status": "queued",
-   "capacity_mw": 201.6,
-   "capacity_mwh": null,
-   "year_online": 2020
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-gen-2018-011",
-   "name": "SPP queue GEN-2018-011 (Kingfisher, OK)",
-   "type": "bess",
-   "operator": null,
-   "city": "Kingfisher",
-   "state": "OK",
-   "status": "queued",
-   "capacity_mw": 74.1,
-   "capacity_mwh": null,
-   "year_online": 2020
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-gen-2018-024",
-   "name": "SPP queue GEN-2018-024 (Muskogee, OK)",
-   "type": "bess",
-   "operator": null,
-   "city": "Muskogee",
-   "state": "OK",
-   "status": "queued",
-   "capacity_mw": 100,
-   "capacity_mwh": null,
-   "year_online": 2023
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-gen-2018-025",
-   "name": "SPP queue GEN-2018-025 (Washington, NE)",
-   "type": "bess",
-   "operator": null,
-   "city": "Washington",
-   "state": "NE",
-   "status": "queued",
-   "capacity_mw": 200,
-   "capacity_mwh": null,
-   "year_online": 2023
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-gen-2018-026",
-   "name": "SPP queue GEN-2018-026 (Canadian, OK)",
-   "type": "bess",
-   "operator": null,
-   "city": "Canadian",
-   "state": "OK",
-   "status": "queued",
-   "capacity_mw": 100,
-   "capacity_mwh": null,
-   "year_online": 2023
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-gen-2018-027",
-   "name": "SPP queue GEN-2018-027 (Tulsa, OK)",
-   "type": "bess",
-   "operator": null,
-   "city": "Tulsa",
-   "state": "OK",
-   "status": "queued",
-   "capacity_mw": 100,
-   "capacity_mwh": null,
-   "year_online": 2024
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-gen-2018-028",
-   "name": "SPP queue GEN-2018-028 (Tulsa, OK)",
-   "type": "bess",
-   "operator": null,
-   "city": "Tulsa",
-   "state": "OK",
-   "status": "queued",
-   "capacity_mw": 200,
-   "capacity_mwh": null,
-   "year_online": 2023
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-gen-2018-029",
-   "name": "SPP queue GEN-2018-029 (Oklahoma, OK)",
-   "type": "bess",
-   "operator": null,
-   "city": "Oklahoma",
-   "state": "OK",
-   "status": "queued",
-   "capacity_mw": 100,
-   "capacity_mwh": null,
-   "year_online": 2023
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-gen-2018-031",
-   "name": "SPP queue GEN-2018-031 (Jackson, MO)",
-   "type": "bess",
-   "operator": null,
-   "city": "Jackson",
-   "state": "MO",
-   "status": "queued",
-   "capacity_mw": 50,
-   "capacity_mwh": null,
-   "year_online": 2024
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-gen-2018-033",
-   "name": "SPP queue GEN-2018-033 (Cass, NE)",
-   "type": "bess",
-   "operator": null,
-   "city": "Cass",
-   "state": "NE",
-   "status": "queued",
-   "capacity_mw": 200,
-   "capacity_mwh": null,
-   "year_online": 2023
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-gen-2018-037",
-   "name": "SPP queue GEN-2018-037 (Douglas, NE)",
-   "type": "bess",
-   "operator": null,
-   "city": "Douglas",
-   "state": "NE",
-   "status": "queued",
-   "capacity_mw": 100,
-   "capacity_mwh": null,
-   "year_online": 2024
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-gen-2018-052",
-   "name": "SPP queue GEN-2018-052 (Lea, NM)",
-   "type": "bess",
-   "operator": null,
-   "city": "Lea",
-   "state": "NM",
-   "status": "queued",
-   "capacity_mw": 70,
-   "capacity_mwh": null,
-   "year_online": 2021
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-gen-2018-071",
-   "name": "SPP queue GEN-2018-071 (Kay, OK)",
-   "type": "bess",
-   "operator": null,
-   "city": "Kay",
-   "state": "OK",
-   "status": "queued",
-   "capacity_mw": 151,
-   "capacity_mwh": null,
-   "year_online": 2021
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-gen-2018-072",
-   "name": "SPP queue GEN-2018-072 (Kay, OK)",
-   "type": "bess",
-   "operator": null,
-   "city": "Kay",
-   "state": "OK",
-   "status": "queued",
-   "capacity_mw": 151,
-   "capacity_mwh": null,
-   "year_online": 2021
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-gen-2018-108",
-   "name": "SPP queue GEN-2018-108 (Barber, KS)",
-   "type": "bess",
-   "operator": null,
-   "city": "Barber",
-   "state": "KS",
-   "status": "queued",
-   "capacity_mw": 95,
-   "capacity_mwh": null,
-   "year_online": 2027
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-gen-2019-002",
-   "name": "SPP queue GEN-2019-002 (Mayes, OK)",
-   "type": "bess",
-   "operator": null,
-   "city": "Mayes",
-   "state": "OK",
-   "status": "queued",
-   "capacity_mw": 100,
-   "capacity_mwh": null,
-   "year_online": 2020
-  },
-  {
-   "kind": "added",
+   "kind": "removed",
    "id": "iso-spp-gen-2019-011",
    "name": "SPP queue GEN-2019-011 (Yoakum, TX)",
    "type": "bess",
@@ -567,7 +224,407 @@
    "year_online": 2023
   },
   {
-   "kind": "added",
+   "kind": "changed",
+   "id": "iso-spp-eras-2025-029",
+   "name": "SPP queue ERAS-2025-029 (Wyandotte, KS)",
+   "type": "bess",
+   "operator": null,
+   "city": "Wyandotte",
+   "state": "KS",
+   "status": "queued",
+   "capacity_mw": 170,
+   "capacity_mwh": null,
+   "year_online": 2027,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2026,
+     "to": 2027
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2016-160",
+   "name": "SPP queue GEN-2016-160 (Ellis, KS)",
+   "type": "bess",
+   "operator": null,
+   "city": "Ellis",
+   "state": "KS",
+   "status": "queued",
+   "capacity_mw": 20,
+   "capacity_mwh": null,
+   "year_online": 2026,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2023,
+     "to": 2026
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2017-196",
+   "name": "SPP queue GEN-2017-196 (Johnson, KS)",
+   "type": "bess",
+   "operator": null,
+   "city": "Johnson",
+   "state": "KS",
+   "status": "queued",
+   "capacity_mw": 128,
+   "capacity_mwh": null,
+   "year_online": 2030,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2020,
+     "to": 2030
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2017-221",
+   "name": "SPP queue GEN-2017-221 (Sedgwick, KS)",
+   "type": "bess",
+   "operator": null,
+   "city": "Sedgwick",
+   "state": "KS",
+   "status": "queued",
+   "capacity_mw": 152,
+   "capacity_mwh": null,
+   "year_online": 2026,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2020,
+     "to": 2026
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2017-227",
+   "name": "SPP queue GEN-2017-227 (Sedgwick, KS)",
+   "type": "bess",
+   "operator": null,
+   "city": "Sedgwick",
+   "state": "KS",
+   "status": "queued",
+   "capacity_mw": 201.6,
+   "capacity_mwh": null,
+   "year_online": 2030,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2020,
+     "to": 2030
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2018-011",
+   "name": "SPP queue GEN-2018-011 (Kingfisher, OK)",
+   "type": "bess",
+   "operator": null,
+   "city": "Kingfisher",
+   "state": "OK",
+   "status": "queued",
+   "capacity_mw": 74.1,
+   "capacity_mwh": null,
+   "year_online": 2027,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2020,
+     "to": 2027
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2018-024",
+   "name": "SPP queue GEN-2018-024 (Muskogee, OK)",
+   "type": "bess",
+   "operator": null,
+   "city": "Muskogee",
+   "state": "OK",
+   "status": "queued",
+   "capacity_mw": 100,
+   "capacity_mwh": null,
+   "year_online": 2028,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2023,
+     "to": 2028
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2018-025",
+   "name": "SPP queue GEN-2018-025 (Washington, NE)",
+   "type": "bess",
+   "operator": null,
+   "city": "Washington",
+   "state": "NE",
+   "status": "queued",
+   "capacity_mw": 200,
+   "capacity_mwh": null,
+   "year_online": 2030,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2023,
+     "to": 2030
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2018-026",
+   "name": "SPP queue GEN-2018-026 (Canadian, OK)",
+   "type": "bess",
+   "operator": null,
+   "city": "Canadian",
+   "state": "OK",
+   "status": "queued",
+   "capacity_mw": 100,
+   "capacity_mwh": null,
+   "year_online": 2026,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2023,
+     "to": 2026
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2018-027",
+   "name": "SPP queue GEN-2018-027 (Tulsa, OK)",
+   "type": "bess",
+   "operator": null,
+   "city": "Tulsa",
+   "state": "OK",
+   "status": "queued",
+   "capacity_mw": 100,
+   "capacity_mwh": null,
+   "year_online": 2028,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2024,
+     "to": 2028
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2018-028",
+   "name": "SPP queue GEN-2018-028 (Tulsa, OK)",
+   "type": "bess",
+   "operator": null,
+   "city": "Tulsa",
+   "state": "OK",
+   "status": "queued",
+   "capacity_mw": 200,
+   "capacity_mwh": null,
+   "year_online": 2028,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2023,
+     "to": 2028
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2018-029",
+   "name": "SPP queue GEN-2018-029 (Oklahoma, OK)",
+   "type": "bess",
+   "operator": null,
+   "city": "Oklahoma",
+   "state": "OK",
+   "status": "queued",
+   "capacity_mw": 100,
+   "capacity_mwh": null,
+   "year_online": 2028,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2023,
+     "to": 2028
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2018-031",
+   "name": "SPP queue GEN-2018-031 (Jackson, MO)",
+   "type": "bess",
+   "operator": null,
+   "city": "Jackson",
+   "state": "MO",
+   "status": "queued",
+   "capacity_mw": 50,
+   "capacity_mwh": null,
+   "year_online": 2028,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2024,
+     "to": 2028
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2018-033",
+   "name": "SPP queue GEN-2018-033 (Cass, NE)",
+   "type": "bess",
+   "operator": null,
+   "city": "Cass",
+   "state": "NE",
+   "status": "queued",
+   "capacity_mw": 200,
+   "capacity_mwh": null,
+   "year_online": 2031,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2023,
+     "to": 2031
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2018-037",
+   "name": "SPP queue GEN-2018-037 (Douglas, NE)",
+   "type": "bess",
+   "operator": null,
+   "city": "Douglas",
+   "state": "NE",
+   "status": "queued",
+   "capacity_mw": 100,
+   "capacity_mwh": null,
+   "year_online": 2032,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2024,
+     "to": 2032
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2018-052",
+   "name": "SPP queue GEN-2018-052 (Lea, NM)",
+   "type": "bess",
+   "operator": null,
+   "city": "Lea",
+   "state": "NM",
+   "status": "queued",
+   "capacity_mw": 70,
+   "capacity_mwh": null,
+   "year_online": 2027,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2021,
+     "to": 2027
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2018-071",
+   "name": "SPP queue GEN-2018-071 (Kay, OK)",
+   "type": "bess",
+   "operator": null,
+   "city": "Kay",
+   "state": "OK",
+   "status": "queued",
+   "capacity_mw": 151,
+   "capacity_mwh": null,
+   "year_online": 2027,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2021,
+     "to": 2027
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2018-072",
+   "name": "SPP queue GEN-2018-072 (Kay, OK)",
+   "type": "bess",
+   "operator": null,
+   "city": "Kay",
+   "state": "OK",
+   "status": "queued",
+   "capacity_mw": 151,
+   "capacity_mwh": null,
+   "year_online": 2027,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2021,
+     "to": 2027
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2018-108",
+   "name": "SPP queue GEN-2018-108 (Barber, KS)",
+   "type": "bess",
+   "operator": null,
+   "city": "Barber",
+   "state": "KS",
+   "status": "queued",
+   "capacity_mw": 95,
+   "capacity_mwh": null,
+   "year_online": 2028,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2027,
+     "to": 2028
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2019-002",
+   "name": "SPP queue GEN-2019-002 (Mayes, OK)",
+   "type": "bess",
+   "operator": null,
+   "city": "Mayes",
+   "state": "OK",
+   "status": "queued",
+   "capacity_mw": 100,
+   "capacity_mwh": null,
+   "year_online": 2027,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2020,
+     "to": 2027
+    }
+   ]
+  },
+  {
+   "kind": "changed",
    "id": "iso-spp-gen-2019-053",
    "name": "SPP queue GEN-2019-053 (Edwards, KS)",
    "type": "bess",
@@ -577,10 +634,17 @@
    "status": "queued",
    "capacity_mw": 50,
    "capacity_mwh": null,
-   "year_online": 2023
+   "year_online": 2028,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2023,
+     "to": 2028
+    }
+   ]
   },
   {
-   "kind": "added",
+   "kind": "changed",
    "id": "iso-spp-gen-2019-063",
    "name": "SPP queue GEN-2019-063 (Ford, KS)",
    "type": "bess",
@@ -590,10 +654,17 @@
    "status": "queued",
    "capacity_mw": 50,
    "capacity_mwh": null,
-   "year_online": 2023
+   "year_online": 2028,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2023,
+     "to": 2028
+    }
+   ]
   },
   {
-   "kind": "added",
+   "kind": "changed",
    "id": "iso-spp-gen-2019-065",
    "name": "SPP queue GEN-2019-065 (Smith, TX)",
    "type": "bess",
@@ -603,10 +674,17 @@
    "status": "queued",
    "capacity_mw": 180,
    "capacity_mwh": null,
-   "year_online": 2024
+   "year_online": 2028,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2024,
+     "to": 2028
+    }
+   ]
   },
   {
-   "kind": "added",
+   "kind": "changed",
    "id": "iso-spp-gen-2019-068",
    "name": "SPP queue GEN-2019-068 (Barton, KS)",
    "type": "bess",
@@ -616,1622 +694,12 @@
    "status": "queued",
    "capacity_mw": 50,
    "capacity_mwh": null,
-   "year_online": 2023
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-gen-2020-060",
-   "name": "SPP queue GEN-2020-060 (Lubbock, TX)",
-   "type": "bess",
-   "operator": null,
-   "city": "Lubbock",
-   "state": "TX",
-   "status": "queued",
-   "capacity_mw": 200,
-   "capacity_mwh": null,
-   "year_online": 2026
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-gen-2020-081",
-   "name": "SPP queue GEN-2020-081 (Rusk, TX)",
-   "type": "bess",
-   "operator": null,
-   "city": "Rusk",
-   "state": "TX",
-   "status": "queued",
-   "capacity_mw": 200,
-   "capacity_mwh": null,
-   "year_online": 2022
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-gen-2020-090",
-   "name": "SPP queue GEN-2020-090 (Bourbon, KS)",
-   "type": "bess",
-   "operator": null,
-   "city": "Bourbon",
-   "state": "KS",
-   "status": "queued",
-   "capacity_mw": 204.3,
-   "capacity_mwh": null,
-   "year_online": 2026
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-gen-2020-sr2",
-   "name": "SPP queue GEN-2020-SR2 (Johnston, OK)",
-   "type": "bess",
-   "operator": null,
-   "city": "Johnston",
-   "state": "OK",
-   "status": "queued",
-   "capacity_mw": 100,
-   "capacity_mwh": null,
-   "year_online": 2021
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-gen-2021-001",
-   "name": "SPP queue GEN-2021-001 (Bryan, OK)",
-   "type": "bess",
-   "operator": null,
-   "city": "Bryan",
-   "state": "OK",
-   "status": "queued",
-   "capacity_mw": 100,
-   "capacity_mwh": null,
-   "year_online": 2024
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-gen-2021-006",
-   "name": "SPP queue GEN-2021-006 (Labette, KS)",
-   "type": "bess",
-   "operator": null,
-   "city": "Labette",
-   "state": "KS",
-   "status": "queued",
-   "capacity_mw": 300,
-   "capacity_mwh": null,
-   "year_online": 2025
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-gen-2021-019",
-   "name": "SPP queue GEN-2021-019 (Noble, OK)",
-   "type": "bess",
-   "operator": null,
-   "city": "Noble",
-   "state": "OK",
-   "status": "queued",
-   "capacity_mw": 74.9,
-   "capacity_mwh": null,
-   "year_online": 2027
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-gen-2021-029",
-   "name": "SPP queue GEN-2021-029 (Linn, KS)",
-   "type": "bess",
-   "operator": null,
-   "city": "Linn",
-   "state": "KS",
-   "status": "queued",
-   "capacity_mw": 253.8,
-   "capacity_mwh": null,
-   "year_online": 2026
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-gen-2021-038",
-   "name": "SPP queue GEN-2021-038 (Titus, TX)",
-   "type": "bess",
-   "operator": null,
-   "city": "Titus",
-   "state": "TX",
-   "status": "queued",
-   "capacity_mw": 200,
-   "capacity_mwh": null,
-   "year_online": 2026
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-gen-2021-039",
-   "name": "SPP queue GEN-2021-039 (Douglas, NE)",
-   "type": "bess",
-   "operator": null,
-   "city": "Douglas",
-   "state": "NE",
-   "status": "queued",
-   "capacity_mw": 100,
-   "capacity_mwh": null,
-   "year_online": 2025
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-gen-2021-040",
-   "name": "SPP queue GEN-2021-040 (Cass, NE)",
-   "type": "bess",
-   "operator": null,
-   "city": "Cass",
-   "state": "NE",
-   "status": "queued",
-   "capacity_mw": 200,
-   "capacity_mwh": null,
-   "year_online": 2025
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-gen-2021-041",
-   "name": "SPP queue GEN-2021-041 (Canadian, OK)",
-   "type": "bess",
-   "operator": null,
-   "city": "Canadian",
-   "state": "OK",
-   "status": "queued",
-   "capacity_mw": 100,
-   "capacity_mwh": null,
-   "year_online": 2025
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-gen-2021-042",
-   "name": "SPP queue GEN-2021-042 (Jackson, MO)",
-   "type": "bess",
-   "operator": null,
-   "city": "Jackson",
-   "state": "MO",
-   "status": "queued",
-   "capacity_mw": 50,
-   "capacity_mwh": null,
-   "year_online": 2025
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-gen-2021-043",
-   "name": "SPP queue GEN-2021-043 (Lancaster, NE)",
-   "type": "bess",
-   "operator": null,
-   "city": "Lancaster",
-   "state": "NE",
-   "status": "queued",
-   "capacity_mw": 250,
-   "capacity_mwh": null,
-   "year_online": 2026
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-gen-2021-048",
-   "name": "SPP queue GEN-2021-048 (Lancaster, NE)",
-   "type": "bess",
-   "operator": null,
-   "city": "Lancaster",
-   "state": "NE",
-   "status": "queued",
-   "capacity_mw": 75,
-   "capacity_mwh": null,
-   "year_online": 2025
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-gen-2021-052",
-   "name": "SPP queue GEN-2021-052 (Muskogee, OK)",
-   "type": "bess",
-   "operator": null,
-   "city": "Muskogee",
-   "state": "OK",
-   "status": "queued",
-   "capacity_mw": 75,
-   "capacity_mwh": null,
-   "year_online": 2031
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-gen-2021-088",
-   "name": "SPP queue GEN-2021-088 (Cleveland, OK)",
-   "type": "bess",
-   "operator": null,
-   "city": "Cleveland",
-   "state": "OK",
-   "status": "queued",
-   "capacity_mw": 100,
-   "capacity_mwh": null,
-   "year_online": 2025
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-gen-2021-103",
-   "name": "SPP queue GEN-2021-103 (Johnson, KS)",
-   "type": "bess",
-   "operator": null,
-   "city": "Johnson",
-   "state": "KS",
-   "status": "queued",
-   "capacity_mw": 150,
-   "capacity_mwh": null,
-   "year_online": 2025
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-gen-2022-012",
-   "name": "SPP queue GEN-2022-012 (Woodward, OK)",
-   "type": "bess",
-   "operator": null,
-   "city": "Woodward",
-   "state": "OK",
-   "status": "queued",
-   "capacity_mw": 100,
-   "capacity_mwh": null,
-   "year_online": 2024
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-gen-2022-017",
-   "name": "SPP queue GEN-2022-017 (Woodward, OK)",
-   "type": "bess",
-   "operator": null,
-   "city": "Woodward",
-   "state": "OK",
-   "status": "queued",
-   "capacity_mw": 150,
-   "capacity_mwh": null,
-   "year_online": 2024
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-gen-2022-024",
-   "name": "SPP queue GEN-2022-024 (Bourbon, KS)",
-   "type": "bess",
-   "operator": null,
-   "city": "Bourbon",
-   "state": "KS",
-   "status": "queued",
-   "capacity_mw": 200,
-   "capacity_mwh": null,
-   "year_online": 2024
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-gen-2022-102",
-   "name": "SPP queue GEN-2022-102 (Clay, MO)",
-   "type": "bess",
-   "operator": null,
-   "city": "Clay",
-   "state": "MO",
-   "status": "queued",
-   "capacity_mw": 100,
-   "capacity_mwh": null,
-   "year_online": 2026
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-gen-2022-130",
-   "name": "SPP queue GEN-2022-130 (Sebastian, AR)",
-   "type": "bess",
-   "operator": null,
-   "city": "Sebastian",
-   "state": "AR",
-   "status": "queued",
-   "capacity_mw": 200,
-   "capacity_mwh": null,
-   "year_online": 2027
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-gen-2022-136",
-   "name": "SPP queue GEN-2022-136 (Bryan, OK)",
-   "type": "bess",
-   "operator": null,
-   "city": "Bryan",
-   "state": "OK",
-   "status": "queued",
-   "capacity_mw": 180,
-   "capacity_mwh": null,
-   "year_online": 2027
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-gen-2022-139",
-   "name": "SPP queue GEN-2022-139 (Harrison, TX)",
-   "type": "bess",
-   "operator": null,
-   "city": "Harrison",
-   "state": "TX",
-   "status": "queued",
-   "capacity_mw": 300,
-   "capacity_mwh": null,
-   "year_online": 2027
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-gen-2022-142",
-   "name": "SPP queue GEN-2022-142 (Clay, MO)",
-   "type": "bess",
-   "operator": null,
-   "city": "Clay",
-   "state": "MO",
-   "status": "queued",
-   "capacity_mw": 200,
-   "capacity_mwh": null,
-   "year_online": 2027
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-gen-2022-143",
-   "name": "SPP queue GEN-2022-143 (Marshall, OK)",
-   "type": "bess",
-   "operator": null,
-   "city": "Marshall",
-   "state": "OK",
-   "status": "queued",
-   "capacity_mw": 200,
-   "capacity_mwh": null,
-   "year_online": 2027
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-gen-2022-144",
-   "name": "SPP queue GEN-2022-144 (Jackson, MO)",
-   "type": "bess",
-   "operator": null,
-   "city": "Jackson",
-   "state": "MO",
-   "status": "queued",
-   "capacity_mw": 200,
-   "capacity_mwh": null,
-   "year_online": 2027
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-gen-2022-154",
-   "name": "SPP queue GEN-2022-154 (Cleveland, OK)",
-   "type": "bess",
-   "operator": null,
-   "city": "Cleveland",
-   "state": "OK",
-   "status": "queued",
-   "capacity_mw": 100,
-   "capacity_mwh": null,
-   "year_online": 2026
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-gen-2022-155",
-   "name": "SPP queue GEN-2022-155 (Oklahoma, OK)",
-   "type": "bess",
-   "operator": null,
-   "city": "Oklahoma",
-   "state": "OK",
-   "status": "queued",
-   "capacity_mw": 200,
-   "capacity_mwh": null,
-   "year_online": 2026
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-gen-2022-156",
-   "name": "SPP queue GEN-2022-156 (Creek, OK)",
-   "type": "bess",
-   "operator": null,
-   "city": "Creek",
-   "state": "OK",
-   "status": "queued",
-   "capacity_mw": 100,
-   "capacity_mwh": null,
-   "year_online": 2026
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-gen-2022-235",
-   "name": "SPP queue GEN-2022-235 (Canadian, OK)",
-   "type": "bess",
-   "operator": null,
-   "city": "Canadian",
-   "state": "OK",
-   "status": "queued",
-   "capacity_mw": 150,
-   "capacity_mwh": null,
-   "year_online": 2028
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-gen-2022-238",
-   "name": "SPP queue GEN-2022-238 (Pottawatomie, OK)",
-   "type": "bess",
-   "operator": null,
-   "city": "Pottawatomie",
-   "state": "OK",
-   "status": "queued",
-   "capacity_mw": 150,
-   "capacity_mwh": null,
-   "year_online": 2028
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-gen-2023-033",
-   "name": "SPP queue GEN-2023-033 (Clay, MO)",
-   "type": "bess",
-   "operator": null,
-   "city": "Clay",
-   "state": "MO",
-   "status": "queued",
-   "capacity_mw": 200,
-   "capacity_mwh": null,
-   "year_online": 2028
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-gen-2023-037",
-   "name": "SPP queue GEN-2023-037 (Wyandotte, KS)",
-   "type": "bess",
-   "operator": null,
-   "city": "Wyandotte",
-   "state": "KS",
-   "status": "queued",
-   "capacity_mw": 200,
-   "capacity_mwh": null,
-   "year_online": 2028
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-gen-2023-055",
-   "name": "SPP queue GEN-2023-055 (Mayes, OK)",
-   "type": "bess",
-   "operator": null,
-   "city": "Mayes",
-   "state": "OK",
-   "status": "queued",
-   "capacity_mw": 100,
-   "capacity_mwh": null,
-   "year_online": 2027
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-gen-2023-057",
-   "name": "SPP queue GEN-2023-057 (Pawnee, OK)",
-   "type": "bess",
-   "operator": null,
-   "city": "Pawnee",
-   "state": "OK",
-   "status": "queued",
-   "capacity_mw": 150,
-   "capacity_mwh": null,
-   "year_online": 2027
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-gen-2023-061",
-   "name": "SPP queue GEN-2023-061 (Jasper, MO)",
-   "type": "bess",
-   "operator": null,
-   "city": "Jasper",
-   "state": "MO",
-   "status": "queued",
-   "capacity_mw": 100,
-   "capacity_mwh": null,
-   "year_online": 2027
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-gen-2023-161",
-   "name": "SPP queue GEN-2023-161 (Blaine, OK)",
-   "type": "bess",
-   "operator": null,
-   "city": "Blaine",
-   "state": "OK",
-   "status": "queued",
-   "capacity_mw": 74.9,
-   "capacity_mwh": null,
-   "year_online": 2026
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-gen-2023-170",
-   "name": "SPP queue GEN-2023-170 (Chariton, MO)",
-   "type": "bess",
-   "operator": null,
-   "city": "Chariton",
-   "state": "MO",
-   "status": "queued",
-   "capacity_mw": 150,
-   "capacity_mwh": null,
-   "year_online": 2028
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-gen-2023-171",
-   "name": "SPP queue GEN-2023-171 (Jackson, MO)",
-   "type": "bess",
-   "operator": null,
-   "city": "Jackson",
-   "state": "MO",
-   "status": "queued",
-   "capacity_mw": 150,
-   "capacity_mwh": null,
-   "year_online": 2028
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-gen-2023-206",
-   "name": "SPP queue GEN-2023-206 (Sebastian, AR)",
-   "type": "bess",
-   "operator": null,
-   "city": "Sebastian",
-   "state": "AR",
-   "status": "queued",
-   "capacity_mw": 50,
-   "capacity_mwh": null,
-   "year_online": 2029
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-gen-2023-sr12",
-   "name": "SPP queue GEN-2023-SR12 (Cochran, TX)",
-   "type": "bess",
-   "operator": null,
-   "city": "Cochran",
-   "state": "TX",
-   "status": "queued",
-   "capacity_mw": 120,
-   "capacity_mwh": null,
-   "year_online": 2025
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-gen-2023-sr20",
-   "name": "SPP queue GEN-2023-SR20 (Custer, OK)",
-   "type": "bess",
-   "operator": null,
-   "city": "Custer",
-   "state": "OK",
-   "status": "queued",
-   "capacity_mw": 120,
-   "capacity_mwh": null,
-   "year_online": 2025
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-gen-2023-sr25",
-   "name": "SPP queue GEN-2023-SR25 (Mayes, OK)",
-   "type": "bess",
-   "operator": null,
-   "city": "Mayes",
-   "state": "OK",
-   "status": "queued",
-   "capacity_mw": 72.5,
-   "capacity_mwh": null,
-   "year_online": 2021
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-gen-2023-sr27",
-   "name": "SPP queue GEN-2023-SR27 (Mayes, OK)",
-   "type": "bess",
-   "operator": null,
-   "city": "Mayes",
-   "state": "OK",
-   "status": "queued",
-   "capacity_mw": 101.5,
-   "capacity_mwh": null,
-   "year_online": 2021
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-gen-2023-sr4",
-   "name": "SPP queue GEN-2023-SR4 (Burke, ND)",
-   "type": "bess",
-   "operator": null,
-   "city": "Burke",
-   "state": "ND",
-   "status": "queued",
-   "capacity_mw": 170,
-   "capacity_mwh": null,
-   "year_online": 2026
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-gen-2023-sr5",
-   "name": "SPP queue GEN-2023-SR5 (Dewey, OK)",
-   "type": "bess",
-   "operator": null,
-   "city": "Dewey",
-   "state": "OK",
-   "status": "queued",
-   "capacity_mw": 85,
-   "capacity_mwh": null,
-   "year_online": 2026
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-gen-2023-sr7",
-   "name": "SPP queue GEN-2023-SR7 (Wayne, NE)",
-   "type": "bess",
-   "operator": null,
-   "city": "Wayne",
-   "state": "NE",
-   "status": "queued",
-   "capacity_mw": 135,
-   "capacity_mwh": null,
-   "year_online": 2027
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-gen-2023-sr8",
-   "name": "SPP queue GEN-2023-SR8 (Hansford, TX)",
-   "type": "bess",
-   "operator": null,
-   "city": "Hansford",
-   "state": "TX",
-   "status": "queued",
-   "capacity_mw": 200,
-   "capacity_mwh": null,
-   "year_online": 2026
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-gen-2024-sr10",
-   "name": "SPP queue GEN-2024-SR10 (Lancaster, NE)",
-   "type": "bess",
-   "operator": null,
-   "city": "Lancaster",
-   "state": "NE",
-   "status": "queued",
-   "capacity_mw": 80,
-   "capacity_mwh": null,
-   "year_online": 2027
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-gen-2024-sr15",
-   "name": "SPP queue GEN-2024-SR15 (Yoakum, TX)",
-   "type": "bess",
-   "operator": null,
-   "city": "Yoakum",
-   "state": "TX",
-   "status": "queued",
-   "capacity_mw": 300,
-   "capacity_mwh": null,
-   "year_online": 2028
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-gen-2024-sr16",
-   "name": "SPP queue GEN-2024-SR16 (Rogers, OK)",
-   "type": "bess",
-   "operator": null,
-   "city": "Rogers",
-   "state": "OK",
-   "status": "queued",
-   "capacity_mw": 100,
-   "capacity_mwh": null,
-   "year_online": 2026
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-gen-2024-sr17",
-   "name": "SPP queue GEN-2024-SR17 (Kay, OK)",
-   "type": "bess",
-   "operator": null,
-   "city": "Kay",
-   "state": "OK",
-   "status": "queued",
-   "capacity_mw": 50,
-   "capacity_mwh": null,
-   "year_online": 2027
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-gen-2024-sr2",
-   "name": "SPP queue GEN-2024-SR2 (Franklin, AR)",
-   "type": "bess",
-   "operator": null,
-   "city": "Franklin",
-   "state": "AR",
-   "status": "queued",
-   "capacity_mw": 72.5,
-   "capacity_mwh": null,
-   "year_online": 2027
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-gen-2024-sr3",
-   "name": "SPP queue GEN-2024-SR3 (Lincoln, OK)",
-   "type": "bess",
-   "operator": null,
-   "city": "Lincoln",
-   "state": "OK",
-   "status": "queued",
-   "capacity_mw": 72.5,
-   "capacity_mwh": null,
-   "year_online": 2026
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-gen-2024-sr5",
-   "name": "SPP queue GEN-2024-SR5 (Creek, OK)",
-   "type": "bess",
-   "operator": null,
-   "city": "Creek",
-   "state": "OK",
-   "status": "queued",
-   "capacity_mw": 176.9,
-   "capacity_mwh": null,
-   "year_online": 2026
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-gen-2024-sr8",
-   "name": "SPP queue GEN-2024-SR8 (Greeley, NE)",
-   "type": "bess",
-   "operator": null,
-   "city": "Greeley",
-   "state": "NE",
-   "status": "queued",
-   "capacity_mw": 70,
-   "capacity_mwh": null,
-   "year_online": 2026
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-gen-2024-sr9",
-   "name": "SPP queue GEN-2024-SR9 (Beaver, OK)",
-   "type": "bess",
-   "operator": null,
-   "city": "Beaver",
-   "state": "OK",
-   "status": "queued",
-   "capacity_mw": 150,
-   "capacity_mwh": null,
-   "year_online": 2028
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-gen-2025-sr1",
-   "name": "SPP queue GEN-2025-SR1 (Clinton, MO)",
-   "type": "bess",
-   "operator": null,
-   "city": "Clinton",
-   "state": "MO",
-   "status": "queued",
-   "capacity_mw": 400,
-   "capacity_mwh": null,
-   "year_online": 2027
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-gen-2025-sr16",
-   "name": "SPP queue GEN-2025-SR16 (Sumner, KS)",
-   "type": "bess",
-   "operator": null,
-   "city": "Sumner",
-   "state": "KS",
-   "status": "queued",
-   "capacity_mw": 300,
-   "capacity_mwh": null,
-   "year_online": 2026
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-gen-2025-sr17",
-   "name": "SPP queue GEN-2025-SR17 (Stephens, OK)",
-   "type": "bess",
-   "operator": null,
-   "city": "Stephens",
-   "state": "OK",
-   "status": "queued",
-   "capacity_mw": 200,
-   "capacity_mwh": null,
-   "year_online": 2027
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-gen-2025-sr27",
-   "name": "SPP queue GEN-2025-SR27 (Chaves, NM)",
-   "type": "bess",
-   "operator": null,
-   "city": "Chaves",
-   "state": "NM",
-   "status": "queued",
-   "capacity_mw": 50,
-   "capacity_mwh": null,
-   "year_online": 2026
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-gen-2025-sr28",
-   "name": "SPP queue GEN-2025-SR28 (Beaver, OK)",
-   "type": "bess",
-   "operator": null,
-   "city": "Beaver",
-   "state": "OK",
-   "status": "queued",
-   "capacity_mw": 263.1,
-   "capacity_mwh": null,
-   "year_online": 2027
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-gen-2025-sr29",
-   "name": "SPP queue GEN-2025-SR29 (Lea, NM)",
-   "type": "bess",
-   "operator": null,
-   "city": "Lea",
-   "state": "NM",
-   "status": "queued",
-   "capacity_mw": 75,
-   "capacity_mwh": null,
-   "year_online": 2027
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-gen-2025-sr3",
-   "name": "SPP queue GEN-2025-SR3 (Clark, KS)",
-   "type": "bess",
-   "operator": null,
-   "city": "Clark",
-   "state": "KS",
-   "status": "queued",
-   "capacity_mw": 150,
-   "capacity_mwh": null,
-   "year_online": 2030
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-gen-2025-sr30",
-   "name": "SPP queue GEN-2025-SR30 (Blaine, OK)",
-   "type": "bess",
-   "operator": null,
-   "city": "Blaine",
-   "state": "OK",
-   "status": "queued",
-   "capacity_mw": 209,
-   "capacity_mwh": null,
-   "year_online": 2027
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-gen-2025-sr31",
-   "name": "SPP queue GEN-2025-SR31 (Madison, NE)",
-   "type": "bess",
-   "operator": null,
-   "city": "Madison",
-   "state": "NE",
-   "status": "queued",
-   "capacity_mw": 170,
-   "capacity_mwh": null,
-   "year_online": 2026
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-gen-2025-sr32",
-   "name": "SPP queue GEN-2025-SR32 (Chaves, NM)",
-   "type": "bess",
-   "operator": null,
-   "city": "Chaves",
-   "state": "NM",
-   "status": "queued",
-   "capacity_mw": 50,
-   "capacity_mwh": null,
-   "year_online": 2026
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-gen-2025-sr4",
-   "name": "SPP queue GEN-2025-SR4 (Edwards, KS)",
-   "type": "bess",
-   "operator": null,
-   "city": "Edwards",
-   "state": "KS",
-   "status": "queued",
-   "capacity_mw": 150,
-   "capacity_mwh": null,
-   "year_online": 2028
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-gen-2025-sr5",
-   "name": "SPP queue GEN-2025-SR5 (Lancaster, NE)",
-   "type": "bess",
-   "operator": null,
-   "city": "Lancaster",
-   "state": "NE",
-   "status": "queued",
-   "capacity_mw": 40,
-   "capacity_mwh": null,
-   "year_online": 2026
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-gen-2025-sr6",
-   "name": "SPP queue GEN-2025-SR6 (Canadian, OK)",
-   "type": "bess",
-   "operator": null,
-   "city": "Canadian",
-   "state": "OK",
-   "status": "queued",
-   "capacity_mw": 200,
-   "capacity_mwh": null,
-   "year_online": 2027
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-gen-2025-sr7",
-   "name": "SPP queue GEN-2025-SR7 (Muskogee, OK)",
-   "type": "bess",
-   "operator": null,
-   "city": "Muskogee",
-   "state": "OK",
-   "status": "queued",
-   "capacity_mw": 102,
-   "capacity_mwh": null,
-   "year_online": 2027
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-gen-2025-sr8",
-   "name": "SPP queue GEN-2025-SR8 (Noble, OK)",
-   "type": "bess",
-   "operator": null,
-   "city": "Noble",
-   "state": "OK",
-   "status": "queued",
-   "capacity_mw": 220,
-   "capacity_mwh": null,
-   "year_online": 2026
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-gen-2026-sr1",
-   "name": "SPP queue GEN-2026-SR1 (Sedgwick, KS)",
-   "type": "bess",
-   "operator": null,
-   "city": "Sedgwick",
-   "state": "KS",
-   "status": "queued",
-   "capacity_mw": 100,
-   "capacity_mwh": null,
-   "year_online": 2026
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-gen-2026-sr10",
-   "name": "SPP queue GEN-2026-SR10 (Hansford, TX)",
-   "type": "bess",
-   "operator": null,
-   "city": "Hansford",
-   "state": "TX",
-   "status": "queued",
-   "capacity_mw": 457,
-   "capacity_mwh": null,
-   "year_online": 2027
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-gen-2026-sr11",
-   "name": "SPP queue GEN-2026-SR11 (Johnston, OK)",
-   "type": "bess",
-   "operator": null,
-   "city": "Johnston",
-   "state": "OK",
-   "status": "queued",
-   "capacity_mw": 258,
-   "capacity_mwh": null,
-   "year_online": 2028
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-gen-2026-sr13",
-   "name": "SPP queue GEN-2026-SR13 (Hansford, TX)",
-   "type": "bess",
-   "operator": null,
-   "city": "Hansford",
-   "state": "TX",
-   "status": "queued",
-   "capacity_mw": 208,
-   "capacity_mwh": null,
-   "year_online": 2027
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-gen-2026-sr14",
-   "name": "SPP queue GEN-2026-SR14 (Carson, TX)",
-   "type": "bess",
-   "operator": null,
-   "city": "Carson",
-   "state": "TX",
-   "status": "queued",
-   "capacity_mw": 158,
-   "capacity_mwh": null,
-   "year_online": 2028
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-gen-2026-sr15",
-   "name": "SPP queue GEN-2026-SR15 (Beaver, OK)",
-   "type": "bess",
-   "operator": null,
-   "city": "Beaver",
-   "state": "OK",
-   "status": "queued",
-   "capacity_mw": 200,
-   "capacity_mwh": null,
-   "year_online": 2029
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-gen-2026-sr17",
-   "name": "SPP queue GEN-2026-SR17 (Allen, KS)",
-   "type": "bess",
-   "operator": null,
-   "city": "Allen",
-   "state": "KS",
-   "status": "queued",
-   "capacity_mw": 204.3,
-   "capacity_mwh": null,
-   "year_online": 2029
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-gen-2026-sr2",
-   "name": "SPP queue GEN-2026-SR2 (Gray, KS)",
-   "type": "bess",
-   "operator": null,
-   "city": "Gray",
-   "state": "KS",
-   "status": "queued",
-   "capacity_mw": 165.6,
-   "capacity_mwh": null,
-   "year_online": 2027
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-gen-2026-sr6",
-   "name": "SPP queue GEN-2026-SR6 (Stark, ND)",
-   "type": "bess",
-   "operator": null,
-   "city": "Stark",
-   "state": "ND",
-   "status": "queued",
-   "capacity_mw": 150,
-   "capacity_mwh": null,
-   "year_online": 2028
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-gen-2026-sr7",
-   "name": "SPP queue GEN-2026-SR7 (Stark, ND)",
-   "type": "bess",
-   "operator": null,
-   "city": "Stark",
-   "state": "ND",
-   "status": "queued",
-   "capacity_mw": 150,
-   "capacity_mwh": null,
-   "year_online": 2028
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-gen-2026-sr9",
-   "name": "SPP queue GEN-2026-SR9 (Ford, KS)",
-   "type": "bess",
-   "operator": null,
-   "city": "Ford",
-   "state": "KS",
-   "status": "queued",
-   "capacity_mw": 252,
-   "capacity_mwh": null,
-   "year_online": 2027
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-gi-rsc-2025-03",
-   "name": "SPP queue GI-RSC-2025-03 (Montrose, CO)",
-   "type": "bess",
-   "operator": null,
-   "city": "Montrose",
-   "state": "CO",
-   "status": "queued",
-   "capacity_mw": 50,
-   "capacity_mwh": null,
-   "year_online": 2027
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-gi-siss-2025-04",
-   "name": "SPP queue GI-SISS-2025-04 (Kit Carson, CO)",
-   "type": "bess",
-   "operator": null,
-   "city": "Kit Carson",
-   "state": "CO",
-   "status": "queued",
-   "capacity_mw": 79,
-   "capacity_mwh": null,
-   "year_online": 2027
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-gi-siss-2025-06",
-   "name": "SPP queue GI-SISS-2025-06 (Logan, CO)",
-   "type": "bess",
-   "operator": null,
-   "city": "Logan",
-   "state": "CO",
-   "status": "queued",
-   "capacity_mw": 200,
-   "capacity_mwh": null,
-   "year_online": 2027
-  },
-  {
-   "kind": "added",
-   "id": "iso-spp-gi-tc-2024-19",
-   "name": "SPP queue GI-TC-2024-19 (Montrose, CO)",
-   "type": "bess",
-   "operator": null,
-   "city": "Montrose",
-   "state": "CO",
-   "status": "queued",
-   "capacity_mw": 100,
-   "capacity_mwh": null,
-   "year_online": 2027
-  },
-  {
-   "kind": "changed",
-   "id": "iso-caiso-1270",
-   "name": "Corby",
-   "type": "bess",
-   "operator": null,
-   "city": "Solano",
-   "state": "CA",
-   "status": "queued",
-   "capacity_mw": 300,
-   "capacity_mwh": null,
-   "year_online": 2027,
-   "fields": [
-    {
-     "field": "status",
-     "from": "planned",
-     "to": "queued"
-    }
-   ]
-  },
-  {
-   "kind": "changed",
-   "id": "iso-caiso-1619",
-   "name": "Goldback Solar Center",
-   "type": "bess",
-   "operator": null,
-   "city": "Ventura",
-   "state": "CA",
-   "status": "queued",
-   "capacity_mw": 500,
-   "capacity_mwh": null,
    "year_online": 2029,
    "fields": [
     {
-     "field": "status",
-     "from": "planned",
-     "to": "queued"
-    }
-   ]
-  },
-  {
-   "kind": "changed",
-   "id": "iso-caiso-1768",
-   "name": "Roadhouse Storage",
-   "type": "bess",
-   "operator": null,
-   "city": "San Bernardino",
-   "state": "CA",
-   "status": "queued",
-   "capacity_mw": 300,
-   "capacity_mwh": null,
-   "year_online": 2027,
-   "fields": [
-    {
-     "field": "status",
-     "from": "planned",
-     "to": "queued"
-    }
-   ]
-  },
-  {
-   "kind": "changed",
-   "id": "iso-caiso-1783",
-   "name": "Shoals Energy Storage",
-   "type": "bess",
-   "operator": null,
-   "city": "Ventura",
-   "state": "CA",
-   "status": "queued",
-   "capacity_mw": 400,
-   "capacity_mwh": null,
-   "year_online": 2030,
-   "fields": [
-    {
-     "field": "status",
-     "from": "planned",
-     "to": "queued"
-    }
-   ]
-  },
-  {
-   "kind": "changed",
-   "id": "iso-caiso-1872",
-   "name": "Allegheny Energy Storage",
-   "type": "bess",
-   "operator": null,
-   "city": "Contra Costa",
-   "state": "CA",
-   "status": "queued",
-   "capacity_mw": 325,
-   "capacity_mwh": null,
-   "year_online": 2032,
-   "fields": [
-    {
-     "field": "status",
-     "from": "planned",
-     "to": "queued"
-    }
-   ]
-  },
-  {
-   "kind": "changed",
-   "id": "iso-caiso-1875",
-   "name": "Delilah Energy Storage",
-   "type": "bess",
-   "operator": null,
-   "city": "Contra Costa",
-   "state": "CA",
-   "status": "queued",
-   "capacity_mw": 500,
-   "capacity_mwh": null,
-   "year_online": 2032,
-   "fields": [
-    {
-     "field": "status",
-     "from": "planned",
-     "to": "queued"
-    }
-   ]
-  },
-  {
-   "kind": "changed",
-   "id": "iso-caiso-1881",
-   "name": "Spectrum Energy Storage",
-   "type": "bess",
-   "operator": null,
-   "city": "Alameda",
-   "state": "CA",
-   "status": "queued",
-   "capacity_mw": 500,
-   "capacity_mwh": null,
-   "year_online": 2032,
-   "fields": [
-    {
-     "field": "status",
-     "from": "planned",
-     "to": "queued"
-    }
-   ]
-  },
-  {
-   "kind": "changed",
-   "id": "iso-caiso-1903",
-   "name": "Golden Flats",
-   "type": "bess",
-   "operator": null,
-   "city": "Stanislaus",
-   "state": "CA",
-   "status": "queued",
-   "capacity_mw": 300,
-   "capacity_mwh": null,
-   "year_online": 2031,
-   "fields": [
-    {
-     "field": "status",
-     "from": "planned",
-     "to": "queued"
-    }
-   ]
-  },
-  {
-   "kind": "changed",
-   "id": "iso-caiso-1912",
-   "name": "Espresso",
-   "type": "bess",
-   "operator": null,
-   "city": "Alameda",
-   "state": "CA",
-   "status": "queued",
-   "capacity_mw": 300,
-   "capacity_mwh": null,
-   "year_online": 2031,
-   "fields": [
-    {
-     "field": "status",
-     "from": "planned",
-     "to": "queued"
-    }
-   ]
-  },
-  {
-   "kind": "changed",
-   "id": "iso-caiso-1962",
-   "name": "Lock Storage",
-   "type": "bess",
-   "operator": null,
-   "city": "Fresno",
-   "state": "CA",
-   "status": "queued",
-   "capacity_mw": 500.0,
-   "capacity_mwh": null,
-   "year_online": 2027,
-   "fields": [
-    {
-     "field": "status",
-     "from": "planned",
-     "to": "queued"
-    }
-   ]
-  },
-  {
-   "kind": "changed",
-   "id": "iso-caiso-2032",
-   "name": "Trolley",
-   "type": "bess",
-   "operator": null,
-   "city": "San Bernardino",
-   "state": "CA",
-   "status": "queued",
-   "capacity_mw": 400,
-   "capacity_mwh": null,
-   "year_online": 2031,
-   "fields": [
-    {
-     "field": "status",
-     "from": "planned",
-     "to": "queued"
-    }
-   ]
-  },
-  {
-   "kind": "changed",
-   "id": "iso-caiso-2066",
-   "name": "Drifter Energy Storage",
-   "type": "bess",
-   "operator": null,
-   "city": "Ventura",
-   "state": "CA",
-   "status": "queued",
-   "capacity_mw": 500,
-   "capacity_mwh": null,
-   "year_online": 2033,
-   "fields": [
-    {
-     "field": "status",
-     "from": "planned",
-     "to": "queued"
-    }
-   ]
-  },
-  {
-   "kind": "changed",
-   "id": "iso-caiso-2125",
-   "name": "Tyrell Energy Storage",
-   "type": "bess",
-   "operator": null,
-   "city": "Orange",
-   "state": "CA",
-   "status": "queued",
-   "capacity_mw": 300,
-   "capacity_mwh": null,
-   "year_online": 2032,
-   "fields": [
-    {
-     "field": "status",
-     "from": "planned",
-     "to": "queued"
-    }
-   ]
-  },
-  {
-   "kind": "changed",
-   "id": "iso-ercot-21inr0505",
-   "name": "Ramsey Storage",
-   "type": "bess",
-   "operator": null,
-   "city": "Wharton",
-   "state": "TX",
-   "status": "queued",
-   "capacity_mw": 500,
-   "capacity_mwh": null,
-   "year_online": 2028,
-   "fields": [
-    {
-     "field": "status",
-     "from": "planned",
-     "to": "queued"
-    }
-   ]
-  },
-  {
-   "kind": "changed",
-   "id": "iso-ercot-23inr0140",
-   "name": "Seine BESS",
-   "type": "bess",
-   "operator": null,
-   "city": "Foard",
-   "state": "TX",
-   "status": "queued",
-   "capacity_mw": 308.9,
-   "capacity_mwh": null,
-   "year_online": 2027,
-   "fields": [
-    {
-     "field": "status",
-     "from": "planned",
-     "to": "queued"
-    }
-   ]
-  },
-  {
-   "kind": "changed",
-   "id": "iso-ercot-24inr0198",
-   "name": "Two Forks BESS",
-   "type": "bess",
-   "operator": null,
-   "city": "Cooke",
-   "state": "TX",
-   "status": "queued",
-   "capacity_mw": 309.8,
-   "capacity_mwh": null,
-   "year_online": 2028,
-   "fields": [
-    {
-     "field": "status",
-     "from": "planned",
-     "to": "queued"
-    }
-   ]
-  },
-  {
-   "kind": "changed",
-   "id": "iso-ercot-24inr0442",
-   "name": "Midnight Sun Energy Storage",
-   "type": "bess",
-   "operator": null,
-   "city": "Crockett",
-   "state": "TX",
-   "status": "queued",
-   "capacity_mw": 523.9,
-   "capacity_mwh": null,
-   "year_online": 2028,
-   "fields": [
-    {
-     "field": "status",
-     "from": "planned",
-     "to": "queued"
-    }
-   ]
-  },
-  {
-   "kind": "changed",
-   "id": "iso-ercot-25inr0230",
-   "name": "Great Rock BESS",
-   "type": "bess",
-   "operator": null,
-   "city": "Leon",
-   "state": "TX",
-   "status": "queued",
-   "capacity_mw": 300.9,
-   "capacity_mwh": null,
-   "year_online": 2027,
-   "fields": [
-    {
-     "field": "status",
-     "from": "under_construction",
-     "to": "queued"
-    }
-   ]
-  },
-  {
-   "kind": "changed",
-   "id": "iso-ercot-25inr0375",
-   "name": "NavBoot BESS",
-   "type": "bess",
-   "operator": null,
-   "city": "Nueces",
-   "state": "TX",
-   "status": "queued",
-   "capacity_mw": 303.7,
-   "capacity_mwh": null,
-   "year_online": 2029,
-   "fields": [
-    {
-     "field": "status",
-     "from": "planned",
-     "to": "queued"
-    }
-   ]
-  },
-  {
-   "kind": "changed",
-   "id": "iso-ercot-25inr0460",
-   "name": "Acker BESS",
-   "type": "bess",
-   "operator": null,
-   "city": "Castro",
-   "state": "TX",
-   "status": "queued",
-   "capacity_mw": 301.0,
-   "capacity_mwh": null,
-   "year_online": 2029,
-   "fields": [
-    {
-     "field": "status",
-     "from": "planned",
-     "to": "queued"
-    }
-   ]
-  },
-  {
-   "kind": "changed",
-   "id": "iso-ercot-25inr0557",
-   "name": "McCamey's Castle Battery",
-   "type": "bess",
-   "operator": null,
-   "city": "Upton",
-   "state": "TX",
-   "status": "queued",
-   "capacity_mw": 409.6,
-   "capacity_mwh": null,
-   "year_online": 2028,
-   "fields": [
-    {
-     "field": "status",
-     "from": "under_construction",
-     "to": "queued"
-    }
-   ]
-  },
-  {
-   "kind": "changed",
-   "id": "iso-ercot-25inr0661",
-   "name": "McCrae Energy Storage",
-   "type": "bess",
-   "operator": null,
-   "city": "Erath",
-   "state": "TX",
-   "status": "queued",
-   "capacity_mw": 306.4,
-   "capacity_mwh": null,
-   "year_online": 2028,
-   "fields": [
-    {
-     "field": "status",
-     "from": "planned",
-     "to": "queued"
-    }
-   ]
-  },
-  {
-   "kind": "changed",
-   "id": "iso-ercot-26inr0375",
-   "name": "Avalon BESS",
-   "type": "bess",
-   "operator": null,
-   "city": "Fort Bend",
-   "state": "TX",
-   "status": "queued",
-   "capacity_mw": 522.1,
-   "capacity_mwh": null,
-   "year_online": 2026,
-   "fields": [
-    {
-     "field": "status",
-     "from": "planned",
-     "to": "queued"
+     "field": "year_online",
+     "from": 2023,
+     "to": 2029
     }
    ]
   },
@@ -2246,32 +714,852 @@
    "status": "queued",
    "capacity_mw": 424.5,
    "capacity_mwh": null,
-   "year_online": 2026,
+   "year_online": 2030,
    "fields": [
     {
-     "field": "status",
-     "from": "planned",
-     "to": "queued"
+     "field": "year_online",
+     "from": 2026,
+     "to": 2030
     }
    ]
   },
   {
    "kind": "changed",
-   "id": "iso-spp-gen-2024-sr6",
-   "name": "SPP queue GEN-2024-SR6 (Johnston, OK)",
+   "id": "iso-spp-gen-2020-060",
+   "name": "SPP queue GEN-2020-060 (Lubbock, TX)",
+   "type": "bess",
+   "operator": null,
+   "city": "Lubbock",
+   "state": "TX",
+   "status": "queued",
+   "capacity_mw": 200,
+   "capacity_mwh": null,
+   "year_online": 2031,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2026,
+     "to": 2031
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2020-081",
+   "name": "SPP queue GEN-2020-081 (Rusk, TX)",
+   "type": "bess",
+   "operator": null,
+   "city": "Rusk",
+   "state": "TX",
+   "status": "queued",
+   "capacity_mw": 200,
+   "capacity_mwh": null,
+   "year_online": 2028,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2022,
+     "to": 2028
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2020-090",
+   "name": "SPP queue GEN-2020-090 (Bourbon, KS)",
+   "type": "bess",
+   "operator": null,
+   "city": "Bourbon",
+   "state": "KS",
+   "status": "queued",
+   "capacity_mw": 204.3,
+   "capacity_mwh": null,
+   "year_online": 2028,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2026,
+     "to": 2028
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2020-sr2",
+   "name": "SPP queue GEN-2020-SR2 (Johnston, OK)",
    "type": "bess",
    "operator": null,
    "city": "Johnston",
    "state": "OK",
    "status": "queued",
+   "capacity_mw": 100,
+   "capacity_mwh": null,
+   "year_online": 2026,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2021,
+     "to": 2026
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2021-001",
+   "name": "SPP queue GEN-2021-001 (Bryan, OK)",
+   "type": "bess",
+   "operator": null,
+   "city": "Bryan",
+   "state": "OK",
+   "status": "queued",
+   "capacity_mw": 100,
+   "capacity_mwh": null,
+   "year_online": 2029,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2024,
+     "to": 2029
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2021-006",
+   "name": "SPP queue GEN-2021-006 (Labette, KS)",
+   "type": "bess",
+   "operator": null,
+   "city": "Labette",
+   "state": "KS",
+   "status": "queued",
+   "capacity_mw": 300,
+   "capacity_mwh": null,
+   "year_online": 2029,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2025,
+     "to": 2029
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2021-019",
+   "name": "SPP queue GEN-2021-019 (Noble, OK)",
+   "type": "bess",
+   "operator": null,
+   "city": "Noble",
+   "state": "OK",
+   "status": "queued",
+   "capacity_mw": 74.9,
+   "capacity_mwh": null,
+   "year_online": 2028,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2027,
+     "to": 2028
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2021-029",
+   "name": "SPP queue GEN-2021-029 (Linn, KS)",
+   "type": "bess",
+   "operator": null,
+   "city": "Linn",
+   "state": "KS",
+   "status": "queued",
+   "capacity_mw": 253.8,
+   "capacity_mwh": null,
+   "year_online": 2029,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2026,
+     "to": 2029
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2021-038",
+   "name": "SPP queue GEN-2021-038 (Titus, TX)",
+   "type": "bess",
+   "operator": null,
+   "city": "Titus",
+   "state": "TX",
+   "status": "queued",
    "capacity_mw": 200,
+   "capacity_mwh": null,
+   "year_online": 2029,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2026,
+     "to": 2029
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2021-039",
+   "name": "SPP queue GEN-2021-039 (Douglas, NE)",
+   "type": "bess",
+   "operator": null,
+   "city": "Douglas",
+   "state": "NE",
+   "status": "queued",
+   "capacity_mw": 100,
+   "capacity_mwh": null,
+   "year_online": 2030,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2025,
+     "to": 2030
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2021-040",
+   "name": "SPP queue GEN-2021-040 (Cass, NE)",
+   "type": "bess",
+   "operator": null,
+   "city": "Cass",
+   "state": "NE",
+   "status": "queued",
+   "capacity_mw": 200,
+   "capacity_mwh": null,
+   "year_online": 2029,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2025,
+     "to": 2029
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2021-041",
+   "name": "SPP queue GEN-2021-041 (Canadian, OK)",
+   "type": "bess",
+   "operator": null,
+   "city": "Canadian",
+   "state": "OK",
+   "status": "queued",
+   "capacity_mw": 100,
    "capacity_mwh": null,
    "year_online": 2027,
    "fields": [
     {
-     "field": "status",
-     "from": "planned",
-     "to": "queued"
+     "field": "year_online",
+     "from": 2025,
+     "to": 2027
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2021-042",
+   "name": "SPP queue GEN-2021-042 (Jackson, MO)",
+   "type": "bess",
+   "operator": null,
+   "city": "Jackson",
+   "state": "MO",
+   "status": "queued",
+   "capacity_mw": 50,
+   "capacity_mwh": null,
+   "year_online": 2028,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2025,
+     "to": 2028
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2021-043",
+   "name": "SPP queue GEN-2021-043 (Lancaster, NE)",
+   "type": "bess",
+   "operator": null,
+   "city": "Lancaster",
+   "state": "NE",
+   "status": "queued",
+   "capacity_mw": 250,
+   "capacity_mwh": null,
+   "year_online": 2030,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2026,
+     "to": 2030
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2021-048",
+   "name": "SPP queue GEN-2021-048 (Lancaster, NE)",
+   "type": "bess",
+   "operator": null,
+   "city": "Lancaster",
+   "state": "NE",
+   "status": "queued",
+   "capacity_mw": 75,
+   "capacity_mwh": null,
+   "year_online": 2029,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2025,
+     "to": 2029
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2021-088",
+   "name": "SPP queue GEN-2021-088 (Cleveland, OK)",
+   "type": "bess",
+   "operator": null,
+   "city": "Cleveland",
+   "state": "OK",
+   "status": "queued",
+   "capacity_mw": 100,
+   "capacity_mwh": null,
+   "year_online": 2028,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2025,
+     "to": 2028
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2021-103",
+   "name": "SPP queue GEN-2021-103 (Johnson, KS)",
+   "type": "bess",
+   "operator": null,
+   "city": "Johnson",
+   "state": "KS",
+   "status": "queued",
+   "capacity_mw": 150,
+   "capacity_mwh": null,
+   "year_online": 2030,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2025,
+     "to": 2030
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2022-012",
+   "name": "SPP queue GEN-2022-012 (Woodward, OK)",
+   "type": "bess",
+   "operator": null,
+   "city": "Woodward",
+   "state": "OK",
+   "status": "queued",
+   "capacity_mw": 100,
+   "capacity_mwh": null,
+   "year_online": 2028,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2024,
+     "to": 2028
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2022-017",
+   "name": "SPP queue GEN-2022-017 (Woodward, OK)",
+   "type": "bess",
+   "operator": null,
+   "city": "Woodward",
+   "state": "OK",
+   "status": "queued",
+   "capacity_mw": 150,
+   "capacity_mwh": null,
+   "year_online": 2028,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2024,
+     "to": 2028
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2022-024",
+   "name": "SPP queue GEN-2022-024 (Bourbon, KS)",
+   "type": "bess",
+   "operator": null,
+   "city": "Bourbon",
+   "state": "KS",
+   "status": "queued",
+   "capacity_mw": 200,
+   "capacity_mwh": null,
+   "year_online": 2029,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2024,
+     "to": 2029
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2022-102",
+   "name": "SPP queue GEN-2022-102 (Clay, MO)",
+   "type": "bess",
+   "operator": null,
+   "city": "Clay",
+   "state": "MO",
+   "status": "queued",
+   "capacity_mw": 100,
+   "capacity_mwh": null,
+   "year_online": 2027,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2026,
+     "to": 2027
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2022-130",
+   "name": "SPP queue GEN-2022-130 (Sebastian, AR)",
+   "type": "bess",
+   "operator": null,
+   "city": "Sebastian",
+   "state": "AR",
+   "status": "queued",
+   "capacity_mw": 200,
+   "capacity_mwh": null,
+   "year_online": 2030,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2027,
+     "to": 2030
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2022-136",
+   "name": "SPP queue GEN-2022-136 (Bryan, OK)",
+   "type": "bess",
+   "operator": null,
+   "city": "Bryan",
+   "state": "OK",
+   "status": "queued",
+   "capacity_mw": 180,
+   "capacity_mwh": null,
+   "year_online": 2029,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2027,
+     "to": 2029
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2022-139",
+   "name": "SPP queue GEN-2022-139 (Harrison, TX)",
+   "type": "bess",
+   "operator": null,
+   "city": "Harrison",
+   "state": "TX",
+   "status": "queued",
+   "capacity_mw": 300,
+   "capacity_mwh": null,
+   "year_online": 2030,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2027,
+     "to": 2030
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2022-142",
+   "name": "SPP queue GEN-2022-142 (Clay, MO)",
+   "type": "bess",
+   "operator": null,
+   "city": "Clay",
+   "state": "MO",
+   "status": "queued",
+   "capacity_mw": 200,
+   "capacity_mwh": null,
+   "year_online": 2030,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2027,
+     "to": 2030
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2022-143",
+   "name": "SPP queue GEN-2022-143 (Marshall, OK)",
+   "type": "bess",
+   "operator": null,
+   "city": "Marshall",
+   "state": "OK",
+   "status": "queued",
+   "capacity_mw": 200,
+   "capacity_mwh": null,
+   "year_online": 2028,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2027,
+     "to": 2028
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2022-144",
+   "name": "SPP queue GEN-2022-144 (Jackson, MO)",
+   "type": "bess",
+   "operator": null,
+   "city": "Jackson",
+   "state": "MO",
+   "status": "queued",
+   "capacity_mw": 200,
+   "capacity_mwh": null,
+   "year_online": 2030,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2027,
+     "to": 2030
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2022-154",
+   "name": "SPP queue GEN-2022-154 (Cleveland, OK)",
+   "type": "bess",
+   "operator": null,
+   "city": "Cleveland",
+   "state": "OK",
+   "status": "queued",
+   "capacity_mw": 100,
+   "capacity_mwh": null,
+   "year_online": 2029,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2026,
+     "to": 2029
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2022-155",
+   "name": "SPP queue GEN-2022-155 (Oklahoma, OK)",
+   "type": "bess",
+   "operator": null,
+   "city": "Oklahoma",
+   "state": "OK",
+   "status": "queued",
+   "capacity_mw": 200,
+   "capacity_mwh": null,
+   "year_online": 2029,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2026,
+     "to": 2029
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2022-156",
+   "name": "SPP queue GEN-2022-156 (Creek, OK)",
+   "type": "bess",
+   "operator": null,
+   "city": "Creek",
+   "state": "OK",
+   "status": "queued",
+   "capacity_mw": 100,
+   "capacity_mwh": null,
+   "year_online": 2029,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2026,
+     "to": 2029
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2022-235",
+   "name": "SPP queue GEN-2022-235 (Canadian, OK)",
+   "type": "bess",
+   "operator": null,
+   "city": "Canadian",
+   "state": "OK",
+   "status": "queued",
+   "capacity_mw": 150,
+   "capacity_mwh": null,
+   "year_online": 2029,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2028,
+     "to": 2029
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2022-238",
+   "name": "SPP queue GEN-2022-238 (Pottawatomie, OK)",
+   "type": "bess",
+   "operator": null,
+   "city": "Pottawatomie",
+   "state": "OK",
+   "status": "queued",
+   "capacity_mw": 150,
+   "capacity_mwh": null,
+   "year_online": 2029,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2028,
+     "to": 2029
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2023-033",
+   "name": "SPP queue GEN-2023-033 (Clay, MO)",
+   "type": "bess",
+   "operator": null,
+   "city": "Clay",
+   "state": "MO",
+   "status": "queued",
+   "capacity_mw": 200,
+   "capacity_mwh": null,
+   "year_online": 2029,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2028,
+     "to": 2029
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2023-037",
+   "name": "SPP queue GEN-2023-037 (Wyandotte, KS)",
+   "type": "bess",
+   "operator": null,
+   "city": "Wyandotte",
+   "state": "KS",
+   "status": "queued",
+   "capacity_mw": 200,
+   "capacity_mwh": null,
+   "year_online": 2029,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2028,
+     "to": 2029
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2023-055",
+   "name": "SPP queue GEN-2023-055 (Mayes, OK)",
+   "type": "bess",
+   "operator": null,
+   "city": "Mayes",
+   "state": "OK",
+   "status": "queued",
+   "capacity_mw": 100,
+   "capacity_mwh": null,
+   "year_online": 2029,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2027,
+     "to": 2029
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2023-057",
+   "name": "SPP queue GEN-2023-057 (Pawnee, OK)",
+   "type": "bess",
+   "operator": null,
+   "city": "Pawnee",
+   "state": "OK",
+   "status": "queued",
+   "capacity_mw": 150,
+   "capacity_mwh": null,
+   "year_online": 2028,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2027,
+     "to": 2028
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2023-061",
+   "name": "SPP queue GEN-2023-061 (Jasper, MO)",
+   "type": "bess",
+   "operator": null,
+   "city": "Jasper",
+   "state": "MO",
+   "status": "queued",
+   "capacity_mw": 100,
+   "capacity_mwh": null,
+   "year_online": 2029,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2027,
+     "to": 2029
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2023-161",
+   "name": "SPP queue GEN-2023-161 (Blaine, OK)",
+   "type": "bess",
+   "operator": null,
+   "city": "Blaine",
+   "state": "OK",
+   "status": "queued",
+   "capacity_mw": 74.9,
+   "capacity_mwh": null,
+   "year_online": 2027,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2026,
+     "to": 2027
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2023-171",
+   "name": "SPP queue GEN-2023-171 (Jackson, MO)",
+   "type": "bess",
+   "operator": null,
+   "city": "Jackson",
+   "state": "MO",
+   "status": "queued",
+   "capacity_mw": 150,
+   "capacity_mwh": null,
+   "year_online": 2031,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2028,
+     "to": 2031
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2023-206",
+   "name": "SPP queue GEN-2023-206 (Sebastian, AR)",
+   "type": "bess",
+   "operator": null,
+   "city": "Sebastian",
+   "state": "AR",
+   "status": "queued",
+   "capacity_mw": 50,
+   "capacity_mwh": null,
+   "year_online": 2028,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2029,
+     "to": 2028
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2023-sr25",
+   "name": "SPP queue GEN-2023-SR25 (Mayes, OK)",
+   "type": "bess",
+   "operator": null,
+   "city": "Mayes",
+   "state": "OK",
+   "status": "queued",
+   "capacity_mw": 72.5,
+   "capacity_mwh": null,
+   "year_online": 2028,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2021,
+     "to": 2028
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2023-sr27",
+   "name": "SPP queue GEN-2023-SR27 (Mayes, OK)",
+   "type": "bess",
+   "operator": null,
+   "city": "Mayes",
+   "state": "OK",
+   "status": "queued",
+   "capacity_mw": 101.5,
+   "capacity_mwh": null,
+   "year_online": 2028,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2021,
+     "to": 2028
     }
    ]
   }

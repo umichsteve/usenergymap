@@ -389,7 +389,13 @@ def main():
         tc = r[" Nearest Town or County"].strip()
         status = r["Status"].strip()
         cap = r["_cap"]
-        year = year_from(r.get("In-Service Date") or r.get("Commercial Operation Date"))
+        # Prefer Commercial Operation Date — it's the forward-looking target. The
+        # In-Service Date is a historical backfeed/energization date for interim
+        # service and lags COD by years on most requests. Keep the raw ISD in
+        # spp_in_service_date so the full queue record stays visible.
+        cod = (r.get("Commercial Operation Date") or "").strip()
+        isd = (r.get("In-Service Date") or "").strip()
+        year = year_from(cod) or year_from(isd)
         fips, lat, lng, method, detail = resolve(r, lbnl, county_by_sn, by_fips, place_by_sn)
         if fips is None:
             unresolved.append({
@@ -403,6 +409,7 @@ def main():
             "q_id": qid, "state": state, "nearest": tc, "mw": cap, "status_raw": status,
             "year": year, "fips": fips, "lat": lat, "lng": lng,
             "county_name": county_name, "method": method, "detail": detail,
+            "cod_raw": cod, "isd_raw": isd,
         })
 
     # Dedupe against eia- BESS records.
@@ -466,6 +473,11 @@ def main():
         obj["iso"] = "SPP"
         obj["queue_asof"] = asof
         obj["queue_status"] = c["status_raw"]
+        # Keep the SPP "In-Service Date" verbatim (ISO yyyy-mm-dd) so a reader
+        # can see it was separate from the authoritative COD used for year_online.
+        isd_iso = _mdY_to_iso(c["isd_raw"]) if c.get("isd_raw") else None
+        if isd_iso:
+            obj["spp_in_service_date"] = isd_iso
         obj["location_approximate"] = True
         final.append(obj)
 

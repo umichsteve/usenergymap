@@ -341,8 +341,9 @@ def main():
   <p class="sub">{fmt(n)} tracked projects · {fmt(mw)} MW · {fmt(dc)} data centers, {fmt(n-dc)} battery (BESS) sites</p>
 {stat_cards(plist)}
   <p>Below is every data center and battery energy storage (BESS) project we track in {esc(name)},
-     ranked by capacity. Battery projects are sourced from the federal EIA-860M inventory; data centers
-     are hand-curated with a public source on each entry. See the <a href="/methodology">methodology</a> for details.</p>
+     ranked by capacity. Battery projects come from the federal EIA-860M inventory and, for projects
+     still in development, grid operators' interconnection queues; data centers are hand-curated with
+     a public source on each entry. See the <a href="/methodology">methodology</a> for details.</p>
   <p><a class="btn btn-primary" href="/map?state={esc(code)}">View {esc(name)} on the map →</a>{dc_link}</p>
 {SAMPLE_CAPTURE.format(source=f"state/{slug}")}
 {data_cta(plist)}
