@@ -1,0 +1,3 @@
+q_id,state,nearest,mw,status,substation,reason
+GEN-2022-145,OK,Cluster,180.0,IA PENDING,Weatherford Jct. to Hinton 138 kV line,town='Cluster' substation='Weatherford Jct. to Hinton 138 kV line'
+GEN-2022-073,MO,Kay,300.0,IA FULLY EXECUTED/ON SUSPENSION,Nashua-Smithville 161kV,town='Kay' substation='Nashua-Smithville 161kV'

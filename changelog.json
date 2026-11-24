@@ -1,25 +1,25 @@
 {
  "schema_version": "1.0",
- "generated": "2026-11-18",
+ "generated": "2026-11-24",
  "summary": {
-  "from": "2026-11-15",
-  "to": "2026-11-18",
+  "from": "2026-11-24",
+  "to": "2026-11-24",
   "eia_source_month": "september_generator2026",
-  "eia_source_month_prev": "august_generator2026",
-  "added": 20,
-  "removed": 19,
-  "changed": 68,
-  "status_changes": 25,
-  "capacity_changes": 18,
-  "newly_operating": 17,
-  "added_mw": 1050,
-  "total_projects": 1655,
-  "total_mw": 202406,
-  "net_mw": 724,
+  "eia_source_month_prev": "september_generator2026",
+  "added": 0,
+  "removed": 1,
+  "changed": 67,
+  "status_changes": 0,
+  "capacity_changes": 0,
+  "newly_operating": 0,
+  "added_mw": 0,
+  "total_projects": 1772,
+  "total_mw": 219668,
+  "net_mw": -207,
   "by_type": {
    "bess": {
-    "added": 20,
-    "changed": 68
+    "added": 0,
+    "changed": 67
    },
    "data_center": {
     "added": 0,
@@ -28,116 +28,62 @@
   }
  },
  "highlights": {
-  "top_added": [
-   {
-    "name": "Pawnee Solar & BESS",
-    "type": "bess",
-    "state": "CO",
-    "capacity_mw": 200,
-    "operator": "Public Service Co of Colorado"
-   },
-   {
-    "name": "Greer Energy Storage",
-    "type": "bess",
-    "state": "MS",
-    "capacity_mw": 150,
-    "operator": "Greer Energy Storage, LLC"
-   },
-   {
-    "name": "City Breeze Energy Storage",
-    "type": "bess",
-    "state": "TX",
-    "capacity_mw": 140,
-    "operator": "City Breeze Energy Storage, LLC"
-   },
-   {
-    "name": "Evans Creek Energy Storage Project",
-    "type": "bess",
-    "state": "TX",
-    "capacity_mw": 103,
-    "operator": "Evans Creek Energy Storage LLC"
-   },
-   {
-    "name": "Highland Solar I, LLC - (CO)",
-    "type": "bess",
-    "state": "CO",
-    "capacity_mw": 100,
-    "operator": "Highland Solar I, LLC"
-   },
-   {
-    "name": "Mammoth",
-    "type": "bess",
-    "state": "WV",
-    "capacity_mw": 80,
-    "operator": "MN8 Energy LLC"
-   },
-   {
-    "name": "Big Bend III Battery Storage",
-    "type": "bess",
-    "state": "FL",
-    "capacity_mw": 75,
-    "operator": "Tampa Electric Co"
-   },
-   {
-    "name": "Wildwood Energy Storage",
-    "type": "bess",
-    "state": "MS",
-    "capacity_mw": 75,
-    "operator": "Wildwood Energy Storage, LLC"
-   }
-  ],
-  "newly_operating": [
-   {
-    "name": "Centennial Flats",
-    "type": "bess",
-    "state": "AZ",
-    "capacity_mw": 267
-   },
-   {
-    "name": "Mendoza Trail BESS",
-    "type": "bess",
-    "state": "TX",
-    "capacity_mw": 200
-   },
-   {
-    "name": "Pintail BESS",
-    "type": "bess",
-    "state": "TX",
-    "capacity_mw": 200
-   },
-   {
-    "name": "Vertus Energy Storage Plant",
-    "type": "bess",
-    "state": "TX",
-    "capacity_mw": 200
-   },
-   {
-    "name": "Crowned Heron 2 - Storage, LLC",
-    "type": "bess",
-    "state": "TX",
-    "capacity_mw": 150
-   },
-   {
-    "name": "Desert Bloom",
-    "type": "bess",
-    "state": "AZ",
-    "capacity_mw": 150
-   },
-   {
-    "name": "Bocanova Energy Storage II",
-    "type": "bess",
-    "state": "TX",
-    "capacity_mw": 150
-   },
-   {
-    "name": "Faraday Energy Storage",
-    "type": "bess",
-    "state": "UT",
-    "capacity_mw": 150
-   }
-  ]
+  "top_added": [],
+  "newly_operating": []
  },
  "history": [
+  {
+   "from": "2026-11-18",
+   "to": "2026-11-24",
+   "eia_source_month": "september_generator2026",
+   "eia_source_month_prev": "september_generator2026",
+   "added": 118,
+   "removed": 0,
+   "changed": 25,
+   "status_changes": 25,
+   "capacity_changes": 0,
+   "newly_operating": 0,
+   "added_mw": 17470,
+   "total_projects": 1773,
+   "total_mw": 219875,
+   "net_mw": 17469,
+   "by_type": {
+    "bess": {
+     "added": 118,
+     "changed": 25
+    },
+    "data_center": {
+     "added": 0,
+     "changed": 0
+    }
+   }
+  },
+  {
+   "from": "2026-11-15",
+   "to": "2026-11-18",
+   "eia_source_month": "september_generator2026",
+   "eia_source_month_prev": "august_generator2026",
+   "added": 20,
+   "removed": 19,
+   "changed": 68,
+   "status_changes": 25,
+   "capacity_changes": 18,
+   "newly_operating": 17,
+   "added_mw": 1050,
+   "total_projects": 1655,
+   "total_mw": 202406,
+   "net_mw": 724,
+   "by_type": {
+    "bess": {
+     "added": 20,
+     "changed": 68
+    },
+    "data_center": {
+     "added": 0,
+     "changed": 0
+    }
+   }
+  },
   {
    "from": "2026-09-04",
    "to": "2026-09-28",
@@ -265,732 +211,28 @@
  ],
  "changes": [
   {
-   "kind": "added",
-   "id": "eia-56964",
-   "name": "Bayonne Energy Center",
+   "kind": "removed",
+   "id": "iso-spp-gen-2019-011",
+   "name": "SPP queue GEN-2019-011 (Yoakum, TX)",
    "type": "bess",
-   "operator": "Bayonne Energy Center LLC",
-   "city": "Hudson",
-   "state": "NJ",
-   "status": "under_construction",
-   "capacity_mw": 50,
-   "capacity_mwh": null,
-   "year_online": 2027
-  },
-  {
-   "kind": "added",
-   "id": "eia-68334",
-   "name": "Evans Creek Energy Storage Project",
-   "type": "bess",
-   "operator": "Evans Creek Energy Storage LLC",
-   "city": "Val Verde",
+   "operator": null,
+   "city": "Yoakum",
    "state": "TX",
-   "status": "under_construction",
-   "capacity_mw": 103,
+   "status": "queued",
+   "capacity_mw": 207,
    "capacity_mwh": null,
-   "year_online": 2026
-  },
-  {
-   "kind": "added",
-   "id": "eia-70449",
-   "name": "RITC Solar and Battery Rooftop System",
-   "type": "bess",
-   "operator": "City of Burbank Water and Power - (CA)",
-   "city": "Los Angeles",
-   "state": "CA",
-   "status": "operating",
-   "capacity_mw": 3,
-   "capacity_mwh": 8,
-   "year_online": 2026
-  },
-  {
-   "kind": "added",
-   "id": "eia-70454",
-   "name": "Big Bend III Battery Storage",
-   "type": "bess",
-   "operator": "Tampa Electric Co",
-   "city": "Hillsborough",
-   "state": "FL",
-   "status": "planned",
-   "capacity_mw": 75,
-   "capacity_mwh": null,
-   "year_online": 2028
-  },
-  {
-   "kind": "added",
-   "id": "eia-70455",
-   "name": "City Breeze Energy Storage",
-   "type": "bess",
-   "operator": "City Breeze Energy Storage, LLC",
-   "city": "Matagorda",
-   "state": "TX",
-   "status": "under_construction",
-   "capacity_mw": 140,
-   "capacity_mwh": null,
-   "year_online": 2027
-  },
-  {
-   "kind": "added",
-   "id": "eia-70462",
-   "name": "Pawnee Solar & BESS",
-   "type": "bess",
-   "operator": "Public Service Co of Colorado",
-   "city": "Morgan",
-   "state": "CO",
-   "status": "under_construction",
-   "capacity_mw": 200,
-   "capacity_mwh": null,
-   "year_online": 2027
-  },
-  {
-   "kind": "added",
-   "id": "eia-70464",
-   "name": "Blackman Battery Energy Storage System",
-   "type": "bess",
-   "operator": "City Utilities of Springfield - (MO)",
-   "city": "Greene",
-   "state": "MO",
-   "status": "planned",
-   "capacity_mw": 5,
-   "capacity_mwh": null,
-   "year_online": 2026
-  },
-  {
-   "kind": "added",
-   "id": "eia-70512",
-   "name": "Viejas Microgrid",
-   "type": "bess",
-   "operator": "Indian Energy LLC",
-   "city": "San Diego",
-   "state": "CA",
-   "status": "operating",
-   "capacity_mw": 18,
-   "capacity_mwh": null,
-   "year_online": 2025
-  },
-  {
-   "kind": "added",
-   "id": "eia-70538",
-   "name": "Belchertown Solar PV + Battery Project",
-   "type": "bess",
-   "operator": "Agilitas Energy, Inc.",
-   "city": "Hampshire",
-   "state": "MA",
-   "status": "under_construction",
-   "capacity_mw": 3,
-   "capacity_mwh": null,
-   "year_online": 2026
-  },
-  {
-   "kind": "added",
-   "id": "eia-70542",
-   "name": "Mount Whitney BESS",
-   "type": "bess",
-   "operator": "Mount Whitney BESS LLC",
-   "city": "Waller",
-   "state": "TX",
-   "status": "under_construction",
-   "capacity_mw": 11,
-   "capacity_mwh": null,
-   "year_online": 2027
-  },
-  {
-   "kind": "added",
-   "id": "eia-70543",
-   "name": "Denali Energy Storage",
-   "type": "bess",
-   "operator": "Denali Energy Storage LLC",
-   "city": "Austin",
-   "state": "TX",
-   "status": "under_construction",
-   "capacity_mw": 11,
-   "capacity_mwh": null,
-   "year_online": 2027
-  },
-  {
-   "kind": "added",
-   "id": "eia-70544",
-   "name": "Greer Energy Storage",
-   "type": "bess",
-   "operator": "Greer Energy Storage, LLC",
-   "city": "Washington",
-   "state": "MS",
-   "status": "planned",
-   "capacity_mw": 150,
-   "capacity_mwh": null,
-   "year_online": 2027
-  },
-  {
-   "kind": "added",
-   "id": "eia-70545",
-   "name": "Wildwood Energy Storage",
-   "type": "bess",
-   "operator": "Wildwood Energy Storage, LLC",
-   "city": "Tallahatchie",
-   "state": "MS",
-   "status": "planned",
-   "capacity_mw": 75,
-   "capacity_mwh": null,
-   "year_online": 2027
-  },
-  {
-   "kind": "added",
-   "id": "eia-70549",
-   "name": "CF BESS NINE",
-   "type": "bess",
-   "operator": "CF BESS Nine, LLC",
-   "city": "Guadalupe",
-   "state": "TX",
-   "status": "planned",
-   "capacity_mw": 10,
-   "capacity_mwh": null,
-   "year_online": 2027
-  },
-  {
-   "kind": "added",
-   "id": "eia-70550",
-   "name": "Meadow Creek VA BESS 1",
-   "type": "bess",
-   "operator": "Meadow Creek VA BESS 1 LLC",
-   "city": "Craig",
-   "state": "VA",
-   "status": "under_construction",
-   "capacity_mw": 4,
-   "capacity_mwh": null,
-   "year_online": 2026
-  },
-  {
-   "kind": "added",
-   "id": "eia-70551",
-   "name": "Piney River VA BESS 1",
-   "type": "bess",
-   "operator": "Piney River VA BESS 1 LLC",
-   "city": "Nelson",
-   "state": "VA",
-   "status": "under_construction",
-   "capacity_mw": 4,
-   "capacity_mwh": null,
-   "year_online": 2026
-  },
-  {
-   "kind": "added",
-   "id": "eia-70552",
-   "name": "Colleen VA BESS 1",
-   "type": "bess",
-   "operator": "Colleen VA BESS 1 LLC",
-   "city": "Nelson",
-   "state": "VA",
-   "status": "under_construction",
-   "capacity_mw": 4,
-   "capacity_mwh": null,
-   "year_online": 2026
-  },
-  {
-   "kind": "added",
-   "id": "eia-70553",
-   "name": "Salem VA BESS 1",
-   "type": "bess",
-   "operator": "Salem VA BESS 1 LLC",
-   "city": "Salem City",
-   "state": "VA",
-   "status": "under_construction",
-   "capacity_mw": 4,
-   "capacity_mwh": null,
-   "year_online": 2026
-  },
-  {
-   "kind": "added",
-   "id": "eia-70559",
-   "name": "Mammoth",
-   "type": "bess",
-   "operator": "MN8 Energy LLC",
-   "city": "Kanawha",
-   "state": "WV",
-   "status": "planned",
-   "capacity_mw": 80,
-   "capacity_mwh": null,
-   "year_online": 2029
-  },
-  {
-   "kind": "added",
-   "id": "eia-70583",
-   "name": "Highland Solar I, LLC - (CO)",
-   "type": "bess",
-   "operator": "Highland Solar I, LLC",
-   "city": "Pueblo",
-   "state": "CO",
-   "status": "planned",
-   "capacity_mw": 100,
-   "capacity_mwh": null,
-   "year_online": 2027
-  },
-  {
-   "kind": "removed",
-   "id": "eia-61722",
-   "name": "HEBT Irvine 1",
-   "type": "bess",
-   "operator": "Electrodes",
-   "city": "Orange",
-   "state": "CA",
-   "status": "operating",
-   "capacity_mw": 6,
-   "capacity_mwh": 34,
-   "year_online": 2018
-  },
-  {
-   "kind": "removed",
-   "id": "eia-61723",
-   "name": "HEBT Irvine 2",
-   "type": "bess",
-   "operator": "Electrodes",
-   "city": "Orange",
-   "state": "CA",
-   "status": "operating",
-   "capacity_mw": 6,
-   "capacity_mwh": 35,
-   "year_online": 2018
-  },
-  {
-   "kind": "removed",
-   "id": "eia-62497",
-   "name": "Orange County Energy Storage 2",
-   "type": "bess",
-   "operator": "Convergent Energy and Power LP",
-   "city": "Orange",
-   "state": "CA",
-   "status": "operating",
-   "capacity_mw": 9,
-   "capacity_mwh": 36,
-   "year_online": 2021
-  },
-  {
-   "kind": "removed",
-   "id": "eia-62499",
-   "name": "Orange County Energy Storage 3",
-   "type": "bess",
-   "operator": "Convergent Energy and Power LP",
-   "city": "Orange",
-   "state": "CA",
-   "status": "operating",
-   "capacity_mw": 6,
-   "capacity_mwh": 24,
-   "year_online": 2021
-  },
-  {
-   "kind": "removed",
-   "id": "eia-62889",
-   "name": "Hecate Energy Johanna Facility",
-   "type": "bess",
-   "operator": "Hecate Energy Johanna Facility LLC",
-   "city": "Orange",
-   "state": "CA",
-   "status": "operating",
-   "capacity_mw": 20,
-   "capacity_mwh": 80,
-   "year_online": 2021
-  },
-  {
-   "kind": "removed",
-   "id": "eia-63609",
-   "name": "Allergan",
-   "type": "bess",
-   "operator": "Hybrid-Electric Building Technologies West Los Angeles 1, LLC",
-   "city": "Orange",
-   "state": "CA",
-   "status": "operating",
-   "capacity_mw": 2,
-   "capacity_mwh": 9,
-   "year_online": 2019
-  },
-  {
-   "kind": "removed",
-   "id": "eia-63610",
-   "name": "Baker",
-   "type": "bess",
-   "operator": "Hybrid-Electric Building Technologies West Los Angeles 1, LLC",
-   "city": "Orange",
-   "state": "CA",
-   "status": "operating",
-   "capacity_mw": 1,
-   "capacity_mwh": 6,
-   "year_online": 2019
-  },
-  {
-   "kind": "removed",
-   "id": "eia-63614",
-   "name": "LAWRP",
-   "type": "bess",
-   "operator": "Hybrid-Electric Building Technologies West Los Angeles 1, LLC",
-   "city": "Orange",
-   "state": "CA",
-   "status": "operating",
-   "capacity_mw": 1,
-   "capacity_mwh": 5,
-   "year_online": 2019
-  },
-  {
-   "kind": "removed",
-   "id": "eia-63617",
-   "name": "SOCCD",
-   "type": "bess",
-   "operator": "Hybrid-Electric Building Technologies West Los Angeles 1, LLC",
-   "city": "Orange",
-   "state": "CA",
-   "status": "operating",
-   "capacity_mw": 1,
-   "capacity_mwh": 7,
-   "year_online": 2019
-  },
-  {
-   "kind": "removed",
-   "id": "eia-63843",
-   "name": "Johanna Energy Center, LLC",
-   "type": "bess",
-   "operator": "Johanna Energy Center, LLC",
-   "city": "Orange",
-   "state": "CA",
-   "status": "operating",
-   "capacity_mw": 80,
-   "capacity_mwh": 320,
-   "year_online": 2021
-  },
-  {
-   "kind": "removed",
-   "id": "eia-64510",
-   "name": "Arba Solar Energy Storage",
-   "type": "bess",
-   "operator": "North Carolina El Member Corp",
-   "city": "Greene",
-   "state": "NC",
-   "status": "operating",
-   "capacity_mw": 5,
-   "capacity_mwh": 10,
    "year_online": 2023
   },
   {
-   "kind": "removed",
-   "id": "eia-65241",
-   "name": "McKinney BESS",
-   "type": "bess",
-   "operator": "North Carolina El Member Corp",
-   "city": "Richmond",
-   "state": "NC",
-   "status": "operating",
-   "capacity_mw": 5,
-   "capacity_mwh": 10,
-   "year_online": 2024
-  },
-  {
-   "kind": "removed",
-   "id": "eia-66385",
-   "name": "Panther Branch Solar, LLC",
-   "type": "bess",
-   "operator": "Cypress Creek Renewables",
-   "city": "Duplin",
-   "state": "NC",
-   "status": "planned",
-   "capacity_mw": 32,
-   "capacity_mwh": null,
-   "year_online": 2029
-  },
-  {
-   "kind": "removed",
-   "id": "eia-66659",
-   "name": "Acid BESS",
-   "type": "bess",
-   "operator": "Malaga BESS LLC",
-   "city": "Fresno",
-   "state": "CA",
-   "status": "operating",
-   "capacity_mw": 97,
-   "capacity_mwh": 97,
-   "year_online": 2025
-  },
-  {
-   "kind": "removed",
-   "id": "eia-67674",
-   "name": "Lupinus Storage 3",
-   "type": "bess",
-   "operator": "Sunraycer Assets I LLC",
-   "city": "Franklin",
-   "state": "TX",
-   "status": "under_construction",
-   "capacity_mw": 51,
-   "capacity_mwh": null,
-   "year_online": 2027
-  },
-  {
-   "kind": "removed",
-   "id": "eia-67983",
-   "name": "Aurora Renewable Energy (Hybrid)",
-   "type": "bess",
-   "operator": "Vesper Energy Development LLC",
-   "city": "Stanislaus",
-   "state": "CA",
-   "status": "planned",
-   "capacity_mw": 50,
-   "capacity_mwh": null,
-   "year_online": 2028
-  },
-  {
-   "kind": "removed",
-   "id": "eia-68043",
-   "name": "Robeson Solar I",
-   "type": "bess",
-   "operator": "AES Clean Energy",
-   "city": "Robeson",
-   "state": "NC",
-   "status": "planned",
-   "capacity_mw": 28,
-   "capacity_mwh": null,
-   "year_online": 2028
-  },
-  {
-   "kind": "removed",
-   "id": "eia-68997",
-   "name": "Thermo Fisher Pleasanton",
-   "type": "bess",
-   "operator": "TotalEnergies Renewables USA LLC",
-   "city": "Alameda",
-   "state": "CA",
-   "status": "operating",
-   "capacity_mw": 1,
-   "capacity_mwh": 3,
-   "year_online": 2025
-  },
-  {
-   "kind": "removed",
-   "id": "eia-69286",
-   "name": "Project Lynx",
-   "type": "bess",
-   "operator": "Project Lynx - Giga Texas Energy",
-   "city": "Nueces",
-   "state": "TX",
-   "status": "operating",
-   "capacity_mw": 125,
-   "capacity_mwh": 250,
-   "year_online": 2026
-  },
-  {
    "kind": "changed",
-   "id": "eia-56981",
-   "name": "Pyron Wind Farm LLC Hybrid",
+   "id": "iso-spp-eras-2025-029",
+   "name": "SPP queue ERAS-2025-029 (Wyandotte, KS)",
    "type": "bess",
-   "operator": "RWE Americas, LLC",
-   "city": "Fisher",
-   "state": "TX",
-   "status": "operating",
-   "capacity_mw": 10,
-   "capacity_mwh": 10,
-   "year_online": 2018,
-   "fields": [
-    {
-     "field": "operator",
-     "from": "RWE Clean Energy",
-     "to": "RWE Americas, LLC"
-    }
-   ]
-  },
-  {
-   "kind": "changed",
-   "id": "eia-56984",
-   "name": "Inadale Wind Farm LLC Hybrid",
-   "type": "bess",
-   "operator": "RWE Americas, LLC",
-   "city": "Nolan",
-   "state": "TX",
-   "status": "operating",
-   "capacity_mw": 10,
-   "capacity_mwh": 10,
-   "year_online": 2018,
-   "fields": [
-    {
-     "field": "operator",
-     "from": "RWE Clean Energy",
-     "to": "RWE Americas, LLC"
-    }
-   ]
-  },
-  {
-   "kind": "changed",
-   "id": "eia-61098",
-   "name": "Battle Mountain Solar Project",
-   "type": "bess",
-   "operator": "RWE Americas, LLC",
-   "city": "Humboldt",
-   "state": "NV",
-   "status": "operating",
-   "capacity_mw": 25,
-   "capacity_mwh": 25,
-   "year_online": 2021,
-   "fields": [
-    {
-     "field": "operator",
-     "from": "RWE Clean Energy",
-     "to": "RWE Americas, LLC"
-    }
-   ]
-  },
-  {
-   "kind": "changed",
-   "id": "eia-62695",
-   "name": "CED Northampton Solar LLC Hybrid",
-   "type": "bess",
-   "operator": "RWE Americas, LLC",
-   "city": "Hampshire",
-   "state": "MA",
-   "status": "operating",
-   "capacity_mw": 2,
-   "capacity_mwh": 5,
-   "year_online": 2020,
-   "fields": [
-    {
-     "field": "operator",
-     "from": "RWE Clean Energy",
-     "to": "RWE Americas, LLC"
-    }
-   ]
-  },
-  {
-   "kind": "changed",
-   "id": "eia-63522",
-   "name": "Hickory Park Solar Hybrid",
-   "type": "bess",
-   "operator": "RWE Americas, LLC",
-   "city": "Mitchell",
-   "state": "GA",
-   "status": "operating",
-   "capacity_mw": 40,
-   "capacity_mwh": 80,
-   "year_online": 2022,
-   "fields": [
-    {
-     "field": "operator",
-     "from": "RWE Clean Energy",
-     "to": "RWE Americas, LLC"
-    }
-   ]
-  },
-  {
-   "kind": "changed",
-   "id": "eia-64197",
-   "name": "Fifth Standard Solar PV, LLC (Hybrid)",
-   "type": "bess",
-   "operator": "RWE Americas, LLC",
-   "city": "Fresno",
-   "state": "CA",
-   "status": "operating",
-   "capacity_mw": 137,
-   "capacity_mwh": 137,
-   "year_online": 2023,
-   "fields": [
-    {
-     "field": "operator",
-     "from": "RWE Clean Energy",
-     "to": "RWE Americas, LLC"
-    }
-   ]
-  },
-  {
-   "kind": "changed",
-   "id": "eia-64202",
-   "name": "Big Star Solar, LLC (Hybrid)",
-   "type": "bess",
-   "operator": "RWE Americas, LLC",
-   "city": "Bastrop",
-   "state": "TX",
-   "status": "operating",
-   "capacity_mw": 80,
-   "capacity_mwh": 80,
-   "year_online": 2026,
-   "fields": [
-    {
-     "field": "operator",
-     "from": "RWE Clean Energy",
-     "to": "RWE Americas, LLC"
-    },
-    {
-     "field": "status",
-     "from": "under_construction",
-     "to": "operating"
-    },
-    {
-     "field": "capacity_mwh",
-     "from": null,
-     "to": 80
-    }
-   ]
-  },
-  {
-   "kind": "changed",
-   "id": "eia-64428",
-   "name": "JVR Energy Park LLC",
-   "type": "bess",
-   "operator": "JVR Energy Park LLC",
-   "city": "San Diego",
-   "state": "CA",
-   "status": "under_construction",
-   "capacity_mw": 70,
-   "capacity_mwh": null,
-   "year_online": 2027,
-   "fields": [
-    {
-     "field": "status",
-     "from": "planned",
-     "to": "under_construction"
-    }
-   ]
-  },
-  {
-   "kind": "changed",
-   "id": "eia-64859",
-   "name": "IP Radian, LLC",
-   "type": "bess",
-   "operator": "IPX Power USA, LLC",
-   "city": "Brown",
-   "state": "TX",
-   "status": "operating",
-   "capacity_mw": 160,
-   "capacity_mwh": 320,
-   "year_online": 2026,
-   "fields": [
-    {
-     "field": "operator",
-     "from": "Intersect USA, LLC",
-     "to": "IPX Power USA, LLC"
-    }
-   ]
-  },
-  {
-   "kind": "changed",
-   "id": "eia-65154",
-   "name": "UMass PV Lot 22",
-   "type": "bess",
-   "operator": "RWE Americas, LLC",
-   "city": "Hampshire",
-   "state": "MA",
-   "status": "operating",
-   "capacity_mw": 2,
-   "capacity_mwh": 4,
-   "year_online": 2022,
-   "fields": [
-    {
-     "field": "operator",
-     "from": "RWE Clean Energy",
-     "to": "RWE Americas, LLC"
-    }
-   ]
-  },
-  {
-   "kind": "changed",
-   "id": "eia-65458",
-   "name": "Anode (Springville) BESS",
-   "type": "bess",
-   "operator": "Southern California Edison Co",
-   "city": "Tulare",
-   "state": "CA",
-   "status": "under_construction",
-   "capacity_mw": 225,
+   "operator": null,
+   "city": "Wyandotte",
+   "state": "KS",
+   "status": "queued",
+   "capacity_mw": 170,
    "capacity_mwh": null,
    "year_online": 2027,
    "fields": [
@@ -1003,1180 +245,895 @@
   },
   {
    "kind": "changed",
-   "id": "eia-65644",
-   "name": "Lumina II Solar Project",
+   "id": "iso-spp-gen-2016-160",
+   "name": "SPP queue GEN-2016-160 (Ellis, KS)",
    "type": "bess",
-   "operator": "IPX Power USA, LLC",
-   "city": "Scurry",
-   "state": "TX",
-   "status": "operating",
-   "capacity_mw": 160,
-   "capacity_mwh": 320,
-   "year_online": 2025,
-   "fields": [
-    {
-     "field": "operator",
-     "from": "Intersect USA, LLC",
-     "to": "IPX Power USA, LLC"
-    }
-   ]
-  },
-  {
-   "kind": "changed",
-   "id": "eia-65645",
-   "name": "Lumina Solar Project",
-   "type": "bess",
-   "operator": "IPX Power USA, LLC",
-   "city": "Scurry",
-   "state": "TX",
-   "status": "operating",
-   "capacity_mw": 160,
-   "capacity_mwh": 320,
-   "year_online": 2025,
-   "fields": [
-    {
-     "field": "operator",
-     "from": "Intersect USA, LLC",
-     "to": "IPX Power USA, LLC"
-    }
-   ]
-  },
-  {
-   "kind": "changed",
-   "id": "eia-65734",
-   "name": "Oberon Solar Project",
-   "type": "bess",
-   "operator": "IPX Power USA, LLC",
-   "city": "Riverside",
-   "state": "CA",
-   "status": "operating",
-   "capacity_mw": 125,
-   "capacity_mwh": 500,
-   "year_online": 2023,
-   "fields": [
-    {
-     "field": "operator",
-     "from": "Intersect USA, LLC",
-     "to": "IPX Power USA, LLC"
-    }
-   ]
-  },
-  {
-   "kind": "changed",
-   "id": "eia-65735",
-   "name": "Oberon II Solar Project",
-   "type": "bess",
-   "operator": "IPX Power USA, LLC",
-   "city": "Riverside",
-   "state": "CA",
-   "status": "operating",
-   "capacity_mw": 125,
-   "capacity_mwh": 500,
-   "year_online": 2023,
-   "fields": [
-    {
-     "field": "operator",
-     "from": "Intersect USA, LLC",
-     "to": "IPX Power USA, LLC"
-    }
-   ]
-  },
-  {
-   "kind": "changed",
-   "id": "eia-65962",
-   "name": "Mesquite Solar 4, LLC",
-   "type": "bess",
-   "operator": "RWE Americas, LLC",
-   "city": "Maricopa",
-   "state": "AZ",
-   "status": "operating",
-   "capacity_mw": 10,
-   "capacity_mwh": 48,
-   "year_online": 2024,
-   "fields": [
-    {
-     "field": "operator",
-     "from": "RWE Clean Energy",
-     "to": "RWE Americas, LLC"
-    }
-   ]
-  },
-  {
-   "kind": "changed",
-   "id": "eia-65963",
-   "name": "Mesquite Solar 5, LLC",
-   "type": "bess",
-   "operator": "RWE Americas, LLC",
-   "city": "Maricopa",
-   "state": "AZ",
-   "status": "operating",
-   "capacity_mw": 60,
-   "capacity_mwh": 240,
-   "year_online": 2023,
-   "fields": [
-    {
-     "field": "operator",
-     "from": "RWE Clean Energy",
-     "to": "RWE Americas, LLC"
-    }
-   ]
-  },
-  {
-   "kind": "changed",
-   "id": "eia-65980",
-   "name": "CED West Side Canal Battery Storage",
-   "type": "bess",
-   "operator": "San Diego Gas & Electric Co",
-   "city": "Imperial",
-   "state": "CA",
-   "status": "operating",
-   "capacity_mw": 131,
-   "capacity_mwh": 524,
-   "year_online": 2023,
-   "fields": [
-    {
-     "field": "operator",
-     "from": "RWE Clean Energy",
-     "to": "San Diego Gas & Electric Co"
-    }
-   ]
-  },
-  {
-   "kind": "changed",
-   "id": "eia-66497",
-   "name": "Bensonhurst Energy Storage 1 LLC",
-   "type": "bess",
-   "operator": "Convergent Energy and Power LP",
-   "city": "Kings",
-   "state": "NY",
-   "status": "under_construction",
-   "capacity_mw": 5,
-   "capacity_mwh": null,
-   "year_online": 2027,
-   "fields": [
-    {
-     "field": "year_online",
-     "from": 2026,
-     "to": 2027
-    }
-   ]
-  },
-  {
-   "kind": "changed",
-   "id": "eia-66678",
-   "name": "Aramis I Solar Project",
-   "type": "bess",
-   "operator": "IPX Power USA, LLC",
-   "city": "Alameda",
-   "state": "CA",
-   "status": "operating",
-   "capacity_mw": 100,
-   "capacity_mwh": 400,
-   "year_online": 2026,
-   "fields": [
-    {
-     "field": "operator",
-     "from": "IP Aramis, LLC",
-     "to": "IPX Power USA, LLC"
-    },
-    {
-     "field": "status",
-     "from": "under_construction",
-     "to": "operating"
-    },
-    {
-     "field": "capacity_mwh",
-     "from": null,
-     "to": 400
-    }
-   ]
-  },
-  {
-   "kind": "changed",
-   "id": "eia-66688",
-   "name": "Bright Arrow Solar, LLC",
-   "type": "bess",
-   "operator": "RWE Americas, LLC",
-   "city": "Hopkins",
-   "state": "TX",
-   "status": "operating",
-   "capacity_mw": 104,
-   "capacity_mwh": 100,
-   "year_online": 2025,
-   "fields": [
-    {
-     "field": "operator",
-     "from": "RWE Clean Energy",
-     "to": "RWE Americas, LLC"
-    }
-   ]
-  },
-  {
-   "kind": "changed",
-   "id": "eia-66895",
-   "name": "Lupinus Solar 1, LLC",
-   "type": "bess",
-   "operator": "Sunraycer Assets I LLC",
-   "city": "Franklin",
-   "state": "TX",
-   "status": "under_construction",
-   "capacity_mw": 83,
-   "capacity_mwh": null,
-   "year_online": 2027,
-   "fields": [
-    {
-     "field": "status",
-     "from": "planned",
-     "to": "under_construction"
-    }
-   ]
-  },
-  {
-   "kind": "changed",
-   "id": "eia-67039",
-   "name": "Northern Orchard Solar PV, LLC",
-   "type": "bess",
-   "operator": "RWE Americas, LLC",
-   "city": "Kern",
-   "state": "CA",
-   "status": "operating",
-   "capacity_mw": 92,
-   "capacity_mwh": 368,
-   "year_online": 2025,
-   "fields": [
-    {
-     "field": "operator",
-     "from": "RWE Clean Energy",
-     "to": "RWE Americas, LLC"
-    }
-   ]
-  },
-  {
-   "kind": "changed",
-   "id": "eia-67552",
-   "name": "Elm Flats Solar",
-   "type": "bess",
-   "operator": "Headwater Energy, LLC",
-   "city": "Navarro",
-   "state": "TX",
-   "status": "under_construction",
-   "capacity_mw": 250,
-   "capacity_mwh": null,
-   "year_online": 2027,
-   "fields": [
-    {
-     "field": "operator",
-     "from": "Birch Creek Development",
-     "to": "Headwater Energy, LLC"
-    },
-    {
-     "field": "capacity_mw",
-     "from": 50,
-     "to": 250
-    },
-    {
-     "field": "year_online",
-     "from": 2026,
-     "to": 2027
-    }
-   ]
-  },
-  {
-   "kind": "changed",
-   "id": "eia-67759",
-   "name": "Trenton Channel Energy Center",
-   "type": "bess",
-   "operator": "DTE Electric Company",
-   "city": "Wayne",
-   "state": "MI",
-   "status": "under_construction",
-   "capacity_mw": 220,
-   "capacity_mwh": null,
-   "year_online": 2027,
-   "fields": [
-    {
-     "field": "year_online",
-     "from": 2026,
-     "to": 2027
-    }
-   ]
-  },
-  {
-   "kind": "changed",
-   "id": "eia-68215",
-   "name": "Braley Hill North Solar",
-   "type": "bess",
-   "operator": "Agilitas Energy, Inc.",
-   "city": "Plymouth",
-   "state": "MA",
-   "status": "under_construction",
-   "capacity_mw": 5,
-   "capacity_mwh": null,
-   "year_online": 2027,
-   "fields": [
-    {
-     "field": "status",
-     "from": "planned",
-     "to": "under_construction"
-    }
-   ]
-  },
-  {
-   "kind": "changed",
-   "id": "eia-68217",
-   "name": "Featherbed Lane South Solar",
-   "type": "bess",
-   "operator": "Agilitas Energy, Inc.",
-   "city": "Plymouth",
-   "state": "MA",
-   "status": "under_construction",
-   "capacity_mw": 1,
-   "capacity_mwh": null,
-   "year_online": 2027,
-   "fields": [
-    {
-     "field": "operator",
-     "from": "ReWild Renewables, LLC",
-     "to": "Agilitas Energy, Inc."
-    },
-    {
-     "field": "status",
-     "from": "planned",
-     "to": "under_construction"
-    }
-   ]
-  },
-  {
-   "kind": "changed",
-   "id": "eia-68218",
-   "name": "Randall Lane Solar",
-   "type": "bess",
-   "operator": "Agilitas Energy, Inc.",
-   "city": "Plymouth",
-   "state": "MA",
-   "status": "under_construction",
-   "capacity_mw": 5,
-   "capacity_mwh": null,
-   "year_online": 2027,
-   "fields": [
-    {
-     "field": "operator",
-     "from": "ReWild Renewables, LLC",
-     "to": "Agilitas Energy, Inc."
-    },
-    {
-     "field": "status",
-     "from": "planned",
-     "to": "under_construction"
-    }
-   ]
-  },
-  {
-   "kind": "changed",
-   "id": "eia-68219",
-   "name": "Snipatuit Road Solar",
-   "type": "bess",
-   "operator": "Agilitas Energy, Inc.",
-   "city": "Plymouth",
-   "state": "MA",
-   "status": "under_construction",
-   "capacity_mw": 4,
-   "capacity_mwh": null,
-   "year_online": 2027,
-   "fields": [
-    {
-     "field": "status",
-     "from": "planned",
-     "to": "under_construction"
-    }
-   ]
-  },
-  {
-   "kind": "changed",
-   "id": "eia-68466",
-   "name": "Centennial Flats",
-   "type": "bess",
-   "operator": "Copia Power",
-   "city": "La Paz",
-   "state": "AZ",
-   "status": "operating",
-   "capacity_mw": 267,
-   "capacity_mwh": 267,
-   "year_online": 2026,
-   "fields": [
-    {
-     "field": "status",
-     "from": "under_construction",
-     "to": "operating"
-    },
-    {
-     "field": "capacity_mwh",
-     "from": 178,
-     "to": 267
-    }
-   ]
-  },
-  {
-   "kind": "changed",
-   "id": "eia-68499",
-   "name": "Crowned Heron 1 - Storage, LLC",
-   "type": "bess",
-   "operator": "RWE Americas, LLC",
-   "city": "Fort Bend",
-   "state": "TX",
-   "status": "operating",
-   "capacity_mw": 150,
-   "capacity_mwh": 300,
-   "year_online": 2026,
-   "fields": [
-    {
-     "field": "operator",
-     "from": "RWE Clean Energy",
-     "to": "RWE Americas, LLC"
-    }
-   ]
-  },
-  {
-   "kind": "changed",
-   "id": "eia-68500",
-   "name": "Crowned Heron 2 - Storage, LLC",
-   "type": "bess",
-   "operator": "RWE Americas, LLC",
-   "city": "Fort Bend",
-   "state": "TX",
-   "status": "operating",
-   "capacity_mw": 150,
-   "capacity_mwh": 300,
-   "year_online": 2026,
-   "fields": [
-    {
-     "field": "operator",
-     "from": "RWE Clean Energy",
-     "to": "RWE Americas, LLC"
-    },
-    {
-     "field": "status",
-     "from": "under_construction",
-     "to": "operating"
-    },
-    {
-     "field": "capacity_mwh",
-     "from": null,
-     "to": 300
-    }
-   ]
-  },
-  {
-   "kind": "changed",
-   "id": "eia-68509",
-   "name": "Ventasso Energy Storage, LLC",
-   "type": "bess",
-   "operator": "RWE Americas, LLC",
-   "city": "San Diego",
-   "state": "CA",
-   "status": "operating",
-   "capacity_mw": 50,
-   "capacity_mwh": 200,
-   "year_online": 2026,
-   "fields": [
-    {
-     "field": "operator",
-     "from": "RWE Clean Energy",
-     "to": "RWE Americas, LLC"
-    }
-   ]
-  },
-  {
-   "kind": "changed",
-   "id": "eia-68513",
-   "name": "Cartwheel 1 - Storage, LLC",
-   "type": "bess",
-   "operator": "RWE Americas, LLC",
-   "city": "Hopkins",
-   "state": "TX",
-   "status": "operating",
-   "capacity_mw": 300,
-   "capacity_mwh": 300,
-   "year_online": 2025,
-   "fields": [
-    {
-     "field": "operator",
-     "from": "RWE Clean Energy",
-     "to": "RWE Americas, LLC"
-    }
-   ]
-  },
-  {
-   "kind": "changed",
-   "id": "eia-68518",
-   "name": "Merced 2 BESS",
-   "type": "bess",
-   "operator": "ZGlobal Inc",
-   "city": "Merced",
-   "state": "CA",
-   "status": "operating",
-   "capacity_mw": 2,
-   "capacity_mwh": 8,
-   "year_online": 2026,
-   "fields": [
-    {
-     "field": "status",
-     "from": "under_construction",
-     "to": "operating"
-    },
-    {
-     "field": "capacity_mwh",
-     "from": null,
-     "to": 8
-    }
-   ]
-  },
-  {
-   "kind": "changed",
-   "id": "eia-68519",
-   "name": "Madena 3",
-   "type": "bess",
-   "operator": "ZGlobal Inc",
-   "city": "Yuba",
-   "state": "CA",
-   "status": "under_construction",
-   "capacity_mw": 4,
+   "operator": null,
+   "city": "Ellis",
+   "state": "KS",
+   "status": "queued",
+   "capacity_mw": 20,
    "capacity_mwh": null,
    "year_online": 2026,
    "fields": [
     {
      "field": "year_online",
-     "from": 2027,
+     "from": 2023,
      "to": 2026
     }
    ]
   },
   {
    "kind": "changed",
-   "id": "eia-68581",
-   "name": "Mendoza Trail BESS",
+   "id": "iso-spp-gen-2017-196",
+   "name": "SPP queue GEN-2017-196 (Johnson, KS)",
    "type": "bess",
-   "operator": "Lydian Energy",
-   "city": "Crane",
-   "state": "TX",
-   "status": "operating",
-   "capacity_mw": 200,
-   "capacity_mwh": 400,
+   "operator": null,
+   "city": "Johnson",
+   "state": "KS",
+   "status": "queued",
+   "capacity_mw": 128,
+   "capacity_mwh": null,
+   "year_online": 2030,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2020,
+     "to": 2030
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2017-221",
+   "name": "SPP queue GEN-2017-221 (Sedgwick, KS)",
+   "type": "bess",
+   "operator": null,
+   "city": "Sedgwick",
+   "state": "KS",
+   "status": "queued",
+   "capacity_mw": 152,
+   "capacity_mwh": null,
    "year_online": 2026,
    "fields": [
     {
-     "field": "status",
-     "from": "under_construction",
-     "to": "operating"
-    },
-    {
-     "field": "capacity_mwh",
-     "from": null,
-     "to": 400
+     "field": "year_online",
+     "from": 2020,
+     "to": 2026
     }
    ]
   },
   {
    "kind": "changed",
-   "id": "eia-68582",
-   "name": "Pintail BESS",
+   "id": "iso-spp-gen-2017-227",
+   "name": "SPP queue GEN-2017-227 (Sedgwick, KS)",
    "type": "bess",
-   "operator": "Lydian Energy",
-   "city": "San Patricio",
-   "state": "TX",
-   "status": "operating",
-   "capacity_mw": 200,
-   "capacity_mwh": 400,
-   "year_online": 2026,
+   "operator": null,
+   "city": "Sedgwick",
+   "state": "KS",
+   "status": "queued",
+   "capacity_mw": 201.6,
+   "capacity_mwh": null,
+   "year_online": 2030,
    "fields": [
     {
-     "field": "status",
-     "from": "under_construction",
-     "to": "operating"
-    },
-    {
-     "field": "capacity_mwh",
-     "from": null,
-     "to": 400
+     "field": "year_online",
+     "from": 2020,
+     "to": 2030
     }
    ]
   },
   {
    "kind": "changed",
-   "id": "eia-68758",
-   "name": "Easley Solar",
+   "id": "iso-spp-gen-2018-011",
+   "name": "SPP queue GEN-2018-011 (Kingfisher, OK)",
    "type": "bess",
-   "operator": "IPX Power USA, LLC",
-   "city": "Riverside",
-   "state": "CA",
-   "status": "planned",
-   "capacity_mw": 650,
-   "capacity_mwh": 1400,
-   "year_online": 2028,
-   "fields": [
-    {
-     "field": "operator",
-     "from": "IP Easley, LLC",
-     "to": "IPX Power USA, LLC"
-    }
-   ]
-  },
-  {
-   "kind": "changed",
-   "id": "eia-68940",
-   "name": "Country Acres Clean Power LLC",
-   "type": "bess",
-   "operator": "Clenera DevCo LLC",
-   "city": "Placer",
-   "state": "CA",
-   "status": "under_construction",
-   "capacity_mw": 172,
+   "operator": null,
+   "city": "Kingfisher",
+   "state": "OK",
+   "status": "queued",
+   "capacity_mw": 74.1,
    "capacity_mwh": null,
    "year_online": 2027,
    "fields": [
     {
      "field": "year_online",
-     "from": 2026,
+     "from": 2020,
      "to": 2027
     }
    ]
   },
   {
    "kind": "changed",
-   "id": "eia-68954",
-   "name": "Alpaugh BESS",
+   "id": "iso-spp-gen-2018-024",
+   "name": "SPP queue GEN-2018-024 (Muskogee, OK)",
    "type": "bess",
-   "operator": "RWE Americas, LLC",
-   "city": "Tulare",
-   "state": "CA",
-   "status": "operating",
-   "capacity_mw": 10,
-   "capacity_mwh": 10,
-   "year_online": 2026,
+   "operator": null,
+   "city": "Muskogee",
+   "state": "OK",
+   "status": "queued",
+   "capacity_mw": 100,
+   "capacity_mwh": null,
+   "year_online": 2028,
    "fields": [
     {
-     "field": "operator",
-     "from": "RWE Clean Energy",
-     "to": "RWE Americas, LLC"
+     "field": "year_online",
+     "from": 2023,
+     "to": 2028
     }
    ]
   },
   {
    "kind": "changed",
-   "id": "eia-68980",
-   "name": "Gonzaga Ridge Battery Facility",
+   "id": "iso-spp-gen-2018-025",
+   "name": "SPP queue GEN-2018-025 (Washington, NE)",
    "type": "bess",
-   "operator": "Gonzaga Ridge Battery Facility, LLC",
-   "city": "Merced",
-   "state": "CA",
-   "status": "operating",
-   "capacity_mw": 52,
-   "capacity_mwh": 200,
-   "year_online": 2026,
+   "operator": null,
+   "city": "Washington",
+   "state": "NE",
+   "status": "queued",
+   "capacity_mw": 200,
+   "capacity_mwh": null,
+   "year_online": 2030,
    "fields": [
     {
-     "field": "status",
-     "from": "under_construction",
-     "to": "operating"
-    },
-    {
-     "field": "capacity_mwh",
-     "from": null,
-     "to": 200
+     "field": "year_online",
+     "from": 2023,
+     "to": 2030
     }
    ]
   },
   {
    "kind": "changed",
-   "id": "eia-69027",
-   "name": "Stoneridge Solar, LLC",
+   "id": "iso-spp-gen-2018-026",
+   "name": "SPP queue GEN-2018-026 (Canadian, OK)",
    "type": "bess",
-   "operator": "RWE Americas, LLC",
-   "city": "Milam",
-   "state": "TX",
-   "status": "under_construction",
+   "operator": null,
+   "city": "Canadian",
+   "state": "OK",
+   "status": "queued",
    "capacity_mw": 100,
    "capacity_mwh": null,
    "year_online": 2026,
    "fields": [
     {
-     "field": "operator",
-     "from": "RWE Clean Energy",
-     "to": "RWE Americas, LLC"
+     "field": "year_online",
+     "from": 2023,
+     "to": 2026
     }
    ]
   },
   {
    "kind": "changed",
-   "id": "eia-69110",
-   "name": "Coneflower Storage Project LLC",
+   "id": "iso-spp-gen-2018-027",
+   "name": "SPP queue GEN-2018-027 (Tulsa, OK)",
    "type": "bess",
-   "operator": "Acciona Energy USA Global, LLC",
-   "city": "Chambers",
-   "state": "TX",
-   "status": "planned",
-   "capacity_mw": 171,
+   "operator": null,
+   "city": "Tulsa",
+   "state": "OK",
+   "status": "queued",
+   "capacity_mw": 100,
    "capacity_mwh": null,
    "year_online": 2028,
    "fields": [
     {
      "field": "year_online",
-     "from": 2027,
+     "from": 2024,
      "to": 2028
     }
    ]
   },
   {
    "kind": "changed",
-   "id": "eia-69120",
-   "name": "Resaca Oasis Storage",
+   "id": "iso-spp-gen-2018-028",
+   "name": "SPP queue GEN-2018-028 (Tulsa, OK)",
    "type": "bess",
-   "operator": "Red River Clean Energy",
-   "city": "Cameron",
-   "state": "TX",
-   "status": "planned",
-   "capacity_mw": 201,
+   "operator": null,
+   "city": "Tulsa",
+   "state": "OK",
+   "status": "queued",
+   "capacity_mw": 200,
    "capacity_mwh": null,
    "year_online": 2028,
    "fields": [
     {
      "field": "year_online",
-     "from": 2027,
+     "from": 2023,
      "to": 2028
     }
    ]
   },
   {
    "kind": "changed",
-   "id": "eia-69189",
-   "name": "Cowboy Solar II",
+   "id": "iso-spp-gen-2018-029",
+   "name": "SPP queue GEN-2018-029 (Oklahoma, OK)",
    "type": "bess",
-   "operator": "Cowboy Solar II",
-   "city": "Laramie",
-   "state": "WY",
-   "status": "planned",
-   "capacity_mw": 200,
+   "operator": null,
+   "city": "Oklahoma",
+   "state": "OK",
+   "status": "queued",
+   "capacity_mw": 100,
    "capacity_mwh": null,
-   "year_online": 2027,
-   "fields": [
-    {
-     "field": "operator",
-     "from": "TGE Wyoming 225, LLC",
-     "to": "Cowboy Solar II"
-    }
-   ]
-  },
-  {
-   "kind": "changed",
-   "id": "eia-69246",
-   "name": "BESS TX Camarine - BSHOU001",
-   "type": "bess",
-   "operator": "Prologis Logistics Services Incorporated BESS",
-   "city": "Harris",
-   "state": "TX",
-   "status": "under_construction",
-   "capacity_mw": 10,
-   "capacity_mwh": null,
-   "year_online": 2027,
+   "year_online": 2028,
    "fields": [
     {
      "field": "year_online",
-     "from": 2026,
-     "to": 2027
+     "from": 2023,
+     "to": 2028
     }
    ]
   },
   {
    "kind": "changed",
-   "id": "eia-69255",
-   "name": "Vertus Energy Storage Plant",
+   "id": "iso-spp-gen-2018-031",
+   "name": "SPP queue GEN-2018-031 (Jackson, MO)",
    "type": "bess",
-   "operator": "Vertus Energy Storage, LLC",
-   "city": "Galveston",
-   "state": "TX",
-   "status": "operating",
-   "capacity_mw": 200,
-   "capacity_mwh": 200,
-   "year_online": 2026,
-   "fields": [
-    {
-     "field": "status",
-     "from": "under_construction",
-     "to": "operating"
-    },
-    {
-     "field": "capacity_mwh",
-     "from": null,
-     "to": 200
-    }
-   ]
-  },
-  {
-   "kind": "changed",
-   "id": "eia-69290",
-   "name": "Desert Bloom",
-   "type": "bess",
-   "operator": "RE Desert Bloom LLC",
-   "city": "Maricopa",
-   "state": "AZ",
-   "status": "operating",
-   "capacity_mw": 150,
-   "capacity_mwh": 600,
-   "year_online": 2026,
-   "fields": [
-    {
-     "field": "status",
-     "from": "under_construction",
-     "to": "operating"
-    },
-    {
-     "field": "capacity_mwh",
-     "from": null,
-     "to": 600
-    }
-   ]
-  },
-  {
-   "kind": "changed",
-   "id": "eia-69392",
-   "name": "Barton Branch IA",
-   "type": "bess",
-   "operator": "Barton Branch IA LLC",
-   "city": "Robertson",
-   "state": "TX",
-   "status": "under_construction",
-   "capacity_mw": 200,
-   "capacity_mwh": null,
-   "year_online": 2027,
-   "fields": [
-    {
-     "field": "year_online",
-     "from": 2026,
-     "to": 2027
-    }
-   ]
-  },
-  {
-   "kind": "changed",
-   "id": "eia-69404",
-   "name": "Craggy Energy Storage",
-   "type": "bess",
-   "operator": "Duke Energy Carolinas, LLC",
-   "city": "Buncombe",
-   "state": "NC",
-   "status": "operating",
-   "capacity_mw": 30,
-   "capacity_mwh": 61,
-   "year_online": 2026,
-   "fields": [
-    {
-     "field": "status",
-     "from": "under_construction",
-     "to": "operating"
-    },
-    {
-     "field": "capacity_mwh",
-     "from": null,
-     "to": 61
-    }
-   ]
-  },
-  {
-   "kind": "changed",
-   "id": "eia-69416",
-   "name": "Aggreko MSR Grid PC2",
-   "type": "bess",
-   "operator": "DGI Rattler LLC",
-   "city": "Nueces",
-   "state": "TX",
-   "status": "operating",
-   "capacity_mw": 10,
-   "capacity_mwh": 19,
-   "year_online": 2026,
-   "fields": [
-    {
-     "field": "operator",
-     "from": "AETS AM LLC",
-     "to": "DGI Rattler LLC"
-    }
-   ]
-  },
-  {
-   "kind": "changed",
-   "id": "eia-69417",
-   "name": "Aggreko MSR Grid PC5",
-   "type": "bess",
-   "operator": "DGI Rattler LLC",
-   "city": "Cameron",
-   "state": "TX",
-   "status": "operating",
-   "capacity_mw": 10,
-   "capacity_mwh": 19,
-   "year_online": 2026,
-   "fields": [
-    {
-     "field": "operator",
-     "from": "AETS AM LLC",
-     "to": "DGI Rattler LLC"
-    }
-   ]
-  },
-  {
-   "kind": "changed",
-   "id": "eia-69418",
-   "name": "Aggreko MSR Grid PC7",
-   "type": "bess",
-   "operator": "DGI Rattler LLC",
-   "city": "Cameron",
-   "state": "TX",
-   "status": "operating",
-   "capacity_mw": 10,
-   "capacity_mwh": 19,
-   "year_online": 2026,
-   "fields": [
-    {
-     "field": "operator",
-     "from": "AETS AM LLC",
-     "to": "DGI Rattler LLC"
-    }
-   ]
-  },
-  {
-   "kind": "changed",
-   "id": "eia-69423",
-   "name": "Bocanova Energy Storage II",
-   "type": "bess",
-   "operator": "Bocanova Power II LLC",
-   "city": "Brazoria",
-   "state": "TX",
-   "status": "operating",
-   "capacity_mw": 150,
-   "capacity_mwh": 300,
-   "year_online": 2026,
-   "fields": [
-    {
-     "field": "status",
-     "from": "under_construction",
-     "to": "operating"
-    },
-    {
-     "field": "capacity_mwh",
-     "from": null,
-     "to": 300
-    }
-   ]
-  },
-  {
-   "kind": "changed",
-   "id": "eia-69424",
-   "name": "Faraday Energy Storage",
-   "type": "bess",
-   "operator": "Lydian Energy",
-   "city": "Utah",
-   "state": "UT",
-   "status": "operating",
-   "capacity_mw": 150,
-   "capacity_mwh": 600,
-   "year_online": 2026,
-   "fields": [
-    {
-     "field": "status",
-     "from": "under_construction",
-     "to": "operating"
-    },
-    {
-     "field": "capacity_mwh",
-     "from": null,
-     "to": 600
-    }
-   ]
-  },
-  {
-   "kind": "changed",
-   "id": "eia-69429",
-   "name": "Asheville BESS",
-   "type": "bess",
-   "operator": "Duke Energy Progress - (NC)",
-   "city": "Buncombe",
-   "state": "NC",
-   "status": "operating",
-   "capacity_mw": 17,
-   "capacity_mwh": 69,
-   "year_online": 2026,
-   "fields": [
-    {
-     "field": "status",
-     "from": "under_construction",
-     "to": "operating"
-    },
-    {
-     "field": "capacity_mwh",
-     "from": null,
-     "to": 69
-    }
-   ]
-  },
-  {
-   "kind": "changed",
-   "id": "eia-69444",
-   "name": "Elm City BESS",
-   "type": "bess",
-   "operator": "Duke Energy Progress - (NC)",
-   "city": "Wilson",
-   "state": "NC",
-   "status": "operating",
-   "capacity_mw": 20,
-   "capacity_mwh": 80,
-   "year_online": 2026,
-   "fields": [
-    {
-     "field": "status",
-     "from": "under_construction",
-     "to": "operating"
-    },
-    {
-     "field": "capacity_mwh",
-     "from": null,
-     "to": 80
-    }
-   ]
-  },
-  {
-   "kind": "changed",
-   "id": "eia-69457",
-   "name": "Mesquite Clean Energy Center (BESS)",
-   "type": "bess",
-   "operator": "On Energy Storage",
-   "city": "Cameron",
-   "state": "TX",
-   "status": "operating",
-   "capacity_mw": 10,
-   "capacity_mwh": 20,
-   "year_online": 2026,
-   "fields": [
-    {
-     "field": "status",
-     "from": "under_construction",
-     "to": "operating"
-    },
-    {
-     "field": "capacity_mwh",
-     "from": null,
-     "to": 20
-    }
-   ]
-  },
-  {
-   "kind": "changed",
-   "id": "eia-69648",
-   "name": "Rosamond South II",
-   "type": "bess",
-   "operator": "Golden Fields Solar VI, LLC",
-   "city": "Kern",
-   "state": "CA",
-   "status": "under_construction",
-   "capacity_mw": 140,
-   "capacity_mwh": null,
-   "year_online": 2027,
-   "fields": [
-    {
-     "field": "year_online",
-     "from": 2026,
-     "to": 2027
-    }
-   ]
-  },
-  {
-   "kind": "changed",
-   "id": "eia-69661",
-   "name": "Darden I Solar",
-   "type": "bess",
-   "operator": "IPX Power USA, LLC",
-   "city": "Fresno",
-   "state": "CA",
-   "status": "planned",
-   "capacity_mw": 304,
-   "capacity_mwh": null,
-   "year_online": 2028,
-   "fields": [
-    {
-     "field": "operator",
-     "from": "Intersect USA, LLC",
-     "to": "IPX Power USA, LLC"
-    }
-   ]
-  },
-  {
-   "kind": "changed",
-   "id": "eia-69662",
-   "name": "Darden II Solar",
-   "type": "bess",
-   "operator": "IPX Power USA, LLC",
-   "city": "Fresno",
-   "state": "CA",
-   "status": "planned",
-   "capacity_mw": 304,
-   "capacity_mwh": null,
-   "year_online": 2028,
-   "fields": [
-    {
-     "field": "operator",
-     "from": "Intersect USA, LLC",
-     "to": "IPX Power USA, LLC"
-    }
-   ]
-  },
-  {
-   "kind": "changed",
-   "id": "eia-69663",
-   "name": "Darden III Solar",
-   "type": "bess",
-   "operator": "IPX Power USA, LLC",
-   "city": "Fresno",
-   "state": "CA",
-   "status": "planned",
-   "capacity_mw": 304,
-   "capacity_mwh": null,
-   "year_online": 2028,
-   "fields": [
-    {
-     "field": "operator",
-     "from": "Intersect USA, LLC",
-     "to": "IPX Power USA, LLC"
-    }
-   ]
-  },
-  {
-   "kind": "changed",
-   "id": "eia-69664",
-   "name": "Darden IV Solar",
-   "type": "bess",
-   "operator": "IPX Power USA, LLC",
-   "city": "Fresno",
-   "state": "CA",
-   "status": "planned",
-   "capacity_mw": 304,
-   "capacity_mwh": null,
-   "year_online": 2028,
-   "fields": [
-    {
-     "field": "operator",
-     "from": "Intersect USA, LLC",
-     "to": "IPX Power USA, LLC"
-    }
-   ]
-  },
-  {
-   "kind": "changed",
-   "id": "eia-69964",
-   "name": "Baldy Mesa Storage",
-   "type": "bess",
-   "operator": "AES Clean Energy",
-   "city": "San Bernardino",
-   "state": "CA",
-   "status": "under_construction",
+   "operator": null,
+   "city": "Jackson",
+   "state": "MO",
+   "status": "queued",
    "capacity_mw": 50,
    "capacity_mwh": null,
+   "year_online": 2028,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2024,
+     "to": 2028
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2018-033",
+   "name": "SPP queue GEN-2018-033 (Cass, NE)",
+   "type": "bess",
+   "operator": null,
+   "city": "Cass",
+   "state": "NE",
+   "status": "queued",
+   "capacity_mw": 200,
+   "capacity_mwh": null,
+   "year_online": 2031,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2023,
+     "to": 2031
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2018-037",
+   "name": "SPP queue GEN-2018-037 (Douglas, NE)",
+   "type": "bess",
+   "operator": null,
+   "city": "Douglas",
+   "state": "NE",
+   "status": "queued",
+   "capacity_mw": 100,
+   "capacity_mwh": null,
+   "year_online": 2032,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2024,
+     "to": 2032
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2018-052",
+   "name": "SPP queue GEN-2018-052 (Lea, NM)",
+   "type": "bess",
+   "operator": null,
+   "city": "Lea",
+   "state": "NM",
+   "status": "queued",
+   "capacity_mw": 70,
+   "capacity_mwh": null,
+   "year_online": 2027,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2021,
+     "to": 2027
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2018-071",
+   "name": "SPP queue GEN-2018-071 (Kay, OK)",
+   "type": "bess",
+   "operator": null,
+   "city": "Kay",
+   "state": "OK",
+   "status": "queued",
+   "capacity_mw": 151,
+   "capacity_mwh": null,
+   "year_online": 2027,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2021,
+     "to": 2027
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2018-072",
+   "name": "SPP queue GEN-2018-072 (Kay, OK)",
+   "type": "bess",
+   "operator": null,
+   "city": "Kay",
+   "state": "OK",
+   "status": "queued",
+   "capacity_mw": 151,
+   "capacity_mwh": null,
+   "year_online": 2027,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2021,
+     "to": 2027
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2018-108",
+   "name": "SPP queue GEN-2018-108 (Barber, KS)",
+   "type": "bess",
+   "operator": null,
+   "city": "Barber",
+   "state": "KS",
+   "status": "queued",
+   "capacity_mw": 95,
+   "capacity_mwh": null,
+   "year_online": 2028,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2027,
+     "to": 2028
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2019-002",
+   "name": "SPP queue GEN-2019-002 (Mayes, OK)",
+   "type": "bess",
+   "operator": null,
+   "city": "Mayes",
+   "state": "OK",
+   "status": "queued",
+   "capacity_mw": 100,
+   "capacity_mwh": null,
+   "year_online": 2027,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2020,
+     "to": 2027
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2019-053",
+   "name": "SPP queue GEN-2019-053 (Edwards, KS)",
+   "type": "bess",
+   "operator": null,
+   "city": "Edwards",
+   "state": "KS",
+   "status": "queued",
+   "capacity_mw": 50,
+   "capacity_mwh": null,
+   "year_online": 2028,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2023,
+     "to": 2028
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2019-063",
+   "name": "SPP queue GEN-2019-063 (Ford, KS)",
+   "type": "bess",
+   "operator": null,
+   "city": "Ford",
+   "state": "KS",
+   "status": "queued",
+   "capacity_mw": 50,
+   "capacity_mwh": null,
+   "year_online": 2028,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2023,
+     "to": 2028
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2019-065",
+   "name": "SPP queue GEN-2019-065 (Smith, TX)",
+   "type": "bess",
+   "operator": null,
+   "city": "Smith",
+   "state": "TX",
+   "status": "queued",
+   "capacity_mw": 180,
+   "capacity_mwh": null,
+   "year_online": 2028,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2024,
+     "to": 2028
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2019-068",
+   "name": "SPP queue GEN-2019-068 (Barton, KS)",
+   "type": "bess",
+   "operator": null,
+   "city": "Barton",
+   "state": "KS",
+   "status": "queued",
+   "capacity_mw": 50,
+   "capacity_mwh": null,
+   "year_online": 2029,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2023,
+     "to": 2029
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2020-057",
+   "name": "SPP queue GEN-2020-057 (Finney, KS)",
+   "type": "bess",
+   "operator": null,
+   "city": "Finney",
+   "state": "KS",
+   "status": "queued",
+   "capacity_mw": 424.5,
+   "capacity_mwh": null,
+   "year_online": 2030,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2026,
+     "to": 2030
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2020-060",
+   "name": "SPP queue GEN-2020-060 (Lubbock, TX)",
+   "type": "bess",
+   "operator": null,
+   "city": "Lubbock",
+   "state": "TX",
+   "status": "queued",
+   "capacity_mw": 200,
+   "capacity_mwh": null,
+   "year_online": 2031,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2026,
+     "to": 2031
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2020-081",
+   "name": "SPP queue GEN-2020-081 (Rusk, TX)",
+   "type": "bess",
+   "operator": null,
+   "city": "Rusk",
+   "state": "TX",
+   "status": "queued",
+   "capacity_mw": 200,
+   "capacity_mwh": null,
+   "year_online": 2028,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2022,
+     "to": 2028
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2020-090",
+   "name": "SPP queue GEN-2020-090 (Bourbon, KS)",
+   "type": "bess",
+   "operator": null,
+   "city": "Bourbon",
+   "state": "KS",
+   "status": "queued",
+   "capacity_mw": 204.3,
+   "capacity_mwh": null,
+   "year_online": 2028,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2026,
+     "to": 2028
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2020-sr2",
+   "name": "SPP queue GEN-2020-SR2 (Johnston, OK)",
+   "type": "bess",
+   "operator": null,
+   "city": "Johnston",
+   "state": "OK",
+   "status": "queued",
+   "capacity_mw": 100,
+   "capacity_mwh": null,
+   "year_online": 2026,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2021,
+     "to": 2026
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2021-001",
+   "name": "SPP queue GEN-2021-001 (Bryan, OK)",
+   "type": "bess",
+   "operator": null,
+   "city": "Bryan",
+   "state": "OK",
+   "status": "queued",
+   "capacity_mw": 100,
+   "capacity_mwh": null,
+   "year_online": 2029,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2024,
+     "to": 2029
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2021-006",
+   "name": "SPP queue GEN-2021-006 (Labette, KS)",
+   "type": "bess",
+   "operator": null,
+   "city": "Labette",
+   "state": "KS",
+   "status": "queued",
+   "capacity_mw": 300,
+   "capacity_mwh": null,
+   "year_online": 2029,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2025,
+     "to": 2029
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2021-019",
+   "name": "SPP queue GEN-2021-019 (Noble, OK)",
+   "type": "bess",
+   "operator": null,
+   "city": "Noble",
+   "state": "OK",
+   "status": "queued",
+   "capacity_mw": 74.9,
+   "capacity_mwh": null,
+   "year_online": 2028,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2027,
+     "to": 2028
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2021-029",
+   "name": "SPP queue GEN-2021-029 (Linn, KS)",
+   "type": "bess",
+   "operator": null,
+   "city": "Linn",
+   "state": "KS",
+   "status": "queued",
+   "capacity_mw": 253.8,
+   "capacity_mwh": null,
+   "year_online": 2029,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2026,
+     "to": 2029
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2021-038",
+   "name": "SPP queue GEN-2021-038 (Titus, TX)",
+   "type": "bess",
+   "operator": null,
+   "city": "Titus",
+   "state": "TX",
+   "status": "queued",
+   "capacity_mw": 200,
+   "capacity_mwh": null,
+   "year_online": 2029,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2026,
+     "to": 2029
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2021-039",
+   "name": "SPP queue GEN-2021-039 (Douglas, NE)",
+   "type": "bess",
+   "operator": null,
+   "city": "Douglas",
+   "state": "NE",
+   "status": "queued",
+   "capacity_mw": 100,
+   "capacity_mwh": null,
+   "year_online": 2030,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2025,
+     "to": 2030
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2021-040",
+   "name": "SPP queue GEN-2021-040 (Cass, NE)",
+   "type": "bess",
+   "operator": null,
+   "city": "Cass",
+   "state": "NE",
+   "status": "queued",
+   "capacity_mw": 200,
+   "capacity_mwh": null,
+   "year_online": 2029,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2025,
+     "to": 2029
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2021-041",
+   "name": "SPP queue GEN-2021-041 (Canadian, OK)",
+   "type": "bess",
+   "operator": null,
+   "city": "Canadian",
+   "state": "OK",
+   "status": "queued",
+   "capacity_mw": 100,
+   "capacity_mwh": null,
+   "year_online": 2027,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2025,
+     "to": 2027
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2021-042",
+   "name": "SPP queue GEN-2021-042 (Jackson, MO)",
+   "type": "bess",
+   "operator": null,
+   "city": "Jackson",
+   "state": "MO",
+   "status": "queued",
+   "capacity_mw": 50,
+   "capacity_mwh": null,
+   "year_online": 2028,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2025,
+     "to": 2028
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2021-043",
+   "name": "SPP queue GEN-2021-043 (Lancaster, NE)",
+   "type": "bess",
+   "operator": null,
+   "city": "Lancaster",
+   "state": "NE",
+   "status": "queued",
+   "capacity_mw": 250,
+   "capacity_mwh": null,
+   "year_online": 2030,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2026,
+     "to": 2030
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2021-048",
+   "name": "SPP queue GEN-2021-048 (Lancaster, NE)",
+   "type": "bess",
+   "operator": null,
+   "city": "Lancaster",
+   "state": "NE",
+   "status": "queued",
+   "capacity_mw": 75,
+   "capacity_mwh": null,
+   "year_online": 2029,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2025,
+     "to": 2029
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2021-088",
+   "name": "SPP queue GEN-2021-088 (Cleveland, OK)",
+   "type": "bess",
+   "operator": null,
+   "city": "Cleveland",
+   "state": "OK",
+   "status": "queued",
+   "capacity_mw": 100,
+   "capacity_mwh": null,
+   "year_online": 2028,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2025,
+     "to": 2028
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2021-103",
+   "name": "SPP queue GEN-2021-103 (Johnson, KS)",
+   "type": "bess",
+   "operator": null,
+   "city": "Johnson",
+   "state": "KS",
+   "status": "queued",
+   "capacity_mw": 150,
+   "capacity_mwh": null,
+   "year_online": 2030,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2025,
+     "to": 2030
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2022-012",
+   "name": "SPP queue GEN-2022-012 (Woodward, OK)",
+   "type": "bess",
+   "operator": null,
+   "city": "Woodward",
+   "state": "OK",
+   "status": "queued",
+   "capacity_mw": 100,
+   "capacity_mwh": null,
+   "year_online": 2028,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2024,
+     "to": 2028
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2022-017",
+   "name": "SPP queue GEN-2022-017 (Woodward, OK)",
+   "type": "bess",
+   "operator": null,
+   "city": "Woodward",
+   "state": "OK",
+   "status": "queued",
+   "capacity_mw": 150,
+   "capacity_mwh": null,
+   "year_online": 2028,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2024,
+     "to": 2028
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2022-024",
+   "name": "SPP queue GEN-2022-024 (Bourbon, KS)",
+   "type": "bess",
+   "operator": null,
+   "city": "Bourbon",
+   "state": "KS",
+   "status": "queued",
+   "capacity_mw": 200,
+   "capacity_mwh": null,
+   "year_online": 2029,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2024,
+     "to": 2029
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2022-102",
+   "name": "SPP queue GEN-2022-102 (Clay, MO)",
+   "type": "bess",
+   "operator": null,
+   "city": "Clay",
+   "state": "MO",
+   "status": "queued",
+   "capacity_mw": 100,
+   "capacity_mwh": null,
    "year_online": 2027,
    "fields": [
     {
@@ -2188,66 +1145,421 @@
   },
   {
    "kind": "changed",
-   "id": "eia-69974",
-   "name": "Corazon Energy Storage",
+   "id": "iso-spp-gen-2022-130",
+   "name": "SPP queue GEN-2022-130 (Sebastian, AR)",
    "type": "bess",
-   "operator": "Corazon Energy Storage, LLC",
-   "city": "Bernalillo",
-   "state": "NM",
-   "status": "under_construction",
-   "capacity_mw": 150,
+   "operator": null,
+   "city": "Sebastian",
+   "state": "AR",
+   "status": "queued",
+   "capacity_mw": 200,
    "capacity_mwh": null,
-   "year_online": 2027,
+   "year_online": 2030,
    "fields": [
     {
-     "field": "status",
-     "from": "planned",
-     "to": "under_construction"
+     "field": "year_online",
+     "from": 2027,
+     "to": 2030
     }
    ]
   },
   {
    "kind": "changed",
-   "id": "eia-69988",
-   "name": "Warsaw 2 Energy Storage",
+   "id": "iso-spp-gen-2022-136",
+   "name": "SPP queue GEN-2022-136 (Bryan, OK)",
    "type": "bess",
-   "operator": "Duke Energy Progress - (NC)",
-   "city": "Duplin",
-   "state": "NC",
-   "status": "operating",
-   "capacity_mw": 11,
-   "capacity_mwh": 20,
-   "year_online": 2026,
+   "operator": null,
+   "city": "Bryan",
+   "state": "OK",
+   "status": "queued",
+   "capacity_mw": 180,
+   "capacity_mwh": null,
+   "year_online": 2029,
    "fields": [
     {
-     "field": "status",
-     "from": "under_construction",
-     "to": "operating"
-    },
-    {
-     "field": "capacity_mwh",
-     "from": null,
-     "to": 20
+     "field": "year_online",
+     "from": 2027,
+     "to": 2029
     }
    ]
   },
   {
    "kind": "changed",
-   "id": "eia-70403",
-   "name": "Grand Basin Energy Storage",
+   "id": "iso-spp-gen-2022-139",
+   "name": "SPP queue GEN-2022-139 (Harrison, TX)",
    "type": "bess",
-   "operator": "Grand Basin Energy Storage, LLC",
+   "operator": null,
+   "city": "Harrison",
+   "state": "TX",
+   "status": "queued",
+   "capacity_mw": 300,
+   "capacity_mwh": null,
+   "year_online": 2030,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2027,
+     "to": 2030
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2022-142",
+   "name": "SPP queue GEN-2022-142 (Clay, MO)",
+   "type": "bess",
+   "operator": null,
+   "city": "Clay",
+   "state": "MO",
+   "status": "queued",
+   "capacity_mw": 200,
+   "capacity_mwh": null,
+   "year_online": 2030,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2027,
+     "to": 2030
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2022-143",
+   "name": "SPP queue GEN-2022-143 (Marshall, OK)",
+   "type": "bess",
+   "operator": null,
+   "city": "Marshall",
+   "state": "OK",
+   "status": "queued",
+   "capacity_mw": 200,
+   "capacity_mwh": null,
+   "year_online": 2028,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2027,
+     "to": 2028
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2022-144",
+   "name": "SPP queue GEN-2022-144 (Jackson, MO)",
+   "type": "bess",
+   "operator": null,
    "city": "Jackson",
-   "state": "MI",
-   "status": "under_construction",
+   "state": "MO",
+   "status": "queued",
+   "capacity_mw": 200,
+   "capacity_mwh": null,
+   "year_online": 2030,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2027,
+     "to": 2030
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2022-154",
+   "name": "SPP queue GEN-2022-154 (Cleveland, OK)",
+   "type": "bess",
+   "operator": null,
+   "city": "Cleveland",
+   "state": "OK",
+   "status": "queued",
    "capacity_mw": 100,
    "capacity_mwh": null,
+   "year_online": 2029,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2026,
+     "to": 2029
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2022-155",
+   "name": "SPP queue GEN-2022-155 (Oklahoma, OK)",
+   "type": "bess",
+   "operator": null,
+   "city": "Oklahoma",
+   "state": "OK",
+   "status": "queued",
+   "capacity_mw": 200,
+   "capacity_mwh": null,
+   "year_online": 2029,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2026,
+     "to": 2029
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2022-156",
+   "name": "SPP queue GEN-2022-156 (Creek, OK)",
+   "type": "bess",
+   "operator": null,
+   "city": "Creek",
+   "state": "OK",
+   "status": "queued",
+   "capacity_mw": 100,
+   "capacity_mwh": null,
+   "year_online": 2029,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2026,
+     "to": 2029
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2022-235",
+   "name": "SPP queue GEN-2022-235 (Canadian, OK)",
+   "type": "bess",
+   "operator": null,
+   "city": "Canadian",
+   "state": "OK",
+   "status": "queued",
+   "capacity_mw": 150,
+   "capacity_mwh": null,
+   "year_online": 2029,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2028,
+     "to": 2029
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2022-238",
+   "name": "SPP queue GEN-2022-238 (Pottawatomie, OK)",
+   "type": "bess",
+   "operator": null,
+   "city": "Pottawatomie",
+   "state": "OK",
+   "status": "queued",
+   "capacity_mw": 150,
+   "capacity_mwh": null,
+   "year_online": 2029,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2028,
+     "to": 2029
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2023-033",
+   "name": "SPP queue GEN-2023-033 (Clay, MO)",
+   "type": "bess",
+   "operator": null,
+   "city": "Clay",
+   "state": "MO",
+   "status": "queued",
+   "capacity_mw": 200,
+   "capacity_mwh": null,
+   "year_online": 2029,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2028,
+     "to": 2029
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2023-037",
+   "name": "SPP queue GEN-2023-037 (Wyandotte, KS)",
+   "type": "bess",
+   "operator": null,
+   "city": "Wyandotte",
+   "state": "KS",
+   "status": "queued",
+   "capacity_mw": 200,
+   "capacity_mwh": null,
+   "year_online": 2029,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2028,
+     "to": 2029
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2023-055",
+   "name": "SPP queue GEN-2023-055 (Mayes, OK)",
+   "type": "bess",
+   "operator": null,
+   "city": "Mayes",
+   "state": "OK",
+   "status": "queued",
+   "capacity_mw": 100,
+   "capacity_mwh": null,
+   "year_online": 2029,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2027,
+     "to": 2029
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2023-057",
+   "name": "SPP queue GEN-2023-057 (Pawnee, OK)",
+   "type": "bess",
+   "operator": null,
+   "city": "Pawnee",
+   "state": "OK",
+   "status": "queued",
+   "capacity_mw": 150,
+   "capacity_mwh": null,
+   "year_online": 2028,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2027,
+     "to": 2028
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2023-061",
+   "name": "SPP queue GEN-2023-061 (Jasper, MO)",
+   "type": "bess",
+   "operator": null,
+   "city": "Jasper",
+   "state": "MO",
+   "status": "queued",
+   "capacity_mw": 100,
+   "capacity_mwh": null,
+   "year_online": 2029,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2027,
+     "to": 2029
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2023-161",
+   "name": "SPP queue GEN-2023-161 (Blaine, OK)",
+   "type": "bess",
+   "operator": null,
+   "city": "Blaine",
+   "state": "OK",
+   "status": "queued",
+   "capacity_mw": 74.9,
+   "capacity_mwh": null,
    "year_online": 2027,
    "fields": [
     {
-     "field": "status",
-     "from": "planned",
-     "to": "under_construction"
+     "field": "year_online",
+     "from": 2026,
+     "to": 2027
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2023-171",
+   "name": "SPP queue GEN-2023-171 (Jackson, MO)",
+   "type": "bess",
+   "operator": null,
+   "city": "Jackson",
+   "state": "MO",
+   "status": "queued",
+   "capacity_mw": 150,
+   "capacity_mwh": null,
+   "year_online": 2031,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2028,
+     "to": 2031
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2023-206",
+   "name": "SPP queue GEN-2023-206 (Sebastian, AR)",
+   "type": "bess",
+   "operator": null,
+   "city": "Sebastian",
+   "state": "AR",
+   "status": "queued",
+   "capacity_mw": 50,
+   "capacity_mwh": null,
+   "year_online": 2028,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2029,
+     "to": 2028
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2023-sr25",
+   "name": "SPP queue GEN-2023-SR25 (Mayes, OK)",
+   "type": "bess",
+   "operator": null,
+   "city": "Mayes",
+   "state": "OK",
+   "status": "queued",
+   "capacity_mw": 72.5,
+   "capacity_mwh": null,
+   "year_online": 2028,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2021,
+     "to": 2028
+    }
+   ]
+  },
+  {
+   "kind": "changed",
+   "id": "iso-spp-gen-2023-sr27",
+   "name": "SPP queue GEN-2023-SR27 (Mayes, OK)",
+   "type": "bess",
+   "operator": null,
+   "city": "Mayes",
+   "state": "OK",
+   "status": "queued",
+   "capacity_mw": 101.5,
+   "capacity_mwh": null,
+   "year_online": 2028,
+   "fields": [
+    {
+     "field": "year_online",
+     "from": 2021,
+     "to": 2028
     }
    ]
   }

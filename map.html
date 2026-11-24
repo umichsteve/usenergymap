@@ -35,6 +35,7 @@
     --uc: #f59e0b;
     --pl: #a855f7;
     --an: #38bdf8;
+    --qu: #64748b;
     --border: #334155;
   }
   * { box-sizing: border-box; }
@@ -129,6 +130,7 @@
   .pstatus.under_construction { background: rgba(245,158,11,0.18); color: #fbbf24; }
   .pstatus.planned { background: rgba(168,85,247,0.18); color: #c084fc; }
   .pstatus.announced { background: rgba(56,189,248,0.18); color: #38bdf8; }
+  .pstatus.queued { background: rgba(100,116,139,0.22); color: #cbd5e1; }
   .empty { color: var(--muted); font-size: 12px; padding: 14px 4px; text-align: center; }
   #map { width: 100%; height: 100%; background: #1a2236; }
   .marker-dot {
@@ -158,6 +160,7 @@
   .badge-under_construction { background: rgba(245,158,11,0.18); color: #fbbf24; }
   .badge-planned { background: rgba(168,85,247,0.18); color: #c084fc; }
   .badge-announced { background: rgba(56,189,248,0.18); color: #38bdf8; }
+  .badge-queued { background: rgba(100,116,139,0.22); color: #cbd5e1; }
   .popup-link { color: var(--accent); text-decoration: none; font-size: 12px; margin-top: 6px; display: inline-block; }
   .popup-link:hover { text-decoration: underline; }
   /* Cluster popup list */
@@ -245,6 +248,7 @@
           <span class="chip" data-val="under_construction">Under Construction</span>
           <span class="chip" data-val="planned">Planned</span>
           <span class="chip" data-val="announced">Announced</span>
+          <span class="chip" data-val="queued">In interconnection queue</span>
         </div>
       </div>
 
@@ -296,6 +300,7 @@
           <div class="row"><span class="dot" style="background: #fff; border-color: var(--uc);"></span> Under Const.</div>
           <div class="row"><span class="dot" style="background: #fff; border-color: var(--pl);"></span> Planned</div>
           <div class="row"><span class="dot" style="background: #fff; border-color: var(--an); border-style: dashed;"></span> Announced</div>
+          <div class="row"><span class="dot" style="background: transparent; border-color: var(--qu);"></span> In queue</div>
         </div>
       </div>
     </div>
@@ -380,14 +385,14 @@
 
   // ---------- Marker helpers ----------
   const TYPE_COLOR = { data_center: '#3b82f6', bess: '#22c55e' };
-  const STATUS_RING = { operating: '#22c55e', under_construction: '#f59e0b', planned: '#a855f7', announced: '#38bdf8' };
+  const STATUS_RING = { operating: '#22c55e', under_construction: '#f59e0b', planned: '#a855f7', announced: '#38bdf8', queued: '#64748b' };
 
   function radiusFor(mw) {
     if (!mw) return 6;
     return Math.max(6, Math.min(30, Math.round(Math.sqrt(mw) * 0.9)));
   }
   function statusLabel(s) {
-    return ({ operating: 'Operating', under_construction: 'Under Construction', planned: 'Planned', announced: 'Announced' })[s] || s;
+    return ({ operating: 'Operating', under_construction: 'Under Construction', planned: 'Planned', announced: 'Announced', queued: 'In interconnection queue' })[s] || s;
   }
   function escapeHtml(s) {
     return String(s).replace(/[&<>"']/g, c => ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;' }[c]));
@@ -643,7 +648,7 @@
         </div>
         <div class="pmeta" style="margin-top:3px;">
           <span style="color:var(--muted);">${escapeHtml(p.operator || '')}</span>
-          <span class="pstatus ${p.status}">${statusLabel(p.status).replace('Under Construction','UC')}</span>
+          <span class="pstatus ${p.status}">${statusLabel(p.status).replace('Under Construction','UC').replace('In interconnection queue','Queued')}</span>
         </div>
       </div>
     `;
@@ -780,7 +785,7 @@
       document.querySelectorAll('#filter-type .chip').forEach(c => c.classList.toggle('active', c.dataset.val === ty));
     }
     const stt = qs.get('status');
-    if (['operating', 'under_construction', 'planned', 'announced'].includes(stt)) {
+    if (['operating', 'under_construction', 'planned', 'announced', 'queued'].includes(stt)) {
       filters.status = stt;
       document.querySelectorAll('#filter-status .chip').forEach(c => c.classList.toggle('active', c.dataset.val === stt));
     }

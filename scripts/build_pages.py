@@ -44,7 +44,8 @@ def fmt(n): return f"{int(round(n)):,}"
 
 def status_label(s):
     return {"operating":"Operating","under_construction":"Under construction",
-            "planned":"Planned","announced":"Announced"}.get(s, s)
+            "planned":"Planned","announced":"Announced",
+            "queued":"In interconnection queue"}.get(s, s)
 
 def head(title, desc, canonical):
     return f"""<!DOCTYPE html>
@@ -185,12 +186,16 @@ def stat_cards(projects):
     dc = sum(1 for p in projects if p["type"] == "data_center")
     bess = n - dc
     op = sum(1 for p in projects if p["status"] == "operating")
+    queued = sum(1 for p in projects if p["status"] == "queued")
+    queued_card = (f'      <div class="stat"><div class="num st">{fmt(queued)}</div>'
+                   f'<div class="lbl">in interconnection queue</div></div>\n'
+                   if queued else "")
     return f"""    <div class="statbar" style="margin:0 0 32px;">
       <div class="stat"><div class="num dc">{fmt(n)}</div><div class="lbl">projects</div></div>
       <div class="stat"><div class="num mw">{fmt(mw)}</div><div class="lbl">MW capacity</div></div>
       <div class="stat"><div class="num bess">{fmt(dc)} / {fmt(bess)}</div><div class="lbl">data centers / BESS</div></div>
       <div class="stat"><div class="num st">{fmt(op)}</div><div class="lbl">operating</div></div>
-    </div>"""
+{queued_card}    </div>"""
 
 def project_table(projects, show_state=True, show_operator=True):
     rows = []
@@ -201,7 +206,7 @@ def project_table(projects, show_state=True, show_operator=True):
             mw = ("~" if p.get("capacity_estimated") else "") + fmt(p["capacity_mw"]) + " MW"
         else:
             mw = "—"
-        badge = {"operating":"op","under_construction":"uc","planned":"pl","announced":"pl"}.get(p["status"],"pl")
+        badge = {"operating":"op","under_construction":"uc","planned":"pl","announced":"pl","queued":"qu"}.get(p["status"],"pl")
         src = f'<a href="{esc(p["source"])}" target="_blank" rel="noopener">source ↗</a>' if p.get("source") else ""
         opcell = f"<td>{esc(p.get('operator','—'))}</td>" if show_operator else ""
         rows.append(
@@ -269,7 +274,7 @@ def dc_table(projects, show_state=True):
             mw = ("~" if p.get("capacity_estimated") else "") + fmt(p["capacity_mw"]) + " MW"
         else:
             mw = "—"
-        badge = {"operating":"op","under_construction":"uc","planned":"pl","announced":"pl"}.get(p["status"],"pl")
+        badge = {"operating":"op","under_construction":"uc","planned":"pl","announced":"pl","queued":"qu"}.get(p["status"],"pl")
         src = f'<a href="{esc(p["source"])}" target="_blank" rel="noopener">source ↗</a>' if p.get("source") else ""
         announced = fmt_announced(p.get("announcement_date"), p.get("announcement_date_precision"))
         rows.append(
@@ -336,8 +341,9 @@ def main():
   <p class="sub">{fmt(n)} tracked projects · {fmt(mw)} MW · {fmt(dc)} data centers, {fmt(n-dc)} battery (BESS) sites</p>
 {stat_cards(plist)}
   <p>Below is every data center and battery energy storage (BESS) project we track in {esc(name)},
-     ranked by capacity. Battery projects are sourced from the federal EIA-860M inventory; data centers
-     are hand-curated with a public source on each entry. See the <a href="/methodology">methodology</a> for details.</p>
+     ranked by capacity. Battery projects come from the federal EIA-860M inventory and, for projects
+     still in development, grid operators' interconnection queues; data centers are hand-curated with
+     a public source on each entry. See the <a href="/methodology">methodology</a> for details.</p>
   <p><a class="btn btn-primary" href="/map?state={esc(code)}">View {esc(name)} on the map →</a>{dc_link}</p>
 {SAMPLE_CAPTURE.format(source=f"state/{slug}")}
 {data_cta(plist)}
