@@ -1,0 +1,7 @@
+q_id,iso,state,county,queue_mw,queue_year,queue_status,existing_id,existing_name,existing_mw,existing_year,existing_status
+GI-SISS-2025-05,SPP,CO,Kit Carson County,150.0,2027,IA FULLY EXECUTED/ON SCHEDULE,eia-70340,"Carousel Energy Storage, LLC",150,2027,planned
+GI-RSC-2025-02,SPP,CO,Moffat County,200.0,2029,IA FULLY EXECUTED/ON SCHEDULE,eia-70136,Morel Energy Storage,200,2030,planned
+GEN-2024-SR14,SPP,NM,Lea County,36.0,2026,IA FULLY EXECUTED/ON SCHEDULE,eia-69258,Cunningham Solar I & BESS,36,2026,operating
+GEN-2023-SR9,SPP,TX,Crosby County,50.0,2026,IA FULLY EXECUTED/ON SCHEDULE,eia-70197,Lorenzo Energy Storage,50,2027,planned
+GEN-2023-SR19,SPP,NE,Jefferson County,50.0,2027,IA FULLY EXECUTED/ON SCHEDULE,eia-70345,Steele Flats Energy Storage,50,2026,under_construction
+CSUT-2025-8,SPP,CO,El Paso County,100.0,2028,IA FULLY EXECUTED/ON SCHEDULE,eia-70050,Drennan Energy Storage,100,2028,planned

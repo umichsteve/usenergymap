@@ -235,7 +235,7 @@
           <tr><td><code>latitude</code> · <code>longitude</code></td><td>Coordinates — exact site for EIA records; city/county centroid for data centers where the site isn't public</td></tr>
           <tr><td><code>capacity_mw</code> · <code>capacity_mwh</code></td><td>Power (MW) and, for batteries, energy (MWh). MWh is reported by EIA for operating sites (99%+ coverage) but not for planned or under-construction projects — expect it blank there.</td></tr>
           <tr><td><code>duration_hours</code></td><td>Derived MWh ÷ MW for batteries</td></tr>
-          <tr><td><code>status</code> · <code>status_label</code></td><td>operating / under_construction / planned / announced</td></tr>
+          <tr><td><code>status</code> · <code>status_label</code></td><td>operating / under_construction / planned / announced / queued. <code>queued</code> (label <em>In interconnection queue</em>) is a separate category for standalone BESS rows ingested from grid-operator queues; see <a href="/methodology#queue">methodology</a>.</td></tr>
           <tr><td><code>year_online</code></td><td>Existing or target year</td></tr>
           <tr><td><code>announcement_date</code></td><td>Date the project was first publicly announced (<code>YYYY-MM-DD</code>), from operator press releases, local filings or news coverage. Data centers only; blank where no first announcement could be verified.</td></tr>
           <tr><td><code>announcement_date_precision</code></td><td>How precise <code>announcement_date</code> is, which varies by record: <code>day</code>, <code>month</code> (date set to the 1st of the month), or <code>year</code> (date set to January 1). Filter on <code>day</code> if you need exact dates.</td></tr>
