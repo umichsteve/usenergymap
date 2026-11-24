@@ -22,6 +22,7 @@
 
 <link rel="stylesheet" href="/assets/site.css" />
 <script src="/assets/analytics.js"></script>
+<script src="/assets/newsletter-signup.js" defer></script>
 </head>
 <body>
 
@@ -56,6 +57,19 @@
       <div class="stat"><div class="num mw" id="s-bess-mw">—</div><div class="lbl">MW of storage power</div></div>
       <div class="stat"><div class="num dc" id="s-bess-op">—</div><div class="lbl">operating today</div></div>
       <div class="stat"><div class="num st" id="s-bess-states">—</div><div class="lbl">states covered</div></div>
+    </div>
+
+    <div class="newsletter-cta" data-newsletter-form data-source="bess">
+      <div class="newsletter-copy">
+        <h3>Weekly changes to the BESS and data center pipeline</h3>
+        <p>What moved this week — new operators, status flips, year-online changes. One email on Monday. Unsubscribe anytime.</p>
+      </div>
+      <form class="newsletter-form" novalidate>
+        <input type="email" name="email" inputmode="email" autocomplete="email"
+               placeholder="you@company.com" aria-label="Email address for weekly updates" required />
+        <button class="btn btn-primary" type="submit">Subscribe</button>
+        <p class="newsletter-msg" role="status" aria-live="polite"></p>
+      </form>
     </div>
   </div>
 </header>

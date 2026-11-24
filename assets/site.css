@@ -225,6 +225,44 @@ section.alt { background: var(--bg-2); border-top: 1px solid var(--line); border
 .sample-msg.ok { color: #15803d; font-weight: 600; }
 .sample-fine { font-size: 13px; color: var(--muted); margin: 10px 0 0; }
 .sample-fine a { color: var(--muted); text-decoration: underline; }
+
+/* ---------- Newsletter signup (hero strip) ---------- */
+.newsletter-cta {
+  margin: 22px 0 0; padding: 14px 16px;
+  border: 1px solid rgba(255,255,255,0.14); border-radius: 12px;
+  background: rgba(255,255,255,0.06); backdrop-filter: blur(4px);
+  display: flex; gap: 14px; align-items: center; flex-wrap: wrap;
+}
+.newsletter-cta .newsletter-copy { flex: 1 1 260px; min-width: 0; }
+.newsletter-cta h3 { font-size: 15px; font-weight: 700; margin: 0 0 2px; color: #fff; letter-spacing: -0.1px; }
+.newsletter-cta p { font-size: 13px; color: rgba(255,255,255,0.78); margin: 0; }
+.newsletter-form { display: flex; gap: 8px; flex: 1 1 320px; min-width: 0; }
+.newsletter-form input[type="email"] {
+  flex: 1 1 200px; min-width: 0; font: inherit; font-size: 14px;
+  padding: 9px 12px; border: 1px solid rgba(255,255,255,0.22); border-radius: 8px;
+  background: rgba(0,0,0,0.25); color: #fff;
+}
+.newsletter-form input[type="email"]::placeholder { color: rgba(255,255,255,0.55); }
+.newsletter-form input[type="email"]:focus { outline: none; border-color: var(--bess); box-shadow: 0 0 0 3px rgba(16,185,129,0.25); }
+.newsletter-form button { white-space: nowrap; font-size: 14px; padding: 9px 14px; }
+.newsletter-form button[disabled] { opacity: 0.6; cursor: default; }
+.newsletter-msg { font-size: 12.5px; margin: 8px 0 0; min-height: 1em; color: rgba(255,255,255,0.78); flex-basis: 100%; }
+.newsletter-msg.err { color: #fecaca; }
+.newsletter-msg.ok { color: #86efac; font-weight: 600; }
+
+/* On light sections (if the block ever lands outside the hero), swap the
+   color scheme so the strip reads against a pale background too. */
+.newsletter-cta.on-light {
+  border-color: var(--line); background: var(--bg-2);
+}
+.newsletter-cta.on-light h3 { color: var(--ink); }
+.newsletter-cta.on-light p { color: var(--ink-2); }
+.newsletter-cta.on-light .newsletter-form input[type="email"] {
+  background: var(--bg); color: var(--ink); border-color: var(--line);
+}
+.newsletter-cta.on-light .newsletter-form input[type="email"]::placeholder { color: var(--muted); }
+.newsletter-cta.on-light .newsletter-msg { color: var(--ink-2); }
+
 @media (max-width: 560px) {
   .sample-cta { padding: 22px 20px; }
   .sample-form button { width: 100%; }
