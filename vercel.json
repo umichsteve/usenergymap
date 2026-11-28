@@ -97,6 +97,11 @@
       "source": "/operator/rwe-clean-energy",
       "destination": "/explore",
       "permanent": true
+    },
+    {
+      "source": "/operator/parliament-energy-holdings-llc",
+      "destination": "/explore",
+      "permanent": true
     }
   ],
   "rewrites": [
